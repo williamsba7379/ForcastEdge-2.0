@@ -1,0 +1,35 @@
+name: ForecastEdge NFL Updates
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-nfl:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download NFL scoreboard
+        run: |
+          mkdir -p data
+          curl --fail --location --retry 3 \
+            "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=$(date -u +%Y%m%d)" \
+            -o data/nfl-scoreboard.json
+          python -m json.tool data/nfl-scoreboard.json > /dev/null
+
+      - name: Save updated scores
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/nfl-scoreboard.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update NFL scoreboard"
+            git push
+          fi
