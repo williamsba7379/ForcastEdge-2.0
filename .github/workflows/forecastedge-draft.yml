@@ -1,0 +1,69 @@
+name: Generate NFL Wednesday draft picks
+on:
+  schedule:
+    - cron: '0 15 * * 3'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build review-only baseline projections
+        run: |
+          python3 - <<'PY'
+          import datetime,json,pathlib,urllib.request,zoneinfo
+          now=datetime.datetime.now(zoneinfo.ZoneInfo("America/New_York"))
+          schedule=json.loads(pathlib.Path("data/nfl-schedule.json").read_text())
+          # Select the week whose first kickoff is the next upcoming one.
+          options=[]
+          for w in schedule["weeks"]:
+              dates=[datetime.datetime.fromisoformat(g["date"].replace("Z","+00:00")) for g in w["games"]]
+              if dates and max(dates)>now.astimezone(datetime.timezone.utc):
+                  options.append((min(dates),w))
+          if not options: raise ValueError("No upcoming NFL week in schedule; update schedule first.")
+          upcoming=[(d,w) for d,w in options if d>now.astimezone(datetime.timezone.utc)]
+          selected=min(upcoming or options,key=lambda item:item[0])[1]
+          year=schedule["season"];week=selected["week"]
+          url=f"https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates={year}&seasontype=2&week={week}"
+          req=urllib.request.Request(url,headers={"User-Agent":"ForecastEdge/2.0"})
+          with urllib.request.urlopen(req,timeout=30) as response: board=json.load(response)
+          records={}
+          for e in board.get("events",[]):
+              for c in e.get("competitions",[{}])[0].get("competitors",[]):
+                  team=c.get("team",{}).get("displayName")
+                  for r in c.get("records",[]):
+                      if r.get("type")=="total":
+                          try:
+                              wins,losses,*ties=map(int,r["summary"].split("-"))
+                              n=wins+losses+sum(ties)
+                              if n:records[team]=(wins+0.5*sum(ties))/n
+                          except (ValueError,KeyError):pass
+          games=[]
+          for g in selected["games"]:
+              away,home=g["away"],g["home"]
+              aw=records.get(away);hw=records.get(home)
+              # Very basic and UNVALIDATED heuristic; home advantage is a placeholder.
+              delta=(hw-aw) if hw is not None and aw is not None else 0
+              pick=home if delta+0.06>=0 else away
+              home_score,away_score=(24,20) if pick==home else (20,24)
+              local=datetime.datetime.fromisoformat(g["date"].replace("Z","+00:00")).astimezone(zoneinfo.ZoneInfo("America/New_York"))
+              games.append({"date":local.date().isoformat(),"time":local.strftime("%H:%M"),"away":away,"home":home,"winner":pick,"winProbability":0.5,"scoreAway":away_score,"scoreHome":home_score,"rating":"NO BET","notes":"AUTOMATED REVIEW-ONLY BASELINE. Simple season-record comparison plus home-field assumption; no injuries, odds, calibrated probabilities or validated edge. Review before use."})
+          if not games:raise ValueError("No games; refusing to publish empty draft.")
+          monday=[g for g in games if datetime.date.fromisoformat(g["date"]).weekday()==0]
+          draft={"week":f"{year} NFL Week {week} — UNREVIEWED AUTO DRAFT","source":"Unvalidated baseline; not official ForecastEdge picks","reviewRequired":True,"generatedAt":now.isoformat(),"mondayTiebreaker":sum((monday[-1]["scoreAway"],monday[-1]["scoreHome"])) if monday else None,"games":games,"results":[]}
+          path=pathlib.Path("data/nfl-draft-picks.json")
+          path.parent.mkdir(exist_ok=True)
+          path.write_text(json.dumps(draft,indent=2)+"\n")
+          print(f"Generated {len(games)} review-only picks for Week {week}; not imported into app.")
+          PY
+      - name: Commit draft without changing user picks
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/nfl-draft-picks.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish unreviewed NFL draft picks"
+            git push
+          fi
