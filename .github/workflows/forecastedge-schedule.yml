@@ -1,0 +1,56 @@
+name: Update NFL matchup schedule
+on:
+  schedule:
+    - cron: '27 10 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  schedule:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch current and upcoming NFL regular-season matchups
+        run: |
+          python3 - <<'PY'
+          import datetime, json, pathlib, urllib.request
+          today=datetime.datetime.now(datetime.timezone.utc).date()
+          year=today.year if today.month>=3 else today.year-1
+          base="https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard"
+          def fetch(url):
+              req=urllib.request.Request(url,headers={"User-Agent":"ForecastEdge/2.0 (schedule updater)"})
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  return json.load(response)
+          current=fetch(f"{base}?dates={year}&seasontype=2")
+          week=int(current.get("week",{}).get("number",0))
+          if not 1<=week<=18:
+              raise ValueError(f"Unexpected NFL regular season week: {week}")
+          weeks=[]
+          for n in sorted(set([week,min(18,week+1)])):
+              board=fetch(f"{base}?dates={year}&seasontype=2&week={n}")
+              games=[]
+              for e in board.get("events",[]):
+                  competitors=e.get("competitions",[{}])[0].get("competitors",[])
+                  home=next((c for c in competitors if c.get("homeAway")=="home"),None)
+                  away=next((c for c in competitors if c.get("homeAway")=="away"),None)
+                  if not home or not away: continue
+                  games.append({"id":e.get("id"),"date":e.get("date"),"away":away.get("team",{}).get("displayName"),"home":home.get("team",{}).get("displayName"),"status":e.get("status",{}).get("type",{}).get("name")})
+              games.sort(key=lambda g:g["date"] or "")
+              weeks.append({"week":n,"games":games})
+          if not any(w["games"] for w in weeks):
+              raise ValueError("No NFL games returned; keeping existing schedule")
+          payload={"season":year,"updatedAt":datetime.datetime.now(datetime.timezone.utc).isoformat(),"weeks":weeks,"source":"ESPN public scoreboard; schedule only, not predictions"}
+          path=pathlib.Path("data/nfl-schedule.json")
+          path.parent.mkdir(exist_ok=True)
+          path.write_text(json.dumps(payload,indent=2)+"\n")
+          print("Saved schedule for:",[(w["week"],len(w["games"])) for w in weeks])
+          PY
+      - name: Commit schedule if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/nfl-schedule.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update current and upcoming NFL matchups"
+            git push
+          fi
