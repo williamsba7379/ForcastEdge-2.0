@@ -1,0 +1,130 @@
+{
+  "status": "Exploratory retrospective comparison; NOT independent validation",
+  "method": "Walk-forward: full-season average point differential blended with most recent three games, using only completed games before kickoff; 1.5-point home advantage.",
+  "baselineWeight": 0.3,
+  "eligibleGames": 766,
+  "weights": {
+    "0.0": {
+      "correct": 481,
+      "accuracy": 0.6279,
+      "netVsBaseline": 2,
+      "changedPicks": 52,
+      "bySeason": {
+        "2023": {
+          "games": 240,
+          "correct": 144
+        },
+        "2024": {
+          "games": 240,
+          "correct": 158
+        },
+        "2025": {
+          "games": 239,
+          "correct": 151
+        },
+        "2026": {
+          "games": 47,
+          "correct": 28
+        }
+      }
+    },
+    "0.3": {
+      "correct": 479,
+      "accuracy": 0.6253,
+      "netVsBaseline": 0,
+      "changedPicks": 0,
+      "bySeason": {
+        "2023": {
+          "games": 240,
+          "correct": 144
+        },
+        "2024": {
+          "games": 240,
+          "correct": 155
+        },
+        "2025": {
+          "games": 239,
+          "correct": 153
+        },
+        "2026": {
+          "games": 47,
+          "correct": 27
+        }
+      }
+    },
+    "0.5": {
+      "correct": 462,
+      "accuracy": 0.6031,
+      "netVsBaseline": -17,
+      "changedPicks": 33,
+      "bySeason": {
+        "2023": {
+          "games": 240,
+          "correct": 140
+        },
+        "2024": {
+          "games": 240,
+          "correct": 152
+        },
+        "2025": {
+          "games": 239,
+          "correct": 145
+        },
+        "2026": {
+          "games": 47,
+          "correct": 25
+        }
+      }
+    },
+    "0.7": {
+      "correct": 462,
+      "accuracy": 0.6031,
+      "netVsBaseline": -17,
+      "changedPicks": 65,
+      "bySeason": {
+        "2023": {
+          "games": 240,
+          "correct": 144
+        },
+        "2024": {
+          "games": 240,
+          "correct": 146
+        },
+        "2025": {
+          "games": 239,
+          "correct": 147
+        },
+        "2026": {
+          "games": 47,
+          "correct": 25
+        }
+      }
+    },
+    "1.0": {
+      "correct": 457,
+      "accuracy": 0.5966,
+      "netVsBaseline": -22,
+      "changedPicks": 90,
+      "bySeason": {
+        "2023": {
+          "games": 240,
+          "correct": 144
+        },
+        "2024": {
+          "games": 240,
+          "correct": 143
+        },
+        "2025": {
+          "games": 239,
+          "correct": 144
+        },
+        "2026": {
+          "games": 47,
+          "correct": 26
+        }
+      }
+    }
+  },
+  "caution": "The baseline already uses 30% last-three-game form. Selecting a weight on these same games risks overfitting; validate any candidate on untouched seasons.",
+  "productionModelChanged": false
+}
