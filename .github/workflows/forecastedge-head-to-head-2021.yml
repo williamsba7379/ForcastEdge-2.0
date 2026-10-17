@@ -1,0 +1,18 @@
+name: Compare ForecastEdge 2.0 and 2.1 on 2021
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compare both methods on the same 2021 games
+        run: python3 scripts/nfl_head_to_head_2021.py
+      - name: Publish comparison
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/nfl-head-to-head-2021.json
+          git diff --cached --quiet || (git commit -m "Record ForecastEdge 2.0 vs 2.1 comparison" && git push)
