@@ -12,24 +12,25 @@ jobs:
         run: |
           python3 - <<'PY'
           import datetime,json,pathlib,urllib.request
-          season=2026
+          seasons=range(2023,2027)
           base="https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard"
           results=[]
-          for week in range(1,19):
-              req=urllib.request.Request(f"{base}?dates={season}&seasontype=2&week={week}",headers={"User-Agent":"ForecastEdge/2.0"})
-              with urllib.request.urlopen(req,timeout=30) as response: board=json.load(response)
-              for event in board.get("events",[]):
-                  if event.get("status",{}).get("type",{}).get("completed") is not True: continue
-                  sides=event.get("competitions",[{}])[0].get("competitors",[])
-                  home=next((c for c in sides if c.get("homeAway")=="home"),None)
-                  away=next((c for c in sides if c.get("homeAway")=="away"),None)
-                  if not home or not away: continue
-                  try: hs,aws=int(home["score"]),int(away["score"])
-                  except (ValueError,KeyError,TypeError): continue
-                  results.append({"id":event["id"],"week":week,"date":event["date"],"home":home["team"]["displayName"],"away":away["team"]["displayName"],"homeScore":hs,"awayScore":aws,"winner":home["team"]["displayName"] if hs>aws else away["team"]["displayName"] if aws>hs else "TIE"})
+          for season in seasons:
+            for week in range(1,19):
+                req=urllib.request.Request(f"{base}?dates={season}&seasontype=2&week={week}",headers={"User-Agent":"ForecastEdge/2.0"})
+                with urllib.request.urlopen(req,timeout=30) as response: board=json.load(response)
+                for event in board.get("events",[]):
+                    if event.get("status",{}).get("type",{}).get("completed") is not True: continue
+                    sides=event.get("competitions",[{}])[0].get("competitors",[])
+                    home=next((c for c in sides if c.get("homeAway")=="home"),None)
+                    away=next((c for c in sides if c.get("homeAway")=="away"),None)
+                    if not home or not away: continue
+                    try: hs,aws=int(home["score"]),int(away["score"])
+                    except (ValueError,KeyError,TypeError): continue
+                    results.append({"season":season,"id":event["id"],"week":week,"date":event["date"],"home":home["team"]["displayName"],"away":away["team"]["displayName"],"homeScore":hs,"awayScore":aws,"winner":home["team"]["displayName"] if hs>aws else away["team"]["displayName"] if aws>hs else "TIE"})
           if not results: raise ValueError("No completed games found")
           results.sort(key=lambda g:(g["date"],g["id"]))
-          output={"season":season,"updatedAt":datetime.datetime.now(datetime.timezone.utc).isoformat(),"source":"ESPN public NFL scoreboard final scores","games":results}
+          output={"season":2026,"seasons":list(seasons),"updatedAt":datetime.datetime.now(datetime.timezone.utc).isoformat(),"source":"ESPN public NFL scoreboard final scores","games":results}
           path=pathlib.Path("data/nfl-historical-results.json")
           path.parent.mkdir(exist_ok=True)
           path.write_text(json.dumps(output,indent=2)+"\n")
