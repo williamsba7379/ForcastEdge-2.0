@@ -1,0 +1,2145 @@
+{
+  "season": 2019,
+  "status": "One-time historical holdout; not prospective validation",
+  "prespecifiedComparison": "Existing 30% recent differential versus 0% recent differential; 1.5-point home advantage; minimum two earlier games per team",
+  "leakageControl": "Only earlier kickoffs within the 2019 season; no future games",
+  "caution": "Do not tune weights on 2019 and call subsequent 2019 results independent.",
+  "gamesAvailable": 256,
+  "graded": 224,
+  "skipped": 32,
+  "baseline30": {
+    "correct": 134,
+    "accuracy": 0.5982
+  },
+  "candidate0": {
+    "correct": 142,
+    "accuracy": 0.6339
+  },
+  "netCandidateCorrect": 8,
+  "differencePercentagePoints": 3.57,
+  "changedPicks": 14,
+  "byWeek": [
+    {
+      "week": 1,
+      "graded": 0,
+      "baselineCorrect": 0,
+      "candidateCorrect": 0
+    },
+    {
+      "week": 2,
+      "graded": 0,
+      "baselineCorrect": 0,
+      "candidateCorrect": 0
+    },
+    {
+      "week": 3,
+      "graded": 16,
+      "baselineCorrect": 9,
+      "candidateCorrect": 9
+    },
+    {
+      "week": 4,
+      "graded": 15,
+      "baselineCorrect": 7,
+      "candidateCorrect": 7
+    },
+    {
+      "week": 5,
+      "graded": 15,
+      "baselineCorrect": 9,
+      "candidateCorrect": 9
+    },
+    {
+      "week": 6,
+      "graded": 14,
+      "baselineCorrect": 10,
+      "candidateCorrect": 9
+    },
+    {
+      "week": 7,
+      "graded": 14,
+      "baselineCorrect": 10,
+      "candidateCorrect": 12
+    },
+    {
+      "week": 8,
+      "graded": 15,
+      "baselineCorrect": 12,
+      "candidateCorrect": 12
+    },
+    {
+      "week": 9,
+      "graded": 14,
+      "baselineCorrect": 6,
+      "candidateCorrect": 8
+    },
+    {
+      "week": 10,
+      "graded": 13,
+      "baselineCorrect": 4,
+      "candidateCorrect": 4
+    },
+    {
+      "week": 11,
+      "graded": 14,
+      "baselineCorrect": 11,
+      "candidateCorrect": 11
+    },
+    {
+      "week": 12,
+      "graded": 14,
+      "baselineCorrect": 9,
+      "candidateCorrect": 11
+    },
+    {
+      "week": 13,
+      "graded": 16,
+      "baselineCorrect": 7,
+      "candidateCorrect": 8
+    },
+    {
+      "week": 14,
+      "graded": 16,
+      "baselineCorrect": 12,
+      "candidateCorrect": 12
+    },
+    {
+      "week": 15,
+      "graded": 16,
+      "baselineCorrect": 10,
+      "candidateCorrect": 12
+    },
+    {
+      "week": 16,
+      "graded": 16,
+      "baselineCorrect": 8,
+      "candidateCorrect": 8
+    },
+    {
+      "week": 17,
+      "graded": 16,
+      "baselineCorrect": 10,
+      "candidateCorrect": 10
+    }
+  ],
+  "predictions": [
+    {
+      "week": 3,
+      "id": "401127859",
+      "winner": "Jacksonville Jaguars",
+      "baselinePick": "Tennessee Titans",
+      "candidatePick": "Tennessee Titans",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 3,
+      "id": "401127861",
+      "winner": "New England Patriots",
+      "baselinePick": "New England Patriots",
+      "candidatePick": "New England Patriots",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 3,
+      "id": "401127915",
+      "winner": "Buffalo Bills",
+      "baselinePick": "Buffalo Bills",
+      "candidatePick": "Buffalo Bills",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 3,
+      "id": "401127921",
+      "winner": "Dallas Cowboys",
+      "baselinePick": "Dallas Cowboys",
+      "candidatePick": "Dallas Cowboys",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 3,
+      "id": "401127925",
+      "winner": "Green Bay Packers",
+      "baselinePick": "Green Bay Packers",
+      "candidatePick": "Green Bay Packers",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 3,
+      "id": "401127929",
+      "winner": "Indianapolis Colts",
+      "baselinePick": "Indianapolis Colts",
+      "candidatePick": "Indianapolis Colts",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 3,
+      "id": "401127953",
+      "winner": "Kansas City Chiefs",
+      "baselinePick": "Baltimore Ravens",
+      "candidatePick": "Baltimore Ravens",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 3,
+      "id": "401127956",
+      "winner": "Minnesota Vikings",
+      "baselinePick": "Minnesota Vikings",
+      "candidatePick": "Minnesota Vikings",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 3,
+      "id": "401127959",
+      "winner": "Detroit Lions",
+      "baselinePick": "Philadelphia Eagles",
+      "candidatePick": "Philadelphia Eagles",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 3,
+      "id": "401127962",
+      "winner": "Carolina Panthers",
+      "baselinePick": "Arizona Cardinals",
+      "candidatePick": "Arizona Cardinals",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 3,
+      "id": "401127966",
+      "winner": "New York Giants",
+      "baselinePick": "Tampa Bay Buccaneers",
+      "candidatePick": "Tampa Bay Buccaneers",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 3,
+      "id": "401127970",
+      "winner": "Houston Texans",
+      "baselinePick": "Los Angeles Chargers",
+      "candidatePick": "Los Angeles Chargers",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 3,
+      "id": "401127993",
+      "winner": "New Orleans Saints",
+      "baselinePick": "Seattle Seahawks",
+      "candidatePick": "Seattle Seahawks",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 3,
+      "id": "401127998",
+      "winner": "San Francisco 49ers",
+      "baselinePick": "San Francisco 49ers",
+      "candidatePick": "San Francisco 49ers",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 3,
+      "id": "401128125",
+      "winner": "Los Angeles Rams",
+      "baselinePick": "Los Angeles Rams",
+      "candidatePick": "Los Angeles Rams",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 3,
+      "id": "401128003",
+      "winner": "Chicago Bears",
+      "baselinePick": "Chicago Bears",
+      "candidatePick": "Chicago Bears",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 4,
+      "id": "401127863",
+      "winner": "Philadelphia Eagles",
+      "baselinePick": "Green Bay Packers",
+      "candidatePick": "Green Bay Packers",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 4,
+      "id": "401127866",
+      "winner": "New England Patriots",
+      "baselinePick": "New England Patriots",
+      "candidatePick": "New England Patriots",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 4,
+      "id": "401128016",
+      "winner": "Tennessee Titans",
+      "baselinePick": "Tennessee Titans",
+      "candidatePick": "Tennessee Titans",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 4,
+      "id": "401128018",
+      "winner": "Cleveland Browns",
+      "baselinePick": "Baltimore Ravens",
+      "candidatePick": "Baltimore Ravens",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 4,
+      "id": "401128023",
+      "winner": "Kansas City Chiefs",
+      "baselinePick": "Kansas City Chiefs",
+      "candidatePick": "Kansas City Chiefs",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 4,
+      "id": "401128026",
+      "winner": "Carolina Panthers",
+      "baselinePick": "Houston Texans",
+      "candidatePick": "Houston Texans",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 4,
+      "id": "401128030",
+      "winner": "Oakland Raiders",
+      "baselinePick": "Indianapolis Colts",
+      "candidatePick": "Indianapolis Colts",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 4,
+      "id": "401128055",
+      "winner": "Los Angeles Chargers",
+      "baselinePick": "Los Angeles Chargers",
+      "candidatePick": "Los Angeles Chargers",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 4,
+      "id": "401128059",
+      "winner": "New York Giants",
+      "baselinePick": "New York Giants",
+      "candidatePick": "New York Giants",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 4,
+      "id": "401128064",
+      "winner": "Seattle Seahawks",
+      "baselinePick": "Seattle Seahawks",
+      "candidatePick": "Seattle Seahawks",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 4,
+      "id": "401128069",
+      "winner": "Tampa Bay Buccaneers",
+      "baselinePick": "Los Angeles Rams",
+      "candidatePick": "Los Angeles Rams",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 4,
+      "id": "401128093",
+      "winner": "Chicago Bears",
+      "baselinePick": "Minnesota Vikings",
+      "candidatePick": "Minnesota Vikings",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 4,
+      "id": "401128097",
+      "winner": "Jacksonville Jaguars",
+      "baselinePick": "Jacksonville Jaguars",
+      "candidatePick": "Jacksonville Jaguars",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 4,
+      "id": "401128102",
+      "winner": "New Orleans Saints",
+      "baselinePick": "Dallas Cowboys",
+      "candidatePick": "Dallas Cowboys",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 4,
+      "id": "401128109",
+      "winner": "Pittsburgh Steelers",
+      "baselinePick": "Cincinnati Bengals",
+      "candidatePick": "Cincinnati Bengals",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 5,
+      "id": "401127927",
+      "winner": "Seattle Seahawks",
+      "baselinePick": "Seattle Seahawks",
+      "candidatePick": "Seattle Seahawks",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 5,
+      "id": "401127864",
+      "winner": "New England Patriots",
+      "baselinePick": "New England Patriots",
+      "candidatePick": "New England Patriots",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 5,
+      "id": "401127932",
+      "winner": "Carolina Panthers",
+      "baselinePick": "Carolina Panthers",
+      "candidatePick": "Carolina Panthers",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 5,
+      "id": "401127958",
+      "winner": "Arizona Cardinals",
+      "baselinePick": "Arizona Cardinals",
+      "candidatePick": "Arizona Cardinals",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 5,
+      "id": "401127960",
+      "winner": "Houston Texans",
+      "baselinePick": "Houston Texans",
+      "candidatePick": "Houston Texans",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 5,
+      "id": "401127965",
+      "winner": "New Orleans Saints",
+      "baselinePick": "Tampa Bay Buccaneers",
+      "candidatePick": "Tampa Bay Buccaneers",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 5,
+      "id": "401127971",
+      "winner": "Minnesota Vikings",
+      "baselinePick": "Minnesota Vikings",
+      "candidatePick": "Minnesota Vikings",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 5,
+      "id": "401128001",
+      "winner": "Oakland Raiders",
+      "baselinePick": "Chicago Bears",
+      "candidatePick": "Chicago Bears",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 5,
+      "id": "401128006",
+      "winner": "Philadelphia Eagles",
+      "baselinePick": "Philadelphia Eagles",
+      "candidatePick": "Philadelphia Eagles",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 5,
+      "id": "401128011",
+      "winner": "Baltimore Ravens",
+      "baselinePick": "Baltimore Ravens",
+      "candidatePick": "Baltimore Ravens",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 5,
+      "id": "401128014",
+      "winner": "Buffalo Bills",
+      "baselinePick": "Tennessee Titans",
+      "candidatePick": "Tennessee Titans",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 5,
+      "id": "401128019",
+      "winner": "Denver Broncos",
+      "baselinePick": "Los Angeles Chargers",
+      "candidatePick": "Los Angeles Chargers",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 5,
+      "id": "401128029",
+      "winner": "Green Bay Packers",
+      "baselinePick": "Dallas Cowboys",
+      "candidatePick": "Dallas Cowboys",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 5,
+      "id": "401128053",
+      "winner": "Indianapolis Colts",
+      "baselinePick": "Kansas City Chiefs",
+      "candidatePick": "Kansas City Chiefs",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 5,
+      "id": "401128062",
+      "winner": "San Francisco 49ers",
+      "baselinePick": "San Francisco 49ers",
+      "candidatePick": "San Francisco 49ers",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 6,
+      "id": "401127917",
+      "winner": "New England Patriots",
+      "baselinePick": "New England Patriots",
+      "candidatePick": "New England Patriots",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 6,
+      "id": "401128096",
+      "winner": "Carolina Panthers",
+      "baselinePick": "Carolina Panthers",
+      "candidatePick": "Carolina Panthers",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 6,
+      "id": "401128105",
+      "winner": "Baltimore Ravens",
+      "baselinePick": "Baltimore Ravens",
+      "candidatePick": "Baltimore Ravens",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 6,
+      "id": "401128111",
+      "winner": "Seattle Seahawks",
+      "baselinePick": "Seattle Seahawks",
+      "candidatePick": "Seattle Seahawks",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 6,
+      "id": "401128116",
+      "winner": "New Orleans Saints",
+      "baselinePick": "New Orleans Saints",
+      "candidatePick": "Jacksonville Jaguars",
+      "baselineCorrect": true,
+      "candidateCorrect": false
+    },
+    {
+      "week": 6,
+      "id": "401128119",
+      "winner": "Houston Texans",
+      "baselinePick": "Kansas City Chiefs",
+      "candidatePick": "Kansas City Chiefs",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 6,
+      "id": "401128121",
+      "winner": "Washington",
+      "baselinePick": "Washington",
+      "candidatePick": "Washington",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 6,
+      "id": "401128123",
+      "winner": "Minnesota Vikings",
+      "baselinePick": "Minnesota Vikings",
+      "candidatePick": "Minnesota Vikings",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 6,
+      "id": "401128126",
+      "winner": "Arizona Cardinals",
+      "baselinePick": "Arizona Cardinals",
+      "candidatePick": "Arizona Cardinals",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 6,
+      "id": "401128128",
+      "winner": "San Francisco 49ers",
+      "baselinePick": "San Francisco 49ers",
+      "candidatePick": "San Francisco 49ers",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 6,
+      "id": "401128129",
+      "winner": "Denver Broncos",
+      "baselinePick": "Tennessee Titans",
+      "candidatePick": "Tennessee Titans",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 6,
+      "id": "401128130",
+      "winner": "New York Jets",
+      "baselinePick": "Dallas Cowboys",
+      "candidatePick": "Dallas Cowboys",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 6,
+      "id": "401128131",
+      "winner": "Pittsburgh Steelers",
+      "baselinePick": "Los Angeles Chargers",
+      "candidatePick": "Los Angeles Chargers",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 6,
+      "id": "401128132",
+      "winner": "Green Bay Packers",
+      "baselinePick": "Green Bay Packers",
+      "candidatePick": "Green Bay Packers",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 7,
+      "id": "401127902",
+      "winner": "Kansas City Chiefs",
+      "baselinePick": "Denver Broncos",
+      "candidatePick": "Kansas City Chiefs",
+      "baselineCorrect": false,
+      "candidateCorrect": true
+    },
+    {
+      "week": 7,
+      "id": "401127940",
+      "winner": "Los Angeles Rams",
+      "baselinePick": "Los Angeles Rams",
+      "candidatePick": "Los Angeles Rams",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 7,
+      "id": "401127942",
+      "winner": "Buffalo Bills",
+      "baselinePick": "Buffalo Bills",
+      "candidatePick": "Buffalo Bills",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 7,
+      "id": "401127945",
+      "winner": "Jacksonville Jaguars",
+      "baselinePick": "Jacksonville Jaguars",
+      "candidatePick": "Jacksonville Jaguars",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 7,
+      "id": "401127947",
+      "winner": "Minnesota Vikings",
+      "baselinePick": "Minnesota Vikings",
+      "candidatePick": "Minnesota Vikings",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 7,
+      "id": "401127949",
+      "winner": "Green Bay Packers",
+      "baselinePick": "Green Bay Packers",
+      "candidatePick": "Green Bay Packers",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 7,
+      "id": "401127951",
+      "winner": "Indianapolis Colts",
+      "baselinePick": "Houston Texans",
+      "candidatePick": "Houston Texans",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 7,
+      "id": "401127974",
+      "winner": "Arizona Cardinals",
+      "baselinePick": "Arizona Cardinals",
+      "candidatePick": "Arizona Cardinals",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 7,
+      "id": "401127977",
+      "winner": "San Francisco 49ers",
+      "baselinePick": "San Francisco 49ers",
+      "candidatePick": "San Francisco 49ers",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 7,
+      "id": "401127979",
+      "winner": "Tennessee Titans",
+      "baselinePick": "Tennessee Titans",
+      "candidatePick": "Tennessee Titans",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 7,
+      "id": "401127982",
+      "winner": "New Orleans Saints",
+      "baselinePick": "Chicago Bears",
+      "candidatePick": "Chicago Bears",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 7,
+      "id": "401127985",
+      "winner": "Baltimore Ravens",
+      "baselinePick": "Seattle Seahawks",
+      "candidatePick": "Baltimore Ravens",
+      "baselineCorrect": false,
+      "candidateCorrect": true
+    },
+    {
+      "week": 7,
+      "id": "401127987",
+      "winner": "Dallas Cowboys",
+      "baselinePick": "Dallas Cowboys",
+      "candidatePick": "Dallas Cowboys",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 7,
+      "id": "401127894",
+      "winner": "New England Patriots",
+      "baselinePick": "New England Patriots",
+      "candidatePick": "New England Patriots",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 8,
+      "id": "401127905",
+      "winner": "Minnesota Vikings",
+      "baselinePick": "Minnesota Vikings",
+      "candidatePick": "Minnesota Vikings",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 8,
+      "id": "401127912",
+      "winner": "Los Angeles Rams",
+      "baselinePick": "Los Angeles Rams",
+      "candidatePick": "Los Angeles Rams",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 8,
+      "id": "401128035",
+      "winner": "Seattle Seahawks",
+      "baselinePick": "Seattle Seahawks",
+      "candidatePick": "Seattle Seahawks",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 8,
+      "id": "401128037",
+      "winner": "Philadelphia Eagles",
+      "baselinePick": "Buffalo Bills",
+      "candidatePick": "Buffalo Bills",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 8,
+      "id": "401128039",
+      "winner": "Los Angeles Chargers",
+      "baselinePick": "Chicago Bears",
+      "candidatePick": "Chicago Bears",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 8,
+      "id": "401128042",
+      "winner": "Detroit Lions",
+      "baselinePick": "Detroit Lions",
+      "candidatePick": "Detroit Lions",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 8,
+      "id": "401128045",
+      "winner": "Jacksonville Jaguars",
+      "baselinePick": "Jacksonville Jaguars",
+      "candidatePick": "Jacksonville Jaguars",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 8,
+      "id": "401128046",
+      "winner": "New Orleans Saints",
+      "baselinePick": "New Orleans Saints",
+      "candidatePick": "New Orleans Saints",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 8,
+      "id": "401128048",
+      "winner": "Tennessee Titans",
+      "baselinePick": "Tennessee Titans",
+      "candidatePick": "Tennessee Titans",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 8,
+      "id": "401128051",
+      "winner": "Indianapolis Colts",
+      "baselinePick": "Indianapolis Colts",
+      "candidatePick": "Indianapolis Colts",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 8,
+      "id": "401128050",
+      "winner": "San Francisco 49ers",
+      "baselinePick": "San Francisco 49ers",
+      "candidatePick": "San Francisco 49ers",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 8,
+      "id": "401127895",
+      "winner": "New England Patriots",
+      "baselinePick": "New England Patriots",
+      "candidatePick": "New England Patriots",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 8,
+      "id": "401128043",
+      "winner": "Houston Texans",
+      "baselinePick": "Houston Texans",
+      "candidatePick": "Houston Texans",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 8,
+      "id": "401128073",
+      "winner": "Green Bay Packers",
+      "baselinePick": "Kansas City Chiefs",
+      "candidatePick": "Kansas City Chiefs",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 8,
+      "id": "401128074",
+      "winner": "Pittsburgh Steelers",
+      "baselinePick": "Pittsburgh Steelers",
+      "candidatePick": "Pittsburgh Steelers",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 9,
+      "id": "401127908",
+      "winner": "San Francisco 49ers",
+      "baselinePick": "San Francisco 49ers",
+      "candidatePick": "San Francisco 49ers",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 9,
+      "id": "401127936",
+      "winner": "Houston Texans",
+      "baselinePick": "Jacksonville Jaguars",
+      "candidatePick": "Houston Texans",
+      "baselineCorrect": false,
+      "candidateCorrect": true
+    },
+    {
+      "week": 9,
+      "id": "401128076",
+      "winner": "Buffalo Bills",
+      "baselinePick": "Buffalo Bills",
+      "candidatePick": "Buffalo Bills",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 9,
+      "id": "401128078",
+      "winner": "Carolina Panthers",
+      "baselinePick": "Tennessee Titans",
+      "candidatePick": "Tennessee Titans",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 9,
+      "id": "401128079",
+      "winner": "Kansas City Chiefs",
+      "baselinePick": "Minnesota Vikings",
+      "candidatePick": "Minnesota Vikings",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 9,
+      "id": "401128080",
+      "winner": "Miami Dolphins",
+      "baselinePick": "New York Jets",
+      "candidatePick": "New York Jets",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 9,
+      "id": "401128082",
+      "winner": "Philadelphia Eagles",
+      "baselinePick": "Chicago Bears",
+      "candidatePick": "Philadelphia Eagles",
+      "baselineCorrect": false,
+      "candidateCorrect": true
+    },
+    {
+      "week": 9,
+      "id": "401128083",
+      "winner": "Pittsburgh Steelers",
+      "baselinePick": "Pittsburgh Steelers",
+      "candidatePick": "Pittsburgh Steelers",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 9,
+      "id": "401128085",
+      "winner": "Oakland Raiders",
+      "baselinePick": "Detroit Lions",
+      "candidatePick": "Detroit Lions",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 9,
+      "id": "401128087",
+      "winner": "Seattle Seahawks",
+      "baselinePick": "Seattle Seahawks",
+      "candidatePick": "Seattle Seahawks",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 9,
+      "id": "401128088",
+      "winner": "Denver Broncos",
+      "baselinePick": "Denver Broncos",
+      "candidatePick": "Denver Broncos",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 9,
+      "id": "401128090",
+      "winner": "Los Angeles Chargers",
+      "baselinePick": "Green Bay Packers",
+      "candidatePick": "Green Bay Packers",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 9,
+      "id": "401127899",
+      "winner": "Baltimore Ravens",
+      "baselinePick": "New England Patriots",
+      "candidatePick": "New England Patriots",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 9,
+      "id": "401128091",
+      "winner": "Dallas Cowboys",
+      "baselinePick": "Dallas Cowboys",
+      "candidatePick": "Dallas Cowboys",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 10,
+      "id": "401127907",
+      "winner": "Oakland Raiders",
+      "baselinePick": "Los Angeles Chargers",
+      "candidatePick": "Los Angeles Chargers",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 10,
+      "id": "401127911",
+      "winner": "Chicago Bears",
+      "baselinePick": "Chicago Bears",
+      "candidatePick": "Chicago Bears",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 10,
+      "id": "401127934",
+      "winner": "Baltimore Ravens",
+      "baselinePick": "Baltimore Ravens",
+      "candidatePick": "Baltimore Ravens",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 10,
+      "id": "401127939",
+      "winner": "Cleveland Browns",
+      "baselinePick": "Buffalo Bills",
+      "candidatePick": "Buffalo Bills",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 10,
+      "id": "401127948",
+      "winner": "Atlanta Falcons",
+      "baselinePick": "New Orleans Saints",
+      "candidatePick": "New Orleans Saints",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 10,
+      "id": "401127952",
+      "winner": "New York Jets",
+      "baselinePick": "New York Giants",
+      "candidatePick": "New York Giants",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 10,
+      "id": "401127976",
+      "winner": "Tampa Bay Buccaneers",
+      "baselinePick": "Tampa Bay Buccaneers",
+      "candidatePick": "Tampa Bay Buccaneers",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 10,
+      "id": "401127981",
+      "winner": "Tennessee Titans",
+      "baselinePick": "Kansas City Chiefs",
+      "candidatePick": "Kansas City Chiefs",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 10,
+      "id": "401127986",
+      "winner": "Miami Dolphins",
+      "baselinePick": "Indianapolis Colts",
+      "candidatePick": "Indianapolis Colts",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 10,
+      "id": "401127944",
+      "winner": "Green Bay Packers",
+      "baselinePick": "Green Bay Packers",
+      "candidatePick": "Green Bay Packers",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 10,
+      "id": "401127989",
+      "winner": "Pittsburgh Steelers",
+      "baselinePick": "Los Angeles Rams",
+      "candidatePick": "Los Angeles Rams",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 10,
+      "id": "401128041",
+      "winner": "Minnesota Vikings",
+      "baselinePick": "Dallas Cowboys",
+      "candidatePick": "Dallas Cowboys",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 10,
+      "id": "401127992",
+      "winner": "Seattle Seahawks",
+      "baselinePick": "San Francisco 49ers",
+      "candidatePick": "San Francisco 49ers",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 11,
+      "id": "401128044",
+      "winner": "Cleveland Browns",
+      "baselinePick": "Pittsburgh Steelers",
+      "candidatePick": "Pittsburgh Steelers",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 11,
+      "id": "401128047",
+      "winner": "Baltimore Ravens",
+      "baselinePick": "Baltimore Ravens",
+      "candidatePick": "Baltimore Ravens",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 11,
+      "id": "401128049",
+      "winner": "Atlanta Falcons",
+      "baselinePick": "Carolina Panthers",
+      "candidatePick": "Carolina Panthers",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 11,
+      "id": "401128052",
+      "winner": "Dallas Cowboys",
+      "baselinePick": "Dallas Cowboys",
+      "candidatePick": "Dallas Cowboys",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 11,
+      "id": "401128075",
+      "winner": "Indianapolis Colts",
+      "baselinePick": "Indianapolis Colts",
+      "candidatePick": "Indianapolis Colts",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 11,
+      "id": "401128077",
+      "winner": "Buffalo Bills",
+      "baselinePick": "Buffalo Bills",
+      "candidatePick": "Buffalo Bills",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 11,
+      "id": "401128081",
+      "winner": "Minnesota Vikings",
+      "baselinePick": "Minnesota Vikings",
+      "candidatePick": "Minnesota Vikings",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 11,
+      "id": "401128084",
+      "winner": "New Orleans Saints",
+      "baselinePick": "New Orleans Saints",
+      "candidatePick": "New Orleans Saints",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 11,
+      "id": "401128086",
+      "winner": "New York Jets",
+      "baselinePick": "New York Jets",
+      "candidatePick": "Washington",
+      "baselineCorrect": true,
+      "candidateCorrect": false
+    },
+    {
+      "week": 11,
+      "id": "401128089",
+      "winner": "San Francisco 49ers",
+      "baselinePick": "San Francisco 49ers",
+      "candidatePick": "San Francisco 49ers",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 11,
+      "id": "401127897",
+      "winner": "New England Patriots",
+      "baselinePick": "New England Patriots",
+      "candidatePick": "New England Patriots",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 11,
+      "id": "401128092",
+      "winner": "Oakland Raiders",
+      "baselinePick": "Oakland Raiders",
+      "candidatePick": "Oakland Raiders",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 11,
+      "id": "401128133",
+      "winner": "Los Angeles Rams",
+      "baselinePick": "Los Angeles Rams",
+      "candidatePick": "Los Angeles Rams",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 11,
+      "id": "401128134",
+      "winner": "Kansas City Chiefs",
+      "baselinePick": "Los Angeles Chargers",
+      "candidatePick": "Kansas City Chiefs",
+      "baselineCorrect": false,
+      "candidateCorrect": true
+    },
+    {
+      "week": 12,
+      "id": "401127865",
+      "winner": "Houston Texans",
+      "baselinePick": "Indianapolis Colts",
+      "candidatePick": "Houston Texans",
+      "baselineCorrect": false,
+      "candidateCorrect": true
+    },
+    {
+      "week": 12,
+      "id": "401127870",
+      "winner": "Tampa Bay Buccaneers",
+      "baselinePick": "Atlanta Falcons",
+      "candidatePick": "Atlanta Falcons",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 12,
+      "id": "401127872",
+      "winner": "Buffalo Bills",
+      "baselinePick": "Buffalo Bills",
+      "candidatePick": "Buffalo Bills",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 12,
+      "id": "401127914",
+      "winner": "Chicago Bears",
+      "baselinePick": "Chicago Bears",
+      "candidatePick": "Chicago Bears",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 12,
+      "id": "401127918",
+      "winner": "Pittsburgh Steelers",
+      "baselinePick": "Pittsburgh Steelers",
+      "candidatePick": "Pittsburgh Steelers",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 12,
+      "id": "401127919",
+      "winner": "Cleveland Browns",
+      "baselinePick": "Cleveland Browns",
+      "candidatePick": "Cleveland Browns",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 12,
+      "id": "401127922",
+      "winner": "New Orleans Saints",
+      "baselinePick": "New Orleans Saints",
+      "candidatePick": "New Orleans Saints",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 12,
+      "id": "401127924",
+      "winner": "New York Jets",
+      "baselinePick": "Oakland Raiders",
+      "candidatePick": "Oakland Raiders",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 12,
+      "id": "401127996",
+      "winner": "Washington",
+      "baselinePick": "Detroit Lions",
+      "candidatePick": "Detroit Lions",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 12,
+      "id": "401128008",
+      "winner": "Seattle Seahawks",
+      "baselinePick": "Philadelphia Eagles",
+      "candidatePick": "Seattle Seahawks",
+      "baselineCorrect": false,
+      "candidateCorrect": true
+    },
+    {
+      "week": 12,
+      "id": "401128000",
+      "winner": "Tennessee Titans",
+      "baselinePick": "Tennessee Titans",
+      "candidatePick": "Tennessee Titans",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 12,
+      "id": "401127957",
+      "winner": "New England Patriots",
+      "baselinePick": "New England Patriots",
+      "candidatePick": "New England Patriots",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 12,
+      "id": "401128004",
+      "winner": "San Francisco 49ers",
+      "baselinePick": "San Francisco 49ers",
+      "candidatePick": "San Francisco 49ers",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 12,
+      "id": "401128012",
+      "winner": "Baltimore Ravens",
+      "baselinePick": "Baltimore Ravens",
+      "candidatePick": "Baltimore Ravens",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 13,
+      "id": "401128015",
+      "winner": "Chicago Bears",
+      "baselinePick": "Chicago Bears",
+      "candidatePick": "Chicago Bears",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 13,
+      "id": "401128017",
+      "winner": "Buffalo Bills",
+      "baselinePick": "Dallas Cowboys",
+      "candidatePick": "Dallas Cowboys",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 13,
+      "id": "401128022",
+      "winner": "New Orleans Saints",
+      "baselinePick": "New Orleans Saints",
+      "candidatePick": "New Orleans Saints",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 13,
+      "id": "401128027",
+      "winner": "Baltimore Ravens",
+      "baselinePick": "Baltimore Ravens",
+      "candidatePick": "Baltimore Ravens",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 13,
+      "id": "401128032",
+      "winner": "Washington",
+      "baselinePick": "Carolina Panthers",
+      "candidatePick": "Carolina Panthers",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 13,
+      "id": "401128057",
+      "winner": "Cincinnati Bengals",
+      "baselinePick": "New York Jets",
+      "candidatePick": "New York Jets",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 13,
+      "id": "401128058",
+      "winner": "Tennessee Titans",
+      "baselinePick": "Indianapolis Colts",
+      "candidatePick": "Indianapolis Colts",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 13,
+      "id": "401128063",
+      "winner": "Tampa Bay Buccaneers",
+      "baselinePick": "Tampa Bay Buccaneers",
+      "candidatePick": "Tampa Bay Buccaneers",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 13,
+      "id": "401128070",
+      "winner": "Miami Dolphins",
+      "baselinePick": "Philadelphia Eagles",
+      "candidatePick": "Philadelphia Eagles",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 13,
+      "id": "401128095",
+      "winner": "Green Bay Packers",
+      "baselinePick": "Green Bay Packers",
+      "candidatePick": "Green Bay Packers",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 13,
+      "id": "401128107",
+      "winner": "Pittsburgh Steelers",
+      "baselinePick": "Cleveland Browns",
+      "candidatePick": "Pittsburgh Steelers",
+      "baselineCorrect": false,
+      "candidateCorrect": true
+    },
+    {
+      "week": 13,
+      "id": "401128100",
+      "winner": "Los Angeles Rams",
+      "baselinePick": "Los Angeles Rams",
+      "candidatePick": "Los Angeles Rams",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 13,
+      "id": "401128067",
+      "winner": "Kansas City Chiefs",
+      "baselinePick": "Kansas City Chiefs",
+      "candidatePick": "Kansas City Chiefs",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 13,
+      "id": "401128104",
+      "winner": "Denver Broncos",
+      "baselinePick": "Los Angeles Chargers",
+      "candidatePick": "Los Angeles Chargers",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 13,
+      "id": "401127967",
+      "winner": "Houston Texans",
+      "baselinePick": "New England Patriots",
+      "candidatePick": "New England Patriots",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 13,
+      "id": "401128112",
+      "winner": "Seattle Seahawks",
+      "baselinePick": "Minnesota Vikings",
+      "candidatePick": "Minnesota Vikings",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 14,
+      "id": "401127871",
+      "winner": "Chicago Bears",
+      "baselinePick": "Dallas Cowboys",
+      "candidatePick": "Dallas Cowboys",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 14,
+      "id": "401127867",
+      "winner": "Cleveland Browns",
+      "baselinePick": "Cleveland Browns",
+      "candidatePick": "Cleveland Browns",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 14,
+      "id": "401127868",
+      "winner": "Baltimore Ravens",
+      "baselinePick": "Baltimore Ravens",
+      "candidatePick": "Baltimore Ravens",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 14,
+      "id": "401127869",
+      "winner": "Atlanta Falcons",
+      "baselinePick": "Atlanta Falcons",
+      "candidatePick": "Carolina Panthers",
+      "baselineCorrect": true,
+      "candidateCorrect": false
+    },
+    {
+      "week": 14,
+      "id": "401127916",
+      "winner": "Green Bay Packers",
+      "baselinePick": "Green Bay Packers",
+      "candidatePick": "Green Bay Packers",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 14,
+      "id": "401127920",
+      "winner": "Denver Broncos",
+      "baselinePick": "Houston Texans",
+      "candidatePick": "Houston Texans",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 14,
+      "id": "401127926",
+      "winner": "Minnesota Vikings",
+      "baselinePick": "Minnesota Vikings",
+      "candidatePick": "Minnesota Vikings",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 14,
+      "id": "401127964",
+      "winner": "San Francisco 49ers",
+      "baselinePick": "San Francisco 49ers",
+      "candidatePick": "San Francisco 49ers",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 14,
+      "id": "401127969",
+      "winner": "New York Jets",
+      "baselinePick": "New York Jets",
+      "candidatePick": "New York Jets",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 14,
+      "id": "401127994",
+      "winner": "Tampa Bay Buccaneers",
+      "baselinePick": "Tampa Bay Buccaneers",
+      "candidatePick": "Tampa Bay Buccaneers",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 14,
+      "id": "401127997",
+      "winner": "Los Angeles Chargers",
+      "baselinePick": "Los Angeles Chargers",
+      "candidatePick": "Los Angeles Chargers",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 14,
+      "id": "401127930",
+      "winner": "Kansas City Chiefs",
+      "baselinePick": "New England Patriots",
+      "candidatePick": "New England Patriots",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 14,
+      "id": "401128002",
+      "winner": "Pittsburgh Steelers",
+      "baselinePick": "Pittsburgh Steelers",
+      "candidatePick": "Pittsburgh Steelers",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 14,
+      "id": "401128005",
+      "winner": "Tennessee Titans",
+      "baselinePick": "Tennessee Titans",
+      "candidatePick": "Tennessee Titans",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 14,
+      "id": "401128009",
+      "winner": "Los Angeles Rams",
+      "baselinePick": "Seattle Seahawks",
+      "candidatePick": "Los Angeles Rams",
+      "baselineCorrect": false,
+      "candidateCorrect": true
+    },
+    {
+      "week": 14,
+      "id": "401128013",
+      "winner": "Philadelphia Eagles",
+      "baselinePick": "Philadelphia Eagles",
+      "candidatePick": "Philadelphia Eagles",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 15,
+      "id": "401128020",
+      "winner": "Baltimore Ravens",
+      "baselinePick": "Baltimore Ravens",
+      "candidatePick": "Baltimore Ravens",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 15,
+      "id": "401127955",
+      "winner": "New England Patriots",
+      "baselinePick": "New England Patriots",
+      "candidatePick": "New England Patriots",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 15,
+      "id": "401128024",
+      "winner": "Seattle Seahawks",
+      "baselinePick": "Seattle Seahawks",
+      "candidatePick": "Seattle Seahawks",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 15,
+      "id": "401128028",
+      "winner": "Tampa Bay Buccaneers",
+      "baselinePick": "Tampa Bay Buccaneers",
+      "candidatePick": "Tampa Bay Buccaneers",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 15,
+      "id": "401128031",
+      "winner": "Green Bay Packers",
+      "baselinePick": "Green Bay Packers",
+      "candidatePick": "Green Bay Packers",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 15,
+      "id": "401128056",
+      "winner": "Kansas City Chiefs",
+      "baselinePick": "Kansas City Chiefs",
+      "candidatePick": "Kansas City Chiefs",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 15,
+      "id": "401128060",
+      "winner": "New York Giants",
+      "baselinePick": "New York Giants",
+      "candidatePick": "New York Giants",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 15,
+      "id": "401128068",
+      "winner": "Houston Texans",
+      "baselinePick": "Tennessee Titans",
+      "candidatePick": "Tennessee Titans",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 15,
+      "id": "401128071",
+      "winner": "Philadelphia Eagles",
+      "baselinePick": "Philadelphia Eagles",
+      "candidatePick": "Philadelphia Eagles",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 15,
+      "id": "401128094",
+      "winner": "Arizona Cardinals",
+      "baselinePick": "Cleveland Browns",
+      "candidatePick": "Cleveland Browns",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 15,
+      "id": "401128099",
+      "winner": "Jacksonville Jaguars",
+      "baselinePick": "Oakland Raiders",
+      "candidatePick": "Oakland Raiders",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 15,
+      "id": "401128113",
+      "winner": "Minnesota Vikings",
+      "baselinePick": "Los Angeles Chargers",
+      "candidatePick": "Minnesota Vikings",
+      "baselineCorrect": false,
+      "candidateCorrect": true
+    },
+    {
+      "week": 15,
+      "id": "401128103",
+      "winner": "Dallas Cowboys",
+      "baselinePick": "Los Angeles Rams",
+      "candidatePick": "Dallas Cowboys",
+      "baselineCorrect": false,
+      "candidateCorrect": true
+    },
+    {
+      "week": 15,
+      "id": "401128108",
+      "winner": "Atlanta Falcons",
+      "baselinePick": "San Francisco 49ers",
+      "candidatePick": "San Francisco 49ers",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 15,
+      "id": "401128065",
+      "winner": "Buffalo Bills",
+      "baselinePick": "Buffalo Bills",
+      "candidatePick": "Buffalo Bills",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 15,
+      "id": "401128117",
+      "winner": "New Orleans Saints",
+      "baselinePick": "New Orleans Saints",
+      "candidatePick": "New Orleans Saints",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 16,
+      "id": "401127901",
+      "winner": "Houston Texans",
+      "baselinePick": "Tampa Bay Buccaneers",
+      "candidatePick": "Tampa Bay Buccaneers",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 16,
+      "id": "401127898",
+      "winner": "New England Patriots",
+      "baselinePick": "New England Patriots",
+      "candidatePick": "New England Patriots",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 16,
+      "id": "401127900",
+      "winner": "San Francisco 49ers",
+      "baselinePick": "San Francisco 49ers",
+      "candidatePick": "San Francisco 49ers",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 16,
+      "id": "401127903",
+      "winner": "Atlanta Falcons",
+      "baselinePick": "Atlanta Falcons",
+      "candidatePick": "Atlanta Falcons",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 16,
+      "id": "401127904",
+      "winner": "Baltimore Ravens",
+      "baselinePick": "Baltimore Ravens",
+      "candidatePick": "Baltimore Ravens",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 16,
+      "id": "401127906",
+      "winner": "Indianapolis Colts",
+      "baselinePick": "Indianapolis Colts",
+      "candidatePick": "Indianapolis Colts",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 16,
+      "id": "401127910",
+      "winner": "Miami Dolphins",
+      "baselinePick": "Cincinnati Bengals",
+      "candidatePick": "Cincinnati Bengals",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 16,
+      "id": "401127933",
+      "winner": "New York Jets",
+      "baselinePick": "Pittsburgh Steelers",
+      "candidatePick": "Pittsburgh Steelers",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 16,
+      "id": "401127935",
+      "winner": "New Orleans Saints",
+      "baselinePick": "Tennessee Titans",
+      "candidatePick": "Tennessee Titans",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 16,
+      "id": "401127937",
+      "winner": "New York Giants",
+      "baselinePick": "New York Giants",
+      "candidatePick": "New York Giants",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 16,
+      "id": "401127893",
+      "winner": "Denver Broncos",
+      "baselinePick": "Denver Broncos",
+      "candidatePick": "Denver Broncos",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 16,
+      "id": "401127896",
+      "winner": "Oakland Raiders",
+      "baselinePick": "Los Angeles Chargers",
+      "candidatePick": "Los Angeles Chargers",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 16,
+      "id": "401127938",
+      "winner": "Philadelphia Eagles",
+      "baselinePick": "Dallas Cowboys",
+      "candidatePick": "Dallas Cowboys",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 16,
+      "id": "401127941",
+      "winner": "Arizona Cardinals",
+      "baselinePick": "Seattle Seahawks",
+      "candidatePick": "Seattle Seahawks",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 16,
+      "id": "401127943",
+      "winner": "Kansas City Chiefs",
+      "baselinePick": "Kansas City Chiefs",
+      "candidatePick": "Kansas City Chiefs",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 16,
+      "id": "401127946",
+      "winner": "Green Bay Packers",
+      "baselinePick": "Minnesota Vikings",
+      "candidatePick": "Minnesota Vikings",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 17,
+      "id": "401127909",
+      "winner": "Miami Dolphins",
+      "baselinePick": "New England Patriots",
+      "candidatePick": "New England Patriots",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 17,
+      "id": "401127973",
+      "winner": "New York Jets",
+      "baselinePick": "Buffalo Bills",
+      "candidatePick": "Buffalo Bills",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 17,
+      "id": "401127975",
+      "winner": "New Orleans Saints",
+      "baselinePick": "New Orleans Saints",
+      "candidatePick": "New Orleans Saints",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 17,
+      "id": "401127978",
+      "winner": "Cincinnati Bengals",
+      "baselinePick": "Cleveland Browns",
+      "candidatePick": "Cleveland Browns",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 17,
+      "id": "401127983",
+      "winner": "Green Bay Packers",
+      "baselinePick": "Green Bay Packers",
+      "candidatePick": "Green Bay Packers",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 17,
+      "id": "401127990",
+      "winner": "Kansas City Chiefs",
+      "baselinePick": "Kansas City Chiefs",
+      "candidatePick": "Kansas City Chiefs",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 17,
+      "id": "401127991",
+      "winner": "Chicago Bears",
+      "baselinePick": "Minnesota Vikings",
+      "candidatePick": "Minnesota Vikings",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 17,
+      "id": "401128034",
+      "winner": "Atlanta Falcons",
+      "baselinePick": "Tampa Bay Buccaneers",
+      "candidatePick": "Tampa Bay Buccaneers",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 17,
+      "id": "401127950",
+      "winner": "Baltimore Ravens",
+      "baselinePick": "Baltimore Ravens",
+      "candidatePick": "Baltimore Ravens",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 17,
+      "id": "401127980",
+      "winner": "Dallas Cowboys",
+      "baselinePick": "Dallas Cowboys",
+      "candidatePick": "Dallas Cowboys",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 17,
+      "id": "401127984",
+      "winner": "Tennessee Titans",
+      "baselinePick": "Tennessee Titans",
+      "candidatePick": "Tennessee Titans",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 17,
+      "id": "401127988",
+      "winner": "Jacksonville Jaguars",
+      "baselinePick": "Indianapolis Colts",
+      "candidatePick": "Indianapolis Colts",
+      "baselineCorrect": false,
+      "candidateCorrect": false
+    },
+    {
+      "week": 17,
+      "id": "401128033",
+      "winner": "Philadelphia Eagles",
+      "baselinePick": "Philadelphia Eagles",
+      "candidatePick": "Philadelphia Eagles",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 17,
+      "id": "401128036",
+      "winner": "Denver Broncos",
+      "baselinePick": "Denver Broncos",
+      "candidatePick": "Denver Broncos",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 17,
+      "id": "401128038",
+      "winner": "Los Angeles Rams",
+      "baselinePick": "Los Angeles Rams",
+      "candidatePick": "Los Angeles Rams",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    },
+    {
+      "week": 17,
+      "id": "401128040",
+      "winner": "San Francisco 49ers",
+      "baselinePick": "San Francisco 49ers",
+      "candidatePick": "San Francisco 49ers",
+      "baselineCorrect": true,
+      "candidateCorrect": true
+    }
+  ],
+  "productionModelChanged": false,
+  "evaluatedAt": "2026-10-17T10:43:39.744183+00:00"
+}
