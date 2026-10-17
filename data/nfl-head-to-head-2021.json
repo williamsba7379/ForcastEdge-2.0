@@ -1,0 +1,2746 @@
+{
+  "status": "Retrospective head-to-head audit on previously inspected 2021 results, not independent validation",
+  "comparison": "2.0 abstains on games with fewer than two prior games for either team; 2.1 supplies previous-season fallback. Both methods use the same prediction on shared eligible games.",
+  "all": {
+    "games": 271,
+    "originalGraded": 239,
+    "originalCorrect": 145,
+    "originalAccuracyOnEligible": 0.6067,
+    "revisedCorrect": 164,
+    "revisedAccuracy": 0.6052
+  },
+  "commonGames": {
+    "games": 239,
+    "originalGraded": 239,
+    "originalCorrect": 145,
+    "originalAccuracyOnEligible": 0.6067,
+    "revisedCorrect": 145,
+    "revisedAccuracy": 0.6067
+  },
+  "earlyCoverage": {
+    "games": 32,
+    "originalGraded": 0,
+    "originalCorrect": 0,
+    "originalAccuracyOnEligible": null,
+    "revisedCorrect": 19,
+    "revisedAccuracy": 0.5938
+  },
+  "identicalOnCommonGames": true,
+  "notes": [
+    "Different coverage makes all-games accuracy versus eligible-games accuracy not directly comparable.",
+    "2021 results have already been viewed; do not call this a fresh holdout.",
+    "Neither model is a calibrated probability model."
+  ],
+  "games": [
+    {
+      "id": "401326322",
+      "week": 1,
+      "actual": "Tampa Bay Buccaneers",
+      "originalPick": null,
+      "revisedPick": "Tampa Bay Buccaneers",
+      "originalCorrect": null,
+      "revisedCorrect": true,
+      "earlyFallback": true
+    },
+    {
+      "id": "401326308",
+      "week": 1,
+      "actual": "Pittsburgh Steelers",
+      "originalPick": null,
+      "revisedPick": "Buffalo Bills",
+      "originalCorrect": null,
+      "revisedCorrect": false,
+      "earlyFallback": true
+    },
+    {
+      "id": "401326309",
+      "week": 1,
+      "actual": "Carolina Panthers",
+      "originalPick": null,
+      "revisedPick": "Carolina Panthers",
+      "originalCorrect": null,
+      "revisedCorrect": true,
+      "earlyFallback": true
+    },
+    {
+      "id": "401326310",
+      "week": 1,
+      "actual": "Houston Texans",
+      "originalPick": null,
+      "revisedPick": "Houston Texans",
+      "originalCorrect": null,
+      "revisedCorrect": true,
+      "earlyFallback": true
+    },
+    {
+      "id": "401326311",
+      "week": 1,
+      "actual": "Arizona Cardinals",
+      "originalPick": null,
+      "revisedPick": "Tennessee Titans",
+      "originalCorrect": null,
+      "revisedCorrect": false,
+      "earlyFallback": true
+    },
+    {
+      "id": "401326312",
+      "week": 1,
+      "actual": "Los Angeles Chargers",
+      "originalPick": null,
+      "revisedPick": "Washington",
+      "originalCorrect": null,
+      "revisedCorrect": false,
+      "earlyFallback": true
+    },
+    {
+      "id": "401326315",
+      "week": 1,
+      "actual": "Philadelphia Eagles",
+      "originalPick": null,
+      "revisedPick": "Atlanta Falcons",
+      "originalCorrect": null,
+      "revisedCorrect": false,
+      "earlyFallback": true
+    },
+    {
+      "id": "401326316",
+      "week": 1,
+      "actual": "Cincinnati Bengals",
+      "originalPick": null,
+      "revisedPick": "Minnesota Vikings",
+      "originalCorrect": null,
+      "revisedCorrect": false,
+      "earlyFallback": true
+    },
+    {
+      "id": "401326317",
+      "week": 1,
+      "actual": "San Francisco 49ers",
+      "originalPick": null,
+      "revisedPick": "San Francisco 49ers",
+      "originalCorrect": null,
+      "revisedCorrect": true,
+      "earlyFallback": true
+    },
+    {
+      "id": "401326318",
+      "week": 1,
+      "actual": "Seattle Seahawks",
+      "originalPick": null,
+      "revisedPick": "Indianapolis Colts",
+      "originalCorrect": null,
+      "revisedCorrect": false,
+      "earlyFallback": true
+    },
+    {
+      "id": "401326313",
+      "week": 1,
+      "actual": "Miami Dolphins",
+      "originalPick": null,
+      "revisedPick": "Miami Dolphins",
+      "originalCorrect": null,
+      "revisedCorrect": true,
+      "earlyFallback": true
+    },
+    {
+      "id": "401326314",
+      "week": 1,
+      "actual": "Kansas City Chiefs",
+      "originalPick": null,
+      "revisedPick": "Kansas City Chiefs",
+      "originalCorrect": null,
+      "revisedCorrect": true,
+      "earlyFallback": true
+    },
+    {
+      "id": "401326319",
+      "week": 1,
+      "actual": "New Orleans Saints",
+      "originalPick": null,
+      "revisedPick": "New Orleans Saints",
+      "originalCorrect": null,
+      "revisedCorrect": true,
+      "earlyFallback": true
+    },
+    {
+      "id": "401326320",
+      "week": 1,
+      "actual": "Denver Broncos",
+      "originalPick": null,
+      "revisedPick": "New York Giants",
+      "originalCorrect": null,
+      "revisedCorrect": false,
+      "earlyFallback": true
+    },
+    {
+      "id": "401326323",
+      "week": 1,
+      "actual": "Los Angeles Rams",
+      "originalPick": null,
+      "revisedPick": "Los Angeles Rams",
+      "originalCorrect": null,
+      "revisedCorrect": true,
+      "earlyFallback": true
+    },
+    {
+      "id": "401326321",
+      "week": 1,
+      "actual": "Las Vegas Raiders",
+      "originalPick": null,
+      "revisedPick": "Baltimore Ravens",
+      "originalCorrect": null,
+      "revisedCorrect": false,
+      "earlyFallback": true
+    },
+    {
+      "id": "401326127",
+      "week": 2,
+      "actual": "Washington",
+      "originalPick": null,
+      "revisedPick": "Washington",
+      "originalCorrect": null,
+      "revisedCorrect": true,
+      "earlyFallback": true
+    },
+    {
+      "id": "401326128",
+      "week": 2,
+      "actual": "Carolina Panthers",
+      "originalPick": null,
+      "revisedPick": "New Orleans Saints",
+      "originalCorrect": null,
+      "revisedCorrect": false,
+      "earlyFallback": true
+    },
+    {
+      "id": "401326129",
+      "week": 2,
+      "actual": "Chicago Bears",
+      "originalPick": null,
+      "revisedPick": "Chicago Bears",
+      "originalCorrect": null,
+      "revisedCorrect": true,
+      "earlyFallback": true
+    },
+    {
+      "id": "401326130",
+      "week": 2,
+      "actual": "Cleveland Browns",
+      "originalPick": null,
+      "revisedPick": "Cleveland Browns",
+      "originalCorrect": null,
+      "revisedCorrect": true,
+      "earlyFallback": true
+    },
+    {
+      "id": "401326131",
+      "week": 2,
+      "actual": "Los Angeles Rams",
+      "originalPick": null,
+      "revisedPick": "Indianapolis Colts",
+      "originalCorrect": null,
+      "revisedCorrect": false,
+      "earlyFallback": true
+    },
+    {
+      "id": "401326132",
+      "week": 2,
+      "actual": "Denver Broncos",
+      "originalPick": null,
+      "revisedPick": "Denver Broncos",
+      "originalCorrect": null,
+      "revisedCorrect": true,
+      "earlyFallback": true
+    },
+    {
+      "id": "401326353",
+      "week": 2,
+      "actual": "Buffalo Bills",
+      "originalPick": null,
+      "revisedPick": "Buffalo Bills",
+      "originalCorrect": null,
+      "revisedCorrect": true,
+      "earlyFallback": true
+    },
+    {
+      "id": "401326354",
+      "week": 2,
+      "actual": "New England Patriots",
+      "originalPick": null,
+      "revisedPick": "New England Patriots",
+      "originalCorrect": null,
+      "revisedCorrect": true,
+      "earlyFallback": true
+    },
+    {
+      "id": "401326355",
+      "week": 2,
+      "actual": "San Francisco 49ers",
+      "originalPick": null,
+      "revisedPick": "San Francisco 49ers",
+      "originalCorrect": null,
+      "revisedCorrect": true,
+      "earlyFallback": true
+    },
+    {
+      "id": "401326356",
+      "week": 2,
+      "actual": "Las Vegas Raiders",
+      "originalPick": null,
+      "revisedPick": "Pittsburgh Steelers",
+      "originalCorrect": null,
+      "revisedCorrect": false,
+      "earlyFallback": true
+    },
+    {
+      "id": "401326357",
+      "week": 2,
+      "actual": "Arizona Cardinals",
+      "originalPick": null,
+      "revisedPick": "Arizona Cardinals",
+      "originalCorrect": null,
+      "revisedCorrect": true,
+      "earlyFallback": true
+    },
+    {
+      "id": "401326358",
+      "week": 2,
+      "actual": "Tampa Bay Buccaneers",
+      "originalPick": null,
+      "revisedPick": "Tampa Bay Buccaneers",
+      "originalCorrect": null,
+      "revisedCorrect": true,
+      "earlyFallback": true
+    },
+    {
+      "id": "401326359",
+      "week": 2,
+      "actual": "Dallas Cowboys",
+      "originalPick": null,
+      "revisedPick": "Los Angeles Chargers",
+      "originalCorrect": null,
+      "revisedCorrect": false,
+      "earlyFallback": true
+    },
+    {
+      "id": "401326360",
+      "week": 2,
+      "actual": "Tennessee Titans",
+      "originalPick": null,
+      "revisedPick": "Seattle Seahawks",
+      "originalCorrect": null,
+      "revisedCorrect": false,
+      "earlyFallback": true
+    },
+    {
+      "id": "401326361",
+      "week": 2,
+      "actual": "Baltimore Ravens",
+      "originalPick": null,
+      "revisedPick": "Baltimore Ravens",
+      "originalCorrect": null,
+      "revisedCorrect": true,
+      "earlyFallback": true
+    },
+    {
+      "id": "401326362",
+      "week": 2,
+      "actual": "Green Bay Packers",
+      "originalPick": null,
+      "revisedPick": "Green Bay Packers",
+      "originalCorrect": null,
+      "revisedCorrect": true,
+      "earlyFallback": true
+    },
+    {
+      "id": "401326363",
+      "week": 3,
+      "actual": "Carolina Panthers",
+      "originalPick": "Carolina Panthers",
+      "revisedPick": "Carolina Panthers",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326364",
+      "week": 3,
+      "actual": "Buffalo Bills",
+      "originalPick": "Buffalo Bills",
+      "revisedPick": "Buffalo Bills",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326365",
+      "week": 3,
+      "actual": "Cleveland Browns",
+      "originalPick": "Cleveland Browns",
+      "revisedPick": "Cleveland Browns",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326366",
+      "week": 3,
+      "actual": "Baltimore Ravens",
+      "originalPick": "Baltimore Ravens",
+      "revisedPick": "Baltimore Ravens",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326367",
+      "week": 3,
+      "actual": "Arizona Cardinals",
+      "originalPick": "Arizona Cardinals",
+      "revisedPick": "Arizona Cardinals",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326368",
+      "week": 3,
+      "actual": "Los Angeles Chargers",
+      "originalPick": "Kansas City Chiefs",
+      "revisedPick": "Kansas City Chiefs",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326369",
+      "week": 3,
+      "actual": "New Orleans Saints",
+      "originalPick": "New England Patriots",
+      "revisedPick": "New England Patriots",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326370",
+      "week": 3,
+      "actual": "Atlanta Falcons",
+      "originalPick": "New York Giants",
+      "revisedPick": "New York Giants",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326371",
+      "week": 3,
+      "actual": "Cincinnati Bengals",
+      "originalPick": "Pittsburgh Steelers",
+      "revisedPick": "Pittsburgh Steelers",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326372",
+      "week": 3,
+      "actual": "Tennessee Titans",
+      "originalPick": "Indianapolis Colts",
+      "revisedPick": "Indianapolis Colts",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326373",
+      "week": 3,
+      "actual": "Denver Broncos",
+      "originalPick": "Denver Broncos",
+      "revisedPick": "Denver Broncos",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326374",
+      "week": 3,
+      "actual": "Las Vegas Raiders",
+      "originalPick": "Las Vegas Raiders",
+      "revisedPick": "Las Vegas Raiders",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326375",
+      "week": 3,
+      "actual": "Los Angeles Rams",
+      "originalPick": "Los Angeles Rams",
+      "revisedPick": "Los Angeles Rams",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326376",
+      "week": 3,
+      "actual": "Minnesota Vikings",
+      "originalPick": "Seattle Seahawks",
+      "revisedPick": "Seattle Seahawks",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326377",
+      "week": 3,
+      "actual": "Green Bay Packers",
+      "originalPick": "San Francisco 49ers",
+      "revisedPick": "San Francisco 49ers",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326378",
+      "week": 3,
+      "actual": "Dallas Cowboys",
+      "originalPick": "Philadelphia Eagles",
+      "revisedPick": "Philadelphia Eagles",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326379",
+      "week": 4,
+      "actual": "Cincinnati Bengals",
+      "originalPick": "Cincinnati Bengals",
+      "revisedPick": "Cincinnati Bengals",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326380",
+      "week": 4,
+      "actual": "Washington",
+      "originalPick": "Washington",
+      "revisedPick": "Washington",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326381",
+      "week": 4,
+      "actual": "Buffalo Bills",
+      "originalPick": "Buffalo Bills",
+      "revisedPick": "Buffalo Bills",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326382",
+      "week": 4,
+      "actual": "Chicago Bears",
+      "originalPick": "Detroit Lions",
+      "revisedPick": "Detroit Lions",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326383",
+      "week": 4,
+      "actual": "Dallas Cowboys",
+      "originalPick": "Carolina Panthers",
+      "revisedPick": "Carolina Panthers",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326384",
+      "week": 4,
+      "actual": "Indianapolis Colts",
+      "originalPick": "Indianapolis Colts",
+      "revisedPick": "Indianapolis Colts",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326385",
+      "week": 4,
+      "actual": "Cleveland Browns",
+      "originalPick": "Cleveland Browns",
+      "revisedPick": "Cleveland Browns",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326386",
+      "week": 4,
+      "actual": "New York Giants",
+      "originalPick": "New Orleans Saints",
+      "revisedPick": "New Orleans Saints",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326387",
+      "week": 4,
+      "actual": "New York Jets",
+      "originalPick": "Tennessee Titans",
+      "revisedPick": "Tennessee Titans",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326388",
+      "week": 4,
+      "actual": "Kansas City Chiefs",
+      "originalPick": "Philadelphia Eagles",
+      "revisedPick": "Philadelphia Eagles",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326389",
+      "week": 4,
+      "actual": "Arizona Cardinals",
+      "originalPick": "Arizona Cardinals",
+      "revisedPick": "Arizona Cardinals",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326390",
+      "week": 4,
+      "actual": "Seattle Seahawks",
+      "originalPick": "San Francisco 49ers",
+      "revisedPick": "San Francisco 49ers",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326391",
+      "week": 4,
+      "actual": "Baltimore Ravens",
+      "originalPick": "Denver Broncos",
+      "revisedPick": "Denver Broncos",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326392",
+      "week": 4,
+      "actual": "Green Bay Packers",
+      "originalPick": "Green Bay Packers",
+      "revisedPick": "Green Bay Packers",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326393",
+      "week": 4,
+      "actual": "Tampa Bay Buccaneers",
+      "originalPick": "Tampa Bay Buccaneers",
+      "revisedPick": "Tampa Bay Buccaneers",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326394",
+      "week": 4,
+      "actual": "Los Angeles Chargers",
+      "originalPick": "Las Vegas Raiders",
+      "revisedPick": "Las Vegas Raiders",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326395",
+      "week": 5,
+      "actual": "Los Angeles Rams",
+      "originalPick": "Los Angeles Rams",
+      "revisedPick": "Los Angeles Rams",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326324",
+      "week": 5,
+      "actual": "Atlanta Falcons",
+      "originalPick": "Atlanta Falcons",
+      "revisedPick": "Atlanta Falcons",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326396",
+      "week": 5,
+      "actual": "Philadelphia Eagles",
+      "originalPick": "Carolina Panthers",
+      "revisedPick": "Carolina Panthers",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326397",
+      "week": 5,
+      "actual": "Green Bay Packers",
+      "originalPick": "Cincinnati Bengals",
+      "revisedPick": "Cincinnati Bengals",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326398",
+      "week": 5,
+      "actual": "New England Patriots",
+      "originalPick": "New England Patriots",
+      "revisedPick": "New England Patriots",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326399",
+      "week": 5,
+      "actual": "Tennessee Titans",
+      "originalPick": "Tennessee Titans",
+      "revisedPick": "Tennessee Titans",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326400",
+      "week": 5,
+      "actual": "Minnesota Vikings",
+      "originalPick": "Minnesota Vikings",
+      "revisedPick": "Minnesota Vikings",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326401",
+      "week": 5,
+      "actual": "Pittsburgh Steelers",
+      "originalPick": "Denver Broncos",
+      "revisedPick": "Denver Broncos",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326402",
+      "week": 5,
+      "actual": "Tampa Bay Buccaneers",
+      "originalPick": "Tampa Bay Buccaneers",
+      "revisedPick": "Tampa Bay Buccaneers",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326403",
+      "week": 5,
+      "actual": "New Orleans Saints",
+      "originalPick": "New Orleans Saints",
+      "revisedPick": "New Orleans Saints",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326404",
+      "week": 5,
+      "actual": "Los Angeles Chargers",
+      "originalPick": "Cleveland Browns",
+      "revisedPick": "Cleveland Browns",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326405",
+      "week": 5,
+      "actual": "Chicago Bears",
+      "originalPick": "Las Vegas Raiders",
+      "revisedPick": "Las Vegas Raiders",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326406",
+      "week": 5,
+      "actual": "Arizona Cardinals",
+      "originalPick": "Arizona Cardinals",
+      "revisedPick": "Arizona Cardinals",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326407",
+      "week": 5,
+      "actual": "Dallas Cowboys",
+      "originalPick": "Dallas Cowboys",
+      "revisedPick": "Dallas Cowboys",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326408",
+      "week": 5,
+      "actual": "Buffalo Bills",
+      "originalPick": "Buffalo Bills",
+      "revisedPick": "Buffalo Bills",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326409",
+      "week": 5,
+      "actual": "Baltimore Ravens",
+      "originalPick": "Baltimore Ravens",
+      "revisedPick": "Baltimore Ravens",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326410",
+      "week": 6,
+      "actual": "Tampa Bay Buccaneers",
+      "originalPick": "Tampa Bay Buccaneers",
+      "revisedPick": "Tampa Bay Buccaneers",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326325",
+      "week": 6,
+      "actual": "Jacksonville Jaguars",
+      "originalPick": "Jacksonville Jaguars",
+      "revisedPick": "Jacksonville Jaguars",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326411",
+      "week": 6,
+      "actual": "Baltimore Ravens",
+      "originalPick": "Baltimore Ravens",
+      "revisedPick": "Baltimore Ravens",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326412",
+      "week": 6,
+      "actual": "Minnesota Vikings",
+      "originalPick": "Carolina Panthers",
+      "revisedPick": "Carolina Panthers",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326413",
+      "week": 6,
+      "actual": "Green Bay Packers",
+      "originalPick": "Green Bay Packers",
+      "revisedPick": "Green Bay Packers",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326414",
+      "week": 6,
+      "actual": "Cincinnati Bengals",
+      "originalPick": "Cincinnati Bengals",
+      "revisedPick": "Cincinnati Bengals",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326415",
+      "week": 6,
+      "actual": "Indianapolis Colts",
+      "originalPick": "Indianapolis Colts",
+      "revisedPick": "Indianapolis Colts",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326416",
+      "week": 6,
+      "actual": "Los Angeles Rams",
+      "originalPick": "Los Angeles Rams",
+      "revisedPick": "Los Angeles Rams",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326417",
+      "week": 6,
+      "actual": "Kansas City Chiefs",
+      "originalPick": "Kansas City Chiefs",
+      "revisedPick": "Kansas City Chiefs",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326418",
+      "week": 6,
+      "actual": "Arizona Cardinals",
+      "originalPick": "Arizona Cardinals",
+      "revisedPick": "Arizona Cardinals",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326419",
+      "week": 6,
+      "actual": "Las Vegas Raiders",
+      "originalPick": "Denver Broncos",
+      "revisedPick": "Denver Broncos",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326420",
+      "week": 6,
+      "actual": "Dallas Cowboys",
+      "originalPick": "Dallas Cowboys",
+      "revisedPick": "Dallas Cowboys",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326421",
+      "week": 6,
+      "actual": "Pittsburgh Steelers",
+      "originalPick": "Seattle Seahawks",
+      "revisedPick": "Seattle Seahawks",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326422",
+      "week": 6,
+      "actual": "Tennessee Titans",
+      "originalPick": "Buffalo Bills",
+      "revisedPick": "Buffalo Bills",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326423",
+      "week": 7,
+      "actual": "Cleveland Browns",
+      "originalPick": "Cleveland Browns",
+      "revisedPick": "Cleveland Browns",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326424",
+      "week": 7,
+      "actual": "Cincinnati Bengals",
+      "originalPick": "Baltimore Ravens",
+      "revisedPick": "Baltimore Ravens",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326425",
+      "week": 7,
+      "actual": "Green Bay Packers",
+      "originalPick": "Green Bay Packers",
+      "revisedPick": "Green Bay Packers",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326426",
+      "week": 7,
+      "actual": "Atlanta Falcons",
+      "originalPick": "Atlanta Falcons",
+      "revisedPick": "Atlanta Falcons",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326427",
+      "week": 7,
+      "actual": "New England Patriots",
+      "originalPick": "New England Patriots",
+      "revisedPick": "New England Patriots",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326428",
+      "week": 7,
+      "actual": "New York Giants",
+      "originalPick": "Carolina Panthers",
+      "revisedPick": "Carolina Panthers",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326429",
+      "week": 7,
+      "actual": "Tennessee Titans",
+      "originalPick": "Tennessee Titans",
+      "revisedPick": "Tennessee Titans",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326430",
+      "week": 7,
+      "actual": "Los Angeles Rams",
+      "originalPick": "Los Angeles Rams",
+      "revisedPick": "Los Angeles Rams",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326431",
+      "week": 7,
+      "actual": "Las Vegas Raiders",
+      "originalPick": "Las Vegas Raiders",
+      "revisedPick": "Las Vegas Raiders",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326432",
+      "week": 7,
+      "actual": "Arizona Cardinals",
+      "originalPick": "Arizona Cardinals",
+      "revisedPick": "Arizona Cardinals",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326433",
+      "week": 7,
+      "actual": "Tampa Bay Buccaneers",
+      "originalPick": "Tampa Bay Buccaneers",
+      "revisedPick": "Tampa Bay Buccaneers",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326434",
+      "week": 7,
+      "actual": "Indianapolis Colts",
+      "originalPick": "Indianapolis Colts",
+      "revisedPick": "Indianapolis Colts",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326435",
+      "week": 7,
+      "actual": "New Orleans Saints",
+      "originalPick": "New Orleans Saints",
+      "revisedPick": "New Orleans Saints",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326436",
+      "week": 8,
+      "actual": "Green Bay Packers",
+      "originalPick": "Arizona Cardinals",
+      "revisedPick": "Arizona Cardinals",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326437",
+      "week": 8,
+      "actual": "Carolina Panthers",
+      "originalPick": "Atlanta Falcons",
+      "revisedPick": "Atlanta Falcons",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326438",
+      "week": 8,
+      "actual": "Buffalo Bills",
+      "originalPick": "Buffalo Bills",
+      "revisedPick": "Buffalo Bills",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326439",
+      "week": 8,
+      "actual": "San Francisco 49ers",
+      "originalPick": "San Francisco 49ers",
+      "revisedPick": "San Francisco 49ers",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326440",
+      "week": 8,
+      "actual": "Pittsburgh Steelers",
+      "originalPick": "Cleveland Browns",
+      "revisedPick": "Cleveland Browns",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326441",
+      "week": 8,
+      "actual": "Philadelphia Eagles",
+      "originalPick": "Philadelphia Eagles",
+      "revisedPick": "Philadelphia Eagles",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326442",
+      "week": 8,
+      "actual": "Los Angeles Rams",
+      "originalPick": "Los Angeles Rams",
+      "revisedPick": "Los Angeles Rams",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326443",
+      "week": 8,
+      "actual": "Tennessee Titans",
+      "originalPick": "Tennessee Titans",
+      "revisedPick": "Tennessee Titans",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326444",
+      "week": 8,
+      "actual": "New York Jets",
+      "originalPick": "Cincinnati Bengals",
+      "revisedPick": "Cincinnati Bengals",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326445",
+      "week": 8,
+      "actual": "New England Patriots",
+      "originalPick": "New England Patriots",
+      "revisedPick": "New England Patriots",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326446",
+      "week": 8,
+      "actual": "Seattle Seahawks",
+      "originalPick": "Seattle Seahawks",
+      "revisedPick": "Seattle Seahawks",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326447",
+      "week": 8,
+      "actual": "Denver Broncos",
+      "originalPick": "Denver Broncos",
+      "revisedPick": "Denver Broncos",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326448",
+      "week": 8,
+      "actual": "New Orleans Saints",
+      "originalPick": "Tampa Bay Buccaneers",
+      "revisedPick": "Tampa Bay Buccaneers",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326449",
+      "week": 8,
+      "actual": "Dallas Cowboys",
+      "originalPick": "Dallas Cowboys",
+      "revisedPick": "Dallas Cowboys",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326450",
+      "week": 8,
+      "actual": "Kansas City Chiefs",
+      "originalPick": "Kansas City Chiefs",
+      "revisedPick": "Kansas City Chiefs",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326451",
+      "week": 9,
+      "actual": "Indianapolis Colts",
+      "originalPick": "Indianapolis Colts",
+      "revisedPick": "Indianapolis Colts",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326452",
+      "week": 9,
+      "actual": "Baltimore Ravens",
+      "originalPick": "Baltimore Ravens",
+      "revisedPick": "Baltimore Ravens",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326453",
+      "week": 9,
+      "actual": "New England Patriots",
+      "originalPick": "New England Patriots",
+      "revisedPick": "New England Patriots",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326454",
+      "week": 9,
+      "actual": "Cleveland Browns",
+      "originalPick": "Cincinnati Bengals",
+      "revisedPick": "Cincinnati Bengals",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326455",
+      "week": 9,
+      "actual": "Denver Broncos",
+      "originalPick": "Dallas Cowboys",
+      "revisedPick": "Dallas Cowboys",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326456",
+      "week": 9,
+      "actual": "Jacksonville Jaguars",
+      "originalPick": "Buffalo Bills",
+      "revisedPick": "Buffalo Bills",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326457",
+      "week": 9,
+      "actual": "Miami Dolphins",
+      "originalPick": "Miami Dolphins",
+      "revisedPick": "Miami Dolphins",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326458",
+      "week": 9,
+      "actual": "Atlanta Falcons",
+      "originalPick": "New Orleans Saints",
+      "revisedPick": "New Orleans Saints",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326459",
+      "week": 9,
+      "actual": "New York Giants",
+      "originalPick": "Las Vegas Raiders",
+      "revisedPick": "Las Vegas Raiders",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326460",
+      "week": 9,
+      "actual": "Los Angeles Chargers",
+      "originalPick": "Philadelphia Eagles",
+      "revisedPick": "Philadelphia Eagles",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326461",
+      "week": 9,
+      "actual": "Kansas City Chiefs",
+      "originalPick": "Green Bay Packers",
+      "revisedPick": "Green Bay Packers",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326462",
+      "week": 9,
+      "actual": "Arizona Cardinals",
+      "originalPick": "Arizona Cardinals",
+      "revisedPick": "Arizona Cardinals",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326463",
+      "week": 9,
+      "actual": "Tennessee Titans",
+      "originalPick": "Los Angeles Rams",
+      "revisedPick": "Los Angeles Rams",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326464",
+      "week": 9,
+      "actual": "Pittsburgh Steelers",
+      "originalPick": "Pittsburgh Steelers",
+      "revisedPick": "Pittsburgh Steelers",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326465",
+      "week": 10,
+      "actual": "Miami Dolphins",
+      "originalPick": "Baltimore Ravens",
+      "revisedPick": "Baltimore Ravens",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326466",
+      "week": 10,
+      "actual": "Dallas Cowboys",
+      "originalPick": "Dallas Cowboys",
+      "revisedPick": "Dallas Cowboys",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326467",
+      "week": 10,
+      "actual": "Indianapolis Colts",
+      "originalPick": "Indianapolis Colts",
+      "revisedPick": "Indianapolis Colts",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326468",
+      "week": 10,
+      "actual": "New England Patriots",
+      "originalPick": "New England Patriots",
+      "revisedPick": "New England Patriots",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326469",
+      "week": 10,
+      "actual": "Buffalo Bills",
+      "originalPick": "Buffalo Bills",
+      "revisedPick": "Buffalo Bills",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326471",
+      "week": 10,
+      "actual": "Tennessee Titans",
+      "originalPick": "Tennessee Titans",
+      "revisedPick": "Tennessee Titans",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326472",
+      "week": 10,
+      "actual": "Washington",
+      "originalPick": "Tampa Bay Buccaneers",
+      "revisedPick": "Tampa Bay Buccaneers",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326473",
+      "week": 10,
+      "actual": "Carolina Panthers",
+      "originalPick": "Arizona Cardinals",
+      "revisedPick": "Arizona Cardinals",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326474",
+      "week": 10,
+      "actual": "Minnesota Vikings",
+      "originalPick": "Minnesota Vikings",
+      "revisedPick": "Minnesota Vikings",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326475",
+      "week": 10,
+      "actual": "Philadelphia Eagles",
+      "originalPick": "Denver Broncos",
+      "revisedPick": "Denver Broncos",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326476",
+      "week": 10,
+      "actual": "Green Bay Packers",
+      "originalPick": "Green Bay Packers",
+      "revisedPick": "Green Bay Packers",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326477",
+      "week": 10,
+      "actual": "Kansas City Chiefs",
+      "originalPick": "Las Vegas Raiders",
+      "revisedPick": "Las Vegas Raiders",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326478",
+      "week": 10,
+      "actual": "San Francisco 49ers",
+      "originalPick": "Los Angeles Rams",
+      "revisedPick": "Los Angeles Rams",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326479",
+      "week": 11,
+      "actual": "New England Patriots",
+      "originalPick": "New England Patriots",
+      "revisedPick": "New England Patriots",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326480",
+      "week": 11,
+      "actual": "Indianapolis Colts",
+      "originalPick": "Buffalo Bills",
+      "revisedPick": "Buffalo Bills",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326481",
+      "week": 11,
+      "actual": "Washington",
+      "originalPick": "Carolina Panthers",
+      "revisedPick": "Carolina Panthers",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326482",
+      "week": 11,
+      "actual": "Baltimore Ravens",
+      "originalPick": "Baltimore Ravens",
+      "revisedPick": "Baltimore Ravens",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326483",
+      "week": 11,
+      "actual": "Cleveland Browns",
+      "originalPick": "Cleveland Browns",
+      "revisedPick": "Cleveland Browns",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326484",
+      "week": 11,
+      "actual": "San Francisco 49ers",
+      "originalPick": "San Francisco 49ers",
+      "revisedPick": "San Francisco 49ers",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326485",
+      "week": 11,
+      "actual": "Minnesota Vikings",
+      "originalPick": "Green Bay Packers",
+      "revisedPick": "Green Bay Packers",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326486",
+      "week": 11,
+      "actual": "Miami Dolphins",
+      "originalPick": "Miami Dolphins",
+      "revisedPick": "Miami Dolphins",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326487",
+      "week": 11,
+      "actual": "Philadelphia Eagles",
+      "originalPick": "Philadelphia Eagles",
+      "revisedPick": "Philadelphia Eagles",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326488",
+      "week": 11,
+      "actual": "Houston Texans",
+      "originalPick": "Tennessee Titans",
+      "revisedPick": "Tennessee Titans",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326489",
+      "week": 11,
+      "actual": "Cincinnati Bengals",
+      "originalPick": "Cincinnati Bengals",
+      "revisedPick": "Cincinnati Bengals",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326490",
+      "week": 11,
+      "actual": "Kansas City Chiefs",
+      "originalPick": "Dallas Cowboys",
+      "revisedPick": "Dallas Cowboys",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326491",
+      "week": 11,
+      "actual": "Arizona Cardinals",
+      "originalPick": "Arizona Cardinals",
+      "revisedPick": "Arizona Cardinals",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326492",
+      "week": 11,
+      "actual": "Los Angeles Chargers",
+      "originalPick": "Los Angeles Chargers",
+      "revisedPick": "Los Angeles Chargers",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326493",
+      "week": 11,
+      "actual": "Tampa Bay Buccaneers",
+      "originalPick": "Tampa Bay Buccaneers",
+      "revisedPick": "Tampa Bay Buccaneers",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326494",
+      "week": 12,
+      "actual": "Chicago Bears",
+      "originalPick": "Chicago Bears",
+      "revisedPick": "Chicago Bears",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326495",
+      "week": 12,
+      "actual": "Las Vegas Raiders",
+      "originalPick": "Dallas Cowboys",
+      "revisedPick": "Dallas Cowboys",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326496",
+      "week": 12,
+      "actual": "Buffalo Bills",
+      "originalPick": "Buffalo Bills",
+      "revisedPick": "Buffalo Bills",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326497",
+      "week": 12,
+      "actual": "Cincinnati Bengals",
+      "originalPick": "Cincinnati Bengals",
+      "revisedPick": "Cincinnati Bengals",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326498",
+      "week": 12,
+      "actual": "New York Jets",
+      "originalPick": "Houston Texans",
+      "revisedPick": "Houston Texans",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326499",
+      "week": 12,
+      "actual": "Tampa Bay Buccaneers",
+      "originalPick": "Indianapolis Colts",
+      "revisedPick": "Indianapolis Colts",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326500",
+      "week": 12,
+      "actual": "Atlanta Falcons",
+      "originalPick": "Jacksonville Jaguars",
+      "revisedPick": "Jacksonville Jaguars",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326501",
+      "week": 12,
+      "actual": "Miami Dolphins",
+      "originalPick": "Carolina Panthers",
+      "revisedPick": "Carolina Panthers",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326502",
+      "week": 12,
+      "actual": "New England Patriots",
+      "originalPick": "New England Patriots",
+      "revisedPick": "New England Patriots",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326503",
+      "week": 12,
+      "actual": "New York Giants",
+      "originalPick": "Philadelphia Eagles",
+      "revisedPick": "Philadelphia Eagles",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326504",
+      "week": 12,
+      "actual": "Denver Broncos",
+      "originalPick": "Denver Broncos",
+      "revisedPick": "Denver Broncos",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326505",
+      "week": 12,
+      "actual": "Green Bay Packers",
+      "originalPick": "Green Bay Packers",
+      "revisedPick": "Green Bay Packers",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326506",
+      "week": 12,
+      "actual": "San Francisco 49ers",
+      "originalPick": "San Francisco 49ers",
+      "revisedPick": "San Francisco 49ers",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326507",
+      "week": 12,
+      "actual": "Baltimore Ravens",
+      "originalPick": "Baltimore Ravens",
+      "revisedPick": "Baltimore Ravens",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326508",
+      "week": 12,
+      "actual": "Washington",
+      "originalPick": "Seattle Seahawks",
+      "revisedPick": "Seattle Seahawks",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326509",
+      "week": 13,
+      "actual": "Dallas Cowboys",
+      "originalPick": "Dallas Cowboys",
+      "revisedPick": "Dallas Cowboys",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326510",
+      "week": 13,
+      "actual": "Tampa Bay Buccaneers",
+      "originalPick": "Tampa Bay Buccaneers",
+      "revisedPick": "Tampa Bay Buccaneers",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326511",
+      "week": 13,
+      "actual": "Arizona Cardinals",
+      "originalPick": "Arizona Cardinals",
+      "revisedPick": "Arizona Cardinals",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326512",
+      "week": 13,
+      "actual": "Los Angeles Chargers",
+      "originalPick": "Cincinnati Bengals",
+      "revisedPick": "Cincinnati Bengals",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326513",
+      "week": 13,
+      "actual": "Detroit Lions",
+      "originalPick": "Minnesota Vikings",
+      "revisedPick": "Minnesota Vikings",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326514",
+      "week": 13,
+      "actual": "Indianapolis Colts",
+      "originalPick": "Indianapolis Colts",
+      "revisedPick": "Indianapolis Colts",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326516",
+      "week": 13,
+      "actual": "Miami Dolphins",
+      "originalPick": "Miami Dolphins",
+      "revisedPick": "Miami Dolphins",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326517",
+      "week": 13,
+      "actual": "Philadelphia Eagles",
+      "originalPick": "Philadelphia Eagles",
+      "revisedPick": "Philadelphia Eagles",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326518",
+      "week": 13,
+      "actual": "Washington",
+      "originalPick": "Washington",
+      "revisedPick": "Washington",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326519",
+      "week": 13,
+      "actual": "Los Angeles Rams",
+      "originalPick": "Los Angeles Rams",
+      "revisedPick": "Los Angeles Rams",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326520",
+      "week": 13,
+      "actual": "Pittsburgh Steelers",
+      "originalPick": "Baltimore Ravens",
+      "revisedPick": "Baltimore Ravens",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326521",
+      "week": 13,
+      "actual": "Seattle Seahawks",
+      "originalPick": "San Francisco 49ers",
+      "revisedPick": "San Francisco 49ers",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326515",
+      "week": 13,
+      "actual": "Kansas City Chiefs",
+      "originalPick": "Kansas City Chiefs",
+      "revisedPick": "Kansas City Chiefs",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326522",
+      "week": 13,
+      "actual": "New England Patriots",
+      "originalPick": "New England Patriots",
+      "revisedPick": "New England Patriots",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326523",
+      "week": 14,
+      "actual": "Minnesota Vikings",
+      "originalPick": "Minnesota Vikings",
+      "revisedPick": "Minnesota Vikings",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326524",
+      "week": 14,
+      "actual": "Atlanta Falcons",
+      "originalPick": "Carolina Panthers",
+      "revisedPick": "Carolina Panthers",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326526",
+      "week": 14,
+      "actual": "Cleveland Browns",
+      "originalPick": "Baltimore Ravens",
+      "revisedPick": "Baltimore Ravens",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326527",
+      "week": 14,
+      "actual": "Seattle Seahawks",
+      "originalPick": "Seattle Seahawks",
+      "revisedPick": "Seattle Seahawks",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326528",
+      "week": 14,
+      "actual": "Kansas City Chiefs",
+      "originalPick": "Kansas City Chiefs",
+      "revisedPick": "Kansas City Chiefs",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326529",
+      "week": 14,
+      "actual": "New Orleans Saints",
+      "originalPick": "New Orleans Saints",
+      "revisedPick": "New Orleans Saints",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326530",
+      "week": 14,
+      "actual": "Tennessee Titans",
+      "originalPick": "Tennessee Titans",
+      "revisedPick": "Tennessee Titans",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326531",
+      "week": 14,
+      "actual": "Dallas Cowboys",
+      "originalPick": "Dallas Cowboys",
+      "revisedPick": "Dallas Cowboys",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326532",
+      "week": 14,
+      "actual": "Denver Broncos",
+      "originalPick": "Denver Broncos",
+      "revisedPick": "Denver Broncos",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326533",
+      "week": 14,
+      "actual": "Los Angeles Chargers",
+      "originalPick": "Los Angeles Chargers",
+      "revisedPick": "Los Angeles Chargers",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326525",
+      "week": 14,
+      "actual": "San Francisco 49ers",
+      "originalPick": "Cincinnati Bengals",
+      "revisedPick": "Cincinnati Bengals",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326534",
+      "week": 14,
+      "actual": "Tampa Bay Buccaneers",
+      "originalPick": "Tampa Bay Buccaneers",
+      "revisedPick": "Tampa Bay Buccaneers",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326535",
+      "week": 14,
+      "actual": "Green Bay Packers",
+      "originalPick": "Green Bay Packers",
+      "revisedPick": "Green Bay Packers",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326536",
+      "week": 14,
+      "actual": "Los Angeles Rams",
+      "originalPick": "Arizona Cardinals",
+      "revisedPick": "Arizona Cardinals",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326537",
+      "week": 15,
+      "actual": "Kansas City Chiefs",
+      "originalPick": "Kansas City Chiefs",
+      "revisedPick": "Kansas City Chiefs",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326540",
+      "week": 15,
+      "actual": "Indianapolis Colts",
+      "originalPick": "New England Patriots",
+      "revisedPick": "New England Patriots",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326538",
+      "week": 15,
+      "actual": "Buffalo Bills",
+      "originalPick": "Buffalo Bills",
+      "revisedPick": "Buffalo Bills",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326541",
+      "week": 15,
+      "actual": "Miami Dolphins",
+      "originalPick": "Miami Dolphins",
+      "revisedPick": "Miami Dolphins",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326544",
+      "week": 15,
+      "actual": "Detroit Lions",
+      "originalPick": "Arizona Cardinals",
+      "revisedPick": "Arizona Cardinals",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326545",
+      "week": 15,
+      "actual": "Houston Texans",
+      "originalPick": "Jacksonville Jaguars",
+      "revisedPick": "Jacksonville Jaguars",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326546",
+      "week": 15,
+      "actual": "Dallas Cowboys",
+      "originalPick": "Dallas Cowboys",
+      "revisedPick": "Dallas Cowboys",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326547",
+      "week": 15,
+      "actual": "Pittsburgh Steelers",
+      "originalPick": "Tennessee Titans",
+      "revisedPick": "Tennessee Titans",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326548",
+      "week": 15,
+      "actual": "Cincinnati Bengals",
+      "originalPick": "Denver Broncos",
+      "revisedPick": "Denver Broncos",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326549",
+      "week": 15,
+      "actual": "San Francisco 49ers",
+      "originalPick": "San Francisco 49ers",
+      "revisedPick": "San Francisco 49ers",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326543",
+      "week": 15,
+      "actual": "Green Bay Packers",
+      "originalPick": "Green Bay Packers",
+      "revisedPick": "Green Bay Packers",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326551",
+      "week": 15,
+      "actual": "New Orleans Saints",
+      "originalPick": "Tampa Bay Buccaneers",
+      "revisedPick": "Tampa Bay Buccaneers",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326539",
+      "week": 15,
+      "actual": "Las Vegas Raiders",
+      "originalPick": "Cleveland Browns",
+      "revisedPick": "Cleveland Browns",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326552",
+      "week": 15,
+      "actual": "Minnesota Vikings",
+      "originalPick": "Minnesota Vikings",
+      "revisedPick": "Minnesota Vikings",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326542",
+      "week": 15,
+      "actual": "Philadelphia Eagles",
+      "originalPick": "Philadelphia Eagles",
+      "revisedPick": "Philadelphia Eagles",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326550",
+      "week": 15,
+      "actual": "Los Angeles Rams",
+      "originalPick": "Los Angeles Rams",
+      "revisedPick": "Los Angeles Rams",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326553",
+      "week": 16,
+      "actual": "Tennessee Titans",
+      "originalPick": "San Francisco 49ers",
+      "revisedPick": "San Francisco 49ers",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326554",
+      "week": 16,
+      "actual": "Green Bay Packers",
+      "originalPick": "Green Bay Packers",
+      "revisedPick": "Green Bay Packers",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326555",
+      "week": 16,
+      "actual": "Indianapolis Colts",
+      "originalPick": "Indianapolis Colts",
+      "revisedPick": "Indianapolis Colts",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326556",
+      "week": 16,
+      "actual": "Atlanta Falcons",
+      "originalPick": "Detroit Lions",
+      "revisedPick": "Detroit Lions",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326557",
+      "week": 16,
+      "actual": "Tampa Bay Buccaneers",
+      "originalPick": "Tampa Bay Buccaneers",
+      "revisedPick": "Tampa Bay Buccaneers",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326558",
+      "week": 16,
+      "actual": "Cincinnati Bengals",
+      "originalPick": "Cincinnati Bengals",
+      "revisedPick": "Cincinnati Bengals",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326559",
+      "week": 16,
+      "actual": "Houston Texans",
+      "originalPick": "Los Angeles Chargers",
+      "revisedPick": "Los Angeles Chargers",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326560",
+      "week": 16,
+      "actual": "Los Angeles Rams",
+      "originalPick": "Los Angeles Rams",
+      "revisedPick": "Los Angeles Rams",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326561",
+      "week": 16,
+      "actual": "Buffalo Bills",
+      "originalPick": "New England Patriots",
+      "revisedPick": "New England Patriots",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326562",
+      "week": 16,
+      "actual": "New York Jets",
+      "originalPick": "New York Jets",
+      "revisedPick": "New York Jets",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326563",
+      "week": 16,
+      "actual": "Philadelphia Eagles",
+      "originalPick": "Philadelphia Eagles",
+      "revisedPick": "Philadelphia Eagles",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326564",
+      "week": 16,
+      "actual": "Chicago Bears",
+      "originalPick": "Seattle Seahawks",
+      "revisedPick": "Seattle Seahawks",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326565",
+      "week": 16,
+      "actual": "Kansas City Chiefs",
+      "originalPick": "Kansas City Chiefs",
+      "revisedPick": "Kansas City Chiefs",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326566",
+      "week": 16,
+      "actual": "Las Vegas Raiders",
+      "originalPick": "Denver Broncos",
+      "revisedPick": "Denver Broncos",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326567",
+      "week": 16,
+      "actual": "Dallas Cowboys",
+      "originalPick": "Dallas Cowboys",
+      "revisedPick": "Dallas Cowboys",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326568",
+      "week": 16,
+      "actual": "Miami Dolphins",
+      "originalPick": "New Orleans Saints",
+      "revisedPick": "New Orleans Saints",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326569",
+      "week": 17,
+      "actual": "Buffalo Bills",
+      "originalPick": "Buffalo Bills",
+      "revisedPick": "Buffalo Bills",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326570",
+      "week": 17,
+      "actual": "Chicago Bears",
+      "originalPick": "Chicago Bears",
+      "revisedPick": "Chicago Bears",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326571",
+      "week": 17,
+      "actual": "Cincinnati Bengals",
+      "originalPick": "Kansas City Chiefs",
+      "revisedPick": "Kansas City Chiefs",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326573",
+      "week": 17,
+      "actual": "Las Vegas Raiders",
+      "originalPick": "Indianapolis Colts",
+      "revisedPick": "Indianapolis Colts",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326574",
+      "week": 17,
+      "actual": "New England Patriots",
+      "originalPick": "New England Patriots",
+      "revisedPick": "New England Patriots",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326576",
+      "week": 17,
+      "actual": "Tampa Bay Buccaneers",
+      "originalPick": "Tampa Bay Buccaneers",
+      "revisedPick": "Tampa Bay Buccaneers",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326577",
+      "week": 17,
+      "actual": "Tennessee Titans",
+      "originalPick": "Tennessee Titans",
+      "revisedPick": "Tennessee Titans",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326578",
+      "week": 17,
+      "actual": "Philadelphia Eagles",
+      "originalPick": "Philadelphia Eagles",
+      "revisedPick": "Philadelphia Eagles",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326581",
+      "week": 17,
+      "actual": "Los Angeles Rams",
+      "originalPick": "Los Angeles Rams",
+      "revisedPick": "Los Angeles Rams",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326579",
+      "week": 17,
+      "actual": "Los Angeles Chargers",
+      "originalPick": "Denver Broncos",
+      "revisedPick": "Denver Broncos",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326580",
+      "week": 17,
+      "actual": "San Francisco 49ers",
+      "originalPick": "San Francisco 49ers",
+      "revisedPick": "San Francisco 49ers",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326572",
+      "week": 17,
+      "actual": "Arizona Cardinals",
+      "originalPick": "Dallas Cowboys",
+      "revisedPick": "Dallas Cowboys",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326575",
+      "week": 17,
+      "actual": "New Orleans Saints",
+      "originalPick": "New Orleans Saints",
+      "revisedPick": "New Orleans Saints",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326582",
+      "week": 17,
+      "actual": "Seattle Seahawks",
+      "originalPick": "Seattle Seahawks",
+      "revisedPick": "Seattle Seahawks",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326583",
+      "week": 17,
+      "actual": "Green Bay Packers",
+      "originalPick": "Green Bay Packers",
+      "revisedPick": "Green Bay Packers",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326584",
+      "week": 17,
+      "actual": "Pittsburgh Steelers",
+      "originalPick": "Cleveland Browns",
+      "revisedPick": "Cleveland Browns",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326598",
+      "week": 18,
+      "actual": "Kansas City Chiefs",
+      "originalPick": "Kansas City Chiefs",
+      "revisedPick": "Kansas City Chiefs",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326595",
+      "week": 18,
+      "actual": "Dallas Cowboys",
+      "originalPick": "Dallas Cowboys",
+      "revisedPick": "Dallas Cowboys",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326586",
+      "week": 18,
+      "actual": "Pittsburgh Steelers",
+      "originalPick": "Baltimore Ravens",
+      "revisedPick": "Baltimore Ravens",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326588",
+      "week": 18,
+      "actual": "Cleveland Browns",
+      "originalPick": "Cincinnati Bengals",
+      "revisedPick": "Cincinnati Bengals",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326589",
+      "week": 18,
+      "actual": "Detroit Lions",
+      "originalPick": "Green Bay Packers",
+      "revisedPick": "Green Bay Packers",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326590",
+      "week": 18,
+      "actual": "Tennessee Titans",
+      "originalPick": "Tennessee Titans",
+      "revisedPick": "Tennessee Titans",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326591",
+      "week": 18,
+      "actual": "Jacksonville Jaguars",
+      "originalPick": "Indianapolis Colts",
+      "revisedPick": "Indianapolis Colts",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326593",
+      "week": 18,
+      "actual": "Minnesota Vikings",
+      "originalPick": "Chicago Bears",
+      "revisedPick": "Chicago Bears",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326594",
+      "week": 18,
+      "actual": "Washington",
+      "originalPick": "Washington",
+      "revisedPick": "Washington",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326585",
+      "week": 18,
+      "actual": "New Orleans Saints",
+      "originalPick": "New Orleans Saints",
+      "revisedPick": "New Orleans Saints",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326587",
+      "week": 18,
+      "actual": "Buffalo Bills",
+      "originalPick": "Buffalo Bills",
+      "revisedPick": "Buffalo Bills",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326592",
+      "week": 18,
+      "actual": "Miami Dolphins",
+      "originalPick": "New England Patriots",
+      "revisedPick": "New England Patriots",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326596",
+      "week": 18,
+      "actual": "Tampa Bay Buccaneers",
+      "originalPick": "Tampa Bay Buccaneers",
+      "revisedPick": "Tampa Bay Buccaneers",
+      "originalCorrect": true,
+      "revisedCorrect": true,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326597",
+      "week": 18,
+      "actual": "Seattle Seahawks",
+      "originalPick": "Arizona Cardinals",
+      "revisedPick": "Arizona Cardinals",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326599",
+      "week": 18,
+      "actual": "San Francisco 49ers",
+      "originalPick": "Los Angeles Rams",
+      "revisedPick": "Los Angeles Rams",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    },
+    {
+      "id": "401326600",
+      "week": 18,
+      "actual": "Las Vegas Raiders",
+      "originalPick": "Los Angeles Chargers",
+      "revisedPick": "Los Angeles Chargers",
+      "originalCorrect": false,
+      "revisedCorrect": false,
+      "earlyFallback": false
+    }
+  ]
+}
