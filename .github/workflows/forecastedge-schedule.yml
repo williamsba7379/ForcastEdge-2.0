@@ -22,7 +22,15 @@ jobs:
               with urllib.request.urlopen(req,timeout=30) as response:
                   return json.load(response)
           current=fetch(f"{base}?dates={year}&seasontype=2")
-          week=int(current.get("week",{}).get("number",0))
+          # ESPN's unqualified scoreboard may point at the last scheduled week.
+          # Determine the active week from each week's actual kickoff dates instead.
+          week=0
+          for n in range(1,19):
+              board=fetch(f"{base}?dates={year}&seasontype=2&week={n}")
+              dates=[datetime.datetime.fromisoformat(e["date"].replace("Z","+00:00")).date() for e in board.get("events",[]) if e.get("date")]
+              if dates and min(dates)<=today+datetime.timedelta(days=2):
+                  week=n
+          if week==0: week=1
           if not 1<=week<=18:
               raise ValueError(f"Unexpected NFL regular season week: {week}")
           weeks=[]
