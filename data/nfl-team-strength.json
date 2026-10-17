@@ -1,0 +1,714 @@
+{
+  "season": 2026,
+  "source": "Completed NFL final scores only; no injuries, odds, or advanced statistics",
+  "method": "70% season average point differential + 30% last-three differential; +1.5 home points",
+  "caution": "Exploratory in-season walk-forward baseline, not out-of-sample validation; scores are not probabilities.",
+  "gamesAvailable": 80,
+  "walkForward": {
+    "graded": 47,
+    "correct": 27,
+    "incorrect": 20,
+    "skipped": 33,
+    "accuracy": 0.5745,
+    "predictions": [
+      {
+        "id": "401872948",
+        "week": 3,
+        "predictedWinner": "Green Bay Packers",
+        "actualWinner": "Atlanta Falcons",
+        "correct": false,
+        "homeEdgePoints": 13.5
+      },
+      {
+        "id": "401872949",
+        "week": 3,
+        "predictedWinner": "Carolina Panthers",
+        "actualWinner": "Cleveland Browns",
+        "correct": false,
+        "homeEdgePoints": -13.0
+      },
+      {
+        "id": "401872950",
+        "week": 3,
+        "predictedWinner": "Cincinnati Bengals",
+        "actualWinner": "Pittsburgh Steelers",
+        "correct": false,
+        "homeEdgePoints": -13.5
+      },
+      {
+        "id": "401872951",
+        "week": 3,
+        "predictedWinner": "Indianapolis Colts",
+        "actualWinner": "Indianapolis Colts",
+        "correct": true,
+        "homeEdgePoints": 0.5
+      },
+      {
+        "id": "401872952",
+        "week": 3,
+        "predictedWinner": "Kansas City Chiefs",
+        "actualWinner": "Kansas City Chiefs",
+        "correct": true,
+        "homeEdgePoints": -28.5
+      },
+      {
+        "id": "401872953",
+        "week": 3,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Buffalo Bills",
+        "correct": true,
+        "homeEdgePoints": 21.0
+      },
+      {
+        "id": "401872954",
+        "week": 3,
+        "predictedWinner": "New York Jets",
+        "actualWinner": "Detroit Lions",
+        "correct": false,
+        "homeEdgePoints": -8.0
+      },
+      {
+        "id": "401872955",
+        "week": 3,
+        "predictedWinner": "Seattle Seahawks",
+        "actualWinner": "Washington Commanders",
+        "correct": false,
+        "homeEdgePoints": -21.5
+      },
+      {
+        "id": "401872956",
+        "week": 3,
+        "predictedWinner": "New York Giants",
+        "actualWinner": "New York Giants",
+        "correct": true,
+        "homeEdgePoints": 3.0
+      },
+      {
+        "id": "401872957",
+        "week": 3,
+        "predictedWinner": "Jacksonville Jaguars",
+        "actualWinner": "Jacksonville Jaguars",
+        "correct": true,
+        "homeEdgePoints": 3.0
+      },
+      {
+        "id": "401872958",
+        "week": 3,
+        "predictedWinner": "San Francisco 49ers",
+        "actualWinner": "San Francisco 49ers",
+        "correct": true,
+        "homeEdgePoints": 28.5
+      },
+      {
+        "id": "401872959",
+        "week": 3,
+        "predictedWinner": "Minnesota Vikings",
+        "actualWinner": "Minnesota Vikings",
+        "correct": true,
+        "homeEdgePoints": -15.0
+      },
+      {
+        "id": "401872960",
+        "week": 3,
+        "predictedWinner": "Dallas Cowboys",
+        "actualWinner": "Baltimore Ravens",
+        "correct": false,
+        "homeEdgePoints": 0.5
+      },
+      {
+        "id": "401872961",
+        "week": 3,
+        "predictedWinner": "Las Vegas Raiders",
+        "actualWinner": "Las Vegas Raiders",
+        "correct": true,
+        "homeEdgePoints": -8.5
+      },
+      {
+        "id": "401872962",
+        "week": 3,
+        "predictedWinner": "Los Angeles Rams",
+        "actualWinner": "Denver Broncos",
+        "correct": false,
+        "homeEdgePoints": -6.5
+      },
+      {
+        "id": "401872963",
+        "week": 3,
+        "predictedWinner": "Chicago Bears",
+        "actualWinner": "Chicago Bears",
+        "correct": true,
+        "homeEdgePoints": 6.5
+      },
+      {
+        "id": "401872964",
+        "week": 4,
+        "predictedWinner": "Pittsburgh Steelers",
+        "actualWinner": "Cleveland Browns",
+        "correct": false,
+        "homeEdgePoints": -1.84
+      },
+      {
+        "id": "401872965",
+        "week": 4,
+        "predictedWinner": "Washington Commanders",
+        "actualWinner": "Indianapolis Colts",
+        "correct": false,
+        "homeEdgePoints": 2.16
+      },
+      {
+        "id": "401872966",
+        "week": 4,
+        "predictedWinner": "New York Giants",
+        "actualWinner": "New York Giants",
+        "correct": true,
+        "homeEdgePoints": 4.5
+      },
+      {
+        "id": "401872967",
+        "week": 4,
+        "predictedWinner": "Dallas Cowboys",
+        "actualWinner": "Dallas Cowboys",
+        "correct": true,
+        "homeEdgePoints": -7.5
+      },
+      {
+        "id": "401872968",
+        "week": 4,
+        "predictedWinner": "Tampa Bay Buccaneers",
+        "actualWinner": "Green Bay Packers",
+        "correct": false,
+        "homeEdgePoints": 7.5
+      },
+      {
+        "id": "401872969",
+        "week": 4,
+        "predictedWinner": "Jacksonville Jaguars",
+        "actualWinner": "Jacksonville Jaguars",
+        "correct": true,
+        "homeEdgePoints": -8.16
+      },
+      {
+        "id": "401872970",
+        "week": 4,
+        "predictedWinner": "Los Angeles Rams",
+        "actualWinner": "Los Angeles Rams",
+        "correct": true,
+        "homeEdgePoints": -2.5
+      },
+      {
+        "id": "401872971",
+        "week": 4,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "New England Patriots",
+        "correct": false,
+        "homeEdgePoints": 14.17
+      },
+      {
+        "id": "401872972",
+        "week": 4,
+        "predictedWinner": "Chicago Bears",
+        "actualWinner": "Chicago Bears",
+        "correct": true,
+        "homeEdgePoints": 12.5
+      },
+      {
+        "id": "401872973",
+        "week": 4,
+        "predictedWinner": "Baltimore Ravens",
+        "actualWinner": "Baltimore Ravens",
+        "correct": true,
+        "homeEdgePoints": 13.5
+      },
+      {
+        "id": "401872974",
+        "week": 4,
+        "predictedWinner": "Minnesota Vikings",
+        "actualWinner": "Minnesota Vikings",
+        "correct": true,
+        "homeEdgePoints": 28.17
+      },
+      {
+        "id": "401872975",
+        "week": 4,
+        "predictedWinner": "San Francisco 49ers",
+        "actualWinner": "San Francisco 49ers",
+        "correct": true,
+        "homeEdgePoints": 20.83
+      },
+      {
+        "id": "401872976",
+        "week": 4,
+        "predictedWinner": "Las Vegas Raiders",
+        "actualWinner": "Kansas City Chiefs",
+        "correct": false,
+        "homeEdgePoints": 0.16
+      },
+      {
+        "id": "401872977",
+        "week": 4,
+        "predictedWinner": "Seattle Seahawks",
+        "actualWinner": "Seattle Seahawks",
+        "correct": true,
+        "homeEdgePoints": 20.5
+      },
+      {
+        "id": "401872978",
+        "week": 4,
+        "predictedWinner": "Carolina Panthers",
+        "actualWinner": "Carolina Panthers",
+        "correct": true,
+        "homeEdgePoints": 4.17
+      },
+      {
+        "id": "401872979",
+        "week": 4,
+        "predictedWinner": "New Orleans Saints",
+        "actualWinner": "Atlanta Falcons",
+        "correct": false,
+        "homeEdgePoints": 6.5
+      },
+      {
+        "id": "401872980",
+        "week": 5,
+        "predictedWinner": "Dallas Cowboys",
+        "actualWinner": "Tampa Bay Buccaneers",
+        "correct": false,
+        "homeEdgePoints": 9.95
+      },
+      {
+        "id": "401872981",
+        "week": 5,
+        "predictedWinner": "Jacksonville Jaguars",
+        "actualWinner": "Jacksonville Jaguars",
+        "correct": true,
+        "homeEdgePoints": 18.28
+      },
+      {
+        "id": "401872982",
+        "week": 5,
+        "predictedWinner": "Cincinnati Bengals",
+        "actualWinner": "Cincinnati Bengals",
+        "correct": true,
+        "homeEdgePoints": -14.93
+      },
+      {
+        "id": "401872983",
+        "week": 5,
+        "predictedWinner": "Cleveland Browns",
+        "actualWinner": "New York Jets",
+        "correct": false,
+        "homeEdgePoints": -0.55
+      },
+      {
+        "id": "401872984",
+        "week": 5,
+        "predictedWinner": "Tennessee Titans",
+        "actualWinner": "Houston Texans",
+        "correct": false,
+        "homeEdgePoints": 1.48
+      },
+      {
+        "id": "401872985",
+        "week": 5,
+        "predictedWinner": "Indianapolis Colts",
+        "actualWinner": "Pittsburgh Steelers",
+        "correct": false,
+        "homeEdgePoints": -3.2
+      },
+      {
+        "id": "401872986",
+        "week": 5,
+        "predictedWinner": "Las Vegas Raiders",
+        "actualWinner": "New England Patriots",
+        "correct": false,
+        "homeEdgePoints": -8.63
+      },
+      {
+        "id": "401872987",
+        "week": 5,
+        "predictedWinner": "Minnesota Vikings",
+        "actualWinner": "Minnesota Vikings",
+        "correct": true,
+        "homeEdgePoints": -12.65
+      },
+      {
+        "id": "401872990",
+        "week": 5,
+        "predictedWinner": "Chicago Bears",
+        "actualWinner": "Green Bay Packers",
+        "correct": false,
+        "homeEdgePoints": -16.32
+      },
+      {
+        "id": "401872989",
+        "week": 5,
+        "predictedWinner": "Denver Broncos",
+        "actualWinner": "Denver Broncos",
+        "correct": true,
+        "homeEdgePoints": -4.62
+      },
+      {
+        "id": "401872991",
+        "week": 5,
+        "predictedWinner": "Detroit Lions",
+        "actualWinner": "Detroit Lions",
+        "correct": true,
+        "homeEdgePoints": -5.65
+      },
+      {
+        "id": "401872992",
+        "week": 5,
+        "predictedWinner": "San Francisco 49ers",
+        "actualWinner": "San Francisco 49ers",
+        "correct": true,
+        "homeEdgePoints": -3.95
+      },
+      {
+        "id": "401872993",
+        "week": 5,
+        "predictedWinner": "Baltimore Ravens",
+        "actualWinner": "Baltimore Ravens",
+        "correct": true,
+        "homeEdgePoints": -0.4
+      },
+      {
+        "id": "401872994",
+        "week": 5,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Buffalo Bills",
+        "correct": true,
+        "homeEdgePoints": -0.95
+      },
+      {
+        "id": "401872995",
+        "week": 6,
+        "predictedWinner": "Seattle Seahawks",
+        "actualWinner": "Denver Broncos",
+        "correct": false,
+        "homeEdgePoints": -4.72
+      }
+    ]
+  },
+  "teams": [
+    {
+      "team": "Arizona Cardinals",
+      "games": 5,
+      "pointsFor": 21.6,
+      "pointsAgainst": 32.4,
+      "pointDifferential": -10.8,
+      "recentDifferential": -14.0,
+      "winPct": 0.2,
+      "strengthScore": -11.76
+    },
+    {
+      "team": "Atlanta Falcons",
+      "games": 5,
+      "pointsFor": 23.8,
+      "pointsAgainst": 24.4,
+      "pointDifferential": -0.6,
+      "recentDifferential": 11.67,
+      "winPct": 0.4,
+      "strengthScore": 3.08
+    },
+    {
+      "team": "Baltimore Ravens",
+      "games": 5,
+      "pointsFor": 29.2,
+      "pointsAgainst": 23.8,
+      "pointDifferential": 5.4,
+      "recentDifferential": 5.33,
+      "winPct": 0.8,
+      "strengthScore": 5.38
+    },
+    {
+      "team": "Buffalo Bills",
+      "games": 5,
+      "pointsFor": 32.8,
+      "pointsAgainst": 28.2,
+      "pointDifferential": 4.6,
+      "recentDifferential": 2.67,
+      "winPct": 0.8,
+      "strengthScore": 4.02
+    },
+    {
+      "team": "Carolina Panthers",
+      "games": 4,
+      "pointsFor": 30.25,
+      "pointsAgainst": 27.25,
+      "pointDifferential": 3.0,
+      "recentDifferential": 11.33,
+      "winPct": 0.5,
+      "strengthScore": 5.5
+    },
+    {
+      "team": "Chicago Bears",
+      "games": 5,
+      "pointsFor": 23.8,
+      "pointsAgainst": 19.2,
+      "pointDifferential": 4.6,
+      "recentDifferential": 2.33,
+      "winPct": 0.6,
+      "strengthScore": 3.92
+    },
+    {
+      "team": "Cincinnati Bengals",
+      "games": 5,
+      "pointsFor": 25.6,
+      "pointsAgainst": 21.8,
+      "pointDifferential": 3.8,
+      "recentDifferential": -0.33,
+      "winPct": 0.6,
+      "strengthScore": 2.56
+    },
+    {
+      "team": "Cleveland Browns",
+      "games": 5,
+      "pointsFor": 18.6,
+      "pointsAgainst": 22.4,
+      "pointDifferential": -3.8,
+      "recentDifferential": 0.33,
+      "winPct": 0.6,
+      "strengthScore": -2.56
+    },
+    {
+      "team": "Dallas Cowboys",
+      "games": 5,
+      "pointsFor": 27.6,
+      "pointsAgainst": 27.2,
+      "pointDifferential": 0.4,
+      "recentDifferential": -2.33,
+      "winPct": 0.4,
+      "strengthScore": -0.42
+    },
+    {
+      "team": "Denver Broncos",
+      "games": 6,
+      "pointsFor": 19.0,
+      "pointsAgainst": 20.83,
+      "pointDifferential": -1.83,
+      "recentDifferential": -0.33,
+      "winPct": 0.6667,
+      "strengthScore": -1.38
+    },
+    {
+      "team": "Detroit Lions",
+      "games": 5,
+      "pointsFor": 32.8,
+      "pointsAgainst": 29.6,
+      "pointDifferential": 3.2,
+      "recentDifferential": 8.33,
+      "winPct": 0.6,
+      "strengthScore": 4.74
+    },
+    {
+      "team": "Green Bay Packers",
+      "games": 5,
+      "pointsFor": 20.8,
+      "pointsAgainst": 22.4,
+      "pointDifferential": -1.6,
+      "recentDifferential": 2.0,
+      "winPct": 0.6,
+      "strengthScore": -0.52
+    },
+    {
+      "team": "Houston Texans",
+      "games": 5,
+      "pointsFor": 22.0,
+      "pointsAgainst": 22.4,
+      "pointDifferential": -0.4,
+      "recentDifferential": 5.67,
+      "winPct": 0.2,
+      "strengthScore": 1.42
+    },
+    {
+      "team": "Indianapolis Colts",
+      "games": 5,
+      "pointsFor": 24.8,
+      "pointsAgainst": 27.6,
+      "pointDifferential": -2.8,
+      "recentDifferential": 2.33,
+      "winPct": 0.4,
+      "strengthScore": -1.26
+    },
+    {
+      "team": "Jacksonville Jaguars",
+      "games": 5,
+      "pointsFor": 24.6,
+      "pointsAgainst": 14.0,
+      "pointDifferential": 10.6,
+      "recentDifferential": 12.0,
+      "winPct": 0.8,
+      "strengthScore": 11.02
+    },
+    {
+      "team": "Kansas City Chiefs",
+      "games": 4,
+      "pointsFor": 29.5,
+      "pointsAgainst": 19.25,
+      "pointDifferential": 10.25,
+      "recentDifferential": 6.67,
+      "winPct": 1.0,
+      "strengthScore": 9.18
+    },
+    {
+      "team": "Las Vegas Raiders",
+      "games": 5,
+      "pointsFor": 26.4,
+      "pointsAgainst": 25.8,
+      "pointDifferential": 0.6,
+      "recentDifferential": -7.67,
+      "winPct": 0.6,
+      "strengthScore": -1.88
+    },
+    {
+      "team": "Los Angeles Chargers",
+      "games": 5,
+      "pointsFor": 16.8,
+      "pointsAgainst": 25.8,
+      "pointDifferential": -9.0,
+      "recentDifferential": -7.0,
+      "winPct": 0.0,
+      "strengthScore": -8.4
+    },
+    {
+      "team": "Los Angeles Rams",
+      "games": 5,
+      "pointsFor": 23.8,
+      "pointsAgainst": 24.0,
+      "pointDifferential": -0.2,
+      "recentDifferential": -1.0,
+      "winPct": 0.4,
+      "strengthScore": -0.44
+    },
+    {
+      "team": "Miami Dolphins",
+      "games": 5,
+      "pointsFor": 14.0,
+      "pointsAgainst": 26.4,
+      "pointDifferential": -12.4,
+      "recentDifferential": -8.67,
+      "winPct": 0.0,
+      "strengthScore": -11.28
+    },
+    {
+      "team": "Minnesota Vikings",
+      "games": 5,
+      "pointsFor": 21.8,
+      "pointsAgainst": 12.8,
+      "pointDifferential": 9.0,
+      "recentDifferential": 7.33,
+      "winPct": 1.0,
+      "strengthScore": 8.5
+    },
+    {
+      "team": "New England Patriots",
+      "games": 5,
+      "pointsFor": 22.0,
+      "pointsAgainst": 18.8,
+      "pointDifferential": 3.2,
+      "recentDifferential": 0.67,
+      "winPct": 0.6,
+      "strengthScore": 2.44
+    },
+    {
+      "team": "New Orleans Saints",
+      "games": 5,
+      "pointsFor": 23.6,
+      "pointsAgainst": 30.2,
+      "pointDifferential": -6.6,
+      "recentDifferential": -13.0,
+      "winPct": 0.2,
+      "strengthScore": -8.52
+    },
+    {
+      "team": "New York Giants",
+      "games": 5,
+      "pointsFor": 21.8,
+      "pointsAgainst": 21.2,
+      "pointDifferential": 0.6,
+      "recentDifferential": 5.67,
+      "winPct": 0.7,
+      "strengthScore": 2.12
+    },
+    {
+      "team": "New York Jets",
+      "games": 5,
+      "pointsFor": 18.6,
+      "pointsAgainst": 19.2,
+      "pointDifferential": -0.6,
+      "recentDifferential": -4.33,
+      "winPct": 0.4,
+      "strengthScore": -1.72
+    },
+    {
+      "team": "Philadelphia Eagles",
+      "games": 5,
+      "pointsFor": 18.4,
+      "pointsAgainst": 22.4,
+      "pointDifferential": -4.0,
+      "recentDifferential": -8.67,
+      "winPct": 0.4,
+      "strengthScore": -5.4
+    },
+    {
+      "team": "Pittsburgh Steelers",
+      "games": 5,
+      "pointsFor": 22.2,
+      "pointsAgainst": 21.8,
+      "pointDifferential": 0.4,
+      "recentDifferential": 4.0,
+      "winPct": 0.6,
+      "strengthScore": 1.48
+    },
+    {
+      "team": "San Francisco 49ers",
+      "games": 5,
+      "pointsFor": 30.8,
+      "pointsAgainst": 18.6,
+      "pointDifferential": 12.2,
+      "recentDifferential": 6.33,
+      "winPct": 1.0,
+      "strengthScore": 10.44
+    },
+    {
+      "team": "Seattle Seahawks",
+      "games": 6,
+      "pointsFor": 24.67,
+      "pointsAgainst": 20.33,
+      "pointDifferential": 4.33,
+      "recentDifferential": 0.33,
+      "winPct": 0.5,
+      "strengthScore": 3.13
+    },
+    {
+      "team": "Tampa Bay Buccaneers",
+      "games": 5,
+      "pointsFor": 20.0,
+      "pointsAgainst": 22.4,
+      "pointDifferential": -2.4,
+      "recentDifferential": -0.67,
+      "winPct": 0.2,
+      "strengthScore": -1.88
+    },
+    {
+      "team": "Tennessee Titans",
+      "games": 5,
+      "pointsFor": 11.6,
+      "pointsAgainst": 21.8,
+      "pointDifferential": -10.2,
+      "recentDifferential": -11.33,
+      "winPct": 0.0,
+      "strengthScore": -10.54
+    },
+    {
+      "team": "Washington Commanders",
+      "games": 5,
+      "pointsFor": 23.0,
+      "pointsAgainst": 29.8,
+      "pointDifferential": -6.8,
+      "recentDifferential": -5.0,
+      "winPct": 0.3,
+      "strengthScore": -6.26
+    }
+  ]
+}
