@@ -1,0 +1,18 @@
+name: Independently test win percentage factor (2020)
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compare frozen candidate with baseline on 2020
+        run: python3 scripts/nfl_win_pct_independent_2020.py
+      - name: Publish holdout results only
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/nfl-win-pct-independent-2020.json
+          git diff --cached --quiet || (git commit -m "Record independent 2020 win-pct evaluation" && git push)
