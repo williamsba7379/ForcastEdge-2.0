@@ -53,8 +53,16 @@ def snapshot(now):
     if file.exists():
         print("Existing frozen snapshot preserved:",file)
         return
-    board=fetch({"dates":thursday.strftime("%Y%m%d")+"-"+monday.strftime("%Y%m%d"),"limit":1000})
-    fixtures=[g for g in parse(board,season) if thursday<=kickoff(g).astimezone(EASTERN).date()<=monday]
+    # ESPN scoreboard accepts a single YYYYMMDD date, not a hyphenated date range.
+    # Query each calendar day separately and deduplicate by event ID.
+    fixtures_by_id={}
+    for offset in range(5):
+        day=thursday+dt.timedelta(days=offset)
+        board=fetch({"dates":day.strftime("%Y%m%d"),"limit":1000})
+        for g in parse(board,season):
+            if thursday<=kickoff(g).astimezone(EASTERN).date()<=monday:
+                fixtures_by_id[g["id"]]=g
+    fixtures=list(fixtures_by_id.values())
     if not fixtures:
         print("No games in upcoming Thursday-Monday window; no snapshot created")
         return
