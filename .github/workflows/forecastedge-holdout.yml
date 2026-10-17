@@ -1,0 +1,21 @@
+name: Validate frozen NFL model on 2022 holdout
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  holdout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Evaluate unchanged model against 2022 NFL season
+        run: python3 scripts/nfl_holdout_2022.py
+      - name: Publish independent historical holdout results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/nfl-holdout-2022.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish frozen-model 2022 holdout evaluation"
+            git push
+          fi
