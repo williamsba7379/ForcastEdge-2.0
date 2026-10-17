@@ -3,15 +3,6511 @@
   "source": "Completed NFL final scores only; no injuries, odds, or advanced statistics",
   "method": "70% season average point differential + 30% last-three differential; +1.5 home points",
   "caution": "Exploratory in-season walk-forward baseline, not out-of-sample validation; scores are not probabilities.",
-  "gamesAvailable": 80,
+  "gamesAvailable": 896,
   "walkForward": {
-    "graded": 47,
-    "correct": 27,
-    "incorrect": 20,
-    "skipped": 33,
-    "accuracy": 0.5745,
+    "graded": 766,
+    "correct": 479,
+    "incorrect": 287,
+    "skipped": 130,
+    "accuracy": 0.6253,
+    "homeBaselineCorrect": 421,
+    "homeBaselineAccuracy": 0.5496,
+    "bySeason": {
+      "2023": {
+        "graded": 240,
+        "modelCorrect": 144,
+        "homeBaselineCorrect": 138
+      },
+      "2024": {
+        "graded": 240,
+        "modelCorrect": 155,
+        "homeBaselineCorrect": 128
+      },
+      "2025": {
+        "graded": 239,
+        "modelCorrect": 153,
+        "homeBaselineCorrect": 130
+      },
+      "2026": {
+        "graded": 47,
+        "modelCorrect": 27,
+        "homeBaselineCorrect": 25
+      }
+    },
     "predictions": [
       {
+        "season": 2023,
+        "id": "401547426",
+        "week": 3,
+        "predictedWinner": "San Francisco 49ers",
+        "actualWinner": "San Francisco 49ers",
+        "correct": true,
+        "homeEdgePoints": 35.0
+      },
+      {
+        "season": 2023,
+        "id": "401547427",
+        "week": 3,
+        "predictedWinner": "Baltimore Ravens",
+        "actualWinner": "Indianapolis Colts",
+        "correct": false,
+        "homeEdgePoints": 10.5
+      },
+      {
+        "season": 2023,
+        "id": "401547428",
+        "week": 3,
+        "predictedWinner": "Cleveland Browns",
+        "actualWinner": "Cleveland Browns",
+        "correct": true,
+        "homeEdgePoints": 9.0
+      },
+      {
+        "season": 2023,
+        "id": "401547429",
+        "week": 3,
+        "predictedWinner": "Miami Dolphins",
+        "actualWinner": "Miami Dolphins",
+        "correct": true,
+        "homeEdgePoints": 7.5
+      },
+      {
+        "season": 2023,
+        "id": "401547430",
+        "week": 3,
+        "predictedWinner": "New York Jets",
+        "actualWinner": "New England Patriots",
+        "correct": false,
+        "homeEdgePoints": 0.5
+      },
+      {
+        "season": 2023,
+        "id": "401547431",
+        "week": 3,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Buffalo Bills",
+        "correct": true,
+        "homeEdgePoints": -6.5
+      },
+      {
+        "season": 2023,
+        "id": "401547433",
+        "week": 3,
+        "predictedWinner": "Atlanta Falcons",
+        "actualWinner": "Detroit Lions",
+        "correct": false,
+        "homeEdgePoints": -8.5
+      },
+      {
+        "season": 2023,
+        "id": "401547434",
+        "week": 3,
+        "predictedWinner": "Green Bay Packers",
+        "actualWinner": "Green Bay Packers",
+        "correct": true,
+        "homeEdgePoints": 8.0
+      },
+      {
+        "season": 2023,
+        "id": "401547435",
+        "week": 3,
+        "predictedWinner": "Jacksonville Jaguars",
+        "actualWinner": "Houston Texans",
+        "correct": false,
+        "homeEdgePoints": 16.0
+      },
+      {
+        "season": 2023,
+        "id": "401547436",
+        "week": 3,
+        "predictedWinner": "Los Angeles Chargers",
+        "actualWinner": "Los Angeles Chargers",
+        "correct": true,
+        "homeEdgePoints": -0.5
+      },
+      {
+        "season": 2023,
+        "id": "401547432",
+        "week": 3,
+        "predictedWinner": "Seattle Seahawks",
+        "actualWinner": "Seattle Seahawks",
+        "correct": true,
+        "homeEdgePoints": 4.5
+      },
+      {
+        "season": 2023,
+        "id": "401547437",
+        "week": 3,
+        "predictedWinner": "Dallas Cowboys",
+        "actualWinner": "Arizona Cardinals",
+        "correct": false,
+        "homeEdgePoints": -32.0
+      },
+      {
+        "season": 2023,
+        "id": "401547438",
+        "week": 3,
+        "predictedWinner": "Kansas City Chiefs",
+        "actualWinner": "Kansas City Chiefs",
+        "correct": true,
+        "homeEdgePoints": 19.0
+      },
+      {
+        "season": 2023,
+        "id": "401547439",
+        "week": 3,
+        "predictedWinner": "Pittsburgh Steelers",
+        "actualWinner": "Pittsburgh Steelers",
+        "correct": true,
+        "homeEdgePoints": -2.5
+      },
+      {
+        "season": 2023,
+        "id": "401547440",
+        "week": 3,
+        "predictedWinner": "Tampa Bay Buccaneers",
+        "actualWinner": "Philadelphia Eagles",
+        "correct": false,
+        "homeEdgePoints": 2.5
+      },
+      {
+        "season": 2023,
+        "id": "401547441",
+        "week": 3,
+        "predictedWinner": "Los Angeles Rams",
+        "actualWinner": "Cincinnati Bengals",
+        "correct": false,
+        "homeEdgePoints": -15.5
+      },
+      {
+        "season": 2023,
+        "id": "401547442",
+        "week": 4,
+        "predictedWinner": "Green Bay Packers",
+        "actualWinner": "Detroit Lions",
+        "correct": false,
+        "homeEdgePoints": 4.5
+      },
+      {
+        "season": 2023,
+        "id": "401547227",
+        "week": 4,
+        "predictedWinner": "Atlanta Falcons",
+        "actualWinner": "Jacksonville Jaguars",
+        "correct": false,
+        "homeEdgePoints": -4.83
+      },
+      {
+        "season": 2023,
+        "id": "401547443",
+        "week": 4,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Buffalo Bills",
+        "correct": true,
+        "homeEdgePoints": 0.5
+      },
+      {
+        "season": 2023,
+        "id": "401547444",
+        "week": 4,
+        "predictedWinner": "Denver Broncos",
+        "actualWinner": "Denver Broncos",
+        "correct": true,
+        "homeEdgePoints": -0.5
+      },
+      {
+        "season": 2023,
+        "id": "401547445",
+        "week": 4,
+        "predictedWinner": "Cleveland Browns",
+        "actualWinner": "Baltimore Ravens",
+        "correct": false,
+        "homeEdgePoints": 9.84
+      },
+      {
+        "season": 2023,
+        "id": "401547446",
+        "week": 4,
+        "predictedWinner": "Houston Texans",
+        "actualWinner": "Houston Texans",
+        "correct": true,
+        "homeEdgePoints": 3.84
+      },
+      {
+        "season": 2023,
+        "id": "401547448",
+        "week": 4,
+        "predictedWinner": "Minnesota Vikings",
+        "actualWinner": "Minnesota Vikings",
+        "correct": true,
+        "homeEdgePoints": -3.17
+      },
+      {
+        "season": 2023,
+        "id": "401547449",
+        "week": 4,
+        "predictedWinner": "Indianapolis Colts",
+        "actualWinner": "Los Angeles Rams",
+        "correct": false,
+        "homeEdgePoints": 0.5
+      },
+      {
+        "season": 2023,
+        "id": "401547450",
+        "week": 4,
+        "predictedWinner": "New Orleans Saints",
+        "actualWinner": "Tampa Bay Buccaneers",
+        "correct": false,
+        "homeEdgePoints": 2.83
+      },
+      {
+        "season": 2023,
+        "id": "401547451",
+        "week": 4,
+        "predictedWinner": "Philadelphia Eagles",
+        "actualWinner": "Philadelphia Eagles",
+        "correct": true,
+        "homeEdgePoints": 19.16
+      },
+      {
+        "season": 2023,
+        "id": "401547452",
+        "week": 4,
+        "predictedWinner": "Tennessee Titans",
+        "actualWinner": "Tennessee Titans",
+        "correct": true,
+        "homeEdgePoints": 1.17
+      },
+      {
+        "season": 2023,
+        "id": "401547447",
+        "week": 4,
+        "predictedWinner": "Los Angeles Chargers",
+        "actualWinner": "Los Angeles Chargers",
+        "correct": true,
+        "homeEdgePoints": 11.84
+      },
+      {
+        "season": 2023,
+        "id": "401547453",
+        "week": 4,
+        "predictedWinner": "Dallas Cowboys",
+        "actualWinner": "Dallas Cowboys",
+        "correct": true,
+        "homeEdgePoints": 19.83
+      },
+      {
+        "season": 2023,
+        "id": "401547454",
+        "week": 4,
+        "predictedWinner": "San Francisco 49ers",
+        "actualWinner": "San Francisco 49ers",
+        "correct": true,
+        "homeEdgePoints": 15.83
+      },
+      {
+        "season": 2023,
+        "id": "401547455",
+        "week": 4,
+        "predictedWinner": "Kansas City Chiefs",
+        "actualWinner": "Kansas City Chiefs",
+        "correct": true,
+        "homeEdgePoints": -17.5
+      },
+      {
+        "season": 2023,
+        "id": "401547456",
+        "week": 4,
+        "predictedWinner": "Seattle Seahawks",
+        "actualWinner": "Seattle Seahawks",
+        "correct": true,
+        "homeEdgePoints": -16.5
+      },
+      {
+        "season": 2023,
+        "id": "401547457",
+        "week": 5,
+        "predictedWinner": "Washington Commanders",
+        "actualWinner": "Chicago Bears",
+        "correct": false,
+        "homeEdgePoints": 7.82
+      },
+      {
+        "season": 2023,
+        "id": "401547228",
+        "week": 5,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Jacksonville Jaguars",
+        "correct": false,
+        "homeEdgePoints": 26.75
+      },
+      {
+        "season": 2023,
+        "id": "401547458",
+        "week": 5,
+        "predictedWinner": "Indianapolis Colts",
+        "actualWinner": "Indianapolis Colts",
+        "correct": true,
+        "homeEdgePoints": 1.3
+      },
+      {
+        "season": 2023,
+        "id": "401547459",
+        "week": 5,
+        "predictedWinner": "New Orleans Saints",
+        "actualWinner": "New Orleans Saints",
+        "correct": true,
+        "homeEdgePoints": -5.6
+      },
+      {
+        "season": 2023,
+        "id": "401547460",
+        "week": 5,
+        "predictedWinner": "Baltimore Ravens",
+        "actualWinner": "Pittsburgh Steelers",
+        "correct": false,
+        "homeEdgePoints": -16.32
+      },
+      {
+        "season": 2023,
+        "id": "401547463",
+        "week": 5,
+        "predictedWinner": "Houston Texans",
+        "actualWinner": "Atlanta Falcons",
+        "correct": false,
+        "homeEdgePoints": -10.3
+      },
+      {
+        "season": 2023,
+        "id": "401547464",
+        "week": 5,
+        "predictedWinner": "Detroit Lions",
+        "actualWinner": "Detroit Lions",
+        "correct": true,
+        "homeEdgePoints": 15.95
+      },
+      {
+        "season": 2023,
+        "id": "401547465",
+        "week": 5,
+        "predictedWinner": "Miami Dolphins",
+        "actualWinner": "Miami Dolphins",
+        "correct": true,
+        "homeEdgePoints": 26.73
+      },
+      {
+        "season": 2023,
+        "id": "401547466",
+        "week": 5,
+        "predictedWinner": "Arizona Cardinals",
+        "actualWinner": "Cincinnati Bengals",
+        "correct": false,
+        "homeEdgePoints": 8.33
+      },
+      {
+        "season": 2023,
+        "id": "401547467",
+        "week": 5,
+        "predictedWinner": "Philadelphia Eagles",
+        "actualWinner": "Philadelphia Eagles",
+        "correct": true,
+        "homeEdgePoints": -3.82
+      },
+      {
+        "season": 2023,
+        "id": "401547461",
+        "week": 5,
+        "predictedWinner": "New York Jets",
+        "actualWinner": "New York Jets",
+        "correct": true,
+        "homeEdgePoints": -5.5
+      },
+      {
+        "season": 2023,
+        "id": "401547462",
+        "week": 5,
+        "predictedWinner": "Kansas City Chiefs",
+        "actualWinner": "Kansas City Chiefs",
+        "correct": true,
+        "homeEdgePoints": -10.95
+      },
+      {
+        "season": 2023,
+        "id": "401547354",
+        "week": 5,
+        "predictedWinner": "Dallas Cowboys",
+        "actualWinner": "San Francisco 49ers",
+        "correct": false,
+        "homeEdgePoints": -1.2
+      },
+      {
+        "season": 2023,
+        "id": "401547468",
+        "week": 5,
+        "predictedWinner": "Green Bay Packers",
+        "actualWinner": "Las Vegas Raiders",
+        "correct": false,
+        "homeEdgePoints": -8.62
+      },
+      {
+        "season": 2023,
+        "id": "401547469",
+        "week": 6,
+        "predictedWinner": "Kansas City Chiefs",
+        "actualWinner": "Kansas City Chiefs",
+        "correct": true,
+        "homeEdgePoints": 26.42
+      },
+      {
+        "season": 2023,
+        "id": "401547229",
+        "week": 6,
+        "predictedWinner": "Baltimore Ravens",
+        "actualWinner": "Baltimore Ravens",
+        "correct": true,
+        "homeEdgePoints": -6.16
+      },
+      {
+        "season": 2023,
+        "id": "401547470",
+        "week": 6,
+        "predictedWinner": "Atlanta Falcons",
+        "actualWinner": "Washington Commanders",
+        "correct": false,
+        "homeEdgePoints": 9.72
+      },
+      {
+        "season": 2023,
+        "id": "401547471",
+        "week": 6,
+        "predictedWinner": "Seattle Seahawks",
+        "actualWinner": "Cincinnati Bengals",
+        "correct": false,
+        "homeEdgePoints": -10.74
+      },
+      {
+        "season": 2023,
+        "id": "401547472",
+        "week": 6,
+        "predictedWinner": "Jacksonville Jaguars",
+        "actualWinner": "Jacksonville Jaguars",
+        "correct": true,
+        "homeEdgePoints": 0.92
+      },
+      {
+        "season": 2023,
+        "id": "401547473",
+        "week": 6,
+        "predictedWinner": "Miami Dolphins",
+        "actualWinner": "Miami Dolphins",
+        "correct": true,
+        "homeEdgePoints": 22.66
+      },
+      {
+        "season": 2023,
+        "id": "401547475",
+        "week": 6,
+        "predictedWinner": "Minnesota Vikings",
+        "actualWinner": "Minnesota Vikings",
+        "correct": true,
+        "homeEdgePoints": -3.8
+      },
+      {
+        "season": 2023,
+        "id": "401547476",
+        "week": 6,
+        "predictedWinner": "San Francisco 49ers",
+        "actualWinner": "Cleveland Browns",
+        "correct": false,
+        "homeEdgePoints": -16.96
+      },
+      {
+        "season": 2023,
+        "id": "401547477",
+        "week": 6,
+        "predictedWinner": "Houston Texans",
+        "actualWinner": "Houston Texans",
+        "correct": true,
+        "homeEdgePoints": 3.4
+      },
+      {
+        "season": 2023,
+        "id": "401547474",
+        "week": 6,
+        "predictedWinner": "Las Vegas Raiders",
+        "actualWinner": "Las Vegas Raiders",
+        "correct": true,
+        "homeEdgePoints": 12.84
+      },
+      {
+        "season": 2023,
+        "id": "401547478",
+        "week": 6,
+        "predictedWinner": "Detroit Lions",
+        "actualWinner": "Detroit Lions",
+        "correct": true,
+        "homeEdgePoints": -4.74
+      },
+      {
+        "season": 2023,
+        "id": "401547479",
+        "week": 6,
+        "predictedWinner": "Los Angeles Rams",
+        "actualWinner": "Los Angeles Rams",
+        "correct": true,
+        "homeEdgePoints": 7.48
+      },
+      {
+        "season": 2023,
+        "id": "401547480",
+        "week": 6,
+        "predictedWinner": "Philadelphia Eagles",
+        "actualWinner": "New York Jets",
+        "correct": false,
+        "homeEdgePoints": -7.76
+      },
+      {
+        "season": 2023,
+        "id": "401547481",
+        "week": 6,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Buffalo Bills",
+        "correct": true,
+        "homeEdgePoints": 36.4
+      },
+      {
+        "season": 2023,
+        "id": "401547482",
+        "week": 6,
+        "predictedWinner": "Dallas Cowboys",
+        "actualWinner": "Dallas Cowboys",
+        "correct": true,
+        "homeEdgePoints": -2.89
+      },
+      {
+        "season": 2023,
+        "id": "401547483",
+        "week": 7,
+        "predictedWinner": "Jacksonville Jaguars",
+        "actualWinner": "Jacksonville Jaguars",
+        "correct": true,
+        "homeEdgePoints": -2.11
+      },
+      {
+        "season": 2023,
+        "id": "401547484",
+        "week": 7,
+        "predictedWinner": "Cleveland Browns",
+        "actualWinner": "Cleveland Browns",
+        "correct": true,
+        "homeEdgePoints": -4.12
+      },
+      {
+        "season": 2023,
+        "id": "401547485",
+        "week": 7,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "New England Patriots",
+        "correct": false,
+        "homeEdgePoints": -27.73
+      },
+      {
+        "season": 2023,
+        "id": "401547486",
+        "week": 7,
+        "predictedWinner": "Washington Commanders",
+        "actualWinner": "New York Giants",
+        "correct": false,
+        "homeEdgePoints": -7.28
+      },
+      {
+        "season": 2023,
+        "id": "401547489",
+        "week": 7,
+        "predictedWinner": "Detroit Lions",
+        "actualWinner": "Baltimore Ravens",
+        "correct": false,
+        "homeEdgePoints": -2.02
+      },
+      {
+        "season": 2023,
+        "id": "401547490",
+        "week": 7,
+        "predictedWinner": "Chicago Bears",
+        "actualWinner": "Chicago Bears",
+        "correct": true,
+        "homeEdgePoints": 0.52
+      },
+      {
+        "season": 2023,
+        "id": "401547491",
+        "week": 7,
+        "predictedWinner": "Tampa Bay Buccaneers",
+        "actualWinner": "Atlanta Falcons",
+        "correct": false,
+        "homeEdgePoints": 5.33
+      },
+      {
+        "season": 2023,
+        "id": "401547492",
+        "week": 7,
+        "predictedWinner": "Los Angeles Rams",
+        "actualWinner": "Pittsburgh Steelers",
+        "correct": false,
+        "homeEdgePoints": 10.89
+      },
+      {
+        "season": 2023,
+        "id": "401547493",
+        "week": 7,
+        "predictedWinner": "Seattle Seahawks",
+        "actualWinner": "Seattle Seahawks",
+        "correct": true,
+        "homeEdgePoints": 16.69
+      },
+      {
+        "season": 2023,
+        "id": "401547487",
+        "week": 7,
+        "predictedWinner": "Green Bay Packers",
+        "actualWinner": "Denver Broncos",
+        "correct": false,
+        "homeEdgePoints": -6.88
+      },
+      {
+        "season": 2023,
+        "id": "401547488",
+        "week": 7,
+        "predictedWinner": "Kansas City Chiefs",
+        "actualWinner": "Kansas City Chiefs",
+        "correct": true,
+        "homeEdgePoints": 9.26
+      },
+      {
+        "season": 2023,
+        "id": "401547494",
+        "week": 7,
+        "predictedWinner": "Miami Dolphins",
+        "actualWinner": "Philadelphia Eagles",
+        "correct": false,
+        "homeEdgePoints": -2.9
+      },
+      {
+        "season": 2023,
+        "id": "401547495",
+        "week": 7,
+        "predictedWinner": "San Francisco 49ers",
+        "actualWinner": "Minnesota Vikings",
+        "correct": false,
+        "homeEdgePoints": -14.72
+      },
+      {
+        "season": 2023,
+        "id": "401547496",
+        "week": 8,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Buffalo Bills",
+        "correct": true,
+        "homeEdgePoints": 9.22
+      },
+      {
+        "season": 2023,
+        "id": "401547497",
+        "week": 8,
+        "predictedWinner": "Miami Dolphins",
+        "actualWinner": "Miami Dolphins",
+        "correct": true,
+        "homeEdgePoints": 20.0
+      },
+      {
+        "season": 2023,
+        "id": "401547498",
+        "week": 8,
+        "predictedWinner": "New York Jets",
+        "actualWinner": "New York Jets",
+        "correct": true,
+        "homeEdgePoints": -9.29
+      },
+      {
+        "season": 2023,
+        "id": "401547499",
+        "week": 8,
+        "predictedWinner": "Jacksonville Jaguars",
+        "actualWinner": "Jacksonville Jaguars",
+        "correct": true,
+        "homeEdgePoints": -7.9
+      },
+      {
+        "season": 2023,
+        "id": "401547500",
+        "week": 8,
+        "predictedWinner": "Tennessee Titans",
+        "actualWinner": "Tennessee Titans",
+        "correct": true,
+        "homeEdgePoints": 2.98
+      },
+      {
+        "season": 2023,
+        "id": "401547504",
+        "week": 8,
+        "predictedWinner": "Houston Texans",
+        "actualWinner": "Carolina Panthers",
+        "correct": false,
+        "homeEdgePoints": -17.3
+      },
+      {
+        "season": 2023,
+        "id": "401547505",
+        "week": 8,
+        "predictedWinner": "Dallas Cowboys",
+        "actualWinner": "Dallas Cowboys",
+        "correct": true,
+        "homeEdgePoints": 6.9
+      },
+      {
+        "season": 2023,
+        "id": "401547506",
+        "week": 8,
+        "predictedWinner": "Minnesota Vikings",
+        "actualWinner": "Minnesota Vikings",
+        "correct": true,
+        "homeEdgePoints": -1.03
+      },
+      {
+        "season": 2023,
+        "id": "401547507",
+        "week": 8,
+        "predictedWinner": "New Orleans Saints",
+        "actualWinner": "New Orleans Saints",
+        "correct": true,
+        "homeEdgePoints": -3.51
+      },
+      {
+        "season": 2023,
+        "id": "401547508",
+        "week": 8,
+        "predictedWinner": "Philadelphia Eagles",
+        "actualWinner": "Philadelphia Eagles",
+        "correct": true,
+        "homeEdgePoints": -11.6
+      },
+      {
+        "season": 2023,
+        "id": "401547509",
+        "week": 8,
+        "predictedWinner": "Seattle Seahawks",
+        "actualWinner": "Seattle Seahawks",
+        "correct": true,
+        "homeEdgePoints": 7.21
+      },
+      {
+        "season": 2023,
+        "id": "401547501",
+        "week": 8,
+        "predictedWinner": "Baltimore Ravens",
+        "actualWinner": "Baltimore Ravens",
+        "correct": true,
+        "homeEdgePoints": -18.8
+      },
+      {
+        "season": 2023,
+        "id": "401547502",
+        "week": 8,
+        "predictedWinner": "Kansas City Chiefs",
+        "actualWinner": "Denver Broncos",
+        "correct": false,
+        "homeEdgePoints": -17.8
+      },
+      {
+        "season": 2023,
+        "id": "401547503",
+        "week": 8,
+        "predictedWinner": "San Francisco 49ers",
+        "actualWinner": "Cincinnati Bengals",
+        "correct": false,
+        "homeEdgePoints": 16.95
+      },
+      {
+        "season": 2023,
+        "id": "401547510",
+        "week": 8,
+        "predictedWinner": "Chicago Bears",
+        "actualWinner": "Los Angeles Chargers",
+        "correct": false,
+        "homeEdgePoints": -0.98
+      },
+      {
+        "season": 2023,
+        "id": "401547511",
+        "week": 8,
+        "predictedWinner": "Detroit Lions",
+        "actualWinner": "Detroit Lions",
+        "correct": true,
+        "homeEdgePoints": 9.7
+      },
+      {
+        "season": 2023,
+        "id": "401547512",
+        "week": 9,
+        "predictedWinner": "Pittsburgh Steelers",
+        "actualWinner": "Pittsburgh Steelers",
+        "correct": true,
+        "homeEdgePoints": 0.29
+      },
+      {
+        "season": 2023,
+        "id": "401547230",
+        "week": 9,
+        "predictedWinner": "Miami Dolphins",
+        "actualWinner": "Kansas City Chiefs",
+        "correct": false,
+        "homeEdgePoints": -0.39
+      },
+      {
+        "season": 2023,
+        "id": "401547513",
+        "week": 9,
+        "predictedWinner": "Baltimore Ravens",
+        "actualWinner": "Baltimore Ravens",
+        "correct": true,
+        "homeEdgePoints": 9.28
+      },
+      {
+        "season": 2023,
+        "id": "401547514",
+        "week": 9,
+        "predictedWinner": "Cleveland Browns",
+        "actualWinner": "Cleveland Browns",
+        "correct": true,
+        "homeEdgePoints": 11.72
+      },
+      {
+        "season": 2023,
+        "id": "401547515",
+        "week": 9,
+        "predictedWinner": "Houston Texans",
+        "actualWinner": "Houston Texans",
+        "correct": true,
+        "homeEdgePoints": 6.8
+      },
+      {
+        "season": 2023,
+        "id": "401547516",
+        "week": 9,
+        "predictedWinner": "New Orleans Saints",
+        "actualWinner": "New Orleans Saints",
+        "correct": true,
+        "homeEdgePoints": 7.3
+      },
+      {
+        "season": 2023,
+        "id": "401547518",
+        "week": 9,
+        "predictedWinner": "Minnesota Vikings",
+        "actualWinner": "Minnesota Vikings",
+        "correct": true,
+        "homeEdgePoints": -5.15
+      },
+      {
+        "season": 2023,
+        "id": "401547519",
+        "week": 9,
+        "predictedWinner": "Los Angeles Rams",
+        "actualWinner": "Green Bay Packers",
+        "correct": false,
+        "homeEdgePoints": -0.02
+      },
+      {
+        "season": 2023,
+        "id": "401547520",
+        "week": 9,
+        "predictedWinner": "Washington Commanders",
+        "actualWinner": "Washington Commanders",
+        "correct": true,
+        "homeEdgePoints": -2.19
+      },
+      {
+        "season": 2023,
+        "id": "401547517",
+        "week": 9,
+        "predictedWinner": "Indianapolis Colts",
+        "actualWinner": "Indianapolis Colts",
+        "correct": true,
+        "homeEdgePoints": -4.4
+      },
+      {
+        "season": 2023,
+        "id": "401547521",
+        "week": 9,
+        "predictedWinner": "Las Vegas Raiders",
+        "actualWinner": "Las Vegas Raiders",
+        "correct": true,
+        "homeEdgePoints": 1.71
+      },
+      {
+        "season": 2023,
+        "id": "401547522",
+        "week": 9,
+        "predictedWinner": "Philadelphia Eagles",
+        "actualWinner": "Philadelphia Eagles",
+        "correct": true,
+        "homeEdgePoints": 0.45
+      },
+      {
+        "season": 2023,
+        "id": "401547523",
+        "week": 9,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Cincinnati Bengals",
+        "correct": false,
+        "homeEdgePoints": -4.83
+      },
+      {
+        "season": 2023,
+        "id": "401547524",
+        "week": 9,
+        "predictedWinner": "New York Jets",
+        "actualWinner": "Los Angeles Chargers",
+        "correct": false,
+        "homeEdgePoints": 2.5
+      },
+      {
+        "season": 2023,
+        "id": "401547525",
+        "week": 10,
+        "predictedWinner": "Chicago Bears",
+        "actualWinner": "Chicago Bears",
+        "correct": true,
+        "homeEdgePoints": 7.53
+      },
+      {
+        "season": 2023,
+        "id": "401547231",
+        "week": 10,
+        "predictedWinner": "Indianapolis Colts",
+        "actualWinner": "Indianapolis Colts",
+        "correct": true,
+        "homeEdgePoints": -6.45
+      },
+      {
+        "season": 2023,
+        "id": "401547526",
+        "week": 10,
+        "predictedWinner": "Cincinnati Bengals",
+        "actualWinner": "Houston Texans",
+        "correct": false,
+        "homeEdgePoints": 0.66
+      },
+      {
+        "season": 2023,
+        "id": "401547527",
+        "week": 10,
+        "predictedWinner": "Green Bay Packers",
+        "actualWinner": "Pittsburgh Steelers",
+        "correct": false,
+        "homeEdgePoints": -1.21
+      },
+      {
+        "season": 2023,
+        "id": "401547528",
+        "week": 10,
+        "predictedWinner": "Tampa Bay Buccaneers",
+        "actualWinner": "Tampa Bay Buccaneers",
+        "correct": true,
+        "homeEdgePoints": 1.36
+      },
+      {
+        "season": 2023,
+        "id": "401547531",
+        "week": 10,
+        "predictedWinner": "Baltimore Ravens",
+        "actualWinner": "Cleveland Browns",
+        "correct": false,
+        "homeEdgePoints": 11.67
+      },
+      {
+        "season": 2023,
+        "id": "401547532",
+        "week": 10,
+        "predictedWinner": "Jacksonville Jaguars",
+        "actualWinner": "San Francisco 49ers",
+        "correct": false,
+        "homeEdgePoints": 3.41
+      },
+      {
+        "season": 2023,
+        "id": "401547533",
+        "week": 10,
+        "predictedWinner": "Minnesota Vikings",
+        "actualWinner": "Minnesota Vikings",
+        "correct": true,
+        "homeEdgePoints": 1.98
+      },
+      {
+        "season": 2023,
+        "id": "401547529",
+        "week": 10,
+        "predictedWinner": "Atlanta Falcons",
+        "actualWinner": "Arizona Cardinals",
+        "correct": false,
+        "homeEdgePoints": -7.3
+      },
+      {
+        "season": 2023,
+        "id": "401547530",
+        "week": 10,
+        "predictedWinner": "Los Angeles Chargers",
+        "actualWinner": "Detroit Lions",
+        "correct": false,
+        "homeEdgePoints": 3.8
+      },
+      {
+        "season": 2023,
+        "id": "401547534",
+        "week": 10,
+        "predictedWinner": "Dallas Cowboys",
+        "actualWinner": "Dallas Cowboys",
+        "correct": true,
+        "homeEdgePoints": 20.92
+      },
+      {
+        "season": 2023,
+        "id": "401547535",
+        "week": 10,
+        "predictedWinner": "Seattle Seahawks",
+        "actualWinner": "Seattle Seahawks",
+        "correct": true,
+        "homeEdgePoints": 4.45
+      },
+      {
+        "season": 2023,
+        "id": "401547536",
+        "week": 10,
+        "predictedWinner": "Las Vegas Raiders",
+        "actualWinner": "Las Vegas Raiders",
+        "correct": true,
+        "homeEdgePoints": 1.32
+      },
+      {
+        "season": 2023,
+        "id": "401547537",
+        "week": 10,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Denver Broncos",
+        "correct": false,
+        "homeEdgePoints": 11.45
+      },
+      {
+        "season": 2023,
+        "id": "401547538",
+        "week": 11,
+        "predictedWinner": "Baltimore Ravens",
+        "actualWinner": "Baltimore Ravens",
+        "correct": true,
+        "homeEdgePoints": 12.39
+      },
+      {
+        "season": 2023,
+        "id": "401547539",
+        "week": 11,
+        "predictedWinner": "Cleveland Browns",
+        "actualWinner": "Cleveland Browns",
+        "correct": true,
+        "homeEdgePoints": 9.65
+      },
+      {
+        "season": 2023,
+        "id": "401547540",
+        "week": 11,
+        "predictedWinner": "Houston Texans",
+        "actualWinner": "Houston Texans",
+        "correct": true,
+        "homeEdgePoints": 13.04
+      },
+      {
+        "season": 2023,
+        "id": "401547541",
+        "week": 11,
+        "predictedWinner": "Jacksonville Jaguars",
+        "actualWinner": "Jacksonville Jaguars",
+        "correct": true,
+        "homeEdgePoints": 3.89
+      },
+      {
+        "season": 2023,
+        "id": "401547542",
+        "week": 11,
+        "predictedWinner": "Miami Dolphins",
+        "actualWinner": "Miami Dolphins",
+        "correct": true,
+        "homeEdgePoints": 6.18
+      },
+      {
+        "season": 2023,
+        "id": "401547545",
+        "week": 11,
+        "predictedWinner": "Dallas Cowboys",
+        "actualWinner": "Dallas Cowboys",
+        "correct": true,
+        "homeEdgePoints": -20.02
+      },
+      {
+        "season": 2023,
+        "id": "401547546",
+        "week": 11,
+        "predictedWinner": "Detroit Lions",
+        "actualWinner": "Detroit Lions",
+        "correct": true,
+        "homeEdgePoints": 8.42
+      },
+      {
+        "season": 2023,
+        "id": "401547547",
+        "week": 11,
+        "predictedWinner": "Los Angeles Chargers",
+        "actualWinner": "Green Bay Packers",
+        "correct": false,
+        "homeEdgePoints": -4.2
+      },
+      {
+        "season": 2023,
+        "id": "401547548",
+        "week": 11,
+        "predictedWinner": "Washington Commanders",
+        "actualWinner": "New York Giants",
+        "correct": false,
+        "homeEdgePoints": 13.07
+      },
+      {
+        "season": 2023,
+        "id": "401547549",
+        "week": 11,
+        "predictedWinner": "San Francisco 49ers",
+        "actualWinner": "San Francisco 49ers",
+        "correct": true,
+        "homeEdgePoints": 10.18
+      },
+      {
+        "season": 2023,
+        "id": "401547543",
+        "week": 11,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Buffalo Bills",
+        "correct": true,
+        "homeEdgePoints": 11.13
+      },
+      {
+        "season": 2023,
+        "id": "401547544",
+        "week": 11,
+        "predictedWinner": "Seattle Seahawks",
+        "actualWinner": "Los Angeles Rams",
+        "correct": false,
+        "homeEdgePoints": -2.45
+      },
+      {
+        "season": 2023,
+        "id": "401547550",
+        "week": 11,
+        "predictedWinner": "Minnesota Vikings",
+        "actualWinner": "Denver Broncos",
+        "correct": false,
+        "homeEdgePoints": -4.83
+      },
+      {
+        "season": 2023,
+        "id": "401547345",
+        "week": 11,
+        "predictedWinner": "Kansas City Chiefs",
+        "actualWinner": "Philadelphia Eagles",
+        "correct": false,
+        "homeEdgePoints": 0.12
+      },
+      {
+        "season": 2023,
+        "id": "401547552",
+        "week": 12,
+        "predictedWinner": "Detroit Lions",
+        "actualWinner": "Green Bay Packers",
+        "correct": false,
+        "homeEdgePoints": 4.91
+      },
+      {
+        "season": 2023,
+        "id": "401547551",
+        "week": 12,
+        "predictedWinner": "Dallas Cowboys",
+        "actualWinner": "Dallas Cowboys",
+        "correct": true,
+        "homeEdgePoints": 20.98
+      },
+      {
+        "season": 2023,
+        "id": "401547553",
+        "week": 12,
+        "predictedWinner": "San Francisco 49ers",
+        "actualWinner": "San Francisco 49ers",
+        "correct": true,
+        "homeEdgePoints": -13.38
+      },
+      {
+        "season": 2023,
+        "id": "401547242",
+        "week": 12,
+        "predictedWinner": "Miami Dolphins",
+        "actualWinner": "Miami Dolphins",
+        "correct": true,
+        "homeEdgePoints": -13.47
+      },
+      {
+        "season": 2023,
+        "id": "401547554",
+        "week": 12,
+        "predictedWinner": "Cincinnati Bengals",
+        "actualWinner": "Pittsburgh Steelers",
+        "correct": false,
+        "homeEdgePoints": 0.25
+      },
+      {
+        "season": 2023,
+        "id": "401547555",
+        "week": 12,
+        "predictedWinner": "Houston Texans",
+        "actualWinner": "Jacksonville Jaguars",
+        "correct": false,
+        "homeEdgePoints": 2.88
+      },
+      {
+        "season": 2023,
+        "id": "401547556",
+        "week": 12,
+        "predictedWinner": "Indianapolis Colts",
+        "actualWinner": "Indianapolis Colts",
+        "correct": true,
+        "homeEdgePoints": 2.44
+      },
+      {
+        "season": 2023,
+        "id": "401547559",
+        "week": 12,
+        "predictedWinner": "New Orleans Saints",
+        "actualWinner": "Atlanta Falcons",
+        "correct": false,
+        "homeEdgePoints": -3.58
+      },
+      {
+        "season": 2023,
+        "id": "401547560",
+        "week": 12,
+        "predictedWinner": "New England Patriots",
+        "actualWinner": "New York Giants",
+        "correct": false,
+        "homeEdgePoints": -2.66
+      },
+      {
+        "season": 2023,
+        "id": "401547561",
+        "week": 12,
+        "predictedWinner": "Tennessee Titans",
+        "actualWinner": "Tennessee Titans",
+        "correct": true,
+        "homeEdgePoints": 6.32
+      },
+      {
+        "season": 2023,
+        "id": "401547562",
+        "week": 12,
+        "predictedWinner": "Los Angeles Rams",
+        "actualWinner": "Los Angeles Rams",
+        "correct": true,
+        "homeEdgePoints": -1.7
+      },
+      {
+        "season": 2023,
+        "id": "401547563",
+        "week": 12,
+        "predictedWinner": "Cleveland Browns",
+        "actualWinner": "Denver Broncos",
+        "correct": false,
+        "homeEdgePoints": -6.76
+      },
+      {
+        "season": 2023,
+        "id": "401547557",
+        "week": 12,
+        "predictedWinner": "Kansas City Chiefs",
+        "actualWinner": "Kansas City Chiefs",
+        "correct": true,
+        "homeEdgePoints": -2.02
+      },
+      {
+        "season": 2023,
+        "id": "401547558",
+        "week": 12,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Philadelphia Eagles",
+        "correct": false,
+        "homeEdgePoints": -1.05
+      },
+      {
+        "season": 2023,
+        "id": "401547564",
+        "week": 12,
+        "predictedWinner": "Baltimore Ravens",
+        "actualWinner": "Baltimore Ravens",
+        "correct": true,
+        "homeEdgePoints": -8.21
+      },
+      {
+        "season": 2023,
+        "id": "401547565",
+        "week": 12,
+        "predictedWinner": "Minnesota Vikings",
+        "actualWinner": "Chicago Bears",
+        "correct": false,
+        "homeEdgePoints": 8.42
+      },
+      {
+        "season": 2023,
+        "id": "401547566",
+        "week": 13,
+        "predictedWinner": "Dallas Cowboys",
+        "actualWinner": "Dallas Cowboys",
+        "correct": true,
+        "homeEdgePoints": 23.68
+      },
+      {
+        "season": 2023,
+        "id": "401547567",
+        "week": 13,
+        "predictedWinner": "Los Angeles Chargers",
+        "actualWinner": "Los Angeles Chargers",
+        "correct": true,
+        "homeEdgePoints": -4.96
+      },
+      {
+        "season": 2023,
+        "id": "401547568",
+        "week": 13,
+        "predictedWinner": "Pittsburgh Steelers",
+        "actualWinner": "Arizona Cardinals",
+        "correct": false,
+        "homeEdgePoints": 10.04
+      },
+      {
+        "season": 2023,
+        "id": "401547570",
+        "week": 13,
+        "predictedWinner": "Indianapolis Colts",
+        "actualWinner": "Indianapolis Colts",
+        "correct": true,
+        "homeEdgePoints": -6.25
+      },
+      {
+        "season": 2023,
+        "id": "401547571",
+        "week": 13,
+        "predictedWinner": "Houston Texans",
+        "actualWinner": "Houston Texans",
+        "correct": true,
+        "homeEdgePoints": 3.88
+      },
+      {
+        "season": 2023,
+        "id": "401547572",
+        "week": 13,
+        "predictedWinner": "Detroit Lions",
+        "actualWinner": "Detroit Lions",
+        "correct": true,
+        "homeEdgePoints": -1.44
+      },
+      {
+        "season": 2023,
+        "id": "401547573",
+        "week": 13,
+        "predictedWinner": "Atlanta Falcons",
+        "actualWinner": "Atlanta Falcons",
+        "correct": true,
+        "homeEdgePoints": -7.56
+      },
+      {
+        "season": 2023,
+        "id": "401547574",
+        "week": 13,
+        "predictedWinner": "Miami Dolphins",
+        "actualWinner": "Miami Dolphins",
+        "correct": true,
+        "homeEdgePoints": -17.27
+      },
+      {
+        "season": 2023,
+        "id": "401547569",
+        "week": 13,
+        "predictedWinner": "Tampa Bay Buccaneers",
+        "actualWinner": "Tampa Bay Buccaneers",
+        "correct": true,
+        "homeEdgePoints": 10.82
+      },
+      {
+        "season": 2023,
+        "id": "401547276",
+        "week": 13,
+        "predictedWinner": "San Francisco 49ers",
+        "actualWinner": "San Francisco 49ers",
+        "correct": true,
+        "homeEdgePoints": -8.34
+      },
+      {
+        "season": 2023,
+        "id": "401547575",
+        "week": 13,
+        "predictedWinner": "Los Angeles Rams",
+        "actualWinner": "Los Angeles Rams",
+        "correct": true,
+        "homeEdgePoints": 1.36
+      },
+      {
+        "season": 2023,
+        "id": "401547576",
+        "week": 13,
+        "predictedWinner": "Kansas City Chiefs",
+        "actualWinner": "Green Bay Packers",
+        "correct": false,
+        "homeEdgePoints": -3.93
+      },
+      {
+        "season": 2023,
+        "id": "401547577",
+        "week": 13,
+        "predictedWinner": "Jacksonville Jaguars",
+        "actualWinner": "Cincinnati Bengals",
+        "correct": false,
+        "homeEdgePoints": 6.76
+      },
+      {
+        "season": 2023,
+        "id": "401547578",
+        "week": 14,
+        "predictedWinner": "Pittsburgh Steelers",
+        "actualWinner": "New England Patriots",
+        "correct": false,
+        "homeEdgePoints": 5.72
+      },
+      {
+        "season": 2023,
+        "id": "401547579",
+        "week": 14,
+        "predictedWinner": "Atlanta Falcons",
+        "actualWinner": "Tampa Bay Buccaneers",
+        "correct": false,
+        "homeEdgePoints": 4.28
+      },
+      {
+        "season": 2023,
+        "id": "401547580",
+        "week": 14,
+        "predictedWinner": "Indianapolis Colts",
+        "actualWinner": "Cincinnati Bengals",
+        "correct": false,
+        "homeEdgePoints": -3.41
+      },
+      {
+        "season": 2023,
+        "id": "401547581",
+        "week": 14,
+        "predictedWinner": "Jacksonville Jaguars",
+        "actualWinner": "Cleveland Browns",
+        "correct": false,
+        "homeEdgePoints": -4.36
+      },
+      {
+        "season": 2023,
+        "id": "401547582",
+        "week": 14,
+        "predictedWinner": "Houston Texans",
+        "actualWinner": "New York Jets",
+        "correct": false,
+        "homeEdgePoints": -10.94
+      },
+      {
+        "season": 2023,
+        "id": "401547585",
+        "week": 14,
+        "predictedWinner": "Baltimore Ravens",
+        "actualWinner": "Baltimore Ravens",
+        "correct": true,
+        "homeEdgePoints": 6.72
+      },
+      {
+        "season": 2023,
+        "id": "401547586",
+        "week": 14,
+        "predictedWinner": "Detroit Lions",
+        "actualWinner": "Chicago Bears",
+        "correct": false,
+        "homeEdgePoints": -4.34
+      },
+      {
+        "season": 2023,
+        "id": "401547587",
+        "week": 14,
+        "predictedWinner": "New Orleans Saints",
+        "actualWinner": "New Orleans Saints",
+        "correct": true,
+        "homeEdgePoints": 9.84
+      },
+      {
+        "season": 2023,
+        "id": "401547588",
+        "week": 14,
+        "predictedWinner": "Minnesota Vikings",
+        "actualWinner": "Minnesota Vikings",
+        "correct": true,
+        "homeEdgePoints": -5.08
+      },
+      {
+        "season": 2023,
+        "id": "401547589",
+        "week": 14,
+        "predictedWinner": "San Francisco 49ers",
+        "actualWinner": "San Francisco 49ers",
+        "correct": true,
+        "homeEdgePoints": 20.42
+      },
+      {
+        "season": 2023,
+        "id": "401547583",
+        "week": 14,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Buffalo Bills",
+        "correct": true,
+        "homeEdgePoints": -2.39
+      },
+      {
+        "season": 2023,
+        "id": "401547584",
+        "week": 14,
+        "predictedWinner": "Los Angeles Chargers",
+        "actualWinner": "Denver Broncos",
+        "correct": false,
+        "homeEdgePoints": 2.77
+      },
+      {
+        "season": 2023,
+        "id": "401547590",
+        "week": 14,
+        "predictedWinner": "Dallas Cowboys",
+        "actualWinner": "Dallas Cowboys",
+        "correct": true,
+        "homeEdgePoints": 16.9
+      },
+      {
+        "season": 2023,
+        "id": "401547591",
+        "week": 14,
+        "predictedWinner": "Green Bay Packers",
+        "actualWinner": "New York Giants",
+        "correct": false,
+        "homeEdgePoints": -10.63
+      },
+      {
+        "season": 2023,
+        "id": "401547592",
+        "week": 14,
+        "predictedWinner": "Miami Dolphins",
+        "actualWinner": "Tennessee Titans",
+        "correct": false,
+        "homeEdgePoints": 18.23
+      },
+      {
+        "season": 2023,
+        "id": "401547593",
+        "week": 15,
+        "predictedWinner": "Los Angeles Chargers",
+        "actualWinner": "Las Vegas Raiders",
+        "correct": false,
+        "homeEdgePoints": -1.87
+      },
+      {
+        "season": 2023,
+        "id": "401547604",
+        "week": 15,
+        "predictedWinner": "Cincinnati Bengals",
+        "actualWinner": "Cincinnati Bengals",
+        "correct": true,
+        "homeEdgePoints": 1.53
+      },
+      {
+        "season": 2023,
+        "id": "401547607",
+        "week": 15,
+        "predictedWinner": "Indianapolis Colts",
+        "actualWinner": "Indianapolis Colts",
+        "correct": true,
+        "homeEdgePoints": 2.9
+      },
+      {
+        "season": 2023,
+        "id": "401547606",
+        "week": 15,
+        "predictedWinner": "Denver Broncos",
+        "actualWinner": "Detroit Lions",
+        "correct": false,
+        "homeEdgePoints": -0.52
+      },
+      {
+        "season": 2023,
+        "id": "401547594",
+        "week": 15,
+        "predictedWinner": "Miami Dolphins",
+        "actualWinner": "Miami Dolphins",
+        "correct": true,
+        "homeEdgePoints": 16.02
+      },
+      {
+        "season": 2023,
+        "id": "401547595",
+        "week": 15,
+        "predictedWinner": "Tennessee Titans",
+        "actualWinner": "Houston Texans",
+        "correct": false,
+        "homeEdgePoints": 1.56
+      },
+      {
+        "season": 2023,
+        "id": "401547598",
+        "week": 15,
+        "predictedWinner": "Green Bay Packers",
+        "actualWinner": "Tampa Bay Buccaneers",
+        "correct": false,
+        "homeEdgePoints": 3.93
+      },
+      {
+        "season": 2023,
+        "id": "401547599",
+        "week": 15,
+        "predictedWinner": "New Orleans Saints",
+        "actualWinner": "New Orleans Saints",
+        "correct": true,
+        "homeEdgePoints": 8.95
+      },
+      {
+        "season": 2023,
+        "id": "401547603",
+        "week": 15,
+        "predictedWinner": "Atlanta Falcons",
+        "actualWinner": "Carolina Panthers",
+        "correct": false,
+        "homeEdgePoints": -9.49
+      },
+      {
+        "season": 2023,
+        "id": "401547605",
+        "week": 15,
+        "predictedWinner": "Cleveland Browns",
+        "actualWinner": "Cleveland Browns",
+        "correct": true,
+        "homeEdgePoints": 0.32
+      },
+      {
+        "season": 2023,
+        "id": "401547608",
+        "week": 15,
+        "predictedWinner": "Kansas City Chiefs",
+        "actualWinner": "Kansas City Chiefs",
+        "correct": true,
+        "homeEdgePoints": -8.39
+      },
+      {
+        "season": 2023,
+        "id": "401547596",
+        "week": 15,
+        "predictedWinner": "San Francisco 49ers",
+        "actualWinner": "San Francisco 49ers",
+        "correct": true,
+        "homeEdgePoints": -20.06
+      },
+      {
+        "season": 2023,
+        "id": "401547597",
+        "week": 15,
+        "predictedWinner": "Los Angeles Rams",
+        "actualWinner": "Los Angeles Rams",
+        "correct": true,
+        "homeEdgePoints": 20.3
+      },
+      {
+        "season": 2023,
+        "id": "401547600",
+        "week": 15,
+        "predictedWinner": "Dallas Cowboys",
+        "actualWinner": "Buffalo Bills",
+        "correct": false,
+        "homeEdgePoints": -6.52
+      },
+      {
+        "season": 2023,
+        "id": "401547602",
+        "week": 15,
+        "predictedWinner": "Baltimore Ravens",
+        "actualWinner": "Baltimore Ravens",
+        "correct": true,
+        "homeEdgePoints": -8.42
+      },
+      {
+        "season": 2023,
+        "id": "401547601",
+        "week": 15,
+        "predictedWinner": "Philadelphia Eagles",
+        "actualWinner": "Seattle Seahawks",
+        "correct": false,
+        "homeEdgePoints": -1.28
+      },
+      {
+        "season": 2023,
+        "id": "401547609",
+        "week": 16,
+        "predictedWinner": "New Orleans Saints",
+        "actualWinner": "Los Angeles Rams",
+        "correct": false,
+        "homeEdgePoints": -1.35
+      },
+      {
+        "season": 2023,
+        "id": "401547610",
+        "week": 16,
+        "predictedWinner": "Cincinnati Bengals",
+        "actualWinner": "Pittsburgh Steelers",
+        "correct": false,
+        "homeEdgePoints": -7.15
+      },
+      {
+        "season": 2023,
+        "id": "401547611",
+        "week": 16,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Buffalo Bills",
+        "correct": true,
+        "homeEdgePoints": -14.25
+      },
+      {
+        "season": 2023,
+        "id": "401547612",
+        "week": 16,
+        "predictedWinner": "Houston Texans",
+        "actualWinner": "Cleveland Browns",
+        "correct": false,
+        "homeEdgePoints": 0.45
+      },
+      {
+        "season": 2023,
+        "id": "401547613",
+        "week": 16,
+        "predictedWinner": "New York Jets",
+        "actualWinner": "New York Jets",
+        "correct": true,
+        "homeEdgePoints": 10.5
+      },
+      {
+        "season": 2023,
+        "id": "401547614",
+        "week": 16,
+        "predictedWinner": "Tennessee Titans",
+        "actualWinner": "Seattle Seahawks",
+        "correct": false,
+        "homeEdgePoints": 2.05
+      },
+      {
+        "season": 2023,
+        "id": "401547616",
+        "week": 16,
+        "predictedWinner": "Atlanta Falcons",
+        "actualWinner": "Atlanta Falcons",
+        "correct": true,
+        "homeEdgePoints": 0.35
+      },
+      {
+        "season": 2023,
+        "id": "401547617",
+        "week": 16,
+        "predictedWinner": "Green Bay Packers",
+        "actualWinner": "Green Bay Packers",
+        "correct": true,
+        "homeEdgePoints": -7.05
+      },
+      {
+        "season": 2023,
+        "id": "401547618",
+        "week": 16,
+        "predictedWinner": "Detroit Lions",
+        "actualWinner": "Detroit Lions",
+        "correct": true,
+        "homeEdgePoints": -1.7
+      },
+      {
+        "season": 2023,
+        "id": "401547615",
+        "week": 16,
+        "predictedWinner": "Tampa Bay Buccaneers",
+        "actualWinner": "Tampa Bay Buccaneers",
+        "correct": true,
+        "homeEdgePoints": 5.9
+      },
+      {
+        "season": 2023,
+        "id": "401547619",
+        "week": 16,
+        "predictedWinner": "Chicago Bears",
+        "actualWinner": "Chicago Bears",
+        "correct": true,
+        "homeEdgePoints": 9.15
+      },
+      {
+        "season": 2023,
+        "id": "401547620",
+        "week": 16,
+        "predictedWinner": "Miami Dolphins",
+        "actualWinner": "Miami Dolphins",
+        "correct": true,
+        "homeEdgePoints": 5.9
+      },
+      {
+        "season": 2023,
+        "id": "401547621",
+        "week": 16,
+        "predictedWinner": "Denver Broncos",
+        "actualWinner": "New England Patriots",
+        "correct": false,
+        "homeEdgePoints": 4.8
+      },
+      {
+        "season": 2023,
+        "id": "401547351",
+        "week": 16,
+        "predictedWinner": "Kansas City Chiefs",
+        "actualWinner": "Las Vegas Raiders",
+        "correct": false,
+        "homeEdgePoints": 3.35
+      },
+      {
+        "season": 2023,
+        "id": "401547241",
+        "week": 16,
+        "predictedWinner": "Philadelphia Eagles",
+        "actualWinner": "Philadelphia Eagles",
+        "correct": true,
+        "homeEdgePoints": 6.55
+      },
+      {
+        "season": 2023,
+        "id": "401547622",
+        "week": 16,
+        "predictedWinner": "San Francisco 49ers",
+        "actualWinner": "Baltimore Ravens",
+        "correct": false,
+        "homeEdgePoints": 5.0
+      },
+      {
+        "season": 2023,
+        "id": "401547623",
+        "week": 17,
+        "predictedWinner": "Cleveland Browns",
+        "actualWinner": "Cleveland Browns",
+        "correct": true,
+        "homeEdgePoints": 9.51
+      },
+      {
+        "season": 2023,
+        "id": "401547624",
+        "week": 17,
+        "predictedWinner": "Dallas Cowboys",
+        "actualWinner": "Dallas Cowboys",
+        "correct": true,
+        "homeEdgePoints": 4.64
+      },
+      {
+        "season": 2023,
+        "id": "401547625",
+        "week": 17,
+        "predictedWinner": "Baltimore Ravens",
+        "actualWinner": "Baltimore Ravens",
+        "correct": true,
+        "homeEdgePoints": 3.12
+      },
+      {
+        "season": 2023,
+        "id": "401547626",
+        "week": 17,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Buffalo Bills",
+        "correct": true,
+        "homeEdgePoints": 15.56
+      },
+      {
+        "season": 2023,
+        "id": "401547627",
+        "week": 17,
+        "predictedWinner": "Chicago Bears",
+        "actualWinner": "Chicago Bears",
+        "correct": true,
+        "homeEdgePoints": 1.1
+      },
+      {
+        "season": 2023,
+        "id": "401547628",
+        "week": 17,
+        "predictedWinner": "Las Vegas Raiders",
+        "actualWinner": "Indianapolis Colts",
+        "correct": false,
+        "homeEdgePoints": -5.62
+      },
+      {
+        "season": 2023,
+        "id": "401547629",
+        "week": 17,
+        "predictedWinner": "Jacksonville Jaguars",
+        "actualWinner": "Jacksonville Jaguars",
+        "correct": true,
+        "homeEdgePoints": 6.21
+      },
+      {
+        "season": 2023,
+        "id": "401547631",
+        "week": 17,
+        "predictedWinner": "Houston Texans",
+        "actualWinner": "Houston Texans",
+        "correct": true,
+        "homeEdgePoints": 0.55
+      },
+      {
+        "season": 2023,
+        "id": "401547632",
+        "week": 17,
+        "predictedWinner": "Los Angeles Rams",
+        "actualWinner": "Los Angeles Rams",
+        "correct": true,
+        "homeEdgePoints": -10.4
+      },
+      {
+        "season": 2023,
+        "id": "401547633",
+        "week": 17,
+        "predictedWinner": "Philadelphia Eagles",
+        "actualWinner": "Arizona Cardinals",
+        "correct": false,
+        "homeEdgePoints": 8.48
+      },
+      {
+        "season": 2023,
+        "id": "401547634",
+        "week": 17,
+        "predictedWinner": "Tampa Bay Buccaneers",
+        "actualWinner": "New Orleans Saints",
+        "correct": false,
+        "homeEdgePoints": 1.43
+      },
+      {
+        "season": 2023,
+        "id": "401547635",
+        "week": 17,
+        "predictedWinner": "San Francisco 49ers",
+        "actualWinner": "San Francisco 49ers",
+        "correct": true,
+        "homeEdgePoints": -18.88
+      },
+      {
+        "season": 2023,
+        "id": "401547636",
+        "week": 17,
+        "predictedWinner": "Seattle Seahawks",
+        "actualWinner": "Pittsburgh Steelers",
+        "correct": false,
+        "homeEdgePoints": 0.7
+      },
+      {
+        "season": 2023,
+        "id": "401547235",
+        "week": 17,
+        "predictedWinner": "Kansas City Chiefs",
+        "actualWinner": "Kansas City Chiefs",
+        "correct": true,
+        "homeEdgePoints": 6.03
+      },
+      {
+        "season": 2023,
+        "id": "401547630",
+        "week": 17,
+        "predictedWinner": "Denver Broncos",
+        "actualWinner": "Denver Broncos",
+        "correct": true,
+        "homeEdgePoints": 6.22
+      },
+      {
+        "season": 2023,
+        "id": "401547637",
+        "week": 17,
+        "predictedWinner": "Minnesota Vikings",
+        "actualWinner": "Green Bay Packers",
+        "correct": false,
+        "homeEdgePoints": 2.81
+      },
+      {
+        "season": 2023,
+        "id": "401547639",
+        "week": 18,
+        "predictedWinner": "Baltimore Ravens",
+        "actualWinner": "Pittsburgh Steelers",
+        "correct": false,
+        "homeEdgePoints": 17.27
+      },
+      {
+        "season": 2023,
+        "id": "401547644",
+        "week": 18,
+        "predictedWinner": "Houston Texans",
+        "actualWinner": "Houston Texans",
+        "correct": true,
+        "homeEdgePoints": -1.13
+      },
+      {
+        "season": 2023,
+        "id": "401547640",
+        "week": 18,
+        "predictedWinner": "Tampa Bay Buccaneers",
+        "actualWinner": "Tampa Bay Buccaneers",
+        "correct": true,
+        "homeEdgePoints": -11.5
+      },
+      {
+        "season": 2023,
+        "id": "401547641",
+        "week": 18,
+        "predictedWinner": "Cleveland Browns",
+        "actualWinner": "Cincinnati Bengals",
+        "correct": false,
+        "homeEdgePoints": -8.46
+      },
+      {
+        "season": 2023,
+        "id": "401547642",
+        "week": 18,
+        "predictedWinner": "Detroit Lions",
+        "actualWinner": "Detroit Lions",
+        "correct": true,
+        "homeEdgePoints": 10.5
+      },
+      {
+        "season": 2023,
+        "id": "401547648",
+        "week": 18,
+        "predictedWinner": "New England Patriots",
+        "actualWinner": "New York Jets",
+        "correct": false,
+        "homeEdgePoints": 4.04
+      },
+      {
+        "season": 2023,
+        "id": "401547649",
+        "week": 18,
+        "predictedWinner": "New Orleans Saints",
+        "actualWinner": "New Orleans Saints",
+        "correct": true,
+        "homeEdgePoints": 6.64
+      },
+      {
+        "season": 2023,
+        "id": "401547652",
+        "week": 18,
+        "predictedWinner": "Jacksonville Jaguars",
+        "actualWinner": "Tennessee Titans",
+        "correct": false,
+        "homeEdgePoints": -4.28
+      },
+      {
+        "season": 2023,
+        "id": "401547638",
+        "week": 18,
+        "predictedWinner": "Seattle Seahawks",
+        "actualWinner": "Seattle Seahawks",
+        "correct": true,
+        "homeEdgePoints": -4.42
+      },
+      {
+        "season": 2023,
+        "id": "401547643",
+        "week": 18,
+        "predictedWinner": "Green Bay Packers",
+        "actualWinner": "Green Bay Packers",
+        "correct": true,
+        "homeEdgePoints": 1.48
+      },
+      {
+        "season": 2023,
+        "id": "401547645",
+        "week": 18,
+        "predictedWinner": "Kansas City Chiefs",
+        "actualWinner": "Kansas City Chiefs",
+        "correct": true,
+        "homeEdgePoints": -10.36
+      },
+      {
+        "season": 2023,
+        "id": "401547646",
+        "week": 18,
+        "predictedWinner": "Las Vegas Raiders",
+        "actualWinner": "Las Vegas Raiders",
+        "correct": true,
+        "homeEdgePoints": 9.46
+      },
+      {
+        "season": 2023,
+        "id": "401547650",
+        "week": 18,
+        "predictedWinner": "Philadelphia Eagles",
+        "actualWinner": "New York Giants",
+        "correct": false,
+        "homeEdgePoints": -9.18
+      },
+      {
+        "season": 2023,
+        "id": "401547651",
+        "week": 18,
+        "predictedWinner": "San Francisco 49ers",
+        "actualWinner": "Los Angeles Rams",
+        "correct": false,
+        "homeEdgePoints": 9.05
+      },
+      {
+        "season": 2023,
+        "id": "401547653",
+        "week": 18,
+        "predictedWinner": "Dallas Cowboys",
+        "actualWinner": "Dallas Cowboys",
+        "correct": true,
+        "homeEdgePoints": -13.31
+      },
+      {
+        "season": 2023,
+        "id": "401547647",
+        "week": 18,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Buffalo Bills",
+        "correct": true,
+        "homeEdgePoints": -2.82
+      },
+      {
+        "season": 2024,
+        "id": "401671808",
+        "week": 3,
+        "predictedWinner": "New England Patriots",
+        "actualWinner": "New York Jets",
+        "correct": false,
+        "homeEdgePoints": -3.0
+      },
+      {
+        "season": 2024,
+        "id": "401671632",
+        "week": 3,
+        "predictedWinner": "Los Angeles Chargers",
+        "actualWinner": "Pittsburgh Steelers",
+        "correct": false,
+        "homeEdgePoints": -8.5
+      },
+      {
+        "season": 2024,
+        "id": "401671646",
+        "week": 3,
+        "predictedWinner": "Minnesota Vikings",
+        "actualWinner": "Minnesota Vikings",
+        "correct": true,
+        "homeEdgePoints": 11.5
+      },
+      {
+        "season": 2024,
+        "id": "401671736",
+        "week": 3,
+        "predictedWinner": "New Orleans Saints",
+        "actualWinner": "Philadelphia Eagles",
+        "correct": false,
+        "homeEdgePoints": 30.5
+      },
+      {
+        "season": 2024,
+        "id": "401671741",
+        "week": 3,
+        "predictedWinner": "Tampa Bay Buccaneers",
+        "actualWinner": "Denver Broncos",
+        "correct": false,
+        "homeEdgePoints": 18.5
+      },
+      {
+        "season": 2024,
+        "id": "401671823",
+        "week": 3,
+        "predictedWinner": "Green Bay Packers",
+        "actualWinner": "Green Bay Packers",
+        "correct": true,
+        "homeEdgePoints": -6.0
+      },
+      {
+        "season": 2024,
+        "id": "401671855",
+        "week": 3,
+        "predictedWinner": "Cleveland Browns",
+        "actualWinner": "New York Giants",
+        "correct": false,
+        "homeEdgePoints": 8.5
+      },
+      {
+        "season": 2024,
+        "id": "401671865",
+        "week": 3,
+        "predictedWinner": "Chicago Bears",
+        "actualWinner": "Indianapolis Colts",
+        "correct": false,
+        "homeEdgePoints": -3.0
+      },
+      {
+        "season": 2024,
+        "id": "401671658",
+        "week": 3,
+        "predictedWinner": "Las Vegas Raiders",
+        "actualWinner": "Carolina Panthers",
+        "correct": false,
+        "homeEdgePoints": 27.0
+      },
+      {
+        "season": 2024,
+        "id": "401671662",
+        "week": 3,
+        "predictedWinner": "Seattle Seahawks",
+        "actualWinner": "Seattle Seahawks",
+        "correct": true,
+        "homeEdgePoints": 15.0
+      },
+      {
+        "season": 2024,
+        "id": "401671763",
+        "week": 3,
+        "predictedWinner": "Dallas Cowboys",
+        "actualWinner": "Baltimore Ravens",
+        "correct": false,
+        "homeEdgePoints": 2.0
+      },
+      {
+        "season": 2024,
+        "id": "401671771",
+        "week": 3,
+        "predictedWinner": "Arizona Cardinals",
+        "actualWinner": "Detroit Lions",
+        "correct": false,
+        "homeEdgePoints": 13.0
+      },
+      {
+        "season": 2024,
+        "id": "401671772",
+        "week": 3,
+        "predictedWinner": "San Francisco 49ers",
+        "actualWinner": "Los Angeles Rams",
+        "correct": false,
+        "homeEdgePoints": -20.5
+      },
+      {
+        "season": 2024,
+        "id": "401671793",
+        "week": 3,
+        "predictedWinner": "Kansas City Chiefs",
+        "actualWinner": "Kansas City Chiefs",
+        "correct": true,
+        "homeEdgePoints": -6.0
+      },
+      {
+        "season": 2024,
+        "id": "401671682",
+        "week": 3,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Buffalo Bills",
+        "correct": true,
+        "homeEdgePoints": 19.0
+      },
+      {
+        "season": 2024,
+        "id": "401671490",
+        "week": 3,
+        "predictedWinner": "Cincinnati Bengals",
+        "actualWinner": "Washington Commanders",
+        "correct": false,
+        "homeEdgePoints": 5.0
+      },
+      {
+        "season": 2024,
+        "id": "401671812",
+        "week": 4,
+        "predictedWinner": "Dallas Cowboys",
+        "actualWinner": "Dallas Cowboys",
+        "correct": true,
+        "homeEdgePoints": -0.83
+      },
+      {
+        "season": 2024,
+        "id": "401671622",
+        "week": 4,
+        "predictedWinner": "New York Jets",
+        "actualWinner": "Denver Broncos",
+        "correct": false,
+        "homeEdgePoints": 4.5
+      },
+      {
+        "season": 2024,
+        "id": "401671643",
+        "week": 4,
+        "predictedWinner": "Minnesota Vikings",
+        "actualWinner": "Minnesota Vikings",
+        "correct": true,
+        "homeEdgePoints": -11.16
+      },
+      {
+        "season": 2024,
+        "id": "401671727",
+        "week": 4,
+        "predictedWinner": "New Orleans Saints",
+        "actualWinner": "Atlanta Falcons",
+        "correct": false,
+        "homeEdgePoints": -22.17
+      },
+      {
+        "season": 2024,
+        "id": "401671740",
+        "week": 4,
+        "predictedWinner": "Philadelphia Eagles",
+        "actualWinner": "Tampa Bay Buccaneers",
+        "correct": false,
+        "homeEdgePoints": -0.16
+      },
+      {
+        "season": 2024,
+        "id": "401671745",
+        "week": 4,
+        "predictedWinner": "Cincinnati Bengals",
+        "actualWinner": "Cincinnati Bengals",
+        "correct": true,
+        "homeEdgePoints": -9.83
+      },
+      {
+        "season": 2024,
+        "id": "401671857",
+        "week": 4,
+        "predictedWinner": "Houston Texans",
+        "actualWinner": "Houston Texans",
+        "correct": true,
+        "homeEdgePoints": 10.17
+      },
+      {
+        "season": 2024,
+        "id": "401671867",
+        "week": 4,
+        "predictedWinner": "Pittsburgh Steelers",
+        "actualWinner": "Indianapolis Colts",
+        "correct": false,
+        "homeEdgePoints": -7.83
+      },
+      {
+        "season": 2024,
+        "id": "401671871",
+        "week": 4,
+        "predictedWinner": "Chicago Bears",
+        "actualWinner": "Chicago Bears",
+        "correct": true,
+        "homeEdgePoints": 11.5
+      },
+      {
+        "season": 2024,
+        "id": "401671755",
+        "week": 4,
+        "predictedWinner": "Arizona Cardinals",
+        "actualWinner": "Washington Commanders",
+        "correct": false,
+        "homeEdgePoints": 10.5
+      },
+      {
+        "season": 2024,
+        "id": "401671758",
+        "week": 4,
+        "predictedWinner": "San Francisco 49ers",
+        "actualWinner": "San Francisco 49ers",
+        "correct": true,
+        "homeEdgePoints": 8.83
+      },
+      {
+        "season": 2024,
+        "id": "401671672",
+        "week": 4,
+        "predictedWinner": "Cleveland Browns",
+        "actualWinner": "Las Vegas Raiders",
+        "correct": false,
+        "homeEdgePoints": -0.5
+      },
+      {
+        "season": 2024,
+        "id": "401671674",
+        "week": 4,
+        "predictedWinner": "Los Angeles Chargers",
+        "actualWinner": "Kansas City Chiefs",
+        "correct": false,
+        "homeEdgePoints": 5.5
+      },
+      {
+        "season": 2024,
+        "id": "401671783",
+        "week": 4,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Baltimore Ravens",
+        "correct": false,
+        "homeEdgePoints": -22.16
+      },
+      {
+        "season": 2024,
+        "id": "401671683",
+        "week": 4,
+        "predictedWinner": "Tennessee Titans",
+        "actualWinner": "Tennessee Titans",
+        "correct": true,
+        "homeEdgePoints": -1.5
+      },
+      {
+        "season": 2024,
+        "id": "401671491",
+        "week": 4,
+        "predictedWinner": "Seattle Seahawks",
+        "actualWinner": "Detroit Lions",
+        "correct": false,
+        "homeEdgePoints": -5.5
+      },
+      {
+        "season": 2024,
+        "id": "401671815",
+        "week": 5,
+        "predictedWinner": "Tampa Bay Buccaneers",
+        "actualWinner": "Atlanta Falcons",
+        "correct": false,
+        "homeEdgePoints": -3.98
+      },
+      {
+        "season": 2024,
+        "id": "401671804",
+        "week": 5,
+        "predictedWinner": "Minnesota Vikings",
+        "actualWinner": "Minnesota Vikings",
+        "correct": true,
+        "homeEdgePoints": 9.83
+      },
+      {
+        "season": 2024,
+        "id": "401671626",
+        "week": 5,
+        "predictedWinner": "Baltimore Ravens",
+        "actualWinner": "Baltimore Ravens",
+        "correct": true,
+        "homeEdgePoints": -4.1
+      },
+      {
+        "season": 2024,
+        "id": "401671633",
+        "week": 5,
+        "predictedWinner": "Indianapolis Colts",
+        "actualWinner": "Jacksonville Jaguars",
+        "correct": false,
+        "homeEdgePoints": -11.88
+      },
+      {
+        "season": 2024,
+        "id": "401671700",
+        "week": 5,
+        "predictedWinner": "New England Patriots",
+        "actualWinner": "Miami Dolphins",
+        "correct": false,
+        "homeEdgePoints": 7.52
+      },
+      {
+        "season": 2024,
+        "id": "401671718",
+        "week": 5,
+        "predictedWinner": "Washington Commanders",
+        "actualWinner": "Washington Commanders",
+        "correct": true,
+        "homeEdgePoints": 12.6
+      },
+      {
+        "season": 2024,
+        "id": "401671859",
+        "week": 5,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Houston Texans",
+        "correct": false,
+        "homeEdgePoints": -12.95
+      },
+      {
+        "season": 2024,
+        "id": "401671872",
+        "week": 5,
+        "predictedWinner": "Chicago Bears",
+        "actualWinner": "Chicago Bears",
+        "correct": true,
+        "homeEdgePoints": 13.05
+      },
+      {
+        "season": 2024,
+        "id": "401671747",
+        "week": 5,
+        "predictedWinner": "Denver Broncos",
+        "actualWinner": "Denver Broncos",
+        "correct": true,
+        "homeEdgePoints": 8.05
+      },
+      {
+        "season": 2024,
+        "id": "401671756",
+        "week": 5,
+        "predictedWinner": "San Francisco 49ers",
+        "actualWinner": "Arizona Cardinals",
+        "correct": false,
+        "homeEdgePoints": 8.12
+      },
+      {
+        "season": 2024,
+        "id": "401671679",
+        "week": 5,
+        "predictedWinner": "Green Bay Packers",
+        "actualWinner": "Green Bay Packers",
+        "correct": true,
+        "homeEdgePoints": -13.53
+      },
+      {
+        "season": 2024,
+        "id": "401671680",
+        "week": 5,
+        "predictedWinner": "Seattle Seahawks",
+        "actualWinner": "New York Giants",
+        "correct": false,
+        "homeEdgePoints": 9.98
+      },
+      {
+        "season": 2024,
+        "id": "401671784",
+        "week": 5,
+        "predictedWinner": "Pittsburgh Steelers",
+        "actualWinner": "Dallas Cowboys",
+        "correct": false,
+        "homeEdgePoints": 10.28
+      },
+      {
+        "season": 2024,
+        "id": "401671687",
+        "week": 5,
+        "predictedWinner": "New Orleans Saints",
+        "actualWinner": "Kansas City Chiefs",
+        "correct": false,
+        "homeEdgePoints": -5.68
+      },
+      {
+        "season": 2024,
+        "id": "401671819",
+        "week": 6,
+        "predictedWinner": "San Francisco 49ers",
+        "actualWinner": "San Francisco 49ers",
+        "correct": true,
+        "homeEdgePoints": -1.58
+      },
+      {
+        "season": 2024,
+        "id": "401671802",
+        "week": 6,
+        "predictedWinner": "Chicago Bears",
+        "actualWinner": "Chicago Bears",
+        "correct": true,
+        "homeEdgePoints": 18.36
+      },
+      {
+        "season": 2024,
+        "id": "401671619",
+        "week": 6,
+        "predictedWinner": "Houston Texans",
+        "actualWinner": "Houston Texans",
+        "correct": true,
+        "homeEdgePoints": -4.72
+      },
+      {
+        "season": 2024,
+        "id": "401671625",
+        "week": 6,
+        "predictedWinner": "Washington Commanders",
+        "actualWinner": "Baltimore Ravens",
+        "correct": false,
+        "homeEdgePoints": -3.46
+      },
+      {
+        "season": 2024,
+        "id": "401671714",
+        "week": 6,
+        "predictedWinner": "Philadelphia Eagles",
+        "actualWinner": "Philadelphia Eagles",
+        "correct": true,
+        "homeEdgePoints": 7.23
+      },
+      {
+        "season": 2024,
+        "id": "401671722",
+        "week": 6,
+        "predictedWinner": "Green Bay Packers",
+        "actualWinner": "Green Bay Packers",
+        "correct": true,
+        "homeEdgePoints": 10.86
+      },
+      {
+        "season": 2024,
+        "id": "401671735",
+        "week": 6,
+        "predictedWinner": "New Orleans Saints",
+        "actualWinner": "Tampa Bay Buccaneers",
+        "correct": false,
+        "homeEdgePoints": 4.84
+      },
+      {
+        "season": 2024,
+        "id": "401671820",
+        "week": 6,
+        "predictedWinner": "Indianapolis Colts",
+        "actualWinner": "Indianapolis Colts",
+        "correct": true,
+        "homeEdgePoints": -0.9
+      },
+      {
+        "season": 2024,
+        "id": "401671655",
+        "week": 6,
+        "predictedWinner": "Denver Broncos",
+        "actualWinner": "Los Angeles Chargers",
+        "correct": false,
+        "homeEdgePoints": 4.57
+      },
+      {
+        "season": 2024,
+        "id": "401671657",
+        "week": 6,
+        "predictedWinner": "Pittsburgh Steelers",
+        "actualWinner": "Pittsburgh Steelers",
+        "correct": true,
+        "homeEdgePoints": -9.06
+      },
+      {
+        "season": 2024,
+        "id": "401671764",
+        "week": 6,
+        "predictedWinner": "Detroit Lions",
+        "actualWinner": "Detroit Lions",
+        "correct": true,
+        "homeEdgePoints": -4.01
+      },
+      {
+        "season": 2024,
+        "id": "401671769",
+        "week": 6,
+        "predictedWinner": "Atlanta Falcons",
+        "actualWinner": "Atlanta Falcons",
+        "correct": true,
+        "homeEdgePoints": -11.92
+      },
+      {
+        "season": 2024,
+        "id": "401671791",
+        "week": 6,
+        "predictedWinner": "New York Giants",
+        "actualWinner": "Cincinnati Bengals",
+        "correct": false,
+        "homeEdgePoints": 0.9
+      },
+      {
+        "season": 2024,
+        "id": "401671684",
+        "week": 6,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Buffalo Bills",
+        "correct": true,
+        "homeEdgePoints": -1.92
+      },
+      {
+        "season": 2024,
+        "id": "401671816",
+        "week": 7,
+        "predictedWinner": "Denver Broncos",
+        "actualWinner": "Denver Broncos",
+        "correct": true,
+        "homeEdgePoints": -2.94
+      },
+      {
+        "season": 2024,
+        "id": "401671801",
+        "week": 7,
+        "predictedWinner": "Jacksonville Jaguars",
+        "actualWinner": "Jacksonville Jaguars",
+        "correct": true,
+        "homeEdgePoints": 3.12
+      },
+      {
+        "season": 2024,
+        "id": "401671616",
+        "week": 7,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Buffalo Bills",
+        "correct": true,
+        "homeEdgePoints": 5.51
+      },
+      {
+        "season": 2024,
+        "id": "401671644",
+        "week": 7,
+        "predictedWinner": "Green Bay Packers",
+        "actualWinner": "Green Bay Packers",
+        "correct": true,
+        "homeEdgePoints": 5.05
+      },
+      {
+        "season": 2024,
+        "id": "401671710",
+        "week": 7,
+        "predictedWinner": "Philadelphia Eagles",
+        "actualWinner": "Philadelphia Eagles",
+        "correct": true,
+        "homeEdgePoints": -0.18
+      },
+      {
+        "season": 2024,
+        "id": "401671724",
+        "week": 7,
+        "predictedWinner": "Detroit Lions",
+        "actualWinner": "Detroit Lions",
+        "correct": true,
+        "homeEdgePoints": -0.38
+      },
+      {
+        "season": 2024,
+        "id": "401671730",
+        "week": 7,
+        "predictedWinner": "Atlanta Falcons",
+        "actualWinner": "Seattle Seahawks",
+        "correct": false,
+        "homeEdgePoints": 9.6
+      },
+      {
+        "season": 2024,
+        "id": "401671853",
+        "week": 7,
+        "predictedWinner": "Cincinnati Bengals",
+        "actualWinner": "Cincinnati Bengals",
+        "correct": true,
+        "homeEdgePoints": -9.05
+      },
+      {
+        "season": 2024,
+        "id": "401671864",
+        "week": 7,
+        "predictedWinner": "Indianapolis Colts",
+        "actualWinner": "Indianapolis Colts",
+        "correct": true,
+        "homeEdgePoints": 12.72
+      },
+      {
+        "season": 2024,
+        "id": "401671640",
+        "week": 7,
+        "predictedWinner": "Washington Commanders",
+        "actualWinner": "Washington Commanders",
+        "correct": true,
+        "homeEdgePoints": 26.62
+      },
+      {
+        "season": 2024,
+        "id": "401671663",
+        "week": 7,
+        "predictedWinner": "Los Angeles Rams",
+        "actualWinner": "Los Angeles Rams",
+        "correct": true,
+        "homeEdgePoints": 3.8
+      },
+      {
+        "season": 2024,
+        "id": "401671777",
+        "week": 7,
+        "predictedWinner": "San Francisco 49ers",
+        "actualWinner": "Kansas City Chiefs",
+        "correct": false,
+        "homeEdgePoints": 0.91
+      },
+      {
+        "season": 2024,
+        "id": "401671785",
+        "week": 7,
+        "predictedWinner": "Pittsburgh Steelers",
+        "actualWinner": "Pittsburgh Steelers",
+        "correct": true,
+        "homeEdgePoints": 7.65
+      },
+      {
+        "season": 2024,
+        "id": "401671695",
+        "week": 7,
+        "predictedWinner": "Tampa Bay Buccaneers",
+        "actualWinner": "Baltimore Ravens",
+        "correct": false,
+        "homeEdgePoints": 2.55
+      },
+      {
+        "season": 2024,
+        "id": "401671699",
+        "week": 7,
+        "predictedWinner": "Los Angeles Chargers",
+        "actualWinner": "Arizona Cardinals",
+        "correct": false,
+        "homeEdgePoints": -9.3
+      },
+      {
+        "season": 2024,
+        "id": "401671817",
+        "week": 8,
+        "predictedWinner": "Minnesota Vikings",
+        "actualWinner": "Los Angeles Rams",
+        "correct": false,
+        "homeEdgePoints": -11.49
+      },
+      {
+        "season": 2024,
+        "id": "401671618",
+        "week": 8,
+        "predictedWinner": "New York Jets",
+        "actualWinner": "New England Patriots",
+        "correct": false,
+        "homeEdgePoints": -5.4
+      },
+      {
+        "season": 2024,
+        "id": "401671667",
+        "week": 8,
+        "predictedWinner": "Cincinnati Bengals",
+        "actualWinner": "Philadelphia Eagles",
+        "correct": false,
+        "homeEdgePoints": 0.68
+      },
+      {
+        "season": 2024,
+        "id": "401671707",
+        "week": 8,
+        "predictedWinner": "Green Bay Packers",
+        "actualWinner": "Green Bay Packers",
+        "correct": true,
+        "homeEdgePoints": -10.5
+      },
+      {
+        "season": 2024,
+        "id": "401671720",
+        "week": 8,
+        "predictedWinner": "Detroit Lions",
+        "actualWinner": "Detroit Lions",
+        "correct": true,
+        "homeEdgePoints": 19.26
+      },
+      {
+        "season": 2024,
+        "id": "401671739",
+        "week": 8,
+        "predictedWinner": "Tampa Bay Buccaneers",
+        "actualWinner": "Atlanta Falcons",
+        "correct": false,
+        "homeEdgePoints": 5.21
+      },
+      {
+        "season": 2024,
+        "id": "401671850",
+        "week": 8,
+        "predictedWinner": "Arizona Cardinals",
+        "actualWinner": "Arizona Cardinals",
+        "correct": true,
+        "homeEdgePoints": -2.78
+      },
+      {
+        "season": 2024,
+        "id": "401671852",
+        "week": 8,
+        "predictedWinner": "Baltimore Ravens",
+        "actualWinner": "Cleveland Browns",
+        "correct": false,
+        "homeEdgePoints": -12.8
+      },
+      {
+        "season": 2024,
+        "id": "401671856",
+        "week": 8,
+        "predictedWinner": "Houston Texans",
+        "actualWinner": "Houston Texans",
+        "correct": true,
+        "homeEdgePoints": 3.0
+      },
+      {
+        "season": 2024,
+        "id": "401671750",
+        "week": 8,
+        "predictedWinner": "Los Angeles Chargers",
+        "actualWinner": "Los Angeles Chargers",
+        "correct": true,
+        "homeEdgePoints": 10.28
+      },
+      {
+        "season": 2024,
+        "id": "401671760",
+        "week": 8,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Buffalo Bills",
+        "correct": true,
+        "homeEdgePoints": -5.7
+      },
+      {
+        "season": 2024,
+        "id": "401671599",
+        "week": 8,
+        "predictedWinner": "Washington Commanders",
+        "actualWinner": "Washington Commanders",
+        "correct": true,
+        "homeEdgePoints": 2.22
+      },
+      {
+        "season": 2024,
+        "id": "401671600",
+        "week": 8,
+        "predictedWinner": "Denver Broncos",
+        "actualWinner": "Denver Broncos",
+        "correct": true,
+        "homeEdgePoints": 29.6
+      },
+      {
+        "season": 2024,
+        "id": "401671671",
+        "week": 8,
+        "predictedWinner": "Kansas City Chiefs",
+        "actualWinner": "Kansas City Chiefs",
+        "correct": true,
+        "homeEdgePoints": -16.42
+      },
+      {
+        "season": 2024,
+        "id": "401671795",
+        "week": 8,
+        "predictedWinner": "San Francisco 49ers",
+        "actualWinner": "San Francisco 49ers",
+        "correct": true,
+        "homeEdgePoints": 11.7
+      },
+      {
+        "season": 2024,
+        "id": "401671685",
+        "week": 8,
+        "predictedWinner": "Pittsburgh Steelers",
+        "actualWinner": "Pittsburgh Steelers",
+        "correct": true,
+        "homeEdgePoints": 18.9
+      },
+      {
+        "season": 2024,
+        "id": "401671809",
+        "week": 9,
+        "predictedWinner": "Houston Texans",
+        "actualWinner": "New York Jets",
+        "correct": false,
+        "homeEdgePoints": -5.93
+      },
+      {
+        "season": 2024,
+        "id": "401671493",
+        "week": 9,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Buffalo Bills",
+        "correct": true,
+        "homeEdgePoints": 19.85
+      },
+      {
+        "season": 2024,
+        "id": "401671623",
+        "week": 9,
+        "predictedWinner": "Denver Broncos",
+        "actualWinner": "Baltimore Ravens",
+        "correct": false,
+        "homeEdgePoints": -2.05
+      },
+      {
+        "season": 2024,
+        "id": "401671629",
+        "week": 9,
+        "predictedWinner": "Los Angeles Chargers",
+        "actualWinner": "Los Angeles Chargers",
+        "correct": true,
+        "homeEdgePoints": -9.7
+      },
+      {
+        "season": 2024,
+        "id": "401671650",
+        "week": 9,
+        "predictedWinner": "New Orleans Saints",
+        "actualWinner": "Carolina Panthers",
+        "correct": false,
+        "homeEdgePoints": -9.53
+      },
+      {
+        "season": 2024,
+        "id": "401671704",
+        "week": 9,
+        "predictedWinner": "Cincinnati Bengals",
+        "actualWinner": "Cincinnati Bengals",
+        "correct": true,
+        "homeEdgePoints": 9.37
+      },
+      {
+        "season": 2024,
+        "id": "401671711",
+        "week": 9,
+        "predictedWinner": "Washington Commanders",
+        "actualWinner": "Washington Commanders",
+        "correct": true,
+        "homeEdgePoints": -16.81
+      },
+      {
+        "season": 2024,
+        "id": "401671728",
+        "week": 9,
+        "predictedWinner": "Atlanta Falcons",
+        "actualWinner": "Atlanta Falcons",
+        "correct": true,
+        "homeEdgePoints": 10.62
+      },
+      {
+        "season": 2024,
+        "id": "401671822",
+        "week": 9,
+        "predictedWinner": "New England Patriots",
+        "actualWinner": "Tennessee Titans",
+        "correct": false,
+        "homeEdgePoints": -2.92
+      },
+      {
+        "season": 2024,
+        "id": "401671661",
+        "week": 9,
+        "predictedWinner": "Chicago Bears",
+        "actualWinner": "Arizona Cardinals",
+        "correct": false,
+        "homeEdgePoints": -11.27
+      },
+      {
+        "season": 2024,
+        "id": "401671797",
+        "week": 9,
+        "predictedWinner": "Philadelphia Eagles",
+        "actualWinner": "Philadelphia Eagles",
+        "correct": true,
+        "homeEdgePoints": 15.45
+      },
+      {
+        "season": 2024,
+        "id": "401671767",
+        "week": 9,
+        "predictedWinner": "Detroit Lions",
+        "actualWinner": "Detroit Lions",
+        "correct": true,
+        "homeEdgePoints": -9.68
+      },
+      {
+        "season": 2024,
+        "id": "401671776",
+        "week": 9,
+        "predictedWinner": "Seattle Seahawks",
+        "actualWinner": "Los Angeles Rams",
+        "correct": false,
+        "homeEdgePoints": 1.77
+      },
+      {
+        "season": 2024,
+        "id": "401671647",
+        "week": 9,
+        "predictedWinner": "Minnesota Vikings",
+        "actualWinner": "Minnesota Vikings",
+        "correct": true,
+        "homeEdgePoints": 5.14
+      },
+      {
+        "season": 2024,
+        "id": "401671688",
+        "week": 9,
+        "predictedWinner": "Kansas City Chiefs",
+        "actualWinner": "Kansas City Chiefs",
+        "correct": true,
+        "homeEdgePoints": 6.67
+      },
+      {
+        "season": 2024,
+        "id": "401671810",
+        "week": 10,
+        "predictedWinner": "Baltimore Ravens",
+        "actualWinner": "Baltimore Ravens",
+        "correct": true,
+        "homeEdgePoints": 8.98
+      },
+      {
+        "season": 2024,
+        "id": "401671803",
+        "week": 10,
+        "predictedWinner": "New York Giants",
+        "actualWinner": "Carolina Panthers",
+        "correct": false,
+        "homeEdgePoints": -5.75
+      },
+      {
+        "season": 2024,
+        "id": "401671637",
+        "week": 10,
+        "predictedWinner": "Kansas City Chiefs",
+        "actualWinner": "Kansas City Chiefs",
+        "correct": true,
+        "homeEdgePoints": 6.39
+      },
+      {
+        "season": 2024,
+        "id": "401671641",
+        "week": 10,
+        "predictedWinner": "Washington Commanders",
+        "actualWinner": "Pittsburgh Steelers",
+        "correct": false,
+        "homeEdgePoints": 0.51
+      },
+      {
+        "season": 2024,
+        "id": "401671708",
+        "week": 10,
+        "predictedWinner": "Minnesota Vikings",
+        "actualWinner": "Minnesota Vikings",
+        "correct": true,
+        "homeEdgePoints": -6.9
+      },
+      {
+        "season": 2024,
+        "id": "401671733",
+        "week": 10,
+        "predictedWinner": "Atlanta Falcons",
+        "actualWinner": "New Orleans Saints",
+        "correct": false,
+        "homeEdgePoints": -3.9
+      },
+      {
+        "season": 2024,
+        "id": "401671742",
+        "week": 10,
+        "predictedWinner": "San Francisco 49ers",
+        "actualWinner": "San Francisco 49ers",
+        "correct": true,
+        "homeEdgePoints": -2.6
+      },
+      {
+        "season": 2024,
+        "id": "401671863",
+        "week": 10,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Buffalo Bills",
+        "correct": true,
+        "homeEdgePoints": -10.96
+      },
+      {
+        "season": 2024,
+        "id": "401671873",
+        "week": 10,
+        "predictedWinner": "Chicago Bears",
+        "actualWinner": "New England Patriots",
+        "correct": false,
+        "homeEdgePoints": 10.71
+      },
+      {
+        "season": 2024,
+        "id": "401671751",
+        "week": 10,
+        "predictedWinner": "Los Angeles Chargers",
+        "actualWinner": "Los Angeles Chargers",
+        "correct": true,
+        "homeEdgePoints": 22.16
+      },
+      {
+        "season": 2024,
+        "id": "401671676",
+        "week": 10,
+        "predictedWinner": "Philadelphia Eagles",
+        "actualWinner": "Philadelphia Eagles",
+        "correct": true,
+        "homeEdgePoints": -17.08
+      },
+      {
+        "season": 2024,
+        "id": "401671678",
+        "week": 10,
+        "predictedWinner": "Arizona Cardinals",
+        "actualWinner": "Arizona Cardinals",
+        "correct": true,
+        "homeEdgePoints": 5.89
+      },
+      {
+        "season": 2024,
+        "id": "401671787",
+        "week": 10,
+        "predictedWinner": "Detroit Lions",
+        "actualWinner": "Detroit Lions",
+        "correct": true,
+        "homeEdgePoints": -13.75
+      },
+      {
+        "season": 2024,
+        "id": "401671693",
+        "week": 10,
+        "predictedWinner": "Los Angeles Rams",
+        "actualWinner": "Miami Dolphins",
+        "correct": false,
+        "homeEdgePoints": 8.02
+      },
+      {
+        "season": 2024,
+        "id": "401671813",
+        "week": 11,
+        "predictedWinner": "Philadelphia Eagles",
+        "actualWinner": "Philadelphia Eagles",
+        "correct": true,
+        "homeEdgePoints": 6.59
+      },
+      {
+        "season": 2024,
+        "id": "401671630",
+        "week": 11,
+        "predictedWinner": "Pittsburgh Steelers",
+        "actualWinner": "Pittsburgh Steelers",
+        "correct": true,
+        "homeEdgePoints": 2.72
+      },
+      {
+        "season": 2024,
+        "id": "401671642",
+        "week": 11,
+        "predictedWinner": "Detroit Lions",
+        "actualWinner": "Detroit Lions",
+        "correct": true,
+        "homeEdgePoints": 21.03
+      },
+      {
+        "season": 2024,
+        "id": "401671701",
+        "week": 11,
+        "predictedWinner": "New England Patriots",
+        "actualWinner": "Los Angeles Rams",
+        "correct": false,
+        "homeEdgePoints": 0.59
+      },
+      {
+        "season": 2024,
+        "id": "401671746",
+        "week": 11,
+        "predictedWinner": "New Orleans Saints",
+        "actualWinner": "New Orleans Saints",
+        "correct": true,
+        "homeEdgePoints": 5.52
+      },
+      {
+        "season": 2024,
+        "id": "401671782",
+        "week": 11,
+        "predictedWinner": "New York Jets",
+        "actualWinner": "Indianapolis Colts",
+        "correct": false,
+        "homeEdgePoints": 0.06
+      },
+      {
+        "season": 2024,
+        "id": "401671824",
+        "week": 11,
+        "predictedWinner": "Minnesota Vikings",
+        "actualWinner": "Minnesota Vikings",
+        "correct": true,
+        "homeEdgePoints": -14.73
+      },
+      {
+        "season": 2024,
+        "id": "401671851",
+        "week": 11,
+        "predictedWinner": "Miami Dolphins",
+        "actualWinner": "Miami Dolphins",
+        "correct": true,
+        "homeEdgePoints": 6.98
+      },
+      {
+        "season": 2024,
+        "id": "401671869",
+        "week": 11,
+        "predictedWinner": "Green Bay Packers",
+        "actualWinner": "Green Bay Packers",
+        "correct": true,
+        "homeEdgePoints": -4.08
+      },
+      {
+        "season": 2024,
+        "id": "401671748",
+        "week": 11,
+        "predictedWinner": "Denver Broncos",
+        "actualWinner": "Denver Broncos",
+        "correct": true,
+        "homeEdgePoints": 0.06
+      },
+      {
+        "season": 2024,
+        "id": "401671757",
+        "week": 11,
+        "predictedWinner": "San Francisco 49ers",
+        "actualWinner": "Seattle Seahawks",
+        "correct": false,
+        "homeEdgePoints": 5.36
+      },
+      {
+        "season": 2024,
+        "id": "401671665",
+        "week": 11,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Buffalo Bills",
+        "correct": true,
+        "homeEdgePoints": 5.68
+      },
+      {
+        "season": 2024,
+        "id": "401671675",
+        "week": 11,
+        "predictedWinner": "Los Angeles Chargers",
+        "actualWinner": "Los Angeles Chargers",
+        "correct": true,
+        "homeEdgePoints": 11.13
+      },
+      {
+        "season": 2024,
+        "id": "401671694",
+        "week": 11,
+        "predictedWinner": "Houston Texans",
+        "actualWinner": "Houston Texans",
+        "correct": true,
+        "homeEdgePoints": -7.93
+      },
+      {
+        "season": 2024,
+        "id": "401671875",
+        "week": 12,
+        "predictedWinner": "Pittsburgh Steelers",
+        "actualWinner": "Cleveland Browns",
+        "correct": false,
+        "homeEdgePoints": -13.89
+      },
+      {
+        "season": 2024,
+        "id": "401671638",
+        "week": 12,
+        "predictedWinner": "Tampa Bay Buccaneers",
+        "actualWinner": "Tampa Bay Buccaneers",
+        "correct": true,
+        "homeEdgePoints": -4.23
+      },
+      {
+        "season": 2024,
+        "id": "401671651",
+        "week": 12,
+        "predictedWinner": "Kansas City Chiefs",
+        "actualWinner": "Kansas City Chiefs",
+        "correct": true,
+        "homeEdgePoints": -12.84
+      },
+      {
+        "season": 2024,
+        "id": "401671715",
+        "week": 12,
+        "predictedWinner": "Washington Commanders",
+        "actualWinner": "Dallas Cowboys",
+        "correct": false,
+        "homeEdgePoints": 18.46
+      },
+      {
+        "season": 2024,
+        "id": "401671847",
+        "week": 12,
+        "predictedWinner": "Miami Dolphins",
+        "actualWinner": "Miami Dolphins",
+        "correct": true,
+        "homeEdgePoints": 4.2
+      },
+      {
+        "season": 2024,
+        "id": "401671858",
+        "week": 12,
+        "predictedWinner": "Houston Texans",
+        "actualWinner": "Tennessee Titans",
+        "correct": false,
+        "homeEdgePoints": 12.41
+      },
+      {
+        "season": 2024,
+        "id": "401671866",
+        "week": 12,
+        "predictedWinner": "Detroit Lions",
+        "actualWinner": "Detroit Lions",
+        "correct": true,
+        "homeEdgePoints": -18.12
+      },
+      {
+        "season": 2024,
+        "id": "401671870",
+        "week": 12,
+        "predictedWinner": "Minnesota Vikings",
+        "actualWinner": "Minnesota Vikings",
+        "correct": true,
+        "homeEdgePoints": -9.19
+      },
+      {
+        "season": 2024,
+        "id": "401671656",
+        "week": 12,
+        "predictedWinner": "Denver Broncos",
+        "actualWinner": "Denver Broncos",
+        "correct": true,
+        "homeEdgePoints": -12.47
+      },
+      {
+        "season": 2024,
+        "id": "401671768",
+        "week": 12,
+        "predictedWinner": "Green Bay Packers",
+        "actualWinner": "Green Bay Packers",
+        "correct": true,
+        "homeEdgePoints": 0.93
+      },
+      {
+        "season": 2024,
+        "id": "401671775",
+        "week": 12,
+        "predictedWinner": "Arizona Cardinals",
+        "actualWinner": "Seattle Seahawks",
+        "correct": false,
+        "homeEdgePoints": -7.32
+      },
+      {
+        "season": 2024,
+        "id": "401671794",
+        "week": 12,
+        "predictedWinner": "Philadelphia Eagles",
+        "actualWinner": "Philadelphia Eagles",
+        "correct": true,
+        "homeEdgePoints": -9.62
+      },
+      {
+        "season": 2024,
+        "id": "401671689",
+        "week": 12,
+        "predictedWinner": "Los Angeles Chargers",
+        "actualWinner": "Baltimore Ravens",
+        "correct": false,
+        "homeEdgePoints": 3.14
+      },
+      {
+        "season": 2024,
+        "id": "401671492",
+        "week": 13,
+        "predictedWinner": "Detroit Lions",
+        "actualWinner": "Detroit Lions",
+        "correct": true,
+        "homeEdgePoints": 21.21
+      },
+      {
+        "season": 2024,
+        "id": "401671779",
+        "week": 13,
+        "predictedWinner": "New York Giants",
+        "actualWinner": "Dallas Cowboys",
+        "correct": false,
+        "homeEdgePoints": -0.38
+      },
+      {
+        "season": 2024,
+        "id": "401671798",
+        "week": 13,
+        "predictedWinner": "Green Bay Packers",
+        "actualWinner": "Green Bay Packers",
+        "correct": true,
+        "homeEdgePoints": 4.67
+      },
+      {
+        "season": 2024,
+        "id": "401671806",
+        "week": 13,
+        "predictedWinner": "Kansas City Chiefs",
+        "actualWinner": "Kansas City Chiefs",
+        "correct": true,
+        "homeEdgePoints": 15.49
+      },
+      {
+        "season": 2024,
+        "id": "401671620",
+        "week": 13,
+        "predictedWinner": "New England Patriots",
+        "actualWinner": "Indianapolis Colts",
+        "correct": false,
+        "homeEdgePoints": 0.21
+      },
+      {
+        "season": 2024,
+        "id": "401671627",
+        "week": 13,
+        "predictedWinner": "Pittsburgh Steelers",
+        "actualWinner": "Pittsburgh Steelers",
+        "correct": true,
+        "homeEdgePoints": -1.54
+      },
+      {
+        "season": 2024,
+        "id": "401671649",
+        "week": 13,
+        "predictedWinner": "Los Angeles Chargers",
+        "actualWinner": "Los Angeles Chargers",
+        "correct": true,
+        "homeEdgePoints": -8.64
+      },
+      {
+        "season": 2024,
+        "id": "401671703",
+        "week": 13,
+        "predictedWinner": "Seattle Seahawks",
+        "actualWinner": "Seattle Seahawks",
+        "correct": true,
+        "homeEdgePoints": -3.54
+      },
+      {
+        "season": 2024,
+        "id": "401671705",
+        "week": 13,
+        "predictedWinner": "Houston Texans",
+        "actualWinner": "Houston Texans",
+        "correct": true,
+        "homeEdgePoints": -13.57
+      },
+      {
+        "season": 2024,
+        "id": "401671726",
+        "week": 13,
+        "predictedWinner": "Minnesota Vikings",
+        "actualWinner": "Minnesota Vikings",
+        "correct": true,
+        "homeEdgePoints": 4.19
+      },
+      {
+        "season": 2024,
+        "id": "401671743",
+        "week": 13,
+        "predictedWinner": "Washington Commanders",
+        "actualWinner": "Washington Commanders",
+        "correct": true,
+        "homeEdgePoints": 10.22
+      },
+      {
+        "season": 2024,
+        "id": "401671752",
+        "week": 13,
+        "predictedWinner": "Tampa Bay Buccaneers",
+        "actualWinner": "Tampa Bay Buccaneers",
+        "correct": true,
+        "homeEdgePoints": -11.38
+      },
+      {
+        "season": 2024,
+        "id": "401671753",
+        "week": 13,
+        "predictedWinner": "New Orleans Saints",
+        "actualWinner": "Los Angeles Rams",
+        "correct": false,
+        "homeEdgePoints": 8.56
+      },
+      {
+        "season": 2024,
+        "id": "401671666",
+        "week": 13,
+        "predictedWinner": "Philadelphia Eagles",
+        "actualWinner": "Philadelphia Eagles",
+        "correct": true,
+        "homeEdgePoints": -5.29
+      },
+      {
+        "season": 2024,
+        "id": "401671781",
+        "week": 13,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Buffalo Bills",
+        "correct": true,
+        "homeEdgePoints": 13.25
+      },
+      {
+        "season": 2024,
+        "id": "401671686",
+        "week": 13,
+        "predictedWinner": "Denver Broncos",
+        "actualWinner": "Denver Broncos",
+        "correct": true,
+        "homeEdgePoints": 17.57
+      },
+      {
+        "season": 2024,
+        "id": "401671814",
+        "week": 14,
+        "predictedWinner": "Detroit Lions",
+        "actualWinner": "Detroit Lions",
+        "correct": true,
+        "homeEdgePoints": 9.95
+      },
+      {
+        "season": 2024,
+        "id": "401671601",
+        "week": 14,
+        "predictedWinner": "New Orleans Saints",
+        "actualWinner": "New Orleans Saints",
+        "correct": true,
+        "homeEdgePoints": -8.81
+      },
+      {
+        "season": 2024,
+        "id": "401671631",
+        "week": 14,
+        "predictedWinner": "Pittsburgh Steelers",
+        "actualWinner": "Pittsburgh Steelers",
+        "correct": true,
+        "homeEdgePoints": 13.75
+      },
+      {
+        "season": 2024,
+        "id": "401671648",
+        "week": 14,
+        "predictedWinner": "Minnesota Vikings",
+        "actualWinner": "Minnesota Vikings",
+        "correct": true,
+        "homeEdgePoints": 13.33
+      },
+      {
+        "season": 2024,
+        "id": "401671654",
+        "week": 14,
+        "predictedWinner": "Tampa Bay Buccaneers",
+        "actualWinner": "Tampa Bay Buccaneers",
+        "correct": true,
+        "homeEdgePoints": 15.2
+      },
+      {
+        "season": 2024,
+        "id": "401671713",
+        "week": 14,
+        "predictedWinner": "Philadelphia Eagles",
+        "actualWinner": "Philadelphia Eagles",
+        "correct": true,
+        "homeEdgePoints": 19.44
+      },
+      {
+        "season": 2024,
+        "id": "401671821",
+        "week": 14,
+        "predictedWinner": "Tennessee Titans",
+        "actualWinner": "Jacksonville Jaguars",
+        "correct": false,
+        "homeEdgePoints": 4.1
+      },
+      {
+        "season": 2024,
+        "id": "401671848",
+        "week": 14,
+        "predictedWinner": "Miami Dolphins",
+        "actualWinner": "Miami Dolphins",
+        "correct": true,
+        "homeEdgePoints": 7.22
+      },
+      {
+        "season": 2024,
+        "id": "401671660",
+        "week": 14,
+        "predictedWinner": "Arizona Cardinals",
+        "actualWinner": "Seattle Seahawks",
+        "correct": false,
+        "homeEdgePoints": 1.1
+      },
+      {
+        "season": 2024,
+        "id": "401671773",
+        "week": 14,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Los Angeles Rams",
+        "correct": false,
+        "homeEdgePoints": -13.04
+      },
+      {
+        "season": 2024,
+        "id": "401671774",
+        "week": 14,
+        "predictedWinner": "Chicago Bears",
+        "actualWinner": "San Francisco 49ers",
+        "correct": false,
+        "homeEdgePoints": -4.91
+      },
+      {
+        "season": 2024,
+        "id": "401671788",
+        "week": 14,
+        "predictedWinner": "Los Angeles Chargers",
+        "actualWinner": "Kansas City Chiefs",
+        "correct": false,
+        "homeEdgePoints": -0.35
+      },
+      {
+        "season": 2024,
+        "id": "401671690",
+        "week": 14,
+        "predictedWinner": "Cincinnati Bengals",
+        "actualWinner": "Cincinnati Bengals",
+        "correct": true,
+        "homeEdgePoints": -3.01
+      },
+      {
+        "season": 2024,
+        "id": "401671818",
+        "week": 15,
+        "predictedWinner": "San Francisco 49ers",
+        "actualWinner": "Los Angeles Rams",
+        "correct": false,
+        "homeEdgePoints": 1.34
+      },
+      {
+        "season": 2024,
+        "id": "401671639",
+        "week": 15,
+        "predictedWinner": "Baltimore Ravens",
+        "actualWinner": "Baltimore Ravens",
+        "correct": true,
+        "homeEdgePoints": -10.63
+      },
+      {
+        "season": 2024,
+        "id": "401671706",
+        "week": 15,
+        "predictedWinner": "New York Jets",
+        "actualWinner": "New York Jets",
+        "correct": true,
+        "homeEdgePoints": -4.92
+      },
+      {
+        "season": 2024,
+        "id": "401671731",
+        "week": 15,
+        "predictedWinner": "Dallas Cowboys",
+        "actualWinner": "Dallas Cowboys",
+        "correct": true,
+        "homeEdgePoints": -3.57
+      },
+      {
+        "season": 2024,
+        "id": "401671737",
+        "week": 15,
+        "predictedWinner": "Washington Commanders",
+        "actualWinner": "Washington Commanders",
+        "correct": true,
+        "homeEdgePoints": -1.91
+      },
+      {
+        "season": 2024,
+        "id": "401671825",
+        "week": 15,
+        "predictedWinner": "Cincinnati Bengals",
+        "actualWinner": "Cincinnati Bengals",
+        "correct": true,
+        "homeEdgePoints": -6.4
+      },
+      {
+        "season": 2024,
+        "id": "401671854",
+        "week": 15,
+        "predictedWinner": "Kansas City Chiefs",
+        "actualWinner": "Kansas City Chiefs",
+        "correct": true,
+        "homeEdgePoints": -9.46
+      },
+      {
+        "season": 2024,
+        "id": "401671860",
+        "week": 15,
+        "predictedWinner": "Houston Texans",
+        "actualWinner": "Houston Texans",
+        "correct": true,
+        "homeEdgePoints": 5.08
+      },
+      {
+        "season": 2024,
+        "id": "401671669",
+        "week": 15,
+        "predictedWinner": "Denver Broncos",
+        "actualWinner": "Denver Broncos",
+        "correct": true,
+        "homeEdgePoints": 13.69
+      },
+      {
+        "season": 2024,
+        "id": "401671677",
+        "week": 15,
+        "predictedWinner": "Arizona Cardinals",
+        "actualWinner": "Arizona Cardinals",
+        "correct": true,
+        "homeEdgePoints": 6.17
+      },
+      {
+        "season": 2024,
+        "id": "401671681",
+        "week": 15,
+        "predictedWinner": "Detroit Lions",
+        "actualWinner": "Buffalo Bills",
+        "correct": false,
+        "homeEdgePoints": 3.61
+      },
+      {
+        "season": 2024,
+        "id": "401671762",
+        "week": 15,
+        "predictedWinner": "Tampa Bay Buccaneers",
+        "actualWinner": "Tampa Bay Buccaneers",
+        "correct": true,
+        "homeEdgePoints": -2.24
+      },
+      {
+        "season": 2024,
+        "id": "401671766",
+        "week": 15,
+        "predictedWinner": "Philadelphia Eagles",
+        "actualWinner": "Philadelphia Eagles",
+        "correct": true,
+        "homeEdgePoints": 4.14
+      },
+      {
+        "season": 2024,
+        "id": "401671796",
+        "week": 15,
+        "predictedWinner": "Green Bay Packers",
+        "actualWinner": "Green Bay Packers",
+        "correct": true,
+        "homeEdgePoints": -2.62
+      },
+      {
+        "season": 2024,
+        "id": "401671489",
+        "week": 15,
+        "predictedWinner": "Minnesota Vikings",
+        "actualWinner": "Minnesota Vikings",
+        "correct": true,
+        "homeEdgePoints": 13.73
+      },
+      {
+        "season": 2024,
+        "id": "401671697",
+        "week": 15,
+        "predictedWinner": "Las Vegas Raiders",
+        "actualWinner": "Atlanta Falcons",
+        "correct": false,
+        "homeEdgePoints": 0.73
+      },
+      {
+        "season": 2024,
+        "id": "401671749",
+        "week": 16,
+        "predictedWinner": "Denver Broncos",
+        "actualWinner": "Los Angeles Chargers",
+        "correct": false,
+        "homeEdgePoints": -6.4
+      },
+      {
+        "season": 2024,
+        "id": "401671780",
+        "week": 16,
+        "predictedWinner": "Kansas City Chiefs",
+        "actualWinner": "Kansas City Chiefs",
+        "correct": true,
+        "homeEdgePoints": 4.8
+      },
+      {
+        "season": 2024,
+        "id": "401671778",
+        "week": 16,
+        "predictedWinner": "Baltimore Ravens",
+        "actualWinner": "Baltimore Ravens",
+        "correct": true,
+        "homeEdgePoints": 4.05
+      },
+      {
+        "season": 2024,
+        "id": "401671621",
+        "week": 16,
+        "predictedWinner": "Los Angeles Rams",
+        "actualWinner": "Los Angeles Rams",
+        "correct": true,
+        "homeEdgePoints": -1.1
+      },
+      {
+        "season": 2024,
+        "id": "401671717",
+        "week": 16,
+        "predictedWinner": "Philadelphia Eagles",
+        "actualWinner": "Washington Commanders",
+        "correct": false,
+        "homeEdgePoints": -1.44
+      },
+      {
+        "season": 2024,
+        "id": "401671729",
+        "week": 16,
+        "predictedWinner": "Atlanta Falcons",
+        "actualWinner": "Atlanta Falcons",
+        "correct": true,
+        "homeEdgePoints": 6.25
+      },
+      {
+        "season": 2024,
+        "id": "401671732",
+        "week": 16,
+        "predictedWinner": "Arizona Cardinals",
+        "actualWinner": "Carolina Panthers",
+        "correct": false,
+        "homeEdgePoints": -9.95
+      },
+      {
+        "season": 2024,
+        "id": "401671811",
+        "week": 16,
+        "predictedWinner": "Cincinnati Bengals",
+        "actualWinner": "Cincinnati Bengals",
+        "correct": true,
+        "homeEdgePoints": 12.65
+      },
+      {
+        "season": 2024,
+        "id": "401671862",
+        "week": 16,
+        "predictedWinner": "Indianapolis Colts",
+        "actualWinner": "Indianapolis Colts",
+        "correct": true,
+        "homeEdgePoints": 5.5
+      },
+      {
+        "season": 2024,
+        "id": "401671868",
+        "week": 16,
+        "predictedWinner": "Detroit Lions",
+        "actualWinner": "Detroit Lions",
+        "correct": true,
+        "homeEdgePoints": -14.05
+      },
+      {
+        "season": 2024,
+        "id": "401671759",
+        "week": 16,
+        "predictedWinner": "Minnesota Vikings",
+        "actualWinner": "Minnesota Vikings",
+        "correct": true,
+        "homeEdgePoints": -8.25
+      },
+      {
+        "season": 2024,
+        "id": "401671494",
+        "week": 16,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Buffalo Bills",
+        "correct": true,
+        "homeEdgePoints": 19.4
+      },
+      {
+        "season": 2024,
+        "id": "401671673",
+        "week": 16,
+        "predictedWinner": "Jacksonville Jaguars",
+        "actualWinner": "Las Vegas Raiders",
+        "correct": false,
+        "homeEdgePoints": -1.05
+      },
+      {
+        "season": 2024,
+        "id": "401671874",
+        "week": 16,
+        "predictedWinner": "San Francisco 49ers",
+        "actualWinner": "Miami Dolphins",
+        "correct": false,
+        "homeEdgePoints": -0.9
+      },
+      {
+        "season": 2024,
+        "id": "401671790",
+        "week": 16,
+        "predictedWinner": "Tampa Bay Buccaneers",
+        "actualWinner": "Dallas Cowboys",
+        "correct": false,
+        "homeEdgePoints": -8.95
+      },
+      {
+        "season": 2024,
+        "id": "401671692",
+        "week": 16,
+        "predictedWinner": "Green Bay Packers",
+        "actualWinner": "Green Bay Packers",
+        "correct": true,
+        "homeEdgePoints": 9.45
+      },
+      {
+        "season": 2024,
+        "id": "401671799",
+        "week": 17,
+        "predictedWinner": "Kansas City Chiefs",
+        "actualWinner": "Kansas City Chiefs",
+        "correct": true,
+        "homeEdgePoints": -3.82
+      },
+      {
+        "season": 2024,
+        "id": "401671800",
+        "week": 17,
+        "predictedWinner": "Baltimore Ravens",
+        "actualWinner": "Baltimore Ravens",
+        "correct": true,
+        "homeEdgePoints": -5.38
+      },
+      {
+        "season": 2024,
+        "id": "401671876",
+        "week": 17,
+        "predictedWinner": "Seattle Seahawks",
+        "actualWinner": "Seattle Seahawks",
+        "correct": true,
+        "homeEdgePoints": -6.4
+      },
+      {
+        "season": 2024,
+        "id": "401671832",
+        "week": 17,
+        "predictedWinner": "Los Angeles Chargers",
+        "actualWinner": "Los Angeles Chargers",
+        "correct": true,
+        "homeEdgePoints": -5.68
+      },
+      {
+        "season": 2024,
+        "id": "401671835",
+        "week": 17,
+        "predictedWinner": "Cincinnati Bengals",
+        "actualWinner": "Cincinnati Bengals",
+        "correct": true,
+        "homeEdgePoints": 0.57
+      },
+      {
+        "season": 2024,
+        "id": "401671829",
+        "week": 17,
+        "predictedWinner": "Los Angeles Rams",
+        "actualWinner": "Los Angeles Rams",
+        "correct": true,
+        "homeEdgePoints": 2.87
+      },
+      {
+        "season": 2024,
+        "id": "401671495",
+        "week": 17,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Buffalo Bills",
+        "correct": true,
+        "homeEdgePoints": 11.97
+      },
+      {
+        "season": 2024,
+        "id": "401671634",
+        "week": 17,
+        "predictedWinner": "Jacksonville Jaguars",
+        "actualWinner": "Jacksonville Jaguars",
+        "correct": true,
+        "homeEdgePoints": 3.56
+      },
+      {
+        "season": 2024,
+        "id": "401671653",
+        "week": 17,
+        "predictedWinner": "Tampa Bay Buccaneers",
+        "actualWinner": "Tampa Bay Buccaneers",
+        "correct": true,
+        "homeEdgePoints": 17.9
+      },
+      {
+        "season": 2024,
+        "id": "401671738",
+        "week": 17,
+        "predictedWinner": "New Orleans Saints",
+        "actualWinner": "Las Vegas Raiders",
+        "correct": false,
+        "homeEdgePoints": 4.05
+      },
+      {
+        "season": 2024,
+        "id": "401671765",
+        "week": 17,
+        "predictedWinner": "Philadelphia Eagles",
+        "actualWinner": "Philadelphia Eagles",
+        "correct": true,
+        "homeEdgePoints": 11.38
+      },
+      {
+        "season": 2024,
+        "id": "401671846",
+        "week": 17,
+        "predictedWinner": "Indianapolis Colts",
+        "actualWinner": "New York Giants",
+        "correct": false,
+        "homeEdgePoints": -7.65
+      },
+      {
+        "season": 2024,
+        "id": "401671877",
+        "week": 17,
+        "predictedWinner": "Miami Dolphins",
+        "actualWinner": "Miami Dolphins",
+        "correct": true,
+        "homeEdgePoints": -9.18
+      },
+      {
+        "season": 2024,
+        "id": "401671725",
+        "week": 17,
+        "predictedWinner": "Minnesota Vikings",
+        "actualWinner": "Minnesota Vikings",
+        "correct": true,
+        "homeEdgePoints": 0.62
+      },
+      {
+        "season": 2024,
+        "id": "401671842",
+        "week": 17,
+        "predictedWinner": "Washington Commanders",
+        "actualWinner": "Washington Commanders",
+        "correct": true,
+        "homeEdgePoints": 7.95
+      },
+      {
+        "season": 2024,
+        "id": "401671698",
+        "week": 17,
+        "predictedWinner": "Detroit Lions",
+        "actualWinner": "Detroit Lions",
+        "correct": true,
+        "homeEdgePoints": -9.09
+      },
+      {
+        "season": 2024,
+        "id": "401671834",
+        "week": 18,
+        "predictedWinner": "Baltimore Ravens",
+        "actualWinner": "Baltimore Ravens",
+        "correct": true,
+        "homeEdgePoints": 25.52
+      },
+      {
+        "season": 2024,
+        "id": "401671836",
+        "week": 18,
+        "predictedWinner": "Cincinnati Bengals",
+        "actualWinner": "Cincinnati Bengals",
+        "correct": true,
+        "homeEdgePoints": -6.94
+      },
+      {
+        "season": 2024,
+        "id": "401671826",
+        "week": 18,
+        "predictedWinner": "Houston Texans",
+        "actualWinner": "Houston Texans",
+        "correct": true,
+        "homeEdgePoints": -3.83
+      },
+      {
+        "season": 2024,
+        "id": "401671827",
+        "week": 18,
+        "predictedWinner": "Atlanta Falcons",
+        "actualWinner": "Carolina Panthers",
+        "correct": false,
+        "homeEdgePoints": 16.08
+      },
+      {
+        "season": 2024,
+        "id": "401671828",
+        "week": 18,
+        "predictedWinner": "Tampa Bay Buccaneers",
+        "actualWinner": "Tampa Bay Buccaneers",
+        "correct": true,
+        "homeEdgePoints": 19.04
+      },
+      {
+        "season": 2024,
+        "id": "401671831",
+        "week": 18,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "New England Patriots",
+        "correct": false,
+        "homeEdgePoints": -19.98
+      },
+      {
+        "season": 2024,
+        "id": "401671837",
+        "week": 18,
+        "predictedWinner": "Indianapolis Colts",
+        "actualWinner": "Indianapolis Colts",
+        "correct": true,
+        "homeEdgePoints": 2.38
+      },
+      {
+        "season": 2024,
+        "id": "401671840",
+        "week": 18,
+        "predictedWinner": "Washington Commanders",
+        "actualWinner": "Washington Commanders",
+        "correct": true,
+        "homeEdgePoints": -10.02
+      },
+      {
+        "season": 2024,
+        "id": "401671841",
+        "week": 18,
+        "predictedWinner": "Philadelphia Eagles",
+        "actualWinner": "Philadelphia Eagles",
+        "correct": true,
+        "homeEdgePoints": 22.2
+      },
+      {
+        "season": 2024,
+        "id": "401671844",
+        "week": 18,
+        "predictedWinner": "Green Bay Packers",
+        "actualWinner": "Chicago Bears",
+        "correct": false,
+        "homeEdgePoints": 18.34
+      },
+      {
+        "season": 2024,
+        "id": "401671830",
+        "week": 18,
+        "predictedWinner": "Los Angeles Rams",
+        "actualWinner": "Seattle Seahawks",
+        "correct": false,
+        "homeEdgePoints": 4.5
+      },
+      {
+        "season": 2024,
+        "id": "401671833",
+        "week": 18,
+        "predictedWinner": "Miami Dolphins",
+        "actualWinner": "New York Jets",
+        "correct": false,
+        "homeEdgePoints": -6.61
+      },
+      {
+        "season": 2024,
+        "id": "401671838",
+        "week": 18,
+        "predictedWinner": "Kansas City Chiefs",
+        "actualWinner": "Denver Broncos",
+        "correct": false,
+        "homeEdgePoints": -3.02
+      },
+      {
+        "season": 2024,
+        "id": "401671839",
+        "week": 18,
+        "predictedWinner": "Los Angeles Chargers",
+        "actualWinner": "Los Angeles Chargers",
+        "correct": true,
+        "homeEdgePoints": -7.47
+      },
+      {
+        "season": 2024,
+        "id": "401671845",
+        "week": 18,
+        "predictedWinner": "Arizona Cardinals",
+        "actualWinner": "Arizona Cardinals",
+        "correct": true,
+        "homeEdgePoints": 5.17
+      },
+      {
+        "season": 2024,
+        "id": "401671843",
+        "week": 18,
+        "predictedWinner": "Detroit Lions",
+        "actualWinner": "Detroit Lions",
+        "correct": true,
+        "homeEdgePoints": 4.32
+      },
+      {
+        "season": 2025,
+        "id": "401772937",
+        "week": 3,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Buffalo Bills",
+        "correct": true,
+        "homeEdgePoints": 27.5
+      },
+      {
+        "season": 2025,
+        "id": "401772731",
+        "week": 3,
+        "predictedWinner": "Cincinnati Bengals",
+        "actualWinner": "Minnesota Vikings",
+        "correct": false,
+        "homeEdgePoints": -7.5
+      },
+      {
+        "season": 2025,
+        "id": "401772732",
+        "week": 3,
+        "predictedWinner": "New England Patriots",
+        "actualWinner": "Pittsburgh Steelers",
+        "correct": false,
+        "homeEdgePoints": 7.0
+      },
+      {
+        "season": 2025,
+        "id": "401772733",
+        "week": 3,
+        "predictedWinner": "Indianapolis Colts",
+        "actualWinner": "Indianapolis Colts",
+        "correct": true,
+        "homeEdgePoints": -22.5
+      },
+      {
+        "season": 2025,
+        "id": "401772734",
+        "week": 3,
+        "predictedWinner": "Jacksonville Jaguars",
+        "actualWinner": "Jacksonville Jaguars",
+        "correct": true,
+        "homeEdgePoints": 10.5
+      },
+      {
+        "season": 2025,
+        "id": "401772838",
+        "week": 3,
+        "predictedWinner": "Atlanta Falcons",
+        "actualWinner": "Carolina Panthers",
+        "correct": false,
+        "homeEdgePoints": -15.5
+      },
+      {
+        "season": 2025,
+        "id": "401772839",
+        "week": 3,
+        "predictedWinner": "Los Angeles Rams",
+        "actualWinner": "Philadelphia Eagles",
+        "correct": false,
+        "homeEdgePoints": -4.5
+      },
+      {
+        "season": 2025,
+        "id": "401772840",
+        "week": 3,
+        "predictedWinner": "Tampa Bay Buccaneers",
+        "actualWinner": "Tampa Bay Buccaneers",
+        "correct": true,
+        "homeEdgePoints": 14.5
+      },
+      {
+        "season": 2025,
+        "id": "401772841",
+        "week": 3,
+        "predictedWinner": "Washington Commanders",
+        "actualWinner": "Washington Commanders",
+        "correct": true,
+        "homeEdgePoints": 6.5
+      },
+      {
+        "season": 2025,
+        "id": "401772842",
+        "week": 3,
+        "predictedWinner": "Green Bay Packers",
+        "actualWinner": "Cleveland Browns",
+        "correct": false,
+        "homeEdgePoints": -22.5
+      },
+      {
+        "season": 2025,
+        "id": "401772735",
+        "week": 3,
+        "predictedWinner": "Los Angeles Chargers",
+        "actualWinner": "Los Angeles Chargers",
+        "correct": true,
+        "homeEdgePoints": 6.5
+      },
+      {
+        "season": 2025,
+        "id": "401772736",
+        "week": 3,
+        "predictedWinner": "Seattle Seahawks",
+        "actualWinner": "Seattle Seahawks",
+        "correct": true,
+        "homeEdgePoints": 12.5
+      },
+      {
+        "season": 2025,
+        "id": "401772843",
+        "week": 3,
+        "predictedWinner": "San Francisco 49ers",
+        "actualWinner": "San Francisco 49ers",
+        "correct": true,
+        "homeEdgePoints": 0.0
+      },
+      {
+        "season": 2025,
+        "id": "401772844",
+        "week": 3,
+        "predictedWinner": "Dallas Cowboys",
+        "actualWinner": "Chicago Bears",
+        "correct": false,
+        "homeEdgePoints": -15.0
+      },
+      {
+        "season": 2025,
+        "id": "401772920",
+        "week": 3,
+        "predictedWinner": "Kansas City Chiefs",
+        "actualWinner": "Kansas City Chiefs",
+        "correct": true,
+        "homeEdgePoints": -3.0
+      },
+      {
+        "season": 2025,
+        "id": "401772812",
+        "week": 3,
+        "predictedWinner": "Baltimore Ravens",
+        "actualWinner": "Detroit Lions",
+        "correct": false,
+        "homeEdgePoints": 4.5
+      },
+      {
+        "season": 2025,
+        "id": "401772938",
+        "week": 4,
+        "predictedWinner": "Seattle Seahawks",
+        "actualWinner": "Seattle Seahawks",
+        "correct": true,
+        "homeEdgePoints": -8.5
+      },
+      {
+        "season": 2025,
+        "id": "401772632",
+        "week": 4,
+        "predictedWinner": "Minnesota Vikings",
+        "actualWinner": "Pittsburgh Steelers",
+        "correct": false,
+        "homeEdgePoints": -8.5
+      },
+      {
+        "season": 2025,
+        "id": "401772737",
+        "week": 4,
+        "predictedWinner": "Los Angeles Chargers",
+        "actualWinner": "New York Giants",
+        "correct": false,
+        "homeEdgePoints": -15.5
+      },
+      {
+        "season": 2025,
+        "id": "401772738",
+        "week": 4,
+        "predictedWinner": "Houston Texans",
+        "actualWinner": "Houston Texans",
+        "correct": true,
+        "homeEdgePoints": 11.5
+      },
+      {
+        "season": 2025,
+        "id": "401772739",
+        "week": 4,
+        "predictedWinner": "Washington Commanders",
+        "actualWinner": "Atlanta Falcons",
+        "correct": false,
+        "homeEdgePoints": -11.84
+      },
+      {
+        "season": 2025,
+        "id": "401772740",
+        "week": 4,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Buffalo Bills",
+        "correct": true,
+        "homeEdgePoints": 26.16
+      },
+      {
+        "season": 2025,
+        "id": "401772845",
+        "week": 4,
+        "predictedWinner": "Philadelphia Eagles",
+        "actualWinner": "Philadelphia Eagles",
+        "correct": true,
+        "homeEdgePoints": -1.17
+      },
+      {
+        "season": 2025,
+        "id": "401772846",
+        "week": 4,
+        "predictedWinner": "Detroit Lions",
+        "actualWinner": "Detroit Lions",
+        "correct": true,
+        "homeEdgePoints": 17.16
+      },
+      {
+        "season": 2025,
+        "id": "401772847",
+        "week": 4,
+        "predictedWinner": "Carolina Panthers",
+        "actualWinner": "New England Patriots",
+        "correct": false,
+        "homeEdgePoints": -4.17
+      },
+      {
+        "season": 2025,
+        "id": "401772848",
+        "week": 4,
+        "predictedWinner": "Jacksonville Jaguars",
+        "actualWinner": "Jacksonville Jaguars",
+        "correct": true,
+        "homeEdgePoints": -1.5
+      },
+      {
+        "season": 2025,
+        "id": "401772849",
+        "week": 4,
+        "predictedWinner": "Indianapolis Colts",
+        "actualWinner": "Los Angeles Rams",
+        "correct": false,
+        "homeEdgePoints": -10.17
+      },
+      {
+        "season": 2025,
+        "id": "401772741",
+        "week": 4,
+        "predictedWinner": "Baltimore Ravens",
+        "actualWinner": "Kansas City Chiefs",
+        "correct": false,
+        "homeEdgePoints": -2.17
+      },
+      {
+        "season": 2025,
+        "id": "401772742",
+        "week": 4,
+        "predictedWinner": "Las Vegas Raiders",
+        "actualWinner": "Chicago Bears",
+        "correct": false,
+        "homeEdgePoints": 0.17
+      },
+      {
+        "season": 2025,
+        "id": "401772813",
+        "week": 4,
+        "predictedWinner": "New York Jets",
+        "actualWinner": "Miami Dolphins",
+        "correct": false,
+        "homeEdgePoints": -4.17
+      },
+      {
+        "season": 2025,
+        "id": "401772716",
+        "week": 4,
+        "predictedWinner": "Denver Broncos",
+        "actualWinner": "Denver Broncos",
+        "correct": true,
+        "homeEdgePoints": 13.83
+      },
+      {
+        "season": 2025,
+        "id": "401772939",
+        "week": 5,
+        "predictedWinner": "Los Angeles Rams",
+        "actualWinner": "San Francisco 49ers",
+        "correct": false,
+        "homeEdgePoints": 5.25
+      },
+      {
+        "season": 2025,
+        "id": "401772633",
+        "week": 5,
+        "predictedWinner": "Minnesota Vikings",
+        "actualWinner": "Minnesota Vikings",
+        "correct": true,
+        "homeEdgePoints": -16.8
+      },
+      {
+        "season": 2025,
+        "id": "401772743",
+        "week": 5,
+        "predictedWinner": "Houston Texans",
+        "actualWinner": "Houston Texans",
+        "correct": true,
+        "homeEdgePoints": -3.02
+      },
+      {
+        "season": 2025,
+        "id": "401772744",
+        "week": 5,
+        "predictedWinner": "New York Giants",
+        "actualWinner": "New Orleans Saints",
+        "correct": false,
+        "homeEdgePoints": -6.73
+      },
+      {
+        "season": 2025,
+        "id": "401772745",
+        "week": 5,
+        "predictedWinner": "Denver Broncos",
+        "actualWinner": "Denver Broncos",
+        "correct": true,
+        "homeEdgePoints": -0.58
+      },
+      {
+        "season": 2025,
+        "id": "401772850",
+        "week": 5,
+        "predictedWinner": "Dallas Cowboys",
+        "actualWinner": "Dallas Cowboys",
+        "correct": true,
+        "homeEdgePoints": -2.0
+      },
+      {
+        "season": 2025,
+        "id": "401772851",
+        "week": 5,
+        "predictedWinner": "Indianapolis Colts",
+        "actualWinner": "Indianapolis Colts",
+        "correct": true,
+        "homeEdgePoints": 16.75
+      },
+      {
+        "season": 2025,
+        "id": "401772852",
+        "week": 5,
+        "predictedWinner": "Carolina Panthers",
+        "actualWinner": "Carolina Panthers",
+        "correct": true,
+        "homeEdgePoints": 4.72
+      },
+      {
+        "season": 2025,
+        "id": "401772746",
+        "week": 5,
+        "predictedWinner": "Seattle Seahawks",
+        "actualWinner": "Tampa Bay Buccaneers",
+        "correct": false,
+        "homeEdgePoints": 14.3
+      },
+      {
+        "season": 2025,
+        "id": "401772747",
+        "week": 5,
+        "predictedWinner": "Arizona Cardinals",
+        "actualWinner": "Tennessee Titans",
+        "correct": false,
+        "homeEdgePoints": 21.17
+      },
+      {
+        "season": 2025,
+        "id": "401772853",
+        "week": 5,
+        "predictedWinner": "Los Angeles Chargers",
+        "actualWinner": "Washington Commanders",
+        "correct": false,
+        "homeEdgePoints": 2.68
+      },
+      {
+        "season": 2025,
+        "id": "401772854",
+        "week": 5,
+        "predictedWinner": "Detroit Lions",
+        "actualWinner": "Detroit Lions",
+        "correct": true,
+        "homeEdgePoints": -29.43
+      },
+      {
+        "season": 2025,
+        "id": "401772922",
+        "week": 5,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "New England Patriots",
+        "correct": false,
+        "homeEdgePoints": 6.75
+      },
+      {
+        "season": 2025,
+        "id": "401772814",
+        "week": 5,
+        "predictedWinner": "Jacksonville Jaguars",
+        "actualWinner": "Jacksonville Jaguars",
+        "correct": true,
+        "homeEdgePoints": 0.13
+      },
+      {
+        "season": 2025,
+        "id": "401772940",
+        "week": 6,
+        "predictedWinner": "Philadelphia Eagles",
+        "actualWinner": "New York Giants",
+        "correct": false,
+        "homeEdgePoints": -9.44
+      },
+      {
+        "season": 2025,
+        "id": "401772634",
+        "week": 6,
+        "predictedWinner": "Denver Broncos",
+        "actualWinner": "Denver Broncos",
+        "correct": true,
+        "homeEdgePoints": -14.32
+      },
+      {
+        "season": 2025,
+        "id": "401772748",
+        "week": 6,
+        "predictedWinner": "Pittsburgh Steelers",
+        "actualWinner": "Pittsburgh Steelers",
+        "correct": true,
+        "homeEdgePoints": 10.25
+      },
+      {
+        "season": 2025,
+        "id": "401772750",
+        "week": 6,
+        "predictedWinner": "Los Angeles Chargers",
+        "actualWinner": "Los Angeles Chargers",
+        "correct": true,
+        "homeEdgePoints": -2.82
+      },
+      {
+        "season": 2025,
+        "id": "401772751",
+        "week": 6,
+        "predictedWinner": "New England Patriots",
+        "actualWinner": "New England Patriots",
+        "correct": true,
+        "homeEdgePoints": -13.48
+      },
+      {
+        "season": 2025,
+        "id": "401772855",
+        "week": 6,
+        "predictedWinner": "Los Angeles Rams",
+        "actualWinner": "Los Angeles Rams",
+        "correct": true,
+        "homeEdgePoints": -11.38
+      },
+      {
+        "season": 2025,
+        "id": "401772856",
+        "week": 6,
+        "predictedWinner": "Indianapolis Colts",
+        "actualWinner": "Indianapolis Colts",
+        "correct": true,
+        "homeEdgePoints": 16.18
+      },
+      {
+        "season": 2025,
+        "id": "401772857",
+        "week": 6,
+        "predictedWinner": "Seattle Seahawks",
+        "actualWinner": "Seattle Seahawks",
+        "correct": true,
+        "homeEdgePoints": -2.06
+      },
+      {
+        "season": 2025,
+        "id": "401772858",
+        "week": 6,
+        "predictedWinner": "Carolina Panthers",
+        "actualWinner": "Carolina Panthers",
+        "correct": true,
+        "homeEdgePoints": 0.14
+      },
+      {
+        "season": 2025,
+        "id": "401772859",
+        "week": 6,
+        "predictedWinner": "Las Vegas Raiders",
+        "actualWinner": "Las Vegas Raiders",
+        "correct": true,
+        "homeEdgePoints": 2.58
+      },
+      {
+        "season": 2025,
+        "id": "401772749",
+        "week": 6,
+        "predictedWinner": "Tampa Bay Buccaneers",
+        "actualWinner": "Tampa Bay Buccaneers",
+        "correct": true,
+        "homeEdgePoints": 0.8
+      },
+      {
+        "season": 2025,
+        "id": "401772752",
+        "week": 6,
+        "predictedWinner": "Green Bay Packers",
+        "actualWinner": "Green Bay Packers",
+        "correct": true,
+        "homeEdgePoints": 23.14
+      },
+      {
+        "season": 2025,
+        "id": "401772923",
+        "week": 6,
+        "predictedWinner": "Detroit Lions",
+        "actualWinner": "Kansas City Chiefs",
+        "correct": false,
+        "homeEdgePoints": -6.46
+      },
+      {
+        "season": 2025,
+        "id": "401772815",
+        "week": 6,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Atlanta Falcons",
+        "correct": false,
+        "homeEdgePoints": -8.45
+      },
+      {
+        "season": 2025,
+        "id": "401772717",
+        "week": 6,
+        "predictedWinner": "Washington Commanders",
+        "actualWinner": "Chicago Bears",
+        "correct": false,
+        "homeEdgePoints": 12.92
+      },
+      {
+        "season": 2025,
+        "id": "401772941",
+        "week": 7,
+        "predictedWinner": "Pittsburgh Steelers",
+        "actualWinner": "Cincinnati Bengals",
+        "correct": false,
+        "homeEdgePoints": -16.61
+      },
+      {
+        "season": 2025,
+        "id": "401772635",
+        "week": 7,
+        "predictedWinner": "Los Angeles Rams",
+        "actualWinner": "Los Angeles Rams",
+        "correct": true,
+        "homeEdgePoints": -1.58
+      },
+      {
+        "season": 2025,
+        "id": "401772753",
+        "week": 7,
+        "predictedWinner": "Kansas City Chiefs",
+        "actualWinner": "Kansas City Chiefs",
+        "correct": true,
+        "homeEdgePoints": 15.69
+      },
+      {
+        "season": 2025,
+        "id": "401772754",
+        "week": 7,
+        "predictedWinner": "Miami Dolphins",
+        "actualWinner": "Cleveland Browns",
+        "correct": false,
+        "homeEdgePoints": -5.6
+      },
+      {
+        "season": 2025,
+        "id": "401772755",
+        "week": 7,
+        "predictedWinner": "New England Patriots",
+        "actualWinner": "New England Patriots",
+        "correct": true,
+        "homeEdgePoints": -18.4
+      },
+      {
+        "season": 2025,
+        "id": "401772860",
+        "week": 7,
+        "predictedWinner": "Carolina Panthers",
+        "actualWinner": "Carolina Panthers",
+        "correct": true,
+        "homeEdgePoints": -2.35
+      },
+      {
+        "season": 2025,
+        "id": "401772861",
+        "week": 7,
+        "predictedWinner": "Chicago Bears",
+        "actualWinner": "Chicago Bears",
+        "correct": true,
+        "homeEdgePoints": 7.62
+      },
+      {
+        "season": 2025,
+        "id": "401772862",
+        "week": 7,
+        "predictedWinner": "Minnesota Vikings",
+        "actualWinner": "Philadelphia Eagles",
+        "correct": false,
+        "homeEdgePoints": 10.66
+      },
+      {
+        "season": 2025,
+        "id": "401772756",
+        "week": 7,
+        "predictedWinner": "Indianapolis Colts",
+        "actualWinner": "Indianapolis Colts",
+        "correct": true,
+        "homeEdgePoints": -12.27
+      },
+      {
+        "season": 2025,
+        "id": "401772757",
+        "week": 7,
+        "predictedWinner": "Denver Broncos",
+        "actualWinner": "Denver Broncos",
+        "correct": true,
+        "homeEdgePoints": 10.56
+      },
+      {
+        "season": 2025,
+        "id": "401772863",
+        "week": 7,
+        "predictedWinner": "Green Bay Packers",
+        "actualWinner": "Green Bay Packers",
+        "correct": true,
+        "homeEdgePoints": -3.61
+      },
+      {
+        "season": 2025,
+        "id": "401772864",
+        "week": 7,
+        "predictedWinner": "Washington Commanders",
+        "actualWinner": "Dallas Cowboys",
+        "correct": false,
+        "homeEdgePoints": -2.63
+      },
+      {
+        "season": 2025,
+        "id": "401772924",
+        "week": 7,
+        "predictedWinner": "San Francisco 49ers",
+        "actualWinner": "San Francisco 49ers",
+        "correct": true,
+        "homeEdgePoints": 1.15
+      },
+      {
+        "season": 2025,
+        "id": "401772816",
+        "week": 7,
+        "predictedWinner": "Detroit Lions",
+        "actualWinner": "Detroit Lions",
+        "correct": true,
+        "homeEdgePoints": 7.19
+      },
+      {
+        "season": 2025,
+        "id": "401772826",
+        "week": 7,
+        "predictedWinner": "Houston Texans",
+        "actualWinner": "Seattle Seahawks",
+        "correct": false,
+        "homeEdgePoints": -3.86
+      },
+      {
+        "season": 2025,
+        "id": "401772942",
+        "week": 8,
+        "predictedWinner": "Minnesota Vikings",
+        "actualWinner": "Los Angeles Chargers",
+        "correct": false,
+        "homeEdgePoints": -4.43
+      },
+      {
+        "season": 2025,
+        "id": "401772758",
+        "week": 8,
+        "predictedWinner": "New York Jets",
+        "actualWinner": "New York Jets",
+        "correct": true,
+        "homeEdgePoints": -0.5
+      },
+      {
+        "season": 2025,
+        "id": "401772759",
+        "week": 8,
+        "predictedWinner": "Chicago Bears",
+        "actualWinner": "Baltimore Ravens",
+        "correct": false,
+        "homeEdgePoints": -11.88
+      },
+      {
+        "season": 2025,
+        "id": "401772760",
+        "week": 8,
+        "predictedWinner": "Atlanta Falcons",
+        "actualWinner": "Miami Dolphins",
+        "correct": false,
+        "homeEdgePoints": 10.53
+      },
+      {
+        "season": 2025,
+        "id": "401772865",
+        "week": 8,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Buffalo Bills",
+        "correct": true,
+        "homeEdgePoints": -1.3
+      },
+      {
+        "season": 2025,
+        "id": "401772866",
+        "week": 8,
+        "predictedWinner": "Houston Texans",
+        "actualWinner": "Houston Texans",
+        "correct": true,
+        "homeEdgePoints": 10.35
+      },
+      {
+        "season": 2025,
+        "id": "401772867",
+        "week": 8,
+        "predictedWinner": "Philadelphia Eagles",
+        "actualWinner": "Philadelphia Eagles",
+        "correct": true,
+        "homeEdgePoints": 2.5
+      },
+      {
+        "season": 2025,
+        "id": "401772868",
+        "week": 8,
+        "predictedWinner": "New England Patriots",
+        "actualWinner": "New England Patriots",
+        "correct": true,
+        "homeEdgePoints": 12.2
+      },
+      {
+        "season": 2025,
+        "id": "401772869",
+        "week": 8,
+        "predictedWinner": "Tampa Bay Buccaneers",
+        "actualWinner": "Tampa Bay Buccaneers",
+        "correct": true,
+        "homeEdgePoints": -5.0
+      },
+      {
+        "season": 2025,
+        "id": "401772761",
+        "week": 8,
+        "predictedWinner": "Indianapolis Colts",
+        "actualWinner": "Indianapolis Colts",
+        "correct": true,
+        "homeEdgePoints": 28.19
+      },
+      {
+        "season": 2025,
+        "id": "401772762",
+        "week": 8,
+        "predictedWinner": "Denver Broncos",
+        "actualWinner": "Denver Broncos",
+        "correct": true,
+        "homeEdgePoints": 0.79
+      },
+      {
+        "season": 2025,
+        "id": "401772925",
+        "week": 8,
+        "predictedWinner": "Green Bay Packers",
+        "actualWinner": "Green Bay Packers",
+        "correct": true,
+        "homeEdgePoints": -0.98
+      },
+      {
+        "season": 2025,
+        "id": "401772817",
+        "week": 8,
+        "predictedWinner": "Kansas City Chiefs",
+        "actualWinner": "Kansas City Chiefs",
+        "correct": true,
+        "homeEdgePoints": 11.4
+      },
+      {
+        "season": 2025,
+        "id": "401772943",
+        "week": 9,
+        "predictedWinner": "Miami Dolphins",
+        "actualWinner": "Baltimore Ravens",
+        "correct": false,
+        "homeEdgePoints": 4.61
+      },
+      {
+        "season": 2025,
+        "id": "401772763",
+        "week": 9,
+        "predictedWinner": "New England Patriots",
+        "actualWinner": "New England Patriots",
+        "correct": true,
+        "homeEdgePoints": 17.47
+      },
+      {
+        "season": 2025,
+        "id": "401772764",
+        "week": 9,
+        "predictedWinner": "Los Angeles Chargers",
+        "actualWinner": "Los Angeles Chargers",
+        "correct": true,
+        "homeEdgePoints": -17.01
+      },
+      {
+        "season": 2025,
+        "id": "401772765",
+        "week": 9,
+        "predictedWinner": "Chicago Bears",
+        "actualWinner": "Chicago Bears",
+        "correct": true,
+        "homeEdgePoints": -4.42
+      },
+      {
+        "season": 2025,
+        "id": "401772766",
+        "week": 9,
+        "predictedWinner": "Indianapolis Colts",
+        "actualWinner": "Pittsburgh Steelers",
+        "correct": false,
+        "homeEdgePoints": -12.65
+      },
+      {
+        "season": 2025,
+        "id": "401772767",
+        "week": 9,
+        "predictedWinner": "San Francisco 49ers",
+        "actualWinner": "San Francisco 49ers",
+        "correct": true,
+        "homeEdgePoints": -0.83
+      },
+      {
+        "season": 2025,
+        "id": "401772870",
+        "week": 9,
+        "predictedWinner": "Houston Texans",
+        "actualWinner": "Denver Broncos",
+        "correct": false,
+        "homeEdgePoints": 3.0
+      },
+      {
+        "season": 2025,
+        "id": "401772871",
+        "week": 9,
+        "predictedWinner": "Detroit Lions",
+        "actualWinner": "Minnesota Vikings",
+        "correct": false,
+        "homeEdgePoints": 13.0
+      },
+      {
+        "season": 2025,
+        "id": "401772872",
+        "week": 9,
+        "predictedWinner": "Green Bay Packers",
+        "actualWinner": "Carolina Panthers",
+        "correct": false,
+        "homeEdgePoints": 13.52
+      },
+      {
+        "season": 2025,
+        "id": "401772873",
+        "week": 9,
+        "predictedWinner": "Jacksonville Jaguars",
+        "actualWinner": "Jacksonville Jaguars",
+        "correct": true,
+        "homeEdgePoints": -7.5
+      },
+      {
+        "season": 2025,
+        "id": "401772874",
+        "week": 9,
+        "predictedWinner": "Los Angeles Rams",
+        "actualWinner": "Los Angeles Rams",
+        "correct": true,
+        "homeEdgePoints": 22.09
+      },
+      {
+        "season": 2025,
+        "id": "401772768",
+        "week": 9,
+        "predictedWinner": "Kansas City Chiefs",
+        "actualWinner": "Buffalo Bills",
+        "correct": false,
+        "homeEdgePoints": -4.37
+      },
+      {
+        "season": 2025,
+        "id": "401772926",
+        "week": 9,
+        "predictedWinner": "Seattle Seahawks",
+        "actualWinner": "Seattle Seahawks",
+        "correct": true,
+        "homeEdgePoints": -10.86
+      },
+      {
+        "season": 2025,
+        "id": "401772818",
+        "week": 9,
+        "predictedWinner": "Dallas Cowboys",
+        "actualWinner": "Arizona Cardinals",
+        "correct": false,
+        "homeEdgePoints": 2.05
+      },
+      {
+        "season": 2025,
+        "id": "401772944",
+        "week": 10,
+        "predictedWinner": "Denver Broncos",
+        "actualWinner": "Denver Broncos",
+        "correct": true,
+        "homeEdgePoints": 17.52
+      },
+      {
+        "season": 2025,
+        "id": "401772636",
+        "week": 10,
+        "predictedWinner": "Indianapolis Colts",
+        "actualWinner": "Indianapolis Colts",
+        "correct": true,
+        "homeEdgePoints": 19.64
+      },
+      {
+        "season": 2025,
+        "id": "401772769",
+        "week": 10,
+        "predictedWinner": "New York Jets",
+        "actualWinner": "New York Jets",
+        "correct": true,
+        "homeEdgePoints": 1.94
+      },
+      {
+        "season": 2025,
+        "id": "401772770",
+        "week": 10,
+        "predictedWinner": "Houston Texans",
+        "actualWinner": "Houston Texans",
+        "correct": true,
+        "homeEdgePoints": 9.82
+      },
+      {
+        "season": 2025,
+        "id": "401772771",
+        "week": 10,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Miami Dolphins",
+        "correct": false,
+        "homeEdgePoints": -14.45
+      },
+      {
+        "season": 2025,
+        "id": "401772772",
+        "week": 10,
+        "predictedWinner": "New England Patriots",
+        "actualWinner": "New England Patriots",
+        "correct": true,
+        "homeEdgePoints": -4.33
+      },
+      {
+        "season": 2025,
+        "id": "401772875",
+        "week": 10,
+        "predictedWinner": "Chicago Bears",
+        "actualWinner": "Chicago Bears",
+        "correct": true,
+        "homeEdgePoints": 7.7
+      },
+      {
+        "season": 2025,
+        "id": "401772876",
+        "week": 10,
+        "predictedWinner": "Baltimore Ravens",
+        "actualWinner": "Baltimore Ravens",
+        "correct": true,
+        "homeEdgePoints": -2.82
+      },
+      {
+        "season": 2025,
+        "id": "401772877",
+        "week": 10,
+        "predictedWinner": "Carolina Panthers",
+        "actualWinner": "New Orleans Saints",
+        "correct": false,
+        "homeEdgePoints": 10.45
+      },
+      {
+        "season": 2025,
+        "id": "401772773",
+        "week": 10,
+        "predictedWinner": "Seattle Seahawks",
+        "actualWinner": "Seattle Seahawks",
+        "correct": true,
+        "homeEdgePoints": 11.6
+      },
+      {
+        "season": 2025,
+        "id": "401772878",
+        "week": 10,
+        "predictedWinner": "Detroit Lions",
+        "actualWinner": "Detroit Lions",
+        "correct": true,
+        "homeEdgePoints": -13.16
+      },
+      {
+        "season": 2025,
+        "id": "401772879",
+        "week": 10,
+        "predictedWinner": "Los Angeles Rams",
+        "actualWinner": "Los Angeles Rams",
+        "correct": true,
+        "homeEdgePoints": -10.91
+      },
+      {
+        "season": 2025,
+        "id": "401772927",
+        "week": 10,
+        "predictedWinner": "Los Angeles Chargers",
+        "actualWinner": "Los Angeles Chargers",
+        "correct": true,
+        "homeEdgePoints": 5.09
+      },
+      {
+        "season": 2025,
+        "id": "401772630",
+        "week": 10,
+        "predictedWinner": "Green Bay Packers",
+        "actualWinner": "Philadelphia Eagles",
+        "correct": false,
+        "homeEdgePoints": 3.39
+      },
+      {
+        "season": 2025,
+        "id": "401772945",
+        "week": 11,
+        "predictedWinner": "New England Patriots",
+        "actualWinner": "New England Patriots",
+        "correct": true,
+        "homeEdgePoints": 12.59
+      },
+      {
+        "season": 2025,
+        "id": "401772631",
+        "week": 11,
+        "predictedWinner": "Miami Dolphins",
+        "actualWinner": "Miami Dolphins",
+        "correct": true,
+        "homeEdgePoints": 10.87
+      },
+      {
+        "season": 2025,
+        "id": "401772774",
+        "week": 11,
+        "predictedWinner": "Pittsburgh Steelers",
+        "actualWinner": "Pittsburgh Steelers",
+        "correct": true,
+        "homeEdgePoints": 6.01
+      },
+      {
+        "season": 2025,
+        "id": "401772775",
+        "week": 11,
+        "predictedWinner": "Los Angeles Chargers",
+        "actualWinner": "Jacksonville Jaguars",
+        "correct": false,
+        "homeEdgePoints": -10.56
+      },
+      {
+        "season": 2025,
+        "id": "401772776",
+        "week": 11,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Buffalo Bills",
+        "correct": true,
+        "homeEdgePoints": 6.48
+      },
+      {
+        "season": 2025,
+        "id": "401772880",
+        "week": 11,
+        "predictedWinner": "Chicago Bears",
+        "actualWinner": "Chicago Bears",
+        "correct": true,
+        "homeEdgePoints": -1.51
+      },
+      {
+        "season": 2025,
+        "id": "401772881",
+        "week": 11,
+        "predictedWinner": "Houston Texans",
+        "actualWinner": "Houston Texans",
+        "correct": true,
+        "homeEdgePoints": -18.98
+      },
+      {
+        "season": 2025,
+        "id": "401772882",
+        "week": 11,
+        "predictedWinner": "Atlanta Falcons",
+        "actualWinner": "Carolina Panthers",
+        "correct": false,
+        "homeEdgePoints": 2.16
+      },
+      {
+        "season": 2025,
+        "id": "401772883",
+        "week": 11,
+        "predictedWinner": "Green Bay Packers",
+        "actualWinner": "Green Bay Packers",
+        "correct": true,
+        "homeEdgePoints": -8.9
+      },
+      {
+        "season": 2025,
+        "id": "401772884",
+        "week": 11,
+        "predictedWinner": "Los Angeles Rams",
+        "actualWinner": "Los Angeles Rams",
+        "correct": true,
+        "homeEdgePoints": 2.52
+      },
+      {
+        "season": 2025,
+        "id": "401772885",
+        "week": 11,
+        "predictedWinner": "Arizona Cardinals",
+        "actualWinner": "San Francisco 49ers",
+        "correct": false,
+        "homeEdgePoints": 1.29
+      },
+      {
+        "season": 2025,
+        "id": "401772777",
+        "week": 11,
+        "predictedWinner": "Baltimore Ravens",
+        "actualWinner": "Baltimore Ravens",
+        "correct": true,
+        "homeEdgePoints": -7.58
+      },
+      {
+        "season": 2025,
+        "id": "401772778",
+        "week": 11,
+        "predictedWinner": "Kansas City Chiefs",
+        "actualWinner": "Denver Broncos",
+        "correct": false,
+        "homeEdgePoints": -1.97
+      },
+      {
+        "season": 2025,
+        "id": "401772928",
+        "week": 11,
+        "predictedWinner": "Detroit Lions",
+        "actualWinner": "Philadelphia Eagles",
+        "correct": false,
+        "homeEdgePoints": -3.63
+      },
+      {
+        "season": 2025,
+        "id": "401772819",
+        "week": 11,
+        "predictedWinner": "Dallas Cowboys",
+        "actualWinner": "Dallas Cowboys",
+        "correct": true,
+        "homeEdgePoints": -6.41
+      },
+      {
+        "season": 2025,
+        "id": "401772946",
+        "week": 12,
+        "predictedWinner": "Houston Texans",
+        "actualWinner": "Houston Texans",
+        "correct": true,
+        "homeEdgePoints": 1.58
+      },
+      {
+        "season": 2025,
+        "id": "401772779",
+        "week": 12,
+        "predictedWinner": "Indianapolis Colts",
+        "actualWinner": "Kansas City Chiefs",
+        "correct": false,
+        "homeEdgePoints": -2.64
+      },
+      {
+        "season": 2025,
+        "id": "401772780",
+        "week": 12,
+        "predictedWinner": "Pittsburgh Steelers",
+        "actualWinner": "Chicago Bears",
+        "correct": false,
+        "homeEdgePoints": -0.2
+      },
+      {
+        "season": 2025,
+        "id": "401772781",
+        "week": 12,
+        "predictedWinner": "New England Patriots",
+        "actualWinner": "New England Patriots",
+        "correct": true,
+        "homeEdgePoints": -16.09
+      },
+      {
+        "season": 2025,
+        "id": "401772782",
+        "week": 12,
+        "predictedWinner": "Baltimore Ravens",
+        "actualWinner": "Baltimore Ravens",
+        "correct": true,
+        "homeEdgePoints": 9.9
+      },
+      {
+        "season": 2025,
+        "id": "401772886",
+        "week": 12,
+        "predictedWinner": "Seattle Seahawks",
+        "actualWinner": "Seattle Seahawks",
+        "correct": true,
+        "homeEdgePoints": -22.47
+      },
+      {
+        "season": 2025,
+        "id": "401772887",
+        "week": 12,
+        "predictedWinner": "Green Bay Packers",
+        "actualWinner": "Green Bay Packers",
+        "correct": true,
+        "homeEdgePoints": 6.36
+      },
+      {
+        "season": 2025,
+        "id": "401772888",
+        "week": 12,
+        "predictedWinner": "Detroit Lions",
+        "actualWinner": "Detroit Lions",
+        "correct": true,
+        "homeEdgePoints": 14.13
+      },
+      {
+        "season": 2025,
+        "id": "401772783",
+        "week": 12,
+        "predictedWinner": "Jacksonville Jaguars",
+        "actualWinner": "Jacksonville Jaguars",
+        "correct": true,
+        "homeEdgePoints": -7.12
+      },
+      {
+        "season": 2025,
+        "id": "401772784",
+        "week": 12,
+        "predictedWinner": "Las Vegas Raiders",
+        "actualWinner": "Cleveland Browns",
+        "correct": false,
+        "homeEdgePoints": 0.88
+      },
+      {
+        "season": 2025,
+        "id": "401772889",
+        "week": 12,
+        "predictedWinner": "Atlanta Falcons",
+        "actualWinner": "Atlanta Falcons",
+        "correct": true,
+        "homeEdgePoints": -4.47
+      },
+      {
+        "season": 2025,
+        "id": "401772890",
+        "week": 12,
+        "predictedWinner": "Philadelphia Eagles",
+        "actualWinner": "Dallas Cowboys",
+        "correct": false,
+        "homeEdgePoints": -4.7
+      },
+      {
+        "season": 2025,
+        "id": "401772929",
+        "week": 12,
+        "predictedWinner": "Los Angeles Rams",
+        "actualWinner": "Los Angeles Rams",
+        "correct": true,
+        "homeEdgePoints": 12.26
+      },
+      {
+        "season": 2025,
+        "id": "401772820",
+        "week": 12,
+        "predictedWinner": "San Francisco 49ers",
+        "actualWinner": "San Francisco 49ers",
+        "correct": true,
+        "homeEdgePoints": 6.45
+      },
+      {
+        "season": 2025,
+        "id": "401772891",
+        "week": 13,
+        "predictedWinner": "Detroit Lions",
+        "actualWinner": "Green Bay Packers",
+        "correct": false,
+        "homeEdgePoints": 3.0
+      },
+      {
+        "season": 2025,
+        "id": "401772694",
+        "week": 13,
+        "predictedWinner": "Kansas City Chiefs",
+        "actualWinner": "Dallas Cowboys",
+        "correct": false,
+        "homeEdgePoints": -1.25
+      },
+      {
+        "season": 2025,
+        "id": "401772930",
+        "week": 13,
+        "predictedWinner": "Baltimore Ravens",
+        "actualWinner": "Cincinnati Bengals",
+        "correct": false,
+        "homeEdgePoints": 15.61
+      },
+      {
+        "season": 2025,
+        "id": "401772621",
+        "week": 13,
+        "predictedWinner": "Philadelphia Eagles",
+        "actualWinner": "Chicago Bears",
+        "correct": false,
+        "homeEdgePoints": 3.4
+      },
+      {
+        "season": 2025,
+        "id": "401772785",
+        "week": 13,
+        "predictedWinner": "San Francisco 49ers",
+        "actualWinner": "San Francisco 49ers",
+        "correct": true,
+        "homeEdgePoints": -4.76
+      },
+      {
+        "season": 2025,
+        "id": "401772786",
+        "week": 13,
+        "predictedWinner": "Jacksonville Jaguars",
+        "actualWinner": "Jacksonville Jaguars",
+        "correct": true,
+        "homeEdgePoints": -12.33
+      },
+      {
+        "season": 2025,
+        "id": "401772787",
+        "week": 13,
+        "predictedWinner": "Indianapolis Colts",
+        "actualWinner": "Houston Texans",
+        "correct": false,
+        "homeEdgePoints": 2.94
+      },
+      {
+        "season": 2025,
+        "id": "401772892",
+        "week": 13,
+        "predictedWinner": "Miami Dolphins",
+        "actualWinner": "Miami Dolphins",
+        "correct": true,
+        "homeEdgePoints": 8.3
+      },
+      {
+        "season": 2025,
+        "id": "401772893",
+        "week": 13,
+        "predictedWinner": "Atlanta Falcons",
+        "actualWinner": "New York Jets",
+        "correct": false,
+        "homeEdgePoints": -3.57
+      },
+      {
+        "season": 2025,
+        "id": "401772894",
+        "week": 13,
+        "predictedWinner": "Los Angeles Rams",
+        "actualWinner": "Carolina Panthers",
+        "correct": false,
+        "homeEdgePoints": -15.98
+      },
+      {
+        "season": 2025,
+        "id": "401772895",
+        "week": 13,
+        "predictedWinner": "Tampa Bay Buccaneers",
+        "actualWinner": "Tampa Bay Buccaneers",
+        "correct": true,
+        "homeEdgePoints": 2.14
+      },
+      {
+        "season": 2025,
+        "id": "401772896",
+        "week": 13,
+        "predictedWinner": "Seattle Seahawks",
+        "actualWinner": "Seattle Seahawks",
+        "correct": true,
+        "homeEdgePoints": 15.59
+      },
+      {
+        "season": 2025,
+        "id": "401772788",
+        "week": 13,
+        "predictedWinner": "Los Angeles Chargers",
+        "actualWinner": "Los Angeles Chargers",
+        "correct": true,
+        "homeEdgePoints": 11.84
+      },
+      {
+        "season": 2025,
+        "id": "401772789",
+        "week": 13,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Buffalo Bills",
+        "correct": true,
+        "homeEdgePoints": -0.25
+      },
+      {
+        "season": 2025,
+        "id": "401772931",
+        "week": 13,
+        "predictedWinner": "Denver Broncos",
+        "actualWinner": "Denver Broncos",
+        "correct": true,
+        "homeEdgePoints": -12.25
+      },
+      {
+        "season": 2025,
+        "id": "401772821",
+        "week": 13,
+        "predictedWinner": "New England Patriots",
+        "actualWinner": "New England Patriots",
+        "correct": true,
+        "homeEdgePoints": 15.15
+      },
+      {
+        "season": 2025,
+        "id": "401772947",
+        "week": 14,
+        "predictedWinner": "Detroit Lions",
+        "actualWinner": "Detroit Lions",
+        "correct": true,
+        "homeEdgePoints": 2.41
+      },
+      {
+        "season": 2025,
+        "id": "401772790",
+        "week": 14,
+        "predictedWinner": "Miami Dolphins",
+        "actualWinner": "Miami Dolphins",
+        "correct": true,
+        "homeEdgePoints": -4.95
+      },
+      {
+        "season": 2025,
+        "id": "401772791",
+        "week": 14,
+        "predictedWinner": "Baltimore Ravens",
+        "actualWinner": "Pittsburgh Steelers",
+        "correct": false,
+        "homeEdgePoints": 1.94
+      },
+      {
+        "season": 2025,
+        "id": "401772792",
+        "week": 14,
+        "predictedWinner": "Tampa Bay Buccaneers",
+        "actualWinner": "New Orleans Saints",
+        "correct": false,
+        "homeEdgePoints": 4.01
+      },
+      {
+        "season": 2025,
+        "id": "401772793",
+        "week": 14,
+        "predictedWinner": "Jacksonville Jaguars",
+        "actualWinner": "Jacksonville Jaguars",
+        "correct": true,
+        "homeEdgePoints": 2.97
+      },
+      {
+        "season": 2025,
+        "id": "401772898",
+        "week": 14,
+        "predictedWinner": "Cleveland Browns",
+        "actualWinner": "Tennessee Titans",
+        "correct": false,
+        "homeEdgePoints": 8.29
+      },
+      {
+        "season": 2025,
+        "id": "401772899",
+        "week": 14,
+        "predictedWinner": "Washington Commanders",
+        "actualWinner": "Minnesota Vikings",
+        "correct": false,
+        "homeEdgePoints": -0.17
+      },
+      {
+        "season": 2025,
+        "id": "401772900",
+        "week": 14,
+        "predictedWinner": "Seattle Seahawks",
+        "actualWinner": "Seattle Seahawks",
+        "correct": true,
+        "homeEdgePoints": -10.38
+      },
+      {
+        "season": 2025,
+        "id": "401772902",
+        "week": 14,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Buffalo Bills",
+        "correct": true,
+        "homeEdgePoints": 15.23
+      },
+      {
+        "season": 2025,
+        "id": "401772794",
+        "week": 14,
+        "predictedWinner": "Denver Broncos",
+        "actualWinner": "Denver Broncos",
+        "correct": true,
+        "homeEdgePoints": -15.37
+      },
+      {
+        "season": 2025,
+        "id": "401772897",
+        "week": 14,
+        "predictedWinner": "Green Bay Packers",
+        "actualWinner": "Green Bay Packers",
+        "correct": true,
+        "homeEdgePoints": 6.82
+      },
+      {
+        "season": 2025,
+        "id": "401772901",
+        "week": 14,
+        "predictedWinner": "Los Angeles Rams",
+        "actualWinner": "Los Angeles Rams",
+        "correct": true,
+        "homeEdgePoints": -13.05
+      },
+      {
+        "season": 2025,
+        "id": "401772932",
+        "week": 14,
+        "predictedWinner": "Kansas City Chiefs",
+        "actualWinner": "Houston Texans",
+        "correct": false,
+        "homeEdgePoints": 0.56
+      },
+      {
+        "season": 2025,
+        "id": "401772822",
+        "week": 14,
+        "predictedWinner": "Los Angeles Chargers",
+        "actualWinner": "Los Angeles Chargers",
+        "correct": true,
+        "homeEdgePoints": 2.53
+      },
+      {
+        "season": 2025,
+        "id": "401772948",
+        "week": 15,
+        "predictedWinner": "Tampa Bay Buccaneers",
+        "actualWinner": "Atlanta Falcons",
+        "correct": false,
+        "homeEdgePoints": 2.29
+      },
+      {
+        "season": 2025,
+        "id": "401772795",
+        "week": 15,
+        "predictedWinner": "New England Patriots",
+        "actualWinner": "Buffalo Bills",
+        "correct": false,
+        "homeEdgePoints": 4.65
+      },
+      {
+        "season": 2025,
+        "id": "401772796",
+        "week": 15,
+        "predictedWinner": "Baltimore Ravens",
+        "actualWinner": "Baltimore Ravens",
+        "correct": true,
+        "homeEdgePoints": -1.65
+      },
+      {
+        "season": 2025,
+        "id": "401772797",
+        "week": 15,
+        "predictedWinner": "Jacksonville Jaguars",
+        "actualWinner": "Jacksonville Jaguars",
+        "correct": true,
+        "homeEdgePoints": 17.12
+      },
+      {
+        "season": 2025,
+        "id": "401772798",
+        "week": 15,
+        "predictedWinner": "Kansas City Chiefs",
+        "actualWinner": "Los Angeles Chargers",
+        "correct": false,
+        "homeEdgePoints": 3.29
+      },
+      {
+        "season": 2025,
+        "id": "401772903",
+        "week": 15,
+        "predictedWinner": "Houston Texans",
+        "actualWinner": "Houston Texans",
+        "correct": true,
+        "homeEdgePoints": 14.29
+      },
+      {
+        "season": 2025,
+        "id": "401772904",
+        "week": 15,
+        "predictedWinner": "Chicago Bears",
+        "actualWinner": "Chicago Bears",
+        "correct": true,
+        "homeEdgePoints": 6.74
+      },
+      {
+        "season": 2025,
+        "id": "401772905",
+        "week": 15,
+        "predictedWinner": "New York Giants",
+        "actualWinner": "Washington Commanders",
+        "correct": false,
+        "homeEdgePoints": 2.02
+      },
+      {
+        "season": 2025,
+        "id": "401772906",
+        "week": 15,
+        "predictedWinner": "Philadelphia Eagles",
+        "actualWinner": "Philadelphia Eagles",
+        "correct": true,
+        "homeEdgePoints": 12.09
+      },
+      {
+        "season": 2025,
+        "id": "401772799",
+        "week": 15,
+        "predictedWinner": "Seattle Seahawks",
+        "actualWinner": "Seattle Seahawks",
+        "correct": true,
+        "homeEdgePoints": 13.67
+      },
+      {
+        "season": 2025,
+        "id": "401772800",
+        "week": 15,
+        "predictedWinner": "Green Bay Packers",
+        "actualWinner": "Denver Broncos",
+        "correct": false,
+        "homeEdgePoints": -0.6
+      },
+      {
+        "season": 2025,
+        "id": "401772907",
+        "week": 15,
+        "predictedWinner": "San Francisco 49ers",
+        "actualWinner": "San Francisco 49ers",
+        "correct": true,
+        "homeEdgePoints": 19.34
+      },
+      {
+        "season": 2025,
+        "id": "401772908",
+        "week": 15,
+        "predictedWinner": "Carolina Panthers",
+        "actualWinner": "New Orleans Saints",
+        "correct": false,
+        "homeEdgePoints": -2.57
+      },
+      {
+        "season": 2025,
+        "id": "401772909",
+        "week": 15,
+        "predictedWinner": "Los Angeles Rams",
+        "actualWinner": "Los Angeles Rams",
+        "correct": true,
+        "homeEdgePoints": 8.64
+      },
+      {
+        "season": 2025,
+        "id": "401772933",
+        "week": 15,
+        "predictedWinner": "Dallas Cowboys",
+        "actualWinner": "Minnesota Vikings",
+        "correct": false,
+        "homeEdgePoints": 3.03
+      },
+      {
+        "season": 2025,
+        "id": "401772823",
+        "week": 15,
+        "predictedWinner": "Miami Dolphins",
+        "actualWinner": "Pittsburgh Steelers",
+        "correct": false,
+        "homeEdgePoints": -2.66
+      },
+      {
+        "season": 2025,
+        "id": "401772949",
+        "week": 16,
+        "predictedWinner": "Seattle Seahawks",
+        "actualWinner": "Seattle Seahawks",
+        "correct": true,
+        "homeEdgePoints": 4.1
+      },
+      {
+        "season": 2025,
+        "id": "401772612",
+        "week": 16,
+        "predictedWinner": "Philadelphia Eagles",
+        "actualWinner": "Philadelphia Eagles",
+        "correct": true,
+        "homeEdgePoints": -9.45
+      },
+      {
+        "season": 2025,
+        "id": "401772613",
+        "week": 16,
+        "predictedWinner": "Chicago Bears",
+        "actualWinner": "Chicago Bears",
+        "correct": true,
+        "homeEdgePoints": 1.9
+      },
+      {
+        "season": 2025,
+        "id": "401772801",
+        "week": 16,
+        "predictedWinner": "New Orleans Saints",
+        "actualWinner": "New Orleans Saints",
+        "correct": true,
+        "homeEdgePoints": 7.45
+      },
+      {
+        "season": 2025,
+        "id": "401772802",
+        "week": 16,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Buffalo Bills",
+        "correct": true,
+        "homeEdgePoints": -15.74
+      },
+      {
+        "season": 2025,
+        "id": "401772803",
+        "week": 16,
+        "predictedWinner": "Kansas City Chiefs",
+        "actualWinner": "Tennessee Titans",
+        "correct": false,
+        "homeEdgePoints": -11.65
+      },
+      {
+        "season": 2025,
+        "id": "401772910",
+        "week": 16,
+        "predictedWinner": "Los Angeles Chargers",
+        "actualWinner": "Los Angeles Chargers",
+        "correct": true,
+        "homeEdgePoints": -4.9
+      },
+      {
+        "season": 2025,
+        "id": "401772911",
+        "week": 16,
+        "predictedWinner": "Minnesota Vikings",
+        "actualWinner": "Minnesota Vikings",
+        "correct": true,
+        "homeEdgePoints": -7.0
+      },
+      {
+        "season": 2025,
+        "id": "401772912",
+        "week": 16,
+        "predictedWinner": "Tampa Bay Buccaneers",
+        "actualWinner": "Carolina Panthers",
+        "correct": false,
+        "homeEdgePoints": -0.7
+      },
+      {
+        "season": 2025,
+        "id": "401772934",
+        "week": 16,
+        "predictedWinner": "Miami Dolphins",
+        "actualWinner": "Cincinnati Bengals",
+        "correct": false,
+        "homeEdgePoints": 8.85
+      },
+      {
+        "season": 2025,
+        "id": "401772913",
+        "week": 16,
+        "predictedWinner": "Jacksonville Jaguars",
+        "actualWinner": "Jacksonville Jaguars",
+        "correct": true,
+        "homeEdgePoints": -3.75
+      },
+      {
+        "season": 2025,
+        "id": "401772914",
+        "week": 16,
+        "predictedWinner": "Atlanta Falcons",
+        "actualWinner": "Atlanta Falcons",
+        "correct": true,
+        "homeEdgePoints": -1.89
+      },
+      {
+        "season": 2025,
+        "id": "401772805",
+        "week": 16,
+        "predictedWinner": "Houston Texans",
+        "actualWinner": "Houston Texans",
+        "correct": true,
+        "homeEdgePoints": 23.5
+      },
+      {
+        "season": 2025,
+        "id": "401772806",
+        "week": 16,
+        "predictedWinner": "Detroit Lions",
+        "actualWinner": "Pittsburgh Steelers",
+        "correct": false,
+        "homeEdgePoints": 5.25
+      },
+      {
+        "season": 2025,
+        "id": "401772804",
+        "week": 16,
+        "predictedWinner": "New England Patriots",
+        "actualWinner": "New England Patriots",
+        "correct": true,
+        "homeEdgePoints": -4.95
+      },
+      {
+        "season": 2025,
+        "id": "401772824",
+        "week": 16,
+        "predictedWinner": "San Francisco 49ers",
+        "actualWinner": "San Francisco 49ers",
+        "correct": true,
+        "homeEdgePoints": -3.1
+      },
+      {
+        "season": 2025,
+        "id": "401772710",
+        "week": 17,
+        "predictedWinner": "Dallas Cowboys",
+        "actualWinner": "Dallas Cowboys",
+        "correct": true,
+        "homeEdgePoints": -1.03
+      },
+      {
+        "season": 2025,
+        "id": "401772711",
+        "week": 17,
+        "predictedWinner": "Minnesota Vikings",
+        "actualWinner": "Minnesota Vikings",
+        "correct": true,
+        "homeEdgePoints": 1.16
+      },
+      {
+        "season": 2025,
+        "id": "401772622",
+        "week": 17,
+        "predictedWinner": "Denver Broncos",
+        "actualWinner": "Denver Broncos",
+        "correct": true,
+        "homeEdgePoints": -2.72
+      },
+      {
+        "season": 2025,
+        "id": "401772951",
+        "week": 17,
+        "predictedWinner": "Houston Texans",
+        "actualWinner": "Houston Texans",
+        "correct": true,
+        "homeEdgePoints": -1.69
+      },
+      {
+        "season": 2025,
+        "id": "401772953",
+        "week": 17,
+        "predictedWinner": "Green Bay Packers",
+        "actualWinner": "Baltimore Ravens",
+        "correct": false,
+        "homeEdgePoints": 1.64
+      },
+      {
+        "season": 2025,
+        "id": "401772807",
+        "week": 17,
+        "predictedWinner": "Pittsburgh Steelers",
+        "actualWinner": "Cleveland Browns",
+        "correct": false,
+        "homeEdgePoints": -9.89
+      },
+      {
+        "season": 2025,
+        "id": "401772808",
+        "week": 17,
+        "predictedWinner": "New England Patriots",
+        "actualWinner": "New England Patriots",
+        "correct": true,
+        "homeEdgePoints": -19.65
+      },
+      {
+        "season": 2025,
+        "id": "401772809",
+        "week": 17,
+        "predictedWinner": "New Orleans Saints",
+        "actualWinner": "New Orleans Saints",
+        "correct": true,
+        "homeEdgePoints": -4.12
+      },
+      {
+        "season": 2025,
+        "id": "401772915",
+        "week": 17,
+        "predictedWinner": "Jacksonville Jaguars",
+        "actualWinner": "Jacksonville Jaguars",
+        "correct": true,
+        "homeEdgePoints": -9.8
+      },
+      {
+        "season": 2025,
+        "id": "401772916",
+        "week": 17,
+        "predictedWinner": "Tampa Bay Buccaneers",
+        "actualWinner": "Miami Dolphins",
+        "correct": false,
+        "homeEdgePoints": -0.03
+      },
+      {
+        "season": 2025,
+        "id": "401772952",
+        "week": 17,
+        "predictedWinner": "Seattle Seahawks",
+        "actualWinner": "Seattle Seahawks",
+        "correct": true,
+        "homeEdgePoints": -11.28
+      },
+      {
+        "season": 2025,
+        "id": "401772954",
+        "week": 17,
+        "predictedWinner": "Cincinnati Bengals",
+        "actualWinner": "Cincinnati Bengals",
+        "correct": true,
+        "homeEdgePoints": 6.22
+      },
+      {
+        "season": 2025,
+        "id": "401772950",
+        "week": 17,
+        "predictedWinner": "New York Giants",
+        "actualWinner": "New York Giants",
+        "correct": true,
+        "homeEdgePoints": -2.87
+      },
+      {
+        "season": 2025,
+        "id": "401772917",
+        "week": 17,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Philadelphia Eagles",
+        "correct": false,
+        "homeEdgePoints": 0.2
+      },
+      {
+        "season": 2025,
+        "id": "401772935",
+        "week": 17,
+        "predictedWinner": "San Francisco 49ers",
+        "actualWinner": "San Francisco 49ers",
+        "correct": true,
+        "homeEdgePoints": 5.82
+      },
+      {
+        "season": 2025,
+        "id": "401772825",
+        "week": 17,
+        "predictedWinner": "Los Angeles Rams",
+        "actualWinner": "Atlanta Falcons",
+        "correct": false,
+        "homeEdgePoints": -13.74
+      },
+      {
+        "season": 2025,
+        "id": "401772969",
+        "week": 18,
+        "predictedWinner": "Tampa Bay Buccaneers",
+        "actualWinner": "Tampa Bay Buccaneers",
+        "correct": true,
+        "homeEdgePoints": 3.99
+      },
+      {
+        "season": 2025,
+        "id": "401772961",
+        "week": 18,
+        "predictedWinner": "Seattle Seahawks",
+        "actualWinner": "Seattle Seahawks",
+        "correct": true,
+        "homeEdgePoints": -1.29
+      },
+      {
+        "season": 2025,
+        "id": "401772962",
+        "week": 18,
+        "predictedWinner": "Houston Texans",
+        "actualWinner": "Houston Texans",
+        "correct": true,
+        "homeEdgePoints": 8.7
+      },
+      {
+        "season": 2025,
+        "id": "401772963",
+        "week": 18,
+        "predictedWinner": "New York Giants",
+        "actualWinner": "New York Giants",
+        "correct": true,
+        "homeEdgePoints": 2.32
+      },
+      {
+        "season": 2025,
+        "id": "401772964",
+        "week": 18,
+        "predictedWinner": "Cincinnati Bengals",
+        "actualWinner": "Cleveland Browns",
+        "correct": false,
+        "homeEdgePoints": 7.34
+      },
+      {
+        "season": 2025,
+        "id": "401772966",
+        "week": 18,
+        "predictedWinner": "Atlanta Falcons",
+        "actualWinner": "Atlanta Falcons",
+        "correct": true,
+        "homeEdgePoints": 0.3
+      },
+      {
+        "season": 2025,
+        "id": "401772968",
+        "week": 18,
+        "predictedWinner": "Minnesota Vikings",
+        "actualWinner": "Minnesota Vikings",
+        "correct": true,
+        "homeEdgePoints": 4.99
+      },
+      {
+        "season": 2025,
+        "id": "401772970",
+        "week": 18,
+        "predictedWinner": "Jacksonville Jaguars",
+        "actualWinner": "Jacksonville Jaguars",
+        "correct": true,
+        "homeEdgePoints": 18.25
+      },
+      {
+        "season": 2025,
+        "id": "401772955",
+        "week": 18,
+        "predictedWinner": "Los Angeles Rams",
+        "actualWinner": "Los Angeles Rams",
+        "correct": true,
+        "homeEdgePoints": 18.66
+      },
+      {
+        "season": 2025,
+        "id": "401772956",
+        "week": 18,
+        "predictedWinner": "Denver Broncos",
+        "actualWinner": "Denver Broncos",
+        "correct": true,
+        "homeEdgePoints": 1.31
+      },
+      {
+        "season": 2025,
+        "id": "401772957",
+        "week": 18,
+        "predictedWinner": "Kansas City Chiefs",
+        "actualWinner": "Las Vegas Raiders",
+        "correct": false,
+        "homeEdgePoints": -11.52
+      },
+      {
+        "season": 2025,
+        "id": "401772958",
+        "week": 18,
+        "predictedWinner": "New England Patriots",
+        "actualWinner": "New England Patriots",
+        "correct": true,
+        "homeEdgePoints": 16.46
+      },
+      {
+        "season": 2025,
+        "id": "401772959",
+        "week": 18,
+        "predictedWinner": "Philadelphia Eagles",
+        "actualWinner": "Washington Commanders",
+        "correct": false,
+        "homeEdgePoints": 13.93
+      },
+      {
+        "season": 2025,
+        "id": "401772965",
+        "week": 18,
+        "predictedWinner": "Chicago Bears",
+        "actualWinner": "Detroit Lions",
+        "correct": false,
+        "homeEdgePoints": 5.42
+      },
+      {
+        "season": 2025,
+        "id": "401772967",
+        "week": 18,
+        "predictedWinner": "Buffalo Bills",
+        "actualWinner": "Buffalo Bills",
+        "correct": true,
+        "homeEdgePoints": 21.99
+      },
+      {
+        "season": 2025,
+        "id": "401772960",
+        "week": 18,
+        "predictedWinner": "Baltimore Ravens",
+        "actualWinner": "Pittsburgh Steelers",
+        "correct": false,
+        "homeEdgePoints": -1.97
+      },
+      {
+        "season": 2026,
         "id": "401872948",
         "week": 3,
         "predictedWinner": "Green Bay Packers",
@@ -20,6 +6516,7 @@
         "homeEdgePoints": 13.5
       },
       {
+        "season": 2026,
         "id": "401872949",
         "week": 3,
         "predictedWinner": "Carolina Panthers",
@@ -28,6 +6525,7 @@
         "homeEdgePoints": -13.0
       },
       {
+        "season": 2026,
         "id": "401872950",
         "week": 3,
         "predictedWinner": "Cincinnati Bengals",
@@ -36,6 +6534,7 @@
         "homeEdgePoints": -13.5
       },
       {
+        "season": 2026,
         "id": "401872951",
         "week": 3,
         "predictedWinner": "Indianapolis Colts",
@@ -44,6 +6543,7 @@
         "homeEdgePoints": 0.5
       },
       {
+        "season": 2026,
         "id": "401872952",
         "week": 3,
         "predictedWinner": "Kansas City Chiefs",
@@ -52,6 +6552,7 @@
         "homeEdgePoints": -28.5
       },
       {
+        "season": 2026,
         "id": "401872953",
         "week": 3,
         "predictedWinner": "Buffalo Bills",
@@ -60,6 +6561,7 @@
         "homeEdgePoints": 21.0
       },
       {
+        "season": 2026,
         "id": "401872954",
         "week": 3,
         "predictedWinner": "New York Jets",
@@ -68,6 +6570,7 @@
         "homeEdgePoints": -8.0
       },
       {
+        "season": 2026,
         "id": "401872955",
         "week": 3,
         "predictedWinner": "Seattle Seahawks",
@@ -76,6 +6579,7 @@
         "homeEdgePoints": -21.5
       },
       {
+        "season": 2026,
         "id": "401872956",
         "week": 3,
         "predictedWinner": "New York Giants",
@@ -84,6 +6588,7 @@
         "homeEdgePoints": 3.0
       },
       {
+        "season": 2026,
         "id": "401872957",
         "week": 3,
         "predictedWinner": "Jacksonville Jaguars",
@@ -92,6 +6597,7 @@
         "homeEdgePoints": 3.0
       },
       {
+        "season": 2026,
         "id": "401872958",
         "week": 3,
         "predictedWinner": "San Francisco 49ers",
@@ -100,6 +6606,7 @@
         "homeEdgePoints": 28.5
       },
       {
+        "season": 2026,
         "id": "401872959",
         "week": 3,
         "predictedWinner": "Minnesota Vikings",
@@ -108,6 +6615,7 @@
         "homeEdgePoints": -15.0
       },
       {
+        "season": 2026,
         "id": "401872960",
         "week": 3,
         "predictedWinner": "Dallas Cowboys",
@@ -116,6 +6624,7 @@
         "homeEdgePoints": 0.5
       },
       {
+        "season": 2026,
         "id": "401872961",
         "week": 3,
         "predictedWinner": "Las Vegas Raiders",
@@ -124,6 +6633,7 @@
         "homeEdgePoints": -8.5
       },
       {
+        "season": 2026,
         "id": "401872962",
         "week": 3,
         "predictedWinner": "Los Angeles Rams",
@@ -132,6 +6642,7 @@
         "homeEdgePoints": -6.5
       },
       {
+        "season": 2026,
         "id": "401872963",
         "week": 3,
         "predictedWinner": "Chicago Bears",
@@ -140,6 +6651,7 @@
         "homeEdgePoints": 6.5
       },
       {
+        "season": 2026,
         "id": "401872964",
         "week": 4,
         "predictedWinner": "Pittsburgh Steelers",
@@ -148,6 +6660,7 @@
         "homeEdgePoints": -1.84
       },
       {
+        "season": 2026,
         "id": "401872965",
         "week": 4,
         "predictedWinner": "Washington Commanders",
@@ -156,6 +6669,7 @@
         "homeEdgePoints": 2.16
       },
       {
+        "season": 2026,
         "id": "401872966",
         "week": 4,
         "predictedWinner": "New York Giants",
@@ -164,6 +6678,7 @@
         "homeEdgePoints": 4.5
       },
       {
+        "season": 2026,
         "id": "401872967",
         "week": 4,
         "predictedWinner": "Dallas Cowboys",
@@ -172,6 +6687,7 @@
         "homeEdgePoints": -7.5
       },
       {
+        "season": 2026,
         "id": "401872968",
         "week": 4,
         "predictedWinner": "Tampa Bay Buccaneers",
@@ -180,6 +6696,7 @@
         "homeEdgePoints": 7.5
       },
       {
+        "season": 2026,
         "id": "401872969",
         "week": 4,
         "predictedWinner": "Jacksonville Jaguars",
@@ -188,6 +6705,7 @@
         "homeEdgePoints": -8.16
       },
       {
+        "season": 2026,
         "id": "401872970",
         "week": 4,
         "predictedWinner": "Los Angeles Rams",
@@ -196,6 +6714,7 @@
         "homeEdgePoints": -2.5
       },
       {
+        "season": 2026,
         "id": "401872971",
         "week": 4,
         "predictedWinner": "Buffalo Bills",
@@ -204,6 +6723,7 @@
         "homeEdgePoints": 14.17
       },
       {
+        "season": 2026,
         "id": "401872972",
         "week": 4,
         "predictedWinner": "Chicago Bears",
@@ -212,6 +6732,7 @@
         "homeEdgePoints": 12.5
       },
       {
+        "season": 2026,
         "id": "401872973",
         "week": 4,
         "predictedWinner": "Baltimore Ravens",
@@ -220,6 +6741,7 @@
         "homeEdgePoints": 13.5
       },
       {
+        "season": 2026,
         "id": "401872974",
         "week": 4,
         "predictedWinner": "Minnesota Vikings",
@@ -228,6 +6750,7 @@
         "homeEdgePoints": 28.17
       },
       {
+        "season": 2026,
         "id": "401872975",
         "week": 4,
         "predictedWinner": "San Francisco 49ers",
@@ -236,6 +6759,7 @@
         "homeEdgePoints": 20.83
       },
       {
+        "season": 2026,
         "id": "401872976",
         "week": 4,
         "predictedWinner": "Las Vegas Raiders",
@@ -244,6 +6768,7 @@
         "homeEdgePoints": 0.16
       },
       {
+        "season": 2026,
         "id": "401872977",
         "week": 4,
         "predictedWinner": "Seattle Seahawks",
@@ -252,6 +6777,7 @@
         "homeEdgePoints": 20.5
       },
       {
+        "season": 2026,
         "id": "401872978",
         "week": 4,
         "predictedWinner": "Carolina Panthers",
@@ -260,6 +6786,7 @@
         "homeEdgePoints": 4.17
       },
       {
+        "season": 2026,
         "id": "401872979",
         "week": 4,
         "predictedWinner": "New Orleans Saints",
@@ -268,6 +6795,7 @@
         "homeEdgePoints": 6.5
       },
       {
+        "season": 2026,
         "id": "401872980",
         "week": 5,
         "predictedWinner": "Dallas Cowboys",
@@ -276,6 +6804,7 @@
         "homeEdgePoints": 9.95
       },
       {
+        "season": 2026,
         "id": "401872981",
         "week": 5,
         "predictedWinner": "Jacksonville Jaguars",
@@ -284,6 +6813,7 @@
         "homeEdgePoints": 18.28
       },
       {
+        "season": 2026,
         "id": "401872982",
         "week": 5,
         "predictedWinner": "Cincinnati Bengals",
@@ -292,6 +6822,7 @@
         "homeEdgePoints": -14.93
       },
       {
+        "season": 2026,
         "id": "401872983",
         "week": 5,
         "predictedWinner": "Cleveland Browns",
@@ -300,6 +6831,7 @@
         "homeEdgePoints": -0.55
       },
       {
+        "season": 2026,
         "id": "401872984",
         "week": 5,
         "predictedWinner": "Tennessee Titans",
@@ -308,6 +6840,7 @@
         "homeEdgePoints": 1.48
       },
       {
+        "season": 2026,
         "id": "401872985",
         "week": 5,
         "predictedWinner": "Indianapolis Colts",
@@ -316,6 +6849,7 @@
         "homeEdgePoints": -3.2
       },
       {
+        "season": 2026,
         "id": "401872986",
         "week": 5,
         "predictedWinner": "Las Vegas Raiders",
@@ -324,6 +6858,7 @@
         "homeEdgePoints": -8.63
       },
       {
+        "season": 2026,
         "id": "401872987",
         "week": 5,
         "predictedWinner": "Minnesota Vikings",
@@ -332,6 +6867,7 @@
         "homeEdgePoints": -12.65
       },
       {
+        "season": 2026,
         "id": "401872990",
         "week": 5,
         "predictedWinner": "Chicago Bears",
@@ -340,6 +6876,7 @@
         "homeEdgePoints": -16.32
       },
       {
+        "season": 2026,
         "id": "401872989",
         "week": 5,
         "predictedWinner": "Denver Broncos",
@@ -348,6 +6885,7 @@
         "homeEdgePoints": -4.62
       },
       {
+        "season": 2026,
         "id": "401872991",
         "week": 5,
         "predictedWinner": "Detroit Lions",
@@ -356,6 +6894,7 @@
         "homeEdgePoints": -5.65
       },
       {
+        "season": 2026,
         "id": "401872992",
         "week": 5,
         "predictedWinner": "San Francisco 49ers",
@@ -364,6 +6903,7 @@
         "homeEdgePoints": -3.95
       },
       {
+        "season": 2026,
         "id": "401872993",
         "week": 5,
         "predictedWinner": "Baltimore Ravens",
@@ -372,6 +6912,7 @@
         "homeEdgePoints": -0.4
       },
       {
+        "season": 2026,
         "id": "401872994",
         "week": 5,
         "predictedWinner": "Buffalo Bills",
@@ -380,6 +6921,7 @@
         "homeEdgePoints": -0.95
       },
       {
+        "season": 2026,
         "id": "401872995",
         "week": 6,
         "predictedWinner": "Seattle Seahawks",
