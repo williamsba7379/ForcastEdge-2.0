@@ -1,0 +1,18 @@
+name: Independently test recent-form weight (2019)
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  holdout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Evaluate prespecified 0% vs 30% form on 2019
+        run: python3 scripts/nfl_recent_form_holdout_2019.py
+      - name: Publish holdout results without changing production model
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/nfl-recent-form-holdout-2019.json
+          git diff --cached --quiet || (git commit -m "Record independent 2019 recent-form holdout" && git push)
