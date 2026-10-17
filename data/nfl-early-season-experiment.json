@@ -1,0 +1,82 @@
+{
+  "status": "Exploratory retrospective comparison; not a fresh independent holdout or future accuracy guarantee",
+  "developmentSeasons": [
+    2023,
+    2024,
+    2025
+  ],
+  "excludedFromDevelopment": "2022 previously inspected holdout",
+  "earlyMethod": "For teams with fewer than 2 earlier current-season games, compare previous regular-season point-differential strength; otherwise retain existing frozen method. Add 1.5 home points.",
+  "limitations": "Prior-season-only baseline ignores roster changes, injuries, betting markets and offseason moves; no calibrated probabilities.",
+  "results": {
+    "2023": {
+      "allGames": {
+        "games": 272,
+        "correct": 163,
+        "accuracy": 0.5993,
+        "homeBaselineCorrect": 151,
+        "homeBaselineAccuracy": 0.5551
+      },
+      "earlyPrior": {
+        "games": 32,
+        "correct": 19,
+        "accuracy": 0.5938,
+        "homeBaselineCorrect": 13,
+        "homeBaselineAccuracy": 0.4062
+      },
+      "existing": {
+        "games": 240,
+        "correct": 144,
+        "accuracy": 0.6,
+        "homeBaselineCorrect": 138,
+        "homeBaselineAccuracy": 0.575
+      }
+    },
+    "2024": {
+      "allGames": {
+        "games": 272,
+        "correct": 174,
+        "accuracy": 0.6397,
+        "homeBaselineCorrect": 145,
+        "homeBaselineAccuracy": 0.5331
+      },
+      "earlyPrior": {
+        "games": 32,
+        "correct": 19,
+        "accuracy": 0.5938,
+        "homeBaselineCorrect": 17,
+        "homeBaselineAccuracy": 0.5312
+      },
+      "existing": {
+        "games": 240,
+        "correct": 155,
+        "accuracy": 0.6458,
+        "homeBaselineCorrect": 128,
+        "homeBaselineAccuracy": 0.5333
+      }
+    },
+    "2025": {
+      "allGames": {
+        "games": 271,
+        "correct": 178,
+        "accuracy": 0.6568,
+        "homeBaselineCorrect": 146,
+        "homeBaselineAccuracy": 0.5387
+      },
+      "earlyPrior": {
+        "games": 32,
+        "correct": 25,
+        "accuracy": 0.7812,
+        "homeBaselineCorrect": 16,
+        "homeBaselineAccuracy": 0.5
+      },
+      "existing": {
+        "games": 239,
+        "correct": 153,
+        "accuracy": 0.6402,
+        "homeBaselineCorrect": 130,
+        "homeBaselineAccuracy": 0.5439
+      }
+    }
+  }
+}
