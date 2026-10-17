@@ -1,0 +1,75 @@
+{
+  "status": "Exploratory retrospective feature comparison; NOT a new independent test",
+  "feature": "Add 4.0 * (home winPct - away winPct) to existing 70/30 point differential edge plus 1.5 home advantage",
+  "limitations": [
+    "All candidates are evaluated on the same eligible games, using only earlier games in the same season.",
+    "Coefficient 4.0 is a research choice, not optimized; testing it here uses previously inspected historical seasons.",
+    "No market odds, injuries, schedules, or calibrated probabilities are included.",
+    "No production or weekly pool picks are modified."
+  ],
+  "overall": {
+    "games": 766,
+    "baselineCorrect": 479,
+    "baselineAccuracy": 0.6253,
+    "candidateCorrect": 484,
+    "candidateAccuracy": 0.6319,
+    "changedPicks": 21,
+    "netAdditionalCorrect": 5
+  },
+  "bySeason": {
+    "2023": {
+      "games": 240,
+      "baselineCorrect": 144,
+      "baselineAccuracy": 0.6,
+      "candidateCorrect": 145,
+      "candidateAccuracy": 0.6042,
+      "changedPicks": 7,
+      "netAdditionalCorrect": 1
+    },
+    "2024": {
+      "games": 240,
+      "baselineCorrect": 155,
+      "baselineAccuracy": 0.6458,
+      "candidateCorrect": 160,
+      "candidateAccuracy": 0.6667,
+      "changedPicks": 9,
+      "netAdditionalCorrect": 5
+    },
+    "2025": {
+      "games": 239,
+      "baselineCorrect": 153,
+      "baselineAccuracy": 0.6402,
+      "candidateCorrect": 152,
+      "candidateAccuracy": 0.636,
+      "changedPicks": 5,
+      "netAdditionalCorrect": -1
+    },
+    "2026": {
+      "games": 47,
+      "baselineCorrect": 27,
+      "baselineAccuracy": 0.5745,
+      "candidateCorrect": 27,
+      "candidateAccuracy": 0.5745,
+      "changedPicks": 0,
+      "netAdditionalCorrect": 0
+    }
+  },
+  "earlyWeeks": {
+    "games": 127,
+    "baselineCorrect": 67,
+    "baselineAccuracy": 0.5276,
+    "candidateCorrect": 66,
+    "candidateAccuracy": 0.5197,
+    "changedPicks": 1,
+    "netAdditionalCorrect": -1
+  },
+  "laterWeeks": {
+    "games": 639,
+    "baselineCorrect": 412,
+    "baselineAccuracy": 0.6448,
+    "candidateCorrect": 418,
+    "candidateAccuracy": 0.6541,
+    "changedPicks": 20,
+    "netAdditionalCorrect": 6
+  }
+}
