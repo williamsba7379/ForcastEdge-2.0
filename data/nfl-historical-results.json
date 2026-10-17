@@ -1,0 +1,807 @@
+{
+  "season": 2026,
+  "updatedAt": "2026-10-17T04:34:29.998147+00:00",
+  "source": "ESPN public NFL scoreboard final scores",
+  "games": [
+    {
+      "id": "401872656",
+      "week": 1,
+      "date": "2026-09-10T00:20Z",
+      "home": "Seattle Seahawks",
+      "away": "New England Patriots",
+      "homeScore": 13,
+      "awayScore": 10,
+      "winner": "Seattle Seahawks"
+    },
+    {
+      "id": "401872657",
+      "week": 1,
+      "date": "2026-09-11T00:35Z",
+      "home": "Los Angeles Rams",
+      "away": "San Francisco 49ers",
+      "homeScore": 7,
+      "awayScore": 27,
+      "winner": "San Francisco 49ers"
+    },
+    {
+      "id": "401872658",
+      "week": 1,
+      "date": "2026-09-13T17:00Z",
+      "home": "Pittsburgh Steelers",
+      "away": "Atlanta Falcons",
+      "homeScore": 20,
+      "awayScore": 13,
+      "winner": "Pittsburgh Steelers"
+    },
+    {
+      "id": "401872659",
+      "week": 1,
+      "date": "2026-09-13T17:00Z",
+      "home": "Indianapolis Colts",
+      "away": "Baltimore Ravens",
+      "homeScore": 23,
+      "awayScore": 41,
+      "winner": "Baltimore Ravens"
+    },
+    {
+      "id": "401872660",
+      "week": 1,
+      "date": "2026-09-13T17:00Z",
+      "home": "Houston Texans",
+      "away": "Buffalo Bills",
+      "homeScore": 31,
+      "awayScore": 36,
+      "winner": "Buffalo Bills"
+    },
+    {
+      "id": "401872661",
+      "week": 1,
+      "date": "2026-09-13T17:00Z",
+      "home": "Carolina Panthers",
+      "away": "Chicago Bears",
+      "homeScore": 37,
+      "awayScore": 59,
+      "winner": "Chicago Bears"
+    },
+    {
+      "id": "401872922",
+      "week": 1,
+      "date": "2026-09-13T17:00Z",
+      "home": "Jacksonville Jaguars",
+      "away": "Cleveland Browns",
+      "homeScore": 34,
+      "awayScore": 10,
+      "winner": "Jacksonville Jaguars"
+    },
+    {
+      "id": "401872923",
+      "week": 1,
+      "date": "2026-09-13T17:00Z",
+      "home": "Detroit Lions",
+      "away": "New Orleans Saints",
+      "homeScore": 31,
+      "awayScore": 30,
+      "winner": "Detroit Lions"
+    },
+    {
+      "id": "401872924",
+      "week": 1,
+      "date": "2026-09-13T17:00Z",
+      "home": "Tennessee Titans",
+      "away": "New York Jets",
+      "homeScore": 10,
+      "awayScore": 23,
+      "winner": "New York Jets"
+    },
+    {
+      "id": "401872925",
+      "week": 1,
+      "date": "2026-09-13T17:00Z",
+      "home": "Cincinnati Bengals",
+      "away": "Tampa Bay Buccaneers",
+      "homeScore": 33,
+      "awayScore": 27,
+      "winner": "Cincinnati Bengals"
+    },
+    {
+      "id": "401872926",
+      "week": 1,
+      "date": "2026-09-13T20:25Z",
+      "home": "Los Angeles Chargers",
+      "away": "Arizona Cardinals",
+      "homeScore": 14,
+      "awayScore": 26,
+      "winner": "Arizona Cardinals"
+    },
+    {
+      "id": "401872927",
+      "week": 1,
+      "date": "2026-09-13T20:25Z",
+      "home": "Minnesota Vikings",
+      "away": "Green Bay Packers",
+      "homeScore": 39,
+      "awayScore": 22,
+      "winner": "Minnesota Vikings"
+    },
+    {
+      "id": "401872928",
+      "week": 1,
+      "date": "2026-09-13T20:25Z",
+      "home": "Las Vegas Raiders",
+      "away": "Miami Dolphins",
+      "homeScore": 27,
+      "awayScore": 13,
+      "winner": "Las Vegas Raiders"
+    },
+    {
+      "id": "401872929",
+      "week": 1,
+      "date": "2026-09-13T20:25Z",
+      "home": "Philadelphia Eagles",
+      "away": "Washington Commanders",
+      "homeScore": 24,
+      "awayScore": 22,
+      "winner": "Philadelphia Eagles"
+    },
+    {
+      "id": "401872930",
+      "week": 1,
+      "date": "2026-09-14T00:20Z",
+      "home": "New York Giants",
+      "away": "Dallas Cowboys",
+      "homeScore": 28,
+      "awayScore": 20,
+      "winner": "New York Giants"
+    },
+    {
+      "id": "401872931",
+      "week": 1,
+      "date": "2026-09-15T00:15Z",
+      "home": "Kansas City Chiefs",
+      "away": "Denver Broncos",
+      "homeScore": 31,
+      "awayScore": 10,
+      "winner": "Kansas City Chiefs"
+    },
+    {
+      "id": "401872932",
+      "week": 2,
+      "date": "2026-09-18T00:15Z",
+      "home": "Buffalo Bills",
+      "away": "Detroit Lions",
+      "homeScore": 41,
+      "awayScore": 31,
+      "winner": "Buffalo Bills"
+    },
+    {
+      "id": "401872933",
+      "week": 2,
+      "date": "2026-09-20T17:00Z",
+      "home": "Atlanta Falcons",
+      "away": "Carolina Panthers",
+      "homeScore": 3,
+      "awayScore": 34,
+      "winner": "Carolina Panthers"
+    },
+    {
+      "id": "401872934",
+      "week": 2,
+      "date": "2026-09-20T17:00Z",
+      "home": "Houston Texans",
+      "away": "Cincinnati Bengals",
+      "homeScore": 6,
+      "awayScore": 20,
+      "winner": "Cincinnati Bengals"
+    },
+    {
+      "id": "401872935",
+      "week": 2,
+      "date": "2026-09-20T17:00Z",
+      "home": "Tampa Bay Buccaneers",
+      "away": "Cleveland Browns",
+      "homeScore": 19,
+      "awayScore": 23,
+      "winner": "Cleveland Browns"
+    },
+    {
+      "id": "401872936",
+      "week": 2,
+      "date": "2026-09-20T17:00Z",
+      "home": "New York Jets",
+      "away": "Green Bay Packers",
+      "homeScore": 17,
+      "awayScore": 20,
+      "winner": "Green Bay Packers"
+    },
+    {
+      "id": "401872937",
+      "week": 2,
+      "date": "2026-09-20T17:00Z",
+      "home": "Chicago Bears",
+      "away": "Minnesota Vikings",
+      "homeScore": 3,
+      "awayScore": 9,
+      "winner": "Minnesota Vikings"
+    },
+    {
+      "id": "401872938",
+      "week": 2,
+      "date": "2026-09-20T17:00Z",
+      "home": "Baltimore Ravens",
+      "away": "New Orleans Saints",
+      "homeScore": 17,
+      "awayScore": 24,
+      "winner": "New Orleans Saints"
+    },
+    {
+      "id": "401872939",
+      "week": 2,
+      "date": "2026-09-20T17:00Z",
+      "home": "Tennessee Titans",
+      "away": "Philadelphia Eagles",
+      "homeScore": 20,
+      "awayScore": 24,
+      "winner": "Philadelphia Eagles"
+    },
+    {
+      "id": "401872946",
+      "week": 2,
+      "date": "2026-09-20T17:00Z",
+      "home": "New England Patriots",
+      "away": "Pittsburgh Steelers",
+      "homeScore": 20,
+      "awayScore": 3,
+      "winner": "New England Patriots"
+    },
+    {
+      "id": "401872940",
+      "week": 2,
+      "date": "2026-09-20T20:05Z",
+      "home": "Denver Broncos",
+      "away": "Jacksonville Jaguars",
+      "homeScore": 20,
+      "awayScore": 13,
+      "winner": "Denver Broncos"
+    },
+    {
+      "id": "401872941",
+      "week": 2,
+      "date": "2026-09-20T20:05Z",
+      "home": "Los Angeles Chargers",
+      "away": "Las Vegas Raiders",
+      "homeScore": 14,
+      "awayScore": 26,
+      "winner": "Las Vegas Raiders"
+    },
+    {
+      "id": "401872942",
+      "week": 2,
+      "date": "2026-09-20T20:25Z",
+      "home": "San Francisco 49ers",
+      "away": "Miami Dolphins",
+      "homeScore": 35,
+      "awayScore": 13,
+      "winner": "San Francisco 49ers"
+    },
+    {
+      "id": "401872943",
+      "week": 2,
+      "date": "2026-09-20T20:25Z",
+      "home": "Arizona Cardinals",
+      "away": "Seattle Seahawks",
+      "homeScore": 7,
+      "awayScore": 31,
+      "winner": "Seattle Seahawks"
+    },
+    {
+      "id": "401872944",
+      "week": 2,
+      "date": "2026-09-20T20:25Z",
+      "home": "Dallas Cowboys",
+      "away": "Washington Commanders",
+      "homeScore": 37,
+      "awayScore": 20,
+      "winner": "Dallas Cowboys"
+    },
+    {
+      "id": "401872945",
+      "week": 2,
+      "date": "2026-09-21T00:20Z",
+      "home": "Kansas City Chiefs",
+      "away": "Indianapolis Colts",
+      "homeScore": 33,
+      "awayScore": 30,
+      "winner": "Kansas City Chiefs"
+    },
+    {
+      "id": "401872947",
+      "week": 2,
+      "date": "2026-09-22T00:15Z",
+      "home": "Los Angeles Rams",
+      "away": "New York Giants",
+      "homeScore": 28,
+      "awayScore": 6,
+      "winner": "Los Angeles Rams"
+    },
+    {
+      "id": "401872948",
+      "week": 3,
+      "date": "2026-09-25T00:15Z",
+      "home": "Green Bay Packers",
+      "away": "Atlanta Falcons",
+      "homeScore": 14,
+      "awayScore": 35,
+      "winner": "Atlanta Falcons"
+    },
+    {
+      "id": "401872949",
+      "week": 3,
+      "date": "2026-09-27T17:00Z",
+      "home": "Cleveland Browns",
+      "away": "Carolina Panthers",
+      "homeScore": 21,
+      "awayScore": 18,
+      "winner": "Cleveland Browns"
+    },
+    {
+      "id": "401872950",
+      "week": 3,
+      "date": "2026-09-27T17:00Z",
+      "home": "Pittsburgh Steelers",
+      "away": "Cincinnati Bengals",
+      "homeScore": 30,
+      "awayScore": 27,
+      "winner": "Pittsburgh Steelers"
+    },
+    {
+      "id": "401872951",
+      "week": 3,
+      "date": "2026-09-27T17:00Z",
+      "home": "Indianapolis Colts",
+      "away": "Houston Texans",
+      "homeScore": 19,
+      "awayScore": 17,
+      "winner": "Indianapolis Colts"
+    },
+    {
+      "id": "401872952",
+      "week": 3,
+      "date": "2026-09-27T17:00Z",
+      "home": "Miami Dolphins",
+      "away": "Kansas City Chiefs",
+      "homeScore": 10,
+      "awayScore": 24,
+      "winner": "Kansas City Chiefs"
+    },
+    {
+      "id": "401872953",
+      "week": 3,
+      "date": "2026-09-27T17:00Z",
+      "home": "Buffalo Bills",
+      "away": "Los Angeles Chargers",
+      "homeScore": 24,
+      "awayScore": 16,
+      "winner": "Buffalo Bills"
+    },
+    {
+      "id": "401872954",
+      "week": 3,
+      "date": "2026-09-27T17:00Z",
+      "home": "Detroit Lions",
+      "away": "New York Jets",
+      "homeScore": 31,
+      "awayScore": 24,
+      "winner": "Detroit Lions"
+    },
+    {
+      "id": "401872955",
+      "week": 3,
+      "date": "2026-09-27T17:00Z",
+      "home": "Washington Commanders",
+      "away": "Seattle Seahawks",
+      "homeScore": 33,
+      "awayScore": 31,
+      "winner": "Washington Commanders"
+    },
+    {
+      "id": "401872956",
+      "week": 3,
+      "date": "2026-09-27T17:00Z",
+      "home": "New York Giants",
+      "away": "Tennessee Titans",
+      "homeScore": 12,
+      "awayScore": 7,
+      "winner": "New York Giants"
+    },
+    {
+      "id": "401872957",
+      "week": 3,
+      "date": "2026-09-27T17:00Z",
+      "home": "Jacksonville Jaguars",
+      "away": "New England Patriots",
+      "homeScore": 35,
+      "awayScore": 6,
+      "winner": "Jacksonville Jaguars"
+    },
+    {
+      "id": "401872958",
+      "week": 3,
+      "date": "2026-09-27T20:05Z",
+      "home": "San Francisco 49ers",
+      "away": "Arizona Cardinals",
+      "homeScore": 36,
+      "awayScore": 30,
+      "winner": "San Francisco 49ers"
+    },
+    {
+      "id": "401872959",
+      "week": 3,
+      "date": "2026-09-27T20:05Z",
+      "home": "Tampa Bay Buccaneers",
+      "away": "Minnesota Vikings",
+      "homeScore": 16,
+      "awayScore": 23,
+      "winner": "Minnesota Vikings"
+    },
+    {
+      "id": "401872960",
+      "week": 3,
+      "date": "2026-09-27T20:25Z",
+      "home": "Dallas Cowboys",
+      "away": "Baltimore Ravens",
+      "homeScore": 31,
+      "awayScore": 34,
+      "winner": "Baltimore Ravens"
+    },
+    {
+      "id": "401872961",
+      "week": 3,
+      "date": "2026-09-27T20:25Z",
+      "home": "New Orleans Saints",
+      "away": "Las Vegas Raiders",
+      "homeScore": 27,
+      "awayScore": 35,
+      "winner": "Las Vegas Raiders"
+    },
+    {
+      "id": "401872962",
+      "week": 3,
+      "date": "2026-09-28T00:20Z",
+      "home": "Denver Broncos",
+      "away": "Los Angeles Rams",
+      "homeScore": 30,
+      "awayScore": 26,
+      "winner": "Denver Broncos"
+    },
+    {
+      "id": "401872963",
+      "week": 3,
+      "date": "2026-09-29T00:15Z",
+      "home": "Chicago Bears",
+      "away": "Philadelphia Eagles",
+      "homeScore": 27,
+      "awayScore": 7,
+      "winner": "Chicago Bears"
+    },
+    {
+      "id": "401872964",
+      "week": 4,
+      "date": "2026-10-02T00:15Z",
+      "home": "Cleveland Browns",
+      "away": "Pittsburgh Steelers",
+      "homeScore": 27,
+      "awayScore": 24,
+      "winner": "Cleveland Browns"
+    },
+    {
+      "id": "401872965",
+      "week": 4,
+      "date": "2026-10-04T13:30Z",
+      "home": "Washington Commanders",
+      "away": "Indianapolis Colts",
+      "homeScore": 13,
+      "awayScore": 30,
+      "winner": "Indianapolis Colts"
+    },
+    {
+      "id": "401872966",
+      "week": 4,
+      "date": "2026-10-04T17:00Z",
+      "home": "New York Giants",
+      "away": "Arizona Cardinals",
+      "homeScore": 36,
+      "awayScore": 24,
+      "winner": "New York Giants"
+    },
+    {
+      "id": "401872967",
+      "week": 4,
+      "date": "2026-10-04T17:00Z",
+      "home": "Houston Texans",
+      "away": "Dallas Cowboys",
+      "homeScore": 30,
+      "awayScore": 34,
+      "winner": "Dallas Cowboys"
+    },
+    {
+      "id": "401872968",
+      "week": 4,
+      "date": "2026-10-04T17:00Z",
+      "home": "Tampa Bay Buccaneers",
+      "away": "Green Bay Packers",
+      "homeScore": 14,
+      "awayScore": 17,
+      "winner": "Green Bay Packers"
+    },
+    {
+      "id": "401872969",
+      "week": 4,
+      "date": "2026-10-04T17:00Z",
+      "home": "Cincinnati Bengals",
+      "away": "Jacksonville Jaguars",
+      "homeScore": 17,
+      "awayScore": 22,
+      "winner": "Jacksonville Jaguars"
+    },
+    {
+      "id": "401872970",
+      "week": 4,
+      "date": "2026-10-04T17:00Z",
+      "home": "Philadelphia Eagles",
+      "away": "Los Angeles Rams",
+      "homeScore": 20,
+      "awayScore": 24,
+      "winner": "Los Angeles Rams"
+    },
+    {
+      "id": "401872971",
+      "week": 4,
+      "date": "2026-10-04T17:00Z",
+      "home": "Buffalo Bills",
+      "away": "New England Patriots",
+      "homeScore": 26,
+      "awayScore": 29,
+      "winner": "New England Patriots"
+    },
+    {
+      "id": "401872972",
+      "week": 4,
+      "date": "2026-10-04T17:00Z",
+      "home": "Chicago Bears",
+      "away": "New York Jets",
+      "homeScore": 23,
+      "awayScore": 12,
+      "winner": "Chicago Bears"
+    },
+    {
+      "id": "401872973",
+      "week": 4,
+      "date": "2026-10-04T17:00Z",
+      "home": "Baltimore Ravens",
+      "away": "Tennessee Titans",
+      "homeScore": 24,
+      "awayScore": 18,
+      "winner": "Baltimore Ravens"
+    },
+    {
+      "id": "401872974",
+      "week": 4,
+      "date": "2026-10-04T20:05Z",
+      "home": "Minnesota Vikings",
+      "away": "Miami Dolphins",
+      "homeScore": 15,
+      "awayScore": 10,
+      "winner": "Minnesota Vikings"
+    },
+    {
+      "id": "401872975",
+      "week": 4,
+      "date": "2026-10-04T20:25Z",
+      "home": "San Francisco 49ers",
+      "away": "Denver Broncos",
+      "homeScore": 24,
+      "awayScore": 14,
+      "winner": "San Francisco 49ers"
+    },
+    {
+      "id": "401872976",
+      "week": 4,
+      "date": "2026-10-04T20:25Z",
+      "home": "Las Vegas Raiders",
+      "away": "Kansas City Chiefs",
+      "homeScore": 27,
+      "awayScore": 30,
+      "winner": "Kansas City Chiefs"
+    },
+    {
+      "id": "401872977",
+      "week": 4,
+      "date": "2026-10-04T20:25Z",
+      "home": "Seattle Seahawks",
+      "away": "Los Angeles Chargers",
+      "homeScore": 30,
+      "awayScore": 23,
+      "winner": "Seattle Seahawks"
+    },
+    {
+      "id": "401872978",
+      "week": 4,
+      "date": "2026-10-05T00:20Z",
+      "home": "Carolina Panthers",
+      "away": "Detroit Lions",
+      "homeScore": 32,
+      "awayScore": 26,
+      "winner": "Carolina Panthers"
+    },
+    {
+      "id": "401872979",
+      "week": 4,
+      "date": "2026-10-06T00:15Z",
+      "home": "New Orleans Saints",
+      "away": "Atlanta Falcons",
+      "homeScore": 24,
+      "awayScore": 45,
+      "winner": "Atlanta Falcons"
+    },
+    {
+      "id": "401872980",
+      "week": 5,
+      "date": "2026-10-09T00:15Z",
+      "home": "Dallas Cowboys",
+      "away": "Tampa Bay Buccaneers",
+      "homeScore": 16,
+      "awayScore": 24,
+      "winner": "Tampa Bay Buccaneers"
+    },
+    {
+      "id": "401872981",
+      "week": 5,
+      "date": "2026-10-11T13:30Z",
+      "home": "Jacksonville Jaguars",
+      "away": "Philadelphia Eagles",
+      "homeScore": 19,
+      "awayScore": 17,
+      "winner": "Jacksonville Jaguars"
+    },
+    {
+      "id": "401872982",
+      "week": 5,
+      "date": "2026-10-11T17:00Z",
+      "home": "Miami Dolphins",
+      "away": "Cincinnati Bengals",
+      "homeScore": 24,
+      "awayScore": 31,
+      "winner": "Cincinnati Bengals"
+    },
+    {
+      "id": "401872983",
+      "week": 5,
+      "date": "2026-10-11T17:00Z",
+      "home": "New York Jets",
+      "away": "Cleveland Browns",
+      "homeScore": 17,
+      "awayScore": 12,
+      "winner": "New York Jets"
+    },
+    {
+      "id": "401872984",
+      "week": 5,
+      "date": "2026-10-11T17:00Z",
+      "home": "Tennessee Titans",
+      "away": "Houston Texans",
+      "homeScore": 3,
+      "awayScore": 26,
+      "winner": "Houston Texans"
+    },
+    {
+      "id": "401872985",
+      "week": 5,
+      "date": "2026-10-11T17:00Z",
+      "home": "Pittsburgh Steelers",
+      "away": "Indianapolis Colts",
+      "homeScore": 34,
+      "awayScore": 22,
+      "winner": "Pittsburgh Steelers"
+    },
+    {
+      "id": "401872986",
+      "week": 5,
+      "date": "2026-10-11T17:00Z",
+      "home": "New England Patriots",
+      "away": "Las Vegas Raiders",
+      "homeScore": 45,
+      "awayScore": 17,
+      "winner": "New England Patriots"
+    },
+    {
+      "id": "401872987",
+      "week": 5,
+      "date": "2026-10-11T17:00Z",
+      "home": "New Orleans Saints",
+      "away": "Minnesota Vikings",
+      "homeScore": 13,
+      "awayScore": 23,
+      "winner": "Minnesota Vikings"
+    },
+    {
+      "id": "401872988",
+      "week": 5,
+      "date": "2026-10-11T17:00Z",
+      "home": "Washington Commanders",
+      "away": "New York Giants",
+      "homeScore": 27,
+      "awayScore": 27,
+      "winner": "TIE"
+    },
+    {
+      "id": "401872990",
+      "week": 5,
+      "date": "2026-10-11T17:00Z",
+      "home": "Green Bay Packers",
+      "away": "Chicago Bears",
+      "homeScore": 31,
+      "awayScore": 7,
+      "winner": "Green Bay Packers"
+    },
+    {
+      "id": "401872989",
+      "week": 5,
+      "date": "2026-10-11T20:05Z",
+      "home": "Los Angeles Chargers",
+      "away": "Denver Broncos",
+      "homeScore": 17,
+      "awayScore": 23,
+      "winner": "Denver Broncos"
+    },
+    {
+      "id": "401872991",
+      "week": 5,
+      "date": "2026-10-11T20:25Z",
+      "home": "Arizona Cardinals",
+      "away": "Detroit Lions",
+      "homeScore": 21,
+      "awayScore": 45,
+      "winner": "Detroit Lions"
+    },
+    {
+      "id": "401872992",
+      "week": 5,
+      "date": "2026-10-11T20:25Z",
+      "home": "Seattle Seahawks",
+      "away": "San Francisco 49ers",
+      "homeScore": 29,
+      "awayScore": 32,
+      "winner": "San Francisco 49ers"
+    },
+    {
+      "id": "401872993",
+      "week": 5,
+      "date": "2026-10-12T00:20Z",
+      "home": "Atlanta Falcons",
+      "away": "Baltimore Ravens",
+      "homeScore": 23,
+      "awayScore": 30,
+      "winner": "Baltimore Ravens"
+    },
+    {
+      "id": "401872994",
+      "week": 5,
+      "date": "2026-10-13T00:15Z",
+      "home": "Los Angeles Rams",
+      "away": "Buffalo Bills",
+      "homeScore": 34,
+      "awayScore": 37,
+      "winner": "Buffalo Bills"
+    },
+    {
+      "id": "401872995",
+      "week": 6,
+      "date": "2026-10-16T00:15Z",
+      "home": "Denver Broncos",
+      "away": "Seattle Seahawks",
+      "homeScore": 17,
+      "awayScore": 14,
+      "winner": "Denver Broncos"
+    }
+  ]
+}
