@@ -1,0 +1,124 @@
+{
+  "season": 2026,
+  "updatedAt": "2026-10-17T04:11:25.836194+00:00",
+  "weeks": [
+    {
+      "week": 18,
+      "games": [
+        {
+          "id": "401873181",
+          "date": "2027-01-10T05:00Z",
+          "away": "New York Jets",
+          "home": "Buffalo Bills",
+          "status": "STATUS_SCHEDULED"
+        },
+        {
+          "id": "401873174",
+          "date": "2027-01-10T05:00Z",
+          "away": "Cleveland Browns",
+          "home": "Cincinnati Bengals",
+          "status": "STATUS_SCHEDULED"
+        },
+        {
+          "id": "401873179",
+          "date": "2027-01-10T05:00Z",
+          "away": "Los Angeles Chargers",
+          "home": "Denver Broncos",
+          "status": "STATUS_SCHEDULED"
+        },
+        {
+          "id": "401873176",
+          "date": "2027-01-10T05:00Z",
+          "away": "Detroit Lions",
+          "home": "Green Bay Packers",
+          "status": "STATUS_SCHEDULED"
+        },
+        {
+          "id": "401873177",
+          "date": "2027-01-10T05:00Z",
+          "away": "Jacksonville Jaguars",
+          "home": "Indianapolis Colts",
+          "status": "STATUS_SCHEDULED"
+        },
+        {
+          "id": "401873178",
+          "date": "2027-01-10T05:00Z",
+          "away": "Las Vegas Raiders",
+          "home": "Kansas City Chiefs",
+          "status": "STATUS_SCHEDULED"
+        },
+        {
+          "id": "401873185",
+          "date": "2027-01-10T05:00Z",
+          "away": "Seattle Seahawks",
+          "home": "Los Angeles Rams",
+          "status": "STATUS_SCHEDULED"
+        },
+        {
+          "id": "401873173",
+          "date": "2027-01-10T05:00Z",
+          "away": "Chicago Bears",
+          "home": "Minnesota Vikings",
+          "status": "STATUS_SCHEDULED"
+        },
+        {
+          "id": "401873180",
+          "date": "2027-01-10T05:00Z",
+          "away": "Miami Dolphins",
+          "home": "New England Patriots",
+          "status": "STATUS_SCHEDULED"
+        },
+        {
+          "id": "401873186",
+          "date": "2027-01-10T05:00Z",
+          "away": "Tampa Bay Buccaneers",
+          "home": "New Orleans Saints",
+          "status": "STATUS_SCHEDULED"
+        },
+        {
+          "id": "401873182",
+          "date": "2027-01-10T05:00Z",
+          "away": "Philadelphia Eagles",
+          "home": "New York Giants",
+          "status": "STATUS_SCHEDULED"
+        },
+        {
+          "id": "401873184",
+          "date": "2027-01-10T05:00Z",
+          "away": "San Francisco 49ers",
+          "home": "Arizona Cardinals",
+          "status": "STATUS_SCHEDULED"
+        },
+        {
+          "id": "401873175",
+          "date": "2027-01-10T05:00Z",
+          "away": "Dallas Cowboys",
+          "home": "Washington Commanders",
+          "status": "STATUS_SCHEDULED"
+        },
+        {
+          "id": "401873172",
+          "date": "2027-01-10T05:00Z",
+          "away": "Atlanta Falcons",
+          "home": "Carolina Panthers",
+          "status": "STATUS_SCHEDULED"
+        },
+        {
+          "id": "401873183",
+          "date": "2027-01-10T05:00Z",
+          "away": "Pittsburgh Steelers",
+          "home": "Baltimore Ravens",
+          "status": "STATUS_SCHEDULED"
+        },
+        {
+          "id": "401873187",
+          "date": "2027-01-10T05:00Z",
+          "away": "Tennessee Titans",
+          "home": "Houston Texans",
+          "status": "STATUS_SCHEDULED"
+        }
+      ]
+    }
+  ],
+  "source": "ESPN public scoreboard; schedule only, not predictions"
+}
