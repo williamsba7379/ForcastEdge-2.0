@@ -1,0 +1,24 @@
+name: Monitor ForecastEdge health
+on:
+  schedule:
+    - cron: '41 */3 * * *'
+  workflow_dispatch:
+permissions:
+  actions: read
+  contents: write
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check recent workflow runs
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPOSITORY: ${{ github.repository }}
+        run: python3 scripts/forecastedge_health_monitor.py
+      - name: Save health report
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/forecastedge-health.json
+          git diff --cached --quiet || (git commit -m 'Update health report' && git push)
