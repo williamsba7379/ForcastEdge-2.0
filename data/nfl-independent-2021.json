@@ -1,0 +1,32 @@
+{
+  "status": "One-time historical holdout; precommitted method, no changes after examining 2021 results",
+  "testSeason": 2021,
+  "priorSeason": 2020,
+  "frozenMethod": "For each game, use strictly earlier 2021 scores if both teams have >=2 prior games; otherwise use completed 2020 regular season. Strength=0.7*season average point differential+0.3*last-three point differential, home advantage +1.5. Predict home if edge>=0.",
+  "cautions": [
+    "2021 was not used in the documented 2023-2025 early-season experiment; nevertheless historical tests are not prospective validation.",
+    "2020 to 2021 franchise-name changes could cause missing prior-team matches; results should be audited before interpreting.",
+    "Ties excluded from accuracy."
+  ],
+  "all": {
+    "games": 271,
+    "correct": 164,
+    "accuracy": 0.6052,
+    "homeBaselineCorrect": 140,
+    "homeBaselineAccuracy": 0.5166
+  },
+  "early": {
+    "games": 32,
+    "correct": 19,
+    "accuracy": 0.5938,
+    "homeBaselineCorrect": 16,
+    "homeBaselineAccuracy": 0.5
+  },
+  "established": {
+    "games": 239,
+    "correct": 145,
+    "accuracy": 0.6067,
+    "homeBaselineCorrect": 124,
+    "homeBaselineAccuracy": 0.5188
+  }
+}
