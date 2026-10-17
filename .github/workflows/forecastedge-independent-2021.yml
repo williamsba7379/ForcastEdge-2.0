@@ -1,0 +1,18 @@
+name: Independently validate NFL early-season model (2021)
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  independent-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Evaluate frozen formula on 2021 games
+        run: python3 scripts/nfl_independent_2021.py
+      - name: Publish independent results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/nfl-independent-2021.json
+          git diff --cached --quiet || (git commit -m "Record frozen-model 2021 independent evaluation" && git push)
