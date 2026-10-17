@@ -1,0 +1,18 @@
+name: Test NFL early-season experiment
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Evaluate separate early-season experiment
+        run: python3 scripts/nfl_early_season_experiment.py
+      - name: Save experimental results only
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/nfl-early-season-experiment.json
+          git diff --cached --quiet || (git commit -m "Record early-season experimental evaluation" && git push)
