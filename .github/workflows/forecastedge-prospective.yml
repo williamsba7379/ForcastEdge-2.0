@@ -1,0 +1,51 @@
+name: ForecastEdge prospective NFL head-to-head
+on:
+  workflow_dispatch:
+    inputs:
+      phase:
+        description: "freeze or grade (manual runs)"
+        required: true
+        default: "freeze"
+        type: choice
+        options:
+          - freeze
+          - grade
+  schedule:
+    # Both UTC hours; guard below selects 11 AM Eastern through DST changes.
+    - cron: "0 15,16 * * 2,3"
+permissions:
+  contents: write
+concurrency:
+  group: forecastedge-prospective
+  cancel-in-progress: false
+jobs:
+  head-to-head:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Determine run phase at 11 AM Eastern
+        id: phase
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          REQUESTED_PHASE: ${{ inputs.phase }}
+        run: |
+          if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
+            echo "phase=$REQUESTED_PHASE" >> "$GITHUB_OUTPUT"
+          else
+            local_day=$(TZ=America/New_York date +%u)
+            local_hour=$(TZ=America/New_York date +%H)
+            if [ "$local_hour" != "11" ]; then echo "phase=skip" >> "$GITHUB_OUTPUT"
+            elif [ "$local_day" = "3" ]; then echo "phase=freeze" >> "$GITHUB_OUTPUT"
+            elif [ "$local_day" = "2" ]; then echo "phase=grade" >> "$GITHUB_OUTPUT"
+            else echo "phase=skip" >> "$GITHUB_OUTPUT"; fi
+          fi
+      - name: Freeze pregame predictions or grade completed games
+        if: steps.phase.outputs.phase != 'skip'
+        run: python3 scripts/nfl_prospective_head_to_head.py "${{ steps.phase.outputs.phase }}"
+      - name: Save prospective records
+        if: steps.phase.outputs.phase != 'skip'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/prospective-head-to-head/
+          git diff --cached --quiet || (git commit -m "Record prospective NFL head-to-head results" && git push)
