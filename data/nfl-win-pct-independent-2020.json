@@ -1,0 +1,120 @@
+{
+  "status": "One-time pre-specified historical holdout; not prospective validation",
+  "holdoutSeason": 2020,
+  "eligibleGames": 223,
+  "gamesAvailable": 256,
+  "baselineCorrect": 148,
+  "baselineAccuracy": 0.6637,
+  "candidateCorrect": 149,
+  "candidateAccuracy": 0.6682,
+  "netAdditionalCorrect": 1,
+  "changedPicks": 7,
+  "differencePercentagePoints": 0.45,
+  "formula": "baseline: 0.7 season differential + 0.3 recent differential + 1.5 home; candidate adds 4.0*(home winPct - away winPct)",
+  "limitation": "2020 was selected after examining 2023-2026 exploratory data; coefficient fixed before 2020 test. Results do not establish statistical significance or betting profitability.",
+  "byWeek": [
+    {
+      "week": 1,
+      "games": 0,
+      "baselineCorrect": 0,
+      "candidateCorrect": 0
+    },
+    {
+      "week": 2,
+      "games": 0,
+      "baselineCorrect": 0,
+      "candidateCorrect": 0
+    },
+    {
+      "week": 3,
+      "games": 15,
+      "baselineCorrect": 8,
+      "candidateCorrect": 8
+    },
+    {
+      "week": 4,
+      "games": 15,
+      "baselineCorrect": 12,
+      "candidateCorrect": 12
+    },
+    {
+      "week": 5,
+      "games": 14,
+      "baselineCorrect": 8,
+      "candidateCorrect": 8
+    },
+    {
+      "week": 6,
+      "games": 14,
+      "baselineCorrect": 9,
+      "candidateCorrect": 9
+    },
+    {
+      "week": 7,
+      "games": 14,
+      "baselineCorrect": 12,
+      "candidateCorrect": 12
+    },
+    {
+      "week": 8,
+      "games": 14,
+      "baselineCorrect": 8,
+      "candidateCorrect": 8
+    },
+    {
+      "week": 9,
+      "games": 14,
+      "baselineCorrect": 8,
+      "candidateCorrect": 7
+    },
+    {
+      "week": 10,
+      "games": 14,
+      "baselineCorrect": 11,
+      "candidateCorrect": 10
+    },
+    {
+      "week": 11,
+      "games": 14,
+      "baselineCorrect": 8,
+      "candidateCorrect": 8
+    },
+    {
+      "week": 12,
+      "games": 16,
+      "baselineCorrect": 12,
+      "candidateCorrect": 12
+    },
+    {
+      "week": 13,
+      "games": 15,
+      "baselineCorrect": 10,
+      "candidateCorrect": 11
+    },
+    {
+      "week": 14,
+      "games": 16,
+      "baselineCorrect": 8,
+      "candidateCorrect": 9
+    },
+    {
+      "week": 15,
+      "games": 16,
+      "baselineCorrect": 10,
+      "candidateCorrect": 11
+    },
+    {
+      "week": 16,
+      "games": 16,
+      "baselineCorrect": 11,
+      "candidateCorrect": 11
+    },
+    {
+      "week": 17,
+      "games": 16,
+      "baselineCorrect": 13,
+      "candidateCorrect": 13
+    }
+  ],
+  "evaluatedAt": "2026-10-17T10:24:45.463588+00:00"
+}
