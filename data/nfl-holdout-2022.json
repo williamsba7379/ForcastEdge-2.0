@@ -1,0 +1,2032 @@
+{
+  "holdoutSeason": 2022,
+  "status": "Single historical holdout evaluation of frozen formula; not a live prospective test",
+  "method": "70% season average point differential + 30% last-three differential; +1.5 home points; at least 2 prior games per team",
+  "leakageControl": "For each kickoff, use only completed games with earlier kickoff times from the same season",
+  "note": "This 2022 season was not used in the previously reported 2023-2026 analysis. Results must not be used to tune and then re-label this same holdout as independent.",
+  "gamesAvailable": 271,
+  "graded": 238,
+  "skipped": 33,
+  "modelCorrect": 143,
+  "modelAccuracy": 0.6008,
+  "homeBaselineCorrect": 134,
+  "homeBaselineAccuracy": 0.563,
+  "differencePercentagePoints": 3.78,
+  "byWeek": [
+    {
+      "week": 1,
+      "graded": 0,
+      "modelCorrect": 0,
+      "homeBaselineCorrect": 0
+    },
+    {
+      "week": 2,
+      "graded": 0,
+      "modelCorrect": 0,
+      "homeBaselineCorrect": 0
+    },
+    {
+      "week": 3,
+      "graded": 16,
+      "modelCorrect": 8,
+      "homeBaselineCorrect": 8
+    },
+    {
+      "week": 4,
+      "graded": 16,
+      "modelCorrect": 6,
+      "homeBaselineCorrect": 8
+    },
+    {
+      "week": 5,
+      "graded": 16,
+      "modelCorrect": 9,
+      "homeBaselineCorrect": 8
+    },
+    {
+      "week": 6,
+      "graded": 14,
+      "modelCorrect": 5,
+      "homeBaselineCorrect": 8
+    },
+    {
+      "week": 7,
+      "graded": 14,
+      "modelCorrect": 9,
+      "homeBaselineCorrect": 9
+    },
+    {
+      "week": 8,
+      "graded": 15,
+      "modelCorrect": 9,
+      "homeBaselineCorrect": 8
+    },
+    {
+      "week": 9,
+      "graded": 13,
+      "modelCorrect": 9,
+      "homeBaselineCorrect": 7
+    },
+    {
+      "week": 10,
+      "graded": 14,
+      "modelCorrect": 5,
+      "homeBaselineCorrect": 9
+    },
+    {
+      "week": 11,
+      "graded": 14,
+      "modelCorrect": 12,
+      "homeBaselineCorrect": 5
+    },
+    {
+      "week": 12,
+      "graded": 16,
+      "modelCorrect": 10,
+      "homeBaselineCorrect": 11
+    },
+    {
+      "week": 13,
+      "graded": 14,
+      "modelCorrect": 9,
+      "homeBaselineCorrect": 9
+    },
+    {
+      "week": 14,
+      "graded": 13,
+      "modelCorrect": 9,
+      "homeBaselineCorrect": 7
+    },
+    {
+      "week": 15,
+      "graded": 16,
+      "modelCorrect": 12,
+      "homeBaselineCorrect": 9
+    },
+    {
+      "week": 16,
+      "graded": 16,
+      "modelCorrect": 8,
+      "homeBaselineCorrect": 8
+    },
+    {
+      "week": 17,
+      "graded": 15,
+      "modelCorrect": 12,
+      "homeBaselineCorrect": 9
+    },
+    {
+      "week": 18,
+      "graded": 16,
+      "modelCorrect": 11,
+      "homeBaselineCorrect": 11
+    }
+  ],
+  "predictions": [
+    {
+      "week": 3,
+      "id": "401437735",
+      "predictedWinner": "Cleveland Browns",
+      "actualWinner": "Cleveland Browns",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 3,
+      "id": "401437631",
+      "predictedWinner": "Baltimore Ravens",
+      "actualWinner": "Baltimore Ravens",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 3,
+      "id": "401437638",
+      "predictedWinner": "Kansas City Chiefs",
+      "actualWinner": "Indianapolis Colts",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 3,
+      "id": "401437736",
+      "predictedWinner": "Carolina Panthers",
+      "actualWinner": "Carolina Panthers",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 3,
+      "id": "401437737",
+      "predictedWinner": "Chicago Bears",
+      "actualWinner": "Chicago Bears",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 3,
+      "id": "401437738",
+      "predictedWinner": "Buffalo Bills",
+      "actualWinner": "Miami Dolphins",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 3,
+      "id": "401437739",
+      "predictedWinner": "Detroit Lions",
+      "actualWinner": "Minnesota Vikings",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 3,
+      "id": "401437740",
+      "predictedWinner": "Cincinnati Bengals",
+      "actualWinner": "Cincinnati Bengals",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 3,
+      "id": "401437741",
+      "predictedWinner": "Las Vegas Raiders",
+      "actualWinner": "Tennessee Titans",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 3,
+      "id": "401437742",
+      "predictedWinner": "Philadelphia Eagles",
+      "actualWinner": "Philadelphia Eagles",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 3,
+      "id": "401437743",
+      "predictedWinner": "Jacksonville Jaguars",
+      "actualWinner": "Jacksonville Jaguars",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 3,
+      "id": "401437607",
+      "predictedWinner": "Tampa Bay Buccaneers",
+      "actualWinner": "Green Bay Packers",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 3,
+      "id": "401437744",
+      "predictedWinner": "Arizona Cardinals",
+      "actualWinner": "Los Angeles Rams",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 3,
+      "id": "401437745",
+      "predictedWinner": "Atlanta Falcons",
+      "actualWinner": "Atlanta Falcons",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 3,
+      "id": "401437746",
+      "predictedWinner": "San Francisco 49ers",
+      "actualWinner": "Denver Broncos",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 3,
+      "id": "401437747",
+      "predictedWinner": "New York Giants",
+      "actualWinner": "Dallas Cowboys",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 4,
+      "id": "401437748",
+      "predictedWinner": "Miami Dolphins",
+      "actualWinner": "Cincinnati Bengals",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 4,
+      "id": "401435639",
+      "predictedWinner": "Minnesota Vikings",
+      "actualWinner": "Minnesota Vikings",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 4,
+      "id": "401437749",
+      "predictedWinner": "Cleveland Browns",
+      "actualWinner": "Atlanta Falcons",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 4,
+      "id": "401437750",
+      "predictedWinner": "Buffalo Bills",
+      "actualWinner": "Buffalo Bills",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 4,
+      "id": "401437751",
+      "predictedWinner": "Dallas Cowboys",
+      "actualWinner": "Dallas Cowboys",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 4,
+      "id": "401437752",
+      "predictedWinner": "Detroit Lions",
+      "actualWinner": "Seattle Seahawks",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 4,
+      "id": "401437753",
+      "predictedWinner": "Houston Texans",
+      "actualWinner": "Los Angeles Chargers",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 4,
+      "id": "401437754",
+      "predictedWinner": "Indianapolis Colts",
+      "actualWinner": "Tennessee Titans",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 4,
+      "id": "401437755",
+      "predictedWinner": "New York Giants",
+      "actualWinner": "New York Giants",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 4,
+      "id": "401437756",
+      "predictedWinner": "Jacksonville Jaguars",
+      "actualWinner": "Philadelphia Eagles",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 4,
+      "id": "401437757",
+      "predictedWinner": "Pittsburgh Steelers",
+      "actualWinner": "New York Jets",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 4,
+      "id": "401437758",
+      "predictedWinner": "Carolina Panthers",
+      "actualWinner": "Arizona Cardinals",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 4,
+      "id": "401437759",
+      "predictedWinner": "Green Bay Packers",
+      "actualWinner": "Green Bay Packers",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 4,
+      "id": "401437760",
+      "predictedWinner": "Denver Broncos",
+      "actualWinner": "Las Vegas Raiders",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 4,
+      "id": "401437470",
+      "predictedWinner": "Tampa Bay Buccaneers",
+      "actualWinner": "Kansas City Chiefs",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 4,
+      "id": "401437761",
+      "predictedWinner": "San Francisco 49ers",
+      "actualWinner": "San Francisco 49ers",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 5,
+      "id": "401437762",
+      "predictedWinner": "Denver Broncos",
+      "actualWinner": "Indianapolis Colts",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 5,
+      "id": "401435640",
+      "predictedWinner": "Green Bay Packers",
+      "actualWinner": "New York Giants",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 5,
+      "id": "401437763",
+      "predictedWinner": "Buffalo Bills",
+      "actualWinner": "Buffalo Bills",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 5,
+      "id": "401437764",
+      "predictedWinner": "Cleveland Browns",
+      "actualWinner": "Los Angeles Chargers",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 5,
+      "id": "401437765",
+      "predictedWinner": "Jacksonville Jaguars",
+      "actualWinner": "Houston Texans",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 5,
+      "id": "401437766",
+      "predictedWinner": "Minnesota Vikings",
+      "actualWinner": "Minnesota Vikings",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 5,
+      "id": "401437767",
+      "predictedWinner": "Detroit Lions",
+      "actualWinner": "New England Patriots",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 5,
+      "id": "401437768",
+      "predictedWinner": "New Orleans Saints",
+      "actualWinner": "New Orleans Saints",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 5,
+      "id": "401437769",
+      "predictedWinner": "Miami Dolphins",
+      "actualWinner": "New York Jets",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 5,
+      "id": "401437770",
+      "predictedWinner": "Tampa Bay Buccaneers",
+      "actualWinner": "Tampa Bay Buccaneers",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 5,
+      "id": "401437771",
+      "predictedWinner": "Tennessee Titans",
+      "actualWinner": "Tennessee Titans",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 5,
+      "id": "401437772",
+      "predictedWinner": "San Francisco 49ers",
+      "actualWinner": "San Francisco 49ers",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 5,
+      "id": "401437773",
+      "predictedWinner": "Philadelphia Eagles",
+      "actualWinner": "Philadelphia Eagles",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 5,
+      "id": "401437774",
+      "predictedWinner": "Dallas Cowboys",
+      "actualWinner": "Dallas Cowboys",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 5,
+      "id": "401437775",
+      "predictedWinner": "Cincinnati Bengals",
+      "actualWinner": "Baltimore Ravens",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 5,
+      "id": "401437776",
+      "predictedWinner": "Kansas City Chiefs",
+      "actualWinner": "Kansas City Chiefs",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 6,
+      "id": "401437777",
+      "predictedWinner": "Chicago Bears",
+      "actualWinner": "Washington Commanders",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 6,
+      "id": "401437778",
+      "predictedWinner": "San Francisco 49ers",
+      "actualWinner": "Atlanta Falcons",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 6,
+      "id": "401437779",
+      "predictedWinner": "Cleveland Browns",
+      "actualWinner": "New England Patriots",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 6,
+      "id": "401437780",
+      "predictedWinner": "Green Bay Packers",
+      "actualWinner": "New York Jets",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 6,
+      "id": "401437781",
+      "predictedWinner": "Jacksonville Jaguars",
+      "actualWinner": "Indianapolis Colts",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 6,
+      "id": "401437782",
+      "predictedWinner": "Minnesota Vikings",
+      "actualWinner": "Minnesota Vikings",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 6,
+      "id": "401437783",
+      "predictedWinner": "Cincinnati Bengals",
+      "actualWinner": "Cincinnati Bengals",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 6,
+      "id": "401437784",
+      "predictedWinner": "Baltimore Ravens",
+      "actualWinner": "New York Giants",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 6,
+      "id": "401437785",
+      "predictedWinner": "Tampa Bay Buccaneers",
+      "actualWinner": "Pittsburgh Steelers",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 6,
+      "id": "401437786",
+      "predictedWinner": "Los Angeles Rams",
+      "actualWinner": "Los Angeles Rams",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 6,
+      "id": "401437787",
+      "predictedWinner": "Arizona Cardinals",
+      "actualWinner": "Seattle Seahawks",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 6,
+      "id": "401437788",
+      "predictedWinner": "Buffalo Bills",
+      "actualWinner": "Buffalo Bills",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 6,
+      "id": "401437789",
+      "predictedWinner": "Philadelphia Eagles",
+      "actualWinner": "Philadelphia Eagles",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 6,
+      "id": "401437790",
+      "predictedWinner": "Denver Broncos",
+      "actualWinner": "Los Angeles Chargers",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 7,
+      "id": "401437791",
+      "predictedWinner": "New Orleans Saints",
+      "actualWinner": "Arizona Cardinals",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 7,
+      "id": "401437792",
+      "predictedWinner": "Baltimore Ravens",
+      "actualWinner": "Baltimore Ravens",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 7,
+      "id": "401437793",
+      "predictedWinner": "Tampa Bay Buccaneers",
+      "actualWinner": "Carolina Panthers",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 7,
+      "id": "401437794",
+      "predictedWinner": "Cincinnati Bengals",
+      "actualWinner": "Cincinnati Bengals",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 7,
+      "id": "401437795",
+      "predictedWinner": "Dallas Cowboys",
+      "actualWinner": "Dallas Cowboys",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 7,
+      "id": "401437796",
+      "predictedWinner": "New York Giants",
+      "actualWinner": "New York Giants",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 7,
+      "id": "401437797",
+      "predictedWinner": "Tennessee Titans",
+      "actualWinner": "Tennessee Titans",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 7,
+      "id": "401437798",
+      "predictedWinner": "Washington Commanders",
+      "actualWinner": "Washington Commanders",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 7,
+      "id": "401437799",
+      "predictedWinner": "New York Jets",
+      "actualWinner": "New York Jets",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 7,
+      "id": "401437800",
+      "predictedWinner": "Las Vegas Raiders",
+      "actualWinner": "Las Vegas Raiders",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 7,
+      "id": "401437801",
+      "predictedWinner": "Los Angeles Chargers",
+      "actualWinner": "Seattle Seahawks",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 7,
+      "id": "401437802",
+      "predictedWinner": "San Francisco 49ers",
+      "actualWinner": "Kansas City Chiefs",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 7,
+      "id": "401437803",
+      "predictedWinner": "Miami Dolphins",
+      "actualWinner": "Miami Dolphins",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 7,
+      "id": "401437804",
+      "predictedWinner": "New England Patriots",
+      "actualWinner": "Chicago Bears",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 8,
+      "id": "401437805",
+      "predictedWinner": "Baltimore Ravens",
+      "actualWinner": "Baltimore Ravens",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 8,
+      "id": "401435641",
+      "predictedWinner": "Jacksonville Jaguars",
+      "actualWinner": "Denver Broncos",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 8,
+      "id": "401437806",
+      "predictedWinner": "Atlanta Falcons",
+      "actualWinner": "Atlanta Falcons",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 8,
+      "id": "401437807",
+      "predictedWinner": "Dallas Cowboys",
+      "actualWinner": "Dallas Cowboys",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 8,
+      "id": "401437808",
+      "predictedWinner": "Miami Dolphins",
+      "actualWinner": "Miami Dolphins",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 8,
+      "id": "401437809",
+      "predictedWinner": "Minnesota Vikings",
+      "actualWinner": "Minnesota Vikings",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 8,
+      "id": "401437810",
+      "predictedWinner": "Las Vegas Raiders",
+      "actualWinner": "New Orleans Saints",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 8,
+      "id": "401437811",
+      "predictedWinner": "New York Jets",
+      "actualWinner": "New England Patriots",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 8,
+      "id": "401437812",
+      "predictedWinner": "Philadelphia Eagles",
+      "actualWinner": "Philadelphia Eagles",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 8,
+      "id": "401437813",
+      "predictedWinner": "Tennessee Titans",
+      "actualWinner": "Tennessee Titans",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 8,
+      "id": "401437814",
+      "predictedWinner": "Indianapolis Colts",
+      "actualWinner": "Washington Commanders",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 8,
+      "id": "401437815",
+      "predictedWinner": "San Francisco 49ers",
+      "actualWinner": "San Francisco 49ers",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 8,
+      "id": "401437816",
+      "predictedWinner": "New York Giants",
+      "actualWinner": "Seattle Seahawks",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 8,
+      "id": "401437817",
+      "predictedWinner": "Buffalo Bills",
+      "actualWinner": "Buffalo Bills",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 8,
+      "id": "401437818",
+      "predictedWinner": "Cincinnati Bengals",
+      "actualWinner": "Cleveland Browns",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 9,
+      "id": "401437819",
+      "predictedWinner": "Philadelphia Eagles",
+      "actualWinner": "Philadelphia Eagles",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 9,
+      "id": "401437820",
+      "predictedWinner": "Atlanta Falcons",
+      "actualWinner": "Los Angeles Chargers",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 9,
+      "id": "401437821",
+      "predictedWinner": "Miami Dolphins",
+      "actualWinner": "Miami Dolphins",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 9,
+      "id": "401437822",
+      "predictedWinner": "Cincinnati Bengals",
+      "actualWinner": "Cincinnati Bengals",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 9,
+      "id": "401437823",
+      "predictedWinner": "Green Bay Packers",
+      "actualWinner": "Detroit Lions",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 9,
+      "id": "401437824",
+      "predictedWinner": "Jacksonville Jaguars",
+      "actualWinner": "Jacksonville Jaguars",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 9,
+      "id": "401437825",
+      "predictedWinner": "New England Patriots",
+      "actualWinner": "New England Patriots",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 9,
+      "id": "401437826",
+      "predictedWinner": "Buffalo Bills",
+      "actualWinner": "New York Jets",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 9,
+      "id": "401437827",
+      "predictedWinner": "Minnesota Vikings",
+      "actualWinner": "Minnesota Vikings",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 9,
+      "id": "401437828",
+      "predictedWinner": "Seattle Seahawks",
+      "actualWinner": "Seattle Seahawks",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 9,
+      "id": "401437829",
+      "predictedWinner": "Tampa Bay Buccaneers",
+      "actualWinner": "Tampa Bay Buccaneers",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 9,
+      "id": "401437830",
+      "predictedWinner": "Kansas City Chiefs",
+      "actualWinner": "Kansas City Chiefs",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 9,
+      "id": "401437831",
+      "predictedWinner": "New Orleans Saints",
+      "actualWinner": "Baltimore Ravens",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 10,
+      "id": "401437832",
+      "predictedWinner": "Atlanta Falcons",
+      "actualWinner": "Carolina Panthers",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 10,
+      "id": "401435638",
+      "predictedWinner": "Seattle Seahawks",
+      "actualWinner": "Tampa Bay Buccaneers",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 10,
+      "id": "401437833",
+      "predictedWinner": "Buffalo Bills",
+      "actualWinner": "Minnesota Vikings",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 10,
+      "id": "401437834",
+      "predictedWinner": "Chicago Bears",
+      "actualWinner": "Detroit Lions",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 10,
+      "id": "401437835",
+      "predictedWinner": "Kansas City Chiefs",
+      "actualWinner": "Kansas City Chiefs",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 10,
+      "id": "401437836",
+      "predictedWinner": "Miami Dolphins",
+      "actualWinner": "Miami Dolphins",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 10,
+      "id": "401437837",
+      "predictedWinner": "New York Giants",
+      "actualWinner": "New York Giants",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 10,
+      "id": "401437838",
+      "predictedWinner": "New Orleans Saints",
+      "actualWinner": "Pittsburgh Steelers",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 10,
+      "id": "401437839",
+      "predictedWinner": "Tennessee Titans",
+      "actualWinner": "Tennessee Titans",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 10,
+      "id": "401437840",
+      "predictedWinner": "Las Vegas Raiders",
+      "actualWinner": "Indianapolis Colts",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 10,
+      "id": "401437131",
+      "predictedWinner": "Dallas Cowboys",
+      "actualWinner": "Green Bay Packers",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 10,
+      "id": "401437841",
+      "predictedWinner": "Los Angeles Rams",
+      "actualWinner": "Arizona Cardinals",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 10,
+      "id": "401437842",
+      "predictedWinner": "San Francisco 49ers",
+      "actualWinner": "San Francisco 49ers",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 10,
+      "id": "401437843",
+      "predictedWinner": "Philadelphia Eagles",
+      "actualWinner": "Washington Commanders",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 11,
+      "id": "401437844",
+      "predictedWinner": "Tennessee Titans",
+      "actualWinner": "Tennessee Titans",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 11,
+      "id": "401437845",
+      "predictedWinner": "Atlanta Falcons",
+      "actualWinner": "Atlanta Falcons",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 11,
+      "id": "401437846",
+      "predictedWinner": "Baltimore Ravens",
+      "actualWinner": "Baltimore Ravens",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 11,
+      "id": "401437847",
+      "predictedWinner": "Buffalo Bills",
+      "actualWinner": "Buffalo Bills",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 11,
+      "id": "401437848",
+      "predictedWinner": "Washington Commanders",
+      "actualWinner": "Washington Commanders",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 11,
+      "id": "401437849",
+      "predictedWinner": "Philadelphia Eagles",
+      "actualWinner": "Philadelphia Eagles",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 11,
+      "id": "401437850",
+      "predictedWinner": "New England Patriots",
+      "actualWinner": "New England Patriots",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 11,
+      "id": "401437851",
+      "predictedWinner": "New Orleans Saints",
+      "actualWinner": "New Orleans Saints",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 11,
+      "id": "401437852",
+      "predictedWinner": "New York Giants",
+      "actualWinner": "Detroit Lions",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 11,
+      "id": "401437853",
+      "predictedWinner": "Denver Broncos",
+      "actualWinner": "Las Vegas Raiders",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 11,
+      "id": "401437855",
+      "predictedWinner": "Dallas Cowboys",
+      "actualWinner": "Dallas Cowboys",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 11,
+      "id": "401437856",
+      "predictedWinner": "Cincinnati Bengals",
+      "actualWinner": "Cincinnati Bengals",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 11,
+      "id": "401437854",
+      "predictedWinner": "Kansas City Chiefs",
+      "actualWinner": "Kansas City Chiefs",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 11,
+      "id": "401435642",
+      "predictedWinner": "San Francisco 49ers",
+      "actualWinner": "San Francisco 49ers",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 12,
+      "id": "401437857",
+      "predictedWinner": "Buffalo Bills",
+      "actualWinner": "Buffalo Bills",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 12,
+      "id": "401437858",
+      "predictedWinner": "Dallas Cowboys",
+      "actualWinner": "Dallas Cowboys",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 12,
+      "id": "401437859",
+      "predictedWinner": "New England Patriots",
+      "actualWinner": "Minnesota Vikings",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 12,
+      "id": "401437860",
+      "predictedWinner": "Denver Broncos",
+      "actualWinner": "Carolina Panthers",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 12,
+      "id": "401437861",
+      "predictedWinner": "Tampa Bay Buccaneers",
+      "actualWinner": "Cleveland Browns",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 12,
+      "id": "401437862",
+      "predictedWinner": "Baltimore Ravens",
+      "actualWinner": "Jacksonville Jaguars",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 12,
+      "id": "401437863",
+      "predictedWinner": "Miami Dolphins",
+      "actualWinner": "Miami Dolphins",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 12,
+      "id": "401437864",
+      "predictedWinner": "New York Jets",
+      "actualWinner": "New York Jets",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 12,
+      "id": "401437865",
+      "predictedWinner": "Cincinnati Bengals",
+      "actualWinner": "Cincinnati Bengals",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 12,
+      "id": "401437866",
+      "predictedWinner": "Washington Commanders",
+      "actualWinner": "Washington Commanders",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 12,
+      "id": "401437867",
+      "predictedWinner": "Los Angeles Chargers",
+      "actualWinner": "Los Angeles Chargers",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 12,
+      "id": "401437868",
+      "predictedWinner": "Seattle Seahawks",
+      "actualWinner": "Las Vegas Raiders",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 12,
+      "id": "401437869",
+      "predictedWinner": "Kansas City Chiefs",
+      "actualWinner": "Kansas City Chiefs",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 12,
+      "id": "401437870",
+      "predictedWinner": "San Francisco 49ers",
+      "actualWinner": "San Francisco 49ers",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 12,
+      "id": "401437871",
+      "predictedWinner": "Philadelphia Eagles",
+      "actualWinner": "Philadelphia Eagles",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 12,
+      "id": "401437872",
+      "predictedWinner": "Indianapolis Colts",
+      "actualWinner": "Pittsburgh Steelers",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 13,
+      "id": "401437873",
+      "predictedWinner": "Buffalo Bills",
+      "actualWinner": "Buffalo Bills",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 13,
+      "id": "401437874",
+      "predictedWinner": "Atlanta Falcons",
+      "actualWinner": "Pittsburgh Steelers",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 13,
+      "id": "401437875",
+      "predictedWinner": "Baltimore Ravens",
+      "actualWinner": "Baltimore Ravens",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 13,
+      "id": "401437876",
+      "predictedWinner": "Chicago Bears",
+      "actualWinner": "Green Bay Packers",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 13,
+      "id": "401437877",
+      "predictedWinner": "Jacksonville Jaguars",
+      "actualWinner": "Detroit Lions",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 13,
+      "id": "401437878",
+      "predictedWinner": "Cleveland Browns",
+      "actualWinner": "Cleveland Browns",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 13,
+      "id": "401437879",
+      "predictedWinner": "New York Jets",
+      "actualWinner": "Minnesota Vikings",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 13,
+      "id": "401437881",
+      "predictedWinner": "Philadelphia Eagles",
+      "actualWinner": "Philadelphia Eagles",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 13,
+      "id": "401437882",
+      "predictedWinner": "Seattle Seahawks",
+      "actualWinner": "Seattle Seahawks",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 13,
+      "id": "401437883",
+      "predictedWinner": "San Francisco 49ers",
+      "actualWinner": "San Francisco 49ers",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 13,
+      "id": "401437884",
+      "predictedWinner": "Kansas City Chiefs",
+      "actualWinner": "Cincinnati Bengals",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 13,
+      "id": "401437885",
+      "predictedWinner": "Las Vegas Raiders",
+      "actualWinner": "Las Vegas Raiders",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 13,
+      "id": "401437886",
+      "predictedWinner": "Dallas Cowboys",
+      "actualWinner": "Dallas Cowboys",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 13,
+      "id": "401437887",
+      "predictedWinner": "Tampa Bay Buccaneers",
+      "actualWinner": "Tampa Bay Buccaneers",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 14,
+      "id": "401437888",
+      "predictedWinner": "Las Vegas Raiders",
+      "actualWinner": "Los Angeles Rams",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 14,
+      "id": "401437889",
+      "predictedWinner": "Buffalo Bills",
+      "actualWinner": "Buffalo Bills",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 14,
+      "id": "401437890",
+      "predictedWinner": "Cincinnati Bengals",
+      "actualWinner": "Cincinnati Bengals",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 14,
+      "id": "401437891",
+      "predictedWinner": "Dallas Cowboys",
+      "actualWinner": "Dallas Cowboys",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 14,
+      "id": "401437892",
+      "predictedWinner": "Detroit Lions",
+      "actualWinner": "Detroit Lions",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 14,
+      "id": "401437893",
+      "predictedWinner": "Philadelphia Eagles",
+      "actualWinner": "Philadelphia Eagles",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 14,
+      "id": "401437894",
+      "predictedWinner": "Baltimore Ravens",
+      "actualWinner": "Baltimore Ravens",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 14,
+      "id": "401437895",
+      "predictedWinner": "Tennessee Titans",
+      "actualWinner": "Jacksonville Jaguars",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 14,
+      "id": "401437899",
+      "predictedWinner": "Kansas City Chiefs",
+      "actualWinner": "Kansas City Chiefs",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 14,
+      "id": "401437897",
+      "predictedWinner": "San Francisco 49ers",
+      "actualWinner": "San Francisco 49ers",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 14,
+      "id": "401437898",
+      "predictedWinner": "Seattle Seahawks",
+      "actualWinner": "Carolina Panthers",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 14,
+      "id": "401437896",
+      "predictedWinner": "Miami Dolphins",
+      "actualWinner": "Los Angeles Chargers",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 14,
+      "id": "401437900",
+      "predictedWinner": "New England Patriots",
+      "actualWinner": "New England Patriots",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 15,
+      "id": "401437901",
+      "predictedWinner": "San Francisco 49ers",
+      "actualWinner": "San Francisco 49ers",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 15,
+      "id": "401437904",
+      "predictedWinner": "Minnesota Vikings",
+      "actualWinner": "Minnesota Vikings",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 15,
+      "id": "401437903",
+      "predictedWinner": "Baltimore Ravens",
+      "actualWinner": "Cleveland Browns",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 15,
+      "id": "401437902",
+      "predictedWinner": "Buffalo Bills",
+      "actualWinner": "Buffalo Bills",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 15,
+      "id": "401437905",
+      "predictedWinner": "New Orleans Saints",
+      "actualWinner": "New Orleans Saints",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 15,
+      "id": "401437907",
+      "predictedWinner": "Carolina Panthers",
+      "actualWinner": "Pittsburgh Steelers",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 15,
+      "id": "401437908",
+      "predictedWinner": "Philadelphia Eagles",
+      "actualWinner": "Philadelphia Eagles",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 15,
+      "id": "401437909",
+      "predictedWinner": "Kansas City Chiefs",
+      "actualWinner": "Kansas City Chiefs",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 15,
+      "id": "401437910",
+      "predictedWinner": "Dallas Cowboys",
+      "actualWinner": "Jacksonville Jaguars",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 15,
+      "id": "401437911",
+      "predictedWinner": "Detroit Lions",
+      "actualWinner": "Detroit Lions",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 15,
+      "id": "401437912",
+      "predictedWinner": "Denver Broncos",
+      "actualWinner": "Denver Broncos",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 15,
+      "id": "401437915",
+      "predictedWinner": "Las Vegas Raiders",
+      "actualWinner": "Las Vegas Raiders",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 15,
+      "id": "401437913",
+      "predictedWinner": "Los Angeles Chargers",
+      "actualWinner": "Los Angeles Chargers",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 15,
+      "id": "401437914",
+      "predictedWinner": "Cincinnati Bengals",
+      "actualWinner": "Cincinnati Bengals",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 15,
+      "id": "401437906",
+      "predictedWinner": "Washington Commanders",
+      "actualWinner": "New York Giants",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 15,
+      "id": "401437916",
+      "predictedWinner": "Green Bay Packers",
+      "actualWinner": "Green Bay Packers",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 16,
+      "id": "401437917",
+      "predictedWinner": "New York Jets",
+      "actualWinner": "Jacksonville Jaguars",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 16,
+      "id": "401437918",
+      "predictedWinner": "Baltimore Ravens",
+      "actualWinner": "Baltimore Ravens",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 16,
+      "id": "401437919",
+      "predictedWinner": "Detroit Lions",
+      "actualWinner": "Carolina Panthers",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 16,
+      "id": "401437920",
+      "predictedWinner": "Buffalo Bills",
+      "actualWinner": "Buffalo Bills",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 16,
+      "id": "401437921",
+      "predictedWinner": "Cleveland Browns",
+      "actualWinner": "New Orleans Saints",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 16,
+      "id": "401437922",
+      "predictedWinner": "Kansas City Chiefs",
+      "actualWinner": "Kansas City Chiefs",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 16,
+      "id": "401437923",
+      "predictedWinner": "Minnesota Vikings",
+      "actualWinner": "Minnesota Vikings",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 16,
+      "id": "401437924",
+      "predictedWinner": "Cincinnati Bengals",
+      "actualWinner": "Cincinnati Bengals",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 16,
+      "id": "401437925",
+      "predictedWinner": "Tennessee Titans",
+      "actualWinner": "Houston Texans",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 16,
+      "id": "401437926",
+      "predictedWinner": "San Francisco 49ers",
+      "actualWinner": "San Francisco 49ers",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 16,
+      "id": "401437927",
+      "predictedWinner": "Philadelphia Eagles",
+      "actualWinner": "Dallas Cowboys",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 16,
+      "id": "401437928",
+      "predictedWinner": "Las Vegas Raiders",
+      "actualWinner": "Pittsburgh Steelers",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 16,
+      "id": "401437929",
+      "predictedWinner": "Green Bay Packers",
+      "actualWinner": "Green Bay Packers",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 16,
+      "id": "401436983",
+      "predictedWinner": "Denver Broncos",
+      "actualWinner": "Los Angeles Rams",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 16,
+      "id": "401437930",
+      "predictedWinner": "Arizona Cardinals",
+      "actualWinner": "Tampa Bay Buccaneers",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 16,
+      "id": "401437931",
+      "predictedWinner": "Los Angeles Chargers",
+      "actualWinner": "Los Angeles Chargers",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 17,
+      "id": "401437932",
+      "predictedWinner": "Dallas Cowboys",
+      "actualWinner": "Dallas Cowboys",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 17,
+      "id": "401437933",
+      "predictedWinner": "Atlanta Falcons",
+      "actualWinner": "Atlanta Falcons",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 17,
+      "id": "401437935",
+      "predictedWinner": "Detroit Lions",
+      "actualWinner": "Detroit Lions",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 17,
+      "id": "401437936",
+      "predictedWinner": "Jacksonville Jaguars",
+      "actualWinner": "Jacksonville Jaguars",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 17,
+      "id": "401437937",
+      "predictedWinner": "Kansas City Chiefs",
+      "actualWinner": "Kansas City Chiefs",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 17,
+      "id": "401437938",
+      "predictedWinner": "New England Patriots",
+      "actualWinner": "New England Patriots",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 17,
+      "id": "401437939",
+      "predictedWinner": "New York Giants",
+      "actualWinner": "New York Giants",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 17,
+      "id": "401437940",
+      "predictedWinner": "Philadelphia Eagles",
+      "actualWinner": "New Orleans Saints",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 17,
+      "id": "401437941",
+      "predictedWinner": "Carolina Panthers",
+      "actualWinner": "Tampa Bay Buccaneers",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 17,
+      "id": "401437942",
+      "predictedWinner": "Cleveland Browns",
+      "actualWinner": "Cleveland Browns",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 17,
+      "id": "401437943",
+      "predictedWinner": "San Francisco 49ers",
+      "actualWinner": "San Francisco 49ers",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 17,
+      "id": "401437944",
+      "predictedWinner": "Seattle Seahawks",
+      "actualWinner": "Seattle Seahawks",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 17,
+      "id": "401437945",
+      "predictedWinner": "Green Bay Packers",
+      "actualWinner": "Green Bay Packers",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 17,
+      "id": "401437946",
+      "predictedWinner": "Los Angeles Chargers",
+      "actualWinner": "Los Angeles Chargers",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 17,
+      "id": "401437934",
+      "predictedWinner": "Baltimore Ravens",
+      "actualWinner": "Pittsburgh Steelers",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 18,
+      "id": "401437961",
+      "predictedWinner": "Kansas City Chiefs",
+      "actualWinner": "Kansas City Chiefs",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 18,
+      "id": "401437954",
+      "predictedWinner": "Jacksonville Jaguars",
+      "actualWinner": "Jacksonville Jaguars",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 18,
+      "id": "401437948",
+      "predictedWinner": "Atlanta Falcons",
+      "actualWinner": "Atlanta Falcons",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 18,
+      "id": "401437949",
+      "predictedWinner": "Buffalo Bills",
+      "actualWinner": "Buffalo Bills",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 18,
+      "id": "401437950",
+      "predictedWinner": "Minnesota Vikings",
+      "actualWinner": "Minnesota Vikings",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 18,
+      "id": "401437951",
+      "predictedWinner": "Cincinnati Bengals",
+      "actualWinner": "Cincinnati Bengals",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 18,
+      "id": "401437953",
+      "predictedWinner": "Houston Texans",
+      "actualWinner": "Houston Texans",
+      "modelCorrect": true,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 18,
+      "id": "401437955",
+      "predictedWinner": "Miami Dolphins",
+      "actualWinner": "Miami Dolphins",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 18,
+      "id": "401437956",
+      "predictedWinner": "New Orleans Saints",
+      "actualWinner": "Carolina Panthers",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    },
+    {
+      "week": 18,
+      "id": "401437958",
+      "predictedWinner": "Cleveland Browns",
+      "actualWinner": "Pittsburgh Steelers",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 18,
+      "id": "401437957",
+      "predictedWinner": "Philadelphia Eagles",
+      "actualWinner": "Philadelphia Eagles",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 18,
+      "id": "401437959",
+      "predictedWinner": "Dallas Cowboys",
+      "actualWinner": "Washington Commanders",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 18,
+      "id": "401437960",
+      "predictedWinner": "Los Angeles Chargers",
+      "actualWinner": "Denver Broncos",
+      "modelCorrect": false,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 18,
+      "id": "401437962",
+      "predictedWinner": "San Francisco 49ers",
+      "actualWinner": "San Francisco 49ers",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 18,
+      "id": "401437963",
+      "predictedWinner": "Seattle Seahawks",
+      "actualWinner": "Seattle Seahawks",
+      "modelCorrect": true,
+      "homeBaselineCorrect": true
+    },
+    {
+      "week": 18,
+      "id": "401437952",
+      "predictedWinner": "Green Bay Packers",
+      "actualWinner": "Detroit Lions",
+      "modelCorrect": false,
+      "homeBaselineCorrect": false
+    }
+  ],
+  "evaluatedAt": "2026-10-17T04:54:35.270968+00:00"
+}
