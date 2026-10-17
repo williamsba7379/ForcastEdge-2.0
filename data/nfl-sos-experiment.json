@@ -1,0 +1,105 @@
+{
+  "status": "Exploratory retrospective coefficient comparison; NOT independent validation",
+  "method": "Strength of schedule is the average current season win percentage of prior opponents, evaluated using only games strictly before kickoff; no prior-season carryover.",
+  "caution": "Opponent records are measured at prediction time, not when opponents originally played. Coefficients were compared on the same historical games; any winner requires an untouched holdout.",
+  "eligibleGames": 766,
+  "coefficients": {
+    "0.0": {
+      "correct": 479,
+      "accuracy": 0.6253,
+      "netVsBaseline": 0,
+      "changedPicks": 0,
+      "bySeason": {
+        "2023": {
+          "games": 240,
+          "correct": 144
+        },
+        "2024": {
+          "games": 240,
+          "correct": 155
+        },
+        "2025": {
+          "games": 239,
+          "correct": 153
+        },
+        "2026": {
+          "games": 47,
+          "correct": 27
+        }
+      }
+    },
+    "2.0": {
+      "correct": 480,
+      "accuracy": 0.6266,
+      "netVsBaseline": 1,
+      "changedPicks": 5,
+      "bySeason": {
+        "2023": {
+          "games": 240,
+          "correct": 144
+        },
+        "2024": {
+          "games": 240,
+          "correct": 156
+        },
+        "2025": {
+          "games": 239,
+          "correct": 153
+        },
+        "2026": {
+          "games": 47,
+          "correct": 27
+        }
+      }
+    },
+    "4.0": {
+      "correct": 480,
+      "accuracy": 0.6266,
+      "netVsBaseline": 1,
+      "changedPicks": 13,
+      "bySeason": {
+        "2023": {
+          "games": 240,
+          "correct": 146
+        },
+        "2024": {
+          "games": 240,
+          "correct": 157
+        },
+        "2025": {
+          "games": 239,
+          "correct": 152
+        },
+        "2026": {
+          "games": 47,
+          "correct": 25
+        }
+      }
+    },
+    "8.0": {
+      "correct": 479,
+      "accuracy": 0.6253,
+      "netVsBaseline": 0,
+      "changedPicks": 22,
+      "bySeason": {
+        "2023": {
+          "games": 240,
+          "correct": 147
+        },
+        "2024": {
+          "games": 240,
+          "correct": 154
+        },
+        "2025": {
+          "games": 239,
+          "correct": 153
+        },
+        "2026": {
+          "games": 47,
+          "correct": 25
+        }
+      }
+    }
+  },
+  "productionModelChanged": false
+}
