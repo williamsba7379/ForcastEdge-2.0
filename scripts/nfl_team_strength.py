@@ -57,7 +57,7 @@ def main():
     skipped = 0
     for game in games:
         # Strictly earlier kickoff prevents same-time games from leaking.
-        prior = [g for g in games if kickoff(g) < kickoff(game)]
+        prior = [g for g in games if g.get("season", dataset["season"]) == game.get("season", dataset["season"]) and kickoff(g) < kickoff(game)]
         home = team_metrics(prior, game["home"])
         away = team_metrics(prior, game["away"])
         if home["games"] < 2 or away["games"] < 2 or game["winner"] == "TIE":
@@ -65,12 +65,17 @@ def main():
             continue
         home_edge = strength(home) - strength(away) + 1.5  # points, assumed HFA
         predicted = game["home"] if home_edge >= 0 else game["away"]
-        graded.append({"id": game["id"], "week": game["week"],
+        graded.append({"season": game.get("season", dataset["season"]), "id": game["id"], "week": game["week"],
                        "predictedWinner": predicted, "actualWinner": game["winner"],
                        "correct": predicted == game["winner"],
                        "homeEdgePoints": round(home_edge, 2)})
     wins = sum(r["correct"] for r in graded)
-    latest = [g for g in games if kickoff(g) <= max(map(kickoff, games))]
+    home_wins = sum(r["actualWinner"] == next(g["home"] for g in games if g["id"] == r["id"]) for r in graded)
+    by_season = {}
+    for season in sorted({r["season"] for r in graded}):
+        rows = [r for r in graded if r["season"] == season]
+        by_season[str(season)] = {"graded": len(rows), "modelCorrect": sum(r["correct"] for r in rows), "homeBaselineCorrect": sum(r["actualWinner"] == next(g["home"] for g in games if g["id"] == r["id"]) for r in rows)}
+    latest = [g for g in games if g.get("season", dataset["season"]) == dataset["season"]]
     table = [{"team": team, **team_metrics(latest, team),
               "strengthScore": round(strength(team_metrics(latest, team)), 2)}
              for team in teams]
@@ -83,6 +88,9 @@ def main():
         "walkForward": {"graded": len(graded), "correct": wins,
                         "incorrect": len(graded) - wins, "skipped": skipped,
                         "accuracy": round(wins / len(graded), 4) if graded else None,
+                        "homeBaselineCorrect": home_wins,
+                        "homeBaselineAccuracy": round(home_wins / len(graded), 4) if graded else None,
+                        "bySeason": by_season,
                         "predictions": graded},
         "teams": table,
     }
