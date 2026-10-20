@@ -11,7 +11,7 @@ const verdict=(v)=>v===null?'Pending':v===0?'Push':v>0?'✓ Win':'✕ Loss';
 async function load(){
  const status=document.getElementById('originalStatus'),box=document.getElementById('originalContent');status.textContent='Checking archived predictions and final scores…';
  try{
- const [ar,sr]=await Promise.all([fetch('./data/original-forecastedge-week6-2026.json?t='+Date.now(),{cache:'no-store'}),fetch('./data/nfl-scoreboard.json?t='+Date.now(),{cache:'no-store'})]);
+ const [ar,sr]=await Promise.all([fetch('./data/original-forecastedge-week6-2026.json?t='+Date.now(),{cache:'no-store'}),fetch('./data/nfl-week6-2026-scoreboard.json?t='+Date.now(),{cache:'no-store'})]);
  if(!ar.ok)throw Error('Original prediction archive unavailable');
  const card=await ar.json();const board=sr.ok?await sr.json():{events:[]};const events=Array.isArray(board.events)?board.events:[];
  const stats={winner:[0,0,0],spread:[0,0,0],total:[0,0,0]};let html='';
