@@ -10,44 +10,57 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Fetch NFL Week 6 scores by individual date
+      - name: Fetch current NFL week and preserve Week 6 archive
         run: |
           python3 - <<'PY'
           import datetime, json, pathlib, urllib.request, urllib.error, time
           base="https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard"
-          events={}
-          errors=[]
-          for offset in range(6):
-              day=datetime.date(2026,10,15)+datetime.timedelta(days=offset)
-              url=base+"?dates="+day.strftime("%Y%m%d")
-              try:
-                  req=urllib.request.Request(url,headers={"User-Agent":"Mozilla/5.0 (compatible; ForecastEdge/2.0)"})
-                  with urllib.request.urlopen(req,timeout=30) as response:
-                      payload=json.load(response)
-                  for e in payload.get("events",[]):
-                      if e.get("week",{}).get("number")==6 and e.get("id"):
-                          events[str(e["id"])]=e
-                  print(day.isoformat(),len(payload.get("events",[])),"events; cumulative Week 6:",len(events))
-              except (urllib.error.URLError,ValueError) as exc:
-                  errors.append(str(day)+": "+str(exc))
-                  print("Warning:",errors[-1])
-              time.sleep(0.25)
-          if len(events)<14:
-              raise RuntimeError("Expected 14 Week 6 games, retrieved "+str(len(events))+". Existing published data preserved. "+("; ".join(errors)))
+          today=datetime.datetime.now(datetime.timezone.utc).date()
+          # NFL weeks roll over on Wednesday; query Wed–Tue to retain Thu–Mon games.
+          start=today-datetime.timedelta(days=(today.weekday()-2)%7)
+          def collect(start):
+              events={};errors=[]
+              for offset in range(7):
+                  day=start+datetime.timedelta(days=offset)
+                  url=base+"?dates="+day.strftime("%Y%m%d")
+                  try:
+                      req=urllib.request.Request(url,headers={"User-Agent":"Mozilla/5.0 (compatible; ForecastEdge/2.0)"})
+                      with urllib.request.urlopen(req,timeout=30) as response:
+                          payload=json.load(response)
+                      for e in payload.get("events",[]):
+                          if e.get("id") and e.get("season",{}).get("type")==2:
+                              events[str(e["id"])]=e
+                      print(day.isoformat(),len(payload.get("events",[])),"events")
+                  except (urllib.error.URLError,ValueError) as exc:
+                      errors.append(str(day)+": "+str(exc))
+                      print("Warning:",errors[-1])
+                  time.sleep(0.2)
+              return list(events.values()),errors
+          events,errors=collect(start)
+          if len(events)<10:
+              raise RuntimeError("Current week has only "+str(len(events))+" games; refusing to overwrite feed. "+("; ".join(errors)))
+          weeknums={e.get("week",{}).get("number") for e in events}
+          if len(weeknums)!=1:
+              raise RuntimeError("Mixed NFL week numbers: "+str(weeknums))
+          week=next(iter(weeknums))
+          board={"season":{"year":start.year,"type":2},"week":{"number":week},"events":events,"source":"ESPN daily scoreboard queries","retrievedAt":datetime.datetime.now(datetime.timezone.utc).isoformat()}
+          path=pathlib.Path("data/nfl-scoreboard.json")
+          path.parent.mkdir(parents=True,exist_ok=True)
+          path.write_text(json.dumps(board,separators=(",",":"))+"\n")
+          print("Published Week",week,"with",len(events),"games")
+          # Week 6 is a frozen archive for the original October 14 prediction card.
           archive=pathlib.Path("data/nfl-week6-2026-scoreboard.json")
-          archive.parent.mkdir(parents=True,exist_ok=True)
-          board={"season":{"year":2026,"type":2},"week":{"number":6},"events":list(events.values()),"source":"ESPN scoreboard daily queries","retrievedAt":datetime.datetime.now(datetime.timezone.utc).isoformat()}
-          archive.write_text(json.dumps(board,separators=(",",":"))+"\n")
-          # Week 6 feed stays available for grading even after the calendar moves on.
-          pathlib.Path("data/nfl-scoreboard.json").write_text(json.dumps(board,separators=(",",":"))+"\n")
-          print("Saved",len(events),"Week 6 games to both feeds")
+          if not archive.exists() and start==datetime.date(2026,10,14) and len(events)==14:
+              archive.write_text(json.dumps(board,separators=(",",":"))+"\n")
+              print("Created immutable Week 6 archive")
           PY
       - name: Commit updated scoreboard
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/nfl-scoreboard.json data/nfl-week6-2026-scoreboard.json
+          git add data/nfl-scoreboard.json
+          if [ -f data/nfl-week6-2026-scoreboard.json ]; then git add data/nfl-week6-2026-scoreboard.json; fi
           if ! git diff --cached --quiet; then
-            git commit -m "Update Week 6 scoreboard from daily feeds"
+            git commit -m "Update current NFL week scoreboard"
             git push
           fi
