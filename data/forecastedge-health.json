@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-20T13:19:47.219244+00:00",
+  "checkedAt": "2026-10-20T16:12:38.754200+00:00",
   "checks": [
     {
       "name": "NFL scoreboard",
@@ -7,9 +7,9 @@
       "cadenceHours": 3,
       "staleAfterHours": 9,
       "latestConclusion": "success",
-      "latestRunUrl": "https://github.com/williamsba7379/ForcastEdge-2.0/actions/runs/39425308176",
+      "latestRunUrl": "https://github.com/williamsba7379/ForcastEdge-2.0/actions/runs/39450692613",
       "latestRunStatus": "completed",
-      "lastSuccessAt": "2026-10-20T12:49:39Z",
+      "lastSuccessAt": "2026-10-20T15:41:07Z",
       "ageHours": 0.5,
       "status": "healthy",
       "reason": "Last successful run 0.5 hours ago."
@@ -23,9 +23,9 @@
       "latestRunUrl": "https://github.com/williamsba7379/ForcastEdge-2.0/actions/runs/39411659089",
       "latestRunStatus": "completed",
       "lastSuccessAt": "2026-10-20T10:58:22Z",
-      "ageHours": 2.4,
+      "ageHours": 5.2,
       "status": "healthy",
-      "reason": "Last successful run 2.4 hours ago."
+      "reason": "Last successful run 5.2 hours ago."
     },
     {
       "name": "Weekly prediction draft",
@@ -36,9 +36,9 @@
       "latestRunUrl": "https://github.com/williamsba7379/ForcastEdge-2.0/actions/runs/39002213162",
       "latestRunStatus": "completed",
       "lastSuccessAt": "2026-10-17T04:20:44Z",
-      "ageHours": 81.0,
+      "ageHours": 83.9,
       "status": "healthy",
-      "reason": "Last successful run 81.0 hours ago."
+      "reason": "Last successful run 83.9 hours ago."
     }
   ],
   "note": "Workflow run checks, not a guarantee that published content is current."
