@@ -61,7 +61,7 @@ def qb_performance_comparison(team, declaration, stats, now, kickoff):
          "estimatedPoints":None,"note":"No verified starter/replacement performance comparison available."}
     starter=declaration.get("starter")
     backup=declaration.get("expectedReplacement")
-    if not starter or not backup or starter==backup or not declaration.get("source"):
+    if not starter or not backup or starter==backup or not declaration.get("source") or declaration.get("status")!="CONFIRMED_STARTER":
         return out
     def stamp(value):
         try:
@@ -88,7 +88,7 @@ def qb_performance_comparison(team, declaration, stats, now, kickoff):
         values.append((round(anya,2),record["passAttempts"],record["source"]))
     return {"status":"DESCRIPTIVE_ONLY","starter":starter,"replacement":backup,
         "starterAYA":values[0][0],"replacementAYA":values[1][0],
-        "differenceANYA":round(values[0][0]-values[1][0],2),
+        "differenceAYA":round(values[0][0]-values[1][0],2),
         "sampleAttempts":{"starter":values[0][1],"replacement":values[1][1]},
         "sources":{"declaration":declaration["source"],"starter":values[0][2],"replacement":values[1][2]},
         "estimatedPoints":None,
