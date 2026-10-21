@@ -28,12 +28,13 @@ def choose_week(schedule, now):
     upcoming = [pair for pair in future if pair[0] > utc]
     return min(upcoming or future,key=lambda pair:pair[0])[1]
 
-def extract_history(raw, before):
+def extract_history(raw, before, season):
     """Use completed games strictly before each target kickoff; no future leakage."""
     games = raw.get("games",[]) if isinstance(raw,dict) else raw
     output = []
     for game in games:
         try:
+            if int(game.get("season",-1)) != season: continue
             date = dt.datetime.fromisoformat(game["date"].replace("Z","+00:00"))
             if date >= before: continue
             away = game["away"];home=game["home"]
@@ -67,7 +68,7 @@ def main():
     games=[]
     for g in selected["games"]:
         kickoff=dt.datetime.fromisoformat(g["date"].replace("Z","+00:00"))
-        history=extract_history(history_raw,kickoff)
+        history=extract_history(history_raw,min(kickoff,now.astimezone(dt.timezone.utc)),year)
         away=team_form(history,g["away"]);home=team_form(history,g["home"])
         missing=away is None or home is None
         base=(home or 0)-(away or 0)+1.5
