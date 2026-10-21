@@ -65,6 +65,9 @@ def main():
     # Optional verified, pregame adjustment file: explicit team points, source and as-of.
     path=DATA / "model-c-verified-adjustments.json"
     adjustments=json.loads(path.read_text()) if path.exists() else {"games":{}}
+    try: injury_snapshot=load("model-c-injury-snapshot.json")
+    except FileNotFoundError: injury_snapshot={}
+    injury_teams={t.get("team"):t for t in injury_snapshot.get("teams",[])}
     games=[]
     for g in selected["games"]:
         kickoff=dt.datetime.fromisoformat(g["date"].replace("Z","+00:00"))
@@ -82,7 +85,9 @@ def main():
                 used.append({"team":g[side],"points":item["points"],"source":item["source"],"asOf":item["asOf"],"reason":item.get("reason","")})
         margin=round(base+delta,2)
         pick=g["home"] if margin>=0 else g["away"]
-        games.append({"id":g["id"],"date":g["date"],"away":g["away"],"home":g["home"],"pick":pick,
+        injury_reports={side:injury_teams.get(g[side],{}).get("players",[]) for side in ("away","home")}
+        games.append({"injuryReports":injury_reports,"injurySource":injury_snapshot.get("source"),
+          "injuryRetrievedAt":injury_snapshot.get("retrievedAt"),"id":g["id"],"date":g["date"],"away":g["away"],"home":g["home"],"pick":pick,
           "homeEdgePoints":margin,"baseHomeEdgePoints":round(base,2),"verifiedAdjustmentHomeEdgePoints":round(delta,2),
           "confidence":"UNVALIDATED","rating":"NO BET","verifiedAdjustments":used,
           "dataWarnings":(["Missing team history; used neutral rating"] if missing else [])+
