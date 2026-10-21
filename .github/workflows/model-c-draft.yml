@@ -23,7 +23,9 @@ jobs:
           fi
       - name: Verify QB feed parsing (offline fixture)
         if: steps.time.outputs.run == 'true'
-        run: python3 tests/test_model_c_qb_feed.py
+        run: |
+          python3 tests/test_model_c_qb_feed.py
+          python3 tests/test_model_c_qb_depthcharts.py
       - name: Retrieve injury-report snapshot (best effort)
         if: steps.time.outputs.run == 'true'
         continue-on-error: true
