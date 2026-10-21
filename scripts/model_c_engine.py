@@ -139,10 +139,14 @@ def main():
             source=declaration.get("source")
             asof=declaration.get("asOf")
             valid=False
-            if starter and source and asof:
+            if (declaration.get("status")=="CONFIRMED_STARTER"
+                and declaration.get("sourceType") in ("TEAM_ANNOUNCEMENT","OFFICIAL_INACTIVES","OFFICIAL_GAME_REPORT")
+                and str(declaration.get("gameId",""))==str(g["id"])
+                and isinstance(source,str) and source.startswith("https://")
+                and starter and asof):
                 try:
                     stamp=dt.datetime.fromisoformat(asof.replace("Z","+00:00"))
-                    valid=stamp.tzinfo is not None and stamp<=now.astimezone(dt.timezone.utc)
+                    valid=stamp.tzinfo is not None and stamp<=now.astimezone(dt.timezone.utc) and stamp<kickoff and (kickoff-stamp).total_seconds()<=604800
                 except (ValueError,TypeError,AttributeError):
                     pass
             qbs=[p for p in injury_reports[side] if p.get("position","").upper()=="QB"]
@@ -150,7 +154,7 @@ def main():
             candidate=qb_candidates.get(team,{})
             quarterbacks[side]={"recentPrimaryPasser":candidate.get("candidate"),"recentPrimaryPasserGameDate":candidate.get("lastGameDate"),"recentPrimaryPasserSource":candidate.get("source"),"recentPrimaryPasserIsConfirmedStarter":False,"starter":starter if valid else None,
               "starterSource":source if valid else None,"starterAsOf":asof if valid else None,
-              "verification":"SOURCE_DECLARED" if valid else "UNKNOWN",
+              "verification":"OFFICIAL_GAME_SPECIFIC" if valid else "UNCONFIRMED",
               "injuryStatus":matched.get("status") if matched else "NOT REPORTED",
               "availability":"REVIEW REQUIRED" if matched else "UNKNOWN",
               "reportedQuarterbacks":qbs}
