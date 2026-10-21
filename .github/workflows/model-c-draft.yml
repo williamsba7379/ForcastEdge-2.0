@@ -39,6 +39,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/model-c-automated-draft.json
           if [ -f data/model-c-qb-performance.json ]; then git add data/model-c-qb-performance.json; fi
+          if [ -f data/model-c-qb-candidates.json ]; then git add data/model-c-qb-candidates.json; fi
           if [ -f data/model-c-injury-snapshot.json ]; then git add data/model-c-injury-snapshot.json; fi
           if ! git diff --cached --quiet; then
             git commit -m "Update Model C review-only draft"
