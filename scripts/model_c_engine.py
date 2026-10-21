@@ -158,7 +158,7 @@ def main():
               "injuryStatus":matched.get("status") if matched else "NOT REPORTED",
               "availability":"REVIEW REQUIRED" if matched else "UNKNOWN",
               "reportedQuarterbacks":qbs}
-        qb_comparisons={side:qb_performance_comparison(g[side],qb_declarations.get(g[side],{}),qb_stats,now.astimezone(dt.timezone.utc),kickoff) for side in ("away","home")}
+        qb_comparisons={side:qb_performance_comparison(g[side],(qb_declarations.get(g[side],{}) if quarterbacks[side]["verification"]=="OFFICIAL_GAME_SPECIFIC" else {}),qb_stats,now.astimezone(dt.timezone.utc),kickoff) for side in ("away","home")}
         games.append({"qbPerformanceComparisons":qb_comparisons,"quarterbacks":quarterbacks,"injuryReports":injury_reports,"injurySource":injury_snapshot.get("source"),
           "injuryRetrievedAt":injury_snapshot.get("retrievedAt"),"id":g["id"],"date":g["date"],"away":g["away"],"home":g["home"],"pick":pick,
           "homeEdgePoints":margin,"baseHomeEdgePoints":round(base,2),"verifiedAdjustmentHomeEdgePoints":round(delta,2),
