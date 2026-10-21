@@ -1,0 +1,100 @@
+#!/usr/bin/env python3
+"""ForecastEdge Model C: independent, reproducible, review-only weekly engine.
+Never edits frozen predictions, Model C Week 7 pilot, or pool selections.
+QB/injury inputs must be verified and manually supplied; missing data are explicit.
+"""
+import datetime as dt
+import json
+import math
+import pathlib
+import zoneinfo
+
+ROOT = pathlib.Path(__file__).resolve().parents[1]
+DATA = ROOT / "data"
+ET = zoneinfo.ZoneInfo("America/New_York")
+
+def load(name):
+    return json.loads((DATA / name).read_text())
+
+def choose_week(schedule, now):
+    utc = now.astimezone(dt.timezone.utc)
+    future = []
+    for week in schedule["weeks"]:
+        dates = [dt.datetime.fromisoformat(g["date"].replace("Z","+00:00")) for g in week["games"]]
+        if dates and max(dates) > utc:
+            future.append((min(dates),week))
+    if not future:
+        raise RuntimeError("No upcoming week in schedule. Refusing to publish.")
+    upcoming = [pair for pair in future if pair[0] > utc]
+    return min(upcoming or future,key=lambda pair:pair[0])[1]
+
+def extract_history(raw, before):
+    """Use completed games strictly before each target kickoff; no future leakage."""
+    games = raw.get("games",[]) if isinstance(raw,dict) else raw
+    output = []
+    for game in games:
+        try:
+            date = dt.datetime.fromisoformat(game["date"].replace("Z","+00:00"))
+            if date >= before: continue
+            away = game["away"];home=game["home"]
+            sa = float(game.get("scoreAway",game.get("awayScore")))
+            sh = float(game.get("scoreHome",game.get("homeScore")))
+            output.append((date,away,home,sa,sh))
+        except (KeyError,TypeError,ValueError,AttributeError):
+            continue
+    return sorted(output)
+
+def team_form(history, team):
+    diffs=[]
+    for _,away,home,sa,sh in history:
+        if team==home: diffs.append(sh-sa)
+        elif team==away: diffs.append(sa-sh)
+    if not diffs:return None
+    season=sum(diffs)/len(diffs)
+    recent=sum(diffs[-3:])/min(3,len(diffs))
+    return .7*season+.3*recent
+
+def main():
+    now=dt.datetime.now(ET)
+    schedule=load("nfl-schedule.json")
+    selected=choose_week(schedule,now)
+    year=schedule["season"];week=selected["week"]
+    try:history_raw=load("nfl-historical-results.json")
+    except FileNotFoundError:history_raw=[]
+    # Optional verified, pregame adjustment file: explicit team points, source and as-of.
+    path=DATA / "model-c-verified-adjustments.json"
+    adjustments=json.loads(path.read_text()) if path.exists() else {"games":{}}
+    games=[]
+    for g in selected["games"]:
+        kickoff=dt.datetime.fromisoformat(g["date"].replace("Z","+00:00"))
+        history=extract_history(history_raw,kickoff)
+        away=team_form(history,g["away"]);home=team_form(history,g["home"])
+        missing=away is None or home is None
+        base=(home or 0)-(away or 0)+1.5
+        verified=adjustments.get("games",{}).get(str(g["id"]),{})
+        delta=0.0;used=[]
+        for side,sign in (("home",1),("away",-1)):
+            item=verified.get(side)
+            if item and isinstance(item.get("points"),(int,float)) and item.get("source") and item.get("asOf"):
+                if abs(item["points"])>12:raise ValueError("Adjustment exceeds safety cap")
+                delta+=sign*item["points"]
+                used.append({"team":g[side],"points":item["points"],"source":item["source"],"asOf":item["asOf"],"reason":item.get("reason","")})
+        margin=round(base+delta,2)
+        pick=g["home"] if margin>=0 else g["away"]
+        games.append({"id":g["id"],"date":g["date"],"away":g["away"],"home":g["home"],"pick":pick,
+          "homeEdgePoints":margin,"baseHomeEdgePoints":round(base,2),"verifiedAdjustmentHomeEdgePoints":round(delta,2),
+          "confidence":"UNVALIDATED","rating":"NO BET","verifiedAdjustments":used,
+          "dataWarnings":(["Missing team history; used neutral rating"] if missing else [])+
+          (["No verified quarterback/injury adjustment; NOT an injury-aware pick"] if not used else []),
+          "reason":"70% season + 30% last-three scoring differential, +1.5 home points; explicit verified adjustments only. Not calibrated."})
+    if len(games)<10:raise RuntimeError("Too few scheduled games; refusing to publish.")
+    out={"title":"Model C — Automated Review Draft","season":year,"week":week,"generatedAt":now.isoformat(),
+         "status":"AUTOMATED_REVIEW_ONLY","reviewRequired":True,
+         "method":"Point-differential baseline plus optional documented quarterback/injury adjustments; no unverified automatic injury claims.",
+         "disclaimer":"Not the frozen Week 7 analyst pilot; not official pool picks; not betting recommendations. No calibrated win probabilities.",
+         "games":games}
+    output=DATA / "model-c-automated-draft.json"
+    output.write_text(json.dumps(out,indent=2)+"\n")
+    print(f"Generated Model C Week {week} review-only draft: {len(games)} games; {sum(bool(g['verifiedAdjustments']) for g in games)} verified-adjusted.")
+
+if __name__=="__main__":main()
