@@ -1,0 +1,137 @@
+{
+  "title": "Model C — Advanced Matchup (Week 7 pilot)",
+  "season": 2026,
+  "week": 7,
+  "createdAt": "2026-10-21",
+  "status": "analyst_reassessment_pre_kickoff",
+  "method": "Human analyst-adjusted pilot, not a recalculated automated model",
+  "disclaimer": "No changes to frozen Model A or B picks. Cincinnati selection is conditional on Lamar Jackson being unavailable or significantly limited. No approved wagers.",
+  "games": [
+    {
+      "id": "401873010",
+      "date": "2026-10-23T00:15Z",
+      "away": "New England Patriots",
+      "home": "Chicago Bears",
+      "pick": "Chicago Bears",
+      "reason": "Retained from baseline pending a validated matchup adjustment.",
+      "conditional": false
+    },
+    {
+      "id": "401873011",
+      "date": "2026-10-25T13:30Z",
+      "away": "Pittsburgh Steelers",
+      "home": "New Orleans Saints",
+      "pick": "Pittsburgh Steelers",
+      "reason": "Retained from baseline pending a validated matchup adjustment.",
+      "conditional": false
+    },
+    {
+      "id": "401873012",
+      "date": "2026-10-25T17:00Z",
+      "away": "Cincinnati Bengals",
+      "home": "Baltimore Ravens",
+      "pick": "Cincinnati Bengals",
+      "reason": "Conditional: Cincinnati QB and receivers favored if Lamar Jackson is out or significantly limited.",
+      "conditional": true
+    },
+    {
+      "id": "401873013",
+      "date": "2026-10-25T17:00Z",
+      "away": "Cleveland Browns",
+      "home": "Tennessee Titans",
+      "pick": "Cleveland Browns",
+      "reason": "Retained from baseline pending a validated matchup adjustment.",
+      "conditional": false
+    },
+    {
+      "id": "401873014",
+      "date": "2026-10-25T17:00Z",
+      "away": "Indianapolis Colts",
+      "home": "Minnesota Vikings",
+      "pick": "Minnesota Vikings",
+      "reason": "Retained from baseline pending a validated matchup adjustment.",
+      "conditional": false
+    },
+    {
+      "id": "401873015",
+      "date": "2026-10-25T17:00Z",
+      "away": "Miami Dolphins",
+      "home": "New York Jets",
+      "pick": "New York Jets",
+      "reason": "Retained from baseline pending a validated matchup adjustment.",
+      "conditional": false
+    },
+    {
+      "id": "401873016",
+      "date": "2026-10-25T17:00Z",
+      "away": "New York Giants",
+      "home": "Houston Texans",
+      "pick": "Houston Texans",
+      "reason": "Retained from baseline pending a validated matchup adjustment.",
+      "conditional": false
+    },
+    {
+      "id": "401873017",
+      "date": "2026-10-25T17:00Z",
+      "away": "San Francisco 49ers",
+      "home": "Atlanta Falcons",
+      "pick": "San Francisco 49ers",
+      "reason": "Retained from baseline pending a validated matchup adjustment.",
+      "conditional": false
+    },
+    {
+      "id": "401873018",
+      "date": "2026-10-25T17:00Z",
+      "away": "Tampa Bay Buccaneers",
+      "home": "Carolina Panthers",
+      "pick": "Carolina Panthers",
+      "reason": "Retained from baseline pending a validated matchup adjustment.",
+      "conditional": false
+    },
+    {
+      "id": "401873019",
+      "date": "2026-10-25T20:05Z",
+      "away": "Denver Broncos",
+      "home": "Arizona Cardinals",
+      "pick": "Denver Broncos",
+      "reason": "Retained from baseline pending a validated matchup adjustment.",
+      "conditional": false
+    },
+    {
+      "id": "401873020",
+      "date": "2026-10-25T20:25Z",
+      "away": "Green Bay Packers",
+      "home": "Detroit Lions",
+      "pick": "Detroit Lions",
+      "reason": "Detroit retained; monitor Josh Jacobs availability and expected workload.",
+      "conditional": false
+    },
+    {
+      "id": "401873021",
+      "date": "2026-10-25T20:25Z",
+      "away": "Los Angeles Rams",
+      "home": "Las Vegas Raiders",
+      "pick": "Los Angeles Rams",
+      "reason": "Analyst favors Rams passing offense and quarterback matchup despite road setting.",
+      "conditional": false
+    },
+    {
+      "id": "401873022",
+      "date": "2026-10-26T00:20Z",
+      "away": "Kansas City Chiefs",
+      "home": "Seattle Seahawks",
+      "pick": "Kansas City Chiefs",
+      "reason": "Kansas City retained, low confidence against Seattle.",
+      "conditional": false
+    },
+    {
+      "id": "401873009",
+      "date": "2026-10-27T00:15Z",
+      "away": "Dallas Cowboys",
+      "home": "Philadelphia Eagles",
+      "pick": "Dallas Cowboys",
+      "reason": "Retained from baseline pending a validated matchup adjustment.",
+      "conditional": false
+    }
+  ]
+}
