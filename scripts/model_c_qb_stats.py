@@ -24,6 +24,7 @@ def main():
     last_week=min(upcoming) if upcoming else 18
     records={}
     games_count=0
+    last_primary={}
     for week in range(1,last_week+1):
         board=fetch(f"{BASE}/scoreboard?dates={season}&seasontype=2&week={week}")
         for event in board.get("events",[]):
@@ -35,6 +36,7 @@ def main():
             for team_entry in detail.get("boxscore",{}).get("players",[]):
                 team=team_entry.get("team",{}).get("displayName")
                 if not team:continue
+                game_passers=[]
                 for category in team_entry.get("statistics",[]):
                     if category.get("name")!="passing":continue
                     labels=[str(x).lower() for x in category.get("labels",[])]
@@ -57,6 +59,12 @@ def main():
                         item["interceptions"]+=ints
                         item["passAttempts"]+=attempts
                         item["games"]+=1
+                        game_passers.append((attempts,player))
+                if game_passers:
+                    primary=max(game_passers,key=lambda x:x[0])
+                    previous=last_primary.get(team)
+                    if previous is None or when>previous["gameDateParsed"]:
+                        last_primary[team]={"name":primary[1],"attempts":primary[0],"gameId":str(event["id"]),"gameDate":event["date"],"gameDateParsed":when}
     if not records:raise RuntimeError("No usable final-game passing lines; previous data preserved")
     timestamp=now.isoformat()
     for team in records.values():
@@ -64,6 +72,10 @@ def main():
     out={"season":season,"asOf":timestamp,"metric":"adjusted yards per pass attempt (AYA), not ANY/A; sack data unavailable",
          "source":BASE+"/summary","gamesProcessed":games_count,"teams":records}
     (DATA/"model-c-qb-performance.json").write_text(json.dumps(out,indent=2)+"\n")
+    candidates={"season":season,"generatedAt":timestamp,"status":"LAST_GAME_PRIMARY_PASSER_NOT_CONFIRMED_STARTER","source":BASE+"/summary","teams":{}}
+    for team,item in last_primary.items():
+        candidates["teams"][team]={"candidate":item["name"],"attemptsInLastGame":item["attempts"],"lastGameId":item["gameId"],"lastGameDate":item["gameDate"],"source":BASE+"/summary?event="+item["gameId"],"verification":"LAST_COMPLETED_GAME_ONLY","warning":"Most pass attempts last game; not confirmation of next game starter."}
+    (DATA/"model-c-qb-candidates.json").write_text(json.dumps(candidates,indent=2)+"\n")
     print(f"QB passing totals collected for {sum(map(len,records.values()))} players in {games_count} completed games.")
 
 if __name__=="__main__":main()
