@@ -55,6 +55,45 @@ def team_form(history, team):
     recent=sum(diffs[-3:])/min(3,len(diffs))
     return .7*season+.3*recent
 
+def qb_performance_comparison(team, declaration, stats, now, kickoff):
+    """Compare pregame verified passing stats using ANY/A, without assigning untested points."""
+    out={"status":"INSUFFICIENT_DATA","starter":None,"replacement":None,"differenceANYA":None,
+         "estimatedPoints":None,"note":"No verified starter/replacement performance comparison available."}
+    starter=declaration.get("starter")
+    backup=declaration.get("expectedReplacement")
+    if not starter or not backup or starter==backup or not declaration.get("source"):
+        return out
+    def stamp(value):
+        try:
+            value=dt.datetime.fromisoformat(value.replace("Z","+00:00"))
+            return value if value.tzinfo else None
+        except (ValueError,TypeError,AttributeError):
+            return None
+    declared=stamp(declaration.get("asOf"))
+    if declared is None or declared>now or declared>=kickoff:
+        return out
+    records=stats.get("teams",{}).get(team,{})
+    values=[]
+    for name in (starter,backup):
+        record=records.get(name,{})
+        observed=stamp(record.get("asOf"))
+        fields=("passYards","passTD","interceptions","passAttempts","sacks","sackYards")
+        if not record.get("source") or observed is None or observed>now or observed>=kickoff:
+            return out
+        if any(type(record.get(k)) not in (int,float) or record[k]<0 for k in fields):
+            return out
+        attempts=record["passAttempts"]+record["sacks"]
+        if attempts<=0:return out
+        anya=(record["passYards"]-record["sackYards"]+20*record["passTD"]-45*record["interceptions"])/attempts
+        values.append((round(anya,2),record["passAttempts"],record["source"]))
+    return {"status":"DESCRIPTIVE_ONLY","starter":starter,"replacement":backup,
+        "starterANYA":values[0][0],"replacementANYA":values[1][0],
+        "differenceANYA":round(values[0][0]-values[1][0],2),
+        "sampleAttempts":{"starter":values[0][1],"replacement":values[1][1]},
+        "sources":{"declaration":declaration["source"],"starter":values[0][2],"replacement":values[1][2]},
+        "estimatedPoints":None,
+        "note":"Passing-only adjusted net yards/attempt; no opponent adjustment, rushing or calibrated points. Review required."}
+
 def main():
     now=dt.datetime.now(ET)
     schedule=load("nfl-schedule.json")
@@ -70,6 +109,8 @@ def main():
     injury_teams={t.get("team"):t for t in injury_snapshot.get("teams",[])}
     try: qb_declarations=load("model-c-qb-starters.json").get("teams",{})
     except FileNotFoundError: qb_declarations={}
+    try: qb_stats=load("model-c-qb-performance.json")
+    except FileNotFoundError: qb_stats={}
     games=[]
     for g in selected["games"]:
         kickoff=dt.datetime.fromisoformat(g["date"].replace("Z","+00:00"))
@@ -110,7 +151,8 @@ def main():
               "injuryStatus":matched.get("status") if matched else "NOT REPORTED",
               "availability":"REVIEW REQUIRED" if matched else "UNKNOWN",
               "reportedQuarterbacks":qbs}
-        games.append({"quarterbacks":quarterbacks,"injuryReports":injury_reports,"injurySource":injury_snapshot.get("source"),
+        qb_comparisons={side:qb_performance_comparison(g[side],qb_declarations.get(g[side],{}),qb_stats,now.astimezone(dt.timezone.utc),kickoff) for side in ("away","home")}
+        games.append({"qbPerformanceComparisons":qb_comparisons,"quarterbacks":quarterbacks,"injuryReports":injury_reports,"injurySource":injury_snapshot.get("source"),
           "injuryRetrievedAt":injury_snapshot.get("retrievedAt"),"id":g["id"],"date":g["date"],"away":g["away"],"home":g["home"],"pick":pick,
           "homeEdgePoints":margin,"baseHomeEdgePoints":round(base,2),"verifiedAdjustmentHomeEdgePoints":round(delta,2),
           "confidence":"UNVALIDATED","rating":"NO BET","verifiedAdjustments":used,
