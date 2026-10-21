@@ -2,7 +2,7 @@
   "week": "2026 NFL Week 7 \u2014 UNREVIEWED AUTO DRAFT",
   "source": "Unvalidated baseline; not official ForecastEdge picks",
   "reviewRequired": true,
-  "generatedAt": "2026-10-17T00:20:49.748601-04:00",
+  "generatedAt": "2026-10-21T11:20:00.500892-04:00",
   "mondayTiebreaker": 44,
   "games": [
     {
@@ -130,10 +130,10 @@
       "time": "16:25",
       "away": "Green Bay Packers",
       "home": "Detroit Lions",
-      "winner": "Detroit Lions",
+      "winner": "Green Bay Packers",
       "winProbability": 0.5,
-      "scoreAway": 20,
-      "scoreHome": 24,
+      "scoreAway": 24,
+      "scoreHome": 20,
       "rating": "NO BET",
       "notes": "AUTOMATED REVIEW-ONLY BASELINE. Simple season-record comparison plus home-field assumption; no injuries, odds, calibrated probabilities or validated edge. Review before use."
     },
