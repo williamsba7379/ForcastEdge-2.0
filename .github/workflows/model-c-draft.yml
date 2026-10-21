@@ -25,6 +25,10 @@ jobs:
         if: steps.time.outputs.run == 'true'
         continue-on-error: true
         run: python3 scripts/model_c_injuries.py
+      - name: Collect completed-game QB passing statistics
+        if: steps.time.outputs.run == 'true'
+        continue-on-error: true
+        run: python3 scripts/model_c_qb_stats.py
       - name: Generate independent Model C review draft
         if: steps.time.outputs.run == 'true'
         run: python3 scripts/model_c_engine.py
@@ -34,6 +38,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/model-c-automated-draft.json
+          if [ -f data/model-c-qb-performance.json ]; then git add data/model-c-qb-performance.json; fi
           if [ -f data/model-c-injury-snapshot.json ]; then git add data/model-c-injury-snapshot.json; fi
           if ! git diff --cached --quiet; then
             git commit -m "Update Model C review-only draft"
