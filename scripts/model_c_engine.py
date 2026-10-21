@@ -56,8 +56,8 @@ def team_form(history, team):
     return .7*season+.3*recent
 
 def qb_performance_comparison(team, declaration, stats, now, kickoff):
-    """Compare pregame verified passing stats using ANY/A, without assigning untested points."""
-    out={"status":"INSUFFICIENT_DATA","starter":None,"replacement":None,"differenceANYA":None,
+    """Compare sourced final-game passing stats using AYA, without untested points."""
+    out={"status":"INSUFFICIENT_DATA","starter":None,"replacement":None,"differenceAYA":None,
          "estimatedPoints":None,"note":"No verified starter/replacement performance comparison available."}
     starter=declaration.get("starter")
     backup=declaration.get("expectedReplacement")
@@ -77,22 +77,22 @@ def qb_performance_comparison(team, declaration, stats, now, kickoff):
     for name in (starter,backup):
         record=records.get(name,{})
         observed=stamp(record.get("asOf"))
-        fields=("passYards","passTD","interceptions","passAttempts","sacks","sackYards")
+        fields=("passYards","passTD","interceptions","passAttempts")
         if not record.get("source") or observed is None or observed>now or observed>=kickoff:
             return out
         if any(type(record.get(k)) not in (int,float) or record[k]<0 for k in fields):
             return out
-        attempts=record["passAttempts"]+record["sacks"]
+        attempts=record["passAttempts"]
         if attempts<=0:return out
-        anya=(record["passYards"]-record["sackYards"]+20*record["passTD"]-45*record["interceptions"])/attempts
+        anya=(record["passYards"]+20*record["passTD"]-45*record["interceptions"])/attempts
         values.append((round(anya,2),record["passAttempts"],record["source"]))
     return {"status":"DESCRIPTIVE_ONLY","starter":starter,"replacement":backup,
-        "starterANYA":values[0][0],"replacementANYA":values[1][0],
+        "starterAYA":values[0][0],"replacementAYA":values[1][0],
         "differenceANYA":round(values[0][0]-values[1][0],2),
         "sampleAttempts":{"starter":values[0][1],"replacement":values[1][1]},
         "sources":{"declaration":declaration["source"],"starter":values[0][2],"replacement":values[1][2]},
         "estimatedPoints":None,
-        "note":"Passing-only adjusted net yards/attempt; no opponent adjustment, rushing or calibrated points. Review required."}
+        "note":"Adjusted yards/pass attempt (AYA), excludes sacks, rushing, opponent adjustment and calibrated points. Review required."}
 
 def main():
     now=dt.datetime.now(ET)
