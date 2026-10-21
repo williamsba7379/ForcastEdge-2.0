@@ -113,6 +113,8 @@ def main():
     except FileNotFoundError: qb_stats={}
     try: qb_candidates=load("model-c-qb-candidates.json").get("teams",{})
     except FileNotFoundError: qb_candidates={}
+    try: depthchart_candidates=load("model-c-qb-depthcharts.json").get("teams",{})
+    except FileNotFoundError: depthchart_candidates={}
     games=[]
     for g in selected["games"]:
         kickoff=dt.datetime.fromisoformat(g["date"].replace("Z","+00:00"))
@@ -152,7 +154,8 @@ def main():
             qbs=[p for p in injury_reports[side] if p.get("position","").upper()=="QB"]
             matched=next((p for p in qbs if p.get("name","").casefold()==str(starter).casefold()),None) if valid else None
             candidate=qb_candidates.get(team,{})
-            quarterbacks[side]={"recentPrimaryPasser":candidate.get("candidate"),"recentPrimaryPasserGameDate":candidate.get("lastGameDate"),"recentPrimaryPasserSource":candidate.get("source"),"recentPrimaryPasserIsConfirmedStarter":False,"starter":starter if valid else None,
+            depthchart=depthchart_candidates.get(team,{})
+            quarterbacks[side]={"depthChartQB1Candidate":depthchart.get("qb1Candidate"),"depthChartSource":depthchart.get("source"),"depthChartIsConfirmedStarter":False,"recentPrimaryPasser":candidate.get("candidate"),"recentPrimaryPasserGameDate":candidate.get("lastGameDate"),"recentPrimaryPasserSource":candidate.get("source"),"recentPrimaryPasserIsConfirmedStarter":False,"starter":starter if valid else None,
               "starterSource":source if valid else None,"starterAsOf":asof if valid else None,
               "verification":"OFFICIAL_GAME_SPECIFIC" if valid else "UNCONFIRMED",
               "injuryStatus":matched.get("status") if matched else "NOT REPORTED",
