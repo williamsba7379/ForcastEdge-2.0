@@ -1,5 +1,10 @@
 name: Generate Model C review-only draft
 on:
+  push:
+    paths:
+      - '.github/workflows/model-c-draft.yml'
+      - 'scripts/model_c_*.py'
+      - 'tests/test_model_c_*.py'
   schedule:
     - cron: '5 15 * * 3'
     - cron: '5 16 * * 3'
@@ -16,7 +21,7 @@ jobs:
         env:
           EVENT_NAME: ${{ github.event_name }}
         run: |
-          if [ "$EVENT_NAME" = "workflow_dispatch" ] || [ "$(TZ=America/New_York date '+%u %H')" = "3 11" ]; then
+          if [ "$EVENT_NAME" = "workflow_dispatch" ] || [ "$EVENT_NAME" = "push" ] || [ "$(TZ=America/New_York date '+%u %H')" = "3 11" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
           else
             echo "run=false" >> "$GITHUB_OUTPUT"
