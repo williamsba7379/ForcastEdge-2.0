@@ -111,6 +111,8 @@ def main():
     except FileNotFoundError: qb_declarations={}
     try: qb_stats=load("model-c-qb-performance.json")
     except FileNotFoundError: qb_stats={}
+    try: qb_candidates=load("model-c-qb-candidates.json").get("teams",{})
+    except FileNotFoundError: qb_candidates={}
     games=[]
     for g in selected["games"]:
         kickoff=dt.datetime.fromisoformat(g["date"].replace("Z","+00:00"))
@@ -145,7 +147,8 @@ def main():
                     pass
             qbs=[p for p in injury_reports[side] if p.get("position","").upper()=="QB"]
             matched=next((p for p in qbs if p.get("name","").casefold()==str(starter).casefold()),None) if valid else None
-            quarterbacks[side]={"starter":starter if valid else None,
+            candidate=qb_candidates.get(team,{})
+            quarterbacks[side]={"recentPrimaryPasser":candidate.get("candidate"),"recentPrimaryPasserGameDate":candidate.get("lastGameDate"),"recentPrimaryPasserSource":candidate.get("source"),"recentPrimaryPasserIsConfirmedStarter":False,"starter":starter if valid else None,
               "starterSource":source if valid else None,"starterAsOf":asof if valid else None,
               "verification":"SOURCE_DECLARED" if valid else "UNKNOWN",
               "injuryStatus":matched.get("status") if matched else "NOT REPORTED",
