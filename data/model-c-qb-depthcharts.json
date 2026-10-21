@@ -1,0 +1,230 @@
+{
+  "retrievedAt": "2026-10-21T16:15:21.618509+00:00",
+  "status": "DEPTH_CHART_CANDIDATES_ONLY",
+  "teams": {
+    "Arizona Cardinals": {
+      "qb1Candidate": null,
+      "candidateCount": 0,
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/22/depthcharts",
+      "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
+      "note": "QB1 is a depth-chart listing, not a confirmed game starter."
+    },
+    "Atlanta Falcons": {
+      "qb1Candidate": null,
+      "candidateCount": 0,
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/1/depthcharts",
+      "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
+      "note": "QB1 is a depth-chart listing, not a confirmed game starter."
+    },
+    "Baltimore Ravens": {
+      "qb1Candidate": null,
+      "candidateCount": 0,
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/33/depthcharts",
+      "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
+      "note": "QB1 is a depth-chart listing, not a confirmed game starter."
+    },
+    "Buffalo Bills": {
+      "qb1Candidate": null,
+      "candidateCount": 0,
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/2/depthcharts",
+      "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
+      "note": "QB1 is a depth-chart listing, not a confirmed game starter."
+    },
+    "Carolina Panthers": {
+      "qb1Candidate": null,
+      "candidateCount": 0,
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/29/depthcharts",
+      "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
+      "note": "QB1 is a depth-chart listing, not a confirmed game starter."
+    },
+    "Chicago Bears": {
+      "qb1Candidate": null,
+      "candidateCount": 0,
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/3/depthcharts",
+      "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
+      "note": "QB1 is a depth-chart listing, not a confirmed game starter."
+    },
+    "Cincinnati Bengals": {
+      "qb1Candidate": null,
+      "candidateCount": 0,
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/4/depthcharts",
+      "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
+      "note": "QB1 is a depth-chart listing, not a confirmed game starter."
+    },
+    "Cleveland Browns": {
+      "qb1Candidate": null,
+      "candidateCount": 0,
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/5/depthcharts",
+      "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
+      "note": "QB1 is a depth-chart listing, not a confirmed game starter."
+    },
+    "Dallas Cowboys": {
+      "qb1Candidate": null,
+      "candidateCount": 0,
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/6/depthcharts",
+      "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
+      "note": "QB1 is a depth-chart listing, not a confirmed game starter."
+    },
+    "Denver Broncos": {
+      "qb1Candidate": null,
+      "candidateCount": 0,
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/7/depthcharts",
+      "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
+      "note": "QB1 is a depth-chart listing, not a confirmed game starter."
+    },
+    "Detroit Lions": {
+      "qb1Candidate": null,
+      "candidateCount": 0,
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/8/depthcharts",
+      "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
+      "note": "QB1 is a depth-chart listing, not a confirmed game starter."
+    },
+    "Green Bay Packers": {
+      "qb1Candidate": null,
+      "candidateCount": 0,
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/9/depthcharts",
+      "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
+      "note": "QB1 is a depth-chart listing, not a confirmed game starter."
+    },
+    "Houston Texans": {
+      "qb1Candidate": null,
+      "candidateCount": 0,
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/34/depthcharts",
+      "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
+      "note": "QB1 is a depth-chart listing, not a confirmed game starter."
+    },
+    "Indianapolis Colts": {
+      "qb1Candidate": null,
+      "candidateCount": 0,
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/11/depthcharts",
+      "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
+      "note": "QB1 is a depth-chart listing, not a confirmed game starter."
+    },
+    "Jacksonville Jaguars": {
+      "qb1Candidate": null,
+      "candidateCount": 0,
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/30/depthcharts",
+      "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
+      "note": "QB1 is a depth-chart listing, not a confirmed game starter."
+    },
+    "Kansas City Chiefs": {
+      "qb1Candidate": null,
+      "candidateCount": 0,
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/12/depthcharts",
+      "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
+      "note": "QB1 is a depth-chart listing, not a confirmed game starter."
+    },
+    "Las Vegas Raiders": {
+      "qb1Candidate": null,
+      "candidateCount": 0,
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/13/depthcharts",
+      "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
+      "note": "QB1 is a depth-chart listing, not a confirmed game starter."
+    },
+    "Los Angeles Chargers": {
+      "qb1Candidate": null,
+      "candidateCount": 0,
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/24/depthcharts",
+      "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
+      "note": "QB1 is a depth-chart listing, not a confirmed game starter."
+    },
+    "Los Angeles Rams": {
+      "qb1Candidate": null,
+      "candidateCount": 0,
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/14/depthcharts",
+      "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
+      "note": "QB1 is a depth-chart listing, not a confirmed game starter."
+    },
+    "Miami Dolphins": {
+      "qb1Candidate": null,
+      "candidateCount": 0,
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/15/depthcharts",
+      "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
+      "note": "QB1 is a depth-chart listing, not a confirmed game starter."
+    },
+    "Minnesota Vikings": {
+      "qb1Candidate": null,
+      "candidateCount": 0,
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/16/depthcharts",
+      "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
+      "note": "QB1 is a depth-chart listing, not a confirmed game starter."
+    },
+    "New England Patriots": {
+      "qb1Candidate": null,
+      "candidateCount": 0,
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/17/depthcharts",
+      "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
+      "note": "QB1 is a depth-chart listing, not a confirmed game starter."
+    },
+    "New Orleans Saints": {
+      "qb1Candidate": null,
+      "candidateCount": 0,
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/18/depthcharts",
+      "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
+      "note": "QB1 is a depth-chart listing, not a confirmed game starter."
+    },
+    "New York Giants": {
+      "qb1Candidate": null,
+      "candidateCount": 0,
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/19/depthcharts",
+      "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
+      "note": "QB1 is a depth-chart listing, not a confirmed game starter."
+    },
+    "New York Jets": {
+      "qb1Candidate": null,
+      "candidateCount": 0,
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/20/depthcharts",
+      "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
+      "note": "QB1 is a depth-chart listing, not a confirmed game starter."
+    },
+    "Philadelphia Eagles": {
+      "qb1Candidate": null,
+      "candidateCount": 0,
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/21/depthcharts",
+      "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
+      "note": "QB1 is a depth-chart listing, not a confirmed game starter."
+    },
+    "Pittsburgh Steelers": {
+      "qb1Candidate": null,
+      "candidateCount": 0,
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/23/depthcharts",
+      "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
+      "note": "QB1 is a depth-chart listing, not a confirmed game starter."
+    },
+    "San Francisco 49ers": {
+      "qb1Candidate": null,
+      "candidateCount": 0,
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/25/depthcharts",
+      "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
+      "note": "QB1 is a depth-chart listing, not a confirmed game starter."
+    },
+    "Seattle Seahawks": {
+      "qb1Candidate": null,
+      "candidateCount": 0,
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/26/depthcharts",
+      "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
+      "note": "QB1 is a depth-chart listing, not a confirmed game starter."
+    },
+    "Tampa Bay Buccaneers": {
+      "qb1Candidate": null,
+      "candidateCount": 0,
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/27/depthcharts",
+      "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
+      "note": "QB1 is a depth-chart listing, not a confirmed game starter."
+    },
+    "Tennessee Titans": {
+      "qb1Candidate": null,
+      "candidateCount": 0,
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/10/depthcharts",
+      "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
+      "note": "QB1 is a depth-chart listing, not a confirmed game starter."
+    },
+    "Washington Commanders": {
+      "qb1Candidate": null,
+      "candidateCount": 0,
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/28/depthcharts",
+      "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
+      "note": "QB1 is a depth-chart listing, not a confirmed game starter."
+    }
+  }
+}

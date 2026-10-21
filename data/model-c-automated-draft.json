@@ -1,0 +1,1062 @@
+{
+  "title": "Model C \u2014 Automated Review Draft",
+  "season": 2026,
+  "week": 7,
+  "generatedAt": "2026-10-21T12:15:21.723762-04:00",
+  "status": "AUTOMATED_REVIEW_ONLY",
+  "reviewRequired": true,
+  "method": "Point-differential baseline plus optional documented quarterback/injury adjustments; no unverified automatic injury claims.",
+  "disclaimer": "Not the frozen Week 7 analyst pilot; not official pool picks; not betting recommendations. No calibrated win probabilities.",
+  "games": [
+    {
+      "qbPerformanceComparisons": {
+        "away": {
+          "status": "INSUFFICIENT_DATA",
+          "starter": null,
+          "replacement": null,
+          "differenceAYA": null,
+          "estimatedPoints": null,
+          "note": "No verified starter/replacement performance comparison available."
+        },
+        "home": {
+          "status": "INSUFFICIENT_DATA",
+          "starter": null,
+          "replacement": null,
+          "differenceAYA": null,
+          "estimatedPoints": null,
+          "note": "No verified starter/replacement performance comparison available."
+        }
+      },
+      "quarterbacks": {
+        "away": {
+          "depthChartQB1Candidate": null,
+          "depthChartSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/17/depthcharts",
+          "depthChartIsConfirmedStarter": false,
+          "recentPrimaryPasser": "Drake Maye",
+          "recentPrimaryPasserGameDate": "2026-10-18T17:00Z",
+          "recentPrimaryPasserSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873001",
+          "recentPrimaryPasserIsConfirmedStarter": false,
+          "starter": null,
+          "starterSource": null,
+          "starterAsOf": null,
+          "verification": "UNCONFIRMED",
+          "injuryStatus": "NOT REPORTED",
+          "availability": "UNKNOWN",
+          "reportedQuarterbacks": []
+        },
+        "home": {
+          "depthChartQB1Candidate": null,
+          "depthChartSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/3/depthcharts",
+          "depthChartIsConfirmedStarter": false,
+          "recentPrimaryPasser": "Caleb Williams",
+          "recentPrimaryPasserGameDate": "2026-10-18T17:00Z",
+          "recentPrimaryPasserSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872999",
+          "recentPrimaryPasserIsConfirmedStarter": false,
+          "starter": null,
+          "starterSource": null,
+          "starterAsOf": null,
+          "verification": "UNCONFIRMED",
+          "injuryStatus": "NOT REPORTED",
+          "availability": "UNKNOWN",
+          "reportedQuarterbacks": []
+        }
+      },
+      "injuryReports": {
+        "away": [],
+        "home": []
+      },
+      "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "injuryRetrievedAt": "2026-10-21T16:15:05.597443+00:00",
+      "id": "401873010",
+      "date": "2026-10-23T00:15Z",
+      "away": "New England Patriots",
+      "home": "Chicago Bears",
+      "pick": "Chicago Bears",
+      "homeEdgePoints": 2.98,
+      "baseHomeEdgePoints": 2.98,
+      "verifiedAdjustmentHomeEdgePoints": 0.0,
+      "confidence": "UNVALIDATED",
+      "rating": "NO BET",
+      "verifiedAdjustments": [],
+      "dataWarnings": [
+        "No verified quarterback/injury adjustment; NOT an injury-aware pick"
+      ],
+      "reason": "70% season + 30% last-three scoring differential, +1.5 home points; explicit verified adjustments only. Not calibrated."
+    },
+    {
+      "qbPerformanceComparisons": {
+        "away": {
+          "status": "INSUFFICIENT_DATA",
+          "starter": null,
+          "replacement": null,
+          "differenceAYA": null,
+          "estimatedPoints": null,
+          "note": "No verified starter/replacement performance comparison available."
+        },
+        "home": {
+          "status": "INSUFFICIENT_DATA",
+          "starter": null,
+          "replacement": null,
+          "differenceAYA": null,
+          "estimatedPoints": null,
+          "note": "No verified starter/replacement performance comparison available."
+        }
+      },
+      "quarterbacks": {
+        "away": {
+          "depthChartQB1Candidate": null,
+          "depthChartSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/23/depthcharts",
+          "depthChartIsConfirmedStarter": false,
+          "recentPrimaryPasser": "Aaron Rodgers",
+          "recentPrimaryPasserGameDate": "2026-10-18T17:00Z",
+          "recentPrimaryPasserSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873002",
+          "recentPrimaryPasserIsConfirmedStarter": false,
+          "starter": null,
+          "starterSource": null,
+          "starterAsOf": null,
+          "verification": "UNCONFIRMED",
+          "injuryStatus": "NOT REPORTED",
+          "availability": "UNKNOWN",
+          "reportedQuarterbacks": []
+        },
+        "home": {
+          "depthChartQB1Candidate": null,
+          "depthChartSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/18/depthcharts",
+          "depthChartIsConfirmedStarter": false,
+          "recentPrimaryPasser": "Tyler Shough",
+          "recentPrimaryPasserGameDate": "2026-10-18T17:00Z",
+          "recentPrimaryPasserSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873000",
+          "recentPrimaryPasserIsConfirmedStarter": false,
+          "starter": null,
+          "starterSource": null,
+          "starterAsOf": null,
+          "verification": "UNCONFIRMED",
+          "injuryStatus": "NOT REPORTED",
+          "availability": "UNKNOWN",
+          "reportedQuarterbacks": []
+        }
+      },
+      "injuryReports": {
+        "away": [],
+        "home": []
+      },
+      "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "injuryRetrievedAt": "2026-10-21T16:15:05.597443+00:00",
+      "id": "401873011",
+      "date": "2026-10-25T13:30Z",
+      "away": "Pittsburgh Steelers",
+      "home": "New Orleans Saints",
+      "pick": "Pittsburgh Steelers",
+      "homeEdgePoints": -8.5,
+      "baseHomeEdgePoints": -8.5,
+      "verifiedAdjustmentHomeEdgePoints": 0.0,
+      "confidence": "UNVALIDATED",
+      "rating": "NO BET",
+      "verifiedAdjustments": [],
+      "dataWarnings": [
+        "No verified quarterback/injury adjustment; NOT an injury-aware pick"
+      ],
+      "reason": "70% season + 30% last-three scoring differential, +1.5 home points; explicit verified adjustments only. Not calibrated."
+    },
+    {
+      "qbPerformanceComparisons": {
+        "away": {
+          "status": "INSUFFICIENT_DATA",
+          "starter": null,
+          "replacement": null,
+          "differenceAYA": null,
+          "estimatedPoints": null,
+          "note": "No verified starter/replacement performance comparison available."
+        },
+        "home": {
+          "status": "INSUFFICIENT_DATA",
+          "starter": null,
+          "replacement": null,
+          "differenceAYA": null,
+          "estimatedPoints": null,
+          "note": "No verified starter/replacement performance comparison available."
+        }
+      },
+      "quarterbacks": {
+        "away": {
+          "depthChartQB1Candidate": null,
+          "depthChartSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/25/depthcharts",
+          "depthChartIsConfirmedStarter": false,
+          "recentPrimaryPasser": "Brock Purdy",
+          "recentPrimaryPasserGameDate": "2026-10-20T00:15Z",
+          "recentPrimaryPasserSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873008",
+          "recentPrimaryPasserIsConfirmedStarter": false,
+          "starter": null,
+          "starterSource": null,
+          "starterAsOf": null,
+          "verification": "UNCONFIRMED",
+          "injuryStatus": "NOT REPORTED",
+          "availability": "UNKNOWN",
+          "reportedQuarterbacks": []
+        },
+        "home": {
+          "depthChartQB1Candidate": null,
+          "depthChartSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/1/depthcharts",
+          "depthChartIsConfirmedStarter": false,
+          "recentPrimaryPasser": "Michael Penix Jr.",
+          "recentPrimaryPasserGameDate": "2026-10-18T17:00Z",
+          "recentPrimaryPasserSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872999",
+          "recentPrimaryPasserIsConfirmedStarter": false,
+          "starter": null,
+          "starterSource": null,
+          "starterAsOf": null,
+          "verification": "UNCONFIRMED",
+          "injuryStatus": "NOT REPORTED",
+          "availability": "UNKNOWN",
+          "reportedQuarterbacks": []
+        }
+      },
+      "injuryReports": {
+        "away": [],
+        "home": []
+      },
+      "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "injuryRetrievedAt": "2026-10-21T16:15:05.597443+00:00",
+      "id": "401873017",
+      "date": "2026-10-25T17:00Z",
+      "away": "San Francisco 49ers",
+      "home": "Atlanta Falcons",
+      "pick": "San Francisco 49ers",
+      "homeEdgePoints": -5.86,
+      "baseHomeEdgePoints": -5.86,
+      "verifiedAdjustmentHomeEdgePoints": 0.0,
+      "confidence": "UNVALIDATED",
+      "rating": "NO BET",
+      "verifiedAdjustments": [],
+      "dataWarnings": [
+        "No verified quarterback/injury adjustment; NOT an injury-aware pick"
+      ],
+      "reason": "70% season + 30% last-three scoring differential, +1.5 home points; explicit verified adjustments only. Not calibrated."
+    },
+    {
+      "qbPerformanceComparisons": {
+        "away": {
+          "status": "INSUFFICIENT_DATA",
+          "starter": null,
+          "replacement": null,
+          "differenceAYA": null,
+          "estimatedPoints": null,
+          "note": "No verified starter/replacement performance comparison available."
+        },
+        "home": {
+          "status": "INSUFFICIENT_DATA",
+          "starter": null,
+          "replacement": null,
+          "differenceAYA": null,
+          "estimatedPoints": null,
+          "note": "No verified starter/replacement performance comparison available."
+        }
+      },
+      "quarterbacks": {
+        "away": {
+          "depthChartQB1Candidate": null,
+          "depthChartSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/5/depthcharts",
+          "depthChartIsConfirmedStarter": false,
+          "recentPrimaryPasser": "Deshaun Watson",
+          "recentPrimaryPasserGameDate": "2026-10-18T17:00Z",
+          "recentPrimaryPasserSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872997",
+          "recentPrimaryPasserIsConfirmedStarter": false,
+          "starter": null,
+          "starterSource": null,
+          "starterAsOf": null,
+          "verification": "UNCONFIRMED",
+          "injuryStatus": "NOT REPORTED",
+          "availability": "UNKNOWN",
+          "reportedQuarterbacks": []
+        },
+        "home": {
+          "depthChartQB1Candidate": null,
+          "depthChartSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/10/depthcharts",
+          "depthChartIsConfirmedStarter": false,
+          "recentPrimaryPasser": "Cam Ward",
+          "recentPrimaryPasserGameDate": "2026-10-18T17:00Z",
+          "recentPrimaryPasserSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873003",
+          "recentPrimaryPasserIsConfirmedStarter": false,
+          "starter": null,
+          "starterSource": null,
+          "starterAsOf": null,
+          "verification": "UNCONFIRMED",
+          "injuryStatus": "NOT REPORTED",
+          "availability": "UNKNOWN",
+          "reportedQuarterbacks": []
+        }
+      },
+      "injuryReports": {
+        "away": [],
+        "home": []
+      },
+      "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "injuryRetrievedAt": "2026-10-21T16:15:05.597443+00:00",
+      "id": "401873013",
+      "date": "2026-10-25T17:00Z",
+      "away": "Cleveland Browns",
+      "home": "Tennessee Titans",
+      "pick": "Cleveland Browns",
+      "homeEdgePoints": -6.48,
+      "baseHomeEdgePoints": -6.48,
+      "verifiedAdjustmentHomeEdgePoints": 0.0,
+      "confidence": "UNVALIDATED",
+      "rating": "NO BET",
+      "verifiedAdjustments": [],
+      "dataWarnings": [
+        "No verified quarterback/injury adjustment; NOT an injury-aware pick"
+      ],
+      "reason": "70% season + 30% last-three scoring differential, +1.5 home points; explicit verified adjustments only. Not calibrated."
+    },
+    {
+      "qbPerformanceComparisons": {
+        "away": {
+          "status": "INSUFFICIENT_DATA",
+          "starter": null,
+          "replacement": null,
+          "differenceAYA": null,
+          "estimatedPoints": null,
+          "note": "No verified starter/replacement performance comparison available."
+        },
+        "home": {
+          "status": "INSUFFICIENT_DATA",
+          "starter": null,
+          "replacement": null,
+          "differenceAYA": null,
+          "estimatedPoints": null,
+          "note": "No verified starter/replacement performance comparison available."
+        }
+      },
+      "quarterbacks": {
+        "away": {
+          "depthChartQB1Candidate": null,
+          "depthChartSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/11/depthcharts",
+          "depthChartIsConfirmedStarter": false,
+          "recentPrimaryPasser": "Daniel Jones",
+          "recentPrimaryPasserGameDate": "2026-10-18T17:00Z",
+          "recentPrimaryPasserSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873003",
+          "recentPrimaryPasserIsConfirmedStarter": false,
+          "starter": null,
+          "starterSource": null,
+          "starterAsOf": null,
+          "verification": "UNCONFIRMED",
+          "injuryStatus": "NOT REPORTED",
+          "availability": "UNKNOWN",
+          "reportedQuarterbacks": []
+        },
+        "home": {
+          "depthChartQB1Candidate": null,
+          "depthChartSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/16/depthcharts",
+          "depthChartIsConfirmedStarter": false,
+          "recentPrimaryPasser": "Kyler Murray",
+          "recentPrimaryPasserGameDate": "2026-10-11T17:00Z",
+          "recentPrimaryPasserSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872987",
+          "recentPrimaryPasserIsConfirmedStarter": false,
+          "starter": null,
+          "starterSource": null,
+          "starterAsOf": null,
+          "verification": "UNCONFIRMED",
+          "injuryStatus": "NOT REPORTED",
+          "availability": "UNKNOWN",
+          "reportedQuarterbacks": []
+        }
+      },
+      "injuryReports": {
+        "away": [],
+        "home": []
+      },
+      "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "injuryRetrievedAt": "2026-10-21T16:15:05.597443+00:00",
+      "id": "401873014",
+      "date": "2026-10-25T17:00Z",
+      "away": "Indianapolis Colts",
+      "home": "Minnesota Vikings",
+      "pick": "Minnesota Vikings",
+      "homeEdgePoints": 11.26,
+      "baseHomeEdgePoints": 11.26,
+      "verifiedAdjustmentHomeEdgePoints": 0.0,
+      "confidence": "UNVALIDATED",
+      "rating": "NO BET",
+      "verifiedAdjustments": [],
+      "dataWarnings": [
+        "No verified quarterback/injury adjustment; NOT an injury-aware pick"
+      ],
+      "reason": "70% season + 30% last-three scoring differential, +1.5 home points; explicit verified adjustments only. Not calibrated."
+    },
+    {
+      "qbPerformanceComparisons": {
+        "away": {
+          "status": "INSUFFICIENT_DATA",
+          "starter": null,
+          "replacement": null,
+          "differenceAYA": null,
+          "estimatedPoints": null,
+          "note": "No verified starter/replacement performance comparison available."
+        },
+        "home": {
+          "status": "INSUFFICIENT_DATA",
+          "starter": null,
+          "replacement": null,
+          "differenceAYA": null,
+          "estimatedPoints": null,
+          "note": "No verified starter/replacement performance comparison available."
+        }
+      },
+      "quarterbacks": {
+        "away": {
+          "depthChartQB1Candidate": null,
+          "depthChartSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/15/depthcharts",
+          "depthChartIsConfirmedStarter": false,
+          "recentPrimaryPasser": "Malik Willis",
+          "recentPrimaryPasserGameDate": "2026-10-11T17:00Z",
+          "recentPrimaryPasserSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872982",
+          "recentPrimaryPasserIsConfirmedStarter": false,
+          "starter": null,
+          "starterSource": null,
+          "starterAsOf": null,
+          "verification": "UNCONFIRMED",
+          "injuryStatus": "NOT REPORTED",
+          "availability": "UNKNOWN",
+          "reportedQuarterbacks": []
+        },
+        "home": {
+          "depthChartQB1Candidate": null,
+          "depthChartSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/20/depthcharts",
+          "depthChartIsConfirmedStarter": false,
+          "recentPrimaryPasser": "Geno Smith",
+          "recentPrimaryPasserGameDate": "2026-10-18T17:00Z",
+          "recentPrimaryPasserSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873001",
+          "recentPrimaryPasserIsConfirmedStarter": false,
+          "starter": null,
+          "starterSource": null,
+          "starterAsOf": null,
+          "verification": "UNCONFIRMED",
+          "injuryStatus": "NOT REPORTED",
+          "availability": "UNKNOWN",
+          "reportedQuarterbacks": []
+        }
+      },
+      "injuryReports": {
+        "away": [],
+        "home": []
+      },
+      "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "injuryRetrievedAt": "2026-10-21T16:15:05.597443+00:00",
+      "id": "401873015",
+      "date": "2026-10-25T17:00Z",
+      "away": "Miami Dolphins",
+      "home": "New York Jets",
+      "pick": "New York Jets",
+      "homeEdgePoints": 11.06,
+      "baseHomeEdgePoints": 11.06,
+      "verifiedAdjustmentHomeEdgePoints": 0.0,
+      "confidence": "UNVALIDATED",
+      "rating": "NO BET",
+      "verifiedAdjustments": [],
+      "dataWarnings": [
+        "No verified quarterback/injury adjustment; NOT an injury-aware pick"
+      ],
+      "reason": "70% season + 30% last-three scoring differential, +1.5 home points; explicit verified adjustments only. Not calibrated."
+    },
+    {
+      "qbPerformanceComparisons": {
+        "away": {
+          "status": "INSUFFICIENT_DATA",
+          "starter": null,
+          "replacement": null,
+          "differenceAYA": null,
+          "estimatedPoints": null,
+          "note": "No verified starter/replacement performance comparison available."
+        },
+        "home": {
+          "status": "INSUFFICIENT_DATA",
+          "starter": null,
+          "replacement": null,
+          "differenceAYA": null,
+          "estimatedPoints": null,
+          "note": "No verified starter/replacement performance comparison available."
+        }
+      },
+      "quarterbacks": {
+        "away": {
+          "depthChartQB1Candidate": null,
+          "depthChartSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/27/depthcharts",
+          "depthChartIsConfirmedStarter": false,
+          "recentPrimaryPasser": "Jalon Daniels",
+          "recentPrimaryPasserGameDate": "2026-10-18T17:00Z",
+          "recentPrimaryPasserSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873002",
+          "recentPrimaryPasserIsConfirmedStarter": false,
+          "starter": null,
+          "starterSource": null,
+          "starterAsOf": null,
+          "verification": "UNCONFIRMED",
+          "injuryStatus": "NOT REPORTED",
+          "availability": "UNKNOWN",
+          "reportedQuarterbacks": []
+        },
+        "home": {
+          "depthChartQB1Candidate": null,
+          "depthChartSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/29/depthcharts",
+          "depthChartIsConfirmedStarter": false,
+          "recentPrimaryPasser": "Bryce Young",
+          "recentPrimaryPasserGameDate": "2026-10-18T17:00Z",
+          "recentPrimaryPasserSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872998",
+          "recentPrimaryPasserIsConfirmedStarter": false,
+          "starter": null,
+          "starterSource": null,
+          "starterAsOf": null,
+          "verification": "UNCONFIRMED",
+          "injuryStatus": "NOT REPORTED",
+          "availability": "UNKNOWN",
+          "reportedQuarterbacks": []
+        }
+      },
+      "injuryReports": {
+        "away": [],
+        "home": []
+      },
+      "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "injuryRetrievedAt": "2026-10-21T16:15:05.597443+00:00",
+      "id": "401873018",
+      "date": "2026-10-25T17:00Z",
+      "away": "Tampa Bay Buccaneers",
+      "home": "Carolina Panthers",
+      "pick": "Carolina Panthers",
+      "homeEdgePoints": 8.88,
+      "baseHomeEdgePoints": 8.88,
+      "verifiedAdjustmentHomeEdgePoints": 0.0,
+      "confidence": "UNVALIDATED",
+      "rating": "NO BET",
+      "verifiedAdjustments": [],
+      "dataWarnings": [
+        "No verified quarterback/injury adjustment; NOT an injury-aware pick"
+      ],
+      "reason": "70% season + 30% last-three scoring differential, +1.5 home points; explicit verified adjustments only. Not calibrated."
+    },
+    {
+      "qbPerformanceComparisons": {
+        "away": {
+          "status": "INSUFFICIENT_DATA",
+          "starter": null,
+          "replacement": null,
+          "differenceAYA": null,
+          "estimatedPoints": null,
+          "note": "No verified starter/replacement performance comparison available."
+        },
+        "home": {
+          "status": "INSUFFICIENT_DATA",
+          "starter": null,
+          "replacement": null,
+          "differenceAYA": null,
+          "estimatedPoints": null,
+          "note": "No verified starter/replacement performance comparison available."
+        }
+      },
+      "quarterbacks": {
+        "away": {
+          "depthChartQB1Candidate": null,
+          "depthChartSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/4/depthcharts",
+          "depthChartIsConfirmedStarter": false,
+          "recentPrimaryPasser": "Joe Burrow",
+          "recentPrimaryPasserGameDate": "2026-10-11T17:00Z",
+          "recentPrimaryPasserSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872982",
+          "recentPrimaryPasserIsConfirmedStarter": false,
+          "starter": null,
+          "starterSource": null,
+          "starterAsOf": null,
+          "verification": "UNCONFIRMED",
+          "injuryStatus": "NOT REPORTED",
+          "availability": "UNKNOWN",
+          "reportedQuarterbacks": []
+        },
+        "home": {
+          "depthChartQB1Candidate": null,
+          "depthChartSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/33/depthcharts",
+          "depthChartIsConfirmedStarter": false,
+          "recentPrimaryPasser": "Tyler Huntley",
+          "recentPrimaryPasserGameDate": "2026-10-18T17:00Z",
+          "recentPrimaryPasserSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872997",
+          "recentPrimaryPasserIsConfirmedStarter": false,
+          "starter": null,
+          "starterSource": null,
+          "starterAsOf": null,
+          "verification": "UNCONFIRMED",
+          "injuryStatus": "NOT REPORTED",
+          "availability": "UNKNOWN",
+          "reportedQuarterbacks": []
+        }
+      },
+      "injuryReports": {
+        "away": [],
+        "home": []
+      },
+      "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "injuryRetrievedAt": "2026-10-21T16:15:05.597443+00:00",
+      "id": "401873012",
+      "date": "2026-10-25T17:00Z",
+      "away": "Cincinnati Bengals",
+      "home": "Baltimore Ravens",
+      "pick": "Baltimore Ravens",
+      "homeEdgePoints": 4.32,
+      "baseHomeEdgePoints": 4.32,
+      "verifiedAdjustmentHomeEdgePoints": 0.0,
+      "confidence": "UNVALIDATED",
+      "rating": "NO BET",
+      "verifiedAdjustments": [],
+      "dataWarnings": [
+        "No verified quarterback/injury adjustment; NOT an injury-aware pick"
+      ],
+      "reason": "70% season + 30% last-three scoring differential, +1.5 home points; explicit verified adjustments only. Not calibrated."
+    },
+    {
+      "qbPerformanceComparisons": {
+        "away": {
+          "status": "INSUFFICIENT_DATA",
+          "starter": null,
+          "replacement": null,
+          "differenceAYA": null,
+          "estimatedPoints": null,
+          "note": "No verified starter/replacement performance comparison available."
+        },
+        "home": {
+          "status": "INSUFFICIENT_DATA",
+          "starter": null,
+          "replacement": null,
+          "differenceAYA": null,
+          "estimatedPoints": null,
+          "note": "No verified starter/replacement performance comparison available."
+        }
+      },
+      "quarterbacks": {
+        "away": {
+          "depthChartQB1Candidate": null,
+          "depthChartSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/19/depthcharts",
+          "depthChartIsConfirmedStarter": false,
+          "recentPrimaryPasser": "Jameis Winston",
+          "recentPrimaryPasserGameDate": "2026-10-18T17:00Z",
+          "recentPrimaryPasserSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873000",
+          "recentPrimaryPasserIsConfirmedStarter": false,
+          "starter": null,
+          "starterSource": null,
+          "starterAsOf": null,
+          "verification": "UNCONFIRMED",
+          "injuryStatus": "NOT REPORTED",
+          "availability": "UNKNOWN",
+          "reportedQuarterbacks": []
+        },
+        "home": {
+          "depthChartQB1Candidate": null,
+          "depthChartSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/34/depthcharts",
+          "depthChartIsConfirmedStarter": false,
+          "recentPrimaryPasser": "C.J. Stroud",
+          "recentPrimaryPasserGameDate": "2026-10-18T13:30Z",
+          "recentPrimaryPasserSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872996",
+          "recentPrimaryPasserIsConfirmedStarter": false,
+          "starter": null,
+          "starterSource": null,
+          "starterAsOf": null,
+          "verification": "UNCONFIRMED",
+          "injuryStatus": "NOT REPORTED",
+          "availability": "UNKNOWN",
+          "reportedQuarterbacks": []
+        }
+      },
+      "injuryReports": {
+        "away": [],
+        "home": []
+      },
+      "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "injuryRetrievedAt": "2026-10-21T16:15:05.597443+00:00",
+      "id": "401873016",
+      "date": "2026-10-25T17:00Z",
+      "away": "New York Giants",
+      "home": "Houston Texans",
+      "pick": "Houston Texans",
+      "homeEdgePoints": 0.8,
+      "baseHomeEdgePoints": 0.8,
+      "verifiedAdjustmentHomeEdgePoints": 0.0,
+      "confidence": "UNVALIDATED",
+      "rating": "NO BET",
+      "verifiedAdjustments": [],
+      "dataWarnings": [
+        "No verified quarterback/injury adjustment; NOT an injury-aware pick"
+      ],
+      "reason": "70% season + 30% last-three scoring differential, +1.5 home points; explicit verified adjustments only. Not calibrated."
+    },
+    {
+      "qbPerformanceComparisons": {
+        "away": {
+          "status": "INSUFFICIENT_DATA",
+          "starter": null,
+          "replacement": null,
+          "differenceAYA": null,
+          "estimatedPoints": null,
+          "note": "No verified starter/replacement performance comparison available."
+        },
+        "home": {
+          "status": "INSUFFICIENT_DATA",
+          "starter": null,
+          "replacement": null,
+          "differenceAYA": null,
+          "estimatedPoints": null,
+          "note": "No verified starter/replacement performance comparison available."
+        }
+      },
+      "quarterbacks": {
+        "away": {
+          "depthChartQB1Candidate": null,
+          "depthChartSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/7/depthcharts",
+          "depthChartIsConfirmedStarter": false,
+          "recentPrimaryPasser": "Bo Nix",
+          "recentPrimaryPasserGameDate": "2026-10-16T00:15Z",
+          "recentPrimaryPasserSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872995",
+          "recentPrimaryPasserIsConfirmedStarter": false,
+          "starter": null,
+          "starterSource": null,
+          "starterAsOf": null,
+          "verification": "UNCONFIRMED",
+          "injuryStatus": "NOT REPORTED",
+          "availability": "UNKNOWN",
+          "reportedQuarterbacks": []
+        },
+        "home": {
+          "depthChartQB1Candidate": null,
+          "depthChartSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/22/depthcharts",
+          "depthChartIsConfirmedStarter": false,
+          "recentPrimaryPasser": "Jacoby Brissett",
+          "recentPrimaryPasserGameDate": "2026-10-18T20:05Z",
+          "recentPrimaryPasserSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873004",
+          "recentPrimaryPasserIsConfirmedStarter": false,
+          "starter": null,
+          "starterSource": null,
+          "starterAsOf": null,
+          "verification": "UNCONFIRMED",
+          "injuryStatus": "NOT REPORTED",
+          "availability": "UNKNOWN",
+          "reportedQuarterbacks": []
+        }
+      },
+      "injuryReports": {
+        "away": [],
+        "home": []
+      },
+      "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "injuryRetrievedAt": "2026-10-21T16:15:05.597443+00:00",
+      "id": "401873019",
+      "date": "2026-10-25T20:05Z",
+      "away": "Denver Broncos",
+      "home": "Arizona Cardinals",
+      "pick": "Denver Broncos",
+      "homeEdgePoints": -8.88,
+      "baseHomeEdgePoints": -8.88,
+      "verifiedAdjustmentHomeEdgePoints": 0.0,
+      "confidence": "UNVALIDATED",
+      "rating": "NO BET",
+      "verifiedAdjustments": [],
+      "dataWarnings": [
+        "No verified quarterback/injury adjustment; NOT an injury-aware pick"
+      ],
+      "reason": "70% season + 30% last-three scoring differential, +1.5 home points; explicit verified adjustments only. Not calibrated."
+    },
+    {
+      "qbPerformanceComparisons": {
+        "away": {
+          "status": "INSUFFICIENT_DATA",
+          "starter": null,
+          "replacement": null,
+          "differenceAYA": null,
+          "estimatedPoints": null,
+          "note": "No verified starter/replacement performance comparison available."
+        },
+        "home": {
+          "status": "INSUFFICIENT_DATA",
+          "starter": null,
+          "replacement": null,
+          "differenceAYA": null,
+          "estimatedPoints": null,
+          "note": "No verified starter/replacement performance comparison available."
+        }
+      },
+      "quarterbacks": {
+        "away": {
+          "depthChartQB1Candidate": null,
+          "depthChartSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/9/depthcharts",
+          "depthChartIsConfirmedStarter": false,
+          "recentPrimaryPasser": "Jordan Love",
+          "recentPrimaryPasserGameDate": "2026-10-19T00:20Z",
+          "recentPrimaryPasserSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873007",
+          "recentPrimaryPasserIsConfirmedStarter": false,
+          "starter": null,
+          "starterSource": null,
+          "starterAsOf": null,
+          "verification": "UNCONFIRMED",
+          "injuryStatus": "NOT REPORTED",
+          "availability": "UNKNOWN",
+          "reportedQuarterbacks": []
+        },
+        "home": {
+          "depthChartQB1Candidate": null,
+          "depthChartSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/8/depthcharts",
+          "depthChartIsConfirmedStarter": false,
+          "recentPrimaryPasser": "Jared Goff",
+          "recentPrimaryPasserGameDate": "2026-10-11T20:25Z",
+          "recentPrimaryPasserSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872991",
+          "recentPrimaryPasserIsConfirmedStarter": false,
+          "starter": null,
+          "starterSource": null,
+          "starterAsOf": null,
+          "verification": "UNCONFIRMED",
+          "injuryStatus": "NOT REPORTED",
+          "availability": "UNKNOWN",
+          "reportedQuarterbacks": []
+        }
+      },
+      "injuryReports": {
+        "away": [],
+        "home": []
+      },
+      "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "injuryRetrievedAt": "2026-10-21T16:15:05.597443+00:00",
+      "id": "401873020",
+      "date": "2026-10-25T20:25Z",
+      "away": "Green Bay Packers",
+      "home": "Detroit Lions",
+      "pick": "Detroit Lions",
+      "homeEdgePoints": 6.76,
+      "baseHomeEdgePoints": 6.76,
+      "verifiedAdjustmentHomeEdgePoints": 0.0,
+      "confidence": "UNVALIDATED",
+      "rating": "NO BET",
+      "verifiedAdjustments": [],
+      "dataWarnings": [
+        "No verified quarterback/injury adjustment; NOT an injury-aware pick"
+      ],
+      "reason": "70% season + 30% last-three scoring differential, +1.5 home points; explicit verified adjustments only. Not calibrated."
+    },
+    {
+      "qbPerformanceComparisons": {
+        "away": {
+          "status": "INSUFFICIENT_DATA",
+          "starter": null,
+          "replacement": null,
+          "differenceAYA": null,
+          "estimatedPoints": null,
+          "note": "No verified starter/replacement performance comparison available."
+        },
+        "home": {
+          "status": "INSUFFICIENT_DATA",
+          "starter": null,
+          "replacement": null,
+          "differenceAYA": null,
+          "estimatedPoints": null,
+          "note": "No verified starter/replacement performance comparison available."
+        }
+      },
+      "quarterbacks": {
+        "away": {
+          "depthChartQB1Candidate": null,
+          "depthChartSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/14/depthcharts",
+          "depthChartIsConfirmedStarter": false,
+          "recentPrimaryPasser": "Matthew Stafford",
+          "recentPrimaryPasserGameDate": "2026-10-18T20:05Z",
+          "recentPrimaryPasserSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873004",
+          "recentPrimaryPasserIsConfirmedStarter": false,
+          "starter": null,
+          "starterSource": null,
+          "starterAsOf": null,
+          "verification": "UNCONFIRMED",
+          "injuryStatus": "NOT REPORTED",
+          "availability": "UNKNOWN",
+          "reportedQuarterbacks": []
+        },
+        "home": {
+          "depthChartQB1Candidate": null,
+          "depthChartSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/13/depthcharts",
+          "depthChartIsConfirmedStarter": false,
+          "recentPrimaryPasser": "Kirk Cousins",
+          "recentPrimaryPasserGameDate": "2026-10-18T20:25Z",
+          "recentPrimaryPasserSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873005",
+          "recentPrimaryPasserIsConfirmedStarter": false,
+          "starter": null,
+          "starterSource": null,
+          "starterAsOf": null,
+          "verification": "UNCONFIRMED",
+          "injuryStatus": "NOT REPORTED",
+          "availability": "UNKNOWN",
+          "reportedQuarterbacks": []
+        }
+      },
+      "injuryReports": {
+        "away": [],
+        "home": []
+      },
+      "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "injuryRetrievedAt": "2026-10-21T16:15:05.597443+00:00",
+      "id": "401873021",
+      "date": "2026-10-25T20:25Z",
+      "away": "Los Angeles Rams",
+      "home": "Las Vegas Raiders",
+      "pick": "Las Vegas Raiders",
+      "homeEdgePoints": 0.06,
+      "baseHomeEdgePoints": 0.06,
+      "verifiedAdjustmentHomeEdgePoints": 0.0,
+      "confidence": "UNVALIDATED",
+      "rating": "NO BET",
+      "verifiedAdjustments": [],
+      "dataWarnings": [
+        "No verified quarterback/injury adjustment; NOT an injury-aware pick"
+      ],
+      "reason": "70% season + 30% last-three scoring differential, +1.5 home points; explicit verified adjustments only. Not calibrated."
+    },
+    {
+      "qbPerformanceComparisons": {
+        "away": {
+          "status": "INSUFFICIENT_DATA",
+          "starter": null,
+          "replacement": null,
+          "differenceAYA": null,
+          "estimatedPoints": null,
+          "note": "No verified starter/replacement performance comparison available."
+        },
+        "home": {
+          "status": "INSUFFICIENT_DATA",
+          "starter": null,
+          "replacement": null,
+          "differenceAYA": null,
+          "estimatedPoints": null,
+          "note": "No verified starter/replacement performance comparison available."
+        }
+      },
+      "quarterbacks": {
+        "away": {
+          "depthChartQB1Candidate": null,
+          "depthChartSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/12/depthcharts",
+          "depthChartIsConfirmedStarter": false,
+          "recentPrimaryPasser": "Patrick Mahomes",
+          "recentPrimaryPasserGameDate": "2026-10-18T20:25Z",
+          "recentPrimaryPasserSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873006",
+          "recentPrimaryPasserIsConfirmedStarter": false,
+          "starter": null,
+          "starterSource": null,
+          "starterAsOf": null,
+          "verification": "UNCONFIRMED",
+          "injuryStatus": "NOT REPORTED",
+          "availability": "UNKNOWN",
+          "reportedQuarterbacks": []
+        },
+        "home": {
+          "depthChartQB1Candidate": null,
+          "depthChartSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/26/depthcharts",
+          "depthChartIsConfirmedStarter": false,
+          "recentPrimaryPasser": "Sam Darnold",
+          "recentPrimaryPasserGameDate": "2026-10-16T00:15Z",
+          "recentPrimaryPasserSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872995",
+          "recentPrimaryPasserIsConfirmedStarter": false,
+          "starter": null,
+          "starterSource": null,
+          "starterAsOf": null,
+          "verification": "UNCONFIRMED",
+          "injuryStatus": "NOT REPORTED",
+          "availability": "UNKNOWN",
+          "reportedQuarterbacks": []
+        }
+      },
+      "injuryReports": {
+        "away": [],
+        "home": []
+      },
+      "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "injuryRetrievedAt": "2026-10-21T16:15:05.597443+00:00",
+      "id": "401873022",
+      "date": "2026-10-26T00:20Z",
+      "away": "Kansas City Chiefs",
+      "home": "Seattle Seahawks",
+      "pick": "Kansas City Chiefs",
+      "homeEdgePoints": -4.54,
+      "baseHomeEdgePoints": -4.54,
+      "verifiedAdjustmentHomeEdgePoints": 0.0,
+      "confidence": "UNVALIDATED",
+      "rating": "NO BET",
+      "verifiedAdjustments": [],
+      "dataWarnings": [
+        "No verified quarterback/injury adjustment; NOT an injury-aware pick"
+      ],
+      "reason": "70% season + 30% last-three scoring differential, +1.5 home points; explicit verified adjustments only. Not calibrated."
+    },
+    {
+      "qbPerformanceComparisons": {
+        "away": {
+          "status": "INSUFFICIENT_DATA",
+          "starter": null,
+          "replacement": null,
+          "differenceAYA": null,
+          "estimatedPoints": null,
+          "note": "No verified starter/replacement performance comparison available."
+        },
+        "home": {
+          "status": "INSUFFICIENT_DATA",
+          "starter": null,
+          "replacement": null,
+          "differenceAYA": null,
+          "estimatedPoints": null,
+          "note": "No verified starter/replacement performance comparison available."
+        }
+      },
+      "quarterbacks": {
+        "away": {
+          "depthChartQB1Candidate": null,
+          "depthChartSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/6/depthcharts",
+          "depthChartIsConfirmedStarter": false,
+          "recentPrimaryPasser": "Dak Prescott",
+          "recentPrimaryPasserGameDate": "2026-10-19T00:20Z",
+          "recentPrimaryPasserSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873007",
+          "recentPrimaryPasserIsConfirmedStarter": false,
+          "starter": null,
+          "starterSource": null,
+          "starterAsOf": null,
+          "verification": "UNCONFIRMED",
+          "injuryStatus": "NOT REPORTED",
+          "availability": "UNKNOWN",
+          "reportedQuarterbacks": []
+        },
+        "home": {
+          "depthChartQB1Candidate": null,
+          "depthChartSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/21/depthcharts",
+          "depthChartIsConfirmedStarter": false,
+          "recentPrimaryPasser": "Tanner McKee",
+          "recentPrimaryPasserGameDate": "2026-10-18T17:00Z",
+          "recentPrimaryPasserSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872998",
+          "recentPrimaryPasserIsConfirmedStarter": false,
+          "starter": null,
+          "starterSource": null,
+          "starterAsOf": null,
+          "verification": "UNCONFIRMED",
+          "injuryStatus": "NOT REPORTED",
+          "availability": "UNKNOWN",
+          "reportedQuarterbacks": []
+        }
+      },
+      "injuryReports": {
+        "away": [],
+        "home": []
+      },
+      "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "injuryRetrievedAt": "2026-10-21T16:15:05.597443+00:00",
+      "id": "401873009",
+      "date": "2026-10-27T00:15Z",
+      "away": "Dallas Cowboys",
+      "home": "Philadelphia Eagles",
+      "pick": "Dallas Cowboys",
+      "homeEdgePoints": -3.48,
+      "baseHomeEdgePoints": -3.48,
+      "verifiedAdjustmentHomeEdgePoints": 0.0,
+      "confidence": "UNVALIDATED",
+      "rating": "NO BET",
+      "verifiedAdjustments": [],
+      "dataWarnings": [
+        "No verified quarterback/injury adjustment; NOT an injury-aware pick"
+      ],
+      "reason": "70% season + 30% last-three scoring differential, +1.5 home points; explicit verified adjustments only. Not calibrated."
+    }
+  ]
+}

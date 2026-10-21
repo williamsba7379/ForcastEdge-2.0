@@ -1,0 +1,296 @@
+{
+  "season": 2026,
+  "generatedAt": "2026-10-21T16:15:05.683518+00:00",
+  "status": "LAST_GAME_PRIMARY_PASSER_NOT_CONFIRMED_STARTER",
+  "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
+  "teams": {
+    "New England Patriots": {
+      "candidate": "Drake Maye",
+      "attemptsInLastGame": 32,
+      "lastGameId": "401873001",
+      "lastGameDate": "2026-10-18T17:00Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873001",
+      "verification": "LAST_COMPLETED_GAME_ONLY",
+      "warning": "Most pass attempts last game; not confirmation of next game starter."
+    },
+    "Seattle Seahawks": {
+      "candidate": "Sam Darnold",
+      "attemptsInLastGame": 51,
+      "lastGameId": "401872995",
+      "lastGameDate": "2026-10-16T00:15Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872995",
+      "verification": "LAST_COMPLETED_GAME_ONLY",
+      "warning": "Most pass attempts last game; not confirmation of next game starter."
+    },
+    "San Francisco 49ers": {
+      "candidate": "Brock Purdy",
+      "attemptsInLastGame": 29,
+      "lastGameId": "401873008",
+      "lastGameDate": "2026-10-20T00:15Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873008",
+      "verification": "LAST_COMPLETED_GAME_ONLY",
+      "warning": "Most pass attempts last game; not confirmation of next game starter."
+    },
+    "Los Angeles Rams": {
+      "candidate": "Matthew Stafford",
+      "attemptsInLastGame": 33,
+      "lastGameId": "401873004",
+      "lastGameDate": "2026-10-18T20:05Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873004",
+      "verification": "LAST_COMPLETED_GAME_ONLY",
+      "warning": "Most pass attempts last game; not confirmation of next game starter."
+    },
+    "Tampa Bay Buccaneers": {
+      "candidate": "Jalon Daniels",
+      "attemptsInLastGame": 43,
+      "lastGameId": "401873002",
+      "lastGameDate": "2026-10-18T17:00Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873002",
+      "verification": "LAST_COMPLETED_GAME_ONLY",
+      "warning": "Most pass attempts last game; not confirmation of next game starter."
+    },
+    "Cincinnati Bengals": {
+      "candidate": "Joe Burrow",
+      "attemptsInLastGame": 32,
+      "lastGameId": "401872982",
+      "lastGameDate": "2026-10-11T17:00Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872982",
+      "verification": "LAST_COMPLETED_GAME_ONLY",
+      "warning": "Most pass attempts last game; not confirmation of next game starter."
+    },
+    "New Orleans Saints": {
+      "candidate": "Tyler Shough",
+      "attemptsInLastGame": 30,
+      "lastGameId": "401873000",
+      "lastGameDate": "2026-10-18T17:00Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873000",
+      "verification": "LAST_COMPLETED_GAME_ONLY",
+      "warning": "Most pass attempts last game; not confirmation of next game starter."
+    },
+    "Detroit Lions": {
+      "candidate": "Jared Goff",
+      "attemptsInLastGame": 30,
+      "lastGameId": "401872991",
+      "lastGameDate": "2026-10-11T20:25Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872991",
+      "verification": "LAST_COMPLETED_GAME_ONLY",
+      "warning": "Most pass attempts last game; not confirmation of next game starter."
+    },
+    "New York Jets": {
+      "candidate": "Geno Smith",
+      "attemptsInLastGame": 30,
+      "lastGameId": "401873001",
+      "lastGameDate": "2026-10-18T17:00Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873001",
+      "verification": "LAST_COMPLETED_GAME_ONLY",
+      "warning": "Most pass attempts last game; not confirmation of next game starter."
+    },
+    "Tennessee Titans": {
+      "candidate": "Cam Ward",
+      "attemptsInLastGame": 22,
+      "lastGameId": "401873003",
+      "lastGameDate": "2026-10-18T17:00Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873003",
+      "verification": "LAST_COMPLETED_GAME_ONLY",
+      "warning": "Most pass attempts last game; not confirmation of next game starter."
+    },
+    "Baltimore Ravens": {
+      "candidate": "Tyler Huntley",
+      "attemptsInLastGame": 31,
+      "lastGameId": "401872997",
+      "lastGameDate": "2026-10-18T17:00Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872997",
+      "verification": "LAST_COMPLETED_GAME_ONLY",
+      "warning": "Most pass attempts last game; not confirmation of next game starter."
+    },
+    "Indianapolis Colts": {
+      "candidate": "Daniel Jones",
+      "attemptsInLastGame": 42,
+      "lastGameId": "401873003",
+      "lastGameDate": "2026-10-18T17:00Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873003",
+      "verification": "LAST_COMPLETED_GAME_ONLY",
+      "warning": "Most pass attempts last game; not confirmation of next game starter."
+    },
+    "Atlanta Falcons": {
+      "candidate": "Michael Penix Jr.",
+      "attemptsInLastGame": 33,
+      "lastGameId": "401872999",
+      "lastGameDate": "2026-10-18T17:00Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872999",
+      "verification": "LAST_COMPLETED_GAME_ONLY",
+      "warning": "Most pass attempts last game; not confirmation of next game starter."
+    },
+    "Pittsburgh Steelers": {
+      "candidate": "Aaron Rodgers",
+      "attemptsInLastGame": 49,
+      "lastGameId": "401873002",
+      "lastGameDate": "2026-10-18T17:00Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873002",
+      "verification": "LAST_COMPLETED_GAME_ONLY",
+      "warning": "Most pass attempts last game; not confirmation of next game starter."
+    },
+    "Chicago Bears": {
+      "candidate": "Caleb Williams",
+      "attemptsInLastGame": 36,
+      "lastGameId": "401872999",
+      "lastGameDate": "2026-10-18T17:00Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872999",
+      "verification": "LAST_COMPLETED_GAME_ONLY",
+      "warning": "Most pass attempts last game; not confirmation of next game starter."
+    },
+    "Carolina Panthers": {
+      "candidate": "Bryce Young",
+      "attemptsInLastGame": 39,
+      "lastGameId": "401872998",
+      "lastGameDate": "2026-10-18T17:00Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872998",
+      "verification": "LAST_COMPLETED_GAME_ONLY",
+      "warning": "Most pass attempts last game; not confirmation of next game starter."
+    },
+    "Cleveland Browns": {
+      "candidate": "Deshaun Watson",
+      "attemptsInLastGame": 26,
+      "lastGameId": "401872997",
+      "lastGameDate": "2026-10-18T17:00Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872997",
+      "verification": "LAST_COMPLETED_GAME_ONLY",
+      "warning": "Most pass attempts last game; not confirmation of next game starter."
+    },
+    "Jacksonville Jaguars": {
+      "candidate": "Trevor Lawrence",
+      "attemptsInLastGame": 41,
+      "lastGameId": "401872996",
+      "lastGameDate": "2026-10-18T13:30Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872996",
+      "verification": "LAST_COMPLETED_GAME_ONLY",
+      "warning": "Most pass attempts last game; not confirmation of next game starter."
+    },
+    "Buffalo Bills": {
+      "candidate": "Josh Allen",
+      "attemptsInLastGame": 33,
+      "lastGameId": "401873005",
+      "lastGameDate": "2026-10-18T20:25Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873005",
+      "verification": "LAST_COMPLETED_GAME_ONLY",
+      "warning": "Most pass attempts last game; not confirmation of next game starter."
+    },
+    "Houston Texans": {
+      "candidate": "C.J. Stroud",
+      "attemptsInLastGame": 34,
+      "lastGameId": "401872996",
+      "lastGameDate": "2026-10-18T13:30Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872996",
+      "verification": "LAST_COMPLETED_GAME_ONLY",
+      "warning": "Most pass attempts last game; not confirmation of next game starter."
+    },
+    "Miami Dolphins": {
+      "candidate": "Malik Willis",
+      "attemptsInLastGame": 27,
+      "lastGameId": "401872982",
+      "lastGameDate": "2026-10-11T17:00Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872982",
+      "verification": "LAST_COMPLETED_GAME_ONLY",
+      "warning": "Most pass attempts last game; not confirmation of next game starter."
+    },
+    "Las Vegas Raiders": {
+      "candidate": "Kirk Cousins",
+      "attemptsInLastGame": 41,
+      "lastGameId": "401873005",
+      "lastGameDate": "2026-10-18T20:25Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873005",
+      "verification": "LAST_COMPLETED_GAME_ONLY",
+      "warning": "Most pass attempts last game; not confirmation of next game starter."
+    },
+    "Green Bay Packers": {
+      "candidate": "Jordan Love",
+      "attemptsInLastGame": 41,
+      "lastGameId": "401873007",
+      "lastGameDate": "2026-10-19T00:20Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873007",
+      "verification": "LAST_COMPLETED_GAME_ONLY",
+      "warning": "Most pass attempts last game; not confirmation of next game starter."
+    },
+    "Minnesota Vikings": {
+      "candidate": "Kyler Murray",
+      "attemptsInLastGame": 30,
+      "lastGameId": "401872987",
+      "lastGameDate": "2026-10-11T17:00Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872987",
+      "verification": "LAST_COMPLETED_GAME_ONLY",
+      "warning": "Most pass attempts last game; not confirmation of next game starter."
+    },
+    "Washington Commanders": {
+      "candidate": "Jayden Daniels",
+      "attemptsInLastGame": 40,
+      "lastGameId": "401873008",
+      "lastGameDate": "2026-10-20T00:15Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873008",
+      "verification": "LAST_COMPLETED_GAME_ONLY",
+      "warning": "Most pass attempts last game; not confirmation of next game starter."
+    },
+    "Philadelphia Eagles": {
+      "candidate": "Tanner McKee",
+      "attemptsInLastGame": 45,
+      "lastGameId": "401872998",
+      "lastGameDate": "2026-10-18T17:00Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872998",
+      "verification": "LAST_COMPLETED_GAME_ONLY",
+      "warning": "Most pass attempts last game; not confirmation of next game starter."
+    },
+    "Arizona Cardinals": {
+      "candidate": "Jacoby Brissett",
+      "attemptsInLastGame": 35,
+      "lastGameId": "401873004",
+      "lastGameDate": "2026-10-18T20:05Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873004",
+      "verification": "LAST_COMPLETED_GAME_ONLY",
+      "warning": "Most pass attempts last game; not confirmation of next game starter."
+    },
+    "Los Angeles Chargers": {
+      "candidate": "Justin Herbert",
+      "attemptsInLastGame": 37,
+      "lastGameId": "401873006",
+      "lastGameDate": "2026-10-18T20:25Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873006",
+      "verification": "LAST_COMPLETED_GAME_ONLY",
+      "warning": "Most pass attempts last game; not confirmation of next game starter."
+    },
+    "Dallas Cowboys": {
+      "candidate": "Dak Prescott",
+      "attemptsInLastGame": 54,
+      "lastGameId": "401873007",
+      "lastGameDate": "2026-10-19T00:20Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873007",
+      "verification": "LAST_COMPLETED_GAME_ONLY",
+      "warning": "Most pass attempts last game; not confirmation of next game starter."
+    },
+    "New York Giants": {
+      "candidate": "Jameis Winston",
+      "attemptsInLastGame": 26,
+      "lastGameId": "401873000",
+      "lastGameDate": "2026-10-18T17:00Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873000",
+      "verification": "LAST_COMPLETED_GAME_ONLY",
+      "warning": "Most pass attempts last game; not confirmation of next game starter."
+    },
+    "Denver Broncos": {
+      "candidate": "Bo Nix",
+      "attemptsInLastGame": 27,
+      "lastGameId": "401872995",
+      "lastGameDate": "2026-10-16T00:15Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872995",
+      "verification": "LAST_COMPLETED_GAME_ONLY",
+      "warning": "Most pass attempts last game; not confirmation of next game starter."
+    },
+    "Kansas City Chiefs": {
+      "candidate": "Patrick Mahomes",
+      "attemptsInLastGame": 30,
+      "lastGameId": "401873006",
+      "lastGameDate": "2026-10-18T20:25Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873006",
+      "verification": "LAST_COMPLETED_GAME_ONLY",
+      "warning": "Most pass attempts last game; not confirmation of next game starter."
+    }
+  }
+}
