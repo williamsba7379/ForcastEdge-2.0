@@ -24,7 +24,8 @@ jobs:
       - name: Retrieve injury-report snapshot (best effort)
         if: steps.time.outputs.run == 'true'
         continue-on-error: true
-        run: python3 scripts/model_c_injuries.py\n      - name: Generate independent Model C review draft
+        run: python3 scripts/model_c_injuries.py
+      - name: Generate independent Model C review draft
         if: steps.time.outputs.run == 'true'
         run: python3 scripts/model_c_engine.py
       - name: Commit draft only
