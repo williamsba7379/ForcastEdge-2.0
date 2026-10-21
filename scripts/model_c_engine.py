@@ -68,6 +68,8 @@ def main():
     try: injury_snapshot=load("model-c-injury-snapshot.json")
     except FileNotFoundError: injury_snapshot={}
     injury_teams={t.get("team"):t for t in injury_snapshot.get("teams",[])}
+    try: qb_declarations=load("model-c-qb-starters.json").get("teams",{})
+    except FileNotFoundError: qb_declarations={}
     games=[]
     for g in selected["games"]:
         kickoff=dt.datetime.fromisoformat(g["date"].replace("Z","+00:00"))
@@ -86,7 +88,29 @@ def main():
         margin=round(base+delta,2)
         pick=g["home"] if margin>=0 else g["away"]
         injury_reports={side:injury_teams.get(g[side],{}).get("players",[]) for side in ("away","home")}
-        games.append({"injuryReports":injury_reports,"injurySource":injury_snapshot.get("source"),
+        quarterbacks={}
+        for side in ("away","home"):
+            team=g[side]
+            declaration=qb_declarations.get(team,{})
+            starter=declaration.get("starter")
+            source=declaration.get("source")
+            asof=declaration.get("asOf")
+            valid=False
+            if starter and source and asof:
+                try:
+                    stamp=dt.datetime.fromisoformat(asof.replace("Z","+00:00"))
+                    valid=stamp.tzinfo is not None and stamp<=now.astimezone(dt.timezone.utc)
+                except (ValueError,TypeError,AttributeError):
+                    pass
+            qbs=[p for p in injury_reports[side] if p.get("position","").upper()=="QB"]
+            matched=next((p for p in qbs if p.get("name","").casefold()==str(starter).casefold()),None) if valid else None
+            quarterbacks[side]={"starter":starter if valid else None,
+              "starterSource":source if valid else None,"starterAsOf":asof if valid else None,
+              "verification":"SOURCE_DECLARED" if valid else "UNKNOWN",
+              "injuryStatus":matched.get("status") if matched else "NOT REPORTED",
+              "availability":"REVIEW REQUIRED" if matched else "UNKNOWN",
+              "reportedQuarterbacks":qbs}
+        games.append({"quarterbacks":quarterbacks,"injuryReports":injury_reports,"injurySource":injury_snapshot.get("source"),
           "injuryRetrievedAt":injury_snapshot.get("retrievedAt"),"id":g["id"],"date":g["date"],"away":g["away"],"home":g["home"],"pick":pick,
           "homeEdgePoints":margin,"baseHomeEdgePoints":round(base,2),"verifiedAdjustmentHomeEdgePoints":round(delta,2),
           "confidence":"UNVALIDATED","rating":"NO BET","verifiedAdjustments":used,
