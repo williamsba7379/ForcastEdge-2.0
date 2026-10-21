@@ -21,7 +21,10 @@ jobs:
           else
             echo "run=false" >> "$GITHUB_OUTPUT"
           fi
-      - name: Retrieve injury-report snapshot (best effort)\n        if: steps.time.outputs.run == 'true'\n        continue-on-error: true\n        run: python3 scripts/model_c_injuries.py\n      - name: Generate independent Model C review draft
+      - name: Retrieve injury-report snapshot (best effort)
+        if: steps.time.outputs.run == 'true'
+        continue-on-error: true
+        run: python3 scripts/model_c_injuries.py\n      - name: Generate independent Model C review draft
         if: steps.time.outputs.run == 'true'
         run: python3 scripts/model_c_engine.py
       - name: Commit draft only
@@ -29,7 +32,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/model-c-automated-draft.json\n          if [ -f data/model-c-injury-snapshot.json ]; then git add data/model-c-injury-snapshot.json; fi
+          git add data/model-c-automated-draft.json
+          if [ -f data/model-c-injury-snapshot.json ]; then git add data/model-c-injury-snapshot.json; fi
           if ! git diff --cached --quiet; then
             git commit -m "Update Model C review-only draft"
             git push
