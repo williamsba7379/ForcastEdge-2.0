@@ -4,7 +4,7 @@ const nav=document.querySelector('nav'),main=document.querySelector('main');
 const button=document.createElement('button');button.textContent='Model C — Advanced';button.dataset.tab='model-c';nav.appendChild(button);
 const section=document.createElement('section');section.id='model-c';section.hidden=true;
 section.innerHTML='<h2>Model C — Advanced Matchup</h2><div class="note">NEW · Week 7 pilot: analyst-adjusted reassessment, NOT an automated recalculation. Model A and B frozen picks remain unchanged. No approved wagers.</div><div class="card"><div class="row"><h3>Week 7 predictions</h3><button id="modelCRefresh">Refresh</button></div><p class="muted" id="modelCStatus">Loading Model C…</p><div id="modelCContent"></div></div>';
-main.appendChild(section);
+section.innerHTML+='<div class="card"><div class="row"><h3>Automated Model C draft — review only</h3><button id="modelCAutoRefresh">Refresh draft</button></div><p class="muted" id="modelCAutoStatus">Loading automated draft…</p><div id="modelCAutoContent"></div></div>';main.appendChild(section);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 async function load(){
 const status=document.getElementById('modelCStatus'),box=document.getElementById('modelCContent');status.textContent='Loading saved pilot card…';
@@ -26,6 +26,7 @@ status.textContent='Week '+card.week+' · '+wins+'–'+losses+' graded · '+pend
 box.innerHTML='<p class="muted">'+esc(card.disclaimer)+'</p>'+rows;
 }catch(e){status.textContent='Unable to load Model C: '+e.message;box.innerHTML=''}
 }
-button.onclick=()=>{document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('active',b===button));document.querySelectorAll('main section').forEach(s=>s.hidden=s!==section);load()};
-document.getElementById('modelCRefresh').onclick=load;
+async function loadAuto(){const status=document.getElementById('modelCAutoStatus'),box=document.getElementById('modelCAutoContent');try{const r=await fetch('./data/model-c-automated-draft.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('Awaiting first scheduled GitHub Actions run');const d=await r.json();status.textContent='Week '+d.week+' · generated '+d.generatedAt+' · review required';box.innerHTML='<p class="muted">'+esc(d.disclaimer)+'</p>'+d.games.map(g=>'<details class="card"><summary><b>'+esc(g.away)+' @ '+esc(g.home)+'</b><br>Draft: '+esc(g.pick)+' · NO BET</summary><p>Projected home margin: '+esc(g.homeEdgePoints)+' points</p><p>'+esc(g.reason)+'</p><p>'+esc(g.dataWarnings.join('; ')||'Documented adjustment applied')+'</p></details>').join('')}catch(e){status.textContent=e.message;box.innerHTML=''}}
+button.onclick=()=>{document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('active',b===button));document.querySelectorAll('main section').forEach(s=>s.hidden=s!==section);load();loadAuto()};
+document.getElementById('modelCRefresh').onclick=load;document.getElementById('modelCAutoRefresh').onclick=loadAuto;
 })();
