@@ -18,7 +18,12 @@ def check():
         assert game["pick"] in (game["away"],game["home"])
         assert game.get("rating")=="NO BET"
         assert game.get("confidence")=="UNVALIDATED"
+        assert "qbReviewAlerts" in game
         for side in ("home","away"):
+            alert=game["qbReviewAlerts"][side]
+            assert isinstance(alert["injuryFlags"],list)
+            assert isinstance(alert["candidateMismatch"],bool)
+            assert alert["starterConfirmed"] == (game["quarterbacks"][side]["verification"]=="OFFICIAL_GAME_SPECIFIC")
             qb=game.get("quarterbacks",{}).get(side,{})
             if qb.get("verification")!="OFFICIAL_GAME_SPECIFIC":
                 assert qb.get("starter") is None, "Unverified starter presented as confirmed"
