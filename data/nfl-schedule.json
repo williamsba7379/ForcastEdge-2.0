@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-10-22T11:01:54.876007+00:00",
+  "updatedAt": "2026-10-23T10:58:48.692830+00:00",
   "weeks": [
     {
       "week": 7,
@@ -10,7 +10,7 @@
           "date": "2026-10-23T00:15Z",
           "away": "New England Patriots",
           "home": "Chicago Bears",
-          "status": "STATUS_SCHEDULED"
+          "status": "STATUS_FINAL"
         },
         {
           "id": "401873011",
