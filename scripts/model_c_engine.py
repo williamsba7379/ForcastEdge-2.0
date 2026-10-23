@@ -161,8 +161,25 @@ def main():
               "injuryStatus":matched.get("status") if matched else "NOT REPORTED",
               "availability":"REVIEW REQUIRED" if matched else "UNKNOWN",
               "reportedQuarterbacks":qbs}
+        # Review-only QB injury and candidate discrepancies; never automatically change picks.
+        qb_alerts={}
+        for side in ("away","home"):
+            qb=quarterbacks[side]
+            reported={str(p.get("name","")).casefold():p for p in qb["reportedQuarterbacks"]}
+            primary=qb.get("recentPrimaryPasser")
+            depth=qb.get("depthChartQB1Candidate")
+            flags=[]
+            for name in set(x for x in (primary,depth) if x):
+                record=reported.get(name.casefold())
+                if record and str(record.get("status","")).casefold() not in ("active","healthy","available"):
+                    flags.append({"name":name,"reportedStatus":record.get("status")})
+            mismatch=bool(primary and depth and primary.casefold()!=depth.casefold())
+            qb_alerts[side]={"reviewRequired":bool(flags or mismatch or qb["verification"]!="OFFICIAL_GAME_SPECIFIC"),
+                "injuryFlags":flags,"candidateMismatch":mismatch,
+                "starterConfirmed":qb["verification"]=="OFFICIAL_GAME_SPECIFIC",
+                "note":"Advisory only. No automatic starting-QB confirmation or point adjustment."}
         qb_comparisons={side:qb_performance_comparison(g[side],(qb_declarations.get(g[side],{}) if quarterbacks[side]["verification"]=="OFFICIAL_GAME_SPECIFIC" else {}),qb_stats,now.astimezone(dt.timezone.utc),kickoff) for side in ("away","home")}
-        games.append({"qbPerformanceComparisons":qb_comparisons,"quarterbacks":quarterbacks,"injuryReports":injury_reports,"injurySource":injury_snapshot.get("source"),
+        games.append({"qbReviewAlerts":qb_alerts,"qbPerformanceComparisons":qb_comparisons,"quarterbacks":quarterbacks,"injuryReports":injury_reports,"injurySource":injury_snapshot.get("source"),
           "injuryRetrievedAt":injury_snapshot.get("retrievedAt"),"id":g["id"],"date":g["date"],"away":g["away"],"home":g["home"],"pick":pick,
           "homeEdgePoints":margin,"baseHomeEdgePoints":round(base,2),"verifiedAdjustmentHomeEdgePoints":round(delta,2),
           "confidence":"UNVALIDATED","rating":"NO BET","verifiedAdjustments":used,
