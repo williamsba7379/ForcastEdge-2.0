@@ -1,5 +1,5 @@
 {
-  "retrievedAt": "2026-10-23T11:28:44.566115+00:00",
+  "retrievedAt": "2026-10-23T11:40:38.758132+00:00",
   "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
   "status": "UNVERIFIED_REPORTING_FEED",
   "caution": "Reported injuries only. Not confirmed starting lineups, expected workload, or calibrated point adjustments.",
