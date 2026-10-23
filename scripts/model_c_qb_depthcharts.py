@@ -14,17 +14,38 @@ def fetch(url):
         return json.load(response)
 
 def extract_qbs(payload):
-    """Handle site API's depthchart sections conservatively, with no inferred ordering."""
-    candidates=[]
-    for chart in payload.get("depthchart",payload.get("depthcharts",[])):
-        for position in chart.get("positions",{}).values() if isinstance(chart.get("positions"),dict) else []:
-            meta=position.get("position",{})
-            if str(meta.get("abbreviation","")).upper()!="QB":continue
-            for player in position.get("athletes",[]):
-                athlete=player.get("athlete",player)
-                rank=player.get("rank",player.get("depth"))
-                name=athlete.get("displayName")
-                if name and str(rank)=="1":candidates.append(name)
+    """Extract explicitly ranked QB1 only; never infer a starter from list order."""
+    charts = payload.get("depthchart") or payload.get("depthcharts") or []
+    if isinstance(charts, dict):
+        charts = list(charts.values())
+    candidates = []
+    for chart in charts:
+        if not isinstance(chart, dict):
+            continue
+        positions = chart.get("positions") or {}
+        if isinstance(positions, dict):
+            positions = list(positions.values())
+        if not isinstance(positions, list):
+            continue
+        for position in positions:
+            if not isinstance(position, dict):
+                continue
+            meta = position.get("position") or {}
+            abbr = meta.get("abbreviation") if isinstance(meta, dict) else None
+            abbr = abbr or position.get("abbreviation") or position.get("positionAbbreviation")
+            if str(abbr).upper() != "QB":
+                continue
+            athletes = position.get("athletes") or []
+            if not isinstance(athletes, list):
+                continue
+            for player in athletes:
+                if not isinstance(player, dict):
+                    continue
+                athlete = player.get("athlete") or player
+                rank = player.get("rank", player.get("depth", player.get("depthOrder")))
+                name = athlete.get("displayName") if isinstance(athlete, dict) else None
+                if name and str(rank) == "1":
+                    candidates.append(name)
     return sorted(set(candidates))
 
 def main():
@@ -46,6 +67,8 @@ def main():
           "candidateCount":len(candidates),"source":url,"verification":"DEPTH_CHART_ONLY_NOT_CONFIRMED",
           "note":"QB1 is a depth-chart listing, not a confirmed game starter."}
     if len(results)<25:raise RuntimeError("Insufficient team coverage; previous snapshot preserved")
+    if not any(x["qb1Candidate"] for x in results.values()):
+        raise RuntimeError("Zero QB1 candidates from all teams; refusing to replace prior snapshot")
     out={"retrievedAt":dt.datetime.now(dt.timezone.utc).isoformat(),
       "status":"DEPTH_CHART_CANDIDATES_ONLY","teams":results}
     (DATA/"model-c-qb-depthcharts.json").write_text(json.dumps(out,indent=2)+"\n")
