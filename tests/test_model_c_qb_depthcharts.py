@@ -14,6 +14,13 @@ def main():
        "rb":{"position":{"abbreviation":"RB"},
        "athletes":[{"rank":1,"athlete":{"displayName":"Fixture RB"}}]}}}]}
     assert module.extract_qbs(example)==["Fixture QB One"]
+    alternate={"depthcharts":[{"positions":[{"position":{"abbreviation":"QB"},
+        "athletes":[{"depthOrder":1,"athlete":{"displayName":"Fixture QB One"}},
+                    {"depthOrder":2,"athlete":{"displayName":"Fixture QB Two"}}]}]}]}
+    assert module.extract_qbs(alternate)==["Fixture QB One"]
+    mapping={"depthchart":{"offense":{"positions":{"qb":{"abbreviation":"QB",
+        "athletes":[{"depth":1,"displayName":"Fixture QB One"}]}}}}}
+    assert module.extract_qbs(mapping)==["Fixture QB One"]
     assert module.extract_qbs({"depthchart":[]})==[]
     print("PASS: QB1 depth chart candidate extraction; never confirms game starter")
 
