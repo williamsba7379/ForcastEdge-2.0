@@ -46,6 +46,9 @@ jobs:
       - name: Generate independent Model C review draft
         if: steps.time.outputs.run == 'true'
         run: python3 scripts/model_c_engine.py
+      - name: Validate generated Model C review draft
+        if: steps.time.outputs.run == 'true'
+        run: python3 tests/test_model_c_draft_contract.py
       - name: Commit draft only
         if: steps.time.outputs.run == 'true'
         run: |
