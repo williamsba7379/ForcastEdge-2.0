@@ -1,0 +1,48 @@
+name: Diagnose ESPN QB depthchart response
+on:
+  push:
+    paths:
+      - '.github/workflows/model-c-qb-response-diagnostic.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect actual ESPN response structure (no data changes)
+        run: |
+          python3 - <<'PY'
+          import json, urllib.request
+          base="https://site.api.espn.com/apis/site/v2/sports/football/nfl"
+          def fetch(url):
+              req=urllib.request.Request(url,headers={"User-Agent":"ForecastEdge/2.0","Accept":"application/json"})
+              with urllib.request.urlopen(req,timeout=20) as r:
+                  return json.load(r)
+          teams=fetch(base+"/teams?limit=40")["sports"][0]["leagues"][0]["teams"]
+          print("Teams returned:",len(teams))
+          for entry in teams[:3]:
+              t=entry.get("team",entry)
+              url=base+"/teams/"+str(t["id"])+"/depthcharts"
+              print("\\nTEAM:",t.get("displayName"),"URL:",url)
+              try:
+                  data=fetch(url)
+              except Exception as e:
+                  print("FETCH ERROR:",type(e).__name__,str(e)[:180])
+                  continue
+              print("ROOT TYPE:",type(data).__name__,"ROOT KEYS:",list(data) if isinstance(data,dict) else "n/a")
+              if isinstance(data,dict):
+                  for key in ("depthchart","depthcharts","items","positions","athletes"):
+                      val=data.get(key)
+                      print("FIELD:",key,"TYPE:",type(val).__name__,"LENGTH:",len(val) if isinstance(val,(list,dict)) else "n/a")
+                      if isinstance(val,list) and val:
+                          first=val[0]
+                          print("FIRST ITEM KEYS:",list(first) if isinstance(first,dict) else type(first).__name__)
+                          if isinstance(first,dict):
+                              for sub in ("positions","athletes","name","id"):
+                                  v=first.get(sub)
+                                  print("  SUBFIELD:",sub,"TYPE:",type(v).__name__,"KEYS:",list(v)[:12] if isinstance(v,dict) else "n/a")
+                      if isinstance(val,dict):
+                          print("FIELD KEYS:",list(val)[:15])
+          PY
