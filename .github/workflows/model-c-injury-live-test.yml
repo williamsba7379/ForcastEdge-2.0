@@ -1,0 +1,31 @@
+name: Model C injury feed live validation
+on:
+  push:
+    paths:
+      - '.github/workflows/model-c-injury-live-test.yml'
+      - 'scripts/model_c_injuries.py'
+      - 'tests/test_model_c_injuries.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate-injuries:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test parser offline
+        run: python3 tests/test_model_c_injuries.py
+      - name: Fetch and parse live ESPN injury feed
+        run: python3 scripts/model_c_injuries.py
+      - name: Verify output has usable team identities
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          data=json.loads(Path("data/model-c-injury-snapshot.json").read_text())
+          teams=data["teams"]
+          assert teams, "No teams in snapshot"
+          assert all(t["team"].strip() for t in teams), "Blank team identity"
+          assert len({t["team"] for t in teams})==len(teams), "Duplicate team identities"
+          print(f"PASS: {len(teams)} teams, {sum(len(t['players']) for t in teams)} injury entries")
+          PY

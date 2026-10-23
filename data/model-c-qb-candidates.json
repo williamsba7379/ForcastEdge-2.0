@@ -1,15 +1,15 @@
 {
   "season": 2026,
-  "generatedAt": "2026-10-21T16:15:05.683518+00:00",
+  "generatedAt": "2026-10-23T11:28:44.664078+00:00",
   "status": "LAST_GAME_PRIMARY_PASSER_NOT_CONFIRMED_STARTER",
   "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
   "teams": {
     "New England Patriots": {
       "candidate": "Drake Maye",
-      "attemptsInLastGame": 32,
-      "lastGameId": "401873001",
-      "lastGameDate": "2026-10-18T17:00Z",
-      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873001",
+      "attemptsInLastGame": 31,
+      "lastGameId": "401873010",
+      "lastGameDate": "2026-10-23T00:15Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873010",
       "verification": "LAST_COMPLETED_GAME_ONLY",
       "warning": "Most pass attempts last game; not confirmation of next game starter."
     },
@@ -132,10 +132,10 @@
     },
     "Chicago Bears": {
       "candidate": "Caleb Williams",
-      "attemptsInLastGame": 36,
-      "lastGameId": "401872999",
-      "lastGameDate": "2026-10-18T17:00Z",
-      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872999",
+      "attemptsInLastGame": 33,
+      "lastGameId": "401873010",
+      "lastGameDate": "2026-10-23T00:15Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873010",
       "verification": "LAST_COMPLETED_GAME_ONLY",
       "warning": "Most pass attempts last game; not confirmation of next game starter."
     },
