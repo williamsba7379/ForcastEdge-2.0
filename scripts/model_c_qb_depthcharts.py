@@ -46,6 +46,8 @@ def main():
           "candidateCount":len(candidates),"source":url,"verification":"DEPTH_CHART_ONLY_NOT_CONFIRMED",
           "note":"QB1 is a depth-chart listing, not a confirmed game starter."}
     if len(results)<25:raise RuntimeError("Insufficient team coverage; previous snapshot preserved")
+    if not any(x["qb1Candidate"] for x in results.values()):
+        raise RuntimeError("No QB1 candidates parsed from ESPN depth charts; preserve previous snapshot rather than publish empty results")
     out={"retrievedAt":dt.datetime.now(dt.timezone.utc).isoformat(),
       "status":"DEPTH_CHART_CANDIDATES_ONLY","teams":results}
     (DATA/"model-c-qb-depthcharts.json").write_text(json.dumps(out,indent=2)+"\n")
