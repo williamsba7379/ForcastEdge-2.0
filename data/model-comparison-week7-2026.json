@@ -1,0 +1,292 @@
+{
+  "season": 2026,
+  "week": 7,
+  "status": "FROZEN_PREKICKOFF_COMPARISON",
+  "models": {
+    "A": "30% recent form",
+    "B": "0% recent form",
+    "C": "analyst-adjusted Week 7 pilot, NOT automated engine"
+  },
+  "frozenABAt": "2026-10-17T07:27:33.509711-04:00",
+  "pilotCCreatedAt": "2026-10-21",
+  "limitations": [
+    "Model C has date-only creation metadata, not a precise timestamp.",
+    "Model C conditional selections are graded as frozen picks without assuming conditions were met.",
+    "Automated Model C Week 8 review draft is excluded; no same-game frozen A/B Week 8 baseline.",
+    "No betting results, spread, total, or confidence scores are inferred."
+  ],
+  "summary": {
+    "A": {
+      "wins": 1,
+      "losses": 0,
+      "pending": 13,
+      "accuracyPct": 100.0
+    },
+    "B": {
+      "wins": 1,
+      "losses": 0,
+      "pending": 13,
+      "accuracyPct": 100.0
+    },
+    "C": {
+      "wins": 1,
+      "losses": 0,
+      "pending": 13,
+      "accuracyPct": 100.0
+    }
+  },
+  "games": [
+    {
+      "id": "401873010",
+      "date": "2026-10-23T00:15Z",
+      "away": "New England Patriots",
+      "home": "Chicago Bears",
+      "winner": "Chicago Bears",
+      "picks": {
+        "A": "Chicago Bears",
+        "B": "Chicago Bears",
+        "C": "Chicago Bears"
+      },
+      "conditionalC": false,
+      "correct": {
+        "A": true,
+        "B": true,
+        "C": true
+      }
+    },
+    {
+      "id": "401873011",
+      "date": "2026-10-25T13:30Z",
+      "away": "Pittsburgh Steelers",
+      "home": "New Orleans Saints",
+      "winner": null,
+      "picks": {
+        "A": "Pittsburgh Steelers",
+        "B": "Pittsburgh Steelers",
+        "C": "Pittsburgh Steelers"
+      },
+      "conditionalC": false,
+      "correct": {
+        "A": null,
+        "B": null,
+        "C": null
+      }
+    },
+    {
+      "id": "401873012",
+      "date": "2026-10-25T17:00Z",
+      "away": "Cincinnati Bengals",
+      "home": "Baltimore Ravens",
+      "winner": null,
+      "picks": {
+        "A": "Baltimore Ravens",
+        "B": "Baltimore Ravens",
+        "C": "Cincinnati Bengals"
+      },
+      "conditionalC": true,
+      "correct": {
+        "A": null,
+        "B": null,
+        "C": null
+      }
+    },
+    {
+      "id": "401873013",
+      "date": "2026-10-25T17:00Z",
+      "away": "Cleveland Browns",
+      "home": "Tennessee Titans",
+      "winner": null,
+      "picks": {
+        "A": "Cleveland Browns",
+        "B": "Cleveland Browns",
+        "C": "Cleveland Browns"
+      },
+      "conditionalC": false,
+      "correct": {
+        "A": null,
+        "B": null,
+        "C": null
+      }
+    },
+    {
+      "id": "401873014",
+      "date": "2026-10-25T17:00Z",
+      "away": "Indianapolis Colts",
+      "home": "Minnesota Vikings",
+      "winner": null,
+      "picks": {
+        "A": "Minnesota Vikings",
+        "B": "Minnesota Vikings",
+        "C": "Minnesota Vikings"
+      },
+      "conditionalC": false,
+      "correct": {
+        "A": null,
+        "B": null,
+        "C": null
+      }
+    },
+    {
+      "id": "401873015",
+      "date": "2026-10-25T17:00Z",
+      "away": "Miami Dolphins",
+      "home": "New York Jets",
+      "winner": null,
+      "picks": {
+        "A": "New York Jets",
+        "B": "New York Jets",
+        "C": "New York Jets"
+      },
+      "conditionalC": false,
+      "correct": {
+        "A": null,
+        "B": null,
+        "C": null
+      }
+    },
+    {
+      "id": "401873016",
+      "date": "2026-10-25T17:00Z",
+      "away": "New York Giants",
+      "home": "Houston Texans",
+      "winner": null,
+      "picks": {
+        "A": "Houston Texans",
+        "B": "Houston Texans",
+        "C": "Houston Texans"
+      },
+      "conditionalC": false,
+      "correct": {
+        "A": null,
+        "B": null,
+        "C": null
+      }
+    },
+    {
+      "id": "401873017",
+      "date": "2026-10-25T17:00Z",
+      "away": "San Francisco 49ers",
+      "home": "Atlanta Falcons",
+      "winner": null,
+      "picks": {
+        "A": "San Francisco 49ers",
+        "B": "San Francisco 49ers",
+        "C": "San Francisco 49ers"
+      },
+      "conditionalC": false,
+      "correct": {
+        "A": null,
+        "B": null,
+        "C": null
+      }
+    },
+    {
+      "id": "401873018",
+      "date": "2026-10-25T17:00Z",
+      "away": "Tampa Bay Buccaneers",
+      "home": "Carolina Panthers",
+      "winner": null,
+      "picks": {
+        "A": "Carolina Panthers",
+        "B": "Carolina Panthers",
+        "C": "Carolina Panthers"
+      },
+      "conditionalC": false,
+      "correct": {
+        "A": null,
+        "B": null,
+        "C": null
+      }
+    },
+    {
+      "id": "401873019",
+      "date": "2026-10-25T20:05Z",
+      "away": "Denver Broncos",
+      "home": "Arizona Cardinals",
+      "winner": null,
+      "picks": {
+        "A": "Denver Broncos",
+        "B": "Denver Broncos",
+        "C": "Denver Broncos"
+      },
+      "conditionalC": false,
+      "correct": {
+        "A": null,
+        "B": null,
+        "C": null
+      }
+    },
+    {
+      "id": "401873020",
+      "date": "2026-10-25T20:25Z",
+      "away": "Green Bay Packers",
+      "home": "Detroit Lions",
+      "winner": null,
+      "picks": {
+        "A": "Detroit Lions",
+        "B": "Detroit Lions",
+        "C": "Detroit Lions"
+      },
+      "conditionalC": false,
+      "correct": {
+        "A": null,
+        "B": null,
+        "C": null
+      }
+    },
+    {
+      "id": "401873021",
+      "date": "2026-10-25T20:25Z",
+      "away": "Los Angeles Rams",
+      "home": "Las Vegas Raiders",
+      "winner": null,
+      "picks": {
+        "A": "Las Vegas Raiders",
+        "B": "Las Vegas Raiders",
+        "C": "Los Angeles Rams"
+      },
+      "conditionalC": false,
+      "correct": {
+        "A": null,
+        "B": null,
+        "C": null
+      }
+    },
+    {
+      "id": "401873022",
+      "date": "2026-10-26T00:20Z",
+      "away": "Kansas City Chiefs",
+      "home": "Seattle Seahawks",
+      "winner": null,
+      "picks": {
+        "A": "Kansas City Chiefs",
+        "B": "Kansas City Chiefs",
+        "C": "Kansas City Chiefs"
+      },
+      "conditionalC": false,
+      "correct": {
+        "A": null,
+        "B": null,
+        "C": null
+      }
+    },
+    {
+      "id": "401873009",
+      "date": "2026-10-27T00:15Z",
+      "away": "Dallas Cowboys",
+      "home": "Philadelphia Eagles",
+      "winner": null,
+      "picks": {
+        "A": "Dallas Cowboys",
+        "B": "Dallas Cowboys",
+        "C": "Dallas Cowboys"
+      },
+      "conditionalC": false,
+      "correct": {
+        "A": null,
+        "B": null,
+        "C": null
+      }
+    }
+  ]
+}
