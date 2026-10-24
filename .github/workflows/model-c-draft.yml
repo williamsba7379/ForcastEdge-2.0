@@ -38,6 +38,7 @@ jobs:
           python3 tests/test_model_c_qb_review_queue.py
           python3 tests/test_model_c_starter_verification.py
           python3 tests/test_model_c_qb_feed.py
+          python3 tests/test_model_c_espn_qb_status.py
           python3 tests/test_model_c_qb_depthcharts.py
       - name: Retrieve injury-report snapshot (best effort)
         if: steps.time.outputs.run == 'true'
@@ -102,6 +103,7 @@ jobs:
           if [ -f data/model-c-qb-candidates.json ]; then git add data/model-c-qb-candidates.json; fi
           if [ -f data/model-c-qb-depthcharts.json ]; then git add data/model-c-qb-depthcharts.json; fi
           if [ -f data/model-c-injury-snapshot.json ]; then git add data/model-c-injury-snapshot.json; fi
+          if [ -f data/model-c-espn-qb-status.json ]; then git add data/model-c-espn-qb-status.json; fi
           if ! git diff --cached --quiet; then
             git commit -m "Update Model C review-only draft"
             git push
