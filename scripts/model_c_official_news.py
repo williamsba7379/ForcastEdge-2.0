@@ -30,6 +30,22 @@ OFFICIAL_TEAM_NEWS={
     "Denver Broncos":"https://www.denverbroncos.com/news/",
     "Detroit Lions":"https://www.detroitlions.com/news/",
     "Houston Texans":"https://www.houstontexans.com/news/",
+    "Chicago Bears":"https://www.chicagobears.com/news/",
+    "Indianapolis Colts":"https://www.colts.com/news/",
+    "Jacksonville Jaguars":"https://www.jaguars.com/news/",
+    "Las Vegas Raiders":"https://www.raiders.com/news/",
+    "Los Angeles Chargers":"https://www.chargers.com/news/",
+    "Los Angeles Rams":"https://www.therams.com/news/",
+    "Miami Dolphins":"https://www.miamidolphins.com/news/",
+    "Minnesota Vikings":"https://www.vikings.com/news/",
+    "New England Patriots":"https://www.patriots.com/news/",
+    "New Orleans Saints":"https://www.neworleanssaints.com/news/",
+    "New York Giants":"https://www.giants.com/news/",
+    "New York Jets":"https://www.newyorkjets.com/news/",
+    "Pittsburgh Steelers":"https://www.steelers.com/news/",
+    "San Francisco 49ers":"https://www.49ers.com/news/",
+    "Tampa Bay Buccaneers":"https://www.buccaneers.com/news/",
+    "Tennessee Titans":"https://www.tennesseetitans.com/news/",
 }
 TERMS=("quarterback","qb ","starter","starting","injury","inactive","lamar","hurts","mckee")
 
