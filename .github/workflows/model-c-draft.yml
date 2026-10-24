@@ -55,6 +55,9 @@ jobs:
         if: steps.time.outputs.run == 'true'
         continue-on-error: true
         run: python3 scripts/model_c_official_news.py
+      - name: Validate official news discovery snapshot
+        if: steps.time.outputs.run == 'true'
+        run: python3 tests/test_model_c_discovery_snapshot.py
       - name: Build official quarterback source review queue
         if: steps.time.outputs.run == 'true'
         run: python3 scripts/model_c_qb_review_queue.py
