@@ -1,5 +1,5 @@
 {
-  "retrievedAt": "2026-10-23T16:50:09.839533+00:00",
+  "retrievedAt": "2026-10-24T02:14:58.129253+00:00",
   "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
   "status": "UNVERIFIED_REPORTING_FEED",
   "caution": "Reported injuries only. Not confirmed starting lineups, expected workload, or calibrated point adjustments.",
@@ -10,10 +10,16 @@
       "teamId": "22",
       "players": [
         {
+          "name": "Jon Gaines II",
+          "position": "G",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
+        },
+        {
           "name": "Andrew Wingard",
           "position": "S",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Bruise', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Bruise', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
         },
         {
           "name": "Max Melton",
@@ -34,10 +40,40 @@
           "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Back', 'location': 'Torso', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         },
         {
+          "name": "Walter Nolen III",
+          "position": "DT",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
+        },
+        {
+          "name": "Wydett Williams Jr.",
+          "position": "S",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Garrett Williams",
+          "position": "CB",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Bam Knight",
+          "position": "RB",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Tyler Allgeier",
+          "position": "RB",
+          "status": "Active",
+          "description": ""
+        },
+        {
           "name": "Jeremiyah Love",
           "position": "RB",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
         },
         {
           "name": "Darius Robinson",
@@ -46,28 +82,10 @@
           "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Back', 'location': 'Torso', 'returnDate': '2026-10-25'}"
         },
         {
-          "name": "Jon Gaines II",
-          "position": "G",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Knee', 'location': 'Leg', 'returnDate': '2026-10-25'}"
-        },
-        {
           "name": "Jedrick Wills Jr.",
           "position": "OT",
           "status": "Active",
           "description": ""
-        },
-        {
-          "name": "Garrett Williams",
-          "position": "CB",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Walter Nolen III",
-          "position": "DT",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         },
         {
           "name": "Jalen Brooks",
@@ -80,12 +98,6 @@
           "position": "TE",
           "status": "Active",
           "description": ""
-        },
-        {
-          "name": "Wydett Williams Jr.",
-          "position": "S",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Concussion', 'location': 'Head', 'detail': 'Concussion', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         },
         {
           "name": "Chad Ryland",
@@ -118,20 +130,8 @@
           "description": ""
         },
         {
-          "name": "Bam Knight",
-          "position": "RB",
-          "status": "Active",
-          "description": ""
-        },
-        {
           "name": "Jacoby Brissett",
           "position": "QB",
-          "status": "Active",
-          "description": ""
-        },
-        {
-          "name": "Tyler Allgeier",
-          "position": "RB",
           "status": "Active",
           "description": ""
         },
@@ -167,46 +167,28 @@
       "teamId": "1",
       "players": [
         {
-          "name": "Cameron Williams",
-          "position": "OL",
-          "status": "Injured Reserve",
-          "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "name": "Michael Jerrell",
+          "position": "OT",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Biceps', 'location': 'Arm', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
         },
         {
-          "name": "Olamide Zaccheaus",
-          "position": "WR",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Shoulder', 'location': 'Arm', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "name": "Billy Bowman Jr.",
+          "position": "CB",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Hamstring', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
         },
         {
-          "name": "Brian Robinson Jr.",
-          "position": "RB",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Hamstring', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Cameron Thomas",
+          "name": "Za'Darius Smith",
           "position": "DE",
           "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Ankle', 'location': 'Leg', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Gervon Dexter Sr.",
-          "position": "DT",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Hamstring', 'location': 'Leg', 'returnDate': '2026-10-25'}"
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Neck', 'location': 'Head', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         },
         {
           "name": "Kendal Daniels",
           "position": "LB",
           "status": "Questionable",
           "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Neck', 'location': 'Head', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Beaux Collins",
-          "position": "WR",
-          "status": "Injured Reserve",
-          "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Hip', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
         },
         {
           "name": "A.J. Terrell Jr.",
@@ -223,8 +205,50 @@
         {
           "name": "Divine Deablo",
           "position": "LB",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Forearm', 'location': 'Arm', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
+        },
+        {
+          "name": "Beaux Collins",
+          "position": "WR",
+          "status": "Injured Reserve",
+          "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Hip', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+        },
+        {
+          "name": "Olamide Zaccheaus",
+          "position": "WR",
           "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Forearm', 'location': 'Arm', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Shoulder', 'location': 'Arm', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+        },
+        {
+          "name": "Khalil Herbert",
+          "position": "RB",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Cameron Thomas",
+          "position": "DE",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Brian Robinson Jr.",
+          "position": "RB",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Hamstring', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
+        },
+        {
+          "name": "Cameron Williams",
+          "position": "OL",
+          "status": "Injured Reserve",
+          "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+        },
+        {
+          "name": "Gervon Dexter Sr.",
+          "position": "DT",
+          "status": "Questionable",
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Hamstring', 'location': 'Leg', 'returnDate': '2026-10-25'}"
         },
         {
           "name": "Andy Dalton",
@@ -233,22 +257,10 @@
           "description": ""
         },
         {
-          "name": "Za'Darius Smith",
-          "position": "DE",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Neck', 'location': 'Head', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
           "name": "Avieon Terrell",
           "position": "CB",
           "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Hamstring', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Michael Jerrell",
-          "position": "OT",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Biceps', 'location': 'Arm', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Back', 'location': 'Torso', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         },
         {
           "name": "Samson Ebukam",
@@ -303,18 +315,6 @@
           "position": "QB",
           "status": "Active",
           "description": ""
-        },
-        {
-          "name": "Kyle Pitts Sr.",
-          "position": "TE",
-          "status": "Active",
-          "description": ""
-        },
-        {
-          "name": "Drake London",
-          "position": "WR",
-          "status": "Active",
-          "description": ""
         }
       ]
     },
@@ -323,6 +323,36 @@
       "abbreviation": "",
       "teamId": "33",
       "players": [
+        {
+          "name": "Cam Jurgens",
+          "position": "C",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Broderick Washington Jr.",
+          "position": "DT",
+          "status": "Questionable",
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+        },
+        {
+          "name": "Tyler Huntley",
+          "position": "QB",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Jaylinn Hawkins",
+          "position": "S",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
+        },
+        {
+          "name": "Tavius Robinson",
+          "position": "LB",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Pectoral', 'location': 'Torso', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2027-02-15'}"
+        },
         {
           "name": "Lamar Jackson",
           "position": "QB",
@@ -336,22 +366,10 @@
           "description": ""
         },
         {
-          "name": "Jaylinn Hawkins",
-          "position": "S",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
           "name": "Matt Hibner",
           "position": "TE",
           "status": "Active",
           "description": ""
-        },
-        {
-          "name": "Tavius Robinson",
-          "position": "LB",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Pectoral', 'location': 'Torso', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         },
         {
           "name": "Rashod Bateman",
@@ -372,16 +390,10 @@
           "description": ""
         },
         {
-          "name": "Cam Jurgens",
-          "position": "C",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Concussion', 'location': 'Head', 'detail': 'Concussion', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
           "name": "T.J. Tampa",
           "position": "CB",
           "status": "Injured Reserve",
-          "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Toe', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         },
         {
           "name": "Kyle Hamilton",
@@ -400,12 +412,6 @@
           "position": "RB",
           "status": "Active",
           "description": ""
-        },
-        {
-          "name": "Broderick Washington Jr.",
-          "position": "DT",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         },
         {
           "name": "Tyler Loop",
@@ -434,12 +440,6 @@
         {
           "name": "Ja'Kobi Lane",
           "position": "WR",
-          "status": "Active",
-          "description": ""
-        },
-        {
-          "name": "Tyler Huntley",
-          "position": "QB",
           "status": "Active",
           "description": ""
         },
@@ -487,6 +487,12 @@
           "description": "{'fantasyStatus': {'description': 'RESERVE-SUS', 'abbreviation': 'RESERVE-SUS'}, 'type': 'Suspension', 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-09'}"
         },
         {
+          "name": "Sam Franklin Jr.",
+          "position": "S",
+          "status": "Active",
+          "description": ""
+        },
+        {
           "name": "Dorian Williams",
           "position": "LB",
           "status": "Active",
@@ -497,12 +503,6 @@
           "position": "CB",
           "status": "Active",
           "description": ""
-        },
-        {
-          "name": "Sam Franklin Jr.",
-          "position": "S",
-          "status": "Suspension",
-          "description": "{'fantasyStatus': {'description': 'RESERVE-SUS', 'abbreviation': 'RESERVE-SUS'}, 'type': 'Suspension', 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-09'}"
         },
         {
           "name": "Dawson Knox",
@@ -638,10 +638,22 @@
       "teamId": "29",
       "players": [
         {
+          "name": "Thomas Incoom",
+          "position": "LB",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Calf', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
+        },
+        {
           "name": "Jaelan Phillips",
           "position": "LB",
-          "status": "Doubtful",
-          "description": "{'fantasyStatus': {'description': 'DOUBTFUL', 'abbreviation': 'DOUBTFUL'}, 'type': 'Hamstring', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Hamstring', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-29'}"
+        },
+        {
+          "name": "Monroe Freeling",
+          "position": "OT",
+          "status": "Questionable",
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Knee', 'location': 'Leg', 'returnDate': '2026-10-25'}"
         },
         {
           "name": "Devin Lloyd",
@@ -652,12 +664,6 @@
         {
           "name": "Bobby Okereke",
           "position": "LB",
-          "status": "Active",
-          "description": ""
-        },
-        {
-          "name": "Monroe Freeling",
-          "position": "OT",
           "status": "Active",
           "description": ""
         },
@@ -746,12 +752,6 @@
           "description": ""
         },
         {
-          "name": "Thomas Incoom",
-          "position": "LB",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Calf', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
           "name": "Damien Lewis",
           "position": "G",
           "status": "Active",
@@ -801,10 +801,16 @@
           "description": "{'fantasyStatus': {'description': 'IR', 'abbreviation': 'IR'}, 'type': 'Undisclosed', 'location': 'Other', 'returnDate': '2026-10-18'}"
         },
         {
+          "name": "Montez Sweat",
+          "position": "DE",
+          "status": "Active",
+          "description": ""
+        },
+        {
           "name": "Cole Kmet",
           "position": "TE",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Right', 'returnDate': '2026-11-02'}"
+          "status": "Injured Reserve",
+          "description": "{'fantasyStatus': {'description': 'IR', 'abbreviation': 'IR'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Right', 'returnDate': '2027-02-15'}"
         },
         {
           "name": "Rome Odunze",
@@ -889,12 +895,6 @@
           "position": "RB",
           "status": "Out",
           "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': 'Toe', 'location': 'Leg', 'detail': 'Sprain', 'side': 'Not Specified', 'returnDate': '2026-11-02'}"
-        },
-        {
-          "name": "Zavier Scott",
-          "position": "RB",
-          "status": "Active",
-          "description": ""
         },
         {
           "name": "Jonah Jackson",
@@ -1109,16 +1109,28 @@
       "teamId": "5",
       "players": [
         {
-          "name": "Quincy Williams",
-          "position": "LB",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Neck', 'location': 'Head', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "name": "Teven Jenkins",
+          "position": "G",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Back', 'location': 'Torso', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
         },
         {
-          "name": "Carson Schwesinger",
-          "position": "LB",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "name": "Jaleel McLaughlin",
+          "position": "RB",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Dillon Gabriel",
+          "position": "QB",
+          "status": "Injured Reserve",
+          "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Back', 'location': 'Torso', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
+        },
+        {
+          "name": "Mason Graham",
+          "position": "DT",
+          "status": "Active",
+          "description": ""
         },
         {
           "name": "Grant Delpit",
@@ -1127,10 +1139,64 @@
           "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Concussion', 'location': 'Head', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         },
         {
+          "name": "Mike Hall Jr.",
+          "position": "DT",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
+        },
+        {
+          "name": "Quincy Williams",
+          "position": "LB",
+          "status": "Questionable",
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Neck', 'location': 'Head', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+        },
+        {
+          "name": "Kalia Davis",
+          "position": "DT",
+          "status": "Injured Reserve",
+          "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Quadriceps', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
+        },
+        {
+          "name": "Denzel Ward",
+          "position": "CB",
+          "status": "Questionable",
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Hand', 'location': 'Arm', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+        },
+        {
+          "name": "Quinshon Judkins",
+          "position": "RB",
+          "status": "Active",
+          "description": ""
+        },
+        {
           "name": "Denzel Boston",
           "position": "WR",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Foot', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "KC Concepcion",
+          "position": "WR",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Tytus Howard",
+          "position": "OT",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Derek Barnett",
+          "position": "DE",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Elgton Jenkins",
+          "position": "C",
+          "status": "Active",
+          "description": ""
         },
         {
           "name": "Dylan Sampson",
@@ -1139,16 +1205,10 @@
           "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Left', 'returnDate': '2026-10-25'}"
         },
         {
-          "name": "KC Concepcion",
-          "position": "WR",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Calf', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Quinshon Judkins",
-          "position": "RB",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Right', 'returnDate': '2026-10-25'}"
+          "name": "Carson Schwesinger",
+          "position": "LB",
+          "status": "Active",
+          "description": ""
         },
         {
           "name": "Maliek Collins",
@@ -1161,42 +1221,6 @@
           "position": "LB",
           "status": "Active",
           "description": ""
-        },
-        {
-          "name": "Elgton Jenkins",
-          "position": "C",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Tytus Howard",
-          "position": "OT",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Derek Barnett",
-          "position": "DE",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Mason Graham",
-          "position": "DT",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Knee - MCL', 'location': 'Leg', 'detail': 'Sprain', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Mike Hall Jr.",
-          "position": "DT",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Teven Jenkins",
-          "position": "G",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Back', 'location': 'Torso', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         },
         {
           "name": "Andre Szmyt",
@@ -1229,34 +1253,10 @@
           "description": ""
         },
         {
-          "name": "Jaleel McLaughlin",
-          "position": "RB",
-          "status": "Active",
-          "description": ""
-        },
-        {
           "name": "Harold Fannin Jr.",
           "position": "TE",
           "status": "Active",
           "description": ""
-        },
-        {
-          "name": "Deshaun Watson",
-          "position": "QB",
-          "status": "Active",
-          "description": ""
-        },
-        {
-          "name": "Jerry Jeudy",
-          "position": "WR",
-          "status": "Active",
-          "description": ""
-        },
-        {
-          "name": "Kalia Davis",
-          "position": "DT",
-          "status": "Injured Reserve",
-          "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Quadriceps', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         }
       ]
     },
@@ -1266,16 +1266,40 @@
       "teamId": "6",
       "players": [
         {
-          "name": "Marist Liufau",
-          "position": "LB",
+          "name": "P.J. Locke",
+          "position": "S",
           "status": "Injured Reserve",
-          "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Forearm', 'location': 'Arm', 'detail': 'Fracture', 'side': 'Left', 'returnDate': '2026-10-26'}"
+          "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Foot', 'location': 'Leg', 'detail': 'Plantar Fasciitis', 'side': 'Right', 'returnDate': '2026-10-26'}"
         },
         {
           "name": "Cobie Durant",
           "position": "CB",
           "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Hamstring', 'location': 'Leg', 'detail': 'Strain', 'side': 'Not Specified', 'returnDate': '2026-10-26'}"
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Hamstring', 'location': 'Leg', 'returnDate': '2026-10-26'}"
+        },
+        {
+          "name": "Tyler Guyton",
+          "position": "OT",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Broderick Jones",
+          "position": "OT",
+          "status": "Questionable",
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Wrist', 'location': 'Arm', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-26'}"
+        },
+        {
+          "name": "George Pickens",
+          "position": "WR",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Marist Liufau",
+          "position": "LB",
+          "status": "Injured Reserve",
+          "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Forearm', 'location': 'Arm', 'detail': 'Fracture', 'side': 'Left', 'returnDate': '2026-10-26'}"
         },
         {
           "name": "KaVontae Turpin",
@@ -1288,18 +1312,6 @@
           "position": "LB",
           "status": "Active",
           "description": ""
-        },
-        {
-          "name": "George Pickens",
-          "position": "WR",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Shoulder', 'location': 'Arm', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-26'}"
-        },
-        {
-          "name": "Tyler Guyton",
-          "position": "OT",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Calf', 'location': 'Leg', 'returnDate': '2026-10-26'}"
         },
         {
           "name": "Caleb Downs",
@@ -1402,18 +1414,6 @@
           "position": "CB",
           "status": "Active",
           "description": ""
-        },
-        {
-          "name": "Malachi Lawrence",
-          "position": "LB",
-          "status": "Active",
-          "description": ""
-        },
-        {
-          "name": "Ajani Cornelius",
-          "position": "OT",
-          "status": "Active",
-          "description": ""
         }
       ]
     },
@@ -1423,16 +1423,22 @@
       "teamId": "7",
       "players": [
         {
-          "name": "Tyler Badie",
-          "position": "RB",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Thumb', 'location': 'Arm', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "name": "Talanoa Hufanga",
+          "position": "S",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
         },
         {
-          "name": "Pat Surtain II",
-          "position": "CB",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Sprain', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "name": "Jonah Elliss",
+          "position": "LB",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
+        },
+        {
+          "name": "Tyler Badie",
+          "position": "RB",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Thumb', 'location': 'Arm', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
         },
         {
           "name": "Jonah Coleman",
@@ -1443,20 +1449,14 @@
         {
           "name": "Jaylen Waddle",
           "position": "WR",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Pat Surtain II",
+          "position": "CB",
           "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Chest', 'location': 'Torso', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Talanoa Hufanga",
-          "position": "S",
-          "status": "Doubtful",
-          "description": "{'fantasyStatus': {'description': 'DOUBTFUL', 'abbreviation': 'DOUBTFUL'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Jonah Elliss",
-          "position": "LB",
-          "status": "Doubtful",
-          "description": "{'fantasyStatus': {'description': 'DOUBTFUL', 'abbreviation': 'DOUBTFUL'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Sprain', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         },
         {
           "name": "Dallen Bentley",
@@ -1580,8 +1580,8 @@
       "teamId": "8",
       "players": [
         {
-          "name": "DeAndre Carter",
-          "position": "WR",
+          "name": "Rock Ya-Sin",
+          "position": "CB",
           "status": "Active",
           "description": ""
         },
@@ -1590,6 +1590,12 @@
           "position": "S",
           "status": "Out",
           "description": "{'fantasyStatus': {'description': 'PUP-R', 'abbreviation': 'PUP-R'}, 'type': 'Achilles', 'location': 'Leg', 'detail': 'Surgery', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+        },
+        {
+          "name": "DeAndre Carter",
+          "position": "WR",
+          "status": "Active",
+          "description": ""
         },
         {
           "name": "Kerby Joseph",
@@ -1620,12 +1626,6 @@
           "position": "WR",
           "status": "Active",
           "description": ""
-        },
-        {
-          "name": "Rock Ya-Sin",
-          "position": "CB",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Hamstring', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         },
         {
           "name": "Ahmed Hassanein",
@@ -1737,8 +1737,20 @@
       "teamId": "9",
       "players": [
         {
-          "name": "Josh Jacobs",
-          "position": "RB",
+          "name": "Lukas Van Ness",
+          "position": "DE",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Bo Melton",
+          "position": "WR",
+          "status": "Questionable",
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Back', 'location': 'Torso', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+        },
+        {
+          "name": "Brandon Cisse",
+          "position": "CB",
           "status": "Active",
           "description": ""
         },
@@ -1749,28 +1761,40 @@
           "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Shin', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-29'}"
         },
         {
+          "name": "Savion Williams",
+          "position": "WR",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Anthony Campbell",
+          "position": "DT",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Matthew Golden",
+          "position": "WR",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Christian Watson",
+          "position": "WR",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Josh Jacobs",
+          "position": "RB",
+          "status": "Active",
+          "description": ""
+        },
+        {
           "name": "Aaron Banks",
           "position": "G",
           "status": "Questionable",
           "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Lukas Van Ness",
-          "position": "DE",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Illness', 'location': 'Other', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Savion Williams",
-          "position": "WR",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Bo Melton",
-          "position": "WR",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Back', 'location': 'Torso', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         },
         {
           "name": "Luke Musgrave",
@@ -1779,34 +1803,10 @@
           "description": "{'fantasyStatus': {'description': 'PUP-R', 'abbreviation': 'PUP-R'}, 'type': 'Neck', 'location': 'Head', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-25'}"
         },
         {
-          "name": "Matthew Golden",
-          "position": "WR",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Shoulder', 'location': 'Arm', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Christian Watson",
-          "position": "WR",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
           "name": "Jordan Love",
           "position": "QB",
           "status": "Active",
           "description": ""
-        },
-        {
-          "name": "Brandon Cisse",
-          "position": "CB",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Shoulder', 'location': 'Arm', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Anthony Campbell",
-          "position": "DT",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         },
         {
           "name": "Evan Williams",
@@ -1894,28 +1894,58 @@
       "teamId": "34",
       "players": [
         {
-          "name": "David Montgomery",
-          "position": "RB",
-          "status": "Doubtful",
-          "description": "{'fantasyStatus': {'description': 'DOUBTFUL', 'abbreviation': 'DOUBTFUL'}, 'type': 'Groin', 'location': 'Groin', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "name": "Blake Fisher",
+          "position": "OT",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Thumb', 'location': 'Arm', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
+        },
+        {
+          "name": "Jalen Pitre",
+          "position": "S",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Shoulder - AC Joint', 'location': 'Arm', 'detail': 'Sprain', 'side': 'Left', 'returnDate': '2026-11-01'}"
         },
         {
           "name": "Reed Blankenship",
           "position": "S",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Concussion', 'location': 'Head', 'detail': 'Concussion', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Concussion', 'location': 'Head', 'detail': 'Concussion', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
         },
         {
           "name": "Brevin Jordan",
           "position": "TE",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Foot', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "status": "Active",
+          "description": ""
         },
         {
           "name": "Azeez Al-Shaair",
           "position": "LB",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Woody Marks",
+          "position": "RB",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Dalton Schultz",
+          "position": "TE",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "David Montgomery",
+          "position": "RB",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Groin', 'location': 'Groin', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
+        },
+        {
+          "name": "Henry To'oTo'o",
+          "position": "LB",
+          "status": "Active",
+          "description": ""
         },
         {
           "name": "Logan Hall",
@@ -1934,30 +1964,6 @@
           "position": "OT",
           "status": "Active",
           "description": ""
-        },
-        {
-          "name": "Dalton Schultz",
-          "position": "TE",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Quadriceps', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Jalen Pitre",
-          "position": "S",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Shoulder - AC Joint', 'location': 'Arm', 'detail': 'Sprain', 'side': 'Left', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Henry To'oTo'o",
-          "position": "LB",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Shoulder', 'location': 'Arm', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Blake Fisher",
-          "position": "OT",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Thumb', 'location': 'Arm', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         },
         {
           "name": "Calen Bullock",
@@ -2036,12 +2042,6 @@
           "position": "WR",
           "status": "Active",
           "description": ""
-        },
-        {
-          "name": "Woody Marks",
-          "position": "RB",
-          "status": "Active",
-          "description": ""
         }
       ]
     },
@@ -2051,16 +2051,40 @@
       "teamId": "11",
       "players": [
         {
-          "name": "Anthony Richardson Sr.",
-          "position": "QB",
+          "name": "Mo Alie-Cox",
+          "position": "TE",
           "status": "Active",
           "description": ""
         },
         {
-          "name": "Tyler Warren",
+          "name": "Will Mallory",
           "position": "TE",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Bryce Boettcher",
+          "position": "LB",
           "status": "Questionable",
           "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Groin', 'location': 'Groin', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+        },
+        {
+          "name": "Sauce Gardner",
+          "position": "CB",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Calf', 'location': 'Leg', 'detail': 'Strain', 'side': 'Left', 'returnDate': '2026-11-01'}"
+        },
+        {
+          "name": "Tyler Warren",
+          "position": "TE",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Groin', 'location': 'Groin', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
+        },
+        {
+          "name": "Anthony Richardson Sr.",
+          "position": "QB",
+          "status": "Active",
+          "description": ""
         },
         {
           "name": "Jaylon Carlies",
@@ -2077,14 +2101,14 @@
         {
           "name": "Anthony Gould",
           "position": "WR",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Concussion', 'location': 'Head', 'detail': 'Concussion', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Concussion', 'location': 'Head', 'detail': 'Concussion', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
         },
         {
           "name": "Ashton Dulin",
           "position": "WR",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Hamstring', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "status": "Active",
+          "description": ""
         },
         {
           "name": "Austin Ajiake",
@@ -2095,12 +2119,6 @@
         {
           "name": "Jalen Travis",
           "position": "OT",
-          "status": "Active",
-          "description": ""
-        },
-        {
-          "name": "Bryce Boettcher",
-          "position": "LB",
           "status": "Active",
           "description": ""
         },
@@ -2129,18 +2147,6 @@
           "description": ""
         },
         {
-          "name": "Will Mallory",
-          "position": "TE",
-          "status": "Active",
-          "description": ""
-        },
-        {
-          "name": "Mo Alie-Cox",
-          "position": "TE",
-          "status": "Active",
-          "description": ""
-        },
-        {
           "name": "Seth McGowan",
           "position": "RB",
           "status": "Active",
@@ -2157,12 +2163,6 @@
           "position": "WR",
           "status": "Injured Reserve",
           "description": "{'fantasyStatus': {'description': 'IR', 'abbreviation': 'IR'}, 'type': 'Heel', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Left', 'returnDate': '2026-11-01'}"
-        },
-        {
-          "name": "Sauce Gardner",
-          "position": "CB",
-          "status": "Doubtful",
-          "description": "{'fantasyStatus': {'description': 'DOUBTFUL', 'abbreviation': 'DOUBTFUL'}, 'type': 'Calf', 'location': 'Leg', 'detail': 'Strain', 'side': 'Left', 'returnDate': '2026-10-25'}"
         },
         {
           "name": "Dalton Tucker",
@@ -2207,6 +2207,12 @@
       "abbreviation": "",
       "teamId": "30",
       "players": [
+        {
+          "name": "Anton Harrison",
+          "position": "OT",
+          "status": "Injured Reserve",
+          "description": "{'fantasyStatus': {'description': 'IR', 'abbreviation': 'IR'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Surgery', 'side': 'Right', 'returnDate': '2027-02-15'}"
+        },
         {
           "name": "Foyesade Oluokun",
           "position": "LB",
@@ -2350,12 +2356,6 @@
           "position": "CB",
           "status": "Active",
           "description": ""
-        },
-        {
-          "name": "Jourdan Lewis",
-          "position": "CB",
-          "status": "Active",
-          "description": ""
         }
       ]
     },
@@ -2365,28 +2365,52 @@
       "teamId": "12",
       "players": [
         {
-          "name": "Travis Kelce",
-          "position": "TE",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Rashee Rice",
+          "name": "Andrew Armstrong",
           "position": "WR",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Hamstring', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Josh Simmons",
-          "position": "OT",
-          "status": "Injured Reserve",
-          "description": "{'fantasyStatus': {'description': 'IR', 'abbreviation': 'IR'}, 'type': 'Back', 'location': 'Torso', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-22'}"
+          "status": "Active",
+          "description": ""
         },
         {
           "name": "L'Jarius Sneed",
           "position": "CB",
           "status": "Questionable",
           "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+        },
+        {
+          "name": "Brashard Smith",
+          "position": "RB",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Hamstring', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
+        },
+        {
+          "name": "Xavier Worthy",
+          "position": "WR",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Travis Kelce",
+          "position": "TE",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Jaylon Moore",
+          "position": "OT",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Concussion', 'location': 'Head', 'detail': 'Concussion', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
+        },
+        {
+          "name": "Rashee Rice",
+          "position": "WR",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Hamstring', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
+        },
+        {
+          "name": "Josh Simmons",
+          "position": "OT",
+          "status": "Injured Reserve",
+          "description": "{'fantasyStatus': {'description': 'IR', 'abbreviation': 'IR'}, 'type': 'Back', 'location': 'Torso', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-22'}"
         },
         {
           "name": "George Karlaftis",
@@ -2415,12 +2439,6 @@
         {
           "name": "Harrison Butker",
           "position": "PK",
-          "status": "Active",
-          "description": ""
-        },
-        {
-          "name": "Andrew Armstrong",
-          "position": "WR",
           "status": "Active",
           "description": ""
         },
@@ -2473,12 +2491,6 @@
           "description": ""
         },
         {
-          "name": "Xavier Worthy",
-          "position": "WR",
-          "status": "Active",
-          "description": ""
-        },
-        {
           "name": "Patrick Mahomes",
           "position": "QB",
           "status": "Active",
@@ -2491,12 +2503,6 @@
           "description": ""
         },
         {
-          "name": "Jaylon Moore",
-          "position": "OT",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Concussion', 'location': 'Head', 'detail': 'Concussion', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
           "name": "Peter Woods",
           "position": "DT",
           "status": "Active",
@@ -2507,12 +2513,6 @@
           "position": "WR",
           "status": "Injured Reserve",
           "description": "{'fantasyStatus': {'description': 'IR', 'abbreviation': 'IR'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Surgery', 'side': 'Left', 'returnDate': '2027-01-17'}"
-        },
-        {
-          "name": "Mansoor Delane",
-          "position": "CB",
-          "status": "Active",
-          "description": ""
         }
       ]
     },
@@ -2521,6 +2521,24 @@
       "abbreviation": "",
       "teamId": "13",
       "players": [
+        {
+          "name": "Quay Walker",
+          "position": "LB",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Tonka Hemingway",
+          "position": "DT",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Dont'e Thornton Jr.",
+          "position": "WR",
+          "status": "Injured Reserve",
+          "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Hamstring', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
+        },
         {
           "name": "Mike Washington Jr.",
           "position": "RB",
@@ -2549,19 +2567,7 @@
           "name": "Carter Runyon",
           "position": "TE",
           "status": "Injured Reserve",
-          "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Foot', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Quay Walker",
-          "position": "LB",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Chest', 'location': 'Torso', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Dont'e Thornton Jr.",
-          "position": "WR",
-          "status": "Injured Reserve",
-          "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Hamstring', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Foot', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
         },
         {
           "name": "Jeremy Chinn",
@@ -2574,12 +2580,6 @@
           "position": "LB",
           "status": "Active",
           "description": ""
-        },
-        {
-          "name": "Tonka Hemingway",
-          "position": "DT",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Concussion', 'location': 'Head', 'detail': 'Concussion', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         },
         {
           "name": "Matt Gay",
@@ -2836,10 +2836,16 @@
       "teamId": "14",
       "players": [
         {
-          "name": "Puka Nacua",
+          "name": "Jordan Whittington",
           "position": "WR",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Calf', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Konata Mumpfield",
+          "position": "WR",
+          "status": "Active",
+          "description": ""
         },
         {
           "name": "Trent McDuffie",
@@ -2850,8 +2856,20 @@
         {
           "name": "Nate Landman",
           "position": "LB",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Concussion', 'location': 'Head', 'detail': 'Concussion', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
+        },
+        {
+          "name": "Myles Garrett",
+          "position": "DE",
+          "status": "Injured Reserve",
+          "description": "{'fantasyStatus': {'description': 'IR', 'abbreviation': 'IR'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Surgery', 'side': 'Left', 'returnDate': '2026-11-01'}"
+        },
+        {
+          "name": "Puka Nacua",
+          "position": "WR",
           "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Concussion', 'location': 'Head', 'detail': 'Concussion', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Calf', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         },
         {
           "name": "Kobie Turner",
@@ -2868,12 +2886,6 @@
         {
           "name": "Quentin Lake",
           "position": "S",
-          "status": "Active",
-          "description": ""
-        },
-        {
-          "name": "Konata Mumpfield",
-          "position": "WR",
           "status": "Active",
           "description": ""
         },
@@ -2918,12 +2930,6 @@
           "position": "PK",
           "status": "Injured Reserve",
           "description": "{'fantasyStatus': {'description': 'IR', 'abbreviation': 'IR'}, 'type': 'Knee - ACL', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2027-02-15'}"
-        },
-        {
-          "name": "Myles Garrett",
-          "position": "DE",
-          "status": "Injured Reserve",
-          "description": "{'fantasyStatus': {'description': 'IR', 'abbreviation': 'IR'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Surgery', 'side': 'Left', 'returnDate': '2026-11-01'}"
         },
         {
           "name": "CJ Daniels",
@@ -2978,12 +2984,6 @@
           "position": "WR",
           "status": "Active",
           "description": ""
-        },
-        {
-          "name": "Keagen Trost",
-          "position": "OT",
-          "status": "Active",
-          "description": ""
         }
       ]
     },
@@ -2993,22 +2993,40 @@
       "teamId": "15",
       "players": [
         {
+          "name": "Reese Taylor",
+          "position": "CB",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Quadriceps', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
+        },
+        {
           "name": "Jaylen Wright",
           "position": "RB",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Foot', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Robert Beal Jr.",
+          "position": "DE",
+          "status": "Doubtful",
+          "description": "{'fantasyStatus': {'description': 'DOUBTFUL', 'abbreviation': 'DOUBTFUL'}, 'type': 'Hamstring', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+        },
+        {
+          "name": "Tucker Addington",
+          "position": "LS",
+          "status": "Active",
+          "description": ""
         },
         {
           "name": "Caleb Douglas",
           "position": "WR",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "status": "Active",
+          "description": ""
         },
         {
           "name": "Will Kacmarek",
           "position": "TE",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Hamstring', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "status": "Active",
+          "description": ""
         },
         {
           "name": "Willie Gay Jr.",
@@ -3053,28 +3071,10 @@
           "description": ""
         },
         {
-          "name": "Tucker Addington",
-          "position": "LS",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Shoulder', 'location': 'Arm', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
           "name": "Jared Wayne",
           "position": "WR",
           "status": "Active",
           "description": ""
-        },
-        {
-          "name": "Reese Taylor",
-          "position": "CB",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Quadriceps', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Robert Beal Jr.",
-          "position": "DE",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Hamstring', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         },
         {
           "name": "Greg Dulcich",
@@ -3152,14 +3152,20 @@
         {
           "name": "Christian Darrisaw",
           "position": "OT",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Concussion', 'location': 'Head', 'detail': 'Concussion', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Aaron Jones Sr.",
+          "position": "RB",
+          "status": "Active",
+          "description": ""
         },
         {
           "name": "T.J. Hockenson",
           "position": "TE",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Concussion', 'location': 'Head', 'detail': 'Concussion', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "status": "Active",
+          "description": ""
         },
         {
           "name": "Jordan Mason",
@@ -3230,12 +3236,6 @@
         {
           "name": "Kyler Murray",
           "position": "QB",
-          "status": "Active",
-          "description": ""
-        },
-        {
-          "name": "Aaron Jones Sr.",
-          "position": "RB",
           "status": "Active",
           "description": ""
         },
@@ -3464,10 +3464,10 @@
       "teamId": "18",
       "players": [
         {
-          "name": "Kaden Elliss",
-          "position": "LB",
-          "status": "Active",
-          "description": ""
+          "name": "Cesar Ruiz",
+          "position": "G",
+          "status": "Questionable",
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         },
         {
           "name": "Anfernee Jennings",
@@ -3479,7 +3479,13 @@
           "name": "Nathan Shepherd",
           "position": "DT",
           "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Achilles', 'location': 'Leg', 'returnDate': '2026-10-25'}"
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Illness', 'location': 'Other', 'returnDate': '2026-10-25'}"
+        },
+        {
+          "name": "Kaden Elliss",
+          "position": "LB",
+          "status": "Active",
+          "description": ""
         },
         {
           "name": "Alvin Kamara",
@@ -3528,12 +3534,6 @@
           "position": "PK",
           "status": "Active",
           "description": ""
-        },
-        {
-          "name": "Cesar Ruiz",
-          "position": "G",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         },
         {
           "name": "Devaughn Vele",
@@ -3621,22 +3621,28 @@
       "teamId": "19",
       "players": [
         {
+          "name": "Andrew Thomas",
+          "position": "OT",
+          "status": "Active",
+          "description": ""
+        },
+        {
           "name": "Jermaine Eluemunor",
           "position": "OT",
           "status": "Questionable",
           "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Calf', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         },
         {
-          "name": "Andrew Thomas",
-          "position": "OT",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Groin', 'location': 'Groin', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "name": "Tremaine Edmunds",
+          "position": "LB",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Chest', 'location': 'Torso', 'detail': 'Not Specified', 'side': 'Left', 'returnDate': '2027-02-15'}"
         },
         {
-          "name": "Colton Hood",
+          "name": "Greg Newsome II",
           "position": "CB",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Concussion', 'location': 'Head', 'detail': 'Concussion', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Concussion', 'location': 'Head', 'detail': 'Concussion', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
         },
         {
           "name": "Jevon Holland",
@@ -3645,10 +3651,40 @@
           "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Concussion', 'location': 'Head', 'detail': 'Concussion', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         },
         {
+          "name": "Paulson Adebo",
+          "position": "CB",
+          "status": "Injured Reserve",
+          "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+        },
+        {
           "name": "Theo Johnson",
           "position": "TE",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Neck', 'location': 'Head', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "status": "Doubtful",
+          "description": "{'fantasyStatus': {'description': 'DOUBTFUL', 'abbreviation': 'DOUBTFUL'}, 'type': 'Neck', 'location': 'Head', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+        },
+        {
+          "name": "Cam Skattebo",
+          "position": "RB",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Charlie Jones",
+          "position": "WR",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Chris Manhertz",
+          "position": "TE",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Colton Hood",
+          "position": "CB",
+          "status": "Active",
+          "description": ""
         },
         {
           "name": "Jordan Stout",
@@ -3663,40 +3699,10 @@
           "description": ""
         },
         {
-          "name": "Chris Manhertz",
-          "position": "TE",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Calf', 'location': 'Leg', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Greg Newsome II",
-          "position": "CB",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Concussion', 'location': 'Head', 'detail': 'Concussion', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Tremaine Edmunds",
-          "position": "LB",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Shoulder', 'location': 'Arm', 'detail': 'Not Specified', 'side': 'Left', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Paulson Adebo",
-          "position": "CB",
-          "status": "Injured Reserve",
-          "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
           "name": "Darnell Mooney",
           "position": "WR",
           "status": "Active",
           "description": ""
-        },
-        {
-          "name": "Charlie Jones",
-          "position": "WR",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Achilles', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         },
         {
           "name": "Marcus Mbow",
@@ -3763,12 +3769,6 @@
           "position": "TE",
           "status": "Active",
           "description": ""
-        },
-        {
-          "name": "Cam Skattebo",
-          "position": "RB",
-          "status": "Active",
-          "description": ""
         }
       ]
     },
@@ -3777,24 +3777,6 @@
       "abbreviation": "",
       "teamId": "20",
       "players": [
-        {
-          "name": "Adonai Mitchell",
-          "position": "WR",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Finger', 'location': 'Arm', 'detail': 'Surgery', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Breece Hall",
-          "position": "RB",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Quadriceps', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Right', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Joseph Ossai",
-          "position": "DE",
-          "status": "Out",
-          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
-        },
         {
           "name": "Kiko Mauigoa",
           "position": "LB",
@@ -3808,28 +3790,58 @@
           "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Concussion', 'location': 'Head', 'detail': 'Concussion', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
         },
         {
+          "name": "Omar Cooper Jr.",
+          "position": "WR",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Braelon Allen",
+          "position": "RB",
+          "status": "Active",
+          "description": ""
+        },
+        {
           "name": "Kene Nwangwu",
           "position": "RB",
           "status": "Questionable",
           "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         },
         {
-          "name": "Dylan Parham",
-          "position": "G",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "name": "Joseph Ossai",
+          "position": "DE",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
+        },
+        {
+          "name": "Adonai Mitchell",
+          "position": "WR",
+          "status": "Active",
+          "description": ""
         },
         {
           "name": "T'Vondre Sweat",
           "position": "DT",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Elbow', 'location': 'Arm', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "status": "Active",
+          "description": ""
         },
         {
           "name": "Will McDonald IV",
           "position": "DE",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Breece Hall",
+          "position": "RB",
           "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Toe', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Quadriceps', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Right', 'returnDate': '2026-10-25'}"
+        },
+        {
+          "name": "Dylan Parham",
+          "position": "G",
+          "status": "Questionable",
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         },
         {
           "name": "Jamien Sherwood",
@@ -3880,20 +3892,8 @@
           "description": ""
         },
         {
-          "name": "Omar Cooper Jr.",
-          "position": "WR",
-          "status": "Active",
-          "description": ""
-        },
-        {
           "name": "Geno Smith",
           "position": "QB",
-          "status": "Active",
-          "description": ""
-        },
-        {
-          "name": "Braelon Allen",
-          "position": "RB",
           "status": "Active",
           "description": ""
         },
@@ -3935,6 +3935,42 @@
       "teamId": "21",
       "players": [
         {
+          "name": "Fred Johnson",
+          "position": "OT",
+          "status": "Questionable",
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Illness', 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-26'}"
+        },
+        {
+          "name": "Drew Kendall",
+          "position": "C",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Dontayvion Wicks",
+          "position": "WR",
+          "status": "Questionable",
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-26'}"
+        },
+        {
+          "name": "Dallas Goedert",
+          "position": "TE",
+          "status": "Questionable",
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-26'}"
+        },
+        {
+          "name": "DeVonta Smith",
+          "position": "WR",
+          "status": "Questionable",
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Hamstring', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-26'}"
+        },
+        {
+          "name": "Saquon Barkley",
+          "position": "RB",
+          "status": "Questionable",
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Hamstring', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Right', 'returnDate': '2026-10-26'}"
+        },
+        {
           "name": "Eli Stowers",
           "position": "TE",
           "status": "Injured Reserve",
@@ -3947,30 +3983,6 @@
           "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Back', 'location': 'Torso', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-26'}"
         },
         {
-          "name": "Dallas Goedert",
-          "position": "TE",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-26'}"
-        },
-        {
-          "name": "Dontayvion Wicks",
-          "position": "WR",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-26'}"
-        },
-        {
-          "name": "DeVonta Smith",
-          "position": "WR",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Hamstring', 'location': 'Leg', 'returnDate': '2026-10-26'}"
-        },
-        {
-          "name": "Saquon Barkley",
-          "position": "RB",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Hamstring', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Right', 'returnDate': '2026-10-26'}"
-        },
-        {
           "name": "Moro Ojomo",
           "position": "DT",
           "status": "Questionable",
@@ -3981,12 +3993,6 @@
           "position": "G",
           "status": "Questionable",
           "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Shoulder', 'location': 'Arm', 'returnDate': '2026-10-26'}"
-        },
-        {
-          "name": "Drew Kendall",
-          "position": "C",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Knee', 'location': 'Leg', 'returnDate': '2026-10-26'}"
         },
         {
           "name": "Jonathan Greenard",
@@ -4077,12 +4083,6 @@
           "position": "WR",
           "status": "Active",
           "description": ""
-        },
-        {
-          "name": "Nolan Smith Jr.",
-          "position": "LB",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Concussion', 'location': 'Head', 'detail': 'Concussion', 'side': 'Not Specified', 'returnDate': '2026-10-26'}"
         }
       ]
     },
@@ -4091,6 +4091,12 @@
       "abbreviation": "",
       "teamId": "23",
       "players": [
+        {
+          "name": "Rico Dowdle",
+          "position": "RB",
+          "status": "Questionable",
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+        },
         {
           "name": "T.J. Watt",
           "position": "LB",
@@ -4108,12 +4114,6 @@
           "position": "CB",
           "status": "Active",
           "description": ""
-        },
-        {
-          "name": "Rico Dowdle",
-          "position": "RB",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         },
         {
           "name": "Brandin Echols",
@@ -4249,10 +4249,58 @@
       "teamId": "25",
       "players": [
         {
+          "name": "Mykel Williams",
+          "position": "DE",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Upton Stout",
+          "position": "CB",
+          "status": "Questionable",
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Shoulder - AC Joint', 'location': 'Arm', 'detail': 'Sprain', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+        },
+        {
+          "name": "Marques Sigle",
+          "position": "S",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
+        },
+        {
+          "name": "Jaden Dugger",
+          "position": "LB",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Jordan Watkins",
+          "position": "WR",
+          "status": "Active",
+          "description": ""
+        },
+        {
           "name": "Nick Bosa",
           "position": "DE",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Strain', 'side': 'Left', 'returnDate': '2026-10-25'}"
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Strain', 'side': 'Left', 'returnDate': '2026-11-08'}"
+        },
+        {
+          "name": "Brandin Cooks",
+          "position": "WR",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Ashtyn Davis",
+          "position": "S",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Deebo Samuel Sr.",
+          "position": "WR",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Hamstring', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Right', 'returnDate': '2026-11-08'}"
         },
         {
           "name": "Christian Kirk",
@@ -4261,46 +4309,22 @@
           "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Calf', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         },
         {
+          "name": "Luke Gifford",
+          "position": "LB",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Groin', 'location': 'Groin', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
+        },
+        {
           "name": "Mike Evans",
           "position": "WR",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Achilles', 'location': 'Leg', 'detail': 'Tendinitis', 'side': 'Right', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Jaden Dugger",
-          "position": "LB",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Mykel Williams",
-          "position": "DE",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Marques Sigle",
-          "position": "S",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Ashtyn Davis",
-          "position": "S",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Hamstring', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Achilles', 'location': 'Leg', 'detail': 'Tendinitis', 'side': 'Right', 'returnDate': '2026-11-08'}"
         },
         {
           "name": "Siran Neal",
           "position": "S",
           "status": "Questionable",
           "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Deebo Samuel Sr.",
-          "position": "WR",
-          "status": "Out",
-          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Hamstring', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Right', 'returnDate': '2026-11-08'}"
         },
         {
           "name": "Fred Warner",
@@ -4315,20 +4339,8 @@
           "description": ""
         },
         {
-          "name": "Upton Stout",
-          "position": "CB",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Shoulder - AC Joint', 'location': 'Arm', 'detail': 'Sprain', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
           "name": "Dre Greenlaw",
           "position": "LB",
-          "status": "Active",
-          "description": ""
-        },
-        {
-          "name": "Jordan Watkins",
-          "position": "WR",
           "status": "Active",
           "description": ""
         },
@@ -4357,12 +4369,6 @@
           "description": ""
         },
         {
-          "name": "Brandin Cooks",
-          "position": "WR",
-          "status": "Active",
-          "description": ""
-        },
-        {
           "name": "Kaelon Black",
           "position": "RB",
           "status": "Active",
@@ -4387,12 +4393,6 @@
           "description": ""
         },
         {
-          "name": "Luke Gifford",
-          "position": "LB",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Groin', 'location': 'Groin', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
           "name": "Gracen Halton",
           "position": "DT",
           "status": "Active",
@@ -4406,22 +4406,58 @@
       "teamId": "26",
       "players": [
         {
+          "name": "George Holani",
+          "position": "RB",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Nick Emmanwori",
+          "position": "S",
+          "status": "Questionable",
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Hip', 'location': 'Leg', 'returnDate': '2026-10-25'}"
+        },
+        {
+          "name": "Drake Thomas",
+          "position": "LB",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-02'}"
+        },
+        {
           "name": "Drew Lock",
           "position": "QB",
           "status": "Questionable",
           "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Elbow', 'location': 'Arm', 'detail': 'Not Specified', 'side': 'Right', 'returnDate': '2026-10-25'}"
         },
         {
-          "name": "Rashid Shaheed",
-          "position": "WR",
+          "name": "Emanuel Wilson",
+          "position": "RB",
           "status": "Active",
           "description": ""
         },
         {
+          "name": "Elijah Arroyo",
+          "position": "TE",
+          "status": "Injured Reserve",
+          "description": "{'fantasyStatus': {'description': 'IR', 'abbreviation': 'IR'}, 'type': 'Shoulder', 'location': 'Arm', 'detail': 'Surgery', 'side': 'Not Specified', 'returnDate': '2027-02-15'}"
+        },
+        {
+          "name": "Chazz Surratt",
+          "position": "LB",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Calf', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-02'}"
+        },
+        {
           "name": "Zach Charbonnet",
           "position": "RB",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Knee - ACL', 'location': 'Leg', 'detail': 'Surgery', 'side': 'Left', 'returnDate': '2026-10-25'}"
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Knee - ACL', 'location': 'Leg', 'detail': 'Surgery', 'side': 'Left', 'returnDate': '2026-11-02'}"
+        },
+        {
+          "name": "Rashid Shaheed",
+          "position": "WR",
+          "status": "Active",
+          "description": ""
         },
         {
           "name": "Beau Stephens",
@@ -4448,28 +4484,10 @@
           "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Knee', 'location': 'Leg', 'returnDate': '2026-10-25'}"
         },
         {
-          "name": "Elijah Arroyo",
-          "position": "TE",
-          "status": "Injured Reserve",
-          "description": "{'fantasyStatus': {'description': 'IR', 'abbreviation': 'IR'}, 'type': 'Shoulder', 'location': 'Arm', 'detail': 'Surgery', 'side': 'Not Specified', 'returnDate': '2027-02-15'}"
-        },
-        {
-          "name": "Drake Thomas",
-          "position": "LB",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
           "name": "Connor O'Toole",
           "position": "LB",
           "status": "Questionable",
           "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Hamstring', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Chazz Surratt",
-          "position": "LB",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Calf', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         },
         {
           "name": "Anthony Bradford",
@@ -4520,12 +4538,6 @@
           "description": ""
         },
         {
-          "name": "Nick Emmanwori",
-          "position": "S",
-          "status": "Active",
-          "description": ""
-        },
-        {
           "name": "Ernest Jones IV",
           "position": "LB",
           "status": "Active",
@@ -4542,18 +4554,6 @@
           "position": "WR",
           "status": "Active",
           "description": ""
-        },
-        {
-          "name": "AJ Barner",
-          "position": "TE",
-          "status": "Active",
-          "description": ""
-        },
-        {
-          "name": "Jadarian Price",
-          "position": "RB",
-          "status": "Injured Reserve",
-          "description": "{'fantasyStatus': {'description': 'IR', 'abbreviation': 'IR'}, 'type': 'Chest', 'location': 'Torso', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-02'}"
         }
       ]
     },
@@ -4563,22 +4563,58 @@
       "teamId": "27",
       "players": [
         {
-          "name": "Baker Mayfield",
+          "name": "Luke Goedeke",
+          "position": "OT",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Calf', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
+        },
+        {
+          "name": "Jalon Daniels",
           "position": "QB",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Zyon McCollum",
+          "position": "CB",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Antoine Winfield Jr.",
+          "position": "S",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Ribs', 'location': 'Torso', 'detail': 'Fracture', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
+        },
+        {
+          "name": "Tez Johnson",
+          "position": "WR",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Ted Hurst III",
+          "position": "WR",
           "status": "Active",
           "description": ""
         },
         {
           "name": "Bucky Irving",
           "position": "RB",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Illness', 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "status": "Active",
+          "description": ""
         },
         {
           "name": "Emeka Egbuka",
           "position": "WR",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Concussion', 'location': 'Head', 'detail': 'Concussion', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
+        },
+        {
+          "name": "Baker Mayfield",
+          "position": "QB",
           "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Concussion', 'location': 'Head', 'detail': 'Concussion', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Thumb', 'location': 'Arm', 'returnDate': '2026-10-25'}"
         },
         {
           "name": "Christian Rozeboom",
@@ -4587,34 +4623,16 @@
           "description": "{'fantasyStatus': {'description': 'IR', 'abbreviation': 'IR'}, 'type': 'Finger', 'location': 'Arm', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-30'}"
         },
         {
-          "name": "Luke Goedeke",
-          "position": "OT",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Calf', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
           "name": "David Sills V",
           "position": "WR",
           "status": "Active",
           "description": ""
         },
         {
-          "name": "Zyon McCollum",
-          "position": "CB",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Illness', 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
           "name": "Calijah Kancey",
           "position": "DT",
           "status": "Active",
           "description": ""
-        },
-        {
-          "name": "Antoine Winfield Jr.",
-          "position": "S",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Ribs', 'location': 'Torso', 'detail': 'Fracture', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         },
         {
           "name": "Sean Tucker",
@@ -4659,12 +4677,6 @@
           "description": ""
         },
         {
-          "name": "Ted Hurst III",
-          "position": "WR",
-          "status": "Active",
-          "description": ""
-        },
-        {
           "name": "Billy Schrauth",
           "position": "G",
           "status": "Active",
@@ -4695,20 +4707,8 @@
           "description": ""
         },
         {
-          "name": "Jalon Daniels",
-          "position": "QB",
-          "status": "Active",
-          "description": ""
-        },
-        {
           "name": "Kenny Gainwell",
           "position": "RB",
-          "status": "Active",
-          "description": ""
-        },
-        {
-          "name": "SirVocea Dennis",
-          "position": "LB",
           "status": "Active",
           "description": ""
         }
@@ -4720,16 +4720,10 @@
       "teamId": "10",
       "players": [
         {
-          "name": "Calvin Ridley",
-          "position": "WR",
+          "name": "Tony Adams",
+          "position": "S",
           "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Hip', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Dorian Mausi",
-          "position": "LB",
-          "status": "Injured Reserve",
-          "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Foot', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         },
         {
           "name": "Kevin Winston Jr.",
@@ -4740,8 +4734,20 @@
         {
           "name": "Tyjae Spears",
           "position": "RB",
-          "status": "Active",
-          "description": ""
+          "status": "Questionable",
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+        },
+        {
+          "name": "Calvin Ridley",
+          "position": "WR",
+          "status": "Questionable",
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Hip', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+        },
+        {
+          "name": "Dorian Mausi",
+          "position": "LB",
+          "status": "Injured Reserve",
+          "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Foot', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         },
         {
           "name": "Jeffery Simmons",
@@ -4820,12 +4826,6 @@
           "position": "QB",
           "status": "Active",
           "description": ""
-        },
-        {
-          "name": "Tony Adams",
-          "position": "S",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         },
         {
           "name": "Joshua Williams",
