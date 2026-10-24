@@ -54,6 +54,9 @@ jobs:
       - name: Generate independent Model C review draft
         if: steps.time.outputs.run == 'true'
         run: python3 scripts/model_c_engine.py
+      - name: Build official quarterback source review queue
+        if: steps.time.outputs.run == 'true'
+        run: python3 scripts/model_c_qb_review_queue.py
       - name: Discover official team QB news links (pilot, best effort)
         if: steps.time.outputs.run == 'true'
         continue-on-error: true
@@ -61,9 +64,6 @@ jobs:
       - name: Validate official news discovery snapshot
         if: steps.time.outputs.run == 'true'
         run: python3 tests/test_model_c_discovery_snapshot.py
-      - name: Build official quarterback source review queue
-        if: steps.time.outputs.run == 'true'
-        run: python3 scripts/model_c_qb_review_queue.py
       - name: Rank official QB news for manual review
         if: steps.time.outputs.run == 'true'
         run: python3 scripts/model_c_news_ranking.py
