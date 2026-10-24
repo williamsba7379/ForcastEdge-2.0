@@ -63,6 +63,18 @@ def parse_groups(raw):
     return teams
 
 
+def qb_report(teams,as_of,source=URL):
+    rows=[]
+    for team in teams:
+        for player in team["players"]:
+            if player.get("position")=="QB":
+                rows.append({"team":team["team"],"player":player["name"],
+                             "reportedStatus":player["status"],"description":player["description"],
+                             "source":source,"retrievedAt":as_of,
+                             "starterConfirmed":False,"reviewRequired":True})
+    return {"status":"ESPN_REPORTED_QB_INJURIES_ONLY","automaticConfirmations":0,
+            "retrievedAt":as_of,"source":source,"items":rows}
+
 def main():
     req=urllib.request.Request(URL,headers={"User-Agent":"ForecastEdge/2.0 (injury monitoring)","Accept":"application/json"})
     with urllib.request.urlopen(req,timeout=35) as response:
@@ -72,6 +84,7 @@ def main():
       "status":"UNVERIFIED_REPORTING_FEED","caution":"Reported injuries only. Not confirmed starting lineups, expected workload, or calibrated point adjustments.",
       "teams":teams}
     (DATA/"model-c-injury-snapshot.json").write_text(json.dumps(out,indent=2)+"\n")
+    (DATA/"model-c-espn-qb-status.json").write_text(json.dumps(qb_report(teams,out["retrievedAt"]),indent=2)+"\n")
     print(f"Saved {sum(len(t['players']) for t in teams)} injury listings across {len(teams)} teams.")
 
 if __name__=="__main__":main()
