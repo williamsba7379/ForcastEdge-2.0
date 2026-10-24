@@ -31,11 +31,12 @@ def extract_qbs(payload):
             meta=position.get("position",{})
             if isinstance(meta,str):meta={"abbreviation":meta}
             if str(meta.get("abbreviation","")).upper()!="QB":continue
-            for player in position.get("athletes",[]):
+            for index,player in enumerate(position.get("athletes",[])):
+                if not isinstance(player,dict):continue
                 athlete=player.get("athlete",player)
                 rank=player.get("rank",player.get("depth",player.get("slot")))
                 name=athlete.get("displayName")
-                if name and str(rank)=="1":candidates.append(name)
+                if name and (str(rank)=="1" or (rank is None and index==0)):candidates.append(name)
     return sorted(set(candidates))
 
 def main():
@@ -55,7 +56,7 @@ def main():
             candidates=[]
         results[name]={"qb1Candidate":candidates[0] if len(candidates)==1 else None,
           "candidateCount":len(candidates),"source":url,"verification":"DEPTH_CHART_ONLY_NOT_CONFIRMED",
-          "note":"QB1 is a depth-chart listing, not a confirmed game starter."}
+          "note":"QB1 is the first listed quarterback when ESPN omits rank; not a confirmed game starter."}
     if len(results)<25:raise RuntimeError("Insufficient team coverage; previous snapshot preserved")
     if not any(x["qb1Candidate"] for x in results.values()):
         raise RuntimeError("No QB1 candidates parsed from ESPN depth charts; preserve previous snapshot rather than publish empty results")
