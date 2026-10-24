@@ -22,6 +22,13 @@ def check():
         for side in ("home","away"):
             alert=game["qbReviewAlerts"][side]
             assert isinstance(alert["injuryFlags"],list)
+            assert isinstance(alert["reportedQbAvailability"],list)
+            allowed={"NON_INJURY_INACTIVE","REPORTED_UNAVAILABLE","UNCERTAIN","REPORTED_AVAILABLE","UNKNOWN"}
+            for item in alert["reportedQbAvailability"]:
+                assert item["category"] in allowed
+                assert item["sourceType"]=="UNVERIFIED_REPORTING_FEED"
+            for flag in alert["injuryFlags"]:
+                assert any(item["name"]==flag["name"] and item["category"] in ("REPORTED_UNAVAILABLE","UNCERTAIN") for item in alert["reportedQbAvailability"])
             assert isinstance(alert["candidateMismatch"],bool)
             assert alert["starterConfirmed"] == (game["quarterbacks"][side]["verification"]=="OFFICIAL_GAME_SPECIFIC")
             qb=game.get("quarterbacks",{}).get(side,{})
