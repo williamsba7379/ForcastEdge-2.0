@@ -17,14 +17,17 @@ def rank_link(game,link):
     score=0
     names=[game.get("recentPrimaryPasserCandidate"),game.get("depthChartCandidate")]
     names += [x.get("name") for x in game.get("reportedInjuryFlags",[])]
-    if any(contains(text,n) for n in names if n):
-        score+=5;reasons.append("PLAYER_NAME")
+    own_player=any(contains(text,n) for n in names if n)
+    if own_player:
+        score+=7;reasons.append("OWN_QB_CANDIDATE")
     if any(contains(text,t) for t in ("quarterback","qb","starter","starting")):
         score+=3;reasons.append("QB_TERMS")
     if any(contains(text,t) for t in ("injury","injured","questionable","practice","inactive","ruled out","named starter")):
         score+=2;reasons.append("STATUS_TERMS")
     if contains(text,game["opponent"]):
-        score+=3;reasons.append("OPPONENT")
+        score+=1;reasons.append("OPPONENT_MENTION")
+        if not own_player:
+            score-=3;reasons.append("OPPONENT_WITHOUT_OWN_QB")
     match=re.search(r"\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+(\d{1,2}),?\s+(20\d{2})\b",link.get("headline",""),re.I)
     date=None
     kickoff=dt.datetime.fromisoformat(game["kickoff"].replace("Z","+00:00")).date()
@@ -38,6 +41,9 @@ def rank_link(game,link):
             else:score-=10;reasons.append("OLD_NEWS")
         except ValueError:date=None
     if date is None:reasons.append("DATE_UNVERIFIED")
+    if not own_player:
+        # Generic injury news is lower priority than an identified team QB.
+        score-=2;reasons.append("NO_OWN_QB_NAME")
     # Exclude stale and postgame links from the actionable review shortlist.
     eligible=date is not None and 0<=(kickoff-date).days<=7
     if not eligible:reasons.append("NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST")
