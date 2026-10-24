@@ -51,7 +51,7 @@ def extract_candidates(page,base,limit=20):
         if url in seen or not any(term in (label+" "+p.path.replace("-"," ")).lower() for term in TERMS):
             continue
         seen.add(url)
-        found.append({"url":url,"headline":re.sub(r"\\s+"," ",label)[:220],"status":"UNVERIFIED_LINK_FOR_HUMAN_REVIEW"})
+        found.append({"url":url,"headline":re.sub(r"\s+"," ",label)[:220],"status":"UNVERIFIED_LINK_FOR_HUMAN_REVIEW"})
         if len(found)>=limit:
             break
     return found
