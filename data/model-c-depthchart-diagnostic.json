@@ -1,0 +1,115 @@
+{
+  "checkedAt": "2026-10-24T04:10:15.473211+00:00",
+  "status": "DIAGNOSTIC_ONLY_NOT_STARTER_CONFIRMATION",
+  "teamsChecked": 32,
+  "teamsWithQB1": 0,
+  "teamsWithoutQB1": 32,
+  "requestErrors": 0,
+  "samples": [
+    {
+      "team": "Arizona Cardinals",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/22/depthcharts",
+      "qb1Candidates": [],
+      "topLevelKeys": [
+        "depthchart",
+        "season",
+        "status",
+        "team",
+        "timestamp"
+      ],
+      "depthChartContainerType": "list"
+    },
+    {
+      "team": "Atlanta Falcons",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/1/depthcharts",
+      "qb1Candidates": [],
+      "topLevelKeys": [
+        "depthchart",
+        "season",
+        "status",
+        "team",
+        "timestamp"
+      ],
+      "depthChartContainerType": "list"
+    },
+    {
+      "team": "Baltimore Ravens",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/33/depthcharts",
+      "qb1Candidates": [],
+      "topLevelKeys": [
+        "depthchart",
+        "season",
+        "status",
+        "team",
+        "timestamp"
+      ],
+      "depthChartContainerType": "list"
+    },
+    {
+      "team": "Buffalo Bills",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/2/depthcharts",
+      "qb1Candidates": [],
+      "topLevelKeys": [
+        "depthchart",
+        "season",
+        "status",
+        "team",
+        "timestamp"
+      ],
+      "depthChartContainerType": "list"
+    },
+    {
+      "team": "Carolina Panthers",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/29/depthcharts",
+      "qb1Candidates": [],
+      "topLevelKeys": [
+        "depthchart",
+        "season",
+        "status",
+        "team",
+        "timestamp"
+      ],
+      "depthChartContainerType": "list"
+    },
+    {
+      "team": "Chicago Bears",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/3/depthcharts",
+      "qb1Candidates": [],
+      "topLevelKeys": [
+        "depthchart",
+        "season",
+        "status",
+        "team",
+        "timestamp"
+      ],
+      "depthChartContainerType": "list"
+    },
+    {
+      "team": "Cincinnati Bengals",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/4/depthcharts",
+      "qb1Candidates": [],
+      "topLevelKeys": [
+        "depthchart",
+        "season",
+        "status",
+        "team",
+        "timestamp"
+      ],
+      "depthChartContainerType": "list"
+    },
+    {
+      "team": "Cleveland Browns",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/5/depthcharts",
+      "qb1Candidates": [],
+      "topLevelKeys": [
+        "depthchart",
+        "season",
+        "status",
+        "team",
+        "timestamp"
+      ],
+      "depthChartContainerType": "list"
+    }
+  ],
+  "coveragePercent": 0.0
+}

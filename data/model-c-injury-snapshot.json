@@ -1,5 +1,5 @@
 {
-  "retrievedAt": "2026-10-24T03:55:44.321509+00:00",
+  "retrievedAt": "2026-10-24T04:09:59.022501+00:00",
   "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
   "status": "UNVERIFIED_REPORTING_FEED",
   "caution": "Reported injuries only. Not confirmed starting lineups, expected workload, or calibrated point adjustments.",
@@ -795,16 +795,16 @@
       "teamId": "3",
       "players": [
         {
-          "name": "Kalif Raymond",
-          "position": "WR",
-          "status": "Active",
-          "description": ""
-        },
-        {
           "name": "Anthony Johnson Jr.",
           "position": "S",
           "status": "Injured Reserve",
           "description": "{'fantasyStatus': {'description': 'IR', 'abbreviation': 'IR'}, 'type': 'Undisclosed', 'location': 'Other', 'returnDate': '2026-10-18'}"
+        },
+        {
+          "name": "Kalif Raymond",
+          "position": "WR",
+          "status": "Active",
+          "description": ""
         },
         {
           "name": "Roschon Johnson",
@@ -3307,6 +3307,12 @@
       "teamId": "17",
       "players": [
         {
+          "name": "Kyle Williams",
+          "position": "WR",
+          "status": "Active",
+          "description": ""
+        },
+        {
           "name": "Corey Kiner",
           "position": "RB",
           "status": "Active",
@@ -3449,12 +3455,6 @@
           "position": "WR",
           "status": "Injured Reserve",
           "description": "{'fantasyStatus': {'description': 'IR', 'abbreviation': 'IR'}, 'type': 'Shoulder', 'location': 'Arm', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-29'}"
-        },
-        {
-          "name": "Tanner Arkin",
-          "position": "TE",
-          "status": "Active",
-          "description": ""
         }
       ]
     },
