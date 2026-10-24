@@ -94,6 +94,32 @@ def qb_performance_comparison(team, declaration, stats, now, kickoff):
         "estimatedPoints":None,
         "note":"Adjusted yards/pass attempt (AYA), excludes sacks, rushing, opponent adjustment and calibrated points. Review required."}
 
+def official_starter_valid(declaration, game, team, now):
+    """Fail closed: a reviewed team announcement for this exact game only."""
+    if not isinstance(declaration,dict):
+        return False
+    if not (declaration.get("status")=="CONFIRMED_STARTER"
+            and declaration.get("sourceType")=="TEAM_ANNOUNCEMENT"
+            and declaration.get("reviewed") is True
+            and isinstance(declaration.get("evidenceText"),str)
+            and len(declaration["evidenceText"].strip())>=15
+            and declaration.get("team")==team
+            and str(declaration.get("gameId",""))==str(game["id"])
+            and isinstance(declaration.get("starter"),str)
+            and bool(declaration["starter"].strip())
+            and isinstance(declaration.get("source"),str)
+            and declaration["source"].startswith("https://")):
+        return False
+    try:
+        stamp=dt.datetime.fromisoformat(declaration["asOf"].replace("Z","+00:00"))
+        kickoff=dt.datetime.fromisoformat(game["date"].replace("Z","+00:00"))
+        return (stamp.tzinfo is not None and kickoff.tzinfo is not None
+                and stamp<=now.astimezone(dt.timezone.utc)
+                and stamp<kickoff
+                and dt.timedelta(0)<=kickoff-stamp<=dt.timedelta(days=7))
+    except (ValueError,TypeError,AttributeError,KeyError):
+        return False
+
 def main():
     now=dt.datetime.now(ET)
     schedule=load("nfl-schedule.json")
@@ -140,21 +166,7 @@ def main():
             starter=declaration.get("starter")
             source=declaration.get("source")
             asof=declaration.get("asOf")
-            valid=False
-            if (declaration.get("status")=="CONFIRMED_STARTER"
-                and declaration.get("sourceType")=="TEAM_ANNOUNCEMENT"
-                and declaration.get("reviewed") is True
-                and isinstance(declaration.get("evidenceText"),str)
-                and len(declaration.get("evidenceText","").strip())>=15
-                and declaration.get("team")==team
-                and str(declaration.get("gameId",""))==str(g["id"])
-                and isinstance(source,str) and source.startswith("https://")
-                and starter and asof):
-                try:
-                    stamp=dt.datetime.fromisoformat(asof.replace("Z","+00:00"))
-                    valid=stamp.tzinfo is not None and stamp<=now.astimezone(dt.timezone.utc) and stamp<kickoff and (kickoff-stamp).total_seconds()<=604800
-                except (ValueError,TypeError,AttributeError):
-                    pass
+            valid=official_starter_valid(declaration,g,team,now)
             qbs=[p for p in injury_reports[side] if p.get("position","").upper()=="QB"]
             matched=next((p for p in qbs if p.get("name","").casefold()==str(starter).casefold()),None) if valid else None
             candidate=qb_candidates.get(team,{})
