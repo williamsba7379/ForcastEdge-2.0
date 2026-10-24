@@ -2,7 +2,7 @@
   "status": "HUMAN_REVIEW_QUEUE_ONLY",
   "season": 2026,
   "week": 8,
-  "generatedAt": "2026-10-24T03:47:32.007679+00:00",
+  "generatedAt": "2026-10-24T03:52:13.452033+00:00",
   "automaticConfirmations": 0,
   "games": 14,
   "items": [
@@ -14,6 +14,7 @@
       "starterVerification": "UNCONFIRMED",
       "reviewRequired": true,
       "reportedInjuryFlags": [],
+      "espnQuarterbackInjuryFlags": [],
       "recentPrimaryPasserCandidate": "Bryce Young",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
@@ -35,6 +36,7 @@
       "starterVerification": "UNCONFIRMED",
       "reviewRequired": true,
       "reportedInjuryFlags": [],
+      "espnQuarterbackInjuryFlags": [],
       "recentPrimaryPasserCandidate": "Jordan Love",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
@@ -59,6 +61,18 @@
         {
           "name": "Lamar Jackson",
           "reportedStatus": "Questionable"
+        }
+      ],
+      "espnQuarterbackInjuryFlags": [
+        {
+          "team": "Baltimore Ravens",
+          "player": "Lamar Jackson",
+          "reportedStatus": "Questionable",
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Sprain', 'side': 'Left', 'returnDate': '2026-10-25'}",
+          "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "retrievedAt": "2026-10-24T03:51:52.676917+00:00",
+          "starterConfirmed": false,
+          "reviewRequired": true
         }
       ],
       "recentPrimaryPasserCandidate": "Tyler Huntley",
@@ -92,6 +106,7 @@
       "starterVerification": "UNCONFIRMED",
       "reviewRequired": true,
       "reportedInjuryFlags": [],
+      "espnQuarterbackInjuryFlags": [],
       "recentPrimaryPasserCandidate": "Josh Allen",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
@@ -113,6 +128,7 @@
       "starterVerification": "UNCONFIRMED",
       "reviewRequired": true,
       "reportedInjuryFlags": [],
+      "espnQuarterbackInjuryFlags": [],
       "recentPrimaryPasserCandidate": "Cam Ward",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
@@ -134,6 +150,7 @@
       "starterVerification": "UNCONFIRMED",
       "reviewRequired": true,
       "reportedInjuryFlags": [],
+      "espnQuarterbackInjuryFlags": [],
       "recentPrimaryPasserCandidate": "Joe Burrow",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
@@ -160,6 +177,18 @@
           "reportedStatus": "Questionable"
         }
       ],
+      "espnQuarterbackInjuryFlags": [
+        {
+          "team": "Arizona Cardinals",
+          "player": "Carson Beck",
+          "reportedStatus": "Questionable",
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Back', 'location': 'Torso', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}",
+          "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "retrievedAt": "2026-10-24T03:51:52.676917+00:00",
+          "starterConfirmed": false,
+          "reviewRequired": true
+        }
+      ],
       "recentPrimaryPasserCandidate": "Jacoby Brissett",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
@@ -181,6 +210,7 @@
       "starterVerification": "UNCONFIRMED",
       "reviewRequired": true,
       "reportedInjuryFlags": [],
+      "espnQuarterbackInjuryFlags": [],
       "recentPrimaryPasserCandidate": "Dak Prescott",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
@@ -202,6 +232,7 @@
       "starterVerification": "UNCONFIRMED",
       "reviewRequired": true,
       "reportedInjuryFlags": [],
+      "espnQuarterbackInjuryFlags": [],
       "recentPrimaryPasserCandidate": "Kyler Murray",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
@@ -223,6 +254,7 @@
       "starterVerification": "UNCONFIRMED",
       "reviewRequired": true,
       "reportedInjuryFlags": [],
+      "espnQuarterbackInjuryFlags": [],
       "recentPrimaryPasserCandidate": "Jared Goff",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
@@ -244,6 +276,7 @@
       "starterVerification": "UNCONFIRMED",
       "reviewRequired": true,
       "reportedInjuryFlags": [],
+      "espnQuarterbackInjuryFlags": [],
       "recentPrimaryPasserCandidate": "Kirk Cousins",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
@@ -265,6 +298,7 @@
       "starterVerification": "UNCONFIRMED",
       "reviewRequired": true,
       "reportedInjuryFlags": [],
+      "espnQuarterbackInjuryFlags": [],
       "recentPrimaryPasserCandidate": "Geno Smith",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
@@ -291,6 +325,18 @@
           "reportedStatus": "Injured Reserve"
         }
       ],
+      "espnQuarterbackInjuryFlags": [
+        {
+          "team": "Cleveland Browns",
+          "player": "Dillon Gabriel",
+          "reportedStatus": "Injured Reserve",
+          "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Back', 'location': 'Torso', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}",
+          "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "retrievedAt": "2026-10-24T03:51:52.676917+00:00",
+          "starterConfirmed": false,
+          "reviewRequired": true
+        }
+      ],
       "recentPrimaryPasserCandidate": "Deshaun Watson",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
@@ -312,6 +358,7 @@
       "starterVerification": "UNCONFIRMED",
       "reviewRequired": true,
       "reportedInjuryFlags": [],
+      "espnQuarterbackInjuryFlags": [],
       "recentPrimaryPasserCandidate": "Aaron Rodgers",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
@@ -333,6 +380,7 @@
       "starterVerification": "UNCONFIRMED",
       "reviewRequired": true,
       "reportedInjuryFlags": [],
+      "espnQuarterbackInjuryFlags": [],
       "recentPrimaryPasserCandidate": "Michael Penix Jr.",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
@@ -359,6 +407,18 @@
           "reportedStatus": "Questionable"
         }
       ],
+      "espnQuarterbackInjuryFlags": [
+        {
+          "team": "Tampa Bay Buccaneers",
+          "player": "Baker Mayfield",
+          "reportedStatus": "Questionable",
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Thumb', 'location': 'Arm', 'returnDate': '2026-10-25'}",
+          "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "retrievedAt": "2026-10-24T03:51:52.676917+00:00",
+          "starterConfirmed": false,
+          "reviewRequired": true
+        }
+      ],
       "recentPrimaryPasserCandidate": "Jalon Daniels",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
@@ -380,6 +440,7 @@
       "starterVerification": "UNCONFIRMED",
       "reviewRequired": true,
       "reportedInjuryFlags": [],
+      "espnQuarterbackInjuryFlags": [],
       "recentPrimaryPasserCandidate": "Daniel Jones",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
@@ -401,6 +462,7 @@
       "starterVerification": "UNCONFIRMED",
       "reviewRequired": true,
       "reportedInjuryFlags": [],
+      "espnQuarterbackInjuryFlags": [],
       "recentPrimaryPasserCandidate": "Trevor Lawrence",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
@@ -422,6 +484,7 @@
       "starterVerification": "UNCONFIRMED",
       "reviewRequired": true,
       "reportedInjuryFlags": [],
+      "espnQuarterbackInjuryFlags": [],
       "recentPrimaryPasserCandidate": "Justin Herbert",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
@@ -443,6 +506,7 @@
       "starterVerification": "UNCONFIRMED",
       "reviewRequired": true,
       "reportedInjuryFlags": [],
+      "espnQuarterbackInjuryFlags": [],
       "recentPrimaryPasserCandidate": "Matthew Stafford",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
@@ -464,6 +528,7 @@
       "starterVerification": "UNCONFIRMED",
       "reviewRequired": true,
       "reportedInjuryFlags": [],
+      "espnQuarterbackInjuryFlags": [],
       "recentPrimaryPasserCandidate": "Patrick Mahomes",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
@@ -485,6 +550,7 @@
       "starterVerification": "UNCONFIRMED",
       "reviewRequired": true,
       "reportedInjuryFlags": [],
+      "espnQuarterbackInjuryFlags": [],
       "recentPrimaryPasserCandidate": "Bo Nix",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
@@ -506,6 +572,18 @@
       "starterVerification": "UNCONFIRMED",
       "reviewRequired": true,
       "reportedInjuryFlags": [],
+      "espnQuarterbackInjuryFlags": [
+        {
+          "team": "New England Patriots",
+          "player": "Behren Morton",
+          "reportedStatus": "Out",
+          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}",
+          "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "retrievedAt": "2026-10-24T03:51:52.676917+00:00",
+          "starterConfirmed": false,
+          "reviewRequired": true
+        }
+      ],
       "recentPrimaryPasserCandidate": "Drake Maye",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
@@ -527,6 +605,7 @@
       "starterVerification": "UNCONFIRMED",
       "reviewRequired": true,
       "reportedInjuryFlags": [],
+      "espnQuarterbackInjuryFlags": [],
       "recentPrimaryPasserCandidate": "Malik Willis",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
@@ -551,6 +630,18 @@
         {
           "name": "Jalen Hurts",
           "reportedStatus": "Injured Reserve"
+        }
+      ],
+      "espnQuarterbackInjuryFlags": [
+        {
+          "team": "Philadelphia Eagles",
+          "player": "Jalen Hurts",
+          "reportedStatus": "Injured Reserve",
+          "description": "{'fantasyStatus': {'description': 'IR', 'abbreviation': 'IR'}, 'type': 'Calf', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Left', 'returnDate': '2027-02-15'}",
+          "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "retrievedAt": "2026-10-24T03:51:52.676917+00:00",
+          "starterConfirmed": false,
+          "reviewRequired": true
         }
       ],
       "recentPrimaryPasserCandidate": "Tanner McKee",
@@ -597,6 +688,18 @@
           "reportedStatus": "Doubtful"
         }
       ],
+      "espnQuarterbackInjuryFlags": [
+        {
+          "team": "Washington Commanders",
+          "player": "Marcus Mariota",
+          "reportedStatus": "Doubtful",
+          "description": "{'fantasyStatus': {'description': 'DOUBTFUL', 'abbreviation': 'DOUBTFUL'}, 'type': 'Knee - MCL', 'location': 'Leg', 'detail': 'Sprain', 'side': 'Right', 'returnDate': '2026-11-01'}",
+          "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "retrievedAt": "2026-10-24T03:51:52.676917+00:00",
+          "starterConfirmed": false,
+          "reviewRequired": true
+        }
+      ],
       "recentPrimaryPasserCandidate": "Jayden Daniels",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
@@ -618,6 +721,18 @@
       "starterVerification": "UNCONFIRMED",
       "reviewRequired": true,
       "reportedInjuryFlags": [],
+      "espnQuarterbackInjuryFlags": [
+        {
+          "team": "Chicago Bears",
+          "player": "Case Keenum",
+          "reportedStatus": "Out",
+          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-02'}",
+          "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "retrievedAt": "2026-10-24T03:51:52.676917+00:00",
+          "starterConfirmed": false,
+          "reviewRequired": true
+        }
+      ],
       "recentPrimaryPasserCandidate": "Caleb Williams",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
@@ -642,6 +757,18 @@
         {
           "name": "Drew Lock",
           "reportedStatus": "Questionable"
+        }
+      ],
+      "espnQuarterbackInjuryFlags": [
+        {
+          "team": "Seattle Seahawks",
+          "player": "Drew Lock",
+          "reportedStatus": "Questionable",
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Elbow', 'location': 'Arm', 'detail': 'Not Specified', 'side': 'Right', 'returnDate': '2026-10-25'}",
+          "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+          "retrievedAt": "2026-10-24T03:51:52.676917+00:00",
+          "starterConfirmed": false,
+          "reviewRequired": true
         }
       ],
       "recentPrimaryPasserCandidate": "Sam Darnold",

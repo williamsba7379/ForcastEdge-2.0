@@ -1,5 +1,5 @@
 {
-  "retrievedAt": "2026-10-24T03:47:09.793252+00:00",
+  "retrievedAt": "2026-10-24T03:51:52.676917+00:00",
   "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
   "status": "UNVERIFIED_REPORTING_FEED",
   "caution": "Reported injuries only. Not confirmed starting lineups, expected workload, or calibrated point adjustments.",
@@ -795,6 +795,12 @@
       "teamId": "3",
       "players": [
         {
+          "name": "Kalif Raymond",
+          "position": "WR",
+          "status": "Active",
+          "description": ""
+        },
+        {
           "name": "Anthony Johnson Jr.",
           "position": "S",
           "status": "Injured Reserve",
@@ -913,12 +919,6 @@
           "position": "LB",
           "status": "Out",
           "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': 'Concussion', 'location': 'Head', 'detail': 'Concussion', 'side': 'Not Specified', 'returnDate': '2026-11-02'}"
-        },
-        {
-          "name": "Kalif Raymond",
-          "position": "WR",
-          "status": "Active",
-          "description": ""
         },
         {
           "name": "Keyshaun Elliott",
