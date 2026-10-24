@@ -74,6 +74,9 @@ jobs:
       - name: Generate separate Model C-QB experimental shadow
         if: steps.time.outputs.run == 'true'
         run: python3 scripts/model_c_qb_shadow.py
+      - name: Validate Model C-QB shadow parity
+        if: steps.time.outputs.run == 'true'
+        run: python3 scripts/model_c_qb_shadow_validate.py
       - name: Build official quarterback source review queue
         if: steps.time.outputs.run == 'true'
         run: python3 scripts/model_c_qb_review_queue.py
@@ -118,6 +121,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           if [ -f data/model-c-qb-shadow.json ]; then git add data/model-c-qb-shadow.json; fi
+          if [ -f data/model-c-qb-shadow-validation.json ]; then git add data/model-c-qb-shadow-validation.json; fi
           git add data/model-c-automated-draft.json data/model-c-qb-review-queue.json data/model-c-qb-ranked-news.json data/model-c-qb-ranking-audit.json
           if [ -f data/model-c-official-article-metadata.json ]; then git add data/model-c-official-article-metadata.json; fi
           if [ -f data/model-c-article-metadata-audit.json ]; then git add data/model-c-article-metadata-audit.json; fi
