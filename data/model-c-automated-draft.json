@@ -2,7 +2,7 @@
   "title": "Model C \u2014 Automated Review Draft",
   "season": 2026,
   "week": 8,
-  "generatedAt": "2026-10-23T22:20:03.605198-04:00",
+  "generatedAt": "2026-10-23T22:28:14.864993-04:00",
   "status": "AUTOMATED_REVIEW_ONLY",
   "reviewRequired": true,
   "method": "Point-differential baseline plus optional documented quarterback/injury adjustments; no unverified automatic injury claims.",
@@ -426,7 +426,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:19:40.297447+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:27:56.976299+00:00",
       "id": "401873023",
       "date": "2026-10-30T00:15Z",
       "away": "Carolina Panthers",
@@ -866,7 +866,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:19:40.297447+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:27:56.976299+00:00",
       "id": "401873026",
       "date": "2026-11-01T18:00Z",
       "away": "Baltimore Ravens",
@@ -1289,7 +1289,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:19:40.297447+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:27:56.976299+00:00",
       "id": "401873031",
       "date": "2026-11-01T18:00Z",
       "away": "Tennessee Titans",
@@ -1425,6 +1425,12 @@
       "injuryReports": {
         "away": [
           {
+            "name": "Wydett Williams Jr.",
+            "position": "S",
+            "status": "Active",
+            "description": ""
+          },
+          {
             "name": "Jon Gaines II",
             "position": "G",
             "status": "Out",
@@ -1459,12 +1465,6 @@
             "position": "DT",
             "status": "Out",
             "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
-          },
-          {
-            "name": "Wydett Williams Jr.",
-            "position": "S",
-            "status": "Active",
-            "description": ""
           },
           {
             "name": "Garrett Williams",
@@ -1577,16 +1577,16 @@
         ],
         "home": [
           {
-            "name": "P.J. Locke",
-            "position": "S",
-            "status": "Injured Reserve",
-            "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Foot', 'location': 'Leg', 'detail': 'Plantar Fasciitis', 'side': 'Right', 'returnDate': '2026-10-26'}"
-          },
-          {
             "name": "Cobie Durant",
             "position": "CB",
             "status": "Questionable",
             "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Hamstring', 'location': 'Leg', 'returnDate': '2026-10-26'}"
+          },
+          {
+            "name": "P.J. Locke",
+            "position": "S",
+            "status": "Injured Reserve",
+            "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Foot', 'location': 'Leg', 'detail': 'Plantar Fasciitis', 'side': 'Right', 'returnDate': '2026-10-26'}"
           },
           {
             "name": "Tyler Guyton",
@@ -1729,7 +1729,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:19:40.297447+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:27:56.976299+00:00",
       "id": "401873024",
       "date": "2026-11-01T18:00Z",
       "away": "Arizona Cardinals",
@@ -2012,6 +2012,12 @@
         ],
         "home": [
           {
+            "name": "Cade Mays",
+            "position": "C",
+            "status": "Injured Reserve",
+            "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Wrist', 'location': 'Arm', 'detail': 'Fracture', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          },
+          {
             "name": "Rock Ya-Sin",
             "position": "CB",
             "status": "Active",
@@ -2126,12 +2132,6 @@
             "description": ""
           },
           {
-            "name": "Cade Mays",
-            "position": "C",
-            "status": "Injured Reserve",
-            "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Wrist', 'location': 'Arm', 'detail': 'Fracture', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-          },
-          {
             "name": "DJ Wonnum",
             "position": "LB",
             "status": "Active",
@@ -2164,7 +2164,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:19:40.297447+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:27:56.976299+00:00",
       "id": "401873030",
       "date": "2026-11-01T18:00Z",
       "away": "Minnesota Vikings",
@@ -2611,7 +2611,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:19:40.297447+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:27:56.976299+00:00",
       "id": "401873029",
       "date": "2026-11-01T18:00Z",
       "away": "Las Vegas Raiders",
@@ -3075,7 +3075,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:19:40.297447+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:27:56.976299+00:00",
       "id": "401873027",
       "date": "2026-11-01T18:00Z",
       "away": "Cleveland Browns",
@@ -3539,7 +3539,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:19:40.297447+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:27:56.976299+00:00",
       "id": "401873025",
       "date": "2026-11-01T18:00Z",
       "away": "Atlanta Falcons",
@@ -3986,7 +3986,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:19:40.297447+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:27:56.976299+00:00",
       "id": "401873028",
       "date": "2026-11-01T18:00Z",
       "away": "Indianapolis Colts",
@@ -4421,7 +4421,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:19:40.297447+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:27:56.976299+00:00",
       "id": "401873032",
       "date": "2026-11-01T21:05Z",
       "away": "Los Angeles Chargers",
@@ -4868,7 +4868,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:19:40.297447+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:27:56.976299+00:00",
       "id": "401873033",
       "date": "2026-11-01T21:25Z",
       "away": "Kansas City Chiefs",
@@ -5303,7 +5303,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:19:40.297447+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:27:56.976299+00:00",
       "id": "401873034",
       "date": "2026-11-01T21:25Z",
       "away": "New England Patriots",
@@ -5772,7 +5772,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:19:40.297447+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:27:56.976299+00:00",
       "id": "401873035",
       "date": "2026-11-02T01:20Z",
       "away": "Philadelphia Eagles",
@@ -6072,6 +6072,18 @@
         ],
         "home": [
           {
+            "name": "Anthony Bradford",
+            "position": "G",
+            "status": "Injured Reserve",
+            "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          },
+          {
+            "name": "Chazz Surratt",
+            "position": "LB",
+            "status": "Out",
+            "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Calf', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-02'}"
+          },
+          {
             "name": "George Holani",
             "position": "RB",
             "status": "Active",
@@ -6106,12 +6118,6 @@
             "position": "TE",
             "status": "Injured Reserve",
             "description": "{'fantasyStatus': {'description': 'IR', 'abbreviation': 'IR'}, 'type': 'Shoulder', 'location': 'Arm', 'detail': 'Surgery', 'side': 'Not Specified', 'returnDate': '2027-02-15'}"
-          },
-          {
-            "name": "Chazz Surratt",
-            "position": "LB",
-            "status": "Out",
-            "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Calf', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-02'}"
           },
           {
             "name": "Zach Charbonnet",
@@ -6154,12 +6160,6 @@
             "position": "LB",
             "status": "Questionable",
             "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Hamstring', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-          },
-          {
-            "name": "Anthony Bradford",
-            "position": "G",
-            "status": "Injured Reserve",
-            "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
           },
           {
             "name": "Robert Henry Jr.",
@@ -6224,7 +6224,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:19:40.297447+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:27:56.976299+00:00",
       "id": "401873036",
       "date": "2026-11-03T01:15Z",
       "away": "Chicago Bears",

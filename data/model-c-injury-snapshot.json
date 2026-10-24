@@ -1,5 +1,5 @@
 {
-  "retrievedAt": "2026-10-24T02:19:40.297447+00:00",
+  "retrievedAt": "2026-10-24T02:27:56.976299+00:00",
   "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
   "status": "UNVERIFIED_REPORTING_FEED",
   "caution": "Reported injuries only. Not confirmed starting lineups, expected workload, or calibrated point adjustments.",
@@ -9,6 +9,12 @@
       "abbreviation": "",
       "teamId": "22",
       "players": [
+        {
+          "name": "Wydett Williams Jr.",
+          "position": "S",
+          "status": "Active",
+          "description": ""
+        },
         {
           "name": "Jon Gaines II",
           "position": "G",
@@ -44,12 +50,6 @@
           "position": "DT",
           "status": "Out",
           "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}"
-        },
-        {
-          "name": "Wydett Williams Jr.",
-          "position": "S",
-          "status": "Active",
-          "description": ""
         },
         {
           "name": "Garrett Williams",
@@ -1266,16 +1266,16 @@
       "teamId": "6",
       "players": [
         {
-          "name": "P.J. Locke",
-          "position": "S",
-          "status": "Injured Reserve",
-          "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Foot', 'location': 'Leg', 'detail': 'Plantar Fasciitis', 'side': 'Right', 'returnDate': '2026-10-26'}"
-        },
-        {
           "name": "Cobie Durant",
           "position": "CB",
           "status": "Questionable",
           "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Hamstring', 'location': 'Leg', 'returnDate': '2026-10-26'}"
+        },
+        {
+          "name": "P.J. Locke",
+          "position": "S",
+          "status": "Injured Reserve",
+          "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Foot', 'location': 'Leg', 'detail': 'Plantar Fasciitis', 'side': 'Right', 'returnDate': '2026-10-26'}"
         },
         {
           "name": "Tyler Guyton",
@@ -1580,6 +1580,12 @@
       "teamId": "8",
       "players": [
         {
+          "name": "Cade Mays",
+          "position": "C",
+          "status": "Injured Reserve",
+          "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Wrist', 'location': 'Arm', 'detail': 'Fracture', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+        },
+        {
           "name": "Rock Ya-Sin",
           "position": "CB",
           "status": "Active",
@@ -1692,12 +1698,6 @@
           "position": "WR",
           "status": "Active",
           "description": ""
-        },
-        {
-          "name": "Cade Mays",
-          "position": "C",
-          "status": "Injured Reserve",
-          "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Wrist', 'location': 'Arm', 'detail': 'Fracture', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         },
         {
           "name": "DJ Wonnum",
@@ -3621,16 +3621,16 @@
       "teamId": "19",
       "players": [
         {
-          "name": "Andrew Thomas",
-          "position": "OT",
-          "status": "Active",
-          "description": ""
-        },
-        {
           "name": "Jermaine Eluemunor",
           "position": "OT",
           "status": "Questionable",
           "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Calf', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+        },
+        {
+          "name": "Andrew Thomas",
+          "position": "OT",
+          "status": "Active",
+          "description": ""
         },
         {
           "name": "Tremaine Edmunds",
@@ -4406,6 +4406,18 @@
       "teamId": "26",
       "players": [
         {
+          "name": "Anthony Bradford",
+          "position": "G",
+          "status": "Injured Reserve",
+          "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+        },
+        {
+          "name": "Chazz Surratt",
+          "position": "LB",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Calf', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-02'}"
+        },
+        {
           "name": "George Holani",
           "position": "RB",
           "status": "Active",
@@ -4440,12 +4452,6 @@
           "position": "TE",
           "status": "Injured Reserve",
           "description": "{'fantasyStatus': {'description': 'IR', 'abbreviation': 'IR'}, 'type': 'Shoulder', 'location': 'Arm', 'detail': 'Surgery', 'side': 'Not Specified', 'returnDate': '2027-02-15'}"
-        },
-        {
-          "name": "Chazz Surratt",
-          "position": "LB",
-          "status": "Out",
-          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Calf', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-02'}"
         },
         {
           "name": "Zach Charbonnet",
@@ -4488,12 +4494,6 @@
           "position": "LB",
           "status": "Questionable",
           "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Hamstring', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
-        },
-        {
-          "name": "Anthony Bradford",
-          "position": "G",
-          "status": "Injured Reserve",
-          "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         },
         {
           "name": "Robert Henry Jr.",
