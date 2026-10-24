@@ -2,7 +2,7 @@
   "status": "HUMAN_REVIEW_QUEUE_ONLY",
   "season": 2026,
   "week": 8,
-  "generatedAt": "2026-10-24T02:36:31.927472+00:00",
+  "generatedAt": "2026-10-24T02:44:51.413028+00:00",
   "automaticConfirmations": 0,
   "games": 14,
   "items": [
@@ -17,6 +17,12 @@
       "recentPrimaryPasserCandidate": "Bryce Young",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
+      "historicalSourcesForContextOnly": [],
+      "officialSourceSearchQueries": [
+        "Carolina Panthers official site starting quarterback 2026-10-30",
+        "Carolina Panthers Bryce Young named starter vs Green Bay Packers"
+      ],
+      "sourceEvidenceStatus": "GAME_SPECIFIC_SOURCE_REVIEW_REQUIRED",
       "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
       "declarationExists": false,
       "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
@@ -32,6 +38,12 @@
       "recentPrimaryPasserCandidate": "Jordan Love",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
+      "historicalSourcesForContextOnly": [],
+      "officialSourceSearchQueries": [
+        "Green Bay Packers official site starting quarterback 2026-10-30",
+        "Green Bay Packers Jordan Love named starter vs Carolina Panthers"
+      ],
+      "sourceEvidenceStatus": "GAME_SPECIFIC_SOURCE_REVIEW_REQUIRED",
       "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
       "declarationExists": false,
       "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
@@ -51,7 +63,8 @@
       ],
       "recentPrimaryPasserCandidate": "Tyler Huntley",
       "depthChartCandidate": null,
-      "officialSourcesForManualReview": [
+      "officialSourcesForManualReview": [],
+      "historicalSourcesForContextOnly": [
         {
           "team": "Baltimore Ravens",
           "player": "Lamar Jackson",
@@ -62,6 +75,11 @@
           "reason": "Official team report calls Jackson questionable; does not name confirmed starter."
         }
       ],
+      "officialSourceSearchQueries": [
+        "Baltimore Ravens official site starting quarterback 2026-11-01",
+        "Baltimore Ravens Tyler Huntley named starter vs Buffalo Bills"
+      ],
+      "sourceEvidenceStatus": "GAME_SPECIFIC_SOURCE_REVIEW_REQUIRED",
       "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
       "declarationExists": false,
       "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
@@ -77,6 +95,12 @@
       "recentPrimaryPasserCandidate": "Josh Allen",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
+      "historicalSourcesForContextOnly": [],
+      "officialSourceSearchQueries": [
+        "Buffalo Bills official site starting quarterback 2026-11-01",
+        "Buffalo Bills Josh Allen named starter vs Baltimore Ravens"
+      ],
+      "sourceEvidenceStatus": "GAME_SPECIFIC_SOURCE_REVIEW_REQUIRED",
       "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
       "declarationExists": false,
       "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
@@ -92,6 +116,12 @@
       "recentPrimaryPasserCandidate": "Cam Ward",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
+      "historicalSourcesForContextOnly": [],
+      "officialSourceSearchQueries": [
+        "Tennessee Titans official site starting quarterback 2026-11-01",
+        "Tennessee Titans Cam Ward named starter vs Cincinnati Bengals"
+      ],
+      "sourceEvidenceStatus": "GAME_SPECIFIC_SOURCE_REVIEW_REQUIRED",
       "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
       "declarationExists": false,
       "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
@@ -107,6 +137,12 @@
       "recentPrimaryPasserCandidate": "Joe Burrow",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
+      "historicalSourcesForContextOnly": [],
+      "officialSourceSearchQueries": [
+        "Cincinnati Bengals official site starting quarterback 2026-11-01",
+        "Cincinnati Bengals Joe Burrow named starter vs Tennessee Titans"
+      ],
+      "sourceEvidenceStatus": "GAME_SPECIFIC_SOURCE_REVIEW_REQUIRED",
       "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
       "declarationExists": false,
       "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
@@ -127,6 +163,12 @@
       "recentPrimaryPasserCandidate": "Jacoby Brissett",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
+      "historicalSourcesForContextOnly": [],
+      "officialSourceSearchQueries": [
+        "Arizona Cardinals official site starting quarterback 2026-11-01",
+        "Arizona Cardinals Jacoby Brissett named starter vs Dallas Cowboys"
+      ],
+      "sourceEvidenceStatus": "GAME_SPECIFIC_SOURCE_REVIEW_REQUIRED",
       "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
       "declarationExists": false,
       "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
@@ -142,6 +184,12 @@
       "recentPrimaryPasserCandidate": "Dak Prescott",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
+      "historicalSourcesForContextOnly": [],
+      "officialSourceSearchQueries": [
+        "Dallas Cowboys official site starting quarterback 2026-11-01",
+        "Dallas Cowboys Dak Prescott named starter vs Arizona Cardinals"
+      ],
+      "sourceEvidenceStatus": "GAME_SPECIFIC_SOURCE_REVIEW_REQUIRED",
       "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
       "declarationExists": false,
       "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
@@ -157,6 +205,12 @@
       "recentPrimaryPasserCandidate": "Kyler Murray",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
+      "historicalSourcesForContextOnly": [],
+      "officialSourceSearchQueries": [
+        "Minnesota Vikings official site starting quarterback 2026-11-01",
+        "Minnesota Vikings Kyler Murray named starter vs Detroit Lions"
+      ],
+      "sourceEvidenceStatus": "GAME_SPECIFIC_SOURCE_REVIEW_REQUIRED",
       "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
       "declarationExists": false,
       "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
@@ -172,6 +226,12 @@
       "recentPrimaryPasserCandidate": "Jared Goff",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
+      "historicalSourcesForContextOnly": [],
+      "officialSourceSearchQueries": [
+        "Detroit Lions official site starting quarterback 2026-11-01",
+        "Detroit Lions Jared Goff named starter vs Minnesota Vikings"
+      ],
+      "sourceEvidenceStatus": "GAME_SPECIFIC_SOURCE_REVIEW_REQUIRED",
       "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
       "declarationExists": false,
       "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
@@ -187,6 +247,12 @@
       "recentPrimaryPasserCandidate": "Kirk Cousins",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
+      "historicalSourcesForContextOnly": [],
+      "officialSourceSearchQueries": [
+        "Las Vegas Raiders official site starting quarterback 2026-11-01",
+        "Las Vegas Raiders Kirk Cousins named starter vs New York Jets"
+      ],
+      "sourceEvidenceStatus": "GAME_SPECIFIC_SOURCE_REVIEW_REQUIRED",
       "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
       "declarationExists": false,
       "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
@@ -202,6 +268,12 @@
       "recentPrimaryPasserCandidate": "Geno Smith",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
+      "historicalSourcesForContextOnly": [],
+      "officialSourceSearchQueries": [
+        "New York Jets official site starting quarterback 2026-11-01",
+        "New York Jets Geno Smith named starter vs Las Vegas Raiders"
+      ],
+      "sourceEvidenceStatus": "GAME_SPECIFIC_SOURCE_REVIEW_REQUIRED",
       "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
       "declarationExists": false,
       "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
@@ -222,6 +294,12 @@
       "recentPrimaryPasserCandidate": "Deshaun Watson",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
+      "historicalSourcesForContextOnly": [],
+      "officialSourceSearchQueries": [
+        "Cleveland Browns official site starting quarterback 2026-11-01",
+        "Cleveland Browns Deshaun Watson named starter vs Pittsburgh Steelers"
+      ],
+      "sourceEvidenceStatus": "GAME_SPECIFIC_SOURCE_REVIEW_REQUIRED",
       "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
       "declarationExists": false,
       "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
@@ -237,6 +315,12 @@
       "recentPrimaryPasserCandidate": "Aaron Rodgers",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
+      "historicalSourcesForContextOnly": [],
+      "officialSourceSearchQueries": [
+        "Pittsburgh Steelers official site starting quarterback 2026-11-01",
+        "Pittsburgh Steelers Aaron Rodgers named starter vs Cleveland Browns"
+      ],
+      "sourceEvidenceStatus": "GAME_SPECIFIC_SOURCE_REVIEW_REQUIRED",
       "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
       "declarationExists": false,
       "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
@@ -252,6 +336,12 @@
       "recentPrimaryPasserCandidate": "Michael Penix Jr.",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
+      "historicalSourcesForContextOnly": [],
+      "officialSourceSearchQueries": [
+        "Atlanta Falcons official site starting quarterback 2026-11-01",
+        "Atlanta Falcons Michael Penix Jr. named starter vs Tampa Bay Buccaneers"
+      ],
+      "sourceEvidenceStatus": "GAME_SPECIFIC_SOURCE_REVIEW_REQUIRED",
       "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
       "declarationExists": false,
       "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
@@ -272,6 +362,12 @@
       "recentPrimaryPasserCandidate": "Jalon Daniels",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
+      "historicalSourcesForContextOnly": [],
+      "officialSourceSearchQueries": [
+        "Tampa Bay Buccaneers official site starting quarterback 2026-11-01",
+        "Tampa Bay Buccaneers Jalon Daniels named starter vs Atlanta Falcons"
+      ],
+      "sourceEvidenceStatus": "GAME_SPECIFIC_SOURCE_REVIEW_REQUIRED",
       "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
       "declarationExists": false,
       "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
@@ -287,6 +383,12 @@
       "recentPrimaryPasserCandidate": "Daniel Jones",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
+      "historicalSourcesForContextOnly": [],
+      "officialSourceSearchQueries": [
+        "Indianapolis Colts official site starting quarterback 2026-11-01",
+        "Indianapolis Colts Daniel Jones named starter vs Jacksonville Jaguars"
+      ],
+      "sourceEvidenceStatus": "GAME_SPECIFIC_SOURCE_REVIEW_REQUIRED",
       "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
       "declarationExists": false,
       "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
@@ -302,6 +404,12 @@
       "recentPrimaryPasserCandidate": "Trevor Lawrence",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
+      "historicalSourcesForContextOnly": [],
+      "officialSourceSearchQueries": [
+        "Jacksonville Jaguars official site starting quarterback 2026-11-01",
+        "Jacksonville Jaguars Trevor Lawrence named starter vs Indianapolis Colts"
+      ],
+      "sourceEvidenceStatus": "GAME_SPECIFIC_SOURCE_REVIEW_REQUIRED",
       "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
       "declarationExists": false,
       "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
@@ -317,6 +425,12 @@
       "recentPrimaryPasserCandidate": "Justin Herbert",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
+      "historicalSourcesForContextOnly": [],
+      "officialSourceSearchQueries": [
+        "Los Angeles Chargers official site starting quarterback 2026-11-01",
+        "Los Angeles Chargers Justin Herbert named starter vs Los Angeles Rams"
+      ],
+      "sourceEvidenceStatus": "GAME_SPECIFIC_SOURCE_REVIEW_REQUIRED",
       "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
       "declarationExists": false,
       "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
@@ -332,6 +446,12 @@
       "recentPrimaryPasserCandidate": "Matthew Stafford",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
+      "historicalSourcesForContextOnly": [],
+      "officialSourceSearchQueries": [
+        "Los Angeles Rams official site starting quarterback 2026-11-01",
+        "Los Angeles Rams Matthew Stafford named starter vs Los Angeles Chargers"
+      ],
+      "sourceEvidenceStatus": "GAME_SPECIFIC_SOURCE_REVIEW_REQUIRED",
       "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
       "declarationExists": false,
       "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
@@ -347,6 +467,12 @@
       "recentPrimaryPasserCandidate": "Patrick Mahomes",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
+      "historicalSourcesForContextOnly": [],
+      "officialSourceSearchQueries": [
+        "Kansas City Chiefs official site starting quarterback 2026-11-01",
+        "Kansas City Chiefs Patrick Mahomes named starter vs Denver Broncos"
+      ],
+      "sourceEvidenceStatus": "GAME_SPECIFIC_SOURCE_REVIEW_REQUIRED",
       "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
       "declarationExists": false,
       "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
@@ -362,6 +488,12 @@
       "recentPrimaryPasserCandidate": "Bo Nix",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
+      "historicalSourcesForContextOnly": [],
+      "officialSourceSearchQueries": [
+        "Denver Broncos official site starting quarterback 2026-11-01",
+        "Denver Broncos Bo Nix named starter vs Kansas City Chiefs"
+      ],
+      "sourceEvidenceStatus": "GAME_SPECIFIC_SOURCE_REVIEW_REQUIRED",
       "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
       "declarationExists": false,
       "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
@@ -377,6 +509,12 @@
       "recentPrimaryPasserCandidate": "Drake Maye",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
+      "historicalSourcesForContextOnly": [],
+      "officialSourceSearchQueries": [
+        "New England Patriots official site starting quarterback 2026-11-01",
+        "New England Patriots Drake Maye named starter vs Miami Dolphins"
+      ],
+      "sourceEvidenceStatus": "GAME_SPECIFIC_SOURCE_REVIEW_REQUIRED",
       "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
       "declarationExists": false,
       "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
@@ -392,6 +530,12 @@
       "recentPrimaryPasserCandidate": "Malik Willis",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
+      "historicalSourcesForContextOnly": [],
+      "officialSourceSearchQueries": [
+        "Miami Dolphins official site starting quarterback 2026-11-01",
+        "Miami Dolphins Malik Willis named starter vs New England Patriots"
+      ],
+      "sourceEvidenceStatus": "GAME_SPECIFIC_SOURCE_REVIEW_REQUIRED",
       "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
       "declarationExists": false,
       "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
@@ -411,7 +555,8 @@
       ],
       "recentPrimaryPasserCandidate": "Tanner McKee",
       "depthChartCandidate": null,
-      "officialSourcesForManualReview": [
+      "officialSourcesForManualReview": [],
+      "historicalSourcesForContextOnly": [
         {
           "team": "Philadelphia Eagles",
           "player": "Tanner McKee",
@@ -430,6 +575,11 @@
           "reason": "Team statement rules out contact football during treatment, but does not identify game-specific replacement starter."
         }
       ],
+      "officialSourceSearchQueries": [
+        "Philadelphia Eagles official site starting quarterback 2026-11-02",
+        "Philadelphia Eagles Tanner McKee named starter vs Washington Commanders"
+      ],
+      "sourceEvidenceStatus": "GAME_SPECIFIC_SOURCE_REVIEW_REQUIRED",
       "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
       "declarationExists": false,
       "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
@@ -450,6 +600,12 @@
       "recentPrimaryPasserCandidate": "Jayden Daniels",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
+      "historicalSourcesForContextOnly": [],
+      "officialSourceSearchQueries": [
+        "Washington Commanders official site starting quarterback 2026-11-02",
+        "Washington Commanders Jayden Daniels named starter vs Philadelphia Eagles"
+      ],
+      "sourceEvidenceStatus": "GAME_SPECIFIC_SOURCE_REVIEW_REQUIRED",
       "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
       "declarationExists": false,
       "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
@@ -465,6 +621,12 @@
       "recentPrimaryPasserCandidate": "Caleb Williams",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
+      "historicalSourcesForContextOnly": [],
+      "officialSourceSearchQueries": [
+        "Chicago Bears official site starting quarterback 2026-11-03",
+        "Chicago Bears Caleb Williams named starter vs Seattle Seahawks"
+      ],
+      "sourceEvidenceStatus": "GAME_SPECIFIC_SOURCE_REVIEW_REQUIRED",
       "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
       "declarationExists": false,
       "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
@@ -485,6 +647,12 @@
       "recentPrimaryPasserCandidate": "Sam Darnold",
       "depthChartCandidate": null,
       "officialSourcesForManualReview": [],
+      "historicalSourcesForContextOnly": [],
+      "officialSourceSearchQueries": [
+        "Seattle Seahawks official site starting quarterback 2026-11-03",
+        "Seattle Seahawks Sam Darnold named starter vs Chicago Bears"
+      ],
+      "sourceEvidenceStatus": "GAME_SPECIFIC_SOURCE_REVIEW_REQUIRED",
       "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
       "declarationExists": false,
       "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
