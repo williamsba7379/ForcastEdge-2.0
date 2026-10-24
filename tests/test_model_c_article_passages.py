@@ -8,4 +8,5 @@ from model_c_article_passages import extract
 sample="<p>Lamar Jackson was limited at practice.</p><p>Josh Allen is questionable.</p><p>Lamar Jackson met fans.</p>"
 assert extract(sample,["Lamar Jackson"])==["Lamar Jackson was limited at practice."]
 assert extract(sample,["Tyler Huntley"])==[]
-print("PASS: own-QB passage extraction")
+assert extract("<p>Quarterback Lamar Jackson is seen during practice on Thursday.</p>",["Lamar Jackson"])==[]
+print("PASS: own-QB passage extraction and photo-caption exclusion")
