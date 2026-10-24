@@ -71,14 +71,14 @@ jobs:
         if: steps.time.outputs.run == 'true'
         continue-on-error: true
         run: python3 scripts/model_c_article_metadata.py
-      - name: Extract QB passages from official articles
-        if: steps.time.outputs.run == 'true'
-        continue-on-error: true
-        run: python3 scripts/model_c_article_passages.py
       - name: Audit official article publication dates
         if: steps.time.outputs.run == 'true'
         run: |
           if [ -f data/model-c-official-article-metadata.json ]; then python3 scripts/model_c_article_metadata_audit.py; fi
+      - name: Extract QB passages from official articles
+        if: steps.time.outputs.run == 'true'
+        continue-on-error: true
+        run: python3 scripts/model_c_article_passages.py
       - name: Audit ranked QB news coverage
         if: steps.time.outputs.run == 'true'
         run: python3 scripts/model_c_ranking_audit.py
