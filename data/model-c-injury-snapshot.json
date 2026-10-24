@@ -1,5 +1,5 @@
 {
-  "retrievedAt": "2026-10-24T04:09:59.022501+00:00",
+  "retrievedAt": "2026-10-24T10:27:11.492013+00:00",
   "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
   "status": "UNVERIFIED_REPORTING_FEED",
   "caution": "Reported injuries only. Not confirmed starting lineups, expected workload, or calibrated point adjustments.",
@@ -801,6 +801,12 @@
           "description": "{'fantasyStatus': {'description': 'IR', 'abbreviation': 'IR'}, 'type': 'Undisclosed', 'location': 'Other', 'returnDate': '2026-10-18'}"
         },
         {
+          "name": "Sam Roush",
+          "position": "TE",
+          "status": "Active",
+          "description": ""
+        },
+        {
           "name": "Kalif Raymond",
           "position": "WR",
           "status": "Active",
@@ -935,12 +941,6 @@
         {
           "name": "Jahdae Walker",
           "position": "WR",
-          "status": "Active",
-          "description": ""
-        },
-        {
-          "name": "Cam Lewis",
-          "position": "CB",
           "status": "Active",
           "description": ""
         }
