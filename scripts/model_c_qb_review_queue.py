@@ -6,6 +6,21 @@ import pathlib
 
 DATA=pathlib.Path(__file__).resolve().parents[1]/"data"
 
+def injury_priority(flags, candidate):
+    """Review urgency, not a prediction or proof of starting status."""
+    if not flags:
+        return "ROUTINE"
+    severe={"out","injured reserve","ir","doubtful"}
+    moderate={"questionable","limited"}
+    matched=[x for x in flags if candidate and x.get("player","").casefold()==candidate.casefold()]
+    relevant=matched or flags
+    statuses={x.get("reportedStatus","").strip().casefold() for x in relevant}
+    if statuses & severe:
+        return "HIGH" if matched else "ELEVATED"
+    if statuses & moderate:
+        return "ELEVATED" if matched else "STANDARD"
+    return "STANDARD"
+
 def build(draft, reviewed, declarations, espn=None):
     sources=reviewed.get("sources",[])
     confirmed=declarations.get("teams",{})
@@ -28,6 +43,7 @@ def build(draft, reviewed, declarations, espn=None):
             ]
             flags=alert.get("injuryFlags",[])
             espn_flags=[x for x in espn_items if x.get("team")==team and x.get("reportedStatus","").lower() not in ("active","healthy","available")]
+            priority=injury_priority(espn_flags,candidate)
             items.append({
                 "gameId":game["id"],"kickoff":game["date"],"team":team,
                 "opponent":game["home" if side=="away" else "away"],
@@ -35,6 +51,8 @@ def build(draft, reviewed, declarations, espn=None):
                 "reviewRequired":qb.get("verification")!="OFFICIAL_GAME_SPECIFIC" or bool(flags) or bool(espn_flags) or bool(alert.get("candidateMismatch")),
                 "reportedInjuryFlags":flags,
                 "espnQuarterbackInjuryFlags":espn_flags,
+                "espnInjuryReviewPriority":priority,
+                "espnPriorityIsPrediction":False,
                 "recentPrimaryPasserCandidate":qb.get("recentPrimaryPasser"),
                 "depthChartCandidate":qb.get("depthChartQB1Candidate"),
                 "officialSourcesForManualReview":exact,
