@@ -83,7 +83,7 @@ jobs:
         run: python3 scripts/model_c_qb_shadow_validate.py
       - name: Audit unmodeled critical QB injuries
         if: steps.time.outputs.run == 'true'
-        run: python3 scripts/model_c_qb_injury_audit.py
+        run: python3 scripts/model_c_qb_injury_audit_v2.py
       - name: Build official quarterback source review queue
         if: steps.time.outputs.run == 'true'
         run: python3 scripts/model_c_qb_review_queue.py
