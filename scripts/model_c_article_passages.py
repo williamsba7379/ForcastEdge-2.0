@@ -31,7 +31,9 @@ def extract(page,names):
     parser.feed(page)
     return [p[:350] for p in parser.paragraphs
             if any(n and n.lower() in p.lower() for n in names)
-            and any(t in p.lower() for t in STATUS)][:3]
+            and any(t in p.lower() for t in STATUS)
+            and not ("is seen during" in p.lower() or "are seen during" in p.lower()
+                     or "photo by" in p.lower())][:3]
 
 def collect(discovery,ranked,queue,fetch=fetch_official):
     teams={t["team"]:t for t in discovery["teams"]}
