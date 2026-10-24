@@ -1,0 +1,493 @@
+{
+  "status": "HUMAN_REVIEW_QUEUE_ONLY",
+  "season": 2026,
+  "week": 8,
+  "generatedAt": "2026-10-24T02:36:31.927472+00:00",
+  "automaticConfirmations": 0,
+  "games": 14,
+  "items": [
+    {
+      "gameId": "401873023",
+      "kickoff": "2026-10-30T00:15Z",
+      "team": "Carolina Panthers",
+      "opponent": "Green Bay Packers",
+      "starterVerification": "UNCONFIRMED",
+      "reviewRequired": true,
+      "reportedInjuryFlags": [],
+      "recentPrimaryPasserCandidate": "Bryce Young",
+      "depthChartCandidate": null,
+      "officialSourcesForManualReview": [],
+      "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
+      "declarationExists": false,
+      "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
+    },
+    {
+      "gameId": "401873023",
+      "kickoff": "2026-10-30T00:15Z",
+      "team": "Green Bay Packers",
+      "opponent": "Carolina Panthers",
+      "starterVerification": "UNCONFIRMED",
+      "reviewRequired": true,
+      "reportedInjuryFlags": [],
+      "recentPrimaryPasserCandidate": "Jordan Love",
+      "depthChartCandidate": null,
+      "officialSourcesForManualReview": [],
+      "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
+      "declarationExists": false,
+      "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
+    },
+    {
+      "gameId": "401873026",
+      "kickoff": "2026-11-01T18:00Z",
+      "team": "Baltimore Ravens",
+      "opponent": "Buffalo Bills",
+      "starterVerification": "UNCONFIRMED",
+      "reviewRequired": true,
+      "reportedInjuryFlags": [
+        {
+          "name": "Lamar Jackson",
+          "reportedStatus": "Questionable"
+        }
+      ],
+      "recentPrimaryPasserCandidate": "Tyler Huntley",
+      "depthChartCandidate": null,
+      "officialSourcesForManualReview": [
+        {
+          "team": "Baltimore Ravens",
+          "player": "Lamar Jackson",
+          "source": "https://www.baltimoreravens.com/news/lamar-jackson-injury-report-ravens-bengals-jaylinn-hawkins-tavius-robinson-2026",
+          "sourceDate": "2026-10-23",
+          "game": "Ravens vs Bengals, Oct 25",
+          "classification": "UNCERTAIN",
+          "reason": "Official team report calls Jackson questionable; does not name confirmed starter."
+        }
+      ],
+      "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
+      "declarationExists": false,
+      "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
+    },
+    {
+      "gameId": "401873026",
+      "kickoff": "2026-11-01T18:00Z",
+      "team": "Buffalo Bills",
+      "opponent": "Baltimore Ravens",
+      "starterVerification": "UNCONFIRMED",
+      "reviewRequired": true,
+      "reportedInjuryFlags": [],
+      "recentPrimaryPasserCandidate": "Josh Allen",
+      "depthChartCandidate": null,
+      "officialSourcesForManualReview": [],
+      "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
+      "declarationExists": false,
+      "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
+    },
+    {
+      "gameId": "401873031",
+      "kickoff": "2026-11-01T18:00Z",
+      "team": "Tennessee Titans",
+      "opponent": "Cincinnati Bengals",
+      "starterVerification": "UNCONFIRMED",
+      "reviewRequired": true,
+      "reportedInjuryFlags": [],
+      "recentPrimaryPasserCandidate": "Cam Ward",
+      "depthChartCandidate": null,
+      "officialSourcesForManualReview": [],
+      "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
+      "declarationExists": false,
+      "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
+    },
+    {
+      "gameId": "401873031",
+      "kickoff": "2026-11-01T18:00Z",
+      "team": "Cincinnati Bengals",
+      "opponent": "Tennessee Titans",
+      "starterVerification": "UNCONFIRMED",
+      "reviewRequired": true,
+      "reportedInjuryFlags": [],
+      "recentPrimaryPasserCandidate": "Joe Burrow",
+      "depthChartCandidate": null,
+      "officialSourcesForManualReview": [],
+      "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
+      "declarationExists": false,
+      "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
+    },
+    {
+      "gameId": "401873024",
+      "kickoff": "2026-11-01T18:00Z",
+      "team": "Arizona Cardinals",
+      "opponent": "Dallas Cowboys",
+      "starterVerification": "UNCONFIRMED",
+      "reviewRequired": true,
+      "reportedInjuryFlags": [
+        {
+          "name": "Carson Beck",
+          "reportedStatus": "Questionable"
+        }
+      ],
+      "recentPrimaryPasserCandidate": "Jacoby Brissett",
+      "depthChartCandidate": null,
+      "officialSourcesForManualReview": [],
+      "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
+      "declarationExists": false,
+      "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
+    },
+    {
+      "gameId": "401873024",
+      "kickoff": "2026-11-01T18:00Z",
+      "team": "Dallas Cowboys",
+      "opponent": "Arizona Cardinals",
+      "starterVerification": "UNCONFIRMED",
+      "reviewRequired": true,
+      "reportedInjuryFlags": [],
+      "recentPrimaryPasserCandidate": "Dak Prescott",
+      "depthChartCandidate": null,
+      "officialSourcesForManualReview": [],
+      "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
+      "declarationExists": false,
+      "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
+    },
+    {
+      "gameId": "401873030",
+      "kickoff": "2026-11-01T18:00Z",
+      "team": "Minnesota Vikings",
+      "opponent": "Detroit Lions",
+      "starterVerification": "UNCONFIRMED",
+      "reviewRequired": true,
+      "reportedInjuryFlags": [],
+      "recentPrimaryPasserCandidate": "Kyler Murray",
+      "depthChartCandidate": null,
+      "officialSourcesForManualReview": [],
+      "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
+      "declarationExists": false,
+      "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
+    },
+    {
+      "gameId": "401873030",
+      "kickoff": "2026-11-01T18:00Z",
+      "team": "Detroit Lions",
+      "opponent": "Minnesota Vikings",
+      "starterVerification": "UNCONFIRMED",
+      "reviewRequired": true,
+      "reportedInjuryFlags": [],
+      "recentPrimaryPasserCandidate": "Jared Goff",
+      "depthChartCandidate": null,
+      "officialSourcesForManualReview": [],
+      "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
+      "declarationExists": false,
+      "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
+    },
+    {
+      "gameId": "401873029",
+      "kickoff": "2026-11-01T18:00Z",
+      "team": "Las Vegas Raiders",
+      "opponent": "New York Jets",
+      "starterVerification": "UNCONFIRMED",
+      "reviewRequired": true,
+      "reportedInjuryFlags": [],
+      "recentPrimaryPasserCandidate": "Kirk Cousins",
+      "depthChartCandidate": null,
+      "officialSourcesForManualReview": [],
+      "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
+      "declarationExists": false,
+      "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
+    },
+    {
+      "gameId": "401873029",
+      "kickoff": "2026-11-01T18:00Z",
+      "team": "New York Jets",
+      "opponent": "Las Vegas Raiders",
+      "starterVerification": "UNCONFIRMED",
+      "reviewRequired": true,
+      "reportedInjuryFlags": [],
+      "recentPrimaryPasserCandidate": "Geno Smith",
+      "depthChartCandidate": null,
+      "officialSourcesForManualReview": [],
+      "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
+      "declarationExists": false,
+      "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
+    },
+    {
+      "gameId": "401873027",
+      "kickoff": "2026-11-01T18:00Z",
+      "team": "Cleveland Browns",
+      "opponent": "Pittsburgh Steelers",
+      "starterVerification": "UNCONFIRMED",
+      "reviewRequired": true,
+      "reportedInjuryFlags": [
+        {
+          "name": "Dillon Gabriel",
+          "reportedStatus": "Injured Reserve"
+        }
+      ],
+      "recentPrimaryPasserCandidate": "Deshaun Watson",
+      "depthChartCandidate": null,
+      "officialSourcesForManualReview": [],
+      "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
+      "declarationExists": false,
+      "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
+    },
+    {
+      "gameId": "401873027",
+      "kickoff": "2026-11-01T18:00Z",
+      "team": "Pittsburgh Steelers",
+      "opponent": "Cleveland Browns",
+      "starterVerification": "UNCONFIRMED",
+      "reviewRequired": true,
+      "reportedInjuryFlags": [],
+      "recentPrimaryPasserCandidate": "Aaron Rodgers",
+      "depthChartCandidate": null,
+      "officialSourcesForManualReview": [],
+      "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
+      "declarationExists": false,
+      "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
+    },
+    {
+      "gameId": "401873025",
+      "kickoff": "2026-11-01T18:00Z",
+      "team": "Atlanta Falcons",
+      "opponent": "Tampa Bay Buccaneers",
+      "starterVerification": "UNCONFIRMED",
+      "reviewRequired": true,
+      "reportedInjuryFlags": [],
+      "recentPrimaryPasserCandidate": "Michael Penix Jr.",
+      "depthChartCandidate": null,
+      "officialSourcesForManualReview": [],
+      "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
+      "declarationExists": false,
+      "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
+    },
+    {
+      "gameId": "401873025",
+      "kickoff": "2026-11-01T18:00Z",
+      "team": "Tampa Bay Buccaneers",
+      "opponent": "Atlanta Falcons",
+      "starterVerification": "UNCONFIRMED",
+      "reviewRequired": true,
+      "reportedInjuryFlags": [
+        {
+          "name": "Baker Mayfield",
+          "reportedStatus": "Questionable"
+        }
+      ],
+      "recentPrimaryPasserCandidate": "Jalon Daniels",
+      "depthChartCandidate": null,
+      "officialSourcesForManualReview": [],
+      "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
+      "declarationExists": false,
+      "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
+    },
+    {
+      "gameId": "401873028",
+      "kickoff": "2026-11-01T18:00Z",
+      "team": "Indianapolis Colts",
+      "opponent": "Jacksonville Jaguars",
+      "starterVerification": "UNCONFIRMED",
+      "reviewRequired": true,
+      "reportedInjuryFlags": [],
+      "recentPrimaryPasserCandidate": "Daniel Jones",
+      "depthChartCandidate": null,
+      "officialSourcesForManualReview": [],
+      "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
+      "declarationExists": false,
+      "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
+    },
+    {
+      "gameId": "401873028",
+      "kickoff": "2026-11-01T18:00Z",
+      "team": "Jacksonville Jaguars",
+      "opponent": "Indianapolis Colts",
+      "starterVerification": "UNCONFIRMED",
+      "reviewRequired": true,
+      "reportedInjuryFlags": [],
+      "recentPrimaryPasserCandidate": "Trevor Lawrence",
+      "depthChartCandidate": null,
+      "officialSourcesForManualReview": [],
+      "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
+      "declarationExists": false,
+      "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
+    },
+    {
+      "gameId": "401873032",
+      "kickoff": "2026-11-01T21:05Z",
+      "team": "Los Angeles Chargers",
+      "opponent": "Los Angeles Rams",
+      "starterVerification": "UNCONFIRMED",
+      "reviewRequired": true,
+      "reportedInjuryFlags": [],
+      "recentPrimaryPasserCandidate": "Justin Herbert",
+      "depthChartCandidate": null,
+      "officialSourcesForManualReview": [],
+      "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
+      "declarationExists": false,
+      "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
+    },
+    {
+      "gameId": "401873032",
+      "kickoff": "2026-11-01T21:05Z",
+      "team": "Los Angeles Rams",
+      "opponent": "Los Angeles Chargers",
+      "starterVerification": "UNCONFIRMED",
+      "reviewRequired": true,
+      "reportedInjuryFlags": [],
+      "recentPrimaryPasserCandidate": "Matthew Stafford",
+      "depthChartCandidate": null,
+      "officialSourcesForManualReview": [],
+      "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
+      "declarationExists": false,
+      "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
+    },
+    {
+      "gameId": "401873033",
+      "kickoff": "2026-11-01T21:25Z",
+      "team": "Kansas City Chiefs",
+      "opponent": "Denver Broncos",
+      "starterVerification": "UNCONFIRMED",
+      "reviewRequired": true,
+      "reportedInjuryFlags": [],
+      "recentPrimaryPasserCandidate": "Patrick Mahomes",
+      "depthChartCandidate": null,
+      "officialSourcesForManualReview": [],
+      "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
+      "declarationExists": false,
+      "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
+    },
+    {
+      "gameId": "401873033",
+      "kickoff": "2026-11-01T21:25Z",
+      "team": "Denver Broncos",
+      "opponent": "Kansas City Chiefs",
+      "starterVerification": "UNCONFIRMED",
+      "reviewRequired": true,
+      "reportedInjuryFlags": [],
+      "recentPrimaryPasserCandidate": "Bo Nix",
+      "depthChartCandidate": null,
+      "officialSourcesForManualReview": [],
+      "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
+      "declarationExists": false,
+      "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
+    },
+    {
+      "gameId": "401873034",
+      "kickoff": "2026-11-01T21:25Z",
+      "team": "New England Patriots",
+      "opponent": "Miami Dolphins",
+      "starterVerification": "UNCONFIRMED",
+      "reviewRequired": true,
+      "reportedInjuryFlags": [],
+      "recentPrimaryPasserCandidate": "Drake Maye",
+      "depthChartCandidate": null,
+      "officialSourcesForManualReview": [],
+      "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
+      "declarationExists": false,
+      "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
+    },
+    {
+      "gameId": "401873034",
+      "kickoff": "2026-11-01T21:25Z",
+      "team": "Miami Dolphins",
+      "opponent": "New England Patriots",
+      "starterVerification": "UNCONFIRMED",
+      "reviewRequired": true,
+      "reportedInjuryFlags": [],
+      "recentPrimaryPasserCandidate": "Malik Willis",
+      "depthChartCandidate": null,
+      "officialSourcesForManualReview": [],
+      "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
+      "declarationExists": false,
+      "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
+    },
+    {
+      "gameId": "401873035",
+      "kickoff": "2026-11-02T01:20Z",
+      "team": "Philadelphia Eagles",
+      "opponent": "Washington Commanders",
+      "starterVerification": "UNCONFIRMED",
+      "reviewRequired": true,
+      "reportedInjuryFlags": [
+        {
+          "name": "Jalen Hurts",
+          "reportedStatus": "Injured Reserve"
+        }
+      ],
+      "recentPrimaryPasserCandidate": "Tanner McKee",
+      "depthChartCandidate": null,
+      "officialSourcesForManualReview": [
+        {
+          "team": "Philadelphia Eagles",
+          "player": "Tanner McKee",
+          "source": "https://www.philadelphiaeagles.com/news/eagles-place-jalen-hurts-on-injured-reserve-sign-rb-jaydon-blue-to-the-active-roster-2026-nfl-week-6-panthers",
+          "sourceDate": "2026-10-17",
+          "game": "Eagles vs Panthers, Oct 18",
+          "classification": "HISTORICAL_GAME_ONLY",
+          "reason": "Team confirms McKee started Week 6; cannot confirm Week 8 from this announcement."
+        },
+        {
+          "team": "Philadelphia Eagles",
+          "player": "Jalen Hurts",
+          "source": "https://www.philadelphiaeagles.com/news/eagles-and-jalen-hurts-agent-nicole-lynn-provide-an-update-on-qb-jalen-hurts",
+          "sourceDate": "2026-10-19",
+          "classification": "REPORTED_UNAVAILABLE",
+          "reason": "Team statement rules out contact football during treatment, but does not identify game-specific replacement starter."
+        }
+      ],
+      "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
+      "declarationExists": false,
+      "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
+    },
+    {
+      "gameId": "401873035",
+      "kickoff": "2026-11-02T01:20Z",
+      "team": "Washington Commanders",
+      "opponent": "Philadelphia Eagles",
+      "starterVerification": "UNCONFIRMED",
+      "reviewRequired": true,
+      "reportedInjuryFlags": [
+        {
+          "name": "Marcus Mariota",
+          "reportedStatus": "Doubtful"
+        }
+      ],
+      "recentPrimaryPasserCandidate": "Jayden Daniels",
+      "depthChartCandidate": null,
+      "officialSourcesForManualReview": [],
+      "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
+      "declarationExists": false,
+      "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
+    },
+    {
+      "gameId": "401873036",
+      "kickoff": "2026-11-03T01:15Z",
+      "team": "Chicago Bears",
+      "opponent": "Seattle Seahawks",
+      "starterVerification": "UNCONFIRMED",
+      "reviewRequired": true,
+      "reportedInjuryFlags": [],
+      "recentPrimaryPasserCandidate": "Caleb Williams",
+      "depthChartCandidate": null,
+      "officialSourcesForManualReview": [],
+      "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
+      "declarationExists": false,
+      "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
+    },
+    {
+      "gameId": "401873036",
+      "kickoff": "2026-11-03T01:15Z",
+      "team": "Seattle Seahawks",
+      "opponent": "Chicago Bears",
+      "starterVerification": "UNCONFIRMED",
+      "reviewRequired": true,
+      "reportedInjuryFlags": [
+        {
+          "name": "Drew Lock",
+          "reportedStatus": "Questionable"
+        }
+      ],
+      "recentPrimaryPasserCandidate": "Sam Darnold",
+      "depthChartCandidate": null,
+      "officialSourcesForManualReview": [],
+      "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
+      "declarationExists": false,
+      "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
+    }
+  ]
+}

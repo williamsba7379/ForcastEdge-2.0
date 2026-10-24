@@ -1,5 +1,5 @@
 {
-  "retrievedAt": "2026-10-24T02:27:56.976299+00:00",
+  "retrievedAt": "2026-10-24T02:36:08.991441+00:00",
   "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
   "status": "UNVERIFIED_REPORTING_FEED",
   "caution": "Reported injuries only. Not confirmed starting lineups, expected workload, or calibrated point adjustments.",
@@ -3307,6 +3307,12 @@
       "teamId": "17",
       "players": [
         {
+          "name": "DeMario Douglas",
+          "position": "WR",
+          "status": "Active",
+          "description": ""
+        },
+        {
           "name": "TreVeyon Henderson",
           "position": "RB",
           "status": "Active",
@@ -3441,12 +3447,6 @@
         {
           "name": "Dametrious Crownover",
           "position": "OT",
-          "status": "Active",
-          "description": ""
-        },
-        {
-          "name": "DeMario Douglas",
-          "position": "WR",
           "status": "Active",
           "description": ""
         },
@@ -3935,6 +3935,24 @@
       "teamId": "21",
       "players": [
         {
+          "name": "Willie Lampkin",
+          "position": "C",
+          "status": "Questionable",
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Illness', 'location': 'Other', 'returnDate': '2026-10-26'}"
+        },
+        {
+          "name": "Tyler Steen",
+          "position": "G",
+          "status": "Questionable",
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Shoulder', 'location': 'Arm', 'returnDate': '2026-10-26'}"
+        },
+        {
+          "name": "Landon Dickerson",
+          "position": "G",
+          "status": "Injured Reserve",
+          "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-26'}"
+        },
+        {
           "name": "Fred Johnson",
           "position": "OT",
           "status": "Questionable",
@@ -3989,22 +4007,10 @@
           "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Abdomen', 'location': 'Torso', 'returnDate': '2026-10-26'}"
         },
         {
-          "name": "Tyler Steen",
-          "position": "G",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Shoulder', 'location': 'Arm', 'returnDate': '2026-10-26'}"
-        },
-        {
           "name": "Jonathan Greenard",
           "position": "LB",
           "status": "Questionable",
           "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Ankle', 'location': 'Leg', 'returnDate': '2026-10-26'}"
-        },
-        {
-          "name": "Willie Lampkin",
-          "position": "C",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Illness', 'location': 'Other', 'returnDate': '2026-10-26'}"
         },
         {
           "name": "Cooper DeJean",
@@ -4075,12 +4081,6 @@
         {
           "name": "Dameon Pierce",
           "position": "RB",
-          "status": "Active",
-          "description": ""
-        },
-        {
-          "name": "Makai Lemon",
-          "position": "WR",
           "status": "Active",
           "description": ""
         }
@@ -4249,6 +4249,18 @@
       "teamId": "25",
       "players": [
         {
+          "name": "Garret Wallow",
+          "position": "LB",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Hamstring', 'location': 'Leg', 'detail': 'Strain', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
+        },
+        {
+          "name": "Luke Gifford",
+          "position": "LB",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Groin', 'location': 'Groin', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
+        },
+        {
           "name": "Mykel Williams",
           "position": "DE",
           "status": "Active",
@@ -4309,12 +4321,6 @@
           "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Calf', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         },
         {
-          "name": "Luke Gifford",
-          "position": "LB",
-          "status": "Out",
-          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Groin', 'location': 'Groin', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
-        },
-        {
           "name": "Mike Evans",
           "position": "WR",
           "status": "Out",
@@ -4349,12 +4355,6 @@
           "position": "WR",
           "status": "Active",
           "description": ""
-        },
-        {
-          "name": "Garret Wallow",
-          "position": "LB",
-          "status": "Out",
-          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Hamstring', 'location': 'Leg', 'detail': 'Strain', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
         },
         {
           "name": "Enrique Cruz Jr.",

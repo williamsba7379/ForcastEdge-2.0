@@ -2,7 +2,7 @@
   "title": "Model C \u2014 Automated Review Draft",
   "season": 2026,
   "week": 8,
-  "generatedAt": "2026-10-23T22:28:14.864993-04:00",
+  "generatedAt": "2026-10-23T22:36:31.870001-04:00",
   "status": "AUTOMATED_REVIEW_ONLY",
   "reviewRequired": true,
   "method": "Point-differential baseline plus optional documented quarterback/injury adjustments; no unverified automatic injury claims.",
@@ -426,7 +426,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:27:56.976299+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:36:08.991441+00:00",
       "id": "401873023",
       "date": "2026-10-30T00:15Z",
       "away": "Carolina Panthers",
@@ -866,7 +866,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:27:56.976299+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:36:08.991441+00:00",
       "id": "401873026",
       "date": "2026-11-01T18:00Z",
       "away": "Baltimore Ravens",
@@ -1289,7 +1289,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:27:56.976299+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:36:08.991441+00:00",
       "id": "401873031",
       "date": "2026-11-01T18:00Z",
       "away": "Tennessee Titans",
@@ -1729,7 +1729,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:27:56.976299+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:36:08.991441+00:00",
       "id": "401873024",
       "date": "2026-11-01T18:00Z",
       "away": "Arizona Cardinals",
@@ -2164,7 +2164,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:27:56.976299+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:36:08.991441+00:00",
       "id": "401873030",
       "date": "2026-11-01T18:00Z",
       "away": "Minnesota Vikings",
@@ -2611,7 +2611,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:27:56.976299+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:36:08.991441+00:00",
       "id": "401873029",
       "date": "2026-11-01T18:00Z",
       "away": "Las Vegas Raiders",
@@ -3075,7 +3075,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:27:56.976299+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:36:08.991441+00:00",
       "id": "401873027",
       "date": "2026-11-01T18:00Z",
       "away": "Cleveland Browns",
@@ -3539,7 +3539,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:27:56.976299+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:36:08.991441+00:00",
       "id": "401873025",
       "date": "2026-11-01T18:00Z",
       "away": "Atlanta Falcons",
@@ -3986,7 +3986,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:27:56.976299+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:36:08.991441+00:00",
       "id": "401873028",
       "date": "2026-11-01T18:00Z",
       "away": "Indianapolis Colts",
@@ -4421,7 +4421,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:27:56.976299+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:36:08.991441+00:00",
       "id": "401873032",
       "date": "2026-11-01T21:05Z",
       "away": "Los Angeles Chargers",
@@ -4868,7 +4868,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:27:56.976299+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:36:08.991441+00:00",
       "id": "401873033",
       "date": "2026-11-01T21:25Z",
       "away": "Kansas City Chiefs",
@@ -4998,6 +4998,12 @@
       },
       "injuryReports": {
         "away": [
+          {
+            "name": "DeMario Douglas",
+            "position": "WR",
+            "status": "Active",
+            "description": ""
+          },
           {
             "name": "TreVeyon Henderson",
             "position": "RB",
@@ -5133,12 +5139,6 @@
           {
             "name": "Dametrious Crownover",
             "position": "OT",
-            "status": "Active",
-            "description": ""
-          },
-          {
-            "name": "DeMario Douglas",
-            "position": "WR",
             "status": "Active",
             "description": ""
           },
@@ -5303,7 +5303,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:27:56.976299+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:36:08.991441+00:00",
       "id": "401873034",
       "date": "2026-11-01T21:25Z",
       "away": "New England Patriots",
@@ -5468,6 +5468,24 @@
       "injuryReports": {
         "away": [
           {
+            "name": "Willie Lampkin",
+            "position": "C",
+            "status": "Questionable",
+            "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Illness', 'location': 'Other', 'returnDate': '2026-10-26'}"
+          },
+          {
+            "name": "Tyler Steen",
+            "position": "G",
+            "status": "Questionable",
+            "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Shoulder', 'location': 'Arm', 'returnDate': '2026-10-26'}"
+          },
+          {
+            "name": "Landon Dickerson",
+            "position": "G",
+            "status": "Injured Reserve",
+            "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-26'}"
+          },
+          {
             "name": "Fred Johnson",
             "position": "OT",
             "status": "Questionable",
@@ -5522,22 +5540,10 @@
             "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Abdomen', 'location': 'Torso', 'returnDate': '2026-10-26'}"
           },
           {
-            "name": "Tyler Steen",
-            "position": "G",
-            "status": "Questionable",
-            "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Shoulder', 'location': 'Arm', 'returnDate': '2026-10-26'}"
-          },
-          {
             "name": "Jonathan Greenard",
             "position": "LB",
             "status": "Questionable",
             "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Ankle', 'location': 'Leg', 'returnDate': '2026-10-26'}"
-          },
-          {
-            "name": "Willie Lampkin",
-            "position": "C",
-            "status": "Questionable",
-            "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Illness', 'location': 'Other', 'returnDate': '2026-10-26'}"
           },
           {
             "name": "Cooper DeJean",
@@ -5608,12 +5614,6 @@
           {
             "name": "Dameon Pierce",
             "position": "RB",
-            "status": "Active",
-            "description": ""
-          },
-          {
-            "name": "Makai Lemon",
-            "position": "WR",
             "status": "Active",
             "description": ""
           }
@@ -5772,7 +5772,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:27:56.976299+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:36:08.991441+00:00",
       "id": "401873035",
       "date": "2026-11-02T01:20Z",
       "away": "Philadelphia Eagles",
@@ -6224,7 +6224,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:27:56.976299+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:36:08.991441+00:00",
       "id": "401873036",
       "date": "2026-11-03T01:15Z",
       "away": "Chicago Bears",
