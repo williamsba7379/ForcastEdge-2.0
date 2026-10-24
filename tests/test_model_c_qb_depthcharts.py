@@ -14,6 +14,8 @@ def main():
        "rb":{"position":{"abbreviation":"RB"},
        "athletes":[{"rank":1,"athlete":{"displayName":"Fixture RB"}}]}}}]}
     assert module.extract_qbs(example)==["Fixture QB One"]
+    alternate={"depthcharts":{"offense":{"positions":[{"position":"QB","athletes":[{"slot":1,"athlete":{"displayName":"Alternate QB"}},{"slot":2,"athlete":{"displayName":"Backup QB"}}]}]}}}
+    assert module.extract_qbs(alternate)==["Alternate QB"]
     assert module.extract_qbs({"depthchart":[]})==[]
     print("PASS: QB1 depth chart candidate extraction; never confirms game starter")
 
