@@ -21,18 +21,7 @@
             "RECENT_PRE_GAME"
           ],
           "dateFromHeadline": "2026-10-23",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.panthers.com/news/three-takeaways-from-coordinators-including-bryce-young-s-acting-job-linebacker-play-and-more",
-          "headline": "Three takeaways from coordinators, including Bryce Young's acting job, linebacker play, and more Oct 22, 2026 The Panthers let tight end Mitchell Evans go back to his quarterback roots, as they try to mix it up in short-",
-          "score": 5,
-          "reasons": [
-            "PLAYER_NAME",
-            "QB_TERMS",
-            "OLD_NEWS"
-          ],
-          "dateFromHeadline": "2026-10-22",
+          "pregameShortlistEligible": true,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -44,50 +33,73 @@
             "RECENT_PRE_GAME"
           ],
           "dateFromHeadline": "2026-10-23",
+          "pregameShortlistEligible": true,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.panthers.com/news/three-takeaways-from-coordinators-including-bryce-young-s-acting-job-linebacker-play-and-more",
+          "headline": "Three takeaways from coordinators, including Bryce Young's acting job, linebacker play, and more Oct 22, 2026 The Panthers let tight end Mitchell Evans go back to his quarterback roots, as they try to mix it up in short-",
+          "score": -2,
+          "reasons": [
+            "PLAYER_NAME",
+            "QB_TERMS",
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": "2026-10-22",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.panthers.com/news/panthers-place-jaycee-horn-and-mike-jackson-on-injured-reserve",
           "headline": "Panthers place Jaycee Horn and Mike Jackson on injured reserve Sep 30, 2026 Both starting cornerbacks went on IR Wednesday morning, leaving the Panthers with a number of young defensive options heading into Sunday night'",
-          "score": 2,
+          "score": -5,
           "reasons": [
             "QB_TERMS",
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-09-30",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.panthers.com/news/panthers-waive-offensive-tackle-albert-reese",
           "headline": "Panthers waive offensive tackle Oct 20, 2026 The team waived undrafted rookie offensive tackle Albert Reese, who was inactive for all five games this season.",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-20",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.panthers.com/news/week-7-thursday-injury-report-still-no-jaelan-phillips-but-others-returned",
           "headline": "Week 7 Thursday Injury Report: Still no Jaelan Phillips, but others returned Oct 22, 2026 The Panthers were still without outside linebackers Jaelan Phillips and Thomas Incoom on Thursday, but the rest of the roster part",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-22",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.panthers.com/news/monday-brew-panthers-know-they-can-t-be-complacent-in-first-place-taylor-moton-tershawn-wharton-trevor-etienne",
           "headline": "Monday Brew: Panthers know they can't be complacent in first place Oct 12, 2026 Dave Canales used Monday's team meeting after the bye week to address the Panthers place in the division standings. Plus, the benefit of fac",
-          "score": -3,
+          "score": -10,
           "reasons": [
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-12",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -100,26 +112,16 @@
       "reviewRequired": true,
       "rankedLinks": [
         {
-          "url": "https://www.packers.com/news/packers-qb-jordan-love-on-vikings-exotic-blitz-you-can-get-it-whenever-sept-9-2026",
-          "headline": "Packers QB Jordan Love on Vikings exotic blitz: 'You can get it whenever' Sep 09, 2026 Minnesota's scheme always a challenge, but Green Bay has experience to counter",
-          "score": 5,
-          "reasons": [
-            "PLAYER_NAME",
-            "QB_TERMS",
-            "OLD_NEWS"
-          ],
-          "dateFromHeadline": "2026-09-09",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
           "url": "https://www.packers.com/news/packers-lions-injury-report-oct-21-2026",
           "headline": "Packers-Lions Injury Report | Oct. 21, 2026",
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -128,9 +130,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -139,117 +143,153 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.packers.com/news/packers-qb-jordan-love-on-vikings-exotic-blitz-you-can-get-it-whenever-sept-9-2026",
+          "headline": "Packers QB Jordan Love on Vikings exotic blitz: 'You can get it whenever' Sep 09, 2026 Minnesota's scheme always a challenge, but Green Bay has experience to counter",
+          "score": -2,
+          "reasons": [
+            "PLAYER_NAME",
+            "QB_TERMS",
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": "2026-09-09",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.packers.com/news/settled-at-center-sean-rhyan-feeling-new-level-of-anticipation-sept-11-2026",
           "headline": "Settled at center, Sean Rhyan feeling new level of anticipation Sep 11, 2026 Packers starting center excited for challenge Vikings present",
-          "score": 0,
+          "score": -7,
           "reasons": [
             "QB_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-09-11",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.packers.com/news/5-things-learned-at-packers-minicamp-day-1-june-9-2026",
           "headline": "5 things learned at Packers minicamp \u2013 Day 1 Jun 09, 2026 Standouts on each side of the ball, plus points of emphasis and injury updates",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-06-09",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.packers.com/news/5-things-learned-at-packers-training-camp-aug-10-2026",
           "headline": "5 things learned at Packers training camp \u2013 Aug. 10 Aug 10, 2026 Notes on several receivers and defensive backs, plus injury updates",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-08-10",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.packers.com/news/5-things-learned-at-packers-training-camp-aug-2-2026",
           "headline": "5 things learned at Packers training camp \u2013 Aug. 2 Aug 02, 2026 Gruesome ankle injury couldn't keep Kamal Hadden down",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-08-02",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.packers.com/news/5-things-learned-from-gm-brian-gutekunst-about-packers-roster-sep-1-2026",
           "headline": "5 things learned from GM Brian Gutekunst about Packers' roster Sep 01, 2026 Notes on key decisions and injury updates",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-09-01",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.packers.com/news/game-recap-5-takeaways-from-packers-victory-over-bears-week-5-2026",
           "headline": "news Game recap: 5 takeaways from Packers' victory over Bears Oct 11, 2026 Much-needed win comes with another tough injury on defense",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-11",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.packers.com/news/packers-buccaneers-week-4-inactives-oct-4-2026",
           "headline": "news Green Bay G Kevin Zeitler will not play at Tampa Bay | Packers-Buccaneers inactives Oct 04, 2026 Rookie Jager Burton active after being questionable",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-04",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.packers.com/news/surging-christian-watson-intends-to-keep-on-climbing-oct-14-2026",
           "headline": "Surging Christian Watson intends to 'keep on climbing' Oct 14, 2026 Packers receiver took his game to next level after ACL injury",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-14",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.packers.com/news/packers-bears-week-5-inactives-oct-11-2026",
           "headline": "news G Kevin Zeitler active for Green Bay | Packers-Bears inactives Oct 11, 2026 DT Anthony Campbell will not play vs. Chicago",
-          "score": -3,
+          "score": -10,
           "reasons": [
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-11",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.packers.com/news/packers-cowboys-week-6-inactives-oct-18-2026",
           "headline": "news CB Brandon Cisse active for Green Bay | Packers-Cowboys inactives Oct 18, 2026 DT Anthony Campbell also back in action for Packers",
-          "score": -3,
+          "score": -10,
           "reasons": [
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-18",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -264,205 +304,241 @@
         {
           "url": "https://www.baltimoreravens.com/news/drake-lamar-jackson-stage-concert-my-quarterback",
           "headline": "news SociaLight: Drake Brings 'My Quarterback' Lamar Jackson on Stage Jul 30, 2023",
-          "score": 5,
+          "score": -2,
           "reasons": [
             "PLAYER_NAME",
             "QB_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2023-07-30",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.baltimoreravens.com/news/lamar-jackson-ankle-injury-explains-whats-going-on-ravens-bengals",
           "headline": "news Lamar Jackson Explains What's Going on With His Ankle Injury Oct 23, 2026 Lamar Jackson shared the nature of his ankle injury and how he\u2019s feeling this week.",
-          "score": 4,
+          "score": -3,
           "reasons": [
             "PLAYER_NAME",
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-23",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.baltimoreravens.com/news/lamar-jackson-injury-report-ravens-bengals-jaylinn-hawkins-tavius-robinson-2026",
           "headline": "news Lamar Jackson 'Headed in the Right Direction,' But Two Defensive Starters Ruled Out Oct 23, 2026 Ravens safety Jaylinn Hawkins (knee) and outside linebacker Tavius Robinson (pectoral) are not at the start of practic",
-          "score": 4,
+          "score": -3,
           "reasons": [
             "PLAYER_NAME",
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-23",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.baltimoreravens.com/news/lamar-jackson-injury-report-ravens-practice-start-ankle-2026",
           "headline": "news Lamar Jackson Takes a Step Forward, But Still Limited at Practice Oct 22, 2026",
-          "score": 4,
+          "score": -3,
           "reasons": [
             "PLAYER_NAME",
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-22",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.baltimoreravens.com/news/lamar-jackson-injury-timeline-return-jaylinn-hawkins-trade-deadline-elijah-sarratt-ravens-mailbag",
           "headline": "news Mailbag: What's Lamar Jackson's Timeline for Return? Oct 21, 2026",
-          "score": 4,
+          "score": -3,
           "reasons": [
             "PLAYER_NAME",
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-21",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.baltimoreravens.com/news/lamar-jackson-ravens-injury-report-cam-jurgens-tj-tampa-returns-practice-injured-reserve",
           "headline": "news Lamar Jackson Returns to Practice as a Limited Participant Oct 21, 2026",
-          "score": 4,
+          "score": -3,
           "reasons": [
             "PLAYER_NAME",
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-21",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.baltimoreravens.com/news/deandre-hopkins-ravens-met-gala-lamar-jackson",
           "headline": "news SociaLight: DeAndre Hopkins Shows Out at Met Gala May 06, 2025",
-          "score": 2,
+          "score": -5,
           "reasons": [
             "PLAYER_NAME",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2025-05-06",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.baltimoreravens.com/news/jesse-minter-lamar-jackson-ankle-still-day-day-monday-week-7-injuries-rashod-bateman-cam-jurgens-trey-hendrickson-tyler-loop-critical-misses",
           "headline": "news News & Notes: Jesse Minter Gives Health Update on Lamar Jackson Oct 19, 2026",
-          "score": 2,
+          "score": -5,
           "reasons": [
             "PLAYER_NAME",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-19",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.baltimoreravens.com/news/lamar-jackson-germany-football-soccer-skills-shows-off-socialight",
           "headline": "news SociaLight: Lamar Jackson Shows Off His Skills in Germany Apr 22, 2024",
-          "score": 2,
+          "score": -5,
           "reasons": [
             "PLAYER_NAME",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2024-04-22",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.baltimoreravens.com/news/lamar-jackson-kids-freak-out-high-five-ravens-training-camp",
           "headline": "news SociaLight: Watch Kids Freak Out After High-Fiving Lamar Jackson Jul 31, 2023",
-          "score": 2,
+          "score": -5,
           "reasons": [
             "PLAYER_NAME",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2023-07-31",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.baltimoreravens.com/news/lamar-jackson-locked-in-playoffs-cover-story-super-bowl-2023",
           "headline": "Cover Story: Why 'Locked In' Lamar Jackson Is Ready to Take the Ravens Farther Jan 15, 2024",
-          "score": 2,
+          "score": -5,
           "reasons": [
             "PLAYER_NAME",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2024-01-15",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.baltimoreravens.com/news/lamar-jackson-rug-wants-damn-fan-week-9-seahawks",
           "headline": "news SociaLight: Lamar Jackson Wants the Damn Rug \ud83d\ude02 Nov 09, 2023",
-          "score": 2,
+          "score": -5,
           "reasons": [
             "PLAYER_NAME",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2023-11-09",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.baltimoreravens.com/news/lamar-jackson-zay-flowers-beach-workout-south-florida",
           "headline": "news SociaLight: Lamar Jackson and Zay Flowers Build Chemistry in South Florida Workouts Jun 28, 2023",
-          "score": 2,
+          "score": -5,
           "reasons": [
             "PLAYER_NAME",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2023-06-28",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.baltimoreravens.com/news/mark-andrews-franchise-record-feature-hurricane-underestimated-lamar-jackson-rock-and-roll",
           "headline": "Cover Story: How Mark Andrews Became the Ravens' All-Time Leading Receiver Nov 18, 2025",
-          "score": 2,
+          "score": -5,
           "reasons": [
             "PLAYER_NAME",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2025-11-18",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.baltimoreravens.com/news/odell-beckham-zay-flowers-working-out-together-offseason-2023",
           "headline": "news SociaLight: Lamar Jackson, Odell Beckham Jr., Zay Flowers Work Out Together Jul 03, 2023",
-          "score": 2,
+          "score": -5,
           "reasons": [
             "PLAYER_NAME",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2023-07-03",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.baltimoreravens.com/news/ravens-bengals-game-preview-joe-burrow-lamar-jackson-week-7-2026",
           "headline": "news Everything You Need to Know: Ravens vs. Bengals Oct 23, 2026",
-          "score": 2,
+          "score": -5,
           "reasons": [
             "PLAYER_NAME",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-23",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.baltimoreravens.com/news/ravens-pass-rush-partner-trey-hendrickson-mike-green-lamar-jackson-full-speed-2026",
           "headline": "news Late for Work: Pundit Says Ravens Need Establish a Pass-Rush Partner for Trey Hendrickson Oct 22, 2026",
-          "score": 2,
+          "score": -5,
           "reasons": [
             "PLAYER_NAME",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-22",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.baltimoreravens.com/news/tavius-robinson-out-for-2026-season-zion-young-jaylinn-hawkins-jesse-minter",
           "headline": "news News & Notes: Tavius Robinson Will Miss Remainder of Season Oct 23, 2026 Jaylinn Hawkins has been ruled out for Sunday\u2019s game against the Bengals. Zion Young feels ready to help fill void left by Tavius Robinson\u2019s i",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-23",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -481,9 +557,11 @@
           "reasons": [
             "PLAYER_NAME",
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -493,9 +571,11 @@
           "reasons": [
             "QB_TERMS",
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -504,9 +584,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -515,9 +597,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -526,9 +610,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -537,9 +623,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -548,9 +636,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -559,9 +649,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -570,9 +662,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -581,9 +675,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -592,9 +688,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -603,9 +701,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -614,9 +714,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -625,9 +727,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -636,9 +740,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -647,9 +753,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -658,9 +766,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -679,43 +789,51 @@
           "reasons": [
             "PLAYER_NAME",
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.tennesseetitans.com/news/titans-sign-qb-cam-ward-to-rookie-contract",
           "headline": "Titans Sign QB Cam Ward to Rookie Contract May 21, 2025",
-          "score": 5,
+          "score": -2,
           "reasons": [
             "PLAYER_NAME",
             "QB_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2025-05-21",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.tennesseetitans.com/news/at-the-pro-bowl-peyton-manning-talks-titans-from-hc-brian-callahan-to-qb-will-levis-to-rb-derrick-henry-and-he-told-a-great-story-about-the-late-frank-wycheck",
           "headline": "news At the Pro Bowl, Peyton Manning Talks Titans, From HC Brian Callahan to QB Will Levis to RB Derrick Henry \u2013 and He Told a Great Story About the Late Frank Wycheck Feb 02, 2024",
-          "score": 0,
+          "score": -7,
           "reasons": [
             "QB_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2024-02-02",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.tennesseetitans.com/news/week-7-injury-report-titans-vs-browns",
           "headline": "Week 7 Injury Report | Titans vs Browns Oct 21, 2026 Who's in, who's out for the Titans in Week 7 vs the Cleveland Browns",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-21",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -734,9 +852,11 @@
           "reasons": [
             "PLAYER_NAME",
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -746,9 +866,11 @@
           "reasons": [
             "PLAYER_NAME",
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -757,9 +879,11 @@
           "score": 5,
           "reasons": [
             "PLAYER_NAME",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -768,9 +892,11 @@
           "score": 3,
           "reasons": [
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -779,9 +905,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -790,9 +918,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -801,9 +931,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -811,9 +943,11 @@
           "headline": "news Quick Hits | Bengals Finding Health Amid Lamar Jackson's Murky Status",
           "score": 0,
           "reasons": [
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -832,9 +966,11 @@
           "reasons": [
             "PLAYER_NAME",
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -844,9 +980,11 @@
           "reasons": [
             "PLAYER_NAME",
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -855,9 +993,11 @@
           "score": 3,
           "reasons": [
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -866,9 +1006,11 @@
           "score": 3,
           "reasons": [
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -877,9 +1019,11 @@
           "score": 3,
           "reasons": [
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -888,9 +1032,11 @@
           "score": 3,
           "reasons": [
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -899,9 +1045,11 @@
           "score": 3,
           "reasons": [
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -910,9 +1058,11 @@
           "score": 3,
           "reasons": [
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -921,9 +1071,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -932,9 +1084,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -943,9 +1097,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -954,9 +1110,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -975,9 +1133,11 @@
           "reasons": [
             "PLAYER_NAME",
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -986,9 +1146,11 @@
           "score": 3,
           "reasons": [
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -997,9 +1159,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1008,9 +1172,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -1025,79 +1191,93 @@
         {
           "url": "https://www.vikings.com/news/kyler-murray-starting-quarterback-week-3-buccaneers-injury",
           "headline": "news Kyler Murray Clears Protocol, Will Start for Vikings at Buccaneers in Week 3 Sep 21, 2026",
-          "score": 7,
+          "score": 0,
           "reasons": [
             "PLAYER_NAME",
             "QB_TERMS",
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-09-21",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.vikings.com/news/carson-wentz-starting-week-2-at-bears",
           "headline": "news Carson Wentz to Start for Vikings in Week 2 at Bears Sep 18, 2026",
-          "score": 0,
+          "score": -7,
           "reasons": [
             "QB_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-09-18",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.vikings.com/news/jj-mccarthy-quarterback-trade-new-york-giants-2026-nfl-season",
           "headline": "news Vikings Trade J.J. McCarthy to Giants for 2027 Fifth-Round Pick Sep 28, 2026",
-          "score": 0,
+          "score": -7,
           "reasons": [
             "QB_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-09-28",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.vikings.com/news/lunchbreak-the-athletic-quarterback-rankings-blake-brandel",
           "headline": "news Lunchbreak: The Athletic Unveils Quarterback Tier Rankings; A Seal of Approval at Center Aug 04, 2026",
-          "score": 0,
+          "score": -7,
           "reasons": [
             "QB_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-08-04",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.vikings.com/news/quarterback-comparisons-training-camp-rookies-2026",
           "headline": "news Lunchbreak: Vikings Quarterback Comparisons Early in Camp; Rookies' Fits with Teams Jul 30, 2026",
-          "score": 0,
+          "score": -7,
           "reasons": [
             "QB_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-07-30",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.vikings.com/news/colts-injury-report-week-7-2026-nfl-season",
           "headline": "news Final Vikings vs. Colts Injury Report for Week 7 of 2026 Oct 23, 2026",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-23",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.vikings.com/news/quarterbacks-ota-practices-defense-depth-offseason-2026",
           "headline": "news Mailbag: Vikings QBs at OTA Practices, Depth on Defense Jun 01, 2026",
-          "score": -3,
+          "score": -10,
           "reasons": [
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-06-01",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -1116,9 +1296,11 @@
           "reasons": [
             "PLAYER_NAME",
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1128,9 +1310,11 @@
           "reasons": [
             "PLAYER_NAME",
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1139,9 +1323,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -1159,139 +1345,165 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.raiders.com/news/fernando-mendoza-raider-nation-and-the-latino-community-see-themselves",
           "headline": "news More Than a Quarterback: In Fernando Mendoza, Raider Nation and the Latino community see themselves Oct 07, 2026 For Mendoza, wearing the Silver and Black means honoring his Cuban roots, his family and the Latino co",
-          "score": 0,
+          "score": -7,
           "reasons": [
             "QB_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-07",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.raiders.com/news/raiders-sign-first-round-pick-fernando-mendoza-quarterback-indiana-2026-nfl-draft",
           "headline": "news Raiders sign first-round pick QB Fernando Mendoza Jul 23, 2026 The 6-foot-5, 225-pound quarterback spent his final college season at Indiana (2025) after three years at California (2022-24), appearing in 36 career g",
-          "score": 0,
+          "score": -7,
           "reasons": [
             "QB_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-07-23",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.raiders.com/news/bucky-s-breakdown-why-fernando-mendoza-s-brief-debut-was-an-encouraging-sign",
           "headline": "news Bucky's Breakdown: Why Fernando Mendoza's brief debut was an encouraging sign Oct 14, 2026 With redshirt quarterbacks quietly developing on the practice field and out of the spotlight, they can master the playbook a",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-14",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.raiders.com/news/las-vegas-raiders-buffalo-bills-week-6-injury-report-2026",
           "headline": "news Raiders-Bills Week 6 Injury Report: 3 Raiders ruled out, 1 questionable to play Oct 16, 2026 Take a look at the Raiders' injury report as the team prepares to face the Buffalo Bills.",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-16",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.raiders.com/news/las-vegas-raiders-kansas-city-chiefs-week-4-injury-report-2026-season-nfl",
           "headline": "news Raiders-Chiefs Week 4 Injury Report: Jackson Powers-Johnson ruled out for Sunday Oct 02, 2026 Take a look at the Raiders' injury report as the team prepares to face the Kansas City Chiefs.",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-02",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.raiders.com/news/las-vegas-raiders-new-england-patriots-week-5-injury-report-2026",
           "headline": "news Raiders-Patriots Week 5 Injury Report: 3 Raiders ruled out, Ashton Jeanty questionable to play Oct 09, 2026 Take a look at the Raiders' injury report as the team prepares to face the New England Patriots.",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-09",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.raiders.com/news/las-vegas-raiders-week-4-inactives-vs-kansas-city-chiefs-100426",
           "headline": "news Las Vegas Raiders Week 4 Inactives vs. Kansas City Chiefs Oct 04, 2026 Before the Raiders take the field for Week 4, view the inactive players for today's game.",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-04",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.raiders.com/news/las-vegas-raiders-week-5-inactives-vs-new-england-patriots-101126",
           "headline": "news Las Vegas Raiders Week 5 Inactives vs. New England Patriots Oct 11, 2026 Before the Raiders take the field for Week 5, view the inactive players for today's game.",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-11",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.raiders.com/news/las-vegas-raiders-week-6-inactives-vs-buffalo-bills-101826",
           "headline": "news Las Vegas Raiders Week 6 Inactives vs. Buffalo Bills Oct 18, 2026 Before the Raiders take the field for Week 6, view the inactive players for today's game.",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-18",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.raiders.com/news/raiders-te-carter-runyon-returns-to-practice-2026-nfl",
           "headline": "news Raiders TE Carter Runyon returns to practice Oct 14, 2026 Runyon was placed on injured reserve on Aug. 30 after suffering an injury during training camp.",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-14",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.raiders.com/news/hispanic-heritage-month-mike-sullivan-raiders-quarterbacks-coach-tom-flores-jim-plunkett",
           "headline": "news 'Anything is possible': Inspired by Hispanic trailblazers Tom Flores and Jim Plunkett, Raiders QBs coach Mike Sullivan comes full circle Oct 02, 2026 \"It was special, being a Raider fan in general, but to see those ",
-          "score": -3,
+          "score": -10,
           "reasons": [
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-02",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.raiders.com/news/inspirado-por-los-pioneros-hispanos-tom-flores-y-jim-plunkett-el-entrenador-de-quarterbacks-de-los-raiders-mike-sullivan-cierra-el-circulo",
           "headline": "news 'Todo es posible': inspirado por los pioneros hispanos Tom Flores y Jim Plunkett, el entrenador de quarterbacks de los Raiders, Mike Sullivan, cierra el c\u00edrculo Oct 02, 2026",
-          "score": -3,
+          "score": -10,
           "reasons": [
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-02",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -1310,9 +1522,11 @@
           "reasons": [
             "PLAYER_NAME",
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1321,9 +1535,11 @@
           "score": 5,
           "reasons": [
             "PLAYER_NAME",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1332,9 +1548,11 @@
           "score": 3,
           "reasons": [
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1343,9 +1561,11 @@
           "score": 3,
           "reasons": [
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1354,9 +1574,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1365,9 +1587,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1376,9 +1600,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -1396,9 +1622,11 @@
           "score": 3,
           "reasons": [
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1407,9 +1635,11 @@
           "score": 3,
           "reasons": [
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1418,9 +1648,11 @@
           "score": 3,
           "reasons": [
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1429,9 +1661,11 @@
           "score": 3,
           "reasons": [
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1440,9 +1674,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1450,9 +1686,11 @@
           "headline": "Browns announce inactives for Week 6 vs. the Ravens",
           "score": 0,
           "reasons": [
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -1471,9 +1709,11 @@
           "reasons": [
             "PLAYER_NAME",
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1482,9 +1722,11 @@
           "score": 3,
           "reasons": [
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1493,9 +1735,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1504,9 +1748,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1514,9 +1760,11 @@
           "headline": "Steelers inactives for Week 6 at Buccaneers Find out who won't play today as the Steelers take on the Buccaneers at Raymond James Stadium",
           "score": 0,
           "reasons": [
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -1534,9 +1782,11 @@
           "score": 3,
           "reasons": [
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1545,9 +1795,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1556,9 +1808,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1567,95 +1821,113 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.atlantafalcons.com/news/atlanta-falcons-sign-qb-trevor-siemian",
           "headline": "Atlanta Falcons sign QB Trevor Siemian Mar 25, 2026 With more than 30 starts under his belt and 11 years in the NFL, Siemian brings valuable experience to the Falcons' quarterbacks room.",
-          "score": 0,
+          "score": -7,
           "reasons": [
             "QB_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-03-25",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.atlantafalcons.com/news/falcons-release-cooper-rush-sign-andy-dalton",
           "headline": "Falcons release QB Cooper Rush, sign QB Andy Dalton Oct 19, 2026 Rush joined the Falcons on the opening day of training camp and started the first two games of the season.",
-          "score": 0,
+          "score": -7,
           "reasons": [
             "QB_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-19",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.atlantafalcons.com/news/tua-tagovailoa-competition-michael-penix-jr-falcons-quarterbacks",
           "headline": "Tua Tagovailoa embracing competition: 5 takeaways from Falcons QB's press conference Mar 24, 2026 The Falcons' new quarterback spoke with Atlanta media members for the first time. Here is what we learned.",
-          "score": 0,
+          "score": -7,
           "reasons": [
             "QB_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-03-24",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.atlantafalcons.com/news/a-j-terrell-returns-practice-injured-reserve-window-falcons-secondary",
           "headline": "Falcons begin A.J. Terrell's window to return from injured reserve Oct 21, 2026 Terrell returns to practice after missing time with a groin injury. The Falcons have 21 days to add their No. 1 corner to their active roste",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-21",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.atlantafalcons.com/news/grady-jarrett-year-10-the-return-season-ending-injury-recovery",
           "headline": "A peek behind the curtain of Grady Jarrett's return from season-ending injury Aug 29, 2024 It was a challenge unlike any other the Falcons defensive tackle had faced. He continued to work until he won.",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2024-08-29",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.atlantafalcons.com/news/kendal-daniels-positive-news-injury-chicago-bears",
           "headline": "Kevin Stefanski provides update on LB Kendal Daniels: 'All positive news' Oct 19, 2026 Daniels was carted off during the third quarter of Sunday's game against the Chicago Bears. Initial testing was positive for the rook",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-19",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.atlantafalcons.com/news/falcons-camp-report-team-prepares-for-joint-practices-with-indianapolis-colts",
           "headline": "Falcons Camp Report: Team prepares for joint practices with Indianapolis Colts Aug 17, 2026 Kevin Stefanski details plan for starters over the next week of practices and second preseason game.",
-          "score": -3,
+          "score": -10,
           "reasons": [
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-08-17",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.atlantafalcons.com/news/falcons-preseason-miami-dolphins-michael-penix-starters",
           "headline": "Falcons using final week of preseason to get feel for regular-season schedule Aug 24, 2026 Atlanta will play its starters on Friday night against the Miami Dolphins in its final preseason game.",
-          "score": -3,
+          "score": -10,
           "reasons": [
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-08-24",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -1674,9 +1946,11 @@
           "reasons": [
             "QB_TERMS",
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1685,9 +1959,11 @@
           "score": 3,
           "reasons": [
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1696,9 +1972,11 @@
           "score": 3,
           "reasons": [
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1707,20 +1985,24 @@
           "score": 3,
           "reasons": [
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.buccaneers.com/news/buccaneers-panthers-injury-report-oct-23-week-7-2026",
           "headline": "news Buccaneers-Panthers Injury Report Oct.23: Egbuka, Goedeke and Winfield Jr. Ruled Out; Mayfield Questionable Oct 23, 2026 A look at Friday's injury report ahead of the Week Seven matchup",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-23",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -1738,9 +2020,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1749,9 +2033,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -1766,12 +2052,14 @@
         {
           "url": "https://www.jaguars.com/news/in-and-out-2026-week-6-murray-active-brown-and-matiscik-inactive-for-texans-vs-jaguars",
           "headline": "news In and Out, 2026 Week 6: Murray Active, Brown and Matiscik Inactive for Texans vs. Jaguars Oct 18, 2026 CB Montaric Brown, long snapper Ross Matiscik inactive for the Jaguars against the Houston Texans in a 2026 Wee",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-18",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -1790,9 +2078,11 @@
           "reasons": [
             "PLAYER_NAME",
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1802,9 +2092,11 @@
           "reasons": [
             "PLAYER_NAME",
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1814,9 +2106,11 @@
           "reasons": [
             "PLAYER_NAME",
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1825,9 +2119,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1836,9 +2132,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1847,9 +2145,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1858,9 +2158,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -1873,70 +2175,82 @@
       "reviewRequired": true,
       "rankedLinks": [
         {
-          "url": "https://www.therams.com/news/from-the-podium-head-coach-sean-mcvay-quarterback-matthew-stafford-coordinators-wide-receiver-puka-nacua-defensive-end-aaron-donald-preview-rams-week-7-matchup-with-raiders-press-conference-2026",
-          "headline": "news From the Podium: Sean McVay, Matthew Stafford, Aaron Donald and coordinators on next-man-up mentality and Rams' Week 7 matchup with Raiders Oct 21, 2026 Head coach Sean McVay, quarterback Matthew Stafford, defensive",
-          "score": 5,
-          "reasons": [
-            "PLAYER_NAME",
-            "QB_TERMS",
-            "OLD_NEWS"
-          ],
-          "dateFromHeadline": "2026-10-21",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.therams.com/news/matthew-stafford-been-a-part-of-these-times-before-and-i-think-that-s-where-my-role-becomes-more-important",
-          "headline": "news Matthew Stafford: 'Been a part of these times before, and I think that's where my role becomes more important' Oct 22, 2026 His leadership approach won't be anything out of character, but quarterback Matthew Staffor",
-          "score": 5,
-          "reasons": [
-            "PLAYER_NAME",
-            "QB_TERMS",
-            "OLD_NEWS"
-          ],
-          "dateFromHeadline": "2026-10-22",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
           "url": "https://www.therams.com/news/injury-updates",
           "headline": "Injury Updates",
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.therams.com/news/from-the-podium-head-coach-sean-mcvay-quarterback-matthew-stafford-coordinators-wide-receiver-puka-nacua-defensive-end-aaron-donald-preview-rams-week-7-matchup-with-raiders-press-conference-2026",
+          "headline": "news From the Podium: Sean McVay, Matthew Stafford, Aaron Donald and coordinators on next-man-up mentality and Rams' Week 7 matchup with Raiders Oct 21, 2026 Head coach Sean McVay, quarterback Matthew Stafford, defensive",
+          "score": -2,
+          "reasons": [
+            "PLAYER_NAME",
+            "QB_TERMS",
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": "2026-10-21",
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.therams.com/news/matthew-stafford-been-a-part-of-these-times-before-and-i-think-that-s-where-my-role-becomes-more-important",
+          "headline": "news Matthew Stafford: 'Been a part of these times before, and I think that's where my role becomes more important' Oct 22, 2026 His leadership approach won't be anything out of character, but quarterback Matthew Staffor",
+          "score": -2,
+          "reasons": [
+            "PLAYER_NAME",
+            "QB_TERMS",
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": "2026-10-22",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.therams.com/news/rams-injury-report-week-7-2026-at-raiders-puka-nacua-trent-mcduffie-questionable-nate-landman-out",
           "headline": "news Injury Report, Week 7 at Raiders: Puka Nacua and Trent McDuffie questionable, Nate Landman ruled out Oct 23, 2026 The final injury report heading into Sunday's Week 7 regular season game between the Rams and the Rai",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-23",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.therams.com/news/sean-mcvay-says-rams-have-not-explored-adding-a-wide-receiver-externally-in-wake-of-davante-adams-hamstring-injury",
           "headline": "news McVay says Rams have not explored adding a wide receiver externally in wake of Davante Adams' hamstring injury Oct 21, 2026 Head coach Sean McVay said \"we've got some depth on our roster\" as the Rams prepare for Wee",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-21",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.therams.com/news/the-straw-that-stirs-the-drink-rams-tight-end-room-sparking-energy-in-all-phases-a-microcosm-of-team-and-its-mentality",
           "headline": "news 'The straw that stirs the drink': Rams tight end room sparking energy in all phases, a microcosm of team and its mentality Oct 22, 2026 The Rams' tight end room's motto is being \"the straw that stirs the drink,\" aim",
-          "score": -3,
+          "score": -10,
           "reasons": [
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-22",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -1951,134 +2265,158 @@
         {
           "url": "https://www.chiefs.com/news/week-1-inactive-players-broncos-vs-chiefs",
           "headline": "news Week 1 Inactive Players | Broncos vs. Chiefs Sep 14, 2026 All the inactive players for the Chiefs Week 1 matchup against the Denver Broncos",
-          "score": 2,
+          "score": -5,
           "reasons": [
             "STATUS_TERMS",
             "OPPONENT",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-09-14",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.chiefs.com/news/week-1-injury-report-broncos-vs-chiefs-2026",
           "headline": "news Week 1 Injury Report | Broncos vs. Chiefs Sep 12, 2026 Injuries for the Chiefs Week 1 matchup against the Denver Broncos",
-          "score": 2,
+          "score": -5,
           "reasons": [
             "STATUS_TERMS",
             "OPPONENT",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-09-12",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.chiefs.com/news/2026-week-2-injury-report-colts-vs-chiefs",
           "headline": "news Week 2 Injury Report | Colts vs. Chiefs Sep 18, 2026 Injuries for the Chiefs Week 2 matchup against the Indianapolis Colts",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-09-18",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.chiefs.com/news/week-2-inactive-players-colts-vs-chiefs",
           "headline": "news Week 2 Inactive Players | Colts vs. Chiefs Sep 20, 2026 All the inactive players for the Chiefs Week 2 matchup against the Colts",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-09-20",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.chiefs.com/news/week-3-inactive-players-chiefs-vs-dolphins",
           "headline": "news Week 3 Inactive Players | Chiefs vs. Dolphins Sep 27, 2026 All the inactive players for the Chiefs Week 3 matchup against the Miami Dolphins",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-09-27",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.chiefs.com/news/week-3-injury-report-chiefs-vs-dolphins-2026",
           "headline": "news Week 3 Injury Report | Chiefs vs. Dolphins Sep 25, 2026 Injuries for the Chiefs Week 3 matchup against the Miami Dolphins",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-09-25",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.chiefs.com/news/week-4-inactive-players-chiefs-vs-raiders",
           "headline": "news Week 4 Inactive Players | Chiefs vs. Raiders Oct 04, 2026 All the inactive players for the Chiefs Week 4 matchup against the Las Vegas Raiders",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-04",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.chiefs.com/news/week-4-injury-report-chiefs-vs-raiders-2026",
           "headline": "news Week 4 Injury Report | Chiefs vs. Raiders Oct 02, 2026 Injuries for the Chiefs Week 4 matchup against the Las Vegas Raiders",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-02",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.chiefs.com/news/week-6-inactive-players-chargers-vs-chiefs",
           "headline": "news Week 6 Inactive Players | Chargers vs. Chiefs Oct 18, 2026 All the inactive players for the Chiefs Week 6 matchup against the Chargers",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-18",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.chiefs.com/news/week-6-injury-report-chargers-vs-chiefs-2026",
           "headline": "news Week 6 Injury Report | Chargers vs. Chiefs Oct 16, 2026 Injuries for the Chiefs Week 6 matchup against the Los Angeles Chargers",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-16",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.chiefs.com/news/week-7-injury-report-chiefs-vs-seahawks-2026",
           "headline": "news Week 7 Injury Report | Chiefs vs. Seahawks Oct 23, 2026 Injuries for the Chiefs Week 7 matchup against the Seattle Seahawks",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-23",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.chiefs.com/news/chiefs-chairman-and-ceo-clark-hunt-announces-peter-king-as-2026-recipient-of-the-lamar-hunt-award-for-professional-football",
           "headline": "news Chiefs Chairman and CEO Clark Hunt Announces Peter King as 2026 Recipient of the Lamar Hunt Award for Professional Football Sep 01, 2026 Longtime journalist ecomes the 16th recipient of the prestigious award named f",
-          "score": -3,
+          "score": -10,
           "reasons": [
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-09-01",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -2097,9 +2435,11 @@
           "reasons": [
             "PLAYER_NAME",
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2108,9 +2448,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2119,9 +2461,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2130,9 +2474,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2140,9 +2486,11 @@
           "headline": "",
           "score": 0,
           "reasons": [
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -2161,9 +2509,11 @@
           "reasons": [
             "PLAYER_NAME",
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2172,9 +2522,11 @@
           "score": 3,
           "reasons": [
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2183,9 +2535,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2194,9 +2548,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2205,9 +2561,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2216,9 +2574,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2227,9 +2587,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2238,9 +2600,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2249,9 +2613,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2260,9 +2626,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2271,9 +2639,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2282,9 +2652,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2293,9 +2665,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2303,9 +2677,11 @@
           "headline": "Inactives Analysis: A.J. Brown, Will Campbell, TreVeyon Henderson officially active for Week 6 matchup vs. the Jets",
           "score": 0,
           "reasons": [
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2313,9 +2689,11 @@
           "headline": "Inactives Analysis: Dre'Mont Jones, Craig Woodson and Eli Raridon return for Sunday's AFC East matchup vs. the Bills",
           "score": 0,
           "reasons": [
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2323,9 +2701,11 @@
           "headline": "Inactives Analysis: Patriots place LG Alijah Vera-Tucker on IR, RT Morgan Moses officially active for Thursday night's game vs. the Bears",
           "score": 0,
           "reasons": [
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2333,9 +2713,11 @@
           "headline": "Inactives Analysis: Patriots RB Rhamondre Stevenson, DT Christian Barmore active for Sunday's game vs. Raiders",
           "score": 0,
           "reasons": [
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2343,9 +2725,11 @@
           "headline": "Inactives Analysis: RB TreVeyon Henderson, WR Efton Chism III to make season debuts vs. Steelers",
           "score": 0,
           "reasons": [
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2353,9 +2737,11 @@
           "headline": "Week 6 Inactives: Jets at Patriots",
           "score": 0,
           "reasons": [
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2363,9 +2749,11 @@
           "headline": "Week 7 Inactives: Patriots at Bears",
           "score": 0,
           "reasons": [
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -2384,9 +2772,11 @@
           "reasons": [
             "PLAYER_NAME",
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2395,9 +2785,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -2416,46 +2808,11 @@
           "reasons": [
             "PLAYER_NAME",
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.philadelphiaeagles.com/news/eagles-place-jalen-hurts-on-injured-reserve-sign-jaydon-blue-to-the-active-roster-2026-nfl-week-6-panthers",
-          "headline": "news Eagles place QB Jalen Hurts on Injured Reserve, sign RB Jaydon Blue to the active roster Oct 17, 2026",
-          "score": 7,
-          "reasons": [
-            "PLAYER_NAME",
-            "QB_TERMS",
-            "STATUS_TERMS",
-            "OLD_NEWS"
-          ],
-          "dateFromHeadline": "2026-10-17",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.philadelphiaeagles.com/news/eagles-and-jalen-hurts-agent-nicole-lynn-provide-an-update-on-qb-jalen-hurts",
-          "headline": "news Eagles and Jalen Hurts' agent Nicole Lynn provide an update on QB Jalen Hurts Oct 19, 2026",
-          "score": 5,
-          "reasons": [
-            "PLAYER_NAME",
-            "QB_TERMS",
-            "OLD_NEWS"
-          ],
-          "dateFromHeadline": "2026-10-19",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.philadelphiaeagles.com/news/statement-from-the-philadelphia-eagles-on-qb-jalen-hurts",
-          "headline": "news Statement from the Philadelphia Eagles on QB Jalen Hurts Oct 15, 2026",
-          "score": 5,
-          "reasons": [
-            "PLAYER_NAME",
-            "QB_TERMS",
-            "OLD_NEWS"
-          ],
-          "dateFromHeadline": "2026-10-15",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2464,174 +2821,249 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.philadelphiaeagles.com/news/eagles-place-jalen-hurts-on-injured-reserve-sign-jaydon-blue-to-the-active-roster-2026-nfl-week-6-panthers",
+          "headline": "news Eagles place QB Jalen Hurts on Injured Reserve, sign RB Jaydon Blue to the active roster Oct 17, 2026",
+          "score": 0,
+          "reasons": [
+            "PLAYER_NAME",
+            "QB_TERMS",
+            "STATUS_TERMS",
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": "2026-10-17",
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.philadelphiaeagles.com/news/eagles-and-jalen-hurts-agent-nicole-lynn-provide-an-update-on-qb-jalen-hurts",
+          "headline": "news Eagles and Jalen Hurts' agent Nicole Lynn provide an update on QB Jalen Hurts Oct 19, 2026",
+          "score": -2,
+          "reasons": [
+            "PLAYER_NAME",
+            "QB_TERMS",
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": "2026-10-19",
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.philadelphiaeagles.com/news/statement-from-the-philadelphia-eagles-on-qb-jalen-hurts",
+          "headline": "news Statement from the Philadelphia Eagles on QB Jalen Hurts Oct 15, 2026",
+          "score": -2,
+          "reasons": [
+            "PLAYER_NAME",
+            "QB_TERMS",
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": "2026-10-15",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.philadelphiaeagles.com/news/eagles-6-takeaways-from-an-incredible-come-from-behind-win-over-the-titans-jalen-hurts-devonta-smith-2026-nfl-week-2",
           "headline": "news Spadaro: 6 takeaways from an incredible, come-from-behind win over the Titans Sep 20, 2026",
-          "score": 2,
+          "score": -5,
           "reasons": [
             "PLAYER_NAME",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-09-20",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.philadelphiaeagles.com/news/eagles-at-bears-game-preview-6-storylines-to-follow-2026-week-3-nfl-regular-season-monday-night-football-jalen-hurts-caleb-williams",
           "headline": "news Spadaro: Game Preview at Bears, 6 storylines to follow Sep 28, 2026",
-          "score": 2,
+          "score": -5,
           "reasons": [
             "PLAYER_NAME",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-09-28",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.philadelphiaeagles.com/news/game-preview-at-jaguars-6-storylines-to-follow-jordan-mailata-jalen-hurts-trevor-lawrence-travis-hunter-2026-nfl-week-6-london-international-game",
           "headline": "news Game Preview at Jaguars: 6 storylines to follow Oct 11, 2026",
-          "score": 2,
+          "score": -5,
           "reasons": [
             "PLAYER_NAME",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-11",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.philadelphiaeagles.com/news/how-to-watch-stream-and-listen-panthers-vs-eagles-nfl-week-6-2026-jalen-hurts-bryce-young",
           "headline": "news How to watch, stream, and listen | Panthers vs. Eagles Oct 18, 2026",
-          "score": 2,
+          "score": -5,
           "reasons": [
             "PLAYER_NAME",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-18",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.philadelphiaeagles.com/news/jalen-hurts-eagles-do-what-it-takes-to-win",
           "headline": "news Spadaro: Jalen Hurts, Eagles do what it takes to win Sep 23, 2026",
-          "score": 2,
+          "score": -5,
           "reasons": [
             "PLAYER_NAME",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-09-23",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.philadelphiaeagles.com/news/panthers-vs-eagles-game-preview-6-storylines-to-follow-2026-week-6-nfl-regular-season-crucial-catch-tanner-mckee-bryce-young",
           "headline": "news Spadaro: Game Preview vs. Panthers, 6 storylines to follow Oct 18, 2026",
-          "score": 2,
+          "score": -5,
           "reasons": [
             "PLAYER_NAME",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-18",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.philadelphiaeagles.com/news/panthers-vs-eagles-game-recap-2026-nfl-week-6-crucial-catch-tanner-mckee-bryce-young",
           "headline": "news Game Recap: Panthers 25, Eagles 14 Oct 18, 2026",
-          "score": 2,
+          "score": -5,
           "reasons": [
             "PLAYER_NAME",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-18",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.philadelphiaeagles.com/news/panthers-vs-eagles-inactives-2026-week-6-nfl-crucial-catch-saquon-barkley-jalen-hurts",
           "headline": "news Panthers vs. Eagles Inactives Oct 18, 2026",
-          "score": 2,
+          "score": -5,
           "reasons": [
             "PLAYER_NAME",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-18",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.philadelphiaeagles.com/news/panthers-vs-eagles-what-can-tanner-mckee-offense-learn-from-sunday-2026-nfl-week-6",
           "headline": "news Spadaro: What can Tanner McKee, offense learn from Sunday? Oct 18, 2026",
-          "score": 2,
+          "score": -5,
           "reasons": [
             "PLAYER_NAME",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-18",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.philadelphiaeagles.com/news/rams-vs-eagles-game-preview-6-storylines-to-follow-2026-week-4-nfl-regular-season-jalen-hurts-saquon-barkley-matthew-stafford",
           "headline": "news Game Preview vs. Rams: 6 storylines to follow Oct 04, 2026",
-          "score": 2,
+          "score": -5,
           "reasons": [
             "PLAYER_NAME",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-04",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.philadelphiaeagles.com/news/spadaro-jalen-hurts-and-the-eagles-offense-embrace-next-man-up-mentality",
           "headline": "news Spadaro: Jalen Hurts and the Eagles' offense embrace 'next-man-up' mentality Oct 08, 2026",
-          "score": 2,
+          "score": -5,
           "reasons": [
             "PLAYER_NAME",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-08",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.philadelphiaeagles.com/news/tanner-mckee-will-be-ready-for-his-moment-2026-nfl-week-6-carolina-panthers",
           "headline": "news Spadaro: Tanner McKee will be ready for his moment Oct 15, 2026",
-          "score": 2,
+          "score": -5,
           "reasons": [
             "PLAYER_NAME",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-15",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.philadelphiaeagles.com/news/eagles-kyle-mccord-nfl-draft-quarterback-syracuse",
           "headline": "news Eagles select QB Kyle McCord with the No. 181 pick in the 2025 NFL Draft Apr 26, 2025",
-          "score": 0,
+          "score": -7,
           "reasons": [
             "QB_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2025-04-26",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.philadelphiaeagles.com/news/eagles-sign-qb-joe-milton",
           "headline": "news Eagles sign QB Joe Milton Oct 16, 2026",
-          "score": 0,
+          "score": -7,
           "reasons": [
             "QB_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-16",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.philadelphiaeagles.com/news/panthers-vs-eagles-injury-report-2026-nfl-week-6-saquon-barkley-devonta-smith",
           "headline": "news Panthers vs. Eagles Injury Report Oct 16, 2026",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-16",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -2649,9 +3081,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2660,20 +3094,24 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.commanders.com/news/inactives-commanders-vs-49ers-week-6",
           "headline": "Inactives | Commanders vs. 49ers, Week 6 Oct 19, 2026 The Washington Commanders have declared the following players as inactive for their Week 6 game against the San Francisco 49ers.",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-19",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -2686,235 +3124,275 @@
       "reviewRequired": true,
       "rankedLinks": [
         {
-          "url": "https://www.chicagobears.com/news/bears-qb-caleb-williams-practices-in-full-but-game-status-still-uncertain",
-          "headline": "Bears QB Caleb Williams practices in full, but game status still uncertain Oct 15, 2026 Bears quarterback Caleb Williams was a full participant in practice again Thursday, but it has not yet been determined whether he wi",
-          "score": 7,
-          "reasons": [
-            "PLAYER_NAME",
-            "QB_TERMS",
-            "STATUS_TERMS",
-            "OLD_NEWS"
-          ],
-          "dateFromHeadline": "2026-10-15",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.chicagobears.com/news/caleb-williams-takes-another-step-toward-return-from-hamstring-injury",
-          "headline": "Caleb Williams takes another step toward return from hamstring injury Oct 14, 2026 The Bears conducted a walk-through Wednesday. But had they held a regular practice, quarterback Caleb Williams would have been a full par",
-          "score": 7,
-          "reasons": [
-            "PLAYER_NAME",
-            "QB_TERMS",
-            "STATUS_TERMS",
-            "OLD_NEWS"
-          ],
-          "dateFromHeadline": "2026-10-14",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.chicagobears.com/news/game-recap-bears-improve-to-4-2-with-road-victory-in-atlanta-2026-week-6",
-          "headline": "Game Recap: Bears improve to 4-2 with road victory in Atlanta Oct 18, 2026 After missing three games with a hamstring injury, quarterback Caleb Williams made a triumphant return Sunday in Atlanta, leading the Bears to a ",
-          "score": 7,
-          "reasons": [
-            "PLAYER_NAME",
-            "QB_TERMS",
-            "STATUS_TERMS",
-            "OLD_NEWS"
-          ],
-          "dateFromHeadline": "2026-10-18",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.chicagobears.com/news/injury-update-bears-rb-kyle-monangai-ruled-out-qb-caleb-williams-questionable-for-packers-game",
-          "headline": "Injury Update: Bears RB Kyle Monangai ruled out, QB Caleb Williams questionable for Packers game Oct 09, 2026 Bears running back Kyle Monangai has been ruled out of Sunday's game in Green Bay with a toe injury, while qua",
-          "score": 7,
-          "reasons": [
-            "PLAYER_NAME",
-            "QB_TERMS",
-            "STATUS_TERMS",
-            "OLD_NEWS"
-          ],
-          "dateFromHeadline": "2026-10-09",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.chicagobears.com/news/injury-update-caleb-williams-officially-ruled-out-for-sunday-s-game-vs-jets",
-          "headline": "Injury Update: Caleb Williams officially ruled out for Sunday's game vs. Jets Oct 02, 2026 Either Tyson Bagent or Case Keenum will start at quarterback for the Bears Sunday against the Jets in place of Caleb Williams, wh",
-          "score": 7,
-          "reasons": [
-            "PLAYER_NAME",
-            "QB_TERMS",
-            "STATUS_TERMS",
-            "OLD_NEWS"
-          ],
-          "dateFromHeadline": "2026-10-02",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.chicagobears.com/news/injury-update-caleb-williams-questionable-for-sunday-s-game-vs-falcons",
-          "headline": "Injury Update: Caleb Williams questionable for Sunday's game vs. Falcons Oct 16, 2026 Bears quarterback Caleb Williams was a full participant in practice Friday and is listed as questionable for Sunday's game against the",
-          "score": 7,
-          "reasons": [
-            "PLAYER_NAME",
-            "QB_TERMS",
-            "STATUS_TERMS",
-            "OLD_NEWS"
-          ],
-          "dateFromHeadline": "2026-10-16",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.chicagobears.com/news/caleb-williams-completion-percentage-on-meteoric-rise",
-          "headline": "Caleb Williams' completion percentage on meteoric rise Oct 21, 2026 For the second straight year, Bears quarterback Caleb Williams is accomplishing an important statistical goal he set before the season by a huge margin.",
-          "score": 5,
-          "reasons": [
-            "PLAYER_NAME",
-            "QB_TERMS",
-            "OLD_NEWS"
-          ],
-          "dateFromHeadline": "2026-10-21",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.chicagobears.com/news/caleb-williams-named-nfc-offensive-player-of-the-week-6",
-          "headline": "Caleb Williams named NFC Offensive Player of the Week Oct 21, 2026 Bears quarterback Caleb Williams has been chosen as the NFC Offensive Player of the Week for his performance in last Sunday's 31-23 win over the Falcons.",
-          "score": 5,
-          "reasons": [
-            "PLAYER_NAME",
-            "QB_TERMS",
-            "OLD_NEWS"
-          ],
-          "dateFromHeadline": "2026-10-21",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.chicagobears.com/news/bears-will-wait-to-announce-starting-qb-for-jets-game",
-          "headline": "Bears will wait to announce starting QB for Jets game Sep 30, 2026 When Ben Johnson met the media Wednesday before conducting a walk-through practice, the Bears coach was not ready to name a starting quarterback for Sund",
-          "score": 2,
-          "reasons": [
-            "QB_TERMS",
-            "STATUS_TERMS",
-            "OLD_NEWS"
-          ],
-          "dateFromHeadline": "2026-09-30",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
           "url": "https://www.chicagobears.com/news/injury-update",
           "headline": "Injury Update",
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/bears-qb-caleb-williams-practices-in-full-but-game-status-still-uncertain",
+          "headline": "Bears QB Caleb Williams practices in full, but game status still uncertain Oct 15, 2026 Bears quarterback Caleb Williams was a full participant in practice again Thursday, but it has not yet been determined whether he wi",
+          "score": 0,
+          "reasons": [
+            "PLAYER_NAME",
+            "QB_TERMS",
+            "STATUS_TERMS",
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": "2026-10-15",
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/caleb-williams-takes-another-step-toward-return-from-hamstring-injury",
+          "headline": "Caleb Williams takes another step toward return from hamstring injury Oct 14, 2026 The Bears conducted a walk-through Wednesday. But had they held a regular practice, quarterback Caleb Williams would have been a full par",
+          "score": 0,
+          "reasons": [
+            "PLAYER_NAME",
+            "QB_TERMS",
+            "STATUS_TERMS",
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": "2026-10-14",
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/game-recap-bears-improve-to-4-2-with-road-victory-in-atlanta-2026-week-6",
+          "headline": "Game Recap: Bears improve to 4-2 with road victory in Atlanta Oct 18, 2026 After missing three games with a hamstring injury, quarterback Caleb Williams made a triumphant return Sunday in Atlanta, leading the Bears to a ",
+          "score": 0,
+          "reasons": [
+            "PLAYER_NAME",
+            "QB_TERMS",
+            "STATUS_TERMS",
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": "2026-10-18",
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/injury-update-bears-rb-kyle-monangai-ruled-out-qb-caleb-williams-questionable-for-packers-game",
+          "headline": "Injury Update: Bears RB Kyle Monangai ruled out, QB Caleb Williams questionable for Packers game Oct 09, 2026 Bears running back Kyle Monangai has been ruled out of Sunday's game in Green Bay with a toe injury, while qua",
+          "score": 0,
+          "reasons": [
+            "PLAYER_NAME",
+            "QB_TERMS",
+            "STATUS_TERMS",
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": "2026-10-09",
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/injury-update-caleb-williams-officially-ruled-out-for-sunday-s-game-vs-jets",
+          "headline": "Injury Update: Caleb Williams officially ruled out for Sunday's game vs. Jets Oct 02, 2026 Either Tyson Bagent or Case Keenum will start at quarterback for the Bears Sunday against the Jets in place of Caleb Williams, wh",
+          "score": 0,
+          "reasons": [
+            "PLAYER_NAME",
+            "QB_TERMS",
+            "STATUS_TERMS",
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": "2026-10-02",
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/injury-update-caleb-williams-questionable-for-sunday-s-game-vs-falcons",
+          "headline": "Injury Update: Caleb Williams questionable for Sunday's game vs. Falcons Oct 16, 2026 Bears quarterback Caleb Williams was a full participant in practice Friday and is listed as questionable for Sunday's game against the",
+          "score": 0,
+          "reasons": [
+            "PLAYER_NAME",
+            "QB_TERMS",
+            "STATUS_TERMS",
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": "2026-10-16",
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/caleb-williams-completion-percentage-on-meteoric-rise",
+          "headline": "Caleb Williams' completion percentage on meteoric rise Oct 21, 2026 For the second straight year, Bears quarterback Caleb Williams is accomplishing an important statistical goal he set before the season by a huge margin.",
+          "score": -2,
+          "reasons": [
+            "PLAYER_NAME",
+            "QB_TERMS",
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": "2026-10-21",
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/caleb-williams-named-nfc-offensive-player-of-the-week-6",
+          "headline": "Caleb Williams named NFC Offensive Player of the Week Oct 21, 2026 Bears quarterback Caleb Williams has been chosen as the NFC Offensive Player of the Week for his performance in last Sunday's 31-23 win over the Falcons.",
+          "score": -2,
+          "reasons": [
+            "PLAYER_NAME",
+            "QB_TERMS",
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": "2026-10-21",
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/bears-will-wait-to-announce-starting-qb-for-jets-game",
+          "headline": "Bears will wait to announce starting QB for Jets game Sep 30, 2026 When Ben Johnson met the media Wednesday before conducting a walk-through practice, the Bears coach was not ready to name a starting quarterback for Sund",
+          "score": -5,
+          "reasons": [
+            "QB_TERMS",
+            "STATUS_TERMS",
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": "2026-09-30",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.chicagobears.com/news/bears-qb-tyson-bagent-lauded-for-crisp-operation-of-offense",
           "headline": "Bears QB Tyson Bagent lauded for 'crisp' operation of offense Oct 08, 2026 As Tyson Bagent prepares for his second straight start Sunday in Green Bay, the Bears are confident the fourth-year quarterback will run the offe",
-          "score": 0,
+          "score": -7,
           "reasons": [
             "QB_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-08",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.chicagobears.com/news/game-prep-a-group-effort-for-bears-quarterbacks",
           "headline": "Game prep a group effort for Bears quarterbacks Oct 02, 2026 The Bears have not yet announced their starting quarterback for Sunday's game against the Jets, but both Tyson Bagent and Case Keenum will be ready if called u",
-          "score": 0,
+          "score": -7,
           "reasons": [
             "QB_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-02",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.chicagobears.com/news/game-recap-bears-ground-jets-improve-to-3-1",
           "headline": "Game Recap: Bears ground Jets, improve to 3-1 Oct 04, 2026 The Bears' quarterback depth, running game and defense have emerged as team strengths early this season\u2014and that was the case again Sunday at Soldier Field.",
-          "score": 0,
+          "score": -7,
           "reasons": [
             "QB_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-04",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.chicagobears.com/news/this-is-special-case-keenum-delivers-impressive-performance-in-bears-primetime-victory",
           "headline": "'This is special': Case Keenum delivers impressive performance in Bears' primetime victory Sep 29, 2026 The opportunity to make his first start in 1,009 days already made Monday night special for veteran quarterback Case",
-          "score": 0,
+          "score": -7,
           "reasons": [
             "QB_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-09-29",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.chicagobears.com/news/tyson-bagent-cherishes-first-start-since-2023",
           "headline": "Tyson Bagent cherishes first start since 2023 Oct 05, 2026 Tyson Bagent circled the field a couple of hours before kickoff like he does prior to every game, but Sunday was anything but ordinary for the backup quarterback",
-          "score": 0,
+          "score": -7,
           "reasons": [
             "QB_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-05",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.chicagobears.com/news/tyson-bagent-looking-forward-to-facing-rival-packers",
           "headline": "Tyson Bagent looking forward to facing rival Packers Oct 07, 2026 Tyson Bagent is excited about starting his first rivalry game Sunday in Green Bay since 2022 since he led Shepherd University to a 30-13 road win over Shi",
-          "score": 0,
+          "score": -7,
           "reasons": [
             "QB_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-07",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.chicagobears.com/news/injury-update-bears-rg-jonah-jackson-set-to-play-vs-patriots",
           "headline": "Injury Update: Bears RG Jonah Jackson set to play vs. Patriots Oct 21, 2026 Despite exiting last Sunday's win over the Falcons with hip and quadriceps issues that continued to impact him early in the week, Bears right gu",
-          "score": -1,
+          "score": -8,
           "reasons": [
             "STATUS_TERMS",
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-21",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.chicagobears.com/news/5-things-that-stood-out-to-bears-coach-ben-johnson-in-week-7-win-patriots",
           "headline": "5 things that stood out to Bears coach Ben Johnson in Week 7 win Oct 23, 2026 After watching tape of Thursday night\u2019s 30-24 win over the Patriots, Bears coach Ben Johnson spoke to reporters about Luther Burden III\u2019s rare",
-          "score": -3,
+          "score": -10,
           "reasons": [
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-23",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.chicagobears.com/news/5-things-we-learned-from-bears-coach-ben-johnson-in-week-5-loss-packers-2026",
           "headline": "5 things we learned from Bears coach Ben Johnson in Week 5 loss Oct 12, 2026 After watching tape of Sunday's 31-7 loss in Green Bay, Bears coach Ben Johnson on Monday spoke to reporters about the need to correct mistakes",
-          "score": -3,
+          "score": -10,
           "reasons": [
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-12",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.chicagobears.com/news/flag-football-player-of-week-kerra-elizabeth-serrette-week-5",
           "headline": "Girls Flag Football Player of the Week: Kerra-Elizabeth Serrette | Week 5 Oct 02, 2026 Buffalo Grove senior Kerra-Elizabeth Serrette received Week 5 Player of the Week honors for her standout performances across three co",
-          "score": -3,
+          "score": -10,
           "reasons": [
-            "OLD_NEWS"
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-02",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -2933,9 +3411,11 @@
           "reasons": [
             "PLAYER_NAME",
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2945,9 +3425,11 @@
           "reasons": [
             "PLAYER_NAME",
             "QB_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2957,21 +3439,11 @@
           "reasons": [
             "QB_TERMS",
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.seahawks.com/news/seahawks-mailbag-sam-darnold-s-injury-white-throwback-uniforms-more",
-          "headline": "news Seahawks Mailbag: Sam Darnold's Injury, White Throwback Uniforms & More Sep 15, 2026",
-          "score": 4,
-          "reasons": [
-            "PLAYER_NAME",
-            "STATUS_TERMS",
-            "OLD_NEWS"
-          ],
-          "dateFromHeadline": "2026-09-15",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2980,9 +3452,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2991,9 +3465,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -3002,9 +3478,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -3013,9 +3491,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -3024,9 +3504,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -3035,9 +3517,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -3046,9 +3530,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -3057,9 +3543,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -3068,9 +3556,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -3079,9 +3569,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -3090,9 +3582,11 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -3101,9 +3595,25 @@
           "score": 2,
           "reasons": [
             "STATUS_TERMS",
-            "DATE_UNVERIFIED"
+            "DATE_UNVERIFIED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.seahawks.com/news/seahawks-mailbag-sam-darnold-s-injury-white-throwback-uniforms-more",
+          "headline": "news Seahawks Mailbag: Sam Darnold's Injury, White Throwback Uniforms & More Sep 15, 2026",
+          "score": -3,
+          "reasons": [
+            "PLAYER_NAME",
+            "STATUS_TERMS",
+            "OLD_NEWS",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": "2026-09-15",
+          "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
