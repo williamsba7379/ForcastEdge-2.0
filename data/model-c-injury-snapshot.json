@@ -1,5 +1,5 @@
 {
-  "retrievedAt": "2026-10-24T02:14:58.129253+00:00",
+  "retrievedAt": "2026-10-24T02:17:21.659887+00:00",
   "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
   "status": "UNVERIFIED_REPORTING_FEED",
   "caution": "Reported injuries only. Not confirmed starting lineups, expected workload, or calibrated point adjustments.",
@@ -797,8 +797,8 @@
         {
           "name": "Anthony Johnson Jr.",
           "position": "S",
-          "status": "Injured Reserve",
-          "description": "{'fantasyStatus': {'description': 'IR', 'abbreviation': 'IR'}, 'type': 'Undisclosed', 'location': 'Other', 'returnDate': '2026-10-18'}"
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Undisclosed', 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-18'}"
         },
         {
           "name": "Montez Sweat",
@@ -1737,6 +1737,12 @@
       "teamId": "9",
       "players": [
         {
+          "name": "Aaron Banks",
+          "position": "G",
+          "status": "Questionable",
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+        },
+        {
           "name": "Lukas Van Ness",
           "position": "DE",
           "status": "Active",
@@ -1789,12 +1795,6 @@
           "position": "RB",
           "status": "Active",
           "description": ""
-        },
-        {
-          "name": "Aaron Banks",
-          "position": "G",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
         },
         {
           "name": "Luke Musgrave",

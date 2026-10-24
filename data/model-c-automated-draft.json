@@ -2,7 +2,7 @@
   "title": "Model C \u2014 Automated Review Draft",
   "season": 2026,
   "week": 8,
-  "generatedAt": "2026-10-23T22:15:41.079672-04:00",
+  "generatedAt": "2026-10-23T22:17:50.916658-04:00",
   "status": "AUTOMATED_REVIEW_ONLY",
   "reviewRequired": true,
   "method": "Point-differential baseline plus optional documented quarterback/injury adjustments; no unverified automatic injury claims.",
@@ -13,16 +13,38 @@
         "away": {
           "reviewRequired": true,
           "injuryFlags": [],
+          "reportedQbAvailability": [
+            {
+              "name": "Haynes King",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            },
+            {
+              "name": "Bryce Young",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            }
+          ],
           "candidateMismatch": false,
           "starterConfirmed": false,
-          "note": "Advisory only. No automatic starting-QB confirmation or point adjustment."
+          "note": "Reported unavailable is not independently confirmed; available does not mean confirmed starter. Coach-decision inactive is not an injury. No automatic points."
         },
         "home": {
           "reviewRequired": true,
           "injuryFlags": [],
+          "reportedQbAvailability": [
+            {
+              "name": "Jordan Love",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            }
+          ],
           "candidateMismatch": false,
           "starterConfirmed": false,
-          "note": "Advisory only. No automatic starting-QB confirmation or point adjustment."
+          "note": "Reported unavailable is not independently confirmed; available does not mean confirmed starter. Coach-decision inactive is not an injury. No automatic points."
         }
       },
       "qbPerformanceComparisons": {
@@ -252,6 +274,12 @@
         ],
         "home": [
           {
+            "name": "Aaron Banks",
+            "position": "G",
+            "status": "Questionable",
+            "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
+          },
+          {
             "name": "Lukas Van Ness",
             "position": "DE",
             "status": "Active",
@@ -304,12 +332,6 @@
             "position": "RB",
             "status": "Active",
             "description": ""
-          },
-          {
-            "name": "Aaron Banks",
-            "position": "G",
-            "status": "Questionable",
-            "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}"
           },
           {
             "name": "Luke Musgrave",
@@ -404,7 +426,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:14:58.129253+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:17:21.659887+00:00",
       "id": "401873023",
       "date": "2026-10-30T00:15Z",
       "away": "Carolina Panthers",
@@ -431,16 +453,38 @@
               "reportedStatus": "Questionable"
             }
           ],
+          "reportedQbAvailability": [
+            {
+              "name": "Tyler Huntley",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            },
+            {
+              "name": "Lamar Jackson",
+              "reportedStatus": "Questionable",
+              "category": "UNCERTAIN",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            }
+          ],
           "candidateMismatch": false,
           "starterConfirmed": false,
-          "note": "Advisory only. No automatic starting-QB confirmation or point adjustment."
+          "note": "Reported unavailable is not independently confirmed; available does not mean confirmed starter. Coach-decision inactive is not an injury. No automatic points."
         },
         "home": {
           "reviewRequired": true,
           "injuryFlags": [],
+          "reportedQbAvailability": [
+            {
+              "name": "Josh Allen",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            }
+          ],
           "candidateMismatch": false,
           "starterConfirmed": false,
-          "note": "Advisory only. No automatic starting-QB confirmation or point adjustment."
+          "note": "Reported unavailable is not independently confirmed; available does not mean confirmed starter. Coach-decision inactive is not an injury. No automatic points."
         }
       },
       "qbPerformanceComparisons": {
@@ -822,7 +866,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:14:58.129253+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:17:21.659887+00:00",
       "id": "401873026",
       "date": "2026-11-01T18:00Z",
       "away": "Baltimore Ravens",
@@ -844,16 +888,32 @@
         "away": {
           "reviewRequired": true,
           "injuryFlags": [],
+          "reportedQbAvailability": [
+            {
+              "name": "Cam Ward",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            }
+          ],
           "candidateMismatch": false,
           "starterConfirmed": false,
-          "note": "Advisory only. No automatic starting-QB confirmation or point adjustment."
+          "note": "Reported unavailable is not independently confirmed; available does not mean confirmed starter. Coach-decision inactive is not an injury. No automatic points."
         },
         "home": {
           "reviewRequired": true,
           "injuryFlags": [],
+          "reportedQbAvailability": [
+            {
+              "name": "Joe Burrow",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            }
+          ],
           "candidateMismatch": false,
           "starterConfirmed": false,
-          "note": "Advisory only. No automatic starting-QB confirmation or point adjustment."
+          "note": "Reported unavailable is not independently confirmed; available does not mean confirmed starter. Coach-decision inactive is not an injury. No automatic points."
         }
       },
       "qbPerformanceComparisons": {
@@ -1229,7 +1289,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:14:58.129253+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:17:21.659887+00:00",
       "id": "401873031",
       "date": "2026-11-01T18:00Z",
       "away": "Tennessee Titans",
@@ -1256,16 +1316,38 @@
               "reportedStatus": "Questionable"
             }
           ],
+          "reportedQbAvailability": [
+            {
+              "name": "Carson Beck",
+              "reportedStatus": "Questionable",
+              "category": "UNCERTAIN",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            },
+            {
+              "name": "Jacoby Brissett",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            }
+          ],
           "candidateMismatch": false,
           "starterConfirmed": false,
-          "note": "Advisory only. No automatic starting-QB confirmation or point adjustment."
+          "note": "Reported unavailable is not independently confirmed; available does not mean confirmed starter. Coach-decision inactive is not an injury. No automatic points."
         },
         "home": {
           "reviewRequired": true,
           "injuryFlags": [],
+          "reportedQbAvailability": [
+            {
+              "name": "Dak Prescott",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            }
+          ],
           "candidateMismatch": false,
           "starterConfirmed": false,
-          "note": "Advisory only. No automatic starting-QB confirmation or point adjustment."
+          "note": "Reported unavailable is not independently confirmed; available does not mean confirmed starter. Coach-decision inactive is not an injury. No automatic points."
         }
       },
       "qbPerformanceComparisons": {
@@ -1647,7 +1729,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:14:58.129253+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:17:21.659887+00:00",
       "id": "401873024",
       "date": "2026-11-01T18:00Z",
       "away": "Arizona Cardinals",
@@ -1669,16 +1751,38 @@
         "away": {
           "reviewRequired": true,
           "injuryFlags": [],
+          "reportedQbAvailability": [
+            {
+              "name": "Max Brosmer",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            },
+            {
+              "name": "Kyler Murray",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            }
+          ],
           "candidateMismatch": false,
           "starterConfirmed": false,
-          "note": "Advisory only. No automatic starting-QB confirmation or point adjustment."
+          "note": "Reported unavailable is not independently confirmed; available does not mean confirmed starter. Coach-decision inactive is not an injury. No automatic points."
         },
         "home": {
           "reviewRequired": true,
           "injuryFlags": [],
+          "reportedQbAvailability": [
+            {
+              "name": "Jared Goff",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            }
+          ],
           "candidateMismatch": false,
           "starterConfirmed": false,
-          "note": "Advisory only. No automatic starting-QB confirmation or point adjustment."
+          "note": "Reported unavailable is not independently confirmed; available does not mean confirmed starter. Coach-decision inactive is not an injury. No automatic points."
         }
       },
       "qbPerformanceComparisons": {
@@ -2060,7 +2164,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:14:58.129253+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:17:21.659887+00:00",
       "id": "401873030",
       "date": "2026-11-01T18:00Z",
       "away": "Minnesota Vikings",
@@ -2082,16 +2186,44 @@
         "away": {
           "reviewRequired": true,
           "injuryFlags": [],
+          "reportedQbAvailability": [
+            {
+              "name": "Fernando Mendoza",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            },
+            {
+              "name": "Kirk Cousins",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            },
+            {
+              "name": "Aidan O'Connell",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            }
+          ],
           "candidateMismatch": false,
           "starterConfirmed": false,
-          "note": "Advisory only. No automatic starting-QB confirmation or point adjustment."
+          "note": "Reported unavailable is not independently confirmed; available does not mean confirmed starter. Coach-decision inactive is not an injury. No automatic points."
         },
         "home": {
           "reviewRequired": true,
           "injuryFlags": [],
+          "reportedQbAvailability": [
+            {
+              "name": "Geno Smith",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            }
+          ],
           "candidateMismatch": false,
           "starterConfirmed": false,
-          "note": "Advisory only. No automatic starting-QB confirmation or point adjustment."
+          "note": "Reported unavailable is not independently confirmed; available does not mean confirmed starter. Coach-decision inactive is not an injury. No automatic points."
         }
       },
       "qbPerformanceComparisons": {
@@ -2479,7 +2611,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:14:58.129253+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:17:21.659887+00:00",
       "id": "401873029",
       "date": "2026-11-01T18:00Z",
       "away": "Las Vegas Raiders",
@@ -2506,16 +2638,50 @@
               "reportedStatus": "Injured Reserve"
             }
           ],
+          "reportedQbAvailability": [
+            {
+              "name": "Dillon Gabriel",
+              "reportedStatus": "Injured Reserve",
+              "category": "REPORTED_UNAVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            },
+            {
+              "name": "Taylen Green",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            }
+          ],
           "candidateMismatch": false,
           "starterConfirmed": false,
-          "note": "Advisory only. No automatic starting-QB confirmation or point adjustment."
+          "note": "Reported unavailable is not independently confirmed; available does not mean confirmed starter. Coach-decision inactive is not an injury. No automatic points."
         },
         "home": {
           "reviewRequired": true,
           "injuryFlags": [],
+          "reportedQbAvailability": [
+            {
+              "name": "Drew Allar",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            },
+            {
+              "name": "Will Howard",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            },
+            {
+              "name": "Aaron Rodgers",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            }
+          ],
           "candidateMismatch": false,
           "starterConfirmed": false,
-          "note": "Advisory only. No automatic starting-QB confirmation or point adjustment."
+          "note": "Reported unavailable is not independently confirmed; available does not mean confirmed starter. Coach-decision inactive is not an injury. No automatic points."
         }
       },
       "qbPerformanceComparisons": {
@@ -2909,7 +3075,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:14:58.129253+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:17:21.659887+00:00",
       "id": "401873027",
       "date": "2026-11-01T18:00Z",
       "away": "Cleveland Browns",
@@ -2931,9 +3097,29 @@
         "away": {
           "reviewRequired": true,
           "injuryFlags": [],
+          "reportedQbAvailability": [
+            {
+              "name": "Andy Dalton",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            },
+            {
+              "name": "Jack Strand",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            },
+            {
+              "name": "Michael Penix Jr.",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            }
+          ],
           "candidateMismatch": false,
           "starterConfirmed": false,
-          "note": "Advisory only. No automatic starting-QB confirmation or point adjustment."
+          "note": "Reported unavailable is not independently confirmed; available does not mean confirmed starter. Coach-decision inactive is not an injury. No automatic points."
         },
         "home": {
           "reviewRequired": true,
@@ -2943,9 +3129,23 @@
               "reportedStatus": "Questionable"
             }
           ],
+          "reportedQbAvailability": [
+            {
+              "name": "Jalon Daniels",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            },
+            {
+              "name": "Baker Mayfield",
+              "reportedStatus": "Questionable",
+              "category": "UNCERTAIN",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            }
+          ],
           "candidateMismatch": false,
           "starterConfirmed": false,
-          "note": "Advisory only. No automatic starting-QB confirmation or point adjustment."
+          "note": "Reported unavailable is not independently confirmed; available does not mean confirmed starter. Coach-decision inactive is not an injury. No automatic points."
         }
       },
       "qbPerformanceComparisons": {
@@ -3339,7 +3539,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:14:58.129253+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:17:21.659887+00:00",
       "id": "401873025",
       "date": "2026-11-01T18:00Z",
       "away": "Atlanta Falcons",
@@ -3361,16 +3561,44 @@
         "away": {
           "reviewRequired": true,
           "injuryFlags": [],
+          "reportedQbAvailability": [
+            {
+              "name": "Anthony Richardson Sr.",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            },
+            {
+              "name": "Riley Leonard",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            },
+            {
+              "name": "Daniel Jones",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            }
+          ],
           "candidateMismatch": false,
           "starterConfirmed": false,
-          "note": "Advisory only. No automatic starting-QB confirmation or point adjustment."
+          "note": "Reported unavailable is not independently confirmed; available does not mean confirmed starter. Coach-decision inactive is not an injury. No automatic points."
         },
         "home": {
           "reviewRequired": true,
           "injuryFlags": [],
+          "reportedQbAvailability": [
+            {
+              "name": "Trevor Lawrence",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            }
+          ],
           "candidateMismatch": false,
           "starterConfirmed": false,
-          "note": "Advisory only. No automatic starting-QB confirmation or point adjustment."
+          "note": "Reported unavailable is not independently confirmed; available does not mean confirmed starter. Coach-decision inactive is not an injury. No automatic points."
         }
       },
       "qbPerformanceComparisons": {
@@ -3758,7 +3986,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:14:58.129253+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:17:21.659887+00:00",
       "id": "401873028",
       "date": "2026-11-01T18:00Z",
       "away": "Indianapolis Colts",
@@ -3780,16 +4008,38 @@
         "away": {
           "reviewRequired": true,
           "injuryFlags": [],
+          "reportedQbAvailability": [
+            {
+              "name": "Justin Herbert",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            }
+          ],
           "candidateMismatch": false,
           "starterConfirmed": false,
-          "note": "Advisory only. No automatic starting-QB confirmation or point adjustment."
+          "note": "Reported unavailable is not independently confirmed; available does not mean confirmed starter. Coach-decision inactive is not an injury. No automatic points."
         },
         "home": {
           "reviewRequired": true,
           "injuryFlags": [],
+          "reportedQbAvailability": [
+            {
+              "name": "Matthew Stafford",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            },
+            {
+              "name": "Ty Simpson",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            }
+          ],
           "candidateMismatch": false,
           "starterConfirmed": false,
-          "note": "Advisory only. No automatic starting-QB confirmation or point adjustment."
+          "note": "Reported unavailable is not independently confirmed; available does not mean confirmed starter. Coach-decision inactive is not an injury. No automatic points."
         }
       },
       "qbPerformanceComparisons": {
@@ -4171,7 +4421,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:14:58.129253+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:17:21.659887+00:00",
       "id": "401873032",
       "date": "2026-11-01T21:05Z",
       "away": "Los Angeles Chargers",
@@ -4193,16 +4443,44 @@
         "away": {
           "reviewRequired": true,
           "injuryFlags": [],
+          "reportedQbAvailability": [
+            {
+              "name": "Garrett Nussmeier",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            },
+            {
+              "name": "Patrick Mahomes",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            }
+          ],
           "candidateMismatch": false,
           "starterConfirmed": false,
-          "note": "Advisory only. No automatic starting-QB confirmation or point adjustment."
+          "note": "Reported unavailable is not independently confirmed; available does not mean confirmed starter. Coach-decision inactive is not an injury. No automatic points."
         },
         "home": {
           "reviewRequired": true,
           "injuryFlags": [],
+          "reportedQbAvailability": [
+            {
+              "name": "Sam Ehlinger",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            },
+            {
+              "name": "Bo Nix",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            }
+          ],
           "candidateMismatch": false,
           "starterConfirmed": false,
-          "note": "Advisory only. No automatic starting-QB confirmation or point adjustment."
+          "note": "Reported unavailable is not independently confirmed; available does not mean confirmed starter. Coach-decision inactive is not an injury. No automatic points."
         }
       },
       "qbPerformanceComparisons": {
@@ -4590,7 +4868,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:14:58.129253+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:17:21.659887+00:00",
       "id": "401873033",
       "date": "2026-11-01T21:25Z",
       "away": "Kansas City Chiefs",
@@ -4611,22 +4889,39 @@
       "qbReviewAlerts": {
         "away": {
           "reviewRequired": true,
-          "injuryFlags": [
+          "injuryFlags": [],
+          "reportedQbAvailability": [
+            {
+              "name": "Drake Maye",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            },
             {
               "name": "Behren Morton",
-              "reportedStatus": "Out"
+              "reportedStatus": "Out",
+              "category": "NON_INJURY_INACTIVE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
             }
           ],
           "candidateMismatch": false,
           "starterConfirmed": false,
-          "note": "Advisory only. No automatic starting-QB confirmation or point adjustment."
+          "note": "Reported unavailable is not independently confirmed; available does not mean confirmed starter. Coach-decision inactive is not an injury. No automatic points."
         },
         "home": {
           "reviewRequired": true,
           "injuryFlags": [],
+          "reportedQbAvailability": [
+            {
+              "name": "Malik Willis",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            }
+          ],
           "candidateMismatch": false,
           "starterConfirmed": false,
-          "note": "Advisory only. No automatic starting-QB confirmation or point adjustment."
+          "note": "Reported unavailable is not independently confirmed; available does not mean confirmed starter. Coach-decision inactive is not an injury. No automatic points."
         }
       },
       "qbPerformanceComparisons": {
@@ -5008,7 +5303,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:14:58.129253+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:17:21.659887+00:00",
       "id": "401873034",
       "date": "2026-11-01T21:25Z",
       "away": "New England Patriots",
@@ -5035,9 +5330,29 @@
               "reportedStatus": "Injured Reserve"
             }
           ],
+          "reportedQbAvailability": [
+            {
+              "name": "Joe Milton",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            },
+            {
+              "name": "Jalen Hurts",
+              "reportedStatus": "Injured Reserve",
+              "category": "REPORTED_UNAVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            },
+            {
+              "name": "Tanner McKee",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            }
+          ],
           "candidateMismatch": false,
           "starterConfirmed": false,
-          "note": "Advisory only. No automatic starting-QB confirmation or point adjustment."
+          "note": "Reported unavailable is not independently confirmed; available does not mean confirmed starter. Coach-decision inactive is not an injury. No automatic points."
         },
         "home": {
           "reviewRequired": true,
@@ -5047,9 +5362,23 @@
               "reportedStatus": "Doubtful"
             }
           ],
+          "reportedQbAvailability": [
+            {
+              "name": "Marcus Mariota",
+              "reportedStatus": "Doubtful",
+              "category": "UNCERTAIN",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            },
+            {
+              "name": "Jayden Daniels",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            }
+          ],
           "candidateMismatch": false,
           "starterConfirmed": false,
-          "note": "Advisory only. No automatic starting-QB confirmation or point adjustment."
+          "note": "Reported unavailable is not independently confirmed; available does not mean confirmed starter. Coach-decision inactive is not an injury. No automatic points."
         }
       },
       "qbPerformanceComparisons": {
@@ -5443,7 +5772,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:14:58.129253+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:17:21.659887+00:00",
       "id": "401873035",
       "date": "2026-11-02T01:20Z",
       "away": "Philadelphia Eagles",
@@ -5464,15 +5793,24 @@
       "qbReviewAlerts": {
         "away": {
           "reviewRequired": true,
-          "injuryFlags": [
+          "injuryFlags": [],
+          "reportedQbAvailability": [
+            {
+              "name": "Caleb Williams",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            },
             {
               "name": "Case Keenum",
-              "reportedStatus": "Out"
+              "reportedStatus": "Out",
+              "category": "NON_INJURY_INACTIVE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
             }
           ],
           "candidateMismatch": false,
           "starterConfirmed": false,
-          "note": "Advisory only. No automatic starting-QB confirmation or point adjustment."
+          "note": "Reported unavailable is not independently confirmed; available does not mean confirmed starter. Coach-decision inactive is not an injury. No automatic points."
         },
         "home": {
           "reviewRequired": true,
@@ -5482,9 +5820,23 @@
               "reportedStatus": "Questionable"
             }
           ],
+          "reportedQbAvailability": [
+            {
+              "name": "Drew Lock",
+              "reportedStatus": "Questionable",
+              "category": "UNCERTAIN",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            },
+            {
+              "name": "Jalen Milroe",
+              "reportedStatus": "Active",
+              "category": "REPORTED_AVAILABLE",
+              "sourceType": "UNVERIFIED_REPORTING_FEED"
+            }
+          ],
           "candidateMismatch": false,
           "starterConfirmed": false,
-          "note": "Advisory only. No automatic starting-QB confirmation or point adjustment."
+          "note": "Reported unavailable is not independently confirmed; available does not mean confirmed starter. Coach-decision inactive is not an injury. No automatic points."
         }
       },
       "qbPerformanceComparisons": {
@@ -5570,8 +5922,8 @@
           {
             "name": "Anthony Johnson Jr.",
             "position": "S",
-            "status": "Injured Reserve",
-            "description": "{'fantasyStatus': {'description': 'IR', 'abbreviation': 'IR'}, 'type': 'Undisclosed', 'location': 'Other', 'returnDate': '2026-10-18'}"
+            "status": "Out",
+            "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Undisclosed', 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-18'}"
           },
           {
             "name": "Montez Sweat",
@@ -5872,7 +6224,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-10-24T02:14:58.129253+00:00",
+      "injuryRetrievedAt": "2026-10-24T02:17:21.659887+00:00",
       "id": "401873036",
       "date": "2026-11-03T01:15Z",
       "away": "Chicago Bears",
