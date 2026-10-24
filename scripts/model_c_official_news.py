@@ -47,7 +47,7 @@ OFFICIAL_TEAM_NEWS={
     "Tampa Bay Buccaneers":"https://www.buccaneers.com/news/",
     "Tennessee Titans":"https://www.tennesseetitans.com/news/",
 }
-TERMS=("quarterback","qb ","starter","starting","injury","inactive","lamar","hurts","mckee")
+TERMS=("quarterback","qb ","starter","starting","injury","inactive","practice","questionable","doubtful","ruled out")
 
 class Links(html.parser.HTMLParser):
     def __init__(self):
@@ -67,7 +67,7 @@ class Links(html.parser.HTMLParser):
             self.links.append((self.href," ".join(self.parts).strip()))
             self.href=None
 
-def extract_candidates(page,base,limit=20):
+def extract_candidates(page,base,limit=30,quarterback_names=()):
     parsed=Links()
     parsed.feed(page)
     host=urllib.parse.urlparse(base).hostname
@@ -78,7 +78,10 @@ def extract_candidates(page,base,limit=20):
         p=urllib.parse.urlparse(url)
         if p.scheme!="https" or p.hostname!=host or "/news/" not in p.path:
             continue
-        if url in seen or not any(term in (label+" "+p.path.replace("-"," ")).lower() for term in TERMS):
+        text=(label+" "+p.path.replace("-"," ")).lower()
+        names=tuple(n.lower() for n in quarterback_names if n)
+        relevant=any(term in text for term in TERMS) or any(n in text for n in names)
+        if url in seen or not relevant:
             continue
         seen.add(url)
         found.append({"url":url,"headline":re.sub(r"\s+"," ",label)[:220],"status":"UNVERIFIED_LINK_FOR_HUMAN_REVIEW"})
@@ -86,7 +89,7 @@ def extract_candidates(page,base,limit=20):
             break
     return found
 
-def collect(fetch=None):
+def collect(fetch=None,quarterbacks_by_team=None):
     if fetch is None:
         def fetch(url):
             req=urllib.request.Request(url,headers={"User-Agent":"ForecastEdge-Research/1.0"})
@@ -95,9 +98,10 @@ def collect(fetch=None):
                     raise ValueError("Unexpected host redirect")
                 return response.read(1500000).decode("utf-8","replace")
     results=[]
+    quarterbacks_by_team=quarterbacks_by_team or {}
     for team,url in OFFICIAL_TEAM_NEWS.items():
         try:
-            candidates=extract_candidates(fetch(url),url)
+            candidates=extract_candidates(fetch(url),url,quarterback_names=quarterbacks_by_team.get(team,()))
             results.append({"team":team,"officialNewsIndex":url,"fetchStatus":"OK","candidates":candidates})
         except Exception as exc:
             results.append({"team":team,"officialNewsIndex":url,"fetchStatus":"ERROR",
@@ -107,7 +111,15 @@ def collect(fetch=None):
             "automaticConfirmations":0,"teams":results}
 
 def main():
-    result=collect()
+    quarterbacks_by_team={}
+    queue_file=DATA/"model-c-qb-review-queue.json"
+    if queue_file.exists():
+        queue=json.loads(queue_file.read_text())
+        for item in queue.get("items",[]):
+            names=quarterbacks_by_team.setdefault(item["team"],set())
+            for key in ("recentPrimaryPasserCandidate","depthChartCandidate"):
+                if item.get(key):names.add(item[key])
+    result=collect(quarterbacks_by_team=quarterbacks_by_team)
     (DATA/"model-c-official-qb-discovery.json").write_text(json.dumps(result,indent=2)+"\n")
     print("Official news discovery:",sum(len(t["candidates"]) for t in result["teams"]),
           "links; confirmed starters: 0")
