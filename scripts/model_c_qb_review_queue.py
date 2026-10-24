@@ -46,6 +46,7 @@ def build(draft, reviewed, declarations, espn=None):
             priority=injury_priority(espn_flags,candidate)
             depth=qb.get("depthChartQB1Candidate")
             agreement=bool(candidate and depth and candidate.casefold()==depth.casefold())
+            conflict=bool(candidate and depth and not agreement)
             items.append({
                 "gameId":game["id"],"kickoff":game["date"],"team":team,
                 "opponent":game["home" if side=="away" else "away"],
@@ -58,8 +59,10 @@ def build(draft, reviewed, declarations, espn=None):
                 "recentPrimaryPasserCandidate":qb.get("recentPrimaryPasser"),
                 "depthChartCandidate":depth,
                 "tentativeExpectedStarter":candidate if agreement else None,
+                "quarterbackIndicatorConflict":conflict,
+                "quarterbackReviewPriority":"CONFLICT_REVIEW" if conflict else ("INDICATORS_AGREE" if agreement else "INSUFFICIENT_DATA"),
                 "expectedStarterEvidence":"TWO_INDICATORS_AGREE_NOT_CONFIRMED" if agreement else "INSUFFICIENT_OR_CONFLICTING_INDICATORS",
-                "confirmedStarter":None,
+                "confirmedStarter":qb.get("starter") if qb.get("verification")=="OFFICIAL_GAME_SPECIFIC" else None,
                 "officialSourcesForManualReview":exact,
                 "historicalSourcesForContextOnly":historical,
                 "officialSourceSearchQueries":search_queries,
