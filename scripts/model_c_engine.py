@@ -173,6 +173,12 @@ def main():
                 record=reported.get(name.casefold())
                 if record and str(record.get("status","")).casefold() not in ("active","healthy","available"):
                     flags.append({"name":name,"reportedStatus":record.get("status")})
+            # Check every listed QB: an injured starter may be absent from last-game passing data.
+            for name,record in reported.items():
+                status=str(record.get("status","")).casefold()
+                if status in ("out","doubtful","questionable","injured reserve","ir"):
+                    if not any(str(x["name"]).casefold()==name for x in flags):
+                        flags.append({"name":record.get("name"),"reportedStatus":record.get("status")})
             mismatch=bool(primary and depth and primary.casefold()!=depth.casefold())
             qb_alerts[side]={"reviewRequired":bool(flags or mismatch or qb["verification"]!="OFFICIAL_GAME_SPECIFIC"),
                 "injuryFlags":flags,"candidateMismatch":mismatch,
