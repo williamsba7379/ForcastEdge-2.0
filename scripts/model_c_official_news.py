@@ -22,6 +22,14 @@ OFFICIAL_TEAM_NEWS={
     "Kansas City Chiefs":"https://www.chiefs.com/news/",
     "Seattle Seahawks":"https://www.seahawks.com/news/",
     "Washington Commanders":"https://www.commanders.com/news/",
+    "Arizona Cardinals":"https://www.azcardinals.com/news/",
+    "Atlanta Falcons":"https://www.atlantafalcons.com/news/",
+    "Cincinnati Bengals":"https://www.bengals.com/news/",
+    "Cleveland Browns":"https://www.clevelandbrowns.com/news/",
+    "Dallas Cowboys":"https://www.dallascowboys.com/news/",
+    "Denver Broncos":"https://www.denverbroncos.com/news/",
+    "Detroit Lions":"https://www.detroitlions.com/news/",
+    "Houston Texans":"https://www.houstontexans.com/news/",
 }
 TERMS=("quarterback","qb ","starter","starting","injury","inactive","lamar","hurts","mckee")
 
