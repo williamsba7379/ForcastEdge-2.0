@@ -23,3 +23,10 @@ assert len(b["historicalSourcesForContextOnly"])==1
 assert all(x["reviewRequired"] for x in out["items"])
 assert all(len(x["officialSourceSearchQueries"])==2 for x in out["items"])
 print("PASS: game-specific source filtering, historical isolation, search leads and no auto-confirmations")
+
+espn={"items":[{"team":"Team A","player":"QB A","reportedStatus":"Questionable","starterConfirmed":False},{"team":"Team B","player":"QB B","reportedStatus":"Active","starterConfirmed":False}]}
+with_espn=build(draft,reviewed,{"teams":{}},espn)
+assert len(with_espn["items"][0]["espnQuarterbackInjuryFlags"])==1
+assert with_espn["items"][1]["espnQuarterbackInjuryFlags"]==[]
+assert with_espn["automaticConfirmations"]==0
+print("PASS: ESPN injury flags assigned only to matching team")
