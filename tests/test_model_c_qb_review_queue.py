@@ -30,3 +30,13 @@ assert len(with_espn["items"][0]["espnQuarterbackInjuryFlags"])==1
 assert with_espn["items"][1]["espnQuarterbackInjuryFlags"]==[]
 assert with_espn["automaticConfirmations"]==0
 print("PASS: ESPN injury flags assigned only to matching team")
+
+from model_c_qb_review_queue import injury_priority
+assert injury_priority([{"player":"QB A","reportedStatus":"Out"}],"QB A")=="HIGH"
+assert injury_priority([{"player":"QB A","reportedStatus":"Questionable"}],"QB A")=="ELEVATED"
+assert injury_priority([{"player":"Backup","reportedStatus":"Out"}],"QB A")=="ELEVATED"
+assert injury_priority([{"player":"Backup","reportedStatus":"Questionable"}],"QB A")=="STANDARD"
+assert injury_priority([],"QB A")=="ROUTINE"
+assert with_espn["items"][0]["espnInjuryReviewPriority"]=="ELEVATED"
+assert with_espn["items"][0]["espnPriorityIsPrediction"] is False
+print("PASS: QB injury urgency is review-only and candidate-aware")
