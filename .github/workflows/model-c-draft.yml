@@ -52,6 +52,13 @@ jobs:
         if: steps.time.outputs.run == 'true'
         continue-on-error: true
         run: python3 scripts/model_c_historical_qb_games.py
+      - name: Reconcile missing historical final scores (research only)
+        if: steps.time.outputs.run == 'true'
+        continue-on-error: true
+        run: python3 scripts/model_c_historical_score_reconcile.py
+      - name: Audit QB history against final scores
+        if: steps.time.outputs.run == 'true'
+        run: python3 scripts/model_c_historical_qb_audit.py
       - name: Retrieve QB1 depth-chart candidates (best effort)
         if: steps.time.outputs.run == 'true'
         continue-on-error: true
@@ -113,6 +120,9 @@ jobs:
           if [ -f data/model-c-official-qb-discovery.json ]; then git add data/model-c-official-qb-discovery.json; fi
           if [ -f data/model-c-qb-performance.json ]; then git add data/model-c-qb-performance.json; fi
           if [ -f data/model-c-historical-qb-games.json ]; then git add data/model-c-historical-qb-games.json; fi
+          if [ -f data/model-c-historical-qb-audit.json ]; then git add data/model-c-historical-qb-audit.json; fi
+          if [ -f data/model-c-historical-score-reconciliation.json ]; then git add data/model-c-historical-score-reconciliation.json; fi
+          if [ -f data/nfl-historical-results.json ]; then git add data/nfl-historical-results.json; fi
           if [ -f data/model-c-qb-candidates.json ]; then git add data/model-c-qb-candidates.json; fi
           if [ -f data/model-c-qb-depthcharts.json ]; then git add data/model-c-qb-depthcharts.json; fi
           if [ -f data/model-c-depthchart-diagnostic.json ]; then git add data/model-c-depthchart-diagnostic.json; fi
