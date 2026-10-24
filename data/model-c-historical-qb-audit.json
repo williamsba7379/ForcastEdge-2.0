@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "teamGameRecords": 188,
+  "uniqueGames": 94,
+  "crossReferencedGames": 94,
+  "unmatchedHistoryGames": 0,
+  "unmatchedGameIds": [],
+  "errors": [],
+  "starterVerification": "NOT_PROVIDED",
+  "note": "Unmatched IDs require refresh of historical scores before cross-source validation; primary passers are not confirmed starters."
+}

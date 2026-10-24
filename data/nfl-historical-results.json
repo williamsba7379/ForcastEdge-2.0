@@ -6,7 +6,7 @@
     2025,
     2026
   ],
-  "updatedAt": "2026-10-17T04:41:12.846060+00:00",
+  "updatedAt": "2026-10-24T11:08:15.749208+00:00",
   "source": "ESPN public NFL scoreboard final scores",
   "games": [
     {
@@ -9864,6 +9864,160 @@
       "homeScore": 17,
       "awayScore": 14,
       "winner": "Denver Broncos"
+    },
+    {
+      "season": 2026,
+      "id": "401872996",
+      "week": 6,
+      "date": "2026-10-18T13:30Z",
+      "home": "Jacksonville Jaguars",
+      "away": "Houston Texans",
+      "homeScore": 31,
+      "awayScore": 34,
+      "winner": "Houston Texans"
+    },
+    {
+      "season": 2026,
+      "id": "401872997",
+      "week": 6,
+      "date": "2026-10-18T17:00Z",
+      "home": "Cleveland Browns",
+      "away": "Baltimore Ravens",
+      "homeScore": 13,
+      "awayScore": 10,
+      "winner": "Cleveland Browns"
+    },
+    {
+      "season": 2026,
+      "id": "401872998",
+      "week": 6,
+      "date": "2026-10-18T17:00Z",
+      "home": "Philadelphia Eagles",
+      "away": "Carolina Panthers",
+      "homeScore": 14,
+      "awayScore": 25,
+      "winner": "Carolina Panthers"
+    },
+    {
+      "season": 2026,
+      "id": "401872999",
+      "week": 6,
+      "date": "2026-10-18T17:00Z",
+      "home": "Atlanta Falcons",
+      "away": "Chicago Bears",
+      "homeScore": 23,
+      "awayScore": 31,
+      "winner": "Chicago Bears"
+    },
+    {
+      "season": 2026,
+      "id": "401873000",
+      "week": 6,
+      "date": "2026-10-18T17:00Z",
+      "home": "New York Giants",
+      "away": "New Orleans Saints",
+      "homeScore": 27,
+      "awayScore": 34,
+      "winner": "New Orleans Saints"
+    },
+    {
+      "season": 2026,
+      "id": "401873001",
+      "week": 6,
+      "date": "2026-10-18T17:00Z",
+      "home": "New England Patriots",
+      "away": "New York Jets",
+      "homeScore": 26,
+      "awayScore": 19,
+      "winner": "New England Patriots"
+    },
+    {
+      "season": 2026,
+      "id": "401873002",
+      "week": 6,
+      "date": "2026-10-18T17:00Z",
+      "home": "Tampa Bay Buccaneers",
+      "away": "Pittsburgh Steelers",
+      "homeScore": 19,
+      "awayScore": 26,
+      "winner": "Pittsburgh Steelers"
+    },
+    {
+      "season": 2026,
+      "id": "401873003",
+      "week": 6,
+      "date": "2026-10-18T17:00Z",
+      "home": "Indianapolis Colts",
+      "away": "Tennessee Titans",
+      "homeScore": 20,
+      "awayScore": 26,
+      "winner": "Tennessee Titans"
+    },
+    {
+      "season": 2026,
+      "id": "401873004",
+      "week": 6,
+      "date": "2026-10-18T20:05Z",
+      "home": "Los Angeles Rams",
+      "away": "Arizona Cardinals",
+      "homeScore": 16,
+      "awayScore": 18,
+      "winner": "Arizona Cardinals"
+    },
+    {
+      "season": 2026,
+      "id": "401873005",
+      "week": 6,
+      "date": "2026-10-18T20:25Z",
+      "home": "Las Vegas Raiders",
+      "away": "Buffalo Bills",
+      "homeScore": 30,
+      "awayScore": 33,
+      "winner": "Buffalo Bills"
+    },
+    {
+      "season": 2026,
+      "id": "401873006",
+      "week": 6,
+      "date": "2026-10-18T20:25Z",
+      "home": "Kansas City Chiefs",
+      "away": "Los Angeles Chargers",
+      "homeScore": 22,
+      "awayScore": 6,
+      "winner": "Kansas City Chiefs"
+    },
+    {
+      "season": 2026,
+      "id": "401873007",
+      "week": 6,
+      "date": "2026-10-19T00:20Z",
+      "home": "Green Bay Packers",
+      "away": "Dallas Cowboys",
+      "homeScore": 23,
+      "awayScore": 13,
+      "winner": "Green Bay Packers"
+    },
+    {
+      "season": 2026,
+      "id": "401873008",
+      "week": 6,
+      "date": "2026-10-20T00:15Z",
+      "home": "San Francisco 49ers",
+      "away": "Washington Commanders",
+      "homeScore": 23,
+      "awayScore": 17,
+      "winner": "San Francisco 49ers"
+    },
+    {
+      "season": 2026,
+      "id": "401873010",
+      "week": 7,
+      "date": "2026-10-23T00:15Z",
+      "home": "Chicago Bears",
+      "away": "New England Patriots",
+      "homeScore": 30,
+      "awayScore": 24,
+      "winner": "Chicago Bears"
     }
   ]
 }
