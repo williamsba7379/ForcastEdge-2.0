@@ -1,0 +1,134 @@
+{
+  "status": "PROPOSED_DOMAINS_REQUIRE_LIVE_VALIDATION",
+  "notes": "Official-looking domains are candidates only. Live collector uses only validated pilot allowlist; do not interpret catalog as verified domains.",
+  "teams": {
+    "Arizona Cardinals": {
+      "newsIndex": "https://www.azcardinals.com/news/",
+      "validation": "PENDING_LIVE_CHECK"
+    },
+    "Atlanta Falcons": {
+      "newsIndex": "https://www.atlantafalcons.com/news/",
+      "validation": "PENDING_LIVE_CHECK"
+    },
+    "Baltimore Ravens": {
+      "newsIndex": "https://www.baltimoreravens.com/news/",
+      "validation": "PENDING_LIVE_CHECK"
+    },
+    "Buffalo Bills": {
+      "newsIndex": "https://www.buffalobills.com/news/",
+      "validation": "PENDING_LIVE_CHECK"
+    },
+    "Carolina Panthers": {
+      "newsIndex": "https://www.panthers.com/news/",
+      "validation": "PENDING_LIVE_CHECK"
+    },
+    "Chicago Bears": {
+      "newsIndex": "https://www.chicagobears.com/news/",
+      "validation": "PENDING_LIVE_CHECK"
+    },
+    "Cincinnati Bengals": {
+      "newsIndex": "https://www.bengals.com/news/",
+      "validation": "PENDING_LIVE_CHECK"
+    },
+    "Cleveland Browns": {
+      "newsIndex": "https://www.clevelandbrowns.com/news/",
+      "validation": "PENDING_LIVE_CHECK"
+    },
+    "Dallas Cowboys": {
+      "newsIndex": "https://www.dallascowboys.com/news/",
+      "validation": "PENDING_LIVE_CHECK"
+    },
+    "Denver Broncos": {
+      "newsIndex": "https://www.denverbroncos.com/news/",
+      "validation": "PENDING_LIVE_CHECK"
+    },
+    "Detroit Lions": {
+      "newsIndex": "https://www.detroitlions.com/news/",
+      "validation": "PENDING_LIVE_CHECK"
+    },
+    "Green Bay Packers": {
+      "newsIndex": "https://www.packers.com/news/",
+      "validation": "PENDING_LIVE_CHECK"
+    },
+    "Houston Texans": {
+      "newsIndex": "https://www.houstontexans.com/news/",
+      "validation": "PENDING_LIVE_CHECK"
+    },
+    "Indianapolis Colts": {
+      "newsIndex": "https://www.colts.com/news/",
+      "validation": "PENDING_LIVE_CHECK"
+    },
+    "Jacksonville Jaguars": {
+      "newsIndex": "https://www.jaguars.com/news/",
+      "validation": "PENDING_LIVE_CHECK"
+    },
+    "Kansas City Chiefs": {
+      "newsIndex": "https://www.chiefs.com/news/",
+      "validation": "PENDING_LIVE_CHECK"
+    },
+    "Las Vegas Raiders": {
+      "newsIndex": "https://www.raiders.com/news/",
+      "validation": "PENDING_LIVE_CHECK"
+    },
+    "Los Angeles Chargers": {
+      "newsIndex": "https://www.chargers.com/news/",
+      "validation": "PENDING_LIVE_CHECK"
+    },
+    "Los Angeles Rams": {
+      "newsIndex": "https://www.therams.com/news/",
+      "validation": "PENDING_LIVE_CHECK"
+    },
+    "Miami Dolphins": {
+      "newsIndex": "https://www.miamidolphins.com/news/",
+      "validation": "PENDING_LIVE_CHECK"
+    },
+    "Minnesota Vikings": {
+      "newsIndex": "https://www.vikings.com/news/",
+      "validation": "PENDING_LIVE_CHECK"
+    },
+    "New England Patriots": {
+      "newsIndex": "https://www.patriots.com/news/",
+      "validation": "PENDING_LIVE_CHECK"
+    },
+    "New Orleans Saints": {
+      "newsIndex": "https://www.neworleanssaints.com/news/",
+      "validation": "PENDING_LIVE_CHECK"
+    },
+    "New York Giants": {
+      "newsIndex": "https://www.giants.com/news/",
+      "validation": "PENDING_LIVE_CHECK"
+    },
+    "New York Jets": {
+      "newsIndex": "https://www.newyorkjets.com/news/",
+      "validation": "PENDING_LIVE_CHECK"
+    },
+    "Philadelphia Eagles": {
+      "newsIndex": "https://www.philadelphiaeagles.com/news/",
+      "validation": "PENDING_LIVE_CHECK"
+    },
+    "Pittsburgh Steelers": {
+      "newsIndex": "https://www.steelers.com/news/",
+      "validation": "PENDING_LIVE_CHECK"
+    },
+    "San Francisco 49ers": {
+      "newsIndex": "https://www.49ers.com/news/",
+      "validation": "PENDING_LIVE_CHECK"
+    },
+    "Seattle Seahawks": {
+      "newsIndex": "https://www.seahawks.com/news/",
+      "validation": "PENDING_LIVE_CHECK"
+    },
+    "Tampa Bay Buccaneers": {
+      "newsIndex": "https://www.buccaneers.com/news/",
+      "validation": "PENDING_LIVE_CHECK"
+    },
+    "Tennessee Titans": {
+      "newsIndex": "https://www.tennesseetitans.com/news/",
+      "validation": "PENDING_LIVE_CHECK"
+    },
+    "Washington Commanders": {
+      "newsIndex": "https://www.commanders.com/news/",
+      "validation": "PENDING_LIVE_CHECK"
+    }
+  }
+}
