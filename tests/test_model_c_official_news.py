@@ -17,7 +17,7 @@ assert links[0]["status"]=="UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
 assert links[0]["url"].startswith(base)
 result=collect(fetch=lambda url:page)
 assert result["automaticConfirmations"]==0
-assert len(result["teams"])==2
+assert len(result["teams"])==8
 assert all(t["fetchStatus"]=="OK" for t in result["teams"])
 error=collect(fetch=lambda url:(_ for _ in ()).throw(OSError("offline")))
 assert all(t["fetchStatus"]=="ERROR" and not t["candidates"] for t in error["teams"])
