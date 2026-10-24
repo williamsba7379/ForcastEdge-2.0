@@ -1,5 +1,5 @@
 {
-  "retrievedAt": "2026-10-24T02:44:39.364034+00:00",
+  "retrievedAt": "2026-10-24T02:51:58.206116+00:00",
   "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
   "status": "UNVERIFIED_REPORTING_FEED",
   "caution": "Reported injuries only. Not confirmed starting lineups, expected workload, or calibrated point adjustments.",
@@ -795,6 +795,12 @@
       "teamId": "3",
       "players": [
         {
+          "name": "Roschon Johnson",
+          "position": "RB",
+          "status": "Active",
+          "description": ""
+        },
+        {
           "name": "Anthony Johnson Jr.",
           "position": "S",
           "status": "Out",
@@ -929,12 +935,6 @@
         {
           "name": "Jahdae Walker",
           "position": "WR",
-          "status": "Active",
-          "description": ""
-        },
-        {
-          "name": "Roschon Johnson",
-          "position": "RB",
           "status": "Active",
           "description": ""
         },
@@ -3307,6 +3307,18 @@
       "teamId": "17",
       "players": [
         {
+          "name": "Eli Raridon",
+          "position": "TE",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Efton Chism III",
+          "position": "WR",
+          "status": "Active",
+          "description": ""
+        },
+        {
           "name": "DeMario Douglas",
           "position": "WR",
           "status": "Active",
@@ -3441,18 +3453,6 @@
         {
           "name": "Tanner Arkin",
           "position": "TE",
-          "status": "Active",
-          "description": ""
-        },
-        {
-          "name": "Dametrious Crownover",
-          "position": "OT",
-          "status": "Active",
-          "description": ""
-        },
-        {
-          "name": "Will Campbell",
-          "position": "OT",
           "status": "Active",
           "description": ""
         }

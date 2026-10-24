@@ -1,0 +1,211 @@
+{
+  "status": "DISCOVERY_ONLY_NOT_STARTER_CONFIRMATION",
+  "generatedAt": "2026-10-24T02:52:14.424219+00:00",
+  "automaticConfirmations": 0,
+  "teams": [
+    {
+      "team": "Baltimore Ravens",
+      "officialNewsIndex": "https://www.baltimoreravens.com/news/",
+      "fetchStatus": "OK",
+      "candidates": [
+        {
+          "url": "https://www.baltimoreravens.com/news/tavius-robinson-out-for-2026-season-zion-young-jaylinn-hawkins-jesse-minter",
+          "headline": "news News & Notes: Tavius Robinson Will Miss Remainder of Season Oct 23, 2026 Jaylinn Hawkins has been ruled out for Sunday\u2019s game against the Bengals. Zion Young feels ready to help fill void left by Tavius Robinson\u2019s i",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.baltimoreravens.com/news/lamar-jackson-ankle-injury-explains-whats-going-on-ravens-bengals",
+          "headline": "news Lamar Jackson Explains What's Going on With His Ankle Injury Oct 23, 2026 Lamar Jackson shared the nature of his ankle injury and how he\u2019s feeling this week.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.baltimoreravens.com/news/lamar-jackson-injury-report-ravens-bengals-jaylinn-hawkins-tavius-robinson-2026",
+          "headline": "news Lamar Jackson 'Headed in the Right Direction,' But Two Defensive Starters Ruled Out Oct 23, 2026 Ravens safety Jaylinn Hawkins (knee) and outside linebacker Tavius Robinson (pectoral) are not at the start of practic",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.baltimoreravens.com/news/ravens-bengals-game-preview-joe-burrow-lamar-jackson-week-7-2026",
+          "headline": "news Everything You Need to Know: Ravens vs. Bengals Oct 23, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.baltimoreravens.com/news/lamar-jackson-injury-report-ravens-practice-start-ankle-2026",
+          "headline": "news Lamar Jackson Takes a Step Forward, But Still Limited at Practice Oct 22, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.baltimoreravens.com/news/ravens-pass-rush-partner-trey-hendrickson-mike-green-lamar-jackson-full-speed-2026",
+          "headline": "news Late for Work: Pundit Says Ravens Need Establish a Pass-Rush Partner for Trey Hendrickson Oct 22, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.baltimoreravens.com/news/lamar-jackson-ravens-injury-report-cam-jurgens-tj-tampa-returns-practice-injured-reserve",
+          "headline": "news Lamar Jackson Returns to Practice as a Limited Participant Oct 21, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.baltimoreravens.com/news/lamar-jackson-injury-timeline-return-jaylinn-hawkins-trade-deadline-elijah-sarratt-ravens-mailbag",
+          "headline": "news Mailbag: What's Lamar Jackson's Timeline for Return? Oct 21, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.baltimoreravens.com/news/jesse-minter-lamar-jackson-ankle-still-day-day-monday-week-7-injuries-rashod-bateman-cam-jurgens-trey-hendrickson-tyler-loop-critical-misses",
+          "headline": "news News & Notes: Jesse Minter Gives Health Update on Lamar Jackson Oct 19, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.baltimoreravens.com/news/mark-andrews-franchise-record-feature-hurricane-underestimated-lamar-jackson-rock-and-roll",
+          "headline": "Cover Story: How Mark Andrews Became the Ravens' All-Time Leading Receiver Nov 18, 2025",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.baltimoreravens.com/news/lamar-jackson-locked-in-playoffs-cover-story-super-bowl-2023",
+          "headline": "Cover Story: Why 'Locked In' Lamar Jackson Is Ready to Take the Ravens Farther Jan 15, 2024",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.baltimoreravens.com/news/deandre-hopkins-ravens-met-gala-lamar-jackson",
+          "headline": "news SociaLight: DeAndre Hopkins Shows Out at Met Gala May 06, 2025",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.baltimoreravens.com/news/lamar-jackson-germany-football-soccer-skills-shows-off-socialight",
+          "headline": "news SociaLight: Lamar Jackson Shows Off His Skills in Germany Apr 22, 2024",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.baltimoreravens.com/news/lamar-jackson-rug-wants-damn-fan-week-9-seahawks",
+          "headline": "news SociaLight: Lamar Jackson Wants the Damn Rug \ud83d\ude02 Nov 09, 2023",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.baltimoreravens.com/news/lamar-jackson-kids-freak-out-high-five-ravens-training-camp",
+          "headline": "news SociaLight: Watch Kids Freak Out After High-Fiving Lamar Jackson Jul 31, 2023",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.baltimoreravens.com/news/drake-lamar-jackson-stage-concert-my-quarterback",
+          "headline": "news SociaLight: Drake Brings 'My Quarterback' Lamar Jackson on Stage Jul 30, 2023",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.baltimoreravens.com/news/odell-beckham-zay-flowers-working-out-together-offseason-2023",
+          "headline": "news SociaLight: Lamar Jackson, Odell Beckham Jr., Zay Flowers Work Out Together Jul 03, 2023",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.baltimoreravens.com/news/lamar-jackson-zay-flowers-beach-workout-south-florida",
+          "headline": "news SociaLight: Lamar Jackson and Zay Flowers Build Chemistry in South Florida Workouts Jun 28, 2023",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        }
+      ]
+    },
+    {
+      "team": "Philadelphia Eagles",
+      "officialNewsIndex": "https://www.philadelphiaeagles.com/news/",
+      "fetchStatus": "OK",
+      "candidates": [
+        {
+          "url": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+          "headline": "news Cowboys vs. Eagles Injury Report Running back Saquon Barkley practiced again on Friday as Monday night's matchup inches closer.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.philadelphiaeagles.com/news/spadaro-tanner-mckee-looks-to-win-the-trust-of-his-teammates-eagles-cowboys-2026",
+          "headline": "news Spadaro: Tanner McKee looks to win the trust of his teammates The quarterback reflects on his first start of the season and previews the prime-time showdown Monday night against Dallas.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.philadelphiaeagles.com/news/eagles-and-jalen-hurts-agent-nicole-lynn-provide-an-update-on-qb-jalen-hurts",
+          "headline": "news Eagles and Jalen Hurts' agent Nicole Lynn provide an update on QB Jalen Hurts Oct 19, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.philadelphiaeagles.com/news/panthers-vs-eagles-what-can-tanner-mckee-offense-learn-from-sunday-2026-nfl-week-6",
+          "headline": "news Spadaro: What can Tanner McKee, offense learn from Sunday? Oct 18, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.philadelphiaeagles.com/news/panthers-vs-eagles-game-recap-2026-nfl-week-6-crucial-catch-tanner-mckee-bryce-young",
+          "headline": "news Game Recap: Panthers 25, Eagles 14 Oct 18, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.philadelphiaeagles.com/news/panthers-vs-eagles-inactives-2026-week-6-nfl-crucial-catch-saquon-barkley-jalen-hurts",
+          "headline": "news Panthers vs. Eagles Inactives Oct 18, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.philadelphiaeagles.com/news/panthers-vs-eagles-game-preview-6-storylines-to-follow-2026-week-6-nfl-regular-season-crucial-catch-tanner-mckee-bryce-young",
+          "headline": "news Spadaro: Game Preview vs. Panthers, 6 storylines to follow Oct 18, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.philadelphiaeagles.com/news/how-to-watch-stream-and-listen-panthers-vs-eagles-nfl-week-6-2026-jalen-hurts-bryce-young",
+          "headline": "news How to watch, stream, and listen | Panthers vs. Eagles Oct 18, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.philadelphiaeagles.com/news/eagles-place-jalen-hurts-on-injured-reserve-sign-jaydon-blue-to-the-active-roster-2026-nfl-week-6-panthers",
+          "headline": "news Eagles place QB Jalen Hurts on Injured Reserve, sign RB Jaydon Blue to the active roster Oct 17, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.philadelphiaeagles.com/news/eagles-sign-qb-joe-milton",
+          "headline": "news Eagles sign QB Joe Milton Oct 16, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.philadelphiaeagles.com/news/panthers-vs-eagles-injury-report-2026-nfl-week-6-saquon-barkley-devonta-smith",
+          "headline": "news Panthers vs. Eagles Injury Report Oct 16, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.philadelphiaeagles.com/news/tanner-mckee-will-be-ready-for-his-moment-2026-nfl-week-6-carolina-panthers",
+          "headline": "news Spadaro: Tanner McKee will be ready for his moment Oct 15, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.philadelphiaeagles.com/news/statement-from-the-philadelphia-eagles-on-qb-jalen-hurts",
+          "headline": "news Statement from the Philadelphia Eagles on QB Jalen Hurts Oct 15, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.philadelphiaeagles.com/news/game-preview-at-jaguars-6-storylines-to-follow-jordan-mailata-jalen-hurts-trevor-lawrence-travis-hunter-2026-nfl-week-6-london-international-game",
+          "headline": "news Game Preview at Jaguars: 6 storylines to follow Oct 11, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.philadelphiaeagles.com/news/spadaro-jalen-hurts-and-the-eagles-offense-embrace-next-man-up-mentality",
+          "headline": "news Spadaro: Jalen Hurts and the Eagles' offense embrace 'next-man-up' mentality Oct 08, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.philadelphiaeagles.com/news/rams-vs-eagles-game-preview-6-storylines-to-follow-2026-week-4-nfl-regular-season-jalen-hurts-saquon-barkley-matthew-stafford",
+          "headline": "news Game Preview vs. Rams: 6 storylines to follow Oct 04, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.philadelphiaeagles.com/news/eagles-at-bears-game-preview-6-storylines-to-follow-2026-week-3-nfl-regular-season-monday-night-football-jalen-hurts-caleb-williams",
+          "headline": "news Spadaro: Game Preview at Bears, 6 storylines to follow Sep 28, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.philadelphiaeagles.com/news/jalen-hurts-eagles-do-what-it-takes-to-win",
+          "headline": "news Spadaro: Jalen Hurts, Eagles do what it takes to win Sep 23, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.philadelphiaeagles.com/news/eagles-6-takeaways-from-an-incredible-come-from-behind-win-over-the-titans-jalen-hurts-devonta-smith-2026-nfl-week-2",
+          "headline": "news Spadaro: 6 takeaways from an incredible, come-from-behind win over the Titans Sep 20, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.philadelphiaeagles.com/news/eagles-kyle-mccord-nfl-draft-quarterback-syracuse",
+          "headline": "news Eagles select QB Kyle McCord with the No. 181 pick in the 2025 NFL Draft Apr 26, 2025",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        }
+      ]
+    }
+  ]
+}
