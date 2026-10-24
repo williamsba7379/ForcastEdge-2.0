@@ -1,0 +1,34 @@
+{
+  "reviewDate": "2026-10-23",
+  "status": "SOURCE_REVIEW_ONLY",
+  "confirmedStartersForUpcomingGames": 0,
+  "notes": "Game-specific declarations remain empty; never carry a Week 6 starter announcement forward to Week 8. The Ravens Oct 23 announcement is explicitly uncertain.",
+  "sources": [
+    {
+      "team": "Baltimore Ravens",
+      "player": "Lamar Jackson",
+      "source": "https://www.baltimoreravens.com/news/lamar-jackson-injury-report-ravens-bengals-jaylinn-hawkins-tavius-robinson-2026",
+      "sourceDate": "2026-10-23",
+      "game": "Ravens vs Bengals, Oct 25",
+      "classification": "UNCERTAIN",
+      "reason": "Official team report calls Jackson questionable; does not name confirmed starter."
+    },
+    {
+      "team": "Philadelphia Eagles",
+      "player": "Tanner McKee",
+      "source": "https://www.philadelphiaeagles.com/news/eagles-place-jalen-hurts-on-injured-reserve-sign-rb-jaydon-blue-to-the-active-roster-2026-nfl-week-6-panthers",
+      "sourceDate": "2026-10-17",
+      "game": "Eagles vs Panthers, Oct 18",
+      "classification": "HISTORICAL_GAME_ONLY",
+      "reason": "Team confirms McKee started Week 6; cannot confirm Week 8 from this announcement."
+    },
+    {
+      "team": "Philadelphia Eagles",
+      "player": "Jalen Hurts",
+      "source": "https://www.philadelphiaeagles.com/news/eagles-and-jalen-hurts-agent-nicole-lynn-provide-an-update-on-qb-jalen-hurts",
+      "sourceDate": "2026-10-19",
+      "classification": "REPORTED_UNAVAILABLE",
+      "reason": "Team statement rules out contact football during treatment, but does not identify game-specific replacement starter."
+    }
+  ]
+}
