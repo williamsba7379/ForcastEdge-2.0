@@ -2,15 +2,25 @@
   "season": 2026,
   "week": 8,
   "status": "REVIEW_REQUIRED",
-  "generatedAt": "2026-10-24T12:16:04.059341+00:00",
-  "criticalCount": 4,
+  "generatedAt": "2026-10-24T12:30:37.118957+00:00",
+  "criticalCount": 0,
+  "reviewCount": 4,
+  "priorityCounts": {
+    "P1_POSSIBLE_STARTER_ABSENCE": 0,
+    "P2_ROLE_UNCERTAIN": 0,
+    "P2_DISPLACED_STARTER_POSSIBLE": 4
+  },
   "alerts": [
     {
       "gameId": "401873027",
       "date": "2026-11-01T18:00Z",
       "team": "Cleveland Browns",
       "opponent": "Pittsburgh Steelers",
-      "severity": "CRITICAL_QB_AVAILABILITY_UNMODELED",
+      "severity": "QB_AVAILABILITY_UNMODELED",
+      "priority": "P2_DISPLACED_STARTER_POSSIBLE",
+      "priorityRationale": "Current QB1 and recent passer differ from unavailable QB. May be displaced starter; do not infer backup.",
+      "roleEvidence": "UNVERIFIED_TRIAGE_ONLY",
+      "recentPrimaryPasserUnverified": "Deshaun Watson",
       "reportedUnavailable": [
         {
           "name": "Dillon Gabriel",
@@ -28,7 +38,11 @@
       "date": "2026-11-01T21:25Z",
       "team": "New England Patriots",
       "opponent": "Miami Dolphins",
-      "severity": "CRITICAL_QB_AVAILABILITY_UNMODELED",
+      "severity": "QB_AVAILABILITY_UNMODELED",
+      "priority": "P2_DISPLACED_STARTER_POSSIBLE",
+      "priorityRationale": "Current QB1 and recent passer differ from unavailable QB. May be displaced starter; do not infer backup.",
+      "roleEvidence": "UNVERIFIED_TRIAGE_ONLY",
+      "recentPrimaryPasserUnverified": "Drake Maye",
       "reportedUnavailable": [
         {
           "name": "Behren Morton",
@@ -46,7 +60,11 @@
       "date": "2026-11-02T01:20Z",
       "team": "Philadelphia Eagles",
       "opponent": "Washington Commanders",
-      "severity": "CRITICAL_QB_AVAILABILITY_UNMODELED",
+      "severity": "QB_AVAILABILITY_UNMODELED",
+      "priority": "P2_DISPLACED_STARTER_POSSIBLE",
+      "priorityRationale": "Current QB1 and recent passer differ from unavailable QB. May be displaced starter; do not infer backup.",
+      "roleEvidence": "UNVERIFIED_TRIAGE_ONLY",
+      "recentPrimaryPasserUnverified": "Tanner McKee",
       "reportedUnavailable": [
         {
           "name": "Jalen Hurts",
@@ -64,7 +82,11 @@
       "date": "2026-11-03T01:15Z",
       "team": "Chicago Bears",
       "opponent": "Seattle Seahawks",
-      "severity": "CRITICAL_QB_AVAILABILITY_UNMODELED",
+      "severity": "QB_AVAILABILITY_UNMODELED",
+      "priority": "P2_DISPLACED_STARTER_POSSIBLE",
+      "priorityRationale": "Current QB1 and recent passer differ from unavailable QB. May be displaced starter; do not infer backup.",
+      "roleEvidence": "UNVERIFIED_TRIAGE_ONLY",
+      "recentPrimaryPasserUnverified": "Caleb Williams",
       "reportedUnavailable": [
         {
           "name": "Case Keenum",
@@ -78,5 +100,5 @@
       "note": "Availability report is not starter confirmation. QB adjustment absent; pick is not injury-aware."
     }
   ],
-  "policy": "Do not silently label picks injury-aware when a key QB is reported unavailable and no verified score adjustment was made. Preserve frozen picks."
+  "policy": "Priorities are triage signals, not verified starter identities or numerical adjustments. Preserve frozen picks."
 }
