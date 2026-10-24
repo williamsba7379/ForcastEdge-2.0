@@ -79,6 +79,9 @@ jobs:
         if: steps.time.outputs.run == 'true'
         continue-on-error: true
         run: python3 scripts/model_c_article_passages.py
+      - name: Validate saved QB passage recency gate
+        if: steps.time.outputs.run == 'true'
+        run: python3 scripts/model_c_passage_gate_validation.py
       - name: Audit ranked QB news coverage
         if: steps.time.outputs.run == 'true'
         run: python3 scripts/model_c_ranking_audit.py
