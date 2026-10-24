@@ -40,6 +40,7 @@ jobs:
           python3 tests/test_model_c_qb_feed.py
           python3 tests/test_model_c_espn_qb_status.py
           python3 tests/test_model_c_qb_depthcharts.py
+          python3 tests/test_model_c_qb_shadow.py
       - name: Retrieve injury-report snapshot (best effort)
         if: steps.time.outputs.run == 'true'
         continue-on-error: true
@@ -70,6 +71,9 @@ jobs:
       - name: Generate independent Model C review draft
         if: steps.time.outputs.run == 'true'
         run: python3 scripts/model_c_engine.py
+      - name: Generate separate Model C-QB experimental shadow
+        if: steps.time.outputs.run == 'true'
+        run: python3 scripts/model_c_qb_shadow.py
       - name: Build official quarterback source review queue
         if: steps.time.outputs.run == 'true'
         run: python3 scripts/model_c_qb_review_queue.py
@@ -113,6 +117,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -f data/model-c-qb-shadow.json ]; then git add data/model-c-qb-shadow.json; fi
           git add data/model-c-automated-draft.json data/model-c-qb-review-queue.json data/model-c-qb-ranked-news.json data/model-c-qb-ranking-audit.json
           if [ -f data/model-c-official-article-metadata.json ]; then git add data/model-c-official-article-metadata.json; fi
           if [ -f data/model-c-article-metadata-audit.json ]; then git add data/model-c-article-metadata-audit.json; fi
