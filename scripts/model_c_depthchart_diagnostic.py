@@ -29,6 +29,16 @@ try:
             sample["topLevelKeys"]=list(payload.keys())[:15]
             charts=payload.get("depthchart") or payload.get("depthcharts")
             sample["depthChartContainerType"]=type(charts).__name__
+            if isinstance(charts,list) and charts:
+                first=charts[0]
+                sample["firstSectionKeys"]=list(first)[:15] if isinstance(first,dict) else []
+                if isinstance(first,dict):
+                    positions=first.get("positions")
+                    sample["positionsContainer"]=type(positions).__name__
+                    if isinstance(positions,dict):
+                        sample["positionKeys"]=list(positions)[:12]
+                    if isinstance(positions,list):
+                        sample["firstPositionKeys"]=list(positions[0])[:12] if positions and isinstance(positions[0],dict) else []
             if qbs:
                 report["teamsWithQB1"]+=1
             else:
