@@ -6,9 +6,10 @@ import pathlib
 
 DATA=pathlib.Path(__file__).resolve().parents[1]/"data"
 
-def build(draft, reviewed, declarations):
+def build(draft, reviewed, declarations, espn=None):
     sources=reviewed.get("sources",[])
     confirmed=declarations.get("teams",{})
+    espn_items=(espn or {}).get("items",[])
     items=[]
     for game in draft.get("games",[]):
         for side in ("away","home"):
@@ -26,12 +27,14 @@ def build(draft, reviewed, declarations):
                 f'{team} {candidate or "quarterback"} named starter vs {game["home" if side=="away" else "away"]}'
             ]
             flags=alert.get("injuryFlags",[])
+            espn_flags=[x for x in espn_items if x.get("team")==team and x.get("reportedStatus","").lower() not in ("active","healthy","available")]
             items.append({
                 "gameId":game["id"],"kickoff":game["date"],"team":team,
                 "opponent":game["home" if side=="away" else "away"],
                 "starterVerification":qb.get("verification","UNCONFIRMED"),
-                "reviewRequired":qb.get("verification")!="OFFICIAL_GAME_SPECIFIC" or bool(flags) or bool(alert.get("candidateMismatch")),
+                "reviewRequired":qb.get("verification")!="OFFICIAL_GAME_SPECIFIC" or bool(flags) or bool(espn_flags) or bool(alert.get("candidateMismatch")),
                 "reportedInjuryFlags":flags,
+                "espnQuarterbackInjuryFlags":espn_flags,
                 "recentPrimaryPasserCandidate":qb.get("recentPrimaryPasser"),
                 "depthChartCandidate":qb.get("depthChartQB1Candidate"),
                 "officialSourcesForManualReview":exact,
@@ -51,7 +54,9 @@ def main():
     draft=json.loads((DATA/"model-c-automated-draft.json").read_text())
     reviewed=json.loads((DATA/"model-c-official-qb-source-review.json").read_text())
     declarations=json.loads((DATA/"model-c-qb-starters.json").read_text())
-    out=build(draft,reviewed,declarations)
+    espn_path=DATA/"model-c-espn-qb-status.json"
+    espn=json.loads(espn_path.read_text()) if espn_path.exists() else {}
+    out=build(draft,reviewed,declarations,espn)
     (DATA/"model-c-qb-review-queue.json").write_text(json.dumps(out,indent=2)+"\n")
     print("QB review queue:",len(out["items"]),"team-game records; no auto-confirmations")
 
