@@ -30,4 +30,10 @@ other=rank_link(game,{"url":"https://www.baltimoreravens.com/news/josh-allen-upd
 assert own["score"]>other["score"],(own,other)
 assert "OWN_QB_CANDIDATE" in own["reasons"]
 assert "OPPONENT_WITHOUT_OWN_QB" in other["reasons"]
-assert own["pregameShortlistEligible"] and other["pregameShortlistEligible"]
+assert own["pregameShortlistEligible"] and not other["pregameShortlistEligible"]
+
+# A date-valid generic injury story cannot become a team QB lead.
+generic=rank_link(game,{"url":"https://www.baltimoreravens.com/news/defensive-injury",
+    "headline":"Defense injury report Oct 30, 2026"})
+assert not generic["pregameShortlistEligible"]
+assert "OWN_QB_STATUS_NOT_ESTABLISHED" in generic["reasons"]
