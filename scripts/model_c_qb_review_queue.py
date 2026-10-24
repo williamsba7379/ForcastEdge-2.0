@@ -6,13 +6,14 @@ import pathlib
 
 DATA=pathlib.Path(__file__).resolve().parents[1]/"data"
 
-def injury_priority(flags, candidate):
+def injury_priority(flags, candidate, depth_candidate=None):
     """Review urgency, not a prediction or proof of starting status."""
     if not flags:
         return "ROUTINE"
     severe={"out","injured reserve","ir","doubtful"}
     moderate={"questionable","limited"}
-    matched=[x for x in flags if candidate and x.get("player","").casefold()==candidate.casefold()]
+    watched={str(n).casefold() for n in (candidate,depth_candidate) if n}
+    matched=[x for x in flags if str(x.get("player","")).casefold() in watched]
     relevant=matched or flags
     statuses={x.get("reportedStatus","").strip().casefold() for x in relevant}
     if statuses & severe:
@@ -43,8 +44,8 @@ def build(draft, reviewed, declarations, espn=None):
             ]
             flags=alert.get("injuryFlags",[])
             espn_flags=[x for x in espn_items if x.get("team")==team and x.get("reportedStatus","").lower() not in ("active","healthy","available")]
-            priority=injury_priority(espn_flags,candidate)
             depth=qb.get("depthChartQB1Candidate")
+            priority=injury_priority(espn_flags,candidate,depth)
             agreement=bool(candidate and depth and candidate.casefold()==depth.casefold())
             conflict=bool(candidate and depth and not agreement)
             items.append({
