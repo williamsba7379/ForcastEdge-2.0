@@ -1,0 +1,6 @@
+{
+  "season": 2026,
+  "status": "HUMAN_REVIEW_REQUIRED",
+  "entries": [],
+  "instructions": "Only add entries after checking an official team announcement for the exact scheduled game. Each entry needs team, gameId, starter, status CONFIRMED_STARTER, sourceType TEAM_ANNOUNCEMENT, reviewed true, evidenceText, https source, and pregame asOf. For QB-adjusted scores additionally include independently reviewed baselineStarter, baselineSource, baselineReviewed true, baselineAsOf. No inferred starters."
+}
