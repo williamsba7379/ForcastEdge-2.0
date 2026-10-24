@@ -65,6 +65,9 @@ jobs:
       - name: Rank official QB news for manual review
         if: steps.time.outputs.run == 'true'
         run: python3 scripts/model_c_news_ranking.py
+      - name: Audit ranked QB news coverage
+        if: steps.time.outputs.run == 'true'
+        run: python3 scripts/model_c_ranking_audit.py
       - name: Validate generated Model C review draft
         if: steps.time.outputs.run == 'true'
         run: python3 tests/test_model_c_draft_contract.py
@@ -73,7 +76,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/model-c-automated-draft.json data/model-c-qb-review-queue.json data/model-c-qb-ranked-news.json
+          git add data/model-c-automated-draft.json data/model-c-qb-review-queue.json data/model-c-qb-ranked-news.json data/model-c-qb-ranking-audit.json
           if [ -f data/model-c-official-qb-discovery.json ]; then git add data/model-c-official-qb-discovery.json; fi
           if [ -f data/model-c-qb-performance.json ]; then git add data/model-c-qb-performance.json; fi
           if [ -f data/model-c-qb-candidates.json ]; then git add data/model-c-qb-candidates.json; fi
