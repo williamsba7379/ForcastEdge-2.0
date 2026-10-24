@@ -1,6 +1,6 @@
 {
   "status": "DISCOVERY_ONLY_NOT_STARTER_CONFIRMATION",
-  "generatedAt": "2026-10-24T02:52:14.424219+00:00",
+  "generatedAt": "2026-10-24T02:58:49.468377+00:00",
   "automaticConfirmations": 0,
   "teams": [
     {
@@ -203,6 +203,393 @@
         {
           "url": "https://www.philadelphiaeagles.com/news/eagles-kyle-mccord-nfl-draft-quarterback-syracuse",
           "headline": "news Eagles select QB Kyle McCord with the No. 181 pick in the 2025 NFL Draft Apr 26, 2025",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        }
+      ]
+    },
+    {
+      "team": "Buffalo Bills",
+      "officialNewsIndex": "https://www.buffalobills.com/news/",
+      "fetchStatus": "OK",
+      "candidates": [
+        {
+          "url": "https://www.buffalobills.com/news/bills-issue-injury-update-on-te-dalton-kincaid",
+          "headline": "news Bills issue injury update on TE Dalton Kincaid Kincaid left the game in the second half and went into the blue medical tent",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buffalobills.com/news/bills-issue-injury-update-on-olb-bradley-chubb",
+          "headline": "news Bills issue injury update on OLB Bradley Chubb Chubb has a rib injury and was hurt during the first half of the game",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buffalobills.com/news/dj-moore-ed-oliver-among-buffalo-bills-inactives-at-raiders",
+          "headline": "news DJ Moore, Ed Oliver among Buffalo Bills inactives at Raiders The Buffalo Bills are listing five players as inactive for today's game against the Las Vegas Raiders.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buffalobills.com/news/buffalo-bills-injury-report-vs-raiders-week-6",
+          "headline": "news Buffalo Bills injury report vs. Raiders | Week 6 Five players will be questionable for Sunday's matchup against the Raiders.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buffalobills.com/news/we-re-here-for-a-business-trip-the-bills-practice-on-the-west-coast-ahead-of-week-6",
+          "headline": "news 'We're here for a business trip' | The Bills practice on the West Coast ahead of Week 6 The perks of staying out on the West Coast, what challenges Maxx Crosby brings, and Wednesday's injury report",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buffalobills.com/news/bills-issue-injury-update-on-rt-spencer-brown",
+          "headline": "news Bills issue injury update on RT Spencer Brown Tylan Grable, a sixth-round draft pick in 2024, has taken Brown's place at right tackle",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buffalobills.com/news/dj-moore-among-bills-inactives-vs-rams",
+          "headline": "news DJ Moore among Bills' inactives vs. Rams The Buffalo Bills are listing seven players as inactive for Monday's game against the Los Angeles Rams",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buffalobills.com/news/buffalo-bills-injury-report-vs-rams-week-5",
+          "headline": "news Buffalo Bills injury report vs. Rams | Week 5 Bills-Rams game designations for DL Ed Oliver, WR Joshua Palmer, WR DJ Moore, CB Dee Alford and DL Landon Jackson",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buffalobills.com/news/going-to-have-our-hands-full-how-the-bills-are-preparing-for-a-dynamic-l-a-rams-team",
+          "headline": "news 'Going to have our hands full' | How the Bills are preparing for a dynamic L.A. Rams team Preparing for the Rams' dynamic offense and defensive units, and Thursday's injury report",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buffalobills.com/news/bills-issue-injury-updates-on-ed-oliver-and-dee-alford",
+          "headline": "news Bills issue injury updates on Ed Oliver and Dee Alford DL Ed Oliver (knee) and CB Dee Alford (ankle) are questionable to return to Sunday's game against the Patriots",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buffalobills.com/news/bills-issue-injury-update-on-wr-dj-moore-vs-patriots-week-4",
+          "headline": "news Bills issue injury update on WR DJ Moore vs. Patriots Week 4 Moore left the game late in the second quarter",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buffalobills.com/news/buffalo-bills-inactives-vs-patriots-week-4",
+          "headline": "news Buffalo Bills inactives vs. Patriots Week 4 Bills are listing seven players as INACTIVE for today's game against the New England Patriots",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buffalobills.com/news/buffalo-bills-become-first-nfl-team-to-win-cannes-corporate-media-tv-award-with-josh-allen-mvp-reaction-video",
+          "headline": "news Buffalo Bills become first NFL team to win Cannes Corporate Media & TV Award with Josh Allen MVP reaction video Buffalo's Video Production team won a Gold Award for their behind-the-scenes video of quarterback Josh ",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buffalobills.com/news/buffalo-bills-injury-report-vs-patriots-week-4",
+          "headline": "news Buffalo Bills Injury Report vs. Patriots Week 4 Christian Benford did not practice during the week and is questionable for Week 4",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buffalobills.com/news/a-hard-team-to-game-plan-for-bills-prepare-for-the-new-england-patriots-after-uneven-week-3-outing",
+          "headline": "news 'A hard team to game plan for' | Bills prepare for the New England Patriots after uneven Week 3 outing Bouncing back after a bumpy win, the strengths of a struggling Patriot squad, and injury updates",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buffalobills.com/news/bills-coaches-offer-preview-on-qb-drake-maye-a-rookie-cb-steps-up-and-initial-week-4-injury-outlook",
+          "headline": "news Bills coaches offer preview on QB Drake Maye, a rookie CB steps up and initial Week 4 injury outlook Early preview on Pats QB Drake Maye, a Bills rookie CB steps up and initial Week 4 injury outlook",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buffalobills.com/news/bills-issue-injury-update-on-cb-christian-benford",
+          "headline": "news Bills issue injury update on CB Christian Benford Christian Benford left Sunday's game against the Chargers with a toe injury",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        }
+      ]
+    },
+    {
+      "team": "Carolina Panthers",
+      "officialNewsIndex": "https://www.panthers.com/news/",
+      "fetchStatus": "OK",
+      "candidates": [
+        {
+          "url": "https://www.panthers.com/news/three-takeaways-from-friday-including-a-baker-mayfield-reunion-injury-updates-and-more-monroe-freeling-jaycee-horn-mike-jackson",
+          "headline": "Three takeaways from Friday, including a Baker Mayfield reunion, injury updates, and more Oct 23, 2026 The Buccaneers announced that quarterback Baker Mayfield was good to go this week, which the Panthers expected. Plus ",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.panthers.com/news/week-7-friday-injury-report-jaelan-phillips-out-monroe-freeling-questionable",
+          "headline": "Week 7 Friday Injury Report: Jaelan Phillips out, Monroe Freeling questionable Oct 23, 2026 The Panthers will be without outside linebackers Jaelan Phillips and Thomas Incoom this week, and rookie tackle Monroe Freeling ",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.panthers.com/news/week-7-thursday-injury-report-still-no-jaelan-phillips-but-others-returned",
+          "headline": "Week 7 Thursday Injury Report: Still no Jaelan Phillips, but others returned Oct 22, 2026 The Panthers were still without outside linebackers Jaelan Phillips and Thomas Incoom on Thursday, but the rest of the roster part",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.panthers.com/news/three-takeaways-from-coordinators-including-bryce-young-s-acting-job-linebacker-play-and-more",
+          "headline": "Three takeaways from coordinators, including Bryce Young's acting job, linebacker play, and more Oct 22, 2026 The Panthers let tight end Mitchell Evans go back to his quarterback roots, as they try to mix it up in short-",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.panthers.com/news/panthers-waive-offensive-tackle-albert-reese",
+          "headline": "Panthers waive offensive tackle Oct 20, 2026 The team waived undrafted rookie offensive tackle Albert Reese, who was inactive for all five games this season.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.panthers.com/news/panthers-place-jaycee-horn-and-mike-jackson-on-injured-reserve",
+          "headline": "Panthers place Jaycee Horn and Mike Jackson on injured reserve Sep 30, 2026 Both starting cornerbacks went on IR Wednesday morning, leaving the Panthers with a number of young defensive options heading into Sunday night'",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.panthers.com/news/monday-brew-panthers-know-they-can-t-be-complacent-in-first-place-taylor-moton-tershawn-wharton-trevor-etienne",
+          "headline": "Monday Brew: Panthers know they can't be complacent in first place Oct 12, 2026 Dave Canales used Monday's team meeting after the bye week to address the Panthers place in the division standings. Plus, the benefit of fac",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        }
+      ]
+    },
+    {
+      "team": "Green Bay Packers",
+      "officialNewsIndex": "https://www.packers.com/news/",
+      "fetchStatus": "OK",
+      "candidates": [
+        {
+          "url": "https://www.packers.com/news/packers-rule-out-zaire-franklin-list-four-questionable-vs-lions-week-7-injury-report",
+          "headline": "Packers rule out Zaire Franklin, list four questionable vs. Lions | Week 7 Injury Report Veteran linebacker won\u2019t play Sunday after suffering injury at Thursday\u2019s practice",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.packers.com/news/packers-lions-injury-report-oct-22-2026",
+          "headline": "Packers-Lions Injury Report | Oct. 22, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.packers.com/news/surging-christian-watson-intends-to-keep-on-climbing-oct-14-2026",
+          "headline": "Surging Christian Watson intends to 'keep on climbing' Oct 14, 2026 Packers receiver took his game to next level after ACL injury",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.packers.com/news/settled-at-center-sean-rhyan-feeling-new-level-of-anticipation-sept-11-2026",
+          "headline": "Settled at center, Sean Rhyan feeling new level of anticipation Sep 11, 2026 Packers starting center excited for challenge Vikings present",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.packers.com/news/packers-qb-jordan-love-on-vikings-exotic-blitz-you-can-get-it-whenever-sept-9-2026",
+          "headline": "Packers QB Jordan Love on Vikings exotic blitz: 'You can get it whenever' Sep 09, 2026 Minnesota's scheme always a challenge, but Green Bay has experience to counter",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.packers.com/news/5-things-learned-from-gm-brian-gutekunst-about-packers-roster-sep-1-2026",
+          "headline": "5 things learned from GM Brian Gutekunst about Packers' roster Sep 01, 2026 Notes on key decisions and injury updates",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.packers.com/news/5-things-learned-at-packers-training-camp-aug-10-2026",
+          "headline": "5 things learned at Packers training camp \u2013 Aug. 10 Aug 10, 2026 Notes on several receivers and defensive backs, plus injury updates",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.packers.com/news/5-things-learned-at-packers-training-camp-aug-2-2026",
+          "headline": "5 things learned at Packers training camp \u2013 Aug. 2 Aug 02, 2026 Gruesome ankle injury couldn't keep Kamal Hadden down",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.packers.com/news/5-things-learned-at-packers-minicamp-day-1-june-9-2026",
+          "headline": "5 things learned at Packers minicamp \u2013 Day 1 Jun 09, 2026 Standouts on each side of the ball, plus points of emphasis and injury updates",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.packers.com/news/packers-cowboys-week-6-inactives-oct-18-2026",
+          "headline": "news CB Brandon Cisse active for Green Bay | Packers-Cowboys inactives Oct 18, 2026 DT Anthony Campbell also back in action for Packers",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.packers.com/news/game-recap-5-takeaways-from-packers-victory-over-bears-week-5-2026",
+          "headline": "news Game recap: 5 takeaways from Packers' victory over Bears Oct 11, 2026 Much-needed win comes with another tough injury on defense",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.packers.com/news/packers-bears-week-5-inactives-oct-11-2026",
+          "headline": "news G Kevin Zeitler active for Green Bay | Packers-Bears inactives Oct 11, 2026 DT Anthony Campbell will not play vs. Chicago",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.packers.com/news/packers-buccaneers-week-4-inactives-oct-4-2026",
+          "headline": "news Green Bay G Kevin Zeitler will not play at Tampa Bay | Packers-Buccaneers inactives Oct 04, 2026 Rookie Jager Burton active after being questionable",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.packers.com/news/packers-lions-injury-report-oct-21-2026",
+          "headline": "Packers-Lions Injury Report | Oct. 21, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        }
+      ]
+    },
+    {
+      "team": "Kansas City Chiefs",
+      "officialNewsIndex": "https://www.chiefs.com/news/",
+      "fetchStatus": "OK",
+      "candidates": [
+        {
+          "url": "https://www.chiefs.com/news/week-7-injury-report-chiefs-vs-seahawks-2026",
+          "headline": "news Week 7 Injury Report | Chiefs vs. Seahawks Oct 23, 2026 Injuries for the Chiefs Week 7 matchup against the Seattle Seahawks",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chiefs.com/news/week-6-inactive-players-chargers-vs-chiefs",
+          "headline": "news Week 6 Inactive Players | Chargers vs. Chiefs Oct 18, 2026 All the inactive players for the Chiefs Week 6 matchup against the Chargers",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chiefs.com/news/week-6-injury-report-chargers-vs-chiefs-2026",
+          "headline": "news Week 6 Injury Report | Chargers vs. Chiefs Oct 16, 2026 Injuries for the Chiefs Week 6 matchup against the Los Angeles Chargers",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chiefs.com/news/week-4-inactive-players-chiefs-vs-raiders",
+          "headline": "news Week 4 Inactive Players | Chiefs vs. Raiders Oct 04, 2026 All the inactive players for the Chiefs Week 4 matchup against the Las Vegas Raiders",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chiefs.com/news/week-4-injury-report-chiefs-vs-raiders-2026",
+          "headline": "news Week 4 Injury Report | Chiefs vs. Raiders Oct 02, 2026 Injuries for the Chiefs Week 4 matchup against the Las Vegas Raiders",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chiefs.com/news/week-3-inactive-players-chiefs-vs-dolphins",
+          "headline": "news Week 3 Inactive Players | Chiefs vs. Dolphins Sep 27, 2026 All the inactive players for the Chiefs Week 3 matchup against the Miami Dolphins",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chiefs.com/news/week-3-injury-report-chiefs-vs-dolphins-2026",
+          "headline": "news Week 3 Injury Report | Chiefs vs. Dolphins Sep 25, 2026 Injuries for the Chiefs Week 3 matchup against the Miami Dolphins",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chiefs.com/news/week-2-inactive-players-colts-vs-chiefs",
+          "headline": "news Week 2 Inactive Players | Colts vs. Chiefs Sep 20, 2026 All the inactive players for the Chiefs Week 2 matchup against the Colts",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chiefs.com/news/2026-week-2-injury-report-colts-vs-chiefs",
+          "headline": "news Week 2 Injury Report | Colts vs. Chiefs Sep 18, 2026 Injuries for the Chiefs Week 2 matchup against the Indianapolis Colts",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chiefs.com/news/week-1-inactive-players-broncos-vs-chiefs",
+          "headline": "news Week 1 Inactive Players | Broncos vs. Chiefs Sep 14, 2026 All the inactive players for the Chiefs Week 1 matchup against the Denver Broncos",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chiefs.com/news/week-1-injury-report-broncos-vs-chiefs-2026",
+          "headline": "news Week 1 Injury Report | Broncos vs. Chiefs Sep 12, 2026 Injuries for the Chiefs Week 1 matchup against the Denver Broncos",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chiefs.com/news/chiefs-chairman-and-ceo-clark-hunt-announces-peter-king-as-2026-recipient-of-the-lamar-hunt-award-for-professional-football",
+          "headline": "news Chiefs Chairman and CEO Clark Hunt Announces Peter King as 2026 Recipient of the Lamar Hunt Award for Professional Football Sep 01, 2026 Longtime journalist ecomes the 16th recipient of the prestigious award named f",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        }
+      ]
+    },
+    {
+      "team": "Seattle Seahawks",
+      "officialNewsIndex": "https://www.seahawks.com/news/",
+      "fetchStatus": "OK",
+      "candidates": [
+        {
+          "url": "https://www.seahawks.com/news/2026-week-7-injury-report-chiefs-at-seahawks",
+          "headline": "Week 7 Injury Report: Chiefs at Seahawks Details on the Seahawks\u2019 injury situation heading into their Week 7 game against the Chiefs.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.seahawks.com/news/zach-charbonnet-ruled-out-other-seahawks-injury-updates-from-mike-macdonald",
+          "headline": "Zach Charbonnet Ruled Out & Other Seahawks Injury Updates From Mike Macdonald",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.seahawks.com/news/seahawks-mailbag-sam-darnold-s-injury-white-throwback-uniforms-more",
+          "headline": "news Seahawks Mailbag: Sam Darnold's Injury, White Throwback Uniforms & More Sep 15, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.seahawks.com/news/zach-charbonnet-anthony-bradford-s-potential-return-other-seahawks-injury-updates",
+          "headline": "news Zach Charbonnet & Anthony Bradford's Potential Return & Other Seahawks Injury Updates Injury updates from Seahawks coach Mike Macdonald's Monday press conference.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.seahawks.com/news/jadarian-price-s-and-anthony-bradford-s-timelines-and-other-injury-updates-from-mike-macdonald",
+          "headline": "news Return Timelines for Jadarian Price, Anthony Bradford & Other Injury Updates From Mike Macdonald Injury updates from Seahawks coach Mike Macdonald after his team's Week 6 loss in Denver.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.seahawks.com/news/seahawks-qb-sam-darnold-after-two-interceptions-in-loss-to-broncos-i-ve-got-to-be-better",
+          "headline": "news Seahawks QB Sam Darnold After Two Interceptions In Loss To Broncos: 'I've Got To Be Better' Seahawks quarterback Sam Darnold put the blame on his shoulder after throwing two interceptions in Thursday's 17-14 loss to",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.seahawks.com/news/2026-week-6-seahawks-at-broncos-in-game-injury-updates",
+          "headline": "news Seahawks at Broncos In-Game Injury Updates: Elijah Arroyo Doubtful To Return To Thursday's Game In-Game Injury News From The Week 6 Matchup Between Seattle and Denver",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.seahawks.com/news/seahawks-at-broncos-week-6-inactives",
+          "headline": "news Seahawks at Broncos Week 6 Inactives A look at the inactive lists for the Seahawks' Week 6 game at Denver.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.seahawks.com/news/week-6-injury-report-seahawks-at-broncos",
+          "headline": "news Week 6 Injury Report: Seahawks at Broncos Details on the Seahawks' injury situation heading into their Week 6 game at Denver.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.seahawks.com/news/jaxon-smith-njigba-good-to-go-drake-thomas-ruled-out-for-seahawks-week-6-game-at-denver",
+          "headline": "news Jaxon Smith-Njigba Good To Go, Drake Thomas Ruled Out For Seahawks' Week 6 Game at Denver The Seahawks will be without starting linebacker Drake Thomas on Thursday, but Jaxon Smith-Njigba is good to go after injurin",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.seahawks.com/news/sam-darnold-s-steadiness-an-elite-skill-through-recent-turnovers",
+          "headline": "news Sam Darnold's 'Steadiness' An Elite Skill Through Recent Turnovers Seahawks quarterback Sam Darnold's ability to stay anchored through highs and lows is an \"incredible trait.\"",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.seahawks.com/news/2026-week-5-seahawks-vs-49ers-in-game-injury-updates",
+          "headline": "news Seahawks vs. 49ers In-Game Injury Updates: Drake Thomas Questionable With Ankle Injury In-Game Injury News From The Week 5 Matchup Between Seattle and San Francisco",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.seahawks.com/news/seahawks-vs-49ers-week-5-inactives",
+          "headline": "news Seahawks vs. 49ers Week 5 Inactives A look at the inactive lists for the Seahawks and 49ers ahead of their Week 5 game at Lumen Field.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.seahawks.com/news/week-5-injury-report-seahawks-vs-49ers",
+          "headline": "news Week 5 Injury Report: Seahawks vs. 49ers Details on the Seahawks' injury situation heading into their Week 5 game against the 49ers.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.seahawks.com/news/leonard-williams-feeling-good-other-seahawks-injury-updates-going-into-week-5",
+          "headline": "news Leonard Williams Feeling 'Good' & Other Seahawks Injury Updates Going Into Week 5 Seahawks injury updates ahead of their Week 5 game against the 49ers.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.seahawks.com/news/injury-updates/",
+          "headline": "Injury Updates",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        }
+      ]
+    },
+    {
+      "team": "Washington Commanders",
+      "officialNewsIndex": "https://www.commanders.com/news/",
+      "fetchStatus": "OK",
+      "candidates": [
+        {
+          "url": "https://www.commanders.com/news/laremy-tunsil-commanders-leadership-mentorship-josh-conerly-injury",
+          "headline": "news 'A real brother': Tunsil provides invaluable mentorship to Commanders O-Line",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.commanders.com/news/terry-mclaurin-knee-injury-commanders",
+          "headline": "news Terry McLaurin suffers season-ending knee injury vs. 49ers",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.commanders.com/news/inactives-commanders-vs-49ers-week-6",
+          "headline": "Inactives | Commanders vs. 49ers, Week 6 Oct 19, 2026 The Washington Commanders have declared the following players as inactive for their Week 6 game against the San Francisco 49ers.",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
