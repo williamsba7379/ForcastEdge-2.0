@@ -5,6 +5,8 @@ on:
       - '.github/workflows/model-c-draft.yml'
       - 'scripts/model_c_*.py'
       - 'tests/test_model_c_*.py'
+      - 'data/model-c-official-qb-source-review.json'
+      - 'data/model-c-qb-starters.json'
   schedule:
     - cron: '5 15 * * 3'
     - cron: '5 16 * * 3'
@@ -47,6 +49,9 @@ jobs:
       - name: Generate independent Model C review draft
         if: steps.time.outputs.run == 'true'
         run: python3 scripts/model_c_engine.py
+      - name: Build official quarterback source review queue
+        if: steps.time.outputs.run == 'true'
+        run: python3 scripts/model_c_qb_review_queue.py
       - name: Validate generated Model C review draft
         if: steps.time.outputs.run == 'true'
         run: python3 tests/test_model_c_draft_contract.py
@@ -55,7 +60,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/model-c-automated-draft.json
+          git add data/model-c-automated-draft.json data/model-c-qb-review-queue.json
           if [ -f data/model-c-qb-performance.json ]; then git add data/model-c-qb-performance.json; fi
           if [ -f data/model-c-qb-candidates.json ]; then git add data/model-c-qb-candidates.json; fi
           if [ -f data/model-c-qb-depthcharts.json ]; then git add data/model-c-qb-depthcharts.json; fi
