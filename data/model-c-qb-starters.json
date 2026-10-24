@@ -1,6 +1,6 @@
 {
   "season": 2026,
   "status": "NO_CONFIRMED_STARTERS_YET",
-  "instructions": "Populate only after checking a named team's official announcement, official game inactive list, or reliable sourced pregame report. 'starter' is the expected starting QB; 'expectedReplacement' is the backup to compare. Include source URL and ISO timestamp. An ESPN previous-game primary passer is NOT confirmation.",
+  "instructions": "Only a game-specific official team announcement explicitly naming the starter may be entered as CONFIRMED_STARTER. Required: team, gameId, starter, status CONFIRMED_STARTER, sourceType TEAM_ANNOUNCEMENT, source HTTPS URL, asOf timezone-aware pre-kickoff ISO timestamp within 7 days, reviewed true, and evidenceText quoting/paraphrasing the actual announcement. Official inactives alone establish unavailability, not the replacement starter. Previous-game primary passer and depth chart are never confirmation. No invented entries.",
   "teams": {}
 }
