@@ -1,0 +1,550 @@
+{
+  "status": "PASSAGES_ONLY_NOT_STARTER_CONFIRMATION",
+  "automaticConfirmations": 0,
+  "items": [
+    {
+      "team": "Carolina Panthers",
+      "gameId": "401873023",
+      "url": "https://www.panthers.com/news/three-takeaways-from-friday-including-a-baker-mayfield-reunion-injury-updates-and-more-monroe-freeling-jaycee-horn-mike-jackson",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [
+        "Quarterback Bryce Young and offensive coordinator Brad Idzik are seen during Carolina Panthers practice on Thursday, Oct. 22, 2026 at the Atrium Health Training Facility in Charlotte, NC.",
+        "Quarterback Bryce Young is seen during Carolina Panthers practice on Thursday, Oct. 22, 2026 at the Atrium Health Training Facility in Charlotte, NC.",
+        "Quarterback Bryce Young, guard Robert Hunt, tackle Rasheed Walker and running back Chuba Hubbard are seen during Carolina Panthers practice on Thursday, Oct. 22, 2026 at the Atrium Health Training Facility in Charlotte, NC."
+      ],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Carolina Panthers",
+      "gameId": "401873023",
+      "url": "https://www.panthers.com/news/week-7-friday-injury-report-jaelan-phillips-out-monroe-freeling-questionable",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [
+        "Quarterback Bryce Young and offensive coordinator Brad Idzik are seen during Carolina Panthers practice on Thursday, Oct. 22, 2026 at the Atrium Health Training Facility in Charlotte, NC.",
+        "Quarterback Bryce Young is seen during Carolina Panthers practice on Thursday, Oct. 22, 2026 at the Atrium Health Training Facility in Charlotte, NC.",
+        "Quarterback Bryce Young, guard Robert Hunt, tackle Rasheed Walker and running back Chuba Hubbard are seen during Carolina Panthers practice on Thursday, Oct. 22, 2026 at the Atrium Health Training Facility in Charlotte, NC."
+      ],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Green Bay Packers",
+      "gameId": "401873023",
+      "url": "https://www.packers.com/news/packers-lions-injury-report-oct-21-2026",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Green Bay Packers",
+      "gameId": "401873023",
+      "url": "https://www.packers.com/news/packers-lions-injury-report-oct-22-2026",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Baltimore Ravens",
+      "gameId": "401873026",
+      "url": "https://www.baltimoreravens.com/news/drake-lamar-jackson-stage-concert-my-quarterback",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Baltimore Ravens",
+      "gameId": "401873026",
+      "url": "https://www.baltimoreravens.com/news/lamar-jackson-ankle-injury-explains-whats-going-on-ravens-bengals",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [
+        "Lamar Jackson was in uniform to start practice for the first time since suffering an ankle injury on Oct. 4."
+      ],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Buffalo Bills",
+      "gameId": "401873026",
+      "url": "https://www.buffalobills.com/news/buffalo-bills-become-first-nfl-team-to-win-cannes-corporate-media-tv-award-with-josh-allen-mvp-reaction-video",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Buffalo Bills",
+      "gameId": "401873026",
+      "url": "https://www.buffalobills.com/news/bills-coaches-offer-preview-on-qb-drake-maye-a-rookie-cb-steps-up-and-initial-week-4-injury-outlook",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [
+        "There was potential concern for a Josh Allen lower body injury coming out of Sunday's game, but head coach Joe Brady does not believe it is anything to worry about right now."
+      ],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Tennessee Titans",
+      "gameId": "401873031",
+      "url": "https://www.tennesseetitans.com/news/titans-qb-cam-ward-knows-the-team-s-offense-needs-to-be-better",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Tennessee Titans",
+      "gameId": "401873031",
+      "url": "https://www.tennesseetitans.com/news/titans-sign-qb-cam-ward-to-rookie-contract",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Cincinnati Bengals",
+      "gameId": "401873031",
+      "url": "https://www.bengals.com/news/postgame-quick-hits-ja-marr-s-injury-jags-defense-beat-joe-burrow-s-big-passing-day",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Cincinnati Bengals",
+      "gameId": "401873031",
+      "url": "https://www.bengals.com/news/quick-hits-dax-hill-gets-another-call-erick-all-jr-wants-ball-and-win-not-praise-joe-burrow",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [
+        "After practice, Joe Burrow had his weekly media meet-up.",
+        "QB Joe Burrow during practice at Kettering Health Practice Fields, Wednesday, Sept. 30, 2026."
+      ],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Arizona Cardinals",
+      "gameId": "401873024",
+      "url": "https://www.azcardinals.com/news/cardinals-qb-jacoby-brissett-rich-with-teammate-currency-2026-season",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Arizona Cardinals",
+      "gameId": "401873024",
+      "url": "https://www.azcardinals.com/news/carson-beck-believes-cardinals-have-his-number-for-nfl-success",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [
+        "So it's 19, and frankly, Beck has more pressing concerns. Beck doesn't know what his rookie season will look like on the field, if at all. Jacoby Brissett didn't practice throughout the offseason because of his contract situation, and Gardner Minshew II took the first-unit reps. Beck also watched Kedon Slovis get a good chunk of the remaining reps "
+      ],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Dallas Cowboys",
+      "gameId": "401873024",
+      "url": "https://www.dallascowboys.com/news/dak-prescott-details-how-finding-rhythm-in-run-game-can-help-spark-cowboys-offense",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Dallas Cowboys",
+      "gameId": "401873024",
+      "url": "https://www.dallascowboys.com/news/mailbag-sending-a-message-or-changing-of-the-guard",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Minnesota Vikings",
+      "gameId": "401873030",
+      "url": "https://www.vikings.com/news/kyler-murray-starting-quarterback-week-3-buccaneers-injury",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [
+        "EAGAN, Minn. \u2014 Kyler Murray has cleared concussion protocol and will start at quarterback in Minnesota's Week 3 game at the Tampa Bay Buccaneers, Vikings Head Coach Kevin O'Connell said Monday."
+      ],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Minnesota Vikings",
+      "gameId": "401873030",
+      "url": "https://www.vikings.com/news/carson-wentz-starting-week-2-at-bears",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [
+        "Kyler Murray started Minnesota's season opener against Green Bay last week but was sidelined early with a concussion, prompting Wentz to step in. Murray progressed through the league-mandated protocol this week but was ruled out Friday."
+      ],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Detroit Lions",
+      "gameId": "401873030",
+      "url": "https://www.detroitlions.com/news/qb-jared-goff-named-detroit-lions-nominee-for-2022-walter-payton-nfl-man-of-the-",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Detroit Lions",
+      "gameId": "401873030",
+      "url": "https://www.detroitlions.com/news/qb-jared-goff-named-detroit-lions-nominee-for-walter-payton-nfl-man-of-the-year-award-presented-by-nationwide",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Las Vegas Raiders",
+      "gameId": "401873029",
+      "url": "https://www.raiders.com/news/las-vegas-raiders-los-angeles-rams-week-7-injury-report-2026",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Las Vegas Raiders",
+      "gameId": "401873029",
+      "url": "https://www.raiders.com/news/fernando-mendoza-raider-nation-and-the-latino-community-see-themselves",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "New York Jets",
+      "gameId": "401873029",
+      "url": "https://www.newyorkjets.com/news/jets-want-to-see-improvement-in-how-they-finish-games-after-road-loss-to-new-england-10-18-2026",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "New York Jets",
+      "gameId": "401873029",
+      "url": "https://www.newyorkjets.com/news/jets-week-6-notes-david-bailey-omar-cooper-jr-geno-smith-highlights-10-19-2026",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Cleveland Browns",
+      "gameId": "401873027",
+      "url": "https://www.clevelandbrowns.com/news/austin-barber-keeps-starting-job-at-right-guard-after-strong-week-1-performance",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [
+        "Quarterback Deshaun Watson (4) during practice on September 16, 2026 at CrossCountry Mortgage Campus.",
+        "Quarterback Deshaun Watson (4) during practice on September 16, 2026 at CrossCountry Mortgage Campus.",
+        "Running back Eric Gray (41) and Quarterback Dillon Gabriel (6) during practice on September 17, 2026 at CrossCountry Mortgage Campus."
+      ],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Cleveland Browns",
+      "gameId": "401873027",
+      "url": "https://www.clevelandbrowns.com/news/man-under-center-part-3-the-starter",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [
+        "Rookie quarterback Dillon Gabriel, who will serve as the backup to Flacco for the season, uses his opportunities in the quarterback meeting rooms or the practice field to ask questions, learn and develop a high level of communication with Flacco. And through those interactions and watching Flacco command the offense both on the practice field and o"
+      ],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Pittsburgh Steelers",
+      "gameId": "401873027",
+      "url": "https://www.steelers.com/news/from-the-press-room-steelers-at-buccaneers",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Pittsburgh Steelers",
+      "gameId": "401873027",
+      "url": "https://www.steelers.com/news/labriola-on-the-win-over-the-colts-x5664",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Atlanta Falcons",
+      "gameId": "401873025",
+      "url": "https://www.atlantafalcons.com/news/falcons-mailbag-is-this-hot-defensive-start-sustainable-is-the-quarterback-carousel-starting-up-again",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Atlanta Falcons",
+      "gameId": "401873025",
+      "url": "https://www.atlantafalcons.com/news/falcons-injury-report-atlanta-releases-lengthy-list-as-prep-for-49ers-continues",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Tampa Bay Buccaneers",
+      "gameId": "401873025",
+      "url": "https://www.buccaneers.com/news/roster-moves-jalen-mcmillan-ir-qb-added-practice-squad",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [
+        "The Tampa Bay Buccaneers made a series of roster moves on Wednesday, including the placement of wide receiver Jalen McMillan on injured reserve. The Buccaneers also promoted safety Ifeatu Melifonwu to the active roster and used the open practice squad spot to add quarterback Brett Rypien. Rypien gives the Buccaneers a third available passer with st",
+        "With Mayfield out, the Buccaneers will start rookie Jalon Daniels at quarterback, with Easton Stick, who is also currently on the practice squad, expected to be the primary reserve.",
+        "The Bucs used their practice squad elevation options in Week Six to bring up QB Easton Stick to backup Jalon Daniels and RB Josh Williams as a potential third option in the backfield if Sean Tucker can't play"
+      ],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Tampa Bay Buccaneers",
+      "gameId": "401873025",
+      "url": "https://www.buccaneers.com/news/bucs-elevate-qb-easton-stick-lb-caden-fordham-for-packers-game",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [
+        "The Bucs used their practice squad elevation options in Week Six to bring up QB Easton Stick to backup Jalon Daniels and RB Josh Williams as a potential third option in the backfield if Sean Tucker can't play",
+        "Tampa Bay Buccaneers Offensive Coordinator Zac Robinson spoke to the media following Thursday's Week 7 practice. OC Robinson discussed QB Jalon Daniels' development, continuing to improve the run game and QB Baker Mayfield's potential return.",
+        "Tampa Bay Buccaneers Quarterback Baker Mayfield spoke to the media following Thursday's Week 7 practice. QB Baker Mayfield discussed his recovery process, what he learned from the sidelines and taking things one day at a time."
+      ],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Indianapolis Colts",
+      "gameId": "401873028",
+      "url": "https://www.colts.com/news/practice-notebook-colts-cb-sauce-gardner-not-concerned-about-calf-injury",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Indianapolis Colts",
+      "gameId": "401873028",
+      "url": "https://www.colts.com/news/practice-notebook-several-including-justin-walley-return-to-practice",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Jacksonville Jaguars",
+      "gameId": "401873028",
+      "url": "https://www.jaguars.com/news/in-and-out-2026-week-6-murray-active-brown-and-matiscik-inactive-for-texans-vs-jaguars",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Los Angeles Chargers",
+      "gameId": "401873032",
+      "url": "https://www.chargers.com/news/justin-herbert-mvp-vote-odds-2026",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Los Angeles Chargers",
+      "gameId": "401873032",
+      "url": "https://www.chargers.com/news/justin-herbert-quentin-johnston-touchdown-mike-mcdaniel-2026",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Los Angeles Rams",
+      "gameId": "401873032",
+      "url": "https://www.therams.com/news/from-the-podium-head-coach-sean-mcvay-quarterback-matthew-stafford-coordinators-wide-receiver-puka-nacua-defensive-end-aaron-donald-preview-rams-week-7-matchup-with-raiders-press-conference-2026",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Los Angeles Rams",
+      "gameId": "401873032",
+      "url": "https://www.therams.com/news/injury-updates",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [
+        "Rams head coach Sean McVay provides injury updates on offensive lineman Kevin Dotson, quarterback Matthew Stafford, tight end Terrance Ferguson and cornerbacks Ahkello Witherspoon and Josh Wallace as they prepare for Sunday's divisional round game against the Bears."
+      ],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Kansas City Chiefs",
+      "gameId": "401873033",
+      "url": "https://www.chiefs.com/news/2026-week-2-injury-report-colts-vs-chiefs",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Kansas City Chiefs",
+      "gameId": "401873033",
+      "url": "https://www.chiefs.com/news/week-2-inactive-players-colts-vs-chiefs",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Denver Broncos",
+      "gameId": "401873033",
+      "url": "https://www.denverbroncos.com/news/i-have-to-play-better-broncos-qb-bo-nix-acknowledges-he-can-improve-highlights-belief-in-ability-to-respond",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [
+        "\"If you ask anybody that's in that building that comes and watches us practice, there's not one person that can say Bo Nix doesn't come out to practice and give us everything that he has to help us be successful \u2014 whether it's in the film room, preparing, understanding the game plan and coming out to practice,\" Sutton said. \"People can say what the"
+      ],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Denver Broncos",
+      "gameId": "401873033",
+      "url": "https://www.denverbroncos.com/news/injuryreport/injury-report-cb-pat-surtain-ii-and-rb-jonah-coleman-questionable-for-week-7-vs-cardinals-3-broncos-ruled-out",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "New England Patriots",
+      "gameId": "401873034",
+      "url": "https://www.patriots.com/news/how-patriots-qb-drake-maye-can-be-even-better-in-his-third-nfl-season",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "New England Patriots",
+      "gameId": "401873034",
+      "url": "https://www.patriots.com/news/patriots-sign-t-james-hudson-iii-and-cb-kindle-vildor-release-qb-josh-dobbs",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Miami Dolphins",
+      "gameId": "401873034",
+      "url": "https://www.miamidolphins.com/news/transcript-qb-malik-willis-press-conference-october-21",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [
+        "Malik Willis: Yeah, we figured that out last week on the bye week, before practice. He was like, \"oh, yeah, my brother's over there.\" I was like, \"oh, that's crazy. Y'all going at it?\" And he's like, \"no, we're chilling, but we can't talk this week.\""
+      ],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Miami Dolphins",
+      "gameId": "401873034",
+      "url": "https://www.miamidolphins.com/news/injury-report-week-7-dolphins-at-jets",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Philadelphia Eagles",
+      "gameId": "401873035",
+      "url": "https://www.philadelphiaeagles.com/news/spadaro-tanner-mckee-looks-to-win-the-trust-of-his-teammates-eagles-cowboys-2026",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Philadelphia Eagles",
+      "gameId": "401873035",
+      "url": "https://www.philadelphiaeagles.com/news/eagles-place-jalen-hurts-on-injured-reserve-sign-jaydon-blue-to-the-active-roster-2026-nfl-week-6-panthers",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [
+        "The Eagles announced on Saturday that they have placed quarterback Jalen Hurts on Injured Reserve due to the superficial blood clot in his calf."
+      ],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Washington Commanders",
+      "gameId": "401873035",
+      "url": "https://www.commanders.com/news/laremy-tunsil-commanders-leadership-mentorship-josh-conerly-injury",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [
+        "Tunsil might not be able to help the Commanders protect Jayden Daniels on game days, but the veteran is still finding ways to contribute while receiving treatment for his injury. He has been offering advice to the rest of the offensive linemen in the room and providing guidance on how they can improve their skill set. To the Commanders, it is more "
+      ],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Washington Commanders",
+      "gameId": "401873035",
+      "url": "https://www.commanders.com/news/terry-mclaurin-knee-injury-commanders",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Chicago Bears",
+      "gameId": "401873036",
+      "url": "https://www.chicagobears.com/news/bears-qb-caleb-williams-practices-in-full-but-game-status-still-uncertain",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [
+        "Bears quarterback Caleb Williams was a full participant in practice again Thursday, but it has not yet been determined whether he will start Sunday's game in Atlanta."
+      ],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Chicago Bears",
+      "gameId": "401873036",
+      "url": "https://www.chicagobears.com/news/caleb-williams-takes-another-step-toward-return-from-hamstring-injury",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [
+        "The Bears conducted a walk-through Wednesday. But had they held a regular practice, quarterback Caleb Williams would have been a full participant for the first time since injuring his hamstring in a Week 2 game against the Vikings."
+      ],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Seattle Seahawks",
+      "gameId": "401873036",
+      "url": "https://www.seahawks.com/news/sam-darnold-s-steadiness-an-elite-skill-through-recent-turnovers",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Seattle Seahawks",
+      "gameId": "401873036",
+      "url": "https://www.seahawks.com/news/seahawks-qb-sam-darnold-after-two-interceptions-in-loss-to-broncos-i-ve-got-to-be-better",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    }
+  ]
+}
