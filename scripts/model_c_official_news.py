@@ -16,6 +16,12 @@ DATA=pathlib.Path(__file__).resolve().parents[1]/"data"
 OFFICIAL_TEAM_NEWS={
     "Baltimore Ravens":"https://www.baltimoreravens.com/news/",
     "Philadelphia Eagles":"https://www.philadelphiaeagles.com/news/",
+    "Buffalo Bills":"https://www.buffalobills.com/news/",
+    "Carolina Panthers":"https://www.panthers.com/news/",
+    "Green Bay Packers":"https://www.packers.com/news/",
+    "Kansas City Chiefs":"https://www.chiefs.com/news/",
+    "Seattle Seahawks":"https://www.seahawks.com/news/",
+    "Washington Commanders":"https://www.commanders.com/news/",
 }
 TERMS=("quarterback","qb ","starter","starting","injury","inactive","lamar","hurts","mckee")
 
