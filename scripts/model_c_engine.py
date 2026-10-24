@@ -173,17 +173,33 @@ def main():
                 record=reported.get(name.casefold())
                 if record and str(record.get("status","")).casefold() not in ("active","healthy","available"):
                     flags.append({"name":name,"reportedStatus":record.get("status")})
-            # Check every listed QB: an injured starter may be absent from last-game passing data.
+            # Injury-feed classifications are advisory; only game-specific official
+            # confirmations can establish actual availability or starter identity.
+            categories=[]
             for name,record in reported.items():
-                status=str(record.get("status","")).casefold()
-                if status in ("out","doubtful","questionable","injured reserve","ir"):
+                status=str(record.get("status","")).strip().casefold()
+                details=str(record.get("description","")).casefold()
+                coach_decision="coach's decision" in details or "coaches decision" in details
+                if coach_decision:
+                    category="NON_INJURY_INACTIVE"
+                elif status in ("out","injured reserve","ir"):
+                    category="REPORTED_UNAVAILABLE"
+                elif status in ("questionable","doubtful"):
+                    category="UNCERTAIN"
+                elif status in ("active","available","healthy"):
+                    category="REPORTED_AVAILABLE"
+                else:
+                    category="UNKNOWN"
+                categories.append({"name":record.get("name"),"reportedStatus":record.get("status"),
+                    "category":category,"sourceType":"UNVERIFIED_REPORTING_FEED"})
+                if category in ("REPORTED_UNAVAILABLE","UNCERTAIN"):
                     if not any(str(x["name"]).casefold()==name for x in flags):
                         flags.append({"name":record.get("name"),"reportedStatus":record.get("status")})
             mismatch=bool(primary and depth and primary.casefold()!=depth.casefold())
             qb_alerts[side]={"reviewRequired":bool(flags or mismatch or qb["verification"]!="OFFICIAL_GAME_SPECIFIC"),
-                "injuryFlags":flags,"candidateMismatch":mismatch,
+                "injuryFlags":flags,"reportedQbAvailability":categories,"candidateMismatch":mismatch,
                 "starterConfirmed":qb["verification"]=="OFFICIAL_GAME_SPECIFIC",
-                "note":"Advisory only. No automatic starting-QB confirmation or point adjustment."}
+                "note":"Reported unavailable is not independently confirmed; available does not mean confirmed starter. Coach-decision inactive is not an injury. No automatic points."}
         qb_comparisons={side:qb_performance_comparison(g[side],(qb_declarations.get(g[side],{}) if quarterbacks[side]["verification"]=="OFFICIAL_GAME_SPECIFIC" else {}),qb_stats,now.astimezone(dt.timezone.utc),kickoff) for side in ("away","home")}
         games.append({"qbReviewAlerts":qb_alerts,"qbPerformanceComparisons":qb_comparisons,"quarterbacks":quarterbacks,"injuryReports":injury_reports,"injurySource":injury_snapshot.get("source"),
           "injuryRetrievedAt":injury_snapshot.get("retrievedAt"),"id":g["id"],"date":g["date"],"away":g["away"],"home":g["home"],"pick":pick,
