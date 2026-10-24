@@ -21,4 +21,6 @@ assert len(result["teams"])==32
 assert all(t["fetchStatus"]=="OK" for t in result["teams"])
 error=collect(fetch=lambda url:(_ for _ in ()).throw(OSError("offline")))
 assert all(t["fetchStatus"]=="ERROR" and not t["candidates"] for t in error["teams"])
-print("PASS: official-domain isolation, review-only discovery and network fail-closed")
+dynamic=extract_candidates('<a href="/news/bryce-young-update">Bryce Young discusses his status</a>',base,quarterback_names=("Bryce Young",))
+assert len(dynamic)==1 and dynamic[0]["url"].endswith("/bryce-young-update")
+print("PASS: official-domain isolation, dynamic QB names, review-only discovery and network fail-closed")
