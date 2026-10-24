@@ -27,6 +27,7 @@ def rank_link(game,link):
         score+=3;reasons.append("OPPONENT")
     match=re.search(r"\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+(\d{1,2}),?\s+(20\d{2})\b",link.get("headline",""),re.I)
     date=None
+    kickoff=dt.datetime.fromisoformat(game["kickoff"].replace("Z","+00:00")).date()
     if match:
         try:
             date=dt.date(int(match[3]),MONTHS[match[1].title()],int(match[2]))
