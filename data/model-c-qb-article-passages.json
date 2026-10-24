@@ -27,7 +27,8 @@
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Green Bay Packers",
@@ -36,7 +37,8 @@
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Baltimore Ravens",
@@ -45,7 +47,8 @@
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Baltimore Ravens",
@@ -53,10 +56,9 @@
       "url": "https://www.baltimoreravens.com/news/lamar-jackson-ankle-injury-explains-whats-going-on-ravens-bengals",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
-      "passages": [
-        "Lamar Jackson was in uniform to start practice for the first time since suffering an ankle injury on Oct. 4."
-      ],
-      "fetchStatus": "OK"
+      "passages": [],
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Buffalo Bills",
@@ -65,7 +67,8 @@
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Buffalo Bills",
@@ -73,10 +76,9 @@
       "url": "https://www.buffalobills.com/news/bills-coaches-offer-preview-on-qb-drake-maye-a-rookie-cb-steps-up-and-initial-week-4-injury-outlook",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
-      "passages": [
-        "There was potential concern for a Josh Allen lower body injury coming out of Sunday's game, but head coach Joe Brady does not believe it is anything to worry about right now."
-      ],
-      "fetchStatus": "OK"
+      "passages": [],
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Tennessee Titans",
@@ -85,7 +87,8 @@
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Tennessee Titans",
@@ -94,7 +97,8 @@
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Cincinnati Bengals",
@@ -103,7 +107,8 @@
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Cincinnati Bengals",
@@ -111,11 +116,9 @@
       "url": "https://www.bengals.com/news/quick-hits-dax-hill-gets-another-call-erick-all-jr-wants-ball-and-win-not-praise-joe-burrow",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
-      "passages": [
-        "After practice, Joe Burrow had his weekly media meet-up.",
-        "QB Joe Burrow during practice at Kettering Health Practice Fields, Wednesday, Sept. 30, 2026."
-      ],
-      "fetchStatus": "OK"
+      "passages": [],
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Arizona Cardinals",
@@ -124,7 +127,8 @@
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Arizona Cardinals",
@@ -132,10 +136,9 @@
       "url": "https://www.azcardinals.com/news/carson-beck-believes-cardinals-have-his-number-for-nfl-success",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
-      "passages": [
-        "So it's 19, and frankly, Beck has more pressing concerns. Beck doesn't know what his rookie season will look like on the field, if at all. Jacoby Brissett didn't practice throughout the offseason because of his contract situation, and Gardner Minshew II took the first-unit reps. Beck also watched Kedon Slovis get a good chunk of the remaining reps "
-      ],
-      "fetchStatus": "OK"
+      "passages": [],
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Dallas Cowboys",
@@ -144,7 +147,8 @@
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Dallas Cowboys",
@@ -153,7 +157,8 @@
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Minnesota Vikings",
@@ -161,10 +166,9 @@
       "url": "https://www.vikings.com/news/kyler-murray-starting-quarterback-week-3-buccaneers-injury",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
-      "passages": [
-        "EAGAN, Minn. \u2014 Kyler Murray has cleared concussion protocol and will start at quarterback in Minnesota's Week 3 game at the Tampa Bay Buccaneers, Vikings Head Coach Kevin O'Connell said Monday."
-      ],
-      "fetchStatus": "OK"
+      "passages": [],
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Minnesota Vikings",
@@ -172,10 +176,9 @@
       "url": "https://www.vikings.com/news/carson-wentz-starting-week-2-at-bears",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
-      "passages": [
-        "Kyler Murray started Minnesota's season opener against Green Bay last week but was sidelined early with a concussion, prompting Wentz to step in. Murray progressed through the league-mandated protocol this week but was ruled out Friday."
-      ],
-      "fetchStatus": "OK"
+      "passages": [],
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Detroit Lions",
@@ -184,7 +187,8 @@
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Detroit Lions",
@@ -193,7 +197,8 @@
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Las Vegas Raiders",
@@ -202,7 +207,8 @@
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Las Vegas Raiders",
@@ -211,7 +217,8 @@
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "New York Jets",
@@ -220,7 +227,8 @@
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "New York Jets",
@@ -229,7 +237,8 @@
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Cleveland Browns",
@@ -237,12 +246,9 @@
       "url": "https://www.clevelandbrowns.com/news/austin-barber-keeps-starting-job-at-right-guard-after-strong-week-1-performance",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
-      "passages": [
-        "Quarterback Deshaun Watson (4) during practice on September 16, 2026 at CrossCountry Mortgage Campus.",
-        "Quarterback Deshaun Watson (4) during practice on September 16, 2026 at CrossCountry Mortgage Campus.",
-        "Running back Eric Gray (41) and Quarterback Dillon Gabriel (6) during practice on September 17, 2026 at CrossCountry Mortgage Campus."
-      ],
-      "fetchStatus": "OK"
+      "passages": [],
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Cleveland Browns",
@@ -250,10 +256,9 @@
       "url": "https://www.clevelandbrowns.com/news/man-under-center-part-3-the-starter",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
-      "passages": [
-        "Rookie quarterback Dillon Gabriel, who will serve as the backup to Flacco for the season, uses his opportunities in the quarterback meeting rooms or the practice field to ask questions, learn and develop a high level of communication with Flacco. And through those interactions and watching Flacco command the offense both on the practice field and o"
-      ],
-      "fetchStatus": "OK"
+      "passages": [],
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Pittsburgh Steelers",
@@ -262,7 +267,8 @@
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Pittsburgh Steelers",
@@ -271,7 +277,8 @@
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Atlanta Falcons",
@@ -280,7 +287,8 @@
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Atlanta Falcons",
@@ -289,7 +297,8 @@
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Tampa Bay Buccaneers",
@@ -297,12 +306,9 @@
       "url": "https://www.buccaneers.com/news/roster-moves-jalen-mcmillan-ir-qb-added-practice-squad",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
-      "passages": [
-        "The Tampa Bay Buccaneers made a series of roster moves on Wednesday, including the placement of wide receiver Jalen McMillan on injured reserve. The Buccaneers also promoted safety Ifeatu Melifonwu to the active roster and used the open practice squad spot to add quarterback Brett Rypien. Rypien gives the Buccaneers a third available passer with st",
-        "With Mayfield out, the Buccaneers will start rookie Jalon Daniels at quarterback, with Easton Stick, who is also currently on the practice squad, expected to be the primary reserve.",
-        "The Bucs used their practice squad elevation options in Week Six to bring up QB Easton Stick to backup Jalon Daniels and RB Josh Williams as a potential third option in the backfield if Sean Tucker can't play"
-      ],
-      "fetchStatus": "OK"
+      "passages": [],
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Tampa Bay Buccaneers",
@@ -310,12 +316,9 @@
       "url": "https://www.buccaneers.com/news/bucs-elevate-qb-easton-stick-lb-caden-fordham-for-packers-game",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
-      "passages": [
-        "The Bucs used their practice squad elevation options in Week Six to bring up QB Easton Stick to backup Jalon Daniels and RB Josh Williams as a potential third option in the backfield if Sean Tucker can't play",
-        "Tampa Bay Buccaneers Offensive Coordinator Zac Robinson spoke to the media following Thursday's Week 7 practice. OC Robinson discussed QB Jalon Daniels' development, continuing to improve the run game and QB Baker Mayfield's potential return.",
-        "Tampa Bay Buccaneers Quarterback Baker Mayfield spoke to the media following Thursday's Week 7 practice. QB Baker Mayfield discussed his recovery process, what he learned from the sidelines and taking things one day at a time."
-      ],
-      "fetchStatus": "OK"
+      "passages": [],
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Indianapolis Colts",
@@ -324,7 +327,8 @@
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Indianapolis Colts",
@@ -333,7 +337,8 @@
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Jacksonville Jaguars",
@@ -342,7 +347,8 @@
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Los Angeles Chargers",
@@ -351,7 +357,8 @@
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Los Angeles Chargers",
@@ -360,7 +367,8 @@
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Los Angeles Rams",
@@ -369,7 +377,8 @@
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Los Angeles Rams",
@@ -377,10 +386,9 @@
       "url": "https://www.therams.com/news/injury-updates",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
-      "passages": [
-        "Rams head coach Sean McVay provides injury updates on offensive lineman Kevin Dotson, quarterback Matthew Stafford, tight end Terrance Ferguson and cornerbacks Ahkello Witherspoon and Josh Wallace as they prepare for Sunday's divisional round game against the Bears."
-      ],
-      "fetchStatus": "OK"
+      "passages": [],
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "DATE_UNVERIFIED"
     },
     {
       "team": "Kansas City Chiefs",
@@ -389,7 +397,8 @@
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Kansas City Chiefs",
@@ -398,7 +407,8 @@
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Denver Broncos",
@@ -406,10 +416,9 @@
       "url": "https://www.denverbroncos.com/news/i-have-to-play-better-broncos-qb-bo-nix-acknowledges-he-can-improve-highlights-belief-in-ability-to-respond",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
-      "passages": [
-        "\"If you ask anybody that's in that building that comes and watches us practice, there's not one person that can say Bo Nix doesn't come out to practice and give us everything that he has to help us be successful \u2014 whether it's in the film room, preparing, understanding the game plan and coming out to practice,\" Sutton said. \"People can say what the"
-      ],
-      "fetchStatus": "OK"
+      "passages": [],
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Denver Broncos",
@@ -418,7 +427,8 @@
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "New England Patriots",
@@ -427,7 +437,8 @@
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "New England Patriots",
@@ -436,7 +447,8 @@
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Miami Dolphins",
@@ -444,10 +456,9 @@
       "url": "https://www.miamidolphins.com/news/transcript-qb-malik-willis-press-conference-october-21",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
-      "passages": [
-        "Malik Willis: Yeah, we figured that out last week on the bye week, before practice. He was like, \"oh, yeah, my brother's over there.\" I was like, \"oh, that's crazy. Y'all going at it?\" And he's like, \"no, we're chilling, but we can't talk this week.\""
-      ],
-      "fetchStatus": "OK"
+      "passages": [],
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Miami Dolphins",
@@ -456,7 +467,8 @@
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Philadelphia Eagles",
@@ -465,7 +477,8 @@
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Philadelphia Eagles",
@@ -473,10 +486,9 @@
       "url": "https://www.philadelphiaeagles.com/news/eagles-place-jalen-hurts-on-injured-reserve-sign-jaydon-blue-to-the-active-roster-2026-nfl-week-6-panthers",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
-      "passages": [
-        "The Eagles announced on Saturday that they have placed quarterback Jalen Hurts on Injured Reserve due to the superficial blood clot in his calf."
-      ],
-      "fetchStatus": "OK"
+      "passages": [],
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Washington Commanders",
@@ -484,10 +496,9 @@
       "url": "https://www.commanders.com/news/laremy-tunsil-commanders-leadership-mentorship-josh-conerly-injury",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
-      "passages": [
-        "Tunsil might not be able to help the Commanders protect Jayden Daniels on game days, but the veteran is still finding ways to contribute while receiving treatment for his injury. He has been offering advice to the rest of the offensive linemen in the room and providing guidance on how they can improve their skill set. To the Commanders, it is more "
-      ],
-      "fetchStatus": "OK"
+      "passages": [],
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Washington Commanders",
@@ -496,7 +507,8 @@
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Chicago Bears",
@@ -504,10 +516,9 @@
       "url": "https://www.chicagobears.com/news/bears-qb-caleb-williams-practices-in-full-but-game-status-still-uncertain",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
-      "passages": [
-        "Bears quarterback Caleb Williams was a full participant in practice again Thursday, but it has not yet been determined whether he will start Sunday's game in Atlanta."
-      ],
-      "fetchStatus": "OK"
+      "passages": [],
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Chicago Bears",
@@ -515,10 +526,9 @@
       "url": "https://www.chicagobears.com/news/caleb-williams-takes-another-step-toward-return-from-hamstring-injury",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
-      "passages": [
-        "The Bears conducted a walk-through Wednesday. But had they held a regular practice, quarterback Caleb Williams would have been a full participant for the first time since injuring his hamstring in a Week 2 game against the Vikings."
-      ],
-      "fetchStatus": "OK"
+      "passages": [],
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Seattle Seahawks",
@@ -527,7 +537,8 @@
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Seattle Seahawks",
@@ -536,7 +547,8 @@
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     }
   ]
 }
