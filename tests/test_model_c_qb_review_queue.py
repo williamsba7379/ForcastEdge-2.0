@@ -56,3 +56,14 @@ assert result["items"][0]["quarterbackReviewPriority"]=="CONFLICT_REVIEW"
 assert result["items"][0]["tentativeExpectedStarter"] is None
 assert result["items"][0]["confirmedStarter"] is None
 print("PASS: conflicting QB indicators trigger review only")
+
+assert injury_priority([{"player":"Depth QB","reportedStatus":"Questionable"}],"Recent QB","Depth QB")=="ELEVATED"
+assert injury_priority([{"player":"Depth QB","reportedStatus":"Out"}],"Recent QB","Depth QB")=="HIGH"
+assert injury_priority([{"player":"Unrelated QB","reportedStatus":"Questionable"}],"Recent QB","Depth QB")=="STANDARD"
+conflict_injury={"season":2026,"week":8,"games":[{**draft["games"][0],"quarterbacks":{"away":{"recentPrimaryPasser":"Recent QB","depthChartQB1Candidate":"Depth QB"},"home":{}}}]}
+injury_feed={"items":[{"team":"Team A","player":"Depth QB","reportedStatus":"Questionable"}]}
+injury_result=build(conflict_injury,reviewed,{"teams":{}},injury_feed)
+assert injury_result["items"][0]["espnInjuryReviewPriority"]=="ELEVATED"
+assert injury_result["items"][0]["quarterbackIndicatorConflict"] is True
+assert injury_result["items"][0]["confirmedStarter"] is None
+print("PASS: depth-chart QB1 injury escalates review even when recent passer differs")
