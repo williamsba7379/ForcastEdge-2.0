@@ -7,6 +7,7 @@ on:
       - 'tests/test_model_c_*.py'
       - 'data/model-c-official-qb-source-review.json'
       - 'data/model-c-qb-starters.json'
+      - 'data/model-c-qb-reviewed-announcements.json'
   schedule:
     - cron: '5 15 * * 3'
     - cron: '5 16 * * 3'
@@ -68,6 +69,9 @@ jobs:
         if: steps.time.outputs.run == 'true'
         continue-on-error: true
         run: python3 scripts/model_c_depthchart_diagnostic.py
+      - name: Validate reviewed official QB announcements
+        if: steps.time.outputs.run == 'true'
+        run: python3 scripts/model_c_qb_verified_intake.py
       - name: Generate independent Model C review draft
         if: steps.time.outputs.run == 'true'
         run: python3 scripts/model_c_engine.py
@@ -120,6 +124,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -f data/model-c-qb-starters.json ]; then git add data/model-c-qb-starters.json; fi
           if [ -f data/model-c-qb-shadow.json ]; then git add data/model-c-qb-shadow.json; fi
           if [ -f data/model-c-qb-shadow-validation.json ]; then git add data/model-c-qb-shadow-validation.json; fi
           git add data/model-c-automated-draft.json data/model-c-qb-review-queue.json data/model-c-qb-ranked-news.json data/model-c-qb-ranking-audit.json
