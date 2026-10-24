@@ -31,6 +31,7 @@ jobs:
       - name: Verify QB feed parsing (offline fixture)
         if: steps.time.outputs.run == 'true'
         run: |
+          python3 tests/test_model_c_qb_review_queue.py
           python3 tests/test_model_c_starter_verification.py
           python3 tests/test_model_c_qb_feed.py
           python3 tests/test_model_c_qb_depthcharts.py
