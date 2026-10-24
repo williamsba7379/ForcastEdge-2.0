@@ -35,7 +35,7 @@ def extract_metadata(html):
     for key in ("article:published_time","datepublished","date","pubdate"):
         date=parse_date(m.get(key))
         if date:return {"publishedAt":date,"dateSource":key}
-    for match in re.finditer(r'<script[^>]*type=["\']application/ld\\+json["\'][^>]*>(.*?)</script>',html,re.I|re.S):
+    for match in re.finditer(r'<script[^>]*type=["\']application/ld\+json["\'][^>]*>(.*?)</script>',html,re.I|re.S):
         try:
             obj=json.loads(match[1])
             candidates=obj if isinstance(obj,list) else [obj]
