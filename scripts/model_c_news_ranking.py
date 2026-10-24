@@ -45,7 +45,10 @@ def rank_link(game,link):
         # Generic injury news is lower priority than an identified team QB.
         score-=2;reasons.append("NO_OWN_QB_NAME")
     # Exclude stale and postgame links from the actionable review shortlist.
-    eligible=date is not None and 0<=(kickoff-date).days<=7
+    # A generic or opponent-only report is not a team-QB status lead.
+    qb_status=own_player and any(contains(text,t) for t in ("injury","injured","questionable","doubtful","inactive","practice","ruled out","will start","named starter","starting","starter","return"))
+    eligible=date is not None and 0<=(kickoff-date).days<=7 and qb_status
+    if not qb_status:reasons.append("OWN_QB_STATUS_NOT_ESTABLISHED")
     if not eligible:reasons.append("NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST")
     return {"url":link["url"],"headline":link.get("headline",""),"score":score,"reasons":reasons,
             "dateFromHeadline":date.isoformat() if date else None,"pregameShortlistEligible":eligible,
