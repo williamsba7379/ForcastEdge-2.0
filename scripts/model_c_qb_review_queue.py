@@ -44,6 +44,8 @@ def build(draft, reviewed, declarations, espn=None):
             flags=alert.get("injuryFlags",[])
             espn_flags=[x for x in espn_items if x.get("team")==team and x.get("reportedStatus","").lower() not in ("active","healthy","available")]
             priority=injury_priority(espn_flags,candidate)
+            depth=qb.get("depthChartQB1Candidate")
+            agreement=bool(candidate and depth and candidate.casefold()==depth.casefold())
             items.append({
                 "gameId":game["id"],"kickoff":game["date"],"team":team,
                 "opponent":game["home" if side=="away" else "away"],
@@ -54,7 +56,10 @@ def build(draft, reviewed, declarations, espn=None):
                 "espnInjuryReviewPriority":priority,
                 "espnPriorityIsPrediction":False,
                 "recentPrimaryPasserCandidate":qb.get("recentPrimaryPasser"),
-                "depthChartCandidate":qb.get("depthChartQB1Candidate"),
+                "depthChartCandidate":depth,
+                "tentativeExpectedStarter":candidate if agreement else None,
+                "expectedStarterEvidence":"TWO_INDICATORS_AGREE_NOT_CONFIRMED" if agreement else "INSUFFICIENT_OR_CONFLICTING_INDICATORS",
+                "confirmedStarter":None,
                 "officialSourcesForManualReview":exact,
                 "historicalSourcesForContextOnly":historical,
                 "officialSourceSearchQueries":search_queries,
