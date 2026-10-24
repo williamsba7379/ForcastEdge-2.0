@@ -31,6 +31,7 @@ jobs:
       - name: Verify QB feed parsing (offline fixture)
         if: steps.time.outputs.run == 'true'
         run: |
+          python3 tests/test_model_c_official_news.py
           python3 tests/test_model_c_qb_review_queue.py
           python3 tests/test_model_c_starter_verification.py
           python3 tests/test_model_c_qb_feed.py
@@ -50,6 +51,10 @@ jobs:
       - name: Generate independent Model C review draft
         if: steps.time.outputs.run == 'true'
         run: python3 scripts/model_c_engine.py
+      - name: Discover official team QB news links (pilot, best effort)
+        if: steps.time.outputs.run == 'true'
+        continue-on-error: true
+        run: python3 scripts/model_c_official_news.py
       - name: Build official quarterback source review queue
         if: steps.time.outputs.run == 'true'
         run: python3 scripts/model_c_qb_review_queue.py
@@ -62,6 +67,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/model-c-automated-draft.json data/model-c-qb-review-queue.json
+          if [ -f data/model-c-official-qb-discovery.json ]; then git add data/model-c-official-qb-discovery.json; fi
           if [ -f data/model-c-qb-performance.json ]; then git add data/model-c-qb-performance.json; fi
           if [ -f data/model-c-qb-candidates.json ]; then git add data/model-c-qb-candidates.json; fi
           if [ -f data/model-c-qb-depthcharts.json ]; then git add data/model-c-qb-depthcharts.json; fi
