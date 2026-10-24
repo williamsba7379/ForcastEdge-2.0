@@ -1,6 +1,6 @@
 {
   "status": "DISCOVERY_ONLY_NOT_STARTER_CONFIRMATION",
-  "generatedAt": "2026-10-24T02:58:49.468377+00:00",
+  "generatedAt": "2026-10-24T03:02:23.182735+00:00",
   "automaticConfirmations": 0,
   "teams": [
     {
@@ -590,6 +590,332 @@
         {
           "url": "https://www.commanders.com/news/inactives-commanders-vs-49ers-week-6",
           "headline": "Inactives | Commanders vs. 49ers, Week 6 Oct 19, 2026 The Washington Commanders have declared the following players as inactive for their Week 6 game against the San Francisco 49ers.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        }
+      ]
+    },
+    {
+      "team": "Arizona Cardinals",
+      "officialNewsIndex": "https://www.azcardinals.com/news/",
+      "fetchStatus": "OK",
+      "candidates": [
+        {
+          "url": "https://www.azcardinals.com/news/injury-report",
+          "headline": "Injury Report",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.azcardinals.com/news/injury-report-week-7-vs-broncos",
+          "headline": "news Injury Report: Week 7 vs Broncos Check in on the health of the Cardinals heading into their Week 7 matchup with the Broncos",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.azcardinals.com/news/michael-wilson-can-live-with-his-perfect-completion-percentage",
+          "headline": "news Michael Wilson Can Live With His Perfect Completion Percentage Wide receiver's pass to QB Brissett could've been TD, but got first down",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.azcardinals.com/news/cardinals-qb-jacoby-brissett-rich-with-teammate-currency-2026-season",
+          "headline": "news Now QB1, Jacoby Brissett Rich With Respect From Teammates Cardinals veteran enters season as starter for fourth time in career",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.azcardinals.com/news/healthy-bj-ojulari-ready-to-remind-league-he-shouldn-t-be-forgotten",
+          "headline": "news Healthy BJ Ojulari Ready To Remind League He Shouldn't Be Forgotten Outside linebacker able to let loose, not worry about knee injury",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.azcardinals.com/news/cardinals-reunion-has-roy-lopez-hungry-for-more",
+          "headline": "news Cardinals Reunion Has Roy Lopez Hungry For More Defensive lineman had career-highs in sacks, QB hits with Detroit",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.azcardinals.com/news/carson-beck-believes-cardinals-have-his-number-for-nfl-success",
+          "headline": "news Carson Beck Believes Cardinals Have His Number For NFL Success Quarterback knew on draft night his preferred '11' was off-limits",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.azcardinals.com/news/time-has-finally-come-for-matt-schaub-to-coach-arizona-cardinals",
+          "headline": "news Time Has Finally Come For Matt Schaub To Coach Former NFL QB teaching same position for Cardinals",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.azcardinals.com/news/after-hosting-charity-basketball-game-mack-wilson-sr-ready-to-return-to-football",
+          "headline": "news After Hosting Charity Basketball Game, Mack Wilson Sr. Ready To Return To Football Linebacker returning from rib injury to spearhead Cardinals defense",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.azcardinals.com/news/longform/joshua-dobbs-flying-high-as-cardinals-quarterback",
+          "headline": "news Joshua Dobbs Flying High As Cardinals Quarterback",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.azcardinals.com/news/longform/drafting-kyler-murray-inside-the-cardinals-game-changing-qb-swap",
+          "headline": "news Drafting Kyler Murray: Inside The Cardinals' Game-Changing QB Swap",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.azcardinals.com/news/longform/cardinals-stint-gave-quarterback-kurt-warner-canton-hall-of-fame-cred",
+          "headline": "news Cardinals Stint Gave Kurt Warner Canton Cred",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        }
+      ]
+    },
+    {
+      "team": "Atlanta Falcons",
+      "officialNewsIndex": "https://www.atlantafalcons.com/news/",
+      "fetchStatus": "OK",
+      "candidates": [
+        {
+          "url": "https://www.atlantafalcons.com/news/falcons-injury-report-brian-robinson-divine-deablo-out-vs-49ers",
+          "headline": "Falcons injury report: RB Brian Robinson, LB Divine Deablo ruled out vs. 49ers Atlanta has several key players who are questionable for Sunday's matchup against the San Francisco 49ers.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.atlantafalcons.com/news/falcons-injury-report-atlanta-releases-lengthy-list-as-prep-for-49ers-continues",
+          "headline": "Falcons injury report: Atlanta releases lengthy list as prep for 49ers continues Gervon Dexter Sr. added to Thursday report with hamstring injury. Plus 21-day practice window opens for Cameron Williams.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.atlantafalcons.com/news/falcons-injury-report-kendal-daniels-aj-terrell-practice",
+          "headline": "Falcons injury report: Kendal Daniels practices fully",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.atlantafalcons.com/news/a-j-terrell-returns-practice-injured-reserve-window-falcons-secondary",
+          "headline": "Falcons begin A.J. Terrell's window to return from injured reserve Oct 21, 2026 Terrell returns to practice after missing time with a groin injury. The Falcons have 21 days to add their No. 1 corner to their active roste",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.atlantafalcons.com/news/kendal-daniels-positive-news-injury-chicago-bears",
+          "headline": "Kevin Stefanski provides update on LB Kendal Daniels: 'All positive news' Oct 19, 2026 Daniels was carted off during the third quarter of Sunday's game against the Chicago Bears. Initial testing was positive for the rook",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.atlantafalcons.com/news/falcons-release-cooper-rush-sign-andy-dalton",
+          "headline": "Falcons release QB Cooper Rush, sign QB Andy Dalton Oct 19, 2026 Rush joined the Falcons on the opening day of training camp and started the first two games of the season.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.atlantafalcons.com/news/falcons-preseason-miami-dolphins-michael-penix-starters",
+          "headline": "Falcons using final week of preseason to get feel for regular-season schedule Aug 24, 2026 Atlanta will play its starters on Friday night against the Miami Dolphins in its final preseason game.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.atlantafalcons.com/news/falcons-camp-report-team-prepares-for-joint-practices-with-indianapolis-colts",
+          "headline": "Falcons Camp Report: Team prepares for joint practices with Indianapolis Colts Aug 17, 2026 Kevin Stefanski details plan for starters over the next week of practices and second preseason game.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.atlantafalcons.com/news/falcons-mailbag-is-this-hot-defensive-start-sustainable-is-the-quarterback-carousel-starting-up-again",
+          "headline": "Falcons Mailbag: Is this hot defensive start sustainable? Is the quarterback carousel starting up again?",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.atlantafalcons.com/news/grady-jarrett-year-10-the-return-season-ending-injury-recovery",
+          "headline": "A peek behind the curtain of Grady Jarrett's return from season-ending injury Aug 29, 2024 It was a challenge unlike any other the Falcons defensive tackle had faced. He continued to work until he won.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.atlantafalcons.com/news/atlanta-falcons-sign-qb-trevor-siemian",
+          "headline": "Atlanta Falcons sign QB Trevor Siemian Mar 25, 2026 With more than 30 starts under his belt and 11 years in the NFL, Siemian brings valuable experience to the Falcons' quarterbacks room.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.atlantafalcons.com/news/tua-tagovailoa-competition-michael-penix-jr-falcons-quarterbacks",
+          "headline": "Tua Tagovailoa embracing competition: 5 takeaways from Falcons QB's press conference Mar 24, 2026 The Falcons' new quarterback spoke with Atlanta media members for the first time. Here is what we learned.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        }
+      ]
+    },
+    {
+      "team": "Cincinnati Bengals",
+      "officialNewsIndex": "https://www.bengals.com/news/",
+      "fetchStatus": "OK",
+      "candidates": [
+        {
+          "url": "https://www.bengals.com/news/bengals-ravens-week-7-2026-injury-report",
+          "headline": "news Week 7 Injury Report | Bengals at Ravens Take a look at the injury reports of the Cincinnati Bengals and the Baltimore Ravens leading into Week 7 of the 2026 season.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.bengals.com/news/quick-hits-joe-burrow-knows-it-s-gone-through-baltimore-bryan-cook-lamar-jackson-derrick-henry",
+          "headline": "news Quick Hits | Joe Knows: 'It's Gone Through Baltimore\"; Bryan Cook Eyes Re-Match With Lamar And King Henry",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.bengals.com/news/quick-hits-bengals-finding-health-amid-lamar-jackson-s-murky-status",
+          "headline": "news Quick Hits | Bengals Finding Health Amid Lamar Jackson's Murky Status",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.bengals.com/news/bengals-dolphins-inactives-week-5-2026",
+          "headline": "news Six Bengals Inactive For Week 5 Against Dolphins",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.bengals.com/news/b-j-hill-injury-josh-kattus-bengals-roster-update",
+          "headline": "news B.J. Hill Placed on Acive/Physically Unable to Perform List | BENGALS ROSTER UPDATE",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.bengals.com/news/postgame-quick-hits-ja-marr-s-injury-jags-defense-beat-joe-burrow-s-big-passing-day",
+          "headline": "news Postgame Quick Hits | Ja'Marr's Injury, Jags Defense Beat Joe Burrow's Big Passing Day",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.bengals.com/news/quick-hits-dax-hill-gets-another-call-erick-all-jr-wants-ball-and-win-not-praise-joe-burrow",
+          "headline": "news Quick Hits | Do-It-All Dax Hill Gets Another Call; Erick All Jr. Wants Ball/Win, Not Praise; Injury Update",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.bengals.com/news/jake-browning-s-24-7-preparation-on-display-in-return-as-starter",
+          "headline": "news Game Within The Game | Bengals QB Jake Browning's 24-7 Preparation On Display In Return As Starter",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        }
+      ]
+    },
+    {
+      "team": "Cleveland Browns",
+      "officialNewsIndex": "https://www.clevelandbrowns.com/news/",
+      "fetchStatus": "OK",
+      "candidates": [
+        {
+          "url": "https://www.clevelandbrowns.com/news/denzel-ward-questionable-for-week-7-vs-the-titans-injury-report",
+          "headline": "Denzel Ward questionable for Week 7 vs. the Titans | Injury Report Grant Delpit, Dylan Sampson and Quincy Williams also listed as questionable",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.clevelandbrowns.com/news/browns-announce-inactives-for-week-6-vs-the-ravens",
+          "headline": "Browns announce inactives for Week 6 vs. the Ravens",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.clevelandbrowns.com/news/austin-barber-keeps-starting-job-at-right-guard-after-strong-week-1-performance",
+          "headline": "Austin Barber keeps starting job at right guard after strong Week 1 performance",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.clevelandbrowns.com/news/todd-monken-provides-timeline-on-starting-quarterback-announcement-news-and-notes",
+          "headline": "Todd Monken provides timeline on starting quarterback announcement | News & Notes",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.clevelandbrowns.com/news/todd-monken-provides-updates-on-browns-quarterback-competition-news-and-notes",
+          "headline": "Todd Monken provides updates on Browns' quarterback competition | News & Notes",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.clevelandbrowns.com/news/man-under-center-part-3-the-starter",
+          "headline": "Man Under Center Part 3: The Starter",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        }
+      ]
+    },
+    {
+      "team": "Dallas Cowboys",
+      "officialNewsIndex": "https://www.dallascowboys.com/news/",
+      "fetchStatus": "OK",
+      "candidates": [
+        {
+          "url": "https://www.dallascowboys.com/news/dak-prescott-details-how-finding-rhythm-in-run-game-can-help-spark-cowboys-offense",
+          "headline": "Ground Control Cowboys QB Dak Prescott says Dallas is \"urgent to get it done now\" in terms of stacking wins. If they want to do so, they'll need to find their footing again on offense, which begins with getting a spark i",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.dallascowboys.com/news/demarvion-overshown-to-return-vs-eagles-on-mnf",
+          "headline": "DeMarvion Overshown to return vs. Eagles on MNF After being sidelined the last several games with injury, DeMarvion Overshown confirmed he has been medically cleared to return for MNF versus the Eagles.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.dallascowboys.com/news/cowboys-injury-roundup-overshown-durant-trending-toward-return-vs-eagles",
+          "headline": "Cowboys Injury Roundup: Overshown, Durant trending toward return vs. Eagles DeMarvion Overshown, Cobie Durant headline potential returns from injury, but the Cowboys are still tending to some IR players in Week 7.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.dallascowboys.com/news/mailbag-sending-a-message-or-changing-of-the-guard",
+          "headline": "Mailbag: Sending a message or changing of the guard? By starting Malachi Lawrence and Brevyn Spann-Ford, do you think the team was just trying to send a message to Donovan Ezeiruaku and Jake Ferguson, respectively, or ar",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        }
+      ]
+    },
+    {
+      "team": "Denver Broncos",
+      "officialNewsIndex": "https://www.denverbroncos.com/news/",
+      "fetchStatus": "OK",
+      "candidates": [
+        {
+          "url": "https://www.denverbroncos.com/news/injuryreport/",
+          "headline": "",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.denverbroncos.com/news/injuryreport/injury-report-cb-pat-surtain-ii-and-rb-jonah-coleman-questionable-for-week-7-vs-cardinals-3-broncos-ruled-out",
+          "headline": "Injury Report: CB Pat Surtain II and RB Jonah Coleman questionable for Week 7 vs. Cardinals, 3 Broncos ruled out A pair of Broncos could return for Denver\u2019s Week 7 matchup against the Cardinals.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.denverbroncos.com/news/i-have-to-play-better-broncos-qb-bo-nix-acknowledges-he-can-improve-highlights-belief-in-ability-to-respond",
+          "headline": "'I have to play better': Broncos QB Bo Nix acknowledges he can improve, highlights belief in ability to respond",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.denverbroncos.com/news/injuryreport/injury-report-cb-pat-surtain-ii-returns-to-practice-ahead-of-broncos-week-7-game-vs-cardinals",
+          "headline": "Injury Report: CB Pat Surtain II returns to practice ahead of Broncos' Week 7 game vs. Cardinals",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.denverbroncos.com/news/injuryreport/injury-report-cb-pat-surtain-ii-remains-limited-practice-participant-ahead-of-week-7-game-vs-cardinals",
+          "headline": "Injury Report: CB Pat Surtain II remains limited practice participant ahead of Week 7 game vs. Cardinals Running back Jonah Coleman (ankle), who was designated for return from injured reserve on Wednesday, was a full pra",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        }
+      ]
+    },
+    {
+      "team": "Detroit Lions",
+      "officialNewsIndex": "https://www.detroitlions.com/news/",
+      "fetchStatus": "OK",
+      "candidates": [
+        {
+          "url": "https://www.detroitlions.com/news/lions-vs-packers-injury-report-oct-23-mays-branch-yasin",
+          "headline": "news Lions vs. Packers injury report: Oct. 23 Lions vs. Packers injury report and game designations for Friday, October 23.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.detroitlions.com/news/qb-jared-goff-named-detroit-lions-nominee-for-walter-payton-nfl-man-of-the-year-award-presented-by-nationwide",
+          "headline": "news QB Jared Goff Named Detroit Lions' Nominee for Walter Payton NFL Man of the Year Award Presented by Nationwide",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.detroitlions.com/news/qb-jared-goff-named-detroit-lions-nominee-for-2022-walter-payton-nfl-man-of-the-",
+          "headline": "news QB Jared Goff named Detroit Lions' nominee for 2022 Walter Payton NFL Man of the Year Award presented by Nationwide",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        }
+      ]
+    },
+    {
+      "team": "Houston Texans",
+      "officialNewsIndex": "https://www.houstontexans.com/news/",
+      "fetchStatus": "OK",
+      "candidates": [
+        {
+          "url": "https://www.houstontexans.com/news/week-7-injury-report-texans-vs-giants",
+          "headline": "news Week 7 Injury Report | Texans vs Giants Week 7 injury updates presented by Shariff Injury Lawyers for the Houston Texans versus New York Giants game.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.houstontexans.com/news/cj-stroud-afc-offensive-player-of-the-week-6",
+          "headline": "Houston Texans QB C.J. Stroud Named AFC Offensive Player Of The Week",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.houstontexans.com/news/texans-inactives-week-6-at-jacksonville-jaguars",
+          "headline": "Texans Inactives: Week 6 at Jacksonville Jaguars",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.houstontexans.com/news/week-6-injury-report-texans-at-jaguars",
+          "headline": "Week 6 Injury Report | Texans at Jaguars",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
