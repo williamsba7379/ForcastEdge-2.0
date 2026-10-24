@@ -33,12 +33,15 @@ def rank_link(game,link):
             kickoff=dt.datetime.fromisoformat(game["kickoff"].replace("Z","+00:00")).date()
             delta=(kickoff-date).days
             if 0<=delta<=7:score+=3;reasons.append("RECENT_PRE_GAME")
-            elif delta<0:score-=8;reasons.append("AFTER_KICKOFF")
-            else:score-=3;reasons.append("OLD_NEWS")
+            elif delta<0:score-=15;reasons.append("AFTER_KICKOFF")
+            else:score-=10;reasons.append("OLD_NEWS")
         except ValueError:date=None
     if date is None:reasons.append("DATE_UNVERIFIED")
+    # Exclude stale and postgame links from the actionable review shortlist.
+    eligible=date is not None and 0<=(kickoff-date).days<=7
+    if not eligible:reasons.append("NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST")
     return {"url":link["url"],"headline":link.get("headline",""),"score":score,"reasons":reasons,
-            "dateFromHeadline":date.isoformat() if date else None,
+            "dateFromHeadline":date.isoformat() if date else None,"pregameShortlistEligible":eligible,
             "status":"UNVERIFIED_LINK_FOR_HUMAN_REVIEW"}
 
 def build(discovery,queue):
@@ -47,7 +50,7 @@ def build(discovery,queue):
     for game in queue["items"]:
         source=teams.get(game["team"],{})
         links=[rank_link(game,link) for link in source.get("candidates",[])]
-        links.sort(key=lambda x:(-x["score"],x["url"]))
+        links.sort(key=lambda x:(not x["pregameShortlistEligible"],-x["score"],x["url"]))
         items.append({"gameId":game["gameId"],"team":game["team"],"opponent":game["opponent"],
                       "fetchStatus":source.get("fetchStatus","MISSING"),"reviewRequired":True,
                       "rankedLinks":links})
