@@ -14,11 +14,12 @@
         {
           "url": "https://www.panthers.com/news/three-takeaways-from-friday-including-a-baker-mayfield-reunion-injury-updates-and-more-monroe-freeling-jaycee-horn-mike-jackson",
           "headline": "Three takeaways from Friday, including a Baker Mayfield reunion, injury updates, and more Oct 23, 2026 The Buccaneers announced that quarterback Baker Mayfield was good to go this week, which the Panthers expected. Plus ",
-          "score": 8,
+          "score": 6,
           "reasons": [
             "QB_TERMS",
             "STATUS_TERMS",
-            "RECENT_PRE_GAME"
+            "RECENT_PRE_GAME",
+            "NO_OWN_QB_NAME"
           ],
           "dateFromHeadline": "2026-10-23",
           "pregameShortlistEligible": true,
@@ -27,10 +28,11 @@
         {
           "url": "https://www.panthers.com/news/week-7-friday-injury-report-jaelan-phillips-out-monroe-freeling-questionable",
           "headline": "Week 7 Friday Injury Report: Jaelan Phillips out, Monroe Freeling questionable Oct 23, 2026 The Panthers will be without outside linebackers Jaelan Phillips and Thomas Incoom this week, and rookie tackle Monroe Freeling ",
-          "score": 5,
+          "score": 3,
           "reasons": [
             "STATUS_TERMS",
-            "RECENT_PRE_GAME"
+            "RECENT_PRE_GAME",
+            "NO_OWN_QB_NAME"
           ],
           "dateFromHeadline": "2026-10-23",
           "pregameShortlistEligible": true,
@@ -39,9 +41,9 @@
         {
           "url": "https://www.panthers.com/news/three-takeaways-from-coordinators-including-bryce-young-s-acting-job-linebacker-play-and-more",
           "headline": "Three takeaways from coordinators, including Bryce Young's acting job, linebacker play, and more Oct 22, 2026 The Panthers let tight end Mitchell Evans go back to his quarterback roots, as they try to mix it up in short-",
-          "score": -2,
+          "score": 0,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "QB_TERMS",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
@@ -53,11 +55,12 @@
         {
           "url": "https://www.panthers.com/news/panthers-place-jaycee-horn-and-mike-jackson-on-injured-reserve",
           "headline": "Panthers place Jaycee Horn and Mike Jackson on injured reserve Sep 30, 2026 Both starting cornerbacks went on IR Wednesday morning, leaving the Panthers with a number of young defensive options heading into Sunday night'",
-          "score": -5,
+          "score": -7,
           "reasons": [
             "QB_TERMS",
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-09-30",
@@ -67,10 +70,11 @@
         {
           "url": "https://www.panthers.com/news/panthers-waive-offensive-tackle-albert-reese",
           "headline": "Panthers waive offensive tackle Oct 20, 2026 The team waived undrafted rookie offensive tackle Albert Reese, who was inactive for all five games this season.",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-20",
@@ -80,10 +84,11 @@
         {
           "url": "https://www.panthers.com/news/week-7-thursday-injury-report-still-no-jaelan-phillips-but-others-returned",
           "headline": "Week 7 Thursday Injury Report: Still no Jaelan Phillips, but others returned Oct 22, 2026 The Panthers were still without outside linebackers Jaelan Phillips and Thomas Incoom on Thursday, but the rest of the roster part",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-22",
@@ -93,9 +98,10 @@
         {
           "url": "https://www.panthers.com/news/monday-brew-panthers-know-they-can-t-be-complacent-in-first-place-taylor-moton-tershawn-wharton-trevor-etienne",
           "headline": "Monday Brew: Panthers know they can't be complacent in first place Oct 12, 2026 Dave Canales used Monday's team meeting after the bye week to address the Panthers place in the division standings. Plus, the benefit of fac",
-          "score": -10,
+          "score": -12,
           "reasons": [
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-12",
@@ -114,10 +120,11 @@
         {
           "url": "https://www.packers.com/news/packers-lions-injury-report-oct-21-2026",
           "headline": "Packers-Lions Injury Report | Oct. 21, 2026",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -127,23 +134,11 @@
         {
           "url": "https://www.packers.com/news/packers-lions-injury-report-oct-22-2026",
           "headline": "Packers-Lions Injury Report | Oct. 22, 2026",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
-            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
-          ],
-          "dateFromHeadline": null,
-          "pregameShortlistEligible": false,
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.packers.com/news/packers-rule-out-zaire-franklin-list-four-questionable-vs-lions-week-7-injury-report",
-          "headline": "Packers rule out Zaire Franklin, list four questionable vs. Lions | Week 7 Injury Report Veteran linebacker won\u2019t play Sunday after suffering injury at Thursday\u2019s practice",
-          "score": 2,
-          "reasons": [
-            "STATUS_TERMS",
-            "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -153,9 +148,9 @@
         {
           "url": "https://www.packers.com/news/packers-qb-jordan-love-on-vikings-exotic-blitz-you-can-get-it-whenever-sept-9-2026",
           "headline": "Packers QB Jordan Love on Vikings exotic blitz: 'You can get it whenever' Sep 09, 2026 Minnesota's scheme always a challenge, but Green Bay has experience to counter",
-          "score": -2,
+          "score": 0,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "QB_TERMS",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
@@ -165,12 +160,27 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.packers.com/news/packers-rule-out-zaire-franklin-list-four-questionable-vs-lions-week-7-injury-report",
+          "headline": "Packers rule out Zaire Franklin, list four questionable vs. Lions | Week 7 Injury Report Veteran linebacker won\u2019t play Sunday after suffering injury at Thursday\u2019s practice",
+          "score": 0,
+          "reasons": [
+            "STATUS_TERMS",
+            "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.packers.com/news/settled-at-center-sean-rhyan-feeling-new-level-of-anticipation-sept-11-2026",
           "headline": "Settled at center, Sean Rhyan feeling new level of anticipation Sep 11, 2026 Packers starting center excited for challenge Vikings present",
-          "score": -7,
+          "score": -9,
           "reasons": [
             "QB_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-09-11",
@@ -180,10 +190,11 @@
         {
           "url": "https://www.packers.com/news/5-things-learned-at-packers-minicamp-day-1-june-9-2026",
           "headline": "5 things learned at Packers minicamp \u2013 Day 1 Jun 09, 2026 Standouts on each side of the ball, plus points of emphasis and injury updates",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-06-09",
@@ -193,10 +204,11 @@
         {
           "url": "https://www.packers.com/news/5-things-learned-at-packers-training-camp-aug-10-2026",
           "headline": "5 things learned at Packers training camp \u2013 Aug. 10 Aug 10, 2026 Notes on several receivers and defensive backs, plus injury updates",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-08-10",
@@ -206,10 +218,11 @@
         {
           "url": "https://www.packers.com/news/5-things-learned-at-packers-training-camp-aug-2-2026",
           "headline": "5 things learned at Packers training camp \u2013 Aug. 2 Aug 02, 2026 Gruesome ankle injury couldn't keep Kamal Hadden down",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-08-02",
@@ -219,10 +232,11 @@
         {
           "url": "https://www.packers.com/news/5-things-learned-from-gm-brian-gutekunst-about-packers-roster-sep-1-2026",
           "headline": "5 things learned from GM Brian Gutekunst about Packers' roster Sep 01, 2026 Notes on key decisions and injury updates",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-09-01",
@@ -232,10 +246,11 @@
         {
           "url": "https://www.packers.com/news/game-recap-5-takeaways-from-packers-victory-over-bears-week-5-2026",
           "headline": "news Game recap: 5 takeaways from Packers' victory over Bears Oct 11, 2026 Much-needed win comes with another tough injury on defense",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-11",
@@ -245,10 +260,11 @@
         {
           "url": "https://www.packers.com/news/packers-buccaneers-week-4-inactives-oct-4-2026",
           "headline": "news Green Bay G Kevin Zeitler will not play at Tampa Bay | Packers-Buccaneers inactives Oct 04, 2026 Rookie Jager Burton active after being questionable",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-04",
@@ -258,10 +274,11 @@
         {
           "url": "https://www.packers.com/news/surging-christian-watson-intends-to-keep-on-climbing-oct-14-2026",
           "headline": "Surging Christian Watson intends to 'keep on climbing' Oct 14, 2026 Packers receiver took his game to next level after ACL injury",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-14",
@@ -271,9 +288,10 @@
         {
           "url": "https://www.packers.com/news/packers-bears-week-5-inactives-oct-11-2026",
           "headline": "news G Kevin Zeitler active for Green Bay | Packers-Bears inactives Oct 11, 2026 DT Anthony Campbell will not play vs. Chicago",
-          "score": -10,
+          "score": -12,
           "reasons": [
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-11",
@@ -283,9 +301,10 @@
         {
           "url": "https://www.packers.com/news/packers-cowboys-week-6-inactives-oct-18-2026",
           "headline": "news CB Brandon Cisse active for Green Bay | Packers-Cowboys inactives Oct 18, 2026 DT Anthony Campbell also back in action for Packers",
-          "score": -10,
+          "score": -12,
           "reasons": [
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-18",
@@ -304,9 +323,9 @@
         {
           "url": "https://www.baltimoreravens.com/news/drake-lamar-jackson-stage-concert-my-quarterback",
           "headline": "news SociaLight: Drake Brings 'My Quarterback' Lamar Jackson on Stage Jul 30, 2023",
-          "score": -2,
+          "score": 0,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "QB_TERMS",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
@@ -318,9 +337,9 @@
         {
           "url": "https://www.baltimoreravens.com/news/lamar-jackson-ankle-injury-explains-whats-going-on-ravens-bengals",
           "headline": "news Lamar Jackson Explains What's Going on With His Ankle Injury Oct 23, 2026 Lamar Jackson shared the nature of his ankle injury and how he\u2019s feeling this week.",
-          "score": -3,
+          "score": -1,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "STATUS_TERMS",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
@@ -332,9 +351,9 @@
         {
           "url": "https://www.baltimoreravens.com/news/lamar-jackson-injury-report-ravens-bengals-jaylinn-hawkins-tavius-robinson-2026",
           "headline": "news Lamar Jackson 'Headed in the Right Direction,' But Two Defensive Starters Ruled Out Oct 23, 2026 Ravens safety Jaylinn Hawkins (knee) and outside linebacker Tavius Robinson (pectoral) are not at the start of practic",
-          "score": -3,
+          "score": -1,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "STATUS_TERMS",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
@@ -346,9 +365,9 @@
         {
           "url": "https://www.baltimoreravens.com/news/lamar-jackson-injury-report-ravens-practice-start-ankle-2026",
           "headline": "news Lamar Jackson Takes a Step Forward, But Still Limited at Practice Oct 22, 2026",
-          "score": -3,
+          "score": -1,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "STATUS_TERMS",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
@@ -360,9 +379,9 @@
         {
           "url": "https://www.baltimoreravens.com/news/lamar-jackson-injury-timeline-return-jaylinn-hawkins-trade-deadline-elijah-sarratt-ravens-mailbag",
           "headline": "news Mailbag: What's Lamar Jackson's Timeline for Return? Oct 21, 2026",
-          "score": -3,
+          "score": -1,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "STATUS_TERMS",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
@@ -374,9 +393,9 @@
         {
           "url": "https://www.baltimoreravens.com/news/lamar-jackson-ravens-injury-report-cam-jurgens-tj-tampa-returns-practice-injured-reserve",
           "headline": "news Lamar Jackson Returns to Practice as a Limited Participant Oct 21, 2026",
-          "score": -3,
+          "score": -1,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "STATUS_TERMS",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
@@ -388,9 +407,9 @@
         {
           "url": "https://www.baltimoreravens.com/news/deandre-hopkins-ravens-met-gala-lamar-jackson",
           "headline": "news SociaLight: DeAndre Hopkins Shows Out at Met Gala May 06, 2025",
-          "score": -5,
+          "score": -3,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
@@ -401,9 +420,9 @@
         {
           "url": "https://www.baltimoreravens.com/news/jesse-minter-lamar-jackson-ankle-still-day-day-monday-week-7-injuries-rashod-bateman-cam-jurgens-trey-hendrickson-tyler-loop-critical-misses",
           "headline": "news News & Notes: Jesse Minter Gives Health Update on Lamar Jackson Oct 19, 2026",
-          "score": -5,
+          "score": -3,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
@@ -414,9 +433,9 @@
         {
           "url": "https://www.baltimoreravens.com/news/lamar-jackson-germany-football-soccer-skills-shows-off-socialight",
           "headline": "news SociaLight: Lamar Jackson Shows Off His Skills in Germany Apr 22, 2024",
-          "score": -5,
+          "score": -3,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
@@ -427,9 +446,9 @@
         {
           "url": "https://www.baltimoreravens.com/news/lamar-jackson-kids-freak-out-high-five-ravens-training-camp",
           "headline": "news SociaLight: Watch Kids Freak Out After High-Fiving Lamar Jackson Jul 31, 2023",
-          "score": -5,
+          "score": -3,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
@@ -440,9 +459,9 @@
         {
           "url": "https://www.baltimoreravens.com/news/lamar-jackson-locked-in-playoffs-cover-story-super-bowl-2023",
           "headline": "Cover Story: Why 'Locked In' Lamar Jackson Is Ready to Take the Ravens Farther Jan 15, 2024",
-          "score": -5,
+          "score": -3,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
@@ -453,9 +472,9 @@
         {
           "url": "https://www.baltimoreravens.com/news/lamar-jackson-rug-wants-damn-fan-week-9-seahawks",
           "headline": "news SociaLight: Lamar Jackson Wants the Damn Rug \ud83d\ude02 Nov 09, 2023",
-          "score": -5,
+          "score": -3,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
@@ -466,9 +485,9 @@
         {
           "url": "https://www.baltimoreravens.com/news/lamar-jackson-zay-flowers-beach-workout-south-florida",
           "headline": "news SociaLight: Lamar Jackson and Zay Flowers Build Chemistry in South Florida Workouts Jun 28, 2023",
-          "score": -5,
+          "score": -3,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
@@ -479,9 +498,9 @@
         {
           "url": "https://www.baltimoreravens.com/news/mark-andrews-franchise-record-feature-hurricane-underestimated-lamar-jackson-rock-and-roll",
           "headline": "Cover Story: How Mark Andrews Became the Ravens' All-Time Leading Receiver Nov 18, 2025",
-          "score": -5,
+          "score": -3,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
@@ -492,9 +511,9 @@
         {
           "url": "https://www.baltimoreravens.com/news/odell-beckham-zay-flowers-working-out-together-offseason-2023",
           "headline": "news SociaLight: Lamar Jackson, Odell Beckham Jr., Zay Flowers Work Out Together Jul 03, 2023",
-          "score": -5,
+          "score": -3,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
@@ -505,9 +524,9 @@
         {
           "url": "https://www.baltimoreravens.com/news/ravens-bengals-game-preview-joe-burrow-lamar-jackson-week-7-2026",
           "headline": "news Everything You Need to Know: Ravens vs. Bengals Oct 23, 2026",
-          "score": -5,
+          "score": -3,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
@@ -518,9 +537,9 @@
         {
           "url": "https://www.baltimoreravens.com/news/ravens-pass-rush-partner-trey-hendrickson-mike-green-lamar-jackson-full-speed-2026",
           "headline": "news Late for Work: Pundit Says Ravens Need Establish a Pass-Rush Partner for Trey Hendrickson Oct 22, 2026",
-          "score": -5,
+          "score": -3,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
@@ -531,10 +550,11 @@
         {
           "url": "https://www.baltimoreravens.com/news/tavius-robinson-out-for-2026-season-zion-young-jaylinn-hawkins-jesse-minter",
           "headline": "news News & Notes: Tavius Robinson Will Miss Remainder of Season Oct 23, 2026 Jaylinn Hawkins has been ruled out for Sunday\u2019s game against the Bengals. Zion Young feels ready to help fill void left by Tavius Robinson\u2019s i",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-23",
@@ -553,9 +573,9 @@
         {
           "url": "https://www.buffalobills.com/news/buffalo-bills-become-first-nfl-team-to-win-cannes-corporate-media-tv-award-with-josh-allen-mvp-reaction-video",
           "headline": "news Buffalo Bills become first NFL team to win Cannes Corporate Media & TV Award with Josh Allen MVP reaction video Buffalo's Video Production team won a Gold Award for their behind-the-scenes video of quarterback Josh ",
-          "score": 8,
+          "score": 10,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "QB_TERMS",
             "DATE_UNVERIFIED",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
@@ -567,11 +587,12 @@
         {
           "url": "https://www.buffalobills.com/news/bills-coaches-offer-preview-on-qb-drake-maye-a-rookie-cb-steps-up-and-initial-week-4-injury-outlook",
           "headline": "news Bills coaches offer preview on QB Drake Maye, a rookie CB steps up and initial Week 4 injury outlook Early preview on Pats QB Drake Maye, a Bills rookie CB steps up and initial Week 4 injury outlook",
-          "score": 5,
+          "score": 3,
           "reasons": [
             "QB_TERMS",
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -581,10 +602,11 @@
         {
           "url": "https://www.buffalobills.com/news/a-hard-team-to-game-plan-for-bills-prepare-for-the-new-england-patriots-after-uneven-week-3-outing",
           "headline": "news 'A hard team to game plan for' | Bills prepare for the New England Patriots after uneven Week 3 outing Bouncing back after a bumpy win, the strengths of a struggling Patriot squad, and injury updates",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -594,10 +616,11 @@
         {
           "url": "https://www.buffalobills.com/news/bills-issue-injury-update-on-cb-christian-benford",
           "headline": "news Bills issue injury update on CB Christian Benford Christian Benford left Sunday's game against the Chargers with a toe injury",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -607,10 +630,11 @@
         {
           "url": "https://www.buffalobills.com/news/bills-issue-injury-update-on-olb-bradley-chubb",
           "headline": "news Bills issue injury update on OLB Bradley Chubb Chubb has a rib injury and was hurt during the first half of the game",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -620,10 +644,11 @@
         {
           "url": "https://www.buffalobills.com/news/bills-issue-injury-update-on-rt-spencer-brown",
           "headline": "news Bills issue injury update on RT Spencer Brown Tylan Grable, a sixth-round draft pick in 2024, has taken Brown's place at right tackle",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -633,10 +658,11 @@
         {
           "url": "https://www.buffalobills.com/news/bills-issue-injury-update-on-te-dalton-kincaid",
           "headline": "news Bills issue injury update on TE Dalton Kincaid Kincaid left the game in the second half and went into the blue medical tent",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -646,10 +672,11 @@
         {
           "url": "https://www.buffalobills.com/news/bills-issue-injury-update-on-wr-dj-moore-vs-patriots-week-4",
           "headline": "news Bills issue injury update on WR DJ Moore vs. Patriots Week 4 Moore left the game late in the second quarter",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -659,10 +686,11 @@
         {
           "url": "https://www.buffalobills.com/news/bills-issue-injury-updates-on-ed-oliver-and-dee-alford",
           "headline": "news Bills issue injury updates on Ed Oliver and Dee Alford DL Ed Oliver (knee) and CB Dee Alford (ankle) are questionable to return to Sunday's game against the Patriots",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -672,10 +700,11 @@
         {
           "url": "https://www.buffalobills.com/news/buffalo-bills-inactives-vs-patriots-week-4",
           "headline": "news Buffalo Bills inactives vs. Patriots Week 4 Bills are listing seven players as INACTIVE for today's game against the New England Patriots",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -685,10 +714,11 @@
         {
           "url": "https://www.buffalobills.com/news/buffalo-bills-injury-report-vs-patriots-week-4",
           "headline": "news Buffalo Bills Injury Report vs. Patriots Week 4 Christian Benford did not practice during the week and is questionable for Week 4",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -698,10 +728,11 @@
         {
           "url": "https://www.buffalobills.com/news/buffalo-bills-injury-report-vs-raiders-week-6",
           "headline": "news Buffalo Bills injury report vs. Raiders | Week 6 Five players will be questionable for Sunday's matchup against the Raiders.",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -711,10 +742,11 @@
         {
           "url": "https://www.buffalobills.com/news/buffalo-bills-injury-report-vs-rams-week-5",
           "headline": "news Buffalo Bills injury report vs. Rams | Week 5 Bills-Rams game designations for DL Ed Oliver, WR Joshua Palmer, WR DJ Moore, CB Dee Alford and DL Landon Jackson",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -724,10 +756,11 @@
         {
           "url": "https://www.buffalobills.com/news/dj-moore-among-bills-inactives-vs-rams",
           "headline": "news DJ Moore among Bills' inactives vs. Rams The Buffalo Bills are listing seven players as inactive for Monday's game against the Los Angeles Rams",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -737,10 +770,11 @@
         {
           "url": "https://www.buffalobills.com/news/dj-moore-ed-oliver-among-buffalo-bills-inactives-at-raiders",
           "headline": "news DJ Moore, Ed Oliver among Buffalo Bills inactives at Raiders The Buffalo Bills are listing five players as inactive for today's game against the Las Vegas Raiders.",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -750,10 +784,11 @@
         {
           "url": "https://www.buffalobills.com/news/going-to-have-our-hands-full-how-the-bills-are-preparing-for-a-dynamic-l-a-rams-team",
           "headline": "news 'Going to have our hands full' | How the Bills are preparing for a dynamic L.A. Rams team Preparing for the Rams' dynamic offense and defensive units, and Thursday's injury report",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -763,10 +798,11 @@
         {
           "url": "https://www.buffalobills.com/news/we-re-here-for-a-business-trip-the-bills-practice-on-the-west-coast-ahead-of-week-6",
           "headline": "news 'We're here for a business trip' | The Bills practice on the West Coast ahead of Week 6 The perks of staying out on the West Coast, what challenges Maxx Crosby brings, and Wednesday's injury report",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -785,9 +821,9 @@
         {
           "url": "https://www.tennesseetitans.com/news/titans-qb-cam-ward-knows-the-team-s-offense-needs-to-be-better",
           "headline": "Titans QB Cam Ward Knows The Team's Offense Needs to Be Better Aside from Ward\u2019s connection with rookie Carnell Tate for a game-tying touchdown, the Tennessee offense didn\u2019t finish drives in the end zone in Indianapolis.",
-          "score": 8,
+          "score": 10,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "QB_TERMS",
             "DATE_UNVERIFIED",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
@@ -799,9 +835,9 @@
         {
           "url": "https://www.tennesseetitans.com/news/titans-sign-qb-cam-ward-to-rookie-contract",
           "headline": "Titans Sign QB Cam Ward to Rookie Contract May 21, 2025",
-          "score": -2,
+          "score": 0,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "QB_TERMS",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
@@ -813,10 +849,11 @@
         {
           "url": "https://www.tennesseetitans.com/news/at-the-pro-bowl-peyton-manning-talks-titans-from-hc-brian-callahan-to-qb-will-levis-to-rb-derrick-henry-and-he-told-a-great-story-about-the-late-frank-wycheck",
           "headline": "news At the Pro Bowl, Peyton Manning Talks Titans, From HC Brian Callahan to QB Will Levis to RB Derrick Henry \u2013 and He Told a Great Story About the Late Frank Wycheck Feb 02, 2024",
-          "score": -7,
+          "score": -9,
           "reasons": [
             "QB_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2024-02-02",
@@ -826,10 +863,11 @@
         {
           "url": "https://www.tennesseetitans.com/news/week-7-injury-report-titans-vs-browns",
           "headline": "Week 7 Injury Report | Titans vs Browns Oct 21, 2026 Who's in, who's out for the Titans in Week 7 vs the Cleveland Browns",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-21",
@@ -848,9 +886,9 @@
         {
           "url": "https://www.bengals.com/news/postgame-quick-hits-ja-marr-s-injury-jags-defense-beat-joe-burrow-s-big-passing-day",
           "headline": "news Postgame Quick Hits | Ja'Marr's Injury, Jags Defense Beat Joe Burrow's Big Passing Day",
-          "score": 7,
+          "score": 9,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
@@ -862,9 +900,9 @@
         {
           "url": "https://www.bengals.com/news/quick-hits-dax-hill-gets-another-call-erick-all-jr-wants-ball-and-win-not-praise-joe-burrow",
           "headline": "news Quick Hits | Do-It-All Dax Hill Gets Another Call; Erick All Jr. Wants Ball/Win, Not Praise; Injury Update",
-          "score": 7,
+          "score": 9,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
@@ -876,9 +914,9 @@
         {
           "url": "https://www.bengals.com/news/quick-hits-joe-burrow-knows-it-s-gone-through-baltimore-bryan-cook-lamar-jackson-derrick-henry",
           "headline": "news Quick Hits | Joe Knows: 'It's Gone Through Baltimore\"; Bryan Cook Eyes Re-Match With Lamar And King Henry",
-          "score": 5,
+          "score": 7,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "DATE_UNVERIFIED",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
@@ -889,10 +927,11 @@
         {
           "url": "https://www.bengals.com/news/jake-browning-s-24-7-preparation-on-display-in-return-as-starter",
           "headline": "news Game Within The Game | Bengals QB Jake Browning's 24-7 Preparation On Display In Return As Starter",
-          "score": 3,
+          "score": 1,
           "reasons": [
             "QB_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -902,10 +941,11 @@
         {
           "url": "https://www.bengals.com/news/b-j-hill-injury-josh-kattus-bengals-roster-update",
           "headline": "news B.J. Hill Placed on Acive/Physically Unable to Perform List | BENGALS ROSTER UPDATE",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -915,10 +955,11 @@
         {
           "url": "https://www.bengals.com/news/bengals-dolphins-inactives-week-5-2026",
           "headline": "news Six Bengals Inactive For Week 5 Against Dolphins",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -928,10 +969,11 @@
         {
           "url": "https://www.bengals.com/news/bengals-ravens-week-7-2026-injury-report",
           "headline": "news Week 7 Injury Report | Bengals at Ravens Take a look at the injury reports of the Cincinnati Bengals and the Baltimore Ravens leading into Week 7 of the 2026 season.",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -941,9 +983,10 @@
         {
           "url": "https://www.bengals.com/news/quick-hits-bengals-finding-health-amid-lamar-jackson-s-murky-status",
           "headline": "news Quick Hits | Bengals Finding Health Amid Lamar Jackson's Murky Status",
-          "score": 0,
+          "score": -2,
           "reasons": [
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -962,9 +1005,9 @@
         {
           "url": "https://www.azcardinals.com/news/cardinals-qb-jacoby-brissett-rich-with-teammate-currency-2026-season",
           "headline": "news Now QB1, Jacoby Brissett Rich With Respect From Teammates Cardinals veteran enters season as starter for fourth time in career",
-          "score": 8,
+          "score": 10,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "QB_TERMS",
             "DATE_UNVERIFIED",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
@@ -976,9 +1019,9 @@
         {
           "url": "https://www.azcardinals.com/news/carson-beck-believes-cardinals-have-his-number-for-nfl-success",
           "headline": "news Carson Beck Believes Cardinals Have His Number For NFL Success Quarterback knew on draft night his preferred '11' was off-limits",
-          "score": 8,
+          "score": 10,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "QB_TERMS",
             "DATE_UNVERIFIED",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
@@ -990,10 +1033,11 @@
         {
           "url": "https://www.azcardinals.com/news/cardinals-reunion-has-roy-lopez-hungry-for-more",
           "headline": "news Cardinals Reunion Has Roy Lopez Hungry For More Defensive lineman had career-highs in sacks, QB hits with Detroit",
-          "score": 3,
+          "score": 1,
           "reasons": [
             "QB_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1003,10 +1047,11 @@
         {
           "url": "https://www.azcardinals.com/news/longform/cardinals-stint-gave-quarterback-kurt-warner-canton-hall-of-fame-cred",
           "headline": "news Cardinals Stint Gave Kurt Warner Canton Cred",
-          "score": 3,
+          "score": 1,
           "reasons": [
             "QB_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1016,10 +1061,11 @@
         {
           "url": "https://www.azcardinals.com/news/longform/drafting-kyler-murray-inside-the-cardinals-game-changing-qb-swap",
           "headline": "news Drafting Kyler Murray: Inside The Cardinals' Game-Changing QB Swap",
-          "score": 3,
+          "score": 1,
           "reasons": [
             "QB_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1029,10 +1075,11 @@
         {
           "url": "https://www.azcardinals.com/news/longform/joshua-dobbs-flying-high-as-cardinals-quarterback",
           "headline": "news Joshua Dobbs Flying High As Cardinals Quarterback",
-          "score": 3,
+          "score": 1,
           "reasons": [
             "QB_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1042,10 +1089,11 @@
         {
           "url": "https://www.azcardinals.com/news/michael-wilson-can-live-with-his-perfect-completion-percentage",
           "headline": "news Michael Wilson Can Live With His Perfect Completion Percentage Wide receiver's pass to QB Brissett could've been TD, but got first down",
-          "score": 3,
+          "score": 1,
           "reasons": [
             "QB_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1055,10 +1103,11 @@
         {
           "url": "https://www.azcardinals.com/news/time-has-finally-come-for-matt-schaub-to-coach-arizona-cardinals",
           "headline": "news Time Has Finally Come For Matt Schaub To Coach Former NFL QB teaching same position for Cardinals",
-          "score": 3,
+          "score": 1,
           "reasons": [
             "QB_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1068,10 +1117,11 @@
         {
           "url": "https://www.azcardinals.com/news/after-hosting-charity-basketball-game-mack-wilson-sr-ready-to-return-to-football",
           "headline": "news After Hosting Charity Basketball Game, Mack Wilson Sr. Ready To Return To Football Linebacker returning from rib injury to spearhead Cardinals defense",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1081,10 +1131,11 @@
         {
           "url": "https://www.azcardinals.com/news/healthy-bj-ojulari-ready-to-remind-league-he-shouldn-t-be-forgotten",
           "headline": "news Healthy BJ Ojulari Ready To Remind League He Shouldn't Be Forgotten Outside linebacker able to let loose, not worry about knee injury",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1094,10 +1145,11 @@
         {
           "url": "https://www.azcardinals.com/news/injury-report",
           "headline": "Injury Report",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1107,10 +1159,11 @@
         {
           "url": "https://www.azcardinals.com/news/injury-report-week-7-vs-broncos",
           "headline": "news Injury Report: Week 7 vs Broncos Check in on the health of the Cardinals heading into their Week 7 matchup with the Broncos",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1129,9 +1182,9 @@
         {
           "url": "https://www.dallascowboys.com/news/dak-prescott-details-how-finding-rhythm-in-run-game-can-help-spark-cowboys-offense",
           "headline": "Ground Control Cowboys QB Dak Prescott says Dallas is \"urgent to get it done now\" in terms of stacking wins. If they want to do so, they'll need to find their footing again on offense, which begins with getting a spark i",
-          "score": 8,
+          "score": 10,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "QB_TERMS",
             "DATE_UNVERIFIED",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
@@ -1143,10 +1196,11 @@
         {
           "url": "https://www.dallascowboys.com/news/mailbag-sending-a-message-or-changing-of-the-guard",
           "headline": "Mailbag: Sending a message or changing of the guard? By starting Malachi Lawrence and Brevyn Spann-Ford, do you think the team was just trying to send a message to Donovan Ezeiruaku and Jake Ferguson, respectively, or ar",
-          "score": 3,
+          "score": 1,
           "reasons": [
             "QB_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1156,10 +1210,11 @@
         {
           "url": "https://www.dallascowboys.com/news/cowboys-injury-roundup-overshown-durant-trending-toward-return-vs-eagles",
           "headline": "Cowboys Injury Roundup: Overshown, Durant trending toward return vs. Eagles DeMarvion Overshown, Cobie Durant headline potential returns from injury, but the Cowboys are still tending to some IR players in Week 7.",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1169,10 +1224,11 @@
         {
           "url": "https://www.dallascowboys.com/news/demarvion-overshown-to-return-vs-eagles-on-mnf",
           "headline": "DeMarvion Overshown to return vs. Eagles on MNF After being sidelined the last several games with injury, DeMarvion Overshown confirmed he has been medically cleared to return for MNF versus the Eagles.",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1191,9 +1247,9 @@
         {
           "url": "https://www.vikings.com/news/kyler-murray-starting-quarterback-week-3-buccaneers-injury",
           "headline": "news Kyler Murray Clears Protocol, Will Start for Vikings at Buccaneers in Week 3 Sep 21, 2026",
-          "score": 0,
+          "score": 2,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "QB_TERMS",
             "STATUS_TERMS",
             "OLD_NEWS",
@@ -1206,10 +1262,11 @@
         {
           "url": "https://www.vikings.com/news/carson-wentz-starting-week-2-at-bears",
           "headline": "news Carson Wentz to Start for Vikings in Week 2 at Bears Sep 18, 2026",
-          "score": -7,
+          "score": -9,
           "reasons": [
             "QB_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-09-18",
@@ -1219,10 +1276,11 @@
         {
           "url": "https://www.vikings.com/news/jj-mccarthy-quarterback-trade-new-york-giants-2026-nfl-season",
           "headline": "news Vikings Trade J.J. McCarthy to Giants for 2027 Fifth-Round Pick Sep 28, 2026",
-          "score": -7,
+          "score": -9,
           "reasons": [
             "QB_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-09-28",
@@ -1232,10 +1290,11 @@
         {
           "url": "https://www.vikings.com/news/lunchbreak-the-athletic-quarterback-rankings-blake-brandel",
           "headline": "news Lunchbreak: The Athletic Unveils Quarterback Tier Rankings; A Seal of Approval at Center Aug 04, 2026",
-          "score": -7,
+          "score": -9,
           "reasons": [
             "QB_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-08-04",
@@ -1245,10 +1304,11 @@
         {
           "url": "https://www.vikings.com/news/quarterback-comparisons-training-camp-rookies-2026",
           "headline": "news Lunchbreak: Vikings Quarterback Comparisons Early in Camp; Rookies' Fits with Teams Jul 30, 2026",
-          "score": -7,
+          "score": -9,
           "reasons": [
             "QB_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-07-30",
@@ -1258,10 +1318,11 @@
         {
           "url": "https://www.vikings.com/news/colts-injury-report-week-7-2026-nfl-season",
           "headline": "news Final Vikings vs. Colts Injury Report for Week 7 of 2026 Oct 23, 2026",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-23",
@@ -1271,9 +1332,10 @@
         {
           "url": "https://www.vikings.com/news/quarterbacks-ota-practices-defense-depth-offseason-2026",
           "headline": "news Mailbag: Vikings QBs at OTA Practices, Depth on Defense Jun 01, 2026",
-          "score": -10,
+          "score": -12,
           "reasons": [
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-06-01",
@@ -1292,9 +1354,9 @@
         {
           "url": "https://www.detroitlions.com/news/qb-jared-goff-named-detroit-lions-nominee-for-2022-walter-payton-nfl-man-of-the-",
           "headline": "news QB Jared Goff named Detroit Lions' nominee for 2022 Walter Payton NFL Man of the Year Award presented by Nationwide",
-          "score": 8,
+          "score": 10,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "QB_TERMS",
             "DATE_UNVERIFIED",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
@@ -1306,9 +1368,9 @@
         {
           "url": "https://www.detroitlions.com/news/qb-jared-goff-named-detroit-lions-nominee-for-walter-payton-nfl-man-of-the-year-award-presented-by-nationwide",
           "headline": "news QB Jared Goff Named Detroit Lions' Nominee for Walter Payton NFL Man of the Year Award Presented by Nationwide",
-          "score": 8,
+          "score": 10,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "QB_TERMS",
             "DATE_UNVERIFIED",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
@@ -1320,10 +1382,11 @@
         {
           "url": "https://www.detroitlions.com/news/lions-vs-packers-injury-report-oct-23-mays-branch-yasin",
           "headline": "news Lions vs. Packers injury report: Oct. 23 Lions vs. Packers injury report and game designations for Friday, October 23.",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1342,10 +1405,11 @@
         {
           "url": "https://www.raiders.com/news/las-vegas-raiders-los-angeles-rams-week-7-injury-report-2026",
           "headline": "Raiders-Rams Week 7 Injury Report: Mike Washington Jr. questionable for Sunday Take a look at the Raiders' injury report as the team prepares to face the Los Angeles Rams.",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1355,10 +1419,11 @@
         {
           "url": "https://www.raiders.com/news/fernando-mendoza-raider-nation-and-the-latino-community-see-themselves",
           "headline": "news More Than a Quarterback: In Fernando Mendoza, Raider Nation and the Latino community see themselves Oct 07, 2026 For Mendoza, wearing the Silver and Black means honoring his Cuban roots, his family and the Latino co",
-          "score": -7,
+          "score": -9,
           "reasons": [
             "QB_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-07",
@@ -1368,10 +1433,11 @@
         {
           "url": "https://www.raiders.com/news/raiders-sign-first-round-pick-fernando-mendoza-quarterback-indiana-2026-nfl-draft",
           "headline": "news Raiders sign first-round pick QB Fernando Mendoza Jul 23, 2026 The 6-foot-5, 225-pound quarterback spent his final college season at Indiana (2025) after three years at California (2022-24), appearing in 36 career g",
-          "score": -7,
+          "score": -9,
           "reasons": [
             "QB_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-07-23",
@@ -1381,10 +1447,11 @@
         {
           "url": "https://www.raiders.com/news/bucky-s-breakdown-why-fernando-mendoza-s-brief-debut-was-an-encouraging-sign",
           "headline": "news Bucky's Breakdown: Why Fernando Mendoza's brief debut was an encouraging sign Oct 14, 2026 With redshirt quarterbacks quietly developing on the practice field and out of the spotlight, they can master the playbook a",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-14",
@@ -1394,10 +1461,11 @@
         {
           "url": "https://www.raiders.com/news/las-vegas-raiders-buffalo-bills-week-6-injury-report-2026",
           "headline": "news Raiders-Bills Week 6 Injury Report: 3 Raiders ruled out, 1 questionable to play Oct 16, 2026 Take a look at the Raiders' injury report as the team prepares to face the Buffalo Bills.",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-16",
@@ -1407,10 +1475,11 @@
         {
           "url": "https://www.raiders.com/news/las-vegas-raiders-kansas-city-chiefs-week-4-injury-report-2026-season-nfl",
           "headline": "news Raiders-Chiefs Week 4 Injury Report: Jackson Powers-Johnson ruled out for Sunday Oct 02, 2026 Take a look at the Raiders' injury report as the team prepares to face the Kansas City Chiefs.",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-02",
@@ -1420,10 +1489,11 @@
         {
           "url": "https://www.raiders.com/news/las-vegas-raiders-new-england-patriots-week-5-injury-report-2026",
           "headline": "news Raiders-Patriots Week 5 Injury Report: 3 Raiders ruled out, Ashton Jeanty questionable to play Oct 09, 2026 Take a look at the Raiders' injury report as the team prepares to face the New England Patriots.",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-09",
@@ -1433,10 +1503,11 @@
         {
           "url": "https://www.raiders.com/news/las-vegas-raiders-week-4-inactives-vs-kansas-city-chiefs-100426",
           "headline": "news Las Vegas Raiders Week 4 Inactives vs. Kansas City Chiefs Oct 04, 2026 Before the Raiders take the field for Week 4, view the inactive players for today's game.",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-04",
@@ -1446,10 +1517,11 @@
         {
           "url": "https://www.raiders.com/news/las-vegas-raiders-week-5-inactives-vs-new-england-patriots-101126",
           "headline": "news Las Vegas Raiders Week 5 Inactives vs. New England Patriots Oct 11, 2026 Before the Raiders take the field for Week 5, view the inactive players for today's game.",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-11",
@@ -1459,10 +1531,11 @@
         {
           "url": "https://www.raiders.com/news/las-vegas-raiders-week-6-inactives-vs-buffalo-bills-101826",
           "headline": "news Las Vegas Raiders Week 6 Inactives vs. Buffalo Bills Oct 18, 2026 Before the Raiders take the field for Week 6, view the inactive players for today's game.",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-18",
@@ -1472,10 +1545,11 @@
         {
           "url": "https://www.raiders.com/news/raiders-te-carter-runyon-returns-to-practice-2026-nfl",
           "headline": "news Raiders TE Carter Runyon returns to practice Oct 14, 2026 Runyon was placed on injured reserve on Aug. 30 after suffering an injury during training camp.",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-14",
@@ -1485,9 +1559,10 @@
         {
           "url": "https://www.raiders.com/news/hispanic-heritage-month-mike-sullivan-raiders-quarterbacks-coach-tom-flores-jim-plunkett",
           "headline": "news 'Anything is possible': Inspired by Hispanic trailblazers Tom Flores and Jim Plunkett, Raiders QBs coach Mike Sullivan comes full circle Oct 02, 2026 \"It was special, being a Raider fan in general, but to see those ",
-          "score": -10,
+          "score": -12,
           "reasons": [
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-02",
@@ -1497,9 +1572,10 @@
         {
           "url": "https://www.raiders.com/news/inspirado-por-los-pioneros-hispanos-tom-flores-y-jim-plunkett-el-entrenador-de-quarterbacks-de-los-raiders-mike-sullivan-cierra-el-circulo",
           "headline": "news 'Todo es posible': inspirado por los pioneros hispanos Tom Flores y Jim Plunkett, el entrenador de quarterbacks de los Raiders, Mike Sullivan, cierra el c\u00edrculo Oct 02, 2026",
-          "score": -10,
+          "score": -12,
           "reasons": [
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-02",
@@ -1518,9 +1594,9 @@
         {
           "url": "https://www.newyorkjets.com/news/jets-want-to-see-improvement-in-how-they-finish-games-after-road-loss-to-new-england-10-18-2026",
           "headline": "Aaron Glenn, Jets Emphasize Finishing After Patriots Game QB Geno Smith: 'We've Got a lot of Capable Guys'",
-          "score": 8,
+          "score": 10,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "QB_TERMS",
             "DATE_UNVERIFIED",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
@@ -1532,9 +1608,9 @@
         {
           "url": "https://www.newyorkjets.com/news/jets-week-6-notes-david-bailey-omar-cooper-jr-geno-smith-highlights-10-19-2026",
           "headline": "Jets Week 6 Stats & Notes | David Bailey's Strong Start, Omar Cooper Jr.'s Breakout & Geno Smith's Record Pace Bailey Continues Record-Setting Start, Cooper Jr. Joins Elite Rookie Company and Geno Smith Owns the Highest ",
-          "score": 5,
+          "score": 7,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "DATE_UNVERIFIED",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
@@ -1545,10 +1621,11 @@
         {
           "url": "https://www.newyorkjets.com/news/jets-notebook-braelon-allen-excels-in-filling-in-breece-hall-starting-role-10-19-2026",
           "headline": "Jets Notebook | RB Braelon Allen Excels in Filling Breece Hall's Big Shoes Edge Davis Bailey and LB Jamien Sherwood Exemplify Mentality of the Defense",
-          "score": 3,
+          "score": 1,
           "reasons": [
             "QB_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1558,10 +1635,11 @@
         {
           "url": "https://www.newyorkjets.com/news/stock-report-jets-oc-frank-reich-scheme-creating-explosives-in-the-run-game-braelon-allen-10-21-2026",
           "headline": "Stock Report | Jets OC Frank Reich's Scheme Creating Explosives in the Run Game K Jason Sanders Stays Steady; Miami QB Malik Willis Not Delivering Yet for Miami",
-          "score": 3,
+          "score": 1,
           "reasons": [
             "QB_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1571,10 +1649,11 @@
         {
           "url": "https://www.newyorkjets.com/news/jets-injury-report-week-7-vs-dolphins-friday-10-23-2026",
           "headline": "Jets Injury Report | Week 7 vs. Dolphins - Friday Breece Hall (Quad), Dylan Parham (Knee) and Kene Nwangwu (Knee) All Questionable for Week 7",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1584,10 +1663,11 @@
         {
           "url": "https://www.newyorkjets.com/news/jets-injury-report-week-7-vs-dolphins-thursday-10-22-2026",
           "headline": "Jets Injury Report | Week 7 vs. Dolphins - Thursday",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1597,10 +1677,11 @@
         {
           "url": "https://www.newyorkjets.com/news/jets-injury-report-week-7-vs-dolphins-wednesday-10-21-2026",
           "headline": "Jets Injury Report | Week 7 vs. Dolphins - Wednesday WR Adonai Mitchell & G Dylan Parham Begin Week as Limited Participants",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1619,10 +1700,11 @@
         {
           "url": "https://www.clevelandbrowns.com/news/austin-barber-keeps-starting-job-at-right-guard-after-strong-week-1-performance",
           "headline": "Austin Barber keeps starting job at right guard after strong Week 1 performance",
-          "score": 3,
+          "score": 1,
           "reasons": [
             "QB_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1632,10 +1714,11 @@
         {
           "url": "https://www.clevelandbrowns.com/news/man-under-center-part-3-the-starter",
           "headline": "Man Under Center Part 3: The Starter",
-          "score": 3,
+          "score": 1,
           "reasons": [
             "QB_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1645,10 +1728,11 @@
         {
           "url": "https://www.clevelandbrowns.com/news/todd-monken-provides-timeline-on-starting-quarterback-announcement-news-and-notes",
           "headline": "Todd Monken provides timeline on starting quarterback announcement | News & Notes",
-          "score": 3,
+          "score": 1,
           "reasons": [
             "QB_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1658,10 +1742,11 @@
         {
           "url": "https://www.clevelandbrowns.com/news/todd-monken-provides-updates-on-browns-quarterback-competition-news-and-notes",
           "headline": "Todd Monken provides updates on Browns' quarterback competition | News & Notes",
-          "score": 3,
+          "score": 1,
           "reasons": [
             "QB_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1671,10 +1756,11 @@
         {
           "url": "https://www.clevelandbrowns.com/news/denzel-ward-questionable-for-week-7-vs-the-titans-injury-report",
           "headline": "Denzel Ward questionable for Week 7 vs. the Titans | Injury Report Grant Delpit, Dylan Sampson and Quincy Williams also listed as questionable",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1684,9 +1770,10 @@
         {
           "url": "https://www.clevelandbrowns.com/news/browns-announce-inactives-for-week-6-vs-the-ravens",
           "headline": "Browns announce inactives for Week 6 vs. the Ravens",
-          "score": 0,
+          "score": -2,
           "reasons": [
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1705,9 +1792,9 @@
         {
           "url": "https://www.steelers.com/news/from-the-press-room-steelers-at-buccaneers",
           "headline": "From the Press Room: Steelers at Buccaneers Coach Mike McCarthy, quarterback Aaron Rodgers and linebacker Nick Herbig shared their take from the 26-19 win at Tampa Bay",
-          "score": 8,
+          "score": 10,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "QB_TERMS",
             "DATE_UNVERIFIED",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
@@ -1719,10 +1806,11 @@
         {
           "url": "https://www.steelers.com/news/labriola-on-the-win-over-the-colts-x5664",
           "headline": "Labriola on the win over the Colts They got NFL-caliber QB play, and the trickle-down put them over the top",
-          "score": 3,
+          "score": 1,
           "reasons": [
             "QB_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1732,10 +1820,11 @@
         {
           "url": "https://www.steelers.com/news/week-6-injury-report-buccaneers-x2319",
           "headline": "Updated: Week 6 Injury Report (Buccaneers) A look at player injuries and practice participation for Week 6",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1745,10 +1834,11 @@
         {
           "url": "https://www.steelers.com/news/week-7-injury-report-saints",
           "headline": "Week 7 Injury Report (Saints) A look at player injuries and practice participation for Week 7",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1758,9 +1848,10 @@
         {
           "url": "https://www.steelers.com/news/steelers-inactives-for-week-6-at-buccaneers",
           "headline": "Steelers inactives for Week 6 at Buccaneers Find out who won't play today as the Steelers take on the Buccaneers at Raymond James Stadium",
-          "score": 0,
+          "score": -2,
           "reasons": [
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1779,10 +1870,11 @@
         {
           "url": "https://www.atlantafalcons.com/news/falcons-mailbag-is-this-hot-defensive-start-sustainable-is-the-quarterback-carousel-starting-up-again",
           "headline": "Falcons Mailbag: Is this hot defensive start sustainable? Is the quarterback carousel starting up again?",
-          "score": 3,
+          "score": 1,
           "reasons": [
             "QB_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1792,10 +1884,11 @@
         {
           "url": "https://www.atlantafalcons.com/news/falcons-injury-report-atlanta-releases-lengthy-list-as-prep-for-49ers-continues",
           "headline": "Falcons injury report: Atlanta releases lengthy list as prep for 49ers continues Gervon Dexter Sr. added to Thursday report with hamstring injury. Plus 21-day practice window opens for Cameron Williams.",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1805,10 +1898,11 @@
         {
           "url": "https://www.atlantafalcons.com/news/falcons-injury-report-brian-robinson-divine-deablo-out-vs-49ers",
           "headline": "Falcons injury report: RB Brian Robinson, LB Divine Deablo ruled out vs. 49ers Atlanta has several key players who are questionable for Sunday's matchup against the San Francisco 49ers.",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1818,10 +1912,11 @@
         {
           "url": "https://www.atlantafalcons.com/news/falcons-injury-report-kendal-daniels-aj-terrell-practice",
           "headline": "Falcons injury report: Kendal Daniels practices fully",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1831,10 +1926,11 @@
         {
           "url": "https://www.atlantafalcons.com/news/atlanta-falcons-sign-qb-trevor-siemian",
           "headline": "Atlanta Falcons sign QB Trevor Siemian Mar 25, 2026 With more than 30 starts under his belt and 11 years in the NFL, Siemian brings valuable experience to the Falcons' quarterbacks room.",
-          "score": -7,
+          "score": -9,
           "reasons": [
             "QB_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-03-25",
@@ -1844,10 +1940,11 @@
         {
           "url": "https://www.atlantafalcons.com/news/falcons-release-cooper-rush-sign-andy-dalton",
           "headline": "Falcons release QB Cooper Rush, sign QB Andy Dalton Oct 19, 2026 Rush joined the Falcons on the opening day of training camp and started the first two games of the season.",
-          "score": -7,
+          "score": -9,
           "reasons": [
             "QB_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-19",
@@ -1857,10 +1954,11 @@
         {
           "url": "https://www.atlantafalcons.com/news/tua-tagovailoa-competition-michael-penix-jr-falcons-quarterbacks",
           "headline": "Tua Tagovailoa embracing competition: 5 takeaways from Falcons QB's press conference Mar 24, 2026 The Falcons' new quarterback spoke with Atlanta media members for the first time. Here is what we learned.",
-          "score": -7,
+          "score": -9,
           "reasons": [
             "QB_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-03-24",
@@ -1870,10 +1968,11 @@
         {
           "url": "https://www.atlantafalcons.com/news/a-j-terrell-returns-practice-injured-reserve-window-falcons-secondary",
           "headline": "Falcons begin A.J. Terrell's window to return from injured reserve Oct 21, 2026 Terrell returns to practice after missing time with a groin injury. The Falcons have 21 days to add their No. 1 corner to their active roste",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-21",
@@ -1883,10 +1982,11 @@
         {
           "url": "https://www.atlantafalcons.com/news/grady-jarrett-year-10-the-return-season-ending-injury-recovery",
           "headline": "A peek behind the curtain of Grady Jarrett's return from season-ending injury Aug 29, 2024 It was a challenge unlike any other the Falcons defensive tackle had faced. He continued to work until he won.",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2024-08-29",
@@ -1896,10 +1996,11 @@
         {
           "url": "https://www.atlantafalcons.com/news/kendal-daniels-positive-news-injury-chicago-bears",
           "headline": "Kevin Stefanski provides update on LB Kendal Daniels: 'All positive news' Oct 19, 2026 Daniels was carted off during the third quarter of Sunday's game against the Chicago Bears. Initial testing was positive for the rook",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-19",
@@ -1909,9 +2010,10 @@
         {
           "url": "https://www.atlantafalcons.com/news/falcons-camp-report-team-prepares-for-joint-practices-with-indianapolis-colts",
           "headline": "Falcons Camp Report: Team prepares for joint practices with Indianapolis Colts Aug 17, 2026 Kevin Stefanski details plan for starters over the next week of practices and second preseason game.",
-          "score": -10,
+          "score": -12,
           "reasons": [
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-08-17",
@@ -1921,9 +2023,10 @@
         {
           "url": "https://www.atlantafalcons.com/news/falcons-preseason-miami-dolphins-michael-penix-starters",
           "headline": "Falcons using final week of preseason to get feel for regular-season schedule Aug 24, 2026 Atlanta will play its starters on Friday night against the Miami Dolphins in its final preseason game.",
-          "score": -10,
+          "score": -12,
           "reasons": [
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-08-24",
@@ -1942,11 +2045,12 @@
         {
           "url": "https://www.buccaneers.com/news/roster-moves-jalen-mcmillan-ir-qb-added-practice-squad",
           "headline": "Roster Moves: Jalen McMillan to IR, QB Added to Practice Squad",
-          "score": 5,
+          "score": 3,
           "reasons": [
             "QB_TERMS",
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1956,10 +2060,11 @@
         {
           "url": "https://www.buccaneers.com/news/bucs-elevate-qb-easton-stick-lb-caden-fordham-for-packers-game",
           "headline": "Bucs Elevate QB Easton Stick, LB Caden Fordham for Packers Game",
-          "score": 3,
+          "score": 1,
           "reasons": [
             "QB_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1969,10 +2074,11 @@
         {
           "url": "https://www.buccaneers.com/news/quarterback-outlook-week-seven-tetairoa-mcmillan-prowess-more-bucs-blitz",
           "headline": "news Quarterback Outlook in Week Seven, Tetairoa McMillan's Prowess & More | Bucs Blitz",
-          "score": 3,
+          "score": 1,
           "reasons": [
             "QB_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1982,10 +2088,11 @@
         {
           "url": "https://www.buccaneers.com/news/s-j-j-roberts-and-qb-easton-stick-elevated-for-tnf-game-in-dallas",
           "headline": "S J.J. Roberts and QB Easton Stick Elevated for TNF Game in Dallas",
-          "score": 3,
+          "score": 1,
           "reasons": [
             "QB_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -1995,10 +2102,11 @@
         {
           "url": "https://www.buccaneers.com/news/buccaneers-panthers-injury-report-oct-23-week-7-2026",
           "headline": "news Buccaneers-Panthers Injury Report Oct.23: Egbuka, Goedeke and Winfield Jr. Ruled Out; Mayfield Questionable Oct 23, 2026 A look at Friday's injury report ahead of the Week Seven matchup",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-23",
@@ -2017,10 +2125,11 @@
         {
           "url": "https://www.colts.com/news/practice-notebook-colts-cb-sauce-gardner-not-concerned-about-calf-injury",
           "headline": "news Practice Notebook: Colts CB Sauce Gardner not concerned about calf injury Gardner exited the Colts' Week 6 loss to the Tennessee Titans in the second half with a calf injury.",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -2030,10 +2139,11 @@
         {
           "url": "https://www.colts.com/news/practice-notebook-several-including-justin-walley-return-to-practice",
           "headline": "news Practice Notebook: Several, including Justin Walley, return to practice Wednesday's injury report had 16 Colts players listed.",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -2052,10 +2162,11 @@
         {
           "url": "https://www.jaguars.com/news/in-and-out-2026-week-6-murray-active-brown-and-matiscik-inactive-for-texans-vs-jaguars",
           "headline": "news In and Out, 2026 Week 6: Murray Active, Brown and Matiscik Inactive for Texans vs. Jaguars Oct 18, 2026 CB Montaric Brown, long snapper Ross Matiscik inactive for the Jaguars against the Houston Texans in a 2026 Wee",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-18",
@@ -2074,9 +2185,9 @@
         {
           "url": "https://www.chargers.com/news/justin-herbert-mvp-vote-odds-2026",
           "headline": "What Are Justin Herbert's 2026 NFL MVP Odds? The Chargers quarterback has the third-best odds on some platforms heading into the 2026 regular season",
-          "score": 8,
+          "score": 10,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "QB_TERMS",
             "DATE_UNVERIFIED",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
@@ -2088,9 +2199,9 @@
         {
           "url": "https://www.chargers.com/news/justin-herbert-quentin-johnston-touchdown-mike-mcdaniel-2026",
           "headline": "Justin Herbert Connects With Quentin Johnston For 65-Yard Touchdown in Preseason Finale The quarterback unleashed a 65-yard touchdown for the Chargers starting offense's first score of the preseason",
-          "score": 8,
+          "score": 10,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "QB_TERMS",
             "DATE_UNVERIFIED",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
@@ -2102,9 +2213,9 @@
         {
           "url": "https://www.chargers.com/news/injury-updates-jim-harbaugh-justin-herbert-chiefs",
           "headline": "5 Takeaways: Why Jim Harbaugh is 'Hellbent' on Turning Around Chargers 0-5 Start The Chargers Head Coach also gave injury updates and praised Justin Herbert's competitiveness on Monday",
-          "score": 7,
+          "score": 9,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
@@ -2116,10 +2227,11 @@
         {
           "url": "https://www.chargers.com/news/activate-scott-matlock-branson-taylor-sign-theo-wease-active-roster-2026",
           "headline": "Chargers Activate Matlock and Taylor; Sign Wease to Active Roster The Los Angeles Chargers today activated fullback/defensive lineman Scott Matlock and guard/tackle Branson Taylor from Reserve/Injured; Designated for Ret",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -2129,10 +2241,11 @@
         {
           "url": "https://www.chargers.com/news/injury-updates-rashawn-slater-joe-alt-ladd-mcconkey",
           "headline": "5 Takeaways: Injury Updates on Rashawn Slater, Joe Alt & Derwin James Chargers Head Coach Jim Harbaugh said the team is \"still evaluating\" some injuries after Sunday's game in Seattle",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -2142,10 +2255,11 @@
         {
           "url": "https://www.chargers.com/news/place-trey-pipkins-iii-injured-reserve-sign-dj-uiagalelei-active-roster-2026",
           "headline": "Los Angeles Chargers Place Trey Pipkins III on Injured Reserve; Sign DJ Uiagalelei to Active Roster The Los Angeles Chargers today placed guard/tackle Trey Pipkins III on Reserve/Injured. In a corresponding move, the tea",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -2155,10 +2269,11 @@
         {
           "url": "https://www.chargers.com/news/reduce-roster-to-53-players-2026",
           "headline": "Los Angeles Chargers Reduce Roster to 53 Players The Los Angeles Chargers today placed two players on Reserve/Injured; Designated for Return, placed one player on Reserve/Non-Football Injury and released two players. The",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -2175,24 +2290,11 @@
       "reviewRequired": true,
       "rankedLinks": [
         {
-          "url": "https://www.therams.com/news/injury-updates",
-          "headline": "Injury Updates",
-          "score": 2,
-          "reasons": [
-            "STATUS_TERMS",
-            "DATE_UNVERIFIED",
-            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
-          ],
-          "dateFromHeadline": null,
-          "pregameShortlistEligible": false,
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
           "url": "https://www.therams.com/news/from-the-podium-head-coach-sean-mcvay-quarterback-matthew-stafford-coordinators-wide-receiver-puka-nacua-defensive-end-aaron-donald-preview-rams-week-7-matchup-with-raiders-press-conference-2026",
           "headline": "news From the Podium: Sean McVay, Matthew Stafford, Aaron Donald and coordinators on next-man-up mentality and Rams' Week 7 matchup with Raiders Oct 21, 2026 Head coach Sean McVay, quarterback Matthew Stafford, defensive",
-          "score": -2,
+          "score": 0,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "QB_TERMS",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
@@ -2202,11 +2304,25 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.therams.com/news/injury-updates",
+          "headline": "Injury Updates",
+          "score": 0,
+          "reasons": [
+            "STATUS_TERMS",
+            "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.therams.com/news/matthew-stafford-been-a-part-of-these-times-before-and-i-think-that-s-where-my-role-becomes-more-important",
           "headline": "news Matthew Stafford: 'Been a part of these times before, and I think that's where my role becomes more important' Oct 22, 2026 His leadership approach won't be anything out of character, but quarterback Matthew Staffor",
-          "score": -2,
+          "score": 0,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "QB_TERMS",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
@@ -2218,10 +2334,11 @@
         {
           "url": "https://www.therams.com/news/rams-injury-report-week-7-2026-at-raiders-puka-nacua-trent-mcduffie-questionable-nate-landman-out",
           "headline": "news Injury Report, Week 7 at Raiders: Puka Nacua and Trent McDuffie questionable, Nate Landman ruled out Oct 23, 2026 The final injury report heading into Sunday's Week 7 regular season game between the Rams and the Rai",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-23",
@@ -2231,10 +2348,11 @@
         {
           "url": "https://www.therams.com/news/sean-mcvay-says-rams-have-not-explored-adding-a-wide-receiver-externally-in-wake-of-davante-adams-hamstring-injury",
           "headline": "news McVay says Rams have not explored adding a wide receiver externally in wake of Davante Adams' hamstring injury Oct 21, 2026 Head coach Sean McVay said \"we've got some depth on our roster\" as the Rams prepare for Wee",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-21",
@@ -2244,9 +2362,10 @@
         {
           "url": "https://www.therams.com/news/the-straw-that-stirs-the-drink-rams-tight-end-room-sparking-energy-in-all-phases-a-microcosm-of-team-and-its-mentality",
           "headline": "news 'The straw that stirs the drink': Rams tight end room sparking energy in all phases, a microcosm of team and its mentality Oct 22, 2026 The Rams' tight end room's motto is being \"the straw that stirs the drink,\" aim",
-          "score": -10,
+          "score": -12,
           "reasons": [
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-22",
@@ -2263,40 +2382,13 @@
       "reviewRequired": true,
       "rankedLinks": [
         {
-          "url": "https://www.chiefs.com/news/week-1-inactive-players-broncos-vs-chiefs",
-          "headline": "news Week 1 Inactive Players | Broncos vs. Chiefs Sep 14, 2026 All the inactive players for the Chiefs Week 1 matchup against the Denver Broncos",
-          "score": -5,
-          "reasons": [
-            "STATUS_TERMS",
-            "OPPONENT",
-            "OLD_NEWS",
-            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
-          ],
-          "dateFromHeadline": "2026-09-14",
-          "pregameShortlistEligible": false,
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.chiefs.com/news/week-1-injury-report-broncos-vs-chiefs-2026",
-          "headline": "news Week 1 Injury Report | Broncos vs. Chiefs Sep 12, 2026 Injuries for the Chiefs Week 1 matchup against the Denver Broncos",
-          "score": -5,
-          "reasons": [
-            "STATUS_TERMS",
-            "OPPONENT",
-            "OLD_NEWS",
-            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
-          ],
-          "dateFromHeadline": "2026-09-12",
-          "pregameShortlistEligible": false,
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
           "url": "https://www.chiefs.com/news/2026-week-2-injury-report-colts-vs-chiefs",
           "headline": "news Week 2 Injury Report | Colts vs. Chiefs Sep 18, 2026 Injuries for the Chiefs Week 2 matchup against the Indianapolis Colts",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-09-18",
@@ -2306,10 +2398,11 @@
         {
           "url": "https://www.chiefs.com/news/week-2-inactive-players-colts-vs-chiefs",
           "headline": "news Week 2 Inactive Players | Colts vs. Chiefs Sep 20, 2026 All the inactive players for the Chiefs Week 2 matchup against the Colts",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-09-20",
@@ -2319,10 +2412,11 @@
         {
           "url": "https://www.chiefs.com/news/week-3-inactive-players-chiefs-vs-dolphins",
           "headline": "news Week 3 Inactive Players | Chiefs vs. Dolphins Sep 27, 2026 All the inactive players for the Chiefs Week 3 matchup against the Miami Dolphins",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-09-27",
@@ -2332,10 +2426,11 @@
         {
           "url": "https://www.chiefs.com/news/week-3-injury-report-chiefs-vs-dolphins-2026",
           "headline": "news Week 3 Injury Report | Chiefs vs. Dolphins Sep 25, 2026 Injuries for the Chiefs Week 3 matchup against the Miami Dolphins",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-09-25",
@@ -2345,10 +2440,11 @@
         {
           "url": "https://www.chiefs.com/news/week-4-inactive-players-chiefs-vs-raiders",
           "headline": "news Week 4 Inactive Players | Chiefs vs. Raiders Oct 04, 2026 All the inactive players for the Chiefs Week 4 matchup against the Las Vegas Raiders",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-04",
@@ -2358,10 +2454,11 @@
         {
           "url": "https://www.chiefs.com/news/week-4-injury-report-chiefs-vs-raiders-2026",
           "headline": "news Week 4 Injury Report | Chiefs vs. Raiders Oct 02, 2026 Injuries for the Chiefs Week 4 matchup against the Las Vegas Raiders",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-02",
@@ -2371,10 +2468,11 @@
         {
           "url": "https://www.chiefs.com/news/week-6-inactive-players-chargers-vs-chiefs",
           "headline": "news Week 6 Inactive Players | Chargers vs. Chiefs Oct 18, 2026 All the inactive players for the Chiefs Week 6 matchup against the Chargers",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-18",
@@ -2384,10 +2482,11 @@
         {
           "url": "https://www.chiefs.com/news/week-6-injury-report-chargers-vs-chiefs-2026",
           "headline": "news Week 6 Injury Report | Chargers vs. Chiefs Oct 16, 2026 Injuries for the Chiefs Week 6 matchup against the Los Angeles Chargers",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-16",
@@ -2397,10 +2496,11 @@
         {
           "url": "https://www.chiefs.com/news/week-7-injury-report-chiefs-vs-seahawks-2026",
           "headline": "news Week 7 Injury Report | Chiefs vs. Seahawks Oct 23, 2026 Injuries for the Chiefs Week 7 matchup against the Seattle Seahawks",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-23",
@@ -2410,12 +2510,45 @@
         {
           "url": "https://www.chiefs.com/news/chiefs-chairman-and-ceo-clark-hunt-announces-peter-king-as-2026-recipient-of-the-lamar-hunt-award-for-professional-football",
           "headline": "news Chiefs Chairman and CEO Clark Hunt Announces Peter King as 2026 Recipient of the Lamar Hunt Award for Professional Football Sep 01, 2026 Longtime journalist ecomes the 16th recipient of the prestigious award named f",
-          "score": -10,
+          "score": -12,
           "reasons": [
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-09-01",
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chiefs.com/news/week-1-inactive-players-broncos-vs-chiefs",
+          "headline": "news Week 1 Inactive Players | Broncos vs. Chiefs Sep 14, 2026 All the inactive players for the Chiefs Week 1 matchup against the Denver Broncos",
+          "score": -12,
+          "reasons": [
+            "STATUS_TERMS",
+            "OPPONENT_MENTION",
+            "OPPONENT_WITHOUT_OWN_QB",
+            "OLD_NEWS",
+            "NO_OWN_QB_NAME",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": "2026-09-14",
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chiefs.com/news/week-1-injury-report-broncos-vs-chiefs-2026",
+          "headline": "news Week 1 Injury Report | Broncos vs. Chiefs Sep 12, 2026 Injuries for the Chiefs Week 1 matchup against the Denver Broncos",
+          "score": -12,
+          "reasons": [
+            "STATUS_TERMS",
+            "OPPONENT_MENTION",
+            "OPPONENT_WITHOUT_OWN_QB",
+            "OLD_NEWS",
+            "NO_OWN_QB_NAME",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": "2026-09-12",
           "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
@@ -2431,9 +2564,9 @@
         {
           "url": "https://www.denverbroncos.com/news/i-have-to-play-better-broncos-qb-bo-nix-acknowledges-he-can-improve-highlights-belief-in-ability-to-respond",
           "headline": "'I have to play better': Broncos QB Bo Nix acknowledges he can improve, highlights belief in ability to respond",
-          "score": 8,
+          "score": 10,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "QB_TERMS",
             "DATE_UNVERIFIED",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
@@ -2445,10 +2578,11 @@
         {
           "url": "https://www.denverbroncos.com/news/injuryreport/injury-report-cb-pat-surtain-ii-and-rb-jonah-coleman-questionable-for-week-7-vs-cardinals-3-broncos-ruled-out",
           "headline": "Injury Report: CB Pat Surtain II and RB Jonah Coleman questionable for Week 7 vs. Cardinals, 3 Broncos ruled out A pair of Broncos could return for Denver\u2019s Week 7 matchup against the Cardinals.",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -2458,10 +2592,11 @@
         {
           "url": "https://www.denverbroncos.com/news/injuryreport/injury-report-cb-pat-surtain-ii-remains-limited-practice-participant-ahead-of-week-7-game-vs-cardinals",
           "headline": "Injury Report: CB Pat Surtain II remains limited practice participant ahead of Week 7 game vs. Cardinals Running back Jonah Coleman (ankle), who was designated for return from injured reserve on Wednesday, was a full pra",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -2471,10 +2606,11 @@
         {
           "url": "https://www.denverbroncos.com/news/injuryreport/injury-report-cb-pat-surtain-ii-returns-to-practice-ahead-of-broncos-week-7-game-vs-cardinals",
           "headline": "Injury Report: CB Pat Surtain II returns to practice ahead of Broncos' Week 7 game vs. Cardinals",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -2484,9 +2620,10 @@
         {
           "url": "https://www.denverbroncos.com/news/injuryreport/",
           "headline": "",
-          "score": 0,
+          "score": -2,
           "reasons": [
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -2505,9 +2642,9 @@
         {
           "url": "https://www.patriots.com/news/how-patriots-qb-drake-maye-can-be-even-better-in-his-third-nfl-season",
           "headline": "How Patriots QB Drake Maye can be even better in his third NFL season",
-          "score": 8,
+          "score": 10,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "QB_TERMS",
             "DATE_UNVERIFIED",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
@@ -2519,10 +2656,11 @@
         {
           "url": "https://www.patriots.com/news/patriots-sign-t-james-hudson-iii-and-cb-kindle-vildor-release-qb-josh-dobbs",
           "headline": "Patriots Sign T James Hudson III and CB Kindle Vildor; Release QB Josh Dobbs",
-          "score": 3,
+          "score": 1,
           "reasons": [
             "QB_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -2532,10 +2670,11 @@
         {
           "url": "https://www.patriots.com/news/inactives-analysis-patriots-elevate-rb-lan-larison-from-practice-squad-with-treveyon-henderson-inactive-for-season-opener-vs-seahawks",
           "headline": "Inactives Analysis: Patriots elevate RB Lan Larison from practice squad with TreVeyon Henderson inactive for season opener vs. Seahawks",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -2545,10 +2684,11 @@
         {
           "url": "https://www.patriots.com/news/inactives-analysis-te-eli-raridon-s-craig-woodson-officially-inactive-for-sunday-s-week-3-matchup-vs-the-jaguars",
           "headline": "Inactives Analysis: TE Eli Raridon, S Craig Woodson officially inactive for Sunday's Week 3 matchup vs. the Jaguars",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -2558,10 +2698,11 @@
         {
           "url": "https://www.patriots.com/news/injury-report-analysis-cb-carlton-davis-iii-set-to-return-two-players-ruled-out-two-players-listed-as-questionable-for-patriots-vs-jaguars",
           "headline": "Injury Report Analysis: CB Carlton Davis III set to return, two players ruled out, two players listed as questionable for Patriots vs. Jaguars",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -2571,10 +2712,11 @@
         {
           "url": "https://www.patriots.com/news/injury-report-analysis-christian-gonzalez-expected-to-play-a-j-brown-officially-questionable-for-sunday-s-game-vs-jets",
           "headline": "Injury Report Analysis: Christian Gonzalez expected to play, A.J. Brown officially questionable for Sunday's game vs. Jets",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -2584,10 +2726,11 @@
         {
           "url": "https://www.patriots.com/news/injury-report-analysis-patriots-rb-treveyon-henderson-ankle-ruled-out-for-season-opener-vs-seahawks",
           "headline": "Injury Report Analysis: Patriots RB TreVeyon Henderson (ankle) ruled out for season-opener vs. Seahawks",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -2597,10 +2740,11 @@
         {
           "url": "https://www.patriots.com/news/injury-report-analysis-patriots-rule-out-christian-gonzalez-and-christian-barmore-for-sunday-s-week-4-matchup-vs-bills",
           "headline": "Injury Report Analysis: Patriots rule out Christian Gonzalez and Christian Barmore for Sunday's Week 4 matchup vs. Bills",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -2610,10 +2754,11 @@
         {
           "url": "https://www.patriots.com/news/injury-report-analysis-patriots-rule-out-five-players-for-thursday-night-football-vs-the-bears",
           "headline": "Injury Report Analysis: Patriots rule out five players for Thursday Night Football vs. the Bears",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -2623,10 +2768,11 @@
         {
           "url": "https://www.patriots.com/news/injury-report-analysis-patriots-rule-out-six-players-for-sunday-s-week-5-matchup-vs-the-raiders",
           "headline": "Injury Report Analysis: Patriots rule out six players for Sunday's Week 5 matchup vs. the Raiders",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -2636,10 +2782,11 @@
         {
           "url": "https://www.patriots.com/news/injury-report-analysis-rb-treveyon-henderson-expected-to-play-cb-carlton-davis-iii-officially-questionable-for-week-2-vs-steelers",
           "headline": "Injury Report Analysis: RB TreVeyon Henderson expected to play, CB Carlton Davis III officially questionable for Week 2 vs. Steelers",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -2649,10 +2796,11 @@
         {
           "url": "https://www.patriots.com/news/week-6-injury-report-patriots-vs-jets",
           "headline": "Week 6 Injury Report: Patriots vs. Jets",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -2662,10 +2810,11 @@
         {
           "url": "https://www.patriots.com/news/week-7-injury-report-patriots-at-bears",
           "headline": "Week 7 Injury Report: Patriots at Bears",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -2675,9 +2824,10 @@
         {
           "url": "https://www.patriots.com/news/inactives-analysis-a-j-brown-will-campbell-treveyon-henderson-officially-active-for-week-6-matchup-vs-the-jets",
           "headline": "Inactives Analysis: A.J. Brown, Will Campbell, TreVeyon Henderson officially active for Week 6 matchup vs. the Jets",
-          "score": 0,
+          "score": -2,
           "reasons": [
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -2687,9 +2837,10 @@
         {
           "url": "https://www.patriots.com/news/inactives-analysis-dre-mont-jones-craig-woodson-and-eli-raridon-return-for-sunday-s-afc-east-matchup-vs-the-bills",
           "headline": "Inactives Analysis: Dre'Mont Jones, Craig Woodson and Eli Raridon return for Sunday's AFC East matchup vs. the Bills",
-          "score": 0,
+          "score": -2,
           "reasons": [
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -2699,9 +2850,10 @@
         {
           "url": "https://www.patriots.com/news/inactives-analysis-patriots-place-lg-alijah-vera-tucker-on-ir-rt-morgan-moses-officially-active-for-thursday-night-s-game-vs-the-bears",
           "headline": "Inactives Analysis: Patriots place LG Alijah Vera-Tucker on IR, RT Morgan Moses officially active for Thursday night's game vs. the Bears",
-          "score": 0,
+          "score": -2,
           "reasons": [
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -2711,9 +2863,10 @@
         {
           "url": "https://www.patriots.com/news/inactives-analysis-patriots-rb-rhamondre-stevenson-dt-christian-barmore-active-for-sunday-s-game-vs-raiders",
           "headline": "Inactives Analysis: Patriots RB Rhamondre Stevenson, DT Christian Barmore active for Sunday's game vs. Raiders",
-          "score": 0,
+          "score": -2,
           "reasons": [
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -2723,9 +2876,10 @@
         {
           "url": "https://www.patriots.com/news/inactives-analysis-rb-treveyon-henderson-to-make-season-debut-wr-efton-chism-iii-active-vs-steelers",
           "headline": "Inactives Analysis: RB TreVeyon Henderson, WR Efton Chism III to make season debuts vs. Steelers",
-          "score": 0,
+          "score": -2,
           "reasons": [
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -2735,9 +2889,10 @@
         {
           "url": "https://www.patriots.com/news/week-6-inactives-jets-at-patriots",
           "headline": "Week 6 Inactives: Jets at Patriots",
-          "score": 0,
+          "score": -2,
           "reasons": [
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -2747,9 +2902,10 @@
         {
           "url": "https://www.patriots.com/news/week-7-inactives-patriots-at-bears-x7631",
           "headline": "Week 7 Inactives: Patriots at Bears",
-          "score": 0,
+          "score": -2,
           "reasons": [
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -2768,9 +2924,9 @@
         {
           "url": "https://www.miamidolphins.com/news/transcript-qb-malik-willis-press-conference-october-21",
           "headline": "Transcript: QB Malik Willis Press Conference - October 21",
-          "score": 8,
+          "score": 10,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "QB_TERMS",
             "DATE_UNVERIFIED",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
@@ -2782,10 +2938,11 @@
         {
           "url": "https://www.miamidolphins.com/news/injury-report-week-7-dolphins-at-jets",
           "headline": "news Injury Report: Week 7 Dolphins at Jets Check out the official Week 7 injury report for the Miami Dolphins.",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -2804,23 +2961,10 @@
         {
           "url": "https://www.philadelphiaeagles.com/news/spadaro-tanner-mckee-looks-to-win-the-trust-of-his-teammates-eagles-cowboys-2026",
           "headline": "news Spadaro: Tanner McKee looks to win the trust of his teammates The quarterback reflects on his first start of the season and previews the prime-time showdown Monday night against Dallas.",
-          "score": 8,
+          "score": 10,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "QB_TERMS",
-            "DATE_UNVERIFIED",
-            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
-          ],
-          "dateFromHeadline": null,
-          "pregameShortlistEligible": false,
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
-          "headline": "news Cowboys vs. Eagles Injury Report Running back Saquon Barkley practiced again on Friday as Monday night's matchup inches closer.",
-          "score": 2,
-          "reasons": [
-            "STATUS_TERMS",
             "DATE_UNVERIFIED",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
@@ -2831,9 +2975,9 @@
         {
           "url": "https://www.philadelphiaeagles.com/news/eagles-place-jalen-hurts-on-injured-reserve-sign-jaydon-blue-to-the-active-roster-2026-nfl-week-6-panthers",
           "headline": "news Eagles place QB Jalen Hurts on Injured Reserve, sign RB Jaydon Blue to the active roster Oct 17, 2026",
-          "score": 0,
+          "score": 2,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "QB_TERMS",
             "STATUS_TERMS",
             "OLD_NEWS",
@@ -2844,11 +2988,25 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-injury-report-2026-nfl-week-7-saquon-barkley-jalyx-hunt",
+          "headline": "news Cowboys vs. Eagles Injury Report Running back Saquon Barkley practiced again on Friday as Monday night's matchup inches closer.",
+          "score": 0,
+          "reasons": [
+            "STATUS_TERMS",
+            "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.philadelphiaeagles.com/news/eagles-and-jalen-hurts-agent-nicole-lynn-provide-an-update-on-qb-jalen-hurts",
           "headline": "news Eagles and Jalen Hurts' agent Nicole Lynn provide an update on QB Jalen Hurts Oct 19, 2026",
-          "score": -2,
+          "score": 0,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "QB_TERMS",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
@@ -2860,9 +3018,9 @@
         {
           "url": "https://www.philadelphiaeagles.com/news/statement-from-the-philadelphia-eagles-on-qb-jalen-hurts",
           "headline": "news Statement from the Philadelphia Eagles on QB Jalen Hurts Oct 15, 2026",
-          "score": -2,
+          "score": 0,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "QB_TERMS",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
@@ -2874,9 +3032,9 @@
         {
           "url": "https://www.philadelphiaeagles.com/news/eagles-6-takeaways-from-an-incredible-come-from-behind-win-over-the-titans-jalen-hurts-devonta-smith-2026-nfl-week-2",
           "headline": "news Spadaro: 6 takeaways from an incredible, come-from-behind win over the Titans Sep 20, 2026",
-          "score": -5,
+          "score": -3,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
@@ -2887,9 +3045,9 @@
         {
           "url": "https://www.philadelphiaeagles.com/news/eagles-at-bears-game-preview-6-storylines-to-follow-2026-week-3-nfl-regular-season-monday-night-football-jalen-hurts-caleb-williams",
           "headline": "news Spadaro: Game Preview at Bears, 6 storylines to follow Sep 28, 2026",
-          "score": -5,
+          "score": -3,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
@@ -2900,9 +3058,9 @@
         {
           "url": "https://www.philadelphiaeagles.com/news/game-preview-at-jaguars-6-storylines-to-follow-jordan-mailata-jalen-hurts-trevor-lawrence-travis-hunter-2026-nfl-week-6-london-international-game",
           "headline": "news Game Preview at Jaguars: 6 storylines to follow Oct 11, 2026",
-          "score": -5,
+          "score": -3,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
@@ -2913,9 +3071,9 @@
         {
           "url": "https://www.philadelphiaeagles.com/news/how-to-watch-stream-and-listen-panthers-vs-eagles-nfl-week-6-2026-jalen-hurts-bryce-young",
           "headline": "news How to watch, stream, and listen | Panthers vs. Eagles Oct 18, 2026",
-          "score": -5,
+          "score": -3,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
@@ -2926,9 +3084,9 @@
         {
           "url": "https://www.philadelphiaeagles.com/news/jalen-hurts-eagles-do-what-it-takes-to-win",
           "headline": "news Spadaro: Jalen Hurts, Eagles do what it takes to win Sep 23, 2026",
-          "score": -5,
+          "score": -3,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
@@ -2939,9 +3097,9 @@
         {
           "url": "https://www.philadelphiaeagles.com/news/panthers-vs-eagles-game-preview-6-storylines-to-follow-2026-week-6-nfl-regular-season-crucial-catch-tanner-mckee-bryce-young",
           "headline": "news Spadaro: Game Preview vs. Panthers, 6 storylines to follow Oct 18, 2026",
-          "score": -5,
+          "score": -3,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
@@ -2952,9 +3110,9 @@
         {
           "url": "https://www.philadelphiaeagles.com/news/panthers-vs-eagles-game-recap-2026-nfl-week-6-crucial-catch-tanner-mckee-bryce-young",
           "headline": "news Game Recap: Panthers 25, Eagles 14 Oct 18, 2026",
-          "score": -5,
+          "score": -3,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
@@ -2965,9 +3123,9 @@
         {
           "url": "https://www.philadelphiaeagles.com/news/panthers-vs-eagles-inactives-2026-week-6-nfl-crucial-catch-saquon-barkley-jalen-hurts",
           "headline": "news Panthers vs. Eagles Inactives Oct 18, 2026",
-          "score": -5,
+          "score": -3,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
@@ -2978,9 +3136,9 @@
         {
           "url": "https://www.philadelphiaeagles.com/news/panthers-vs-eagles-what-can-tanner-mckee-offense-learn-from-sunday-2026-nfl-week-6",
           "headline": "news Spadaro: What can Tanner McKee, offense learn from Sunday? Oct 18, 2026",
-          "score": -5,
+          "score": -3,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
@@ -2991,9 +3149,9 @@
         {
           "url": "https://www.philadelphiaeagles.com/news/rams-vs-eagles-game-preview-6-storylines-to-follow-2026-week-4-nfl-regular-season-jalen-hurts-saquon-barkley-matthew-stafford",
           "headline": "news Game Preview vs. Rams: 6 storylines to follow Oct 04, 2026",
-          "score": -5,
+          "score": -3,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
@@ -3004,9 +3162,9 @@
         {
           "url": "https://www.philadelphiaeagles.com/news/spadaro-jalen-hurts-and-the-eagles-offense-embrace-next-man-up-mentality",
           "headline": "news Spadaro: Jalen Hurts and the Eagles' offense embrace 'next-man-up' mentality Oct 08, 2026",
-          "score": -5,
+          "score": -3,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
@@ -3017,9 +3175,9 @@
         {
           "url": "https://www.philadelphiaeagles.com/news/tanner-mckee-will-be-ready-for-his-moment-2026-nfl-week-6-carolina-panthers",
           "headline": "news Spadaro: Tanner McKee will be ready for his moment Oct 15, 2026",
-          "score": -5,
+          "score": -3,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
@@ -3030,10 +3188,11 @@
         {
           "url": "https://www.philadelphiaeagles.com/news/eagles-kyle-mccord-nfl-draft-quarterback-syracuse",
           "headline": "news Eagles select QB Kyle McCord with the No. 181 pick in the 2025 NFL Draft Apr 26, 2025",
-          "score": -7,
+          "score": -9,
           "reasons": [
             "QB_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2025-04-26",
@@ -3043,10 +3202,11 @@
         {
           "url": "https://www.philadelphiaeagles.com/news/eagles-sign-qb-joe-milton",
           "headline": "news Eagles sign QB Joe Milton Oct 16, 2026",
-          "score": -7,
+          "score": -9,
           "reasons": [
             "QB_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-16",
@@ -3056,10 +3216,11 @@
         {
           "url": "https://www.philadelphiaeagles.com/news/panthers-vs-eagles-injury-report-2026-nfl-week-6-saquon-barkley-devonta-smith",
           "headline": "news Panthers vs. Eagles Injury Report Oct 16, 2026",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-16",
@@ -3078,10 +3239,11 @@
         {
           "url": "https://www.commanders.com/news/laremy-tunsil-commanders-leadership-mentorship-josh-conerly-injury",
           "headline": "news 'A real brother': Tunsil provides invaluable mentorship to Commanders O-Line",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -3091,10 +3253,11 @@
         {
           "url": "https://www.commanders.com/news/terry-mclaurin-knee-injury-commanders",
           "headline": "news Terry McLaurin suffers season-ending knee injury vs. 49ers",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -3104,10 +3267,11 @@
         {
           "url": "https://www.commanders.com/news/inactives-commanders-vs-49ers-week-6",
           "headline": "Inactives | Commanders vs. 49ers, Week 6 Oct 19, 2026 The Washington Commanders have declared the following players as inactive for their Week 6 game against the San Francisco 49ers.",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-19",
@@ -3124,24 +3288,11 @@
       "reviewRequired": true,
       "rankedLinks": [
         {
-          "url": "https://www.chicagobears.com/news/injury-update",
-          "headline": "Injury Update",
-          "score": 2,
-          "reasons": [
-            "STATUS_TERMS",
-            "DATE_UNVERIFIED",
-            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
-          ],
-          "dateFromHeadline": null,
-          "pregameShortlistEligible": false,
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
           "url": "https://www.chicagobears.com/news/bears-qb-caleb-williams-practices-in-full-but-game-status-still-uncertain",
           "headline": "Bears QB Caleb Williams practices in full, but game status still uncertain Oct 15, 2026 Bears quarterback Caleb Williams was a full participant in practice again Thursday, but it has not yet been determined whether he wi",
-          "score": 0,
+          "score": 2,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "QB_TERMS",
             "STATUS_TERMS",
             "OLD_NEWS",
@@ -3154,9 +3305,9 @@
         {
           "url": "https://www.chicagobears.com/news/caleb-williams-takes-another-step-toward-return-from-hamstring-injury",
           "headline": "Caleb Williams takes another step toward return from hamstring injury Oct 14, 2026 The Bears conducted a walk-through Wednesday. But had they held a regular practice, quarterback Caleb Williams would have been a full par",
-          "score": 0,
+          "score": 2,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "QB_TERMS",
             "STATUS_TERMS",
             "OLD_NEWS",
@@ -3169,9 +3320,9 @@
         {
           "url": "https://www.chicagobears.com/news/game-recap-bears-improve-to-4-2-with-road-victory-in-atlanta-2026-week-6",
           "headline": "Game Recap: Bears improve to 4-2 with road victory in Atlanta Oct 18, 2026 After missing three games with a hamstring injury, quarterback Caleb Williams made a triumphant return Sunday in Atlanta, leading the Bears to a ",
-          "score": 0,
+          "score": 2,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "QB_TERMS",
             "STATUS_TERMS",
             "OLD_NEWS",
@@ -3184,9 +3335,9 @@
         {
           "url": "https://www.chicagobears.com/news/injury-update-bears-rb-kyle-monangai-ruled-out-qb-caleb-williams-questionable-for-packers-game",
           "headline": "Injury Update: Bears RB Kyle Monangai ruled out, QB Caleb Williams questionable for Packers game Oct 09, 2026 Bears running back Kyle Monangai has been ruled out of Sunday's game in Green Bay with a toe injury, while qua",
-          "score": 0,
+          "score": 2,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "QB_TERMS",
             "STATUS_TERMS",
             "OLD_NEWS",
@@ -3199,9 +3350,9 @@
         {
           "url": "https://www.chicagobears.com/news/injury-update-caleb-williams-officially-ruled-out-for-sunday-s-game-vs-jets",
           "headline": "Injury Update: Caleb Williams officially ruled out for Sunday's game vs. Jets Oct 02, 2026 Either Tyson Bagent or Case Keenum will start at quarterback for the Bears Sunday against the Jets in place of Caleb Williams, wh",
-          "score": 0,
+          "score": 2,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "QB_TERMS",
             "STATUS_TERMS",
             "OLD_NEWS",
@@ -3214,9 +3365,9 @@
         {
           "url": "https://www.chicagobears.com/news/injury-update-caleb-williams-questionable-for-sunday-s-game-vs-falcons",
           "headline": "Injury Update: Caleb Williams questionable for Sunday's game vs. Falcons Oct 16, 2026 Bears quarterback Caleb Williams was a full participant in practice Friday and is listed as questionable for Sunday's game against the",
-          "score": 0,
+          "score": 2,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "QB_TERMS",
             "STATUS_TERMS",
             "OLD_NEWS",
@@ -3229,9 +3380,9 @@
         {
           "url": "https://www.chicagobears.com/news/caleb-williams-completion-percentage-on-meteoric-rise",
           "headline": "Caleb Williams' completion percentage on meteoric rise Oct 21, 2026 For the second straight year, Bears quarterback Caleb Williams is accomplishing an important statistical goal he set before the season by a huge margin.",
-          "score": -2,
+          "score": 0,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "QB_TERMS",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
@@ -3243,9 +3394,9 @@
         {
           "url": "https://www.chicagobears.com/news/caleb-williams-named-nfc-offensive-player-of-the-week-6",
           "headline": "Caleb Williams named NFC Offensive Player of the Week Oct 21, 2026 Bears quarterback Caleb Williams has been chosen as the NFC Offensive Player of the Week for his performance in last Sunday's 31-23 win over the Falcons.",
-          "score": -2,
+          "score": 0,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "QB_TERMS",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
@@ -3255,13 +3406,28 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.chicagobears.com/news/injury-update",
+          "headline": "Injury Update",
+          "score": 0,
+          "reasons": [
+            "STATUS_TERMS",
+            "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.chicagobears.com/news/bears-will-wait-to-announce-starting-qb-for-jets-game",
           "headline": "Bears will wait to announce starting QB for Jets game Sep 30, 2026 When Ben Johnson met the media Wednesday before conducting a walk-through practice, the Bears coach was not ready to name a starting quarterback for Sund",
-          "score": -5,
+          "score": -7,
           "reasons": [
             "QB_TERMS",
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-09-30",
@@ -3271,10 +3437,11 @@
         {
           "url": "https://www.chicagobears.com/news/bears-qb-tyson-bagent-lauded-for-crisp-operation-of-offense",
           "headline": "Bears QB Tyson Bagent lauded for 'crisp' operation of offense Oct 08, 2026 As Tyson Bagent prepares for his second straight start Sunday in Green Bay, the Bears are confident the fourth-year quarterback will run the offe",
-          "score": -7,
+          "score": -9,
           "reasons": [
             "QB_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-08",
@@ -3284,10 +3451,11 @@
         {
           "url": "https://www.chicagobears.com/news/game-prep-a-group-effort-for-bears-quarterbacks",
           "headline": "Game prep a group effort for Bears quarterbacks Oct 02, 2026 The Bears have not yet announced their starting quarterback for Sunday's game against the Jets, but both Tyson Bagent and Case Keenum will be ready if called u",
-          "score": -7,
+          "score": -9,
           "reasons": [
             "QB_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-02",
@@ -3297,10 +3465,11 @@
         {
           "url": "https://www.chicagobears.com/news/game-recap-bears-ground-jets-improve-to-3-1",
           "headline": "Game Recap: Bears ground Jets, improve to 3-1 Oct 04, 2026 The Bears' quarterback depth, running game and defense have emerged as team strengths early this season\u2014and that was the case again Sunday at Soldier Field.",
-          "score": -7,
+          "score": -9,
           "reasons": [
             "QB_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-04",
@@ -3310,10 +3479,11 @@
         {
           "url": "https://www.chicagobears.com/news/this-is-special-case-keenum-delivers-impressive-performance-in-bears-primetime-victory",
           "headline": "'This is special': Case Keenum delivers impressive performance in Bears' primetime victory Sep 29, 2026 The opportunity to make his first start in 1,009 days already made Monday night special for veteran quarterback Case",
-          "score": -7,
+          "score": -9,
           "reasons": [
             "QB_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-09-29",
@@ -3323,10 +3493,11 @@
         {
           "url": "https://www.chicagobears.com/news/tyson-bagent-cherishes-first-start-since-2023",
           "headline": "Tyson Bagent cherishes first start since 2023 Oct 05, 2026 Tyson Bagent circled the field a couple of hours before kickoff like he does prior to every game, but Sunday was anything but ordinary for the backup quarterback",
-          "score": -7,
+          "score": -9,
           "reasons": [
             "QB_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-05",
@@ -3336,10 +3507,11 @@
         {
           "url": "https://www.chicagobears.com/news/tyson-bagent-looking-forward-to-facing-rival-packers",
           "headline": "Tyson Bagent looking forward to facing rival Packers Oct 07, 2026 Tyson Bagent is excited about starting his first rivalry game Sunday in Green Bay since 2022 since he led Shepherd University to a 30-13 road win over Shi",
-          "score": -7,
+          "score": -9,
           "reasons": [
             "QB_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-07",
@@ -3349,10 +3521,11 @@
         {
           "url": "https://www.chicagobears.com/news/injury-update-bears-rg-jonah-jackson-set-to-play-vs-patriots",
           "headline": "Injury Update: Bears RG Jonah Jackson set to play vs. Patriots Oct 21, 2026 Despite exiting last Sunday's win over the Falcons with hip and quadriceps issues that continued to impact him early in the week, Bears right gu",
-          "score": -8,
+          "score": -10,
           "reasons": [
             "STATUS_TERMS",
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-21",
@@ -3362,9 +3535,10 @@
         {
           "url": "https://www.chicagobears.com/news/5-things-that-stood-out-to-bears-coach-ben-johnson-in-week-7-win-patriots",
           "headline": "5 things that stood out to Bears coach Ben Johnson in Week 7 win Oct 23, 2026 After watching tape of Thursday night\u2019s 30-24 win over the Patriots, Bears coach Ben Johnson spoke to reporters about Luther Burden III\u2019s rare",
-          "score": -10,
+          "score": -12,
           "reasons": [
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-23",
@@ -3374,9 +3548,10 @@
         {
           "url": "https://www.chicagobears.com/news/5-things-we-learned-from-bears-coach-ben-johnson-in-week-5-loss-packers-2026",
           "headline": "5 things we learned from Bears coach Ben Johnson in Week 5 loss Oct 12, 2026 After watching tape of Sunday's 31-7 loss in Green Bay, Bears coach Ben Johnson on Monday spoke to reporters about the need to correct mistakes",
-          "score": -10,
+          "score": -12,
           "reasons": [
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-12",
@@ -3386,9 +3561,10 @@
         {
           "url": "https://www.chicagobears.com/news/flag-football-player-of-week-kerra-elizabeth-serrette-week-5",
           "headline": "Girls Flag Football Player of the Week: Kerra-Elizabeth Serrette | Week 5 Oct 02, 2026 Buffalo Grove senior Kerra-Elizabeth Serrette received Week 5 Player of the Week honors for her standout performances across three co",
-          "score": -10,
+          "score": -12,
           "reasons": [
             "OLD_NEWS",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": "2026-10-02",
@@ -3407,9 +3583,9 @@
         {
           "url": "https://www.seahawks.com/news/sam-darnold-s-steadiness-an-elite-skill-through-recent-turnovers",
           "headline": "news Sam Darnold's 'Steadiness' An Elite Skill Through Recent Turnovers Seahawks quarterback Sam Darnold's ability to stay anchored through highs and lows is an \"incredible trait.\"",
-          "score": 8,
+          "score": 10,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "QB_TERMS",
             "DATE_UNVERIFIED",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
@@ -3421,9 +3597,9 @@
         {
           "url": "https://www.seahawks.com/news/seahawks-qb-sam-darnold-after-two-interceptions-in-loss-to-broncos-i-ve-got-to-be-better",
           "headline": "news Seahawks QB Sam Darnold After Two Interceptions In Loss To Broncos: 'I've Got To Be Better' Seahawks quarterback Sam Darnold put the blame on his shoulder after throwing two interceptions in Thursday's 17-14 loss to",
-          "score": 8,
+          "score": 10,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "QB_TERMS",
             "DATE_UNVERIFIED",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
@@ -3435,11 +3611,12 @@
         {
           "url": "https://www.seahawks.com/news/jaxon-smith-njigba-good-to-go-drake-thomas-ruled-out-for-seahawks-week-6-game-at-denver",
           "headline": "news Jaxon Smith-Njigba Good To Go, Drake Thomas Ruled Out For Seahawks' Week 6 Game at Denver The Seahawks will be without starting linebacker Drake Thomas on Thursday, but Jaxon Smith-Njigba is good to go after injurin",
-          "score": 5,
+          "score": 3,
           "reasons": [
             "QB_TERMS",
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -3449,10 +3626,11 @@
         {
           "url": "https://www.seahawks.com/news/2026-week-5-seahawks-vs-49ers-in-game-injury-updates",
           "headline": "news Seahawks vs. 49ers In-Game Injury Updates: Drake Thomas Questionable With Ankle Injury In-Game Injury News From The Week 5 Matchup Between Seattle and San Francisco",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -3462,10 +3640,11 @@
         {
           "url": "https://www.seahawks.com/news/2026-week-6-seahawks-at-broncos-in-game-injury-updates",
           "headline": "news Seahawks at Broncos In-Game Injury Updates: Elijah Arroyo Doubtful To Return To Thursday's Game In-Game Injury News From The Week 6 Matchup Between Seattle and Denver",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -3475,10 +3654,11 @@
         {
           "url": "https://www.seahawks.com/news/2026-week-7-injury-report-chiefs-at-seahawks",
           "headline": "Week 7 Injury Report: Chiefs at Seahawks Details on the Seahawks\u2019 injury situation heading into their Week 7 game against the Chiefs.",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -3488,10 +3668,11 @@
         {
           "url": "https://www.seahawks.com/news/injury-updates/",
           "headline": "Injury Updates",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -3501,10 +3682,11 @@
         {
           "url": "https://www.seahawks.com/news/jadarian-price-s-and-anthony-bradford-s-timelines-and-other-injury-updates-from-mike-macdonald",
           "headline": "news Return Timelines for Jadarian Price, Anthony Bradford & Other Injury Updates From Mike Macdonald Injury updates from Seahawks coach Mike Macdonald after his team's Week 6 loss in Denver.",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -3514,10 +3696,11 @@
         {
           "url": "https://www.seahawks.com/news/leonard-williams-feeling-good-other-seahawks-injury-updates-going-into-week-5",
           "headline": "news Leonard Williams Feeling 'Good' & Other Seahawks Injury Updates Going Into Week 5 Seahawks injury updates ahead of their Week 5 game against the 49ers.",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -3527,10 +3710,11 @@
         {
           "url": "https://www.seahawks.com/news/seahawks-at-broncos-week-6-inactives",
           "headline": "news Seahawks at Broncos Week 6 Inactives A look at the inactive lists for the Seahawks' Week 6 game at Denver.",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -3540,10 +3724,11 @@
         {
           "url": "https://www.seahawks.com/news/seahawks-vs-49ers-week-5-inactives",
           "headline": "news Seahawks vs. 49ers Week 5 Inactives A look at the inactive lists for the Seahawks and 49ers ahead of their Week 5 game at Lumen Field.",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -3553,10 +3738,11 @@
         {
           "url": "https://www.seahawks.com/news/week-5-injury-report-seahawks-vs-49ers",
           "headline": "news Week 5 Injury Report: Seahawks vs. 49ers Details on the Seahawks' injury situation heading into their Week 5 game against the 49ers.",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -3566,10 +3752,11 @@
         {
           "url": "https://www.seahawks.com/news/week-6-injury-report-seahawks-at-broncos",
           "headline": "news Week 6 Injury Report: Seahawks at Broncos Details on the Seahawks' injury situation heading into their Week 6 game at Denver.",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -3579,10 +3766,11 @@
         {
           "url": "https://www.seahawks.com/news/zach-charbonnet-anthony-bradford-s-potential-return-other-seahawks-injury-updates",
           "headline": "news Zach Charbonnet & Anthony Bradford's Potential Return & Other Seahawks Injury Updates Injury updates from Seahawks coach Mike Macdonald's Monday press conference.",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -3592,10 +3780,11 @@
         {
           "url": "https://www.seahawks.com/news/zach-charbonnet-ruled-out-other-seahawks-injury-updates-from-mike-macdonald",
           "headline": "Zach Charbonnet Ruled Out & Other Seahawks Injury Updates From Mike Macdonald",
-          "score": 2,
+          "score": 0,
           "reasons": [
             "STATUS_TERMS",
             "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
@@ -3605,9 +3794,9 @@
         {
           "url": "https://www.seahawks.com/news/seahawks-mailbag-sam-darnold-s-injury-white-throwback-uniforms-more",
           "headline": "news Seahawks Mailbag: Sam Darnold's Injury, White Throwback Uniforms & More Sep 15, 2026",
-          "score": -3,
+          "score": -1,
           "reasons": [
-            "PLAYER_NAME",
+            "OWN_QB_CANDIDATE",
             "STATUS_TERMS",
             "OLD_NEWS",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
