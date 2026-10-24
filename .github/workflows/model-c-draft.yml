@@ -58,6 +58,10 @@ jobs:
       - name: Build official quarterback source review queue
         if: steps.time.outputs.run == 'true'
         run: python3 scripts/model_c_qb_review_queue.py
+      - name: Validate ESPN QB matchup flags
+        if: steps.time.outputs.run == 'true'
+        run: |
+          if [ -f data/model-c-espn-qb-status.json ]; then python3 scripts/model_c_espn_queue_validation.py; fi
       - name: Discover official team QB news links (pilot, best effort)
         if: steps.time.outputs.run == 'true'
         continue-on-error: true
