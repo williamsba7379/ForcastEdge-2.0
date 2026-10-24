@@ -16,13 +16,24 @@ def fetch(url):
 def extract_qbs(payload):
     """Handle site API's depthchart sections conservatively, with no inferred ordering."""
     candidates=[]
-    for chart in payload.get("depthchart",payload.get("depthcharts",[])):
-        for position in chart.get("positions",{}).values() if isinstance(chart.get("positions"),dict) else []:
+    charts=payload.get("depthchart") or payload.get("depthcharts") or []
+    if isinstance(charts,dict):
+        charts=list(charts.values())
+    for chart in charts:
+        if not isinstance(chart,dict):
+            continue
+        positions=chart.get("positions") or {}
+        if isinstance(positions,dict):
+            positions=list(positions.values())
+        for position in positions:
+            if not isinstance(position,dict):
+                continue
             meta=position.get("position",{})
+            if isinstance(meta,str):meta={"abbreviation":meta}
             if str(meta.get("abbreviation","")).upper()!="QB":continue
             for player in position.get("athletes",[]):
                 athlete=player.get("athlete",player)
-                rank=player.get("rank",player.get("depth"))
+                rank=player.get("rank",player.get("depth",player.get("slot")))
                 name=athlete.get("displayName")
                 if name and str(rank)=="1":candidates.append(name)
     return sorted(set(candidates))
