@@ -142,7 +142,11 @@ def main():
             asof=declaration.get("asOf")
             valid=False
             if (declaration.get("status")=="CONFIRMED_STARTER"
-                and declaration.get("sourceType") in ("TEAM_ANNOUNCEMENT","OFFICIAL_INACTIVES","OFFICIAL_GAME_REPORT")
+                and declaration.get("sourceType")=="TEAM_ANNOUNCEMENT"
+                and declaration.get("reviewed") is True
+                and isinstance(declaration.get("evidenceText"),str)
+                and len(declaration.get("evidenceText","").strip())>=15
+                and declaration.get("team")==team
                 and str(declaration.get("gameId",""))==str(g["id"])
                 and isinstance(source,str) and source.startswith("https://")
                 and starter and asof):
