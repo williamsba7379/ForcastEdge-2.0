@@ -39,6 +39,23 @@ try:
                         sample["positionKeys"]=list(positions)[:12]
                     if isinstance(positions,list):
                         sample["firstPositionKeys"]=list(positions[0])[:12] if positions and isinstance(positions[0],dict) else []
+            sample["chartSections"]=[]
+            if isinstance(charts,list):
+                for section in charts:
+                    if not isinstance(section,dict):
+                        continue
+                    positions=section.get("positions") or {}
+                    if not isinstance(positions,dict):
+                        continue
+                    qb_records=[]
+                    for key,value in positions.items():
+                        if "qb" in str(key).lower() or "quarterback" in str(value.get("position",{})).lower() if isinstance(value,dict) else False:
+                            qb_records.append({"key":key,"positionKeys":list(value)[:15],
+                                               "positionMeta":value.get("position"),
+                                               "athleteSample":(value.get("athletes") or [])[:1]})
+                    sample["chartSections"].append({"name":section.get("name"),
+                                                      "positionCount":len(positions),
+                                                      "qbRecords":qb_records})
             if qbs:
                 report["teamsWithQB1"]+=1
             else:
