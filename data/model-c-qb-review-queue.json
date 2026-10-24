@@ -2,7 +2,7 @@
   "status": "HUMAN_REVIEW_QUEUE_ONLY",
   "season": 2026,
   "week": 8,
-  "generatedAt": "2026-10-24T03:53:25.709Z",
+  "generatedAt": "2026-10-24T03:55:58.547415+00:00",
   "automaticConfirmations": 0,
   "games": 14,
   "items": [
@@ -19,6 +19,9 @@
       "espnPriorityIsPrediction": false,
       "recentPrimaryPasserCandidate": "Bryce Young",
       "depthChartCandidate": null,
+      "tentativeExpectedStarter": null,
+      "expectedStarterEvidence": "INSUFFICIENT_OR_CONFLICTING_INDICATORS",
+      "confirmedStarter": null,
       "officialSourcesForManualReview": [],
       "historicalSourcesForContextOnly": [],
       "officialSourceSearchQueries": [
@@ -43,6 +46,9 @@
       "espnPriorityIsPrediction": false,
       "recentPrimaryPasserCandidate": "Jordan Love",
       "depthChartCandidate": null,
+      "tentativeExpectedStarter": null,
+      "expectedStarterEvidence": "INSUFFICIENT_OR_CONFLICTING_INDICATORS",
+      "confirmedStarter": null,
       "officialSourcesForManualReview": [],
       "historicalSourcesForContextOnly": [],
       "officialSourceSearchQueries": [
@@ -74,7 +80,7 @@
           "reportedStatus": "Questionable",
           "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Sprain', 'side': 'Left', 'returnDate': '2026-10-25'}",
           "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "retrievedAt": "2026-10-24T03:52:56.441225+00:00",
+          "retrievedAt": "2026-10-24T03:55:44.321509+00:00",
           "starterConfirmed": false,
           "reviewRequired": true
         }
@@ -83,6 +89,9 @@
       "espnPriorityIsPrediction": false,
       "recentPrimaryPasserCandidate": "Tyler Huntley",
       "depthChartCandidate": null,
+      "tentativeExpectedStarter": null,
+      "expectedStarterEvidence": "INSUFFICIENT_OR_CONFLICTING_INDICATORS",
+      "confirmedStarter": null,
       "officialSourcesForManualReview": [],
       "historicalSourcesForContextOnly": [
         {
@@ -117,6 +126,9 @@
       "espnPriorityIsPrediction": false,
       "recentPrimaryPasserCandidate": "Josh Allen",
       "depthChartCandidate": null,
+      "tentativeExpectedStarter": null,
+      "expectedStarterEvidence": "INSUFFICIENT_OR_CONFLICTING_INDICATORS",
+      "confirmedStarter": null,
       "officialSourcesForManualReview": [],
       "historicalSourcesForContextOnly": [],
       "officialSourceSearchQueries": [
@@ -141,6 +153,9 @@
       "espnPriorityIsPrediction": false,
       "recentPrimaryPasserCandidate": "Cam Ward",
       "depthChartCandidate": null,
+      "tentativeExpectedStarter": null,
+      "expectedStarterEvidence": "INSUFFICIENT_OR_CONFLICTING_INDICATORS",
+      "confirmedStarter": null,
       "officialSourcesForManualReview": [],
       "historicalSourcesForContextOnly": [],
       "officialSourceSearchQueries": [
@@ -165,6 +180,9 @@
       "espnPriorityIsPrediction": false,
       "recentPrimaryPasserCandidate": "Joe Burrow",
       "depthChartCandidate": null,
+      "tentativeExpectedStarter": null,
+      "expectedStarterEvidence": "INSUFFICIENT_OR_CONFLICTING_INDICATORS",
+      "confirmedStarter": null,
       "officialSourcesForManualReview": [],
       "historicalSourcesForContextOnly": [],
       "officialSourceSearchQueries": [
@@ -196,7 +214,7 @@
           "reportedStatus": "Questionable",
           "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Back', 'location': 'Torso', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}",
           "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "retrievedAt": "2026-10-24T03:52:56.441225+00:00",
+          "retrievedAt": "2026-10-24T03:55:44.321509+00:00",
           "starterConfirmed": false,
           "reviewRequired": true
         }
@@ -205,6 +223,9 @@
       "espnPriorityIsPrediction": false,
       "recentPrimaryPasserCandidate": "Jacoby Brissett",
       "depthChartCandidate": null,
+      "tentativeExpectedStarter": null,
+      "expectedStarterEvidence": "INSUFFICIENT_OR_CONFLICTING_INDICATORS",
+      "confirmedStarter": null,
       "officialSourcesForManualReview": [],
       "historicalSourcesForContextOnly": [],
       "officialSourceSearchQueries": [
@@ -229,6 +250,9 @@
       "espnPriorityIsPrediction": false,
       "recentPrimaryPasserCandidate": "Dak Prescott",
       "depthChartCandidate": null,
+      "tentativeExpectedStarter": null,
+      "expectedStarterEvidence": "INSUFFICIENT_OR_CONFLICTING_INDICATORS",
+      "confirmedStarter": null,
       "officialSourcesForManualReview": [],
       "historicalSourcesForContextOnly": [],
       "officialSourceSearchQueries": [
@@ -253,6 +277,9 @@
       "espnPriorityIsPrediction": false,
       "recentPrimaryPasserCandidate": "Kyler Murray",
       "depthChartCandidate": null,
+      "tentativeExpectedStarter": null,
+      "expectedStarterEvidence": "INSUFFICIENT_OR_CONFLICTING_INDICATORS",
+      "confirmedStarter": null,
       "officialSourcesForManualReview": [],
       "historicalSourcesForContextOnly": [],
       "officialSourceSearchQueries": [
@@ -277,6 +304,9 @@
       "espnPriorityIsPrediction": false,
       "recentPrimaryPasserCandidate": "Jared Goff",
       "depthChartCandidate": null,
+      "tentativeExpectedStarter": null,
+      "expectedStarterEvidence": "INSUFFICIENT_OR_CONFLICTING_INDICATORS",
+      "confirmedStarter": null,
       "officialSourcesForManualReview": [],
       "historicalSourcesForContextOnly": [],
       "officialSourceSearchQueries": [
@@ -301,6 +331,9 @@
       "espnPriorityIsPrediction": false,
       "recentPrimaryPasserCandidate": "Kirk Cousins",
       "depthChartCandidate": null,
+      "tentativeExpectedStarter": null,
+      "expectedStarterEvidence": "INSUFFICIENT_OR_CONFLICTING_INDICATORS",
+      "confirmedStarter": null,
       "officialSourcesForManualReview": [],
       "historicalSourcesForContextOnly": [],
       "officialSourceSearchQueries": [
@@ -325,6 +358,9 @@
       "espnPriorityIsPrediction": false,
       "recentPrimaryPasserCandidate": "Geno Smith",
       "depthChartCandidate": null,
+      "tentativeExpectedStarter": null,
+      "expectedStarterEvidence": "INSUFFICIENT_OR_CONFLICTING_INDICATORS",
+      "confirmedStarter": null,
       "officialSourcesForManualReview": [],
       "historicalSourcesForContextOnly": [],
       "officialSourceSearchQueries": [
@@ -356,7 +392,7 @@
           "reportedStatus": "Injured Reserve",
           "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Back', 'location': 'Torso', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}",
           "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "retrievedAt": "2026-10-24T03:52:56.441225+00:00",
+          "retrievedAt": "2026-10-24T03:55:44.321509+00:00",
           "starterConfirmed": false,
           "reviewRequired": true
         }
@@ -365,6 +401,9 @@
       "espnPriorityIsPrediction": false,
       "recentPrimaryPasserCandidate": "Deshaun Watson",
       "depthChartCandidate": null,
+      "tentativeExpectedStarter": null,
+      "expectedStarterEvidence": "INSUFFICIENT_OR_CONFLICTING_INDICATORS",
+      "confirmedStarter": null,
       "officialSourcesForManualReview": [],
       "historicalSourcesForContextOnly": [],
       "officialSourceSearchQueries": [
@@ -389,6 +428,9 @@
       "espnPriorityIsPrediction": false,
       "recentPrimaryPasserCandidate": "Aaron Rodgers",
       "depthChartCandidate": null,
+      "tentativeExpectedStarter": null,
+      "expectedStarterEvidence": "INSUFFICIENT_OR_CONFLICTING_INDICATORS",
+      "confirmedStarter": null,
       "officialSourcesForManualReview": [],
       "historicalSourcesForContextOnly": [],
       "officialSourceSearchQueries": [
@@ -413,6 +455,9 @@
       "espnPriorityIsPrediction": false,
       "recentPrimaryPasserCandidate": "Michael Penix Jr.",
       "depthChartCandidate": null,
+      "tentativeExpectedStarter": null,
+      "expectedStarterEvidence": "INSUFFICIENT_OR_CONFLICTING_INDICATORS",
+      "confirmedStarter": null,
       "officialSourcesForManualReview": [],
       "historicalSourcesForContextOnly": [],
       "officialSourceSearchQueries": [
@@ -444,7 +489,7 @@
           "reportedStatus": "Questionable",
           "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Thumb', 'location': 'Arm', 'returnDate': '2026-10-25'}",
           "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "retrievedAt": "2026-10-24T03:52:56.441225+00:00",
+          "retrievedAt": "2026-10-24T03:55:44.321509+00:00",
           "starterConfirmed": false,
           "reviewRequired": true
         }
@@ -453,6 +498,9 @@
       "espnPriorityIsPrediction": false,
       "recentPrimaryPasserCandidate": "Jalon Daniels",
       "depthChartCandidate": null,
+      "tentativeExpectedStarter": null,
+      "expectedStarterEvidence": "INSUFFICIENT_OR_CONFLICTING_INDICATORS",
+      "confirmedStarter": null,
       "officialSourcesForManualReview": [],
       "historicalSourcesForContextOnly": [],
       "officialSourceSearchQueries": [
@@ -477,6 +525,9 @@
       "espnPriorityIsPrediction": false,
       "recentPrimaryPasserCandidate": "Daniel Jones",
       "depthChartCandidate": null,
+      "tentativeExpectedStarter": null,
+      "expectedStarterEvidence": "INSUFFICIENT_OR_CONFLICTING_INDICATORS",
+      "confirmedStarter": null,
       "officialSourcesForManualReview": [],
       "historicalSourcesForContextOnly": [],
       "officialSourceSearchQueries": [
@@ -501,6 +552,9 @@
       "espnPriorityIsPrediction": false,
       "recentPrimaryPasserCandidate": "Trevor Lawrence",
       "depthChartCandidate": null,
+      "tentativeExpectedStarter": null,
+      "expectedStarterEvidence": "INSUFFICIENT_OR_CONFLICTING_INDICATORS",
+      "confirmedStarter": null,
       "officialSourcesForManualReview": [],
       "historicalSourcesForContextOnly": [],
       "officialSourceSearchQueries": [
@@ -525,6 +579,9 @@
       "espnPriorityIsPrediction": false,
       "recentPrimaryPasserCandidate": "Justin Herbert",
       "depthChartCandidate": null,
+      "tentativeExpectedStarter": null,
+      "expectedStarterEvidence": "INSUFFICIENT_OR_CONFLICTING_INDICATORS",
+      "confirmedStarter": null,
       "officialSourcesForManualReview": [],
       "historicalSourcesForContextOnly": [],
       "officialSourceSearchQueries": [
@@ -549,6 +606,9 @@
       "espnPriorityIsPrediction": false,
       "recentPrimaryPasserCandidate": "Matthew Stafford",
       "depthChartCandidate": null,
+      "tentativeExpectedStarter": null,
+      "expectedStarterEvidence": "INSUFFICIENT_OR_CONFLICTING_INDICATORS",
+      "confirmedStarter": null,
       "officialSourcesForManualReview": [],
       "historicalSourcesForContextOnly": [],
       "officialSourceSearchQueries": [
@@ -573,6 +633,9 @@
       "espnPriorityIsPrediction": false,
       "recentPrimaryPasserCandidate": "Patrick Mahomes",
       "depthChartCandidate": null,
+      "tentativeExpectedStarter": null,
+      "expectedStarterEvidence": "INSUFFICIENT_OR_CONFLICTING_INDICATORS",
+      "confirmedStarter": null,
       "officialSourcesForManualReview": [],
       "historicalSourcesForContextOnly": [],
       "officialSourceSearchQueries": [
@@ -597,6 +660,9 @@
       "espnPriorityIsPrediction": false,
       "recentPrimaryPasserCandidate": "Bo Nix",
       "depthChartCandidate": null,
+      "tentativeExpectedStarter": null,
+      "expectedStarterEvidence": "INSUFFICIENT_OR_CONFLICTING_INDICATORS",
+      "confirmedStarter": null,
       "officialSourcesForManualReview": [],
       "historicalSourcesForContextOnly": [],
       "officialSourceSearchQueries": [
@@ -623,7 +689,7 @@
           "reportedStatus": "Out",
           "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}",
           "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "retrievedAt": "2026-10-24T03:52:56.441225+00:00",
+          "retrievedAt": "2026-10-24T03:55:44.321509+00:00",
           "starterConfirmed": false,
           "reviewRequired": true
         }
@@ -632,6 +698,9 @@
       "espnPriorityIsPrediction": false,
       "recentPrimaryPasserCandidate": "Drake Maye",
       "depthChartCandidate": null,
+      "tentativeExpectedStarter": null,
+      "expectedStarterEvidence": "INSUFFICIENT_OR_CONFLICTING_INDICATORS",
+      "confirmedStarter": null,
       "officialSourcesForManualReview": [],
       "historicalSourcesForContextOnly": [],
       "officialSourceSearchQueries": [
@@ -656,6 +725,9 @@
       "espnPriorityIsPrediction": false,
       "recentPrimaryPasserCandidate": "Malik Willis",
       "depthChartCandidate": null,
+      "tentativeExpectedStarter": null,
+      "expectedStarterEvidence": "INSUFFICIENT_OR_CONFLICTING_INDICATORS",
+      "confirmedStarter": null,
       "officialSourcesForManualReview": [],
       "historicalSourcesForContextOnly": [],
       "officialSourceSearchQueries": [
@@ -687,7 +759,7 @@
           "reportedStatus": "Injured Reserve",
           "description": "{'fantasyStatus': {'description': 'IR', 'abbreviation': 'IR'}, 'type': 'Calf', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Left', 'returnDate': '2027-02-15'}",
           "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "retrievedAt": "2026-10-24T03:52:56.441225+00:00",
+          "retrievedAt": "2026-10-24T03:55:44.321509+00:00",
           "starterConfirmed": false,
           "reviewRequired": true
         }
@@ -696,6 +768,9 @@
       "espnPriorityIsPrediction": false,
       "recentPrimaryPasserCandidate": "Tanner McKee",
       "depthChartCandidate": null,
+      "tentativeExpectedStarter": null,
+      "expectedStarterEvidence": "INSUFFICIENT_OR_CONFLICTING_INDICATORS",
+      "confirmedStarter": null,
       "officialSourcesForManualReview": [],
       "historicalSourcesForContextOnly": [
         {
@@ -745,7 +820,7 @@
           "reportedStatus": "Doubtful",
           "description": "{'fantasyStatus': {'description': 'DOUBTFUL', 'abbreviation': 'DOUBTFUL'}, 'type': 'Knee - MCL', 'location': 'Leg', 'detail': 'Sprain', 'side': 'Right', 'returnDate': '2026-11-01'}",
           "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "retrievedAt": "2026-10-24T03:52:56.441225+00:00",
+          "retrievedAt": "2026-10-24T03:55:44.321509+00:00",
           "starterConfirmed": false,
           "reviewRequired": true
         }
@@ -754,6 +829,9 @@
       "espnPriorityIsPrediction": false,
       "recentPrimaryPasserCandidate": "Jayden Daniels",
       "depthChartCandidate": null,
+      "tentativeExpectedStarter": null,
+      "expectedStarterEvidence": "INSUFFICIENT_OR_CONFLICTING_INDICATORS",
+      "confirmedStarter": null,
       "officialSourcesForManualReview": [],
       "historicalSourcesForContextOnly": [],
       "officialSourceSearchQueries": [
@@ -780,7 +858,7 @@
           "reportedStatus": "Out",
           "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-02'}",
           "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "retrievedAt": "2026-10-24T03:52:56.441225+00:00",
+          "retrievedAt": "2026-10-24T03:55:44.321509+00:00",
           "starterConfirmed": false,
           "reviewRequired": true
         }
@@ -789,6 +867,9 @@
       "espnPriorityIsPrediction": false,
       "recentPrimaryPasserCandidate": "Caleb Williams",
       "depthChartCandidate": null,
+      "tentativeExpectedStarter": null,
+      "expectedStarterEvidence": "INSUFFICIENT_OR_CONFLICTING_INDICATORS",
+      "confirmedStarter": null,
       "officialSourcesForManualReview": [],
       "historicalSourcesForContextOnly": [],
       "officialSourceSearchQueries": [
@@ -820,7 +901,7 @@
           "reportedStatus": "Questionable",
           "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Elbow', 'location': 'Arm', 'detail': 'Not Specified', 'side': 'Right', 'returnDate': '2026-10-25'}",
           "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "retrievedAt": "2026-10-24T03:52:56.441225+00:00",
+          "retrievedAt": "2026-10-24T03:55:44.321509+00:00",
           "starterConfirmed": false,
           "reviewRequired": true
         }
@@ -829,6 +910,9 @@
       "espnPriorityIsPrediction": false,
       "recentPrimaryPasserCandidate": "Sam Darnold",
       "depthChartCandidate": null,
+      "tentativeExpectedStarter": null,
+      "expectedStarterEvidence": "INSUFFICIENT_OR_CONFLICTING_INDICATORS",
+      "confirmedStarter": null,
       "officialSourcesForManualReview": [],
       "historicalSourcesForContextOnly": [],
       "officialSourceSearchQueries": [
@@ -840,7 +924,5 @@
       "declarationExists": false,
       "action": "Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
     }
-  ],
-  "espnSnapshotRetrievedAt": "2026-10-24T03:52:56.441225+00:00",
-  "espnDataCaution": "ESPN report is a point-in-time snapshot; statuses and priorities require fresh verification before use."
+  ]
 }
