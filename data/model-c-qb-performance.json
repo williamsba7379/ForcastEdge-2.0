@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "asOf": "2026-10-24T03:51:52.774648+00:00",
+  "asOf": "2026-10-24T03:52:56.537890+00:00",
   "metric": "adjusted yards per pass attempt (AYA), not ANY/A; sack data unavailable",
   "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
   "gamesProcessed": 94,
@@ -13,7 +13,7 @@
         "passAttempts": 214,
         "games": 7,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       },
       "Tommy DeVito": {
         "passYards": 30,
@@ -22,7 +22,7 @@
         "passAttempts": 5,
         "games": 1,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       },
       "Efton Chism III": {
         "passYards": 16,
@@ -31,7 +31,7 @@
         "passAttempts": 1,
         "games": 1,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       }
     },
     "Seattle Seahawks": {
@@ -42,7 +42,7 @@
         "passAttempts": 48,
         "games": 2,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       },
       "Sam Darnold": {
         "passYards": 1033,
@@ -51,7 +51,7 @@
         "passAttempts": 149,
         "games": 5,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       },
       "Jaxon Smith-Njigba": {
         "passYards": 14,
@@ -60,7 +60,7 @@
         "passAttempts": 1,
         "games": 1,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       }
     },
     "San Francisco 49ers": {
@@ -71,7 +71,7 @@
         "passAttempts": 171,
         "games": 6,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       }
     },
     "Los Angeles Rams": {
@@ -82,7 +82,7 @@
         "passAttempts": 249,
         "games": 6,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       },
       "Stetson Bennett IV": {
         "passYards": 13,
@@ -91,7 +91,7 @@
         "passAttempts": 3,
         "games": 1,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       }
     },
     "Tampa Bay Buccaneers": {
@@ -102,7 +102,7 @@
         "passAttempts": 96,
         "games": 3,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       },
       "Jalon Daniels": {
         "passYards": 501,
@@ -111,7 +111,7 @@
         "passAttempts": 98,
         "games": 4,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       }
     },
     "Cincinnati Bengals": {
@@ -122,7 +122,7 @@
         "passAttempts": 189,
         "games": 5,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       }
     },
     "New Orleans Saints": {
@@ -133,7 +133,7 @@
         "passAttempts": 235,
         "games": 6,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       }
     },
     "Detroit Lions": {
@@ -144,7 +144,7 @@
         "passAttempts": 191,
         "games": 5,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       }
     },
     "New York Jets": {
@@ -155,7 +155,7 @@
         "passAttempts": 177,
         "games": 6,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       }
     },
     "Tennessee Titans": {
@@ -166,7 +166,7 @@
         "passAttempts": 177,
         "games": 6,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       }
     },
     "Baltimore Ravens": {
@@ -177,7 +177,7 @@
         "passAttempts": 96,
         "games": 4,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       },
       "Tyler Huntley": {
         "passYards": 429,
@@ -186,7 +186,7 @@
         "passAttempts": 72,
         "games": 3,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       },
       "Zay Flowers": {
         "passYards": 0,
@@ -195,7 +195,7 @@
         "passAttempts": 0,
         "games": 1,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       }
     },
     "Indianapolis Colts": {
@@ -206,7 +206,7 @@
         "passAttempts": 218,
         "games": 6,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       }
     },
     "Atlanta Falcons": {
@@ -217,7 +217,7 @@
         "passAttempts": 39,
         "games": 2,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       },
       "Jack Strand": {
         "passYards": 59,
@@ -226,7 +226,7 @@
         "passAttempts": 15,
         "games": 1,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       },
       "Michael Penix Jr.": {
         "passYards": 944,
@@ -235,7 +235,7 @@
         "passAttempts": 110,
         "games": 4,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       },
       "Tua Tagovailoa": {
         "passYards": 34,
@@ -244,7 +244,7 @@
         "passAttempts": 3,
         "games": 1,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       }
     },
     "Pittsburgh Steelers": {
@@ -255,7 +255,7 @@
         "passAttempts": 233,
         "games": 6,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       },
       "Cameron Johnston": {
         "passYards": 0,
@@ -264,7 +264,7 @@
         "passAttempts": 1,
         "games": 1,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       },
       "Mason Rudolph": {
         "passYards": 0,
@@ -273,7 +273,7 @@
         "passAttempts": 1,
         "games": 1,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       }
     },
     "Chicago Bears": {
@@ -284,7 +284,7 @@
         "passAttempts": 124,
         "games": 4,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       },
       "Tyson Bagent": {
         "passYards": 409,
@@ -293,7 +293,7 @@
         "passAttempts": 64,
         "games": 3,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       },
       "Case Keenum": {
         "passYards": 355,
@@ -302,7 +302,7 @@
         "passAttempts": 53,
         "games": 2,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       }
     },
     "Carolina Panthers": {
@@ -313,7 +313,7 @@
         "passAttempts": 201,
         "games": 5,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       },
       "Kenny Pickett": {
         "passYards": 0,
@@ -322,7 +322,7 @@
         "passAttempts": 1,
         "games": 1,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       }
     },
     "Cleveland Browns": {
@@ -333,7 +333,7 @@
         "passAttempts": 174,
         "games": 6,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       },
       "Shedeur Sanders": {
         "passYards": 0,
@@ -342,7 +342,7 @@
         "passAttempts": 1,
         "games": 1,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       }
     },
     "Jacksonville Jaguars": {
@@ -353,7 +353,7 @@
         "passAttempts": 184,
         "games": 6,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       }
     },
     "Buffalo Bills": {
@@ -364,7 +364,7 @@
         "passAttempts": 171,
         "games": 6,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       }
     },
     "Houston Texans": {
@@ -375,7 +375,7 @@
         "passAttempts": 219,
         "games": 6,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       },
       "Kai Kroeger": {
         "passYards": 0,
@@ -384,7 +384,7 @@
         "passAttempts": 1,
         "games": 1,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       }
     },
     "Miami Dolphins": {
@@ -395,7 +395,7 @@
         "passAttempts": 130,
         "games": 5,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       }
     },
     "Las Vegas Raiders": {
@@ -406,7 +406,7 @@
         "passAttempts": 213,
         "games": 6,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       },
       "Fernando Mendoza": {
         "passYards": 48,
@@ -415,7 +415,7 @@
         "passAttempts": 8,
         "games": 1,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       }
     },
     "Green Bay Packers": {
@@ -426,7 +426,7 @@
         "passAttempts": 226,
         "games": 6,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       }
     },
     "Minnesota Vikings": {
@@ -437,7 +437,7 @@
         "passAttempts": 39,
         "games": 2,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       },
       "Kyler Murray": {
         "passYards": 662,
@@ -446,7 +446,7 @@
         "passAttempts": 101,
         "games": 4,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       }
     },
     "Washington Commanders": {
@@ -457,7 +457,7 @@
         "passAttempts": 116,
         "games": 4,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       },
       "Marcus Mariota": {
         "passYards": 340,
@@ -466,7 +466,7 @@
         "passAttempts": 51,
         "games": 3,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       },
       "Dyami Brown": {
         "passYards": 0,
@@ -475,7 +475,7 @@
         "passAttempts": 1,
         "games": 1,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       },
       "Antonio Williams": {
         "passYards": 0,
@@ -484,7 +484,7 @@
         "passAttempts": 1,
         "games": 1,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       },
       "Athan Kaliakmanis": {
         "passYards": 186,
@@ -493,7 +493,7 @@
         "passAttempts": 33,
         "games": 1,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       }
     },
     "Philadelphia Eagles": {
@@ -504,7 +504,7 @@
         "passAttempts": 154,
         "games": 5,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       },
       "Andy Dalton": {
         "passYards": 0,
@@ -513,7 +513,7 @@
         "passAttempts": 1,
         "games": 1,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       },
       "Tanner McKee": {
         "passYards": 215,
@@ -522,7 +522,7 @@
         "passAttempts": 45,
         "games": 1,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       }
     },
     "Arizona Cardinals": {
@@ -533,7 +533,7 @@
         "passAttempts": 234,
         "games": 6,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       },
       "Michael Wilson": {
         "passYards": 7,
@@ -542,7 +542,7 @@
         "passAttempts": 1,
         "games": 1,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       }
     },
     "Los Angeles Chargers": {
@@ -553,7 +553,7 @@
         "passAttempts": 180,
         "games": 6,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       },
       "Tre' Harris": {
         "passYards": 0,
@@ -562,7 +562,7 @@
         "passAttempts": 1,
         "games": 1,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       }
     },
     "Dallas Cowboys": {
@@ -573,7 +573,7 @@
         "passAttempts": 246,
         "games": 6,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       }
     },
     "New York Giants": {
@@ -584,7 +584,7 @@
         "passAttempts": 34,
         "games": 2,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       },
       "Jameis Winston": {
         "passYards": 957,
@@ -593,7 +593,7 @@
         "passAttempts": 158,
         "games": 5,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       },
       "J.J. McCarthy": {
         "passYards": 243,
@@ -602,7 +602,7 @@
         "passAttempts": 21,
         "games": 1,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       }
     },
     "Denver Broncos": {
@@ -613,7 +613,7 @@
         "passAttempts": 189,
         "games": 6,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       }
     },
     "Kansas City Chiefs": {
@@ -624,7 +624,7 @@
         "passAttempts": 158,
         "games": 5,
         "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary",
-        "asOf": "2026-10-24T03:51:52.774648+00:00"
+        "asOf": "2026-10-24T03:52:56.537890+00:00"
       }
     }
   }
