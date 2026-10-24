@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "season": 2026,
+  "week": 8,
+  "gamesCompared": 14,
+  "eligibleQBAdjustments": 0,
+  "errors": [],
+  "note": "PASS checks structural consistency, not prediction accuracy or starter authenticity."
+}
