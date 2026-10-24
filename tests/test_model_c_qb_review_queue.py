@@ -40,3 +40,11 @@ assert injury_priority([],"QB A")=="ROUTINE"
 assert with_espn["items"][0]["espnInjuryReviewPriority"]=="ELEVATED"
 assert with_espn["items"][0]["espnPriorityIsPrediction"] is False
 print("PASS: QB injury urgency is review-only and candidate-aware")
+
+assert with_espn["items"][0]["confirmedStarter"] is None
+assert with_espn["items"][0]["tentativeExpectedStarter"] is None
+matching={"season":2026,"week":8,"games":[{**draft["games"][0],"quarterbacks":{"away":{"recentPrimaryPasser":"QB A","depthChartQB1Candidate":"QB A"},"home":{}}}]}
+result=build(matching,reviewed,{"teams":{}},espn)
+assert result["items"][0]["tentativeExpectedStarter"]=="QB A"
+assert result["items"][0]["confirmedStarter"] is None
+print("PASS: matching indicators yield tentative expectation, never official confirmation")
