@@ -48,3 +48,11 @@ result=build(matching,reviewed,{"teams":{}},espn)
 assert result["items"][0]["tentativeExpectedStarter"]=="QB A"
 assert result["items"][0]["confirmedStarter"] is None
 print("PASS: matching indicators yield tentative expectation, never official confirmation")
+
+conflicting={"season":2026,"week":8,"games":[{**draft["games"][0],"quarterbacks":{"away":{"recentPrimaryPasser":"QB A","depthChartQB1Candidate":"QB B"},"home":{}}}]}
+result=build(conflicting,reviewed,{"teams":{}},espn)
+assert result["items"][0]["quarterbackIndicatorConflict"] is True
+assert result["items"][0]["quarterbackReviewPriority"]=="CONFLICT_REVIEW"
+assert result["items"][0]["tentativeExpectedStarter"] is None
+assert result["items"][0]["confirmedStarter"] is None
+print("PASS: conflicting QB indicators trigger review only")
