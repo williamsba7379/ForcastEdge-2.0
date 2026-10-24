@@ -1,6 +1,6 @@
 {
   "status": "DISCOVERY_ONLY_NOT_STARTER_CONFIRMATION",
-  "generatedAt": "2026-10-24T10:29:45.613723+00:00",
+  "generatedAt": "2026-10-24T10:31:02.107110+00:00",
   "automaticConfirmations": 0,
   "teams": [
     {
@@ -24,8 +24,18 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.baltimoreravens.com/news/ravens-bengals-game-preview-joe-burrow-lamar-jackson-week-7-2026",
+          "headline": "news Everything You Need to Know: Ravens vs. Bengals Oct 23, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.baltimoreravens.com/news/lamar-jackson-injury-report-ravens-practice-start-ankle-2026",
           "headline": "news Lamar Jackson Takes a Step Forward, But Still Limited at Practice Oct 22, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.baltimoreravens.com/news/ravens-pass-rush-partner-trey-hendrickson-mike-green-lamar-jackson-full-speed-2026",
+          "headline": "news Late for Work: Pundit Says Ravens Need Establish a Pass-Rush Partner for Trey Hendrickson Oct 22, 2026",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -44,8 +54,53 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.baltimoreravens.com/news/jesse-minter-lamar-jackson-ankle-still-day-day-monday-week-7-injuries-rashod-bateman-cam-jurgens-trey-hendrickson-tyler-loop-critical-misses",
+          "headline": "news News & Notes: Jesse Minter Gives Health Update on Lamar Jackson Oct 19, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.baltimoreravens.com/news/mark-andrews-franchise-record-feature-hurricane-underestimated-lamar-jackson-rock-and-roll",
+          "headline": "Cover Story: How Mark Andrews Became the Ravens' All-Time Leading Receiver Nov 18, 2025",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.baltimoreravens.com/news/lamar-jackson-locked-in-playoffs-cover-story-super-bowl-2023",
+          "headline": "Cover Story: Why 'Locked In' Lamar Jackson Is Ready to Take the Ravens Farther Jan 15, 2024",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.baltimoreravens.com/news/deandre-hopkins-ravens-met-gala-lamar-jackson",
+          "headline": "news SociaLight: DeAndre Hopkins Shows Out at Met Gala May 06, 2025",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.baltimoreravens.com/news/lamar-jackson-germany-football-soccer-skills-shows-off-socialight",
+          "headline": "news SociaLight: Lamar Jackson Shows Off His Skills in Germany Apr 22, 2024",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.baltimoreravens.com/news/lamar-jackson-rug-wants-damn-fan-week-9-seahawks",
+          "headline": "news SociaLight: Lamar Jackson Wants the Damn Rug \ud83d\ude02 Nov 09, 2023",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.baltimoreravens.com/news/lamar-jackson-kids-freak-out-high-five-ravens-training-camp",
+          "headline": "news SociaLight: Watch Kids Freak Out After High-Fiving Lamar Jackson Jul 31, 2023",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.baltimoreravens.com/news/drake-lamar-jackson-stage-concert-my-quarterback",
           "headline": "news SociaLight: Drake Brings 'My Quarterback' Lamar Jackson on Stage Jul 30, 2023",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.baltimoreravens.com/news/odell-beckham-zay-flowers-working-out-together-offseason-2023",
+          "headline": "news SociaLight: Lamar Jackson, Odell Beckham Jr., Zay Flowers Work Out Together Jul 03, 2023",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.baltimoreravens.com/news/lamar-jackson-zay-flowers-beach-workout-south-florida",
+          "headline": "news SociaLight: Lamar Jackson and Zay Flowers Build Chemistry in South Florida Workouts Jun 28, 2023",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2794,6 +2849,21 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.buccaneers.com/news/october-2026-updates",
+          "headline": "news Baker Mayfield Expected to Start vs. Panthers | Updates Oct 23, 2026 Keep informed with our daily updates: News, notes and more throughout the month of October",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buccaneers.com/news/baker-mayfield-next-level-leadership-getting-ball-in-hands-of-chris-godwin-jr-and-more-bucs-blitz",
+          "headline": "news Baker Mayfield's \"Next-Level\" Leadership, Getting the Ball in the Hands of Chris Godwin Jr. and More | Bucs Blitz Oct 23, 2026 A look at key topics from the previous week, including Baker Mayfield\u2019s leadership quali",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buccaneers.com/news/week-seven-expert-picks-buccaneers-panthers",
+          "headline": "news Week Seven Expert Picks: Buccaneers-Panthers Oct 23, 2026 The Bucs are minor underdogs against their division rivals on Sunday, with the status of Baker Mayfield being a particular concern for national NFL analysts",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.buccaneers.com/news/s-j-j-roberts-and-qb-easton-stick-elevated-for-tnf-game-in-dallas",
           "headline": "S J.J. Roberts and QB Easton Stick Elevated for TNF Game in Dallas",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
@@ -2814,6 +2884,11 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.buccaneers.com/news/locked-long-term-baker-mayfield-bucs-agree-extension-through-2029",
+          "headline": "Locked In Long Term! Baker Mayfield, Bucs Agree on Extension Through 2029",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.buccaneers.com/news/caden-fordham-returns-bucs-practice-squad",
           "headline": "Caden Fordham Returns to Bucs' Practice Squad",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
@@ -2821,6 +2896,11 @@
         {
           "url": "https://www.buccaneers.com/news/quarterback-outlook-week-seven-tetairoa-mcmillan-prowess-more-bucs-blitz",
           "headline": "news Quarterback Outlook in Week Seven, Tetairoa McMillan's Prowess & More | Bucs Blitz",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buccaneers.com/news/explosive-weapon-tez-johnson-baker-mayfield-progression-more-bucs-blitz",
+          "headline": "news Explosive Weapon in Tez Johnson, Baker Mayfield's Progression and More | Bucs Blitz",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2836,6 +2916,11 @@
         {
           "url": "https://www.buccaneers.com/news/jalon-daniels-high-spirits-packers-explosive-offense-more-bucs-blitz-week-4",
           "headline": "news Jalon Daniels' High Spirits, Packers' Explosive Offense and More | Bucs Blitz",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buccaneers.com/news/baker-mayfield-on-vikings-defense-more-taneka-bowles-hosts-philanthropic-fashion-experience-bucs-blitz",
+          "headline": "news Baker Mayfield on the Vikings' Defense and More, and Taneka Bowles Hosts Philanthropic Fashion Experience | Bucs Blitz",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]

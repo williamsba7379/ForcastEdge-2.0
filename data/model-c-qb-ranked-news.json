@@ -883,6 +883,160 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.baltimoreravens.com/news/deandre-hopkins-ravens-met-gala-lamar-jackson",
+          "headline": "news SociaLight: DeAndre Hopkins Shows Out at Met Gala May 06, 2025",
+          "score": -3,
+          "reasons": [
+            "OWN_QB_CANDIDATE",
+            "OLD_NEWS",
+            "OWN_QB_STATUS_NOT_ESTABLISHED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": "2025-05-06",
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.baltimoreravens.com/news/jesse-minter-lamar-jackson-ankle-still-day-day-monday-week-7-injuries-rashod-bateman-cam-jurgens-trey-hendrickson-tyler-loop-critical-misses",
+          "headline": "news News & Notes: Jesse Minter Gives Health Update on Lamar Jackson Oct 19, 2026",
+          "score": -3,
+          "reasons": [
+            "OWN_QB_CANDIDATE",
+            "OLD_NEWS",
+            "OWN_QB_STATUS_NOT_ESTABLISHED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": "2026-10-19",
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.baltimoreravens.com/news/lamar-jackson-germany-football-soccer-skills-shows-off-socialight",
+          "headline": "news SociaLight: Lamar Jackson Shows Off His Skills in Germany Apr 22, 2024",
+          "score": -3,
+          "reasons": [
+            "OWN_QB_CANDIDATE",
+            "OLD_NEWS",
+            "OWN_QB_STATUS_NOT_ESTABLISHED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": "2024-04-22",
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.baltimoreravens.com/news/lamar-jackson-kids-freak-out-high-five-ravens-training-camp",
+          "headline": "news SociaLight: Watch Kids Freak Out After High-Fiving Lamar Jackson Jul 31, 2023",
+          "score": -3,
+          "reasons": [
+            "OWN_QB_CANDIDATE",
+            "OLD_NEWS",
+            "OWN_QB_STATUS_NOT_ESTABLISHED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": "2023-07-31",
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.baltimoreravens.com/news/lamar-jackson-locked-in-playoffs-cover-story-super-bowl-2023",
+          "headline": "Cover Story: Why 'Locked In' Lamar Jackson Is Ready to Take the Ravens Farther Jan 15, 2024",
+          "score": -3,
+          "reasons": [
+            "OWN_QB_CANDIDATE",
+            "OLD_NEWS",
+            "OWN_QB_STATUS_NOT_ESTABLISHED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": "2024-01-15",
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.baltimoreravens.com/news/lamar-jackson-rug-wants-damn-fan-week-9-seahawks",
+          "headline": "news SociaLight: Lamar Jackson Wants the Damn Rug \ud83d\ude02 Nov 09, 2023",
+          "score": -3,
+          "reasons": [
+            "OWN_QB_CANDIDATE",
+            "OLD_NEWS",
+            "OWN_QB_STATUS_NOT_ESTABLISHED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": "2023-11-09",
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.baltimoreravens.com/news/lamar-jackson-zay-flowers-beach-workout-south-florida",
+          "headline": "news SociaLight: Lamar Jackson and Zay Flowers Build Chemistry in South Florida Workouts Jun 28, 2023",
+          "score": -3,
+          "reasons": [
+            "OWN_QB_CANDIDATE",
+            "OLD_NEWS",
+            "OWN_QB_STATUS_NOT_ESTABLISHED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": "2023-06-28",
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.baltimoreravens.com/news/mark-andrews-franchise-record-feature-hurricane-underestimated-lamar-jackson-rock-and-roll",
+          "headline": "Cover Story: How Mark Andrews Became the Ravens' All-Time Leading Receiver Nov 18, 2025",
+          "score": -3,
+          "reasons": [
+            "OWN_QB_CANDIDATE",
+            "OLD_NEWS",
+            "OWN_QB_STATUS_NOT_ESTABLISHED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": "2025-11-18",
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.baltimoreravens.com/news/odell-beckham-zay-flowers-working-out-together-offseason-2023",
+          "headline": "news SociaLight: Lamar Jackson, Odell Beckham Jr., Zay Flowers Work Out Together Jul 03, 2023",
+          "score": -3,
+          "reasons": [
+            "OWN_QB_CANDIDATE",
+            "OLD_NEWS",
+            "OWN_QB_STATUS_NOT_ESTABLISHED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": "2023-07-03",
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.baltimoreravens.com/news/ravens-bengals-game-preview-joe-burrow-lamar-jackson-week-7-2026",
+          "headline": "news Everything You Need to Know: Ravens vs. Bengals Oct 23, 2026",
+          "score": -3,
+          "reasons": [
+            "OWN_QB_CANDIDATE",
+            "OLD_NEWS",
+            "OWN_QB_STATUS_NOT_ESTABLISHED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": "2026-10-23",
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.baltimoreravens.com/news/ravens-pass-rush-partner-trey-hendrickson-mike-green-lamar-jackson-full-speed-2026",
+          "headline": "news Late for Work: Pundit Says Ravens Need Establish a Pass-Rush Partner for Trey Hendrickson Oct 22, 2026",
+          "score": -3,
+          "reasons": [
+            "OWN_QB_CANDIDATE",
+            "OLD_NEWS",
+            "OWN_QB_STATUS_NOT_ESTABLISHED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": "2026-10-22",
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.baltimoreravens.com/news/ravens-sign-jake-moody-to-practice-squad-competition-with-tyler-loop",
           "headline": "news Ravens Sign Jake Moody to Practice Squad Oct 20, 2026",
           "score": -10,
@@ -4113,8 +4267,36 @@
       "reviewRequired": true,
       "rankedLinks": [
         {
+          "url": "https://www.buccaneers.com/news/baker-mayfield-on-vikings-defense-more-taneka-bowles-hosts-philanthropic-fashion-experience-bucs-blitz",
+          "headline": "news Baker Mayfield on the Vikings' Defense and More, and Taneka Bowles Hosts Philanthropic Fashion Experience | Bucs Blitz",
+          "score": 7,
+          "reasons": [
+            "OWN_QB_CANDIDATE",
+            "DATE_UNVERIFIED",
+            "OWN_QB_STATUS_NOT_ESTABLISHED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.buccaneers.com/news/challenge-facing-ceedee-lamb-george-pickens-jalon-daniels-composure-mindset-more-bucs-blitz",
           "headline": "news Challenge of Facing CeeDee Lamb and George Pickens, Jalon Daniels' Composure Mindset & More | Bucs Blitz",
+          "score": 7,
+          "reasons": [
+            "OWN_QB_CANDIDATE",
+            "DATE_UNVERIFIED",
+            "OWN_QB_STATUS_NOT_ESTABLISHED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buccaneers.com/news/explosive-weapon-tez-johnson-baker-mayfield-progression-more-bucs-blitz",
+          "headline": "news Explosive Weapon in Tez Johnson, Baker Mayfield's Progression and More | Bucs Blitz",
           "score": 7,
           "reasons": [
             "OWN_QB_CANDIDATE",
@@ -4143,6 +4325,20 @@
         {
           "url": "https://www.buccaneers.com/news/jalon-daniels-high-spirits-packers-explosive-offense-more-bucs-blitz-week-4",
           "headline": "news Jalon Daniels' High Spirits, Packers' Explosive Offense and More | Bucs Blitz",
+          "score": 7,
+          "reasons": [
+            "OWN_QB_CANDIDATE",
+            "DATE_UNVERIFIED",
+            "OWN_QB_STATUS_NOT_ESTABLISHED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buccaneers.com/news/locked-long-term-baker-mayfield-bucs-agree-extension-through-2029",
+          "headline": "Locked In Long Term! Baker Mayfield, Bucs Agree on Extension Through 2029",
           "score": 7,
           "reasons": [
             "OWN_QB_CANDIDATE",
@@ -4242,6 +4438,48 @@
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
           "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buccaneers.com/news/baker-mayfield-next-level-leadership-getting-ball-in-hands-of-chris-godwin-jr-and-more-bucs-blitz",
+          "headline": "news Baker Mayfield's \"Next-Level\" Leadership, Getting the Ball in the Hands of Chris Godwin Jr. and More | Bucs Blitz Oct 23, 2026 A look at key topics from the previous week, including Baker Mayfield\u2019s leadership quali",
+          "score": -3,
+          "reasons": [
+            "OWN_QB_CANDIDATE",
+            "OLD_NEWS",
+            "OWN_QB_STATUS_NOT_ESTABLISHED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": "2026-10-23",
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buccaneers.com/news/october-2026-updates",
+          "headline": "news Baker Mayfield Expected to Start vs. Panthers | Updates Oct 23, 2026 Keep informed with our daily updates: News, notes and more throughout the month of October",
+          "score": -3,
+          "reasons": [
+            "OWN_QB_CANDIDATE",
+            "OLD_NEWS",
+            "OWN_QB_STATUS_NOT_ESTABLISHED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": "2026-10-23",
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buccaneers.com/news/week-seven-expert-picks-buccaneers-panthers",
+          "headline": "news Week Seven Expert Picks: Buccaneers-Panthers Oct 23, 2026 The Bucs are minor underdogs against their division rivals on Sunday, with the status of Baker Mayfield being a particular concern for national NFL analysts",
+          "score": -3,
+          "reasons": [
+            "OWN_QB_CANDIDATE",
+            "OLD_NEWS",
+            "OWN_QB_STATUS_NOT_ESTABLISHED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": "2026-10-23",
           "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },

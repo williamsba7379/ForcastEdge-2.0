@@ -1,15 +1,17 @@
 {
-  "checkedAt": "2026-10-24T10:29:39.376943+00:00",
+  "checkedAt": "2026-10-24T10:30:55.865855+00:00",
   "status": "DIAGNOSTIC_ONLY_NOT_STARTER_CONFIRMATION",
   "teamsChecked": 32,
-  "teamsWithQB1": 0,
-  "teamsWithoutQB1": 32,
+  "teamsWithQB1": 32,
+  "teamsWithoutQB1": 0,
   "requestErrors": 0,
   "samples": [
     {
       "team": "Arizona Cardinals",
       "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/22/depthcharts",
-      "qb1Candidates": [],
+      "qb1Candidates": [
+        "Jacoby Brissett"
+      ],
       "topLevelKeys": [
         "depthchart",
         "season",
@@ -254,7 +256,9 @@
     {
       "team": "Atlanta Falcons",
       "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/1/depthcharts",
-      "qb1Candidates": [],
+      "qb1Candidates": [
+        "Michael Penix Jr."
+      ],
       "topLevelKeys": [
         "depthchart",
         "season",
@@ -499,7 +503,9 @@
     {
       "team": "Baltimore Ravens",
       "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/33/depthcharts",
-      "qb1Candidates": [],
+      "qb1Candidates": [
+        "Lamar Jackson"
+      ],
       "topLevelKeys": [
         "depthchart",
         "season",
@@ -757,7 +763,9 @@
     {
       "team": "Buffalo Bills",
       "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/2/depthcharts",
-      "qb1Candidates": [],
+      "qb1Candidates": [
+        "Josh Allen"
+      ],
       "topLevelKeys": [
         "depthchart",
         "season",
@@ -1002,7 +1010,9 @@
     {
       "team": "Carolina Panthers",
       "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/29/depthcharts",
-      "qb1Candidates": [],
+      "qb1Candidates": [
+        "Bryce Young"
+      ],
       "topLevelKeys": [
         "depthchart",
         "season",
@@ -1247,7 +1257,9 @@
     {
       "team": "Chicago Bears",
       "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/3/depthcharts",
-      "qb1Candidates": [],
+      "qb1Candidates": [
+        "Caleb Williams"
+      ],
       "topLevelKeys": [
         "depthchart",
         "season",
@@ -1492,7 +1504,9 @@
     {
       "team": "Cincinnati Bengals",
       "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/4/depthcharts",
-      "qb1Candidates": [],
+      "qb1Candidates": [
+        "Joe Burrow"
+      ],
       "topLevelKeys": [
         "depthchart",
         "season",
@@ -1737,7 +1751,9 @@
     {
       "team": "Cleveland Browns",
       "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/5/depthcharts",
-      "qb1Candidates": [],
+      "qb1Candidates": [
+        "Deshaun Watson"
+      ],
       "topLevelKeys": [
         "depthchart",
         "season",
@@ -1980,5 +1996,5 @@
       ]
     }
   ],
-  "coveragePercent": 0.0
+  "coveragePercent": 100.0
 }
