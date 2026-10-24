@@ -15,7 +15,16 @@ def build(draft, reviewed, declarations):
             team=game[side]
             qb=game.get("quarterbacks",{}).get(side,{})
             alert=game.get("qbReviewAlerts",{}).get(side,{})
+            # Only attach a source as game-specific when the exact game ID matches.
+            # Older team reports remain context, never evidence of this game's starter.
             relevant=[s for s in sources if s.get("team")==team]
+            exact=[s for s in relevant if str(s.get("gameId",""))==str(game["id"])]
+            historical=[s for s in relevant if str(s.get("gameId",""))!=str(game["id"])]
+            candidate=qb.get("recentPrimaryPasser")
+            search_queries=[
+                f'{team} official site starting quarterback {game["date"][:10]}',
+                f'{team} {candidate or "quarterback"} named starter vs {game["home" if side=="away" else "away"]}'
+            ]
             flags=alert.get("injuryFlags",[])
             items.append({
                 "gameId":game["id"],"kickoff":game["date"],"team":team,
@@ -25,7 +34,10 @@ def build(draft, reviewed, declarations):
                 "reportedInjuryFlags":flags,
                 "recentPrimaryPasserCandidate":qb.get("recentPrimaryPasser"),
                 "depthChartCandidate":qb.get("depthChartQB1Candidate"),
-                "officialSourcesForManualReview":relevant,
+                "officialSourcesForManualReview":exact,
+                "historicalSourcesForContextOnly":historical,
+                "officialSourceSearchQueries":search_queries,
+                "sourceEvidenceStatus":"GAME_SPECIFIC_SOURCE_REVIEW_REQUIRED" if not exact else "GAME_SPECIFIC_SOURCE_FOUND_NOT_CONFIRMED",
                 "sourceMatchNote":"Sources are historical/contextual only; reviewer must check exact game and kickoff.",
                 "declarationExists":team in confirmed,
                 "action":"Check a dated, game-specific team starter announcement. Do not infer from inactives or depth chart."
