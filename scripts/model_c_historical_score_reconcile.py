@@ -38,7 +38,7 @@ def reconcile(history, qb, boards):
                 continue
             if hs==ascore:winner=None
             else:winner=home_name if hs>ascore else away_name
-            week=event.get("week",{}).get("number")
+            week=event.get("_scoreboardWeek") or event.get("week",{}).get("number")
             if not week:
                 week=next((g.get("week") for g in history.get("games",[]) if g.get("season")==qb.get("season") and g.get("date","")[:10]==date[:10]),None)
             if not week:
@@ -64,7 +64,7 @@ def main():
     for week in range(1,19):
         board=fetch(f"{BASE}/scoreboard?dates={season}&seasontype=2&week={week}")
         for event in board.get("events",[]):
-            boards[str(event["id"])]=event
+            boards[str(event["id"])]={**event,"_scoreboardWeek":week}
     updated,report=reconcile(history,qb,boards)
     (DATA/"model-c-historical-score-reconciliation.json").write_text(json.dumps(report,indent=2)+"\n")
     if report["status"]=="BLOCKED_CONFLICTS":
