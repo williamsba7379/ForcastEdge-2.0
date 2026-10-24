@@ -31,13 +31,13 @@ def audit(draft,shadow):
                 matches_recent=bool(recent and recent in flagged)
                 if matches_candidate or matches_recent:
                     priority="P1_POSSIBLE_STARTER_ABSENCE"
-                    rationale="Unavailable QB matches depth-chart QB1 candidate or recent primary passer; not verified as current starter."
+                    rationale="Reported unavailable QB matches current QB1 or recent passer; role unverified."
                 elif candidate and recent and candidate==recent and candidate not in flagged:
-                    priority="P3_LIKELY_RESERVE_ABSENCE"
-                    rationale="Depth-chart QB1 candidate and recent primary passer agree on a different QB; backup status not officially verified."
+                    priority="P2_DISPLACED_STARTER_POSSIBLE"
+                    rationale="Current QB1 and recent passer differ from unavailable QB. May be displaced starter; do not infer backup."
                 else:
                     priority="P2_ROLE_UNCERTAIN"
-                    rationale="Insufficient independent role indicators to establish starter or reserve status."
+                    rationale="Unavailable QB role cannot be established from current depth chart."
                 alerts.append({"gameId":str(game["id"]),"date":game["date"],"team":team,
                   "opponent":game["away" if side=="home" else "home"],
                   "severity":"QB_AVAILABILITY_UNMODELED",
@@ -55,7 +55,7 @@ def audit(draft,shadow):
       "generatedAt":dt.datetime.now(dt.timezone.utc).isoformat(),
       "criticalCount":sum(a["priority"]=="P1_POSSIBLE_STARTER_ABSENCE" for a in alerts),
       "reviewCount":len(alerts),
-      "priorityCounts":{p:sum(a["priority"]==p for a in alerts) for p in ("P1_POSSIBLE_STARTER_ABSENCE","P2_ROLE_UNCERTAIN","P3_LIKELY_RESERVE_ABSENCE")},
+      "priorityCounts":{p:sum(a["priority"]==p for a in alerts) for p in ("P1_POSSIBLE_STARTER_ABSENCE","P2_ROLE_UNCERTAIN","P2_DISPLACED_STARTER_POSSIBLE")},
       "alerts":alerts,
       "policy":"Priorities are triage signals, not verified starter identities or numerical adjustments. Preserve frozen picks."}
 
@@ -63,8 +63,7 @@ def main():
     draft=json.loads((DATA/"model-c-automated-draft.json").read_text())
     shadow=json.loads((DATA/"model-c-qb-shadow.json").read_text())
     result=audit(draft,shadow)
-    (DATA/"model-c-qb-injury-audit.json").write_text(json.dumps(result,indent=2)+"
-")
+    (DATA/"model-c-qb-injury-audit.json").write_text(json.dumps(result,indent=2)+chr(10))
     print("QB availability review flags:",result["reviewCount"],"possible starter:",result["criticalCount"])
     for a in result["alerts"]:print(a["team"],a["gameId"],a["priority"],a["reportedUnavailable"])
 if __name__=="__main__":main()
