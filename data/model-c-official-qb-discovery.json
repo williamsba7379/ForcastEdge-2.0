@@ -1,6 +1,6 @@
 {
   "status": "DISCOVERY_ONLY_NOT_STARTER_CONFIRMATION",
-  "generatedAt": "2026-10-24T03:41:33.780451+00:00",
+  "generatedAt": "2026-10-24T03:43:25.756232+00:00",
   "automaticConfirmations": 0,
   "teams": [
     {
@@ -24,18 +24,8 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
-          "url": "https://www.baltimoreravens.com/news/ravens-bengals-game-preview-joe-burrow-lamar-jackson-week-7-2026",
-          "headline": "news Everything You Need to Know: Ravens vs. Bengals Oct 23, 2026",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
           "url": "https://www.baltimoreravens.com/news/lamar-jackson-injury-report-ravens-practice-start-ankle-2026",
           "headline": "news Lamar Jackson Takes a Step Forward, But Still Limited at Practice Oct 22, 2026",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.baltimoreravens.com/news/ravens-pass-rush-partner-trey-hendrickson-mike-green-lamar-jackson-full-speed-2026",
-          "headline": "news Late for Work: Pundit Says Ravens Need Establish a Pass-Rush Partner for Trey Hendrickson Oct 22, 2026",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -49,38 +39,8 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
-          "url": "https://www.baltimoreravens.com/news/jesse-minter-lamar-jackson-ankle-still-day-day-monday-week-7-injuries-rashod-bateman-cam-jurgens-trey-hendrickson-tyler-loop-critical-misses",
-          "headline": "news News & Notes: Jesse Minter Gives Health Update on Lamar Jackson Oct 19, 2026",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.baltimoreravens.com/news/mark-andrews-franchise-record-feature-hurricane-underestimated-lamar-jackson-rock-and-roll",
-          "headline": "Cover Story: How Mark Andrews Became the Ravens' All-Time Leading Receiver Nov 18, 2025",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.baltimoreravens.com/news/lamar-jackson-locked-in-playoffs-cover-story-super-bowl-2023",
-          "headline": "Cover Story: Why 'Locked In' Lamar Jackson Is Ready to Take the Ravens Farther Jan 15, 2024",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.baltimoreravens.com/news/deandre-hopkins-ravens-met-gala-lamar-jackson",
-          "headline": "news SociaLight: DeAndre Hopkins Shows Out at Met Gala May 06, 2025",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.baltimoreravens.com/news/lamar-jackson-germany-football-soccer-skills-shows-off-socialight",
-          "headline": "news SociaLight: Lamar Jackson Shows Off His Skills in Germany Apr 22, 2024",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.baltimoreravens.com/news/lamar-jackson-rug-wants-damn-fan-week-9-seahawks",
-          "headline": "news SociaLight: Lamar Jackson Wants the Damn Rug \ud83d\ude02 Nov 09, 2023",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.baltimoreravens.com/news/lamar-jackson-kids-freak-out-high-five-ravens-training-camp",
-          "headline": "news SociaLight: Watch Kids Freak Out After High-Fiving Lamar Jackson Jul 31, 2023",
+          "url": "https://www.baltimoreravens.com/news/ravens-sign-jake-moody-to-practice-squad-competition-with-tyler-loop",
+          "headline": "news Ravens Sign Jake Moody to Practice Squad Oct 20, 2026",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -89,13 +49,8 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
-          "url": "https://www.baltimoreravens.com/news/odell-beckham-zay-flowers-working-out-together-offseason-2023",
-          "headline": "news SociaLight: Lamar Jackson, Odell Beckham Jr., Zay Flowers Work Out Together Jul 03, 2023",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.baltimoreravens.com/news/lamar-jackson-zay-flowers-beach-workout-south-florida",
-          "headline": "news SociaLight: Lamar Jackson and Zay Flowers Build Chemistry in South Florida Workouts Jun 28, 2023",
+          "url": "https://www.baltimoreravens.com/news/ravens-to-hold-training-camp-practice-at-university-of-maryland",
+          "headline": "Read More",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -113,6 +68,16 @@
         {
           "url": "https://www.philadelphiaeagles.com/news/spadaro-tanner-mckee-looks-to-win-the-trust-of-his-teammates-eagles-cowboys-2026",
           "headline": "news Spadaro: Tanner McKee looks to win the trust of his teammates The quarterback reflects on his first start of the season and previews the prime-time showdown Monday night against Dallas.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.philadelphiaeagles.com/news/eagles-sign-jaydon-blue-evan-neal-anfernee-orji-to-the-practice-squad-2026-nfl-week-7-cowboys",
+          "headline": "news Eagles sign RB Jaydon Blue, G Evan Neal, and LB Anfernee Orji to the practice squad The team has also waived TE E.J. Jenkins.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.philadelphiaeagles.com/news/eagles-sign-elijah-mitchell-to-the-practice-squad-waive-jaydon-blue-and-carson-steele-from-the-active-roster",
+          "headline": "news Eagles sign RB Elijah Mitchell to the practice squad, waive Jaydon Blue and Carson Steele from the active roster Oct 20, 2026",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -141,11 +106,6 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
-          "url": "https://www.philadelphiaeagles.com/news/how-to-watch-stream-and-listen-panthers-vs-eagles-nfl-week-6-2026-jalen-hurts-bryce-young",
-          "headline": "news How to watch, stream, and listen | Panthers vs. Eagles Oct 18, 2026",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
           "url": "https://www.philadelphiaeagles.com/news/eagles-place-jalen-hurts-on-injured-reserve-sign-jaydon-blue-to-the-active-roster-2026-nfl-week-6-panthers",
           "headline": "news Eagles place QB Jalen Hurts on Injured Reserve, sign RB Jaydon Blue to the active roster Oct 17, 2026",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
@@ -166,43 +126,33 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.philadelphiaeagles.com/news/eagles-sign-rb-ian-wheeler-to-the-practice-squad",
+          "headline": "news Eagles sign RB Ian Wheeler to the practice squad Oct 15, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.philadelphiaeagles.com/news/statement-from-the-philadelphia-eagles-on-qb-jalen-hurts",
           "headline": "news Statement from the Philadelphia Eagles on QB Jalen Hurts Oct 15, 2026",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
-          "url": "https://www.philadelphiaeagles.com/news/game-preview-at-jaguars-6-storylines-to-follow-jordan-mailata-jalen-hurts-trevor-lawrence-travis-hunter-2026-nfl-week-6-london-international-game",
-          "headline": "news Game Preview at Jaguars: 6 storylines to follow Oct 11, 2026",
+          "url": "https://www.philadelphiaeagles.com/news/eagles-sign-db-dean-clark-to-the-practice-squad-2026-week-6",
+          "headline": "news Eagles sign DB Dean Clark to the practice squad Oct 14, 2026",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
-          "url": "https://www.philadelphiaeagles.com/news/spadaro-jalen-hurts-and-the-eagles-offense-embrace-next-man-up-mentality",
-          "headline": "news Spadaro: Jalen Hurts and the Eagles' offense embrace 'next-man-up' mentality Oct 08, 2026",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.philadelphiaeagles.com/news/rams-vs-eagles-game-preview-6-storylines-to-follow-2026-week-4-nfl-regular-season-jalen-hurts-saquon-barkley-matthew-stafford",
-          "headline": "news Game Preview vs. Rams: 6 storylines to follow Oct 04, 2026",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.philadelphiaeagles.com/news/eagles-at-bears-game-preview-6-storylines-to-follow-2026-week-3-nfl-regular-season-monday-night-football-jalen-hurts-caleb-williams",
-          "headline": "news Spadaro: Game Preview at Bears, 6 storylines to follow Sep 28, 2026",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.philadelphiaeagles.com/news/jalen-hurts-eagles-do-what-it-takes-to-win",
-          "headline": "news Spadaro: Jalen Hurts, Eagles do what it takes to win Sep 23, 2026",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.philadelphiaeagles.com/news/eagles-6-takeaways-from-an-incredible-come-from-behind-win-over-the-titans-jalen-hurts-devonta-smith-2026-nfl-week-2",
-          "headline": "news Spadaro: 6 takeaways from an incredible, come-from-behind win over the Titans Sep 20, 2026",
+          "url": "https://www.philadelphiaeagles.com/news/eagles-open-practice-window-for-four-players-landon-dickerson-eli-stowers-week-6-2026",
+          "headline": "news Eagles open practice window for four players Oct 14, 2026",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.philadelphiaeagles.com/news/eagles-kyle-mccord-nfl-draft-quarterback-syracuse",
           "headline": "news Eagles select QB Kyle McCord with the No. 181 pick in the 2025 NFL Draft Apr 26, 2025",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.philadelphiaeagles.com/news/eagles-johnnie-walton-where-are-they-now",
+          "headline": "news Where are they now? QB Johnnie Walton Jun 25, 2023",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -212,6 +162,31 @@
       "officialNewsIndex": "https://www.buffalobills.com/news/",
       "fetchStatus": "OK",
       "candidates": [
+        {
+          "url": "https://www.buffalobills.com/news/josh-allen",
+          "headline": "Josh Allen",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buffalobills.com/news/josh-allen-reunites-with-former-juco-coach-who-saw-nfl-potential-from-day-1",
+          "headline": "news Josh Allen reunites with former JUCO coach who saw NFL potential from Day 1 A special moment between Josh Allen and his former coach before Sunday's game in Las Vegas",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buffalobills.com/news/bills-sign-cb-tre-davious-white-to-practice-squad-release-cb-a-j-woods",
+          "headline": "news Bills sign CB Tre'Davious White to practice squad, release CB A.J. Woods White joins the Bills for his third stint, ninth year with the team.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buffalobills.com/news/top-things-we-learned-bills-vs-raiders-week-6",
+          "headline": "news Top things we learned Bills vs. Raiders | Week 6 Josh Allen's efficient performance to the defensive game plan against Brock Bowers and the team's ability to navigate a challenging stretch",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buffalobills.com/news/saw-our-guy-open-josh-allen-reflects-on-crazy-flip-pass-td-and-other-team-highlights-in-win-at-raiders",
+          "headline": "news 'Saw our guy open' | Josh Allen reflects on crazy flip-pass TD and other team highlights in win at Raiders Josh Allen's must-see touchdown, James Cook and Keon Coleman's continued excellence, and more",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
         {
           "url": "https://www.buffalobills.com/news/bills-issue-injury-update-on-te-dalton-kincaid",
           "headline": "news Bills issue injury update on TE Dalton Kincaid Kincaid left the game in the second half and went into the blue medical tent",
@@ -238,6 +213,16 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.buffalobills.com/news/top-3-things-we-learned-from-bills-vs-rams-week-5",
+          "headline": "news Top 3 things we learned from Bills vs. Rams Week 5 It took a blocked field goal, a game-winning kick and several clutch plays from Josh Allen, but the Bills found a way to earn a 37-34 overtime win",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buffalobills.com/news/bills-37-rams-34-final-score-recap-highlights",
+          "headline": "news Bills 37, Rams 34 | Final Score, recap + highlights Josh Allen earns 100th career win in OT game on Monday night.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.buffalobills.com/news/bills-issue-injury-update-on-rt-spencer-brown",
           "headline": "news Bills issue injury update on RT Spencer Brown Tylan Grable, a sixth-round draft pick in 2024, has taken Brown's place at right tackle",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
@@ -248,6 +233,11 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.buffalobills.com/news/bills-make-two-roster-moves-plus-two-elevations-for-week-5-vs-rams",
+          "headline": "news Bills make two roster moves plus two elevations for Week 5 vs. Rams Buffalo signed CB Anthony Kendall from the practice squad, among other moves",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.buffalobills.com/news/buffalo-bills-injury-report-vs-rams-week-5",
           "headline": "news Buffalo Bills injury report vs. Rams | Week 5 Bills-Rams game designations for DL Ed Oliver, WR Joshua Palmer, WR DJ Moore, CB Dee Alford and DL Landon Jackson",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
@@ -255,6 +245,11 @@
         {
           "url": "https://www.buffalobills.com/news/going-to-have-our-hands-full-how-the-bills-are-preparing-for-a-dynamic-l-a-rams-team",
           "headline": "news 'Going to have our hands full' | How the Bills are preparing for a dynamic L.A. Rams team Preparing for the Rams' dynamic offense and defensive units, and Thursday's injury report",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buffalobills.com/news/bills-sign-cb-a-j-woods-to-the-practice-squad",
+          "headline": "news Bills sign CB A.J. Woods to the practice squad Former Super Bowl champion joins Buffalo's 17-man practice squad",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -273,6 +268,11 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.buffalobills.com/news/bills-elevate-two-defensive-backs-for-week-4-vs-patriots",
+          "headline": "news Bills elevate two defensive backs for Week 4 vs. Patriots DB Te'Cory Couch and CB Kani Walker elevated from practice squad for Week 4",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.buffalobills.com/news/buffalo-bills-become-first-nfl-team-to-win-cannes-corporate-media-tv-award-with-josh-allen-mvp-reaction-video",
           "headline": "news Buffalo Bills become first NFL team to win Cannes Corporate Media & TV Award with Josh Allen MVP reaction video Buffalo's Video Production team won a Gold Award for their behind-the-scenes video of quarterback Josh ",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
@@ -280,6 +280,11 @@
         {
           "url": "https://www.buffalobills.com/news/buffalo-bills-injury-report-vs-patriots-week-4",
           "headline": "news Buffalo Bills Injury Report vs. Patriots Week 4 Christian Benford did not practice during the week and is questionable for Week 4",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buffalobills.com/news/it-was-crazy-t-j-sanders-details-appendectomy-as-he-makes-his-return-to-bills-practice",
+          "headline": "news 'It was crazy' | T.J. Sanders details appendectomy as he makes his return to Bills practice The 23-year-old is nine days removed from an appendectomy, hoping to suit up for his first game of the season",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -325,8 +330,78 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.panthers.com/news/ask-the-old-guy-winning-imperfectly-is-still-winning-panthers-eagles-penalties-bryce-young-julius-peppers-jim-cantore-mr-bean-h-l-mencken",
+          "headline": "Ask The Old Guy: Winning imperfectly is still winning",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.panthers.com/news/ask-the-old-guy-perfect-way-to-head-into-the-bye-bryce-young-tetairoa-mcmillan-dave-canales-brad-idzik",
+          "headline": "Ask The Old Guy: Perfect way to head into the bye",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.panthers.com/news/ask-the-old-guy-get-back-to-the-work-chuba-hubbard-bryce-young-detroit-sunday-night-football-keep-pounding",
+          "headline": "Ask The Old Guy: Get back to the work",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.panthers.com/news/ask-the-old-guy-celebrate-the-good-times-and-keep-working-atlanta-defense-bryce-young-xavier-legette-pro-football-hall-of-fame",
+          "headline": "Ask The Old Guy: Celebrate the good times, and keep working",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.panthers.com/news/ask-the-old-guy-on-to-the-next-one-defense-derrick-brown-bryce-young-jaelan-phillips-jj-jansen-dallas-livermush",
+          "headline": "Ask The Old Guy: On to the next one",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.panthers.com/news/ask-the-old-guy-time-to-get-to-work-regular-season-panthers-defense-bryce-young-tetairoa-mcmillan-dave-canales-george-seifert",
+          "headline": "Ask The Old Guy: Time to get to work",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.panthers.com/news/ask-the-old-guy-switching-into-regular-season-mode-preseason-over-cuts-practice-squad-bears-offensive-line-bobby-okereke-jj-jansen",
+          "headline": "Ask The Old Guy: Switching into regular season mode",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.panthers.com/news/panthers-add-running-back-tre-tyus-to-active-roster-bam-martin-scott",
+          "headline": "Panthers add running back Tre Tyus to active roster Oct 21, 2026 The team added the versatile running back and special teams player to the 53-man roster on Wednesday, as they prepare for this week's game against the Bucc",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.panthers.com/news/panthers-waive-offensive-tackle-albert-reese",
           "headline": "Panthers waive offensive tackle Oct 20, 2026 The team waived undrafted rookie offensive tackle Albert Reese, who was inactive for all five games this season.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.panthers.com/news/panthers-placed-defensive-tackle-cam-jackson-on-ir-among-other-moves-taylor-moton-turk-wharton-trevor-etienne",
+          "headline": "Panthers place defensive tackle Cam Jackson on IR, among other moves Oct 13, 2026 The team put the second-year defensive tackle on injured reserve with a shoulder issue, and designated three players to return to practice",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.panthers.com/news/panthers-add-defensive-tackle-to-the-practice-squad-keith-cooper",
+          "headline": "Panthers add defensive tackle to the practice squad Oct 12, 2026 The team signed Keith Cooper to the practice squad Monday. He's spent time with the Lions, Browns, and Dolphins.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.panthers.com/news/panthers-bring-running-back-tre-tyus-back-to-practice-squad",
+          "headline": "Panthers bring running back Tre Tyus back to practice squad Oct 08, 2026 The team brought running back Tre Tyus back to the practice squad after he was waived from the active roster on Tuesday.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.panthers.com/news/panthers-make-a-series-of-roster-moves-during-bye-week",
+          "headline": "Panthers make a series of roster moves during bye week Oct 06, 2026 The team waived running back Tre Tyus, and released three from the practice squad, while signing two back to the practice squad.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.panthers.com/news/panthers-place-wide-receiver-xavier-legette-on-injured-reserve-lions-sunday-night-football-jalen-coker-status",
+          "headline": "Panthers place wide receiver Xavier Legette on injured reserve Oct 03, 2026 The Panthers will be without Legette for at least the next four weeks. Plus practice squad elevations to create depth for Sunday night's game ag",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.panthers.com/news/panthers-bring-back-maema-njongmeta-to-the-practice-squad",
+          "headline": "Panthers bring back Maema Njongmeta to the practice squad Oct 01, 2026 The linebacker and special teams player was active last week, and forced a fumble on kickoff coverage.",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -335,8 +410,53 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.panthers.com/news/panthers-add-torricelli-simpkins-to-the-active-roster-among-other-moves-cam-gill",
+          "headline": "Panthers add Torricelli Simpkins to the active roster, among other moves Sep 29, 2026 The Panthers signed the Charlotte native from the practice squad, while adding two more players to the practice squad who were here pr",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.panthers.com/news/panthers-bring-guard-saahdiq-charles-back-to-the-practice-squad-depth-injuries",
+          "headline": "Panthers bring guard Saahdiq Charles back to the practice squad Sep 28, 2026 The team brought back the veteran guard, who was here on the practice squad last year and appeared in two games. He was also here throughout th",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.panthers.com/news/panthers-place-claudin-cherelus-on-injured-reserve-among-other-moves-maema-njongmeta-david-moore-tre-tyus",
+          "headline": "Panthers place Claudin Cherelus on injured reserve, among other moves Sep 26, 2026 The Panthers signed linebacker Maema Njongmeta to the active roster, and elevated wide receiver David Moore and running back Tre Tyus fro",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.panthers.com/news/panthers-add-experienced-returner-ihmir-smith-marsette-practice-squad",
+          "headline": "Panthers add experienced returner Ihmir Smith-Marsette Sep 22, 2026 The team added the former Panthers returner and receiver to the practice squad on Tuesday, adding some depth at a position of need after Jalen Coker ret",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.panthers.com/news/panthers-add-wide-receiver-to-the-practice-squad-ej-williams",
+          "headline": "Panthers add wide receiver to the practice squad Sep 17, 2026 The team signed former Clemson and Indiana wide receiver EJ Williams to the practice squad on Thursday.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.panthers.com/news/monday-brew-learning-to-play-with-a-lead-taylor-moton-monroe-freeling-bryce-young-bobby-okereke",
+          "headline": "Monday Brew: Learning to play with a lead Oct 19, 2026 The Panthers are learning to play with a lead, and evaluating the decisions that go into that, after a Week 6 win they had to grind out. Plus, exploring options at t",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.panthers.com/news/monday-brew-panthers-know-they-can-t-be-complacent-in-first-place-taylor-moton-tershawn-wharton-trevor-etienne",
           "headline": "Monday Brew: Panthers know they can't be complacent in first place Oct 12, 2026 Dave Canales used Monday's team meeting after the bye week to address the Panthers place in the division standings. Plus, the benefit of fac",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.panthers.com/news/monday-brew-light-at-the-end-of-the-bye-week-tunnel-after-a-big-win",
+          "headline": "Monday Brew: Light at the end of the bye week tunnel, after a big win Oct 05, 2026 The Panthers could be getting some key contributors back on the practice field when they return from the bye week, which can only help. P",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.panthers.com/news/monday-brew-bryce-young-shows-toughness-expected-to-play-this-week-injuries-devin-lloyd-nick-scott-xavier-legette",
+          "headline": "Monday Brew: Bryce Young shows toughness, expected to play this week Sep 28, 2026 Panthers head coach Dave Canales said Young is still getting checked for a lower body issue after he was stepped on during the loss at Cle",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.panthers.com/news/monday-brew-bryce-young-s-deep-throws-take-a-big-jump-through-two-games",
+          "headline": "Monday Brew: Bryce Young's deep throws take a big jump through two games Sep 21, 2026 Dave Canales breaks down how and why Bryce Young's deep throws have increased so far in 2026. Plus updates on Pat Jones and Jonathon B",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -377,6 +497,21 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.packers.com/news/5-takeaways-from-packers-cardinals-joint-practice-2026",
+          "headline": "5 takeaways from Packers-Cardinals joint practice Aug 26, 2026 Tucker Kraft enjoyed being back in the fray on Wednesday",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.packers.com/news/5-things-learned-at-packers-training-camp-aug-24-2026",
+          "headline": "5 things learned at Packers training camp \u2013 Aug. 24 Aug 24, 2026 Several defensive standouts in Monday's practice",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.packers.com/news/5-things-learned-at-packers-training-camp-aug-18-2026",
+          "headline": "5 things learned at Packers training camp \u2013 Aug. 18 Aug 18, 2026 Team getting healthier, and lots of standouts on the practice field",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.packers.com/news/5-things-learned-at-packers-training-camp-aug-10-2026",
           "headline": "5 things learned at Packers training camp \u2013 Aug. 10 Aug 10, 2026 Notes on several receivers and defensive backs, plus injury updates",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
@@ -389,6 +524,16 @@
         {
           "url": "https://www.packers.com/news/5-things-learned-at-packers-minicamp-day-1-june-9-2026",
           "headline": "5 things learned at Packers minicamp \u2013 Day 1 Jun 09, 2026 Standouts on each side of the ball, plus points of emphasis and injury updates",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.packers.com/news/packers-announce-roster-moves-oct-20-2026",
+          "headline": "news Packers announce roster moves | Oct. 20, 2026 Oct 20, 2026 Green Bay signs DT Mazi Smith to the practice squad; releases RB Damon Bankston",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.packers.com/news/packers-announce-roster-moves-oct-13-2026",
+          "headline": "news Packers announce roster moves | Oct. 13, 2026 Oct 13, 2026 Green Bay signs CB Elijah Culp to the practice squad; releases G Josh Gesky",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -407,8 +552,18 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.packers.com/news/game-notes-evan-williams-big-day-helps-packers-overcome-loss-of-edgerrin-cooper-week-4-2026",
+          "headline": "news Game notes: Evan Williams' big day helps Packers overcome loss of Edgerrin Cooper Oct 04, 2026 Reconfigured offensive line gives Jordan Love time, run game a push",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.packers.com/news/packers-buccaneers-week-4-inactives-oct-4-2026",
           "headline": "news Green Bay G Kevin Zeitler will not play at Tampa Bay | Packers-Buccaneers inactives Oct 04, 2026 Rookie Jager Burton active after being questionable",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.packers.com/news/packers-2026-training-camp-practices-begin-in-green-bay",
+          "headline": "Packers 2026 Training Camp practices begin in Green Bay Jul 27, 2026 Packers will hold their first practice of the training camp on July 29 at 10:30 a.m.",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -479,8 +634,8 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
-          "url": "https://www.chiefs.com/news/chiefs-chairman-and-ceo-clark-hunt-announces-peter-king-as-2026-recipient-of-the-lamar-hunt-award-for-professional-football",
-          "headline": "news Chiefs Chairman and CEO Clark Hunt Announces Peter King as 2026 Recipient of the Lamar Hunt Award for Professional Football Sep 01, 2026 Longtime journalist ecomes the 16th recipient of the prestigious award named f",
+          "url": "https://www.chiefs.com/news/chiefs-announce-2026-practice-squad-and-other-roster-moves",
+          "headline": "news Chiefs Announce 2026 Practice Squad and Other Roster Moves Aug 31, 2026",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -501,13 +656,98 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.seahawks.com/news/seahawks-sign-receiver-irvin-charles-off-practice-squad",
+          "headline": "Seahawks Sign receiver Irvin Charles Off Practice Squad",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.seahawks.com/news/seahawks-sign-lb-josh-ross-to-practice-squad",
+          "headline": "news Seahawks Sign LB Josh Ross To Practice Squad Oct 21, 2026 The Seahawks added linebacker depth on Wednesday, signing Josh Ross to their practice squad.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.seahawks.com/news/seahawks-guard-anthony-bradford-designated-for-return-to-practice",
+          "headline": "news Seahawks Guard Anthony Bradford Designated For Return To Practice Oct 19, 2026 Seahawks guard Anthony Bradford was designated for return to practice on Monday.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.seahawks.com/news/seahawks-sign-fb-jackson-acker-te-josiah-deguara-to-practice-squad",
+          "headline": "news Seahawks Sign FB Jackson Acker, TE Josiah Deguara To Practice Squad Oct 19, 2026 The Seahawks made changes to their practice squad on Monday.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.seahawks.com/news/seahawks-elevate-two-from-practice-squad-for-week-6-game-at-denver",
+          "headline": "news Seahawks Elevate Two From Practice Squad For Week 6 Game at Denver Oct 15, 2026 The Seahawks elevated linebacker Jimmy Ciarlo and receiver Irv Charles for Thursday night's game against the Broncos.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.seahawks.com/news/seahawks-sign-velus-jones-jr-to-53-man-roster-move-irv-charles-to-practice-squad",
+          "headline": "news Seahawks Sign Velus Jones Jr. To 53-Man Roster, Move Irv Charles To Practice Squad Oct 14, 2026 The Seahawks moved Velus Jones Jr. back to the 53-man roster and signed Irv Charles to their practice squad ahead of Th",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.seahawks.com/news/seahawks-sign-rb-velus-jones-jr-to-practice-squad",
+          "headline": "news Seahawks Sign RB Velus Jones Jr To Practice Squad Oct 13, 2026 The Seahawks signed running back Velus Jones Jr. to the practice squad after releasing him earlier in the day.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.seahawks.com/news/seahawks-sign-cb-trevon-diggs-from-practice-squad",
+          "headline": "news Seahawks Sign CB Trevon Diggs From Practice Squad Oct 10, 2026 The Seahawks signed cornerback Trevon Diggs off of their practice squad ahead of Sunday's game vs. the 49ers.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.seahawks.com/news/seahawks-sign-s-aj-finley-to-practice-squad",
+          "headline": "news Seahawks Sign Safety AJ Finley To Practice Squad Oct 07, 2026 The Seahawks signed safety AJ Finley to the practice squad after he cleared waivers on Wednesday.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.seahawks.com/news/wr-irv-charles-designated-for-return-to-practice",
+          "headline": "news WR Irv Charles Designated For Return To Practice Oct 07, 2026 Receiver Irv Charles, who opened the season on injured reserve, will return to practice this week.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.seahawks.com/news/seahawks-sign-rb-robert-henry-jr",
+          "headline": "news Seahawks Sign RB Robert Henry Jr. Oct 06, 2026 The Seahawks signed rookie running back Robert Henry Jr. off of Washington's practice squad on Tuesday and added running back Dontae McMillan to their practice squad",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.seahawks.com/news/seahawks-rb-zach-charbonnet-designated-to-return-to-practice",
+          "headline": "news Seahawks RB Zach Charbonnet Designated To Return To Practice Oct 01, 2026 Seahawks running back Zach Charbonnet will return to practice on Thursday.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.seahawks.com/news/seahawks-round-up-charles-cross-extension-elijah-arroyo-can-return-to-practice-and-more",
+          "headline": "news Seahawks Round-Up: Charles Cross Extension, Elijah Arroyo Can Return To Practice And More Jan 09, 2026 All the Seahawks news you might have missed this week.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.seahawks.com/news/seahawks-mailbag-sam-darnold-s-injury-white-throwback-uniforms-more",
           "headline": "news Seahawks Mailbag: Sam Darnold's Injury, White Throwback Uniforms & More Sep 15, 2026",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.seahawks.com/news/sam-darnold-seahawks-looking-to-be-more-consistent-moving-forward",
+          "headline": "news Sam Darnold & Seahawks Looking To Be More 'Consistent' Moving Forward The Seahawks have taken the time to self-scout and evaluate areas they can grow in ahead of Week 7.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.seahawks.com/news/seahawks-hosted-virginia-mason-franciscan-health-patients-at-practice-for-crucial-catch-month-x0087",
+          "headline": "news Seahawks Hosted Virginia Mason Franciscan Health Patients At Practice For Crucial Catch Month In honor of Crucial Catch month, the Seahawks hosted six Virginia Mason Franciscan Health patients at a practice.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.seahawks.com/news/seahawks-return-from-mini-bye-feeling-more-aligned-as-a-team",
+          "headline": "news Seahawks Return From Mini Bye Feeling 'More Aligned As A Team' The Seahawks returned to the practice facility on Monday following a mini break after the game on Thursday night.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.seahawks.com/news/zach-charbonnet-anthony-bradford-s-potential-return-other-seahawks-injury-updates",
           "headline": "news Zach Charbonnet & Anthony Bradford's Potential Return & Other Seahawks Injury Updates Injury updates from Seahawks coach Mike Macdonald's Monday press conference.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.seahawks.com/news/seahawks-have-a-lot-of-faith-in-sam-darnold-other-things-from-mike-macdonald-s-friday-press-conference",
+          "headline": "news Seahawks 'Have A Lot Of Faith' In Sam Darnold & Other Things From Mike Macdonald's Friday Press Conference Seahawks head coach spoke with the media on Friday, following Seattle's Thursday night 17-14 loss to the Bro",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -554,21 +794,6 @@
           "url": "https://www.seahawks.com/news/seahawks-vs-49ers-week-5-inactives",
           "headline": "news Seahawks vs. 49ers Week 5 Inactives A look at the inactive lists for the Seahawks and 49ers ahead of their Week 5 game at Lumen Field.",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.seahawks.com/news/week-5-injury-report-seahawks-vs-49ers",
-          "headline": "news Week 5 Injury Report: Seahawks vs. 49ers Details on the Seahawks' injury situation heading into their Week 5 game against the 49ers.",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.seahawks.com/news/leonard-williams-feeling-good-other-seahawks-injury-updates-going-into-week-5",
-          "headline": "news Leonard Williams Feeling 'Good' & Other Seahawks Injury Updates Going Into Week 5 Seahawks injury updates ahead of their Week 5 game against the 49ers.",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.seahawks.com/news/injury-updates/",
-          "headline": "Injury Updates",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
     },
@@ -577,6 +802,11 @@
       "officialNewsIndex": "https://www.commanders.com/news/",
       "fetchStatus": "OK",
       "candidates": [
+        {
+          "url": "https://www.commanders.com/news/commanders-top-plays-treylon-burks-jayden-daniels-touchdowns-highlights",
+          "headline": "news Washington's top 5 offensive plays from Weeks 1-6",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
         {
           "url": "https://www.commanders.com/news/laremy-tunsil-commanders-leadership-mentorship-josh-conerly-injury",
           "headline": "news 'A real brother': Tunsil provides invaluable mentorship to Commanders O-Line",
@@ -590,6 +820,51 @@
         {
           "url": "https://www.commanders.com/news/inactives-commanders-vs-49ers-week-6",
           "headline": "Inactives | Commanders vs. 49ers, Week 6 Oct 19, 2026 The Washington Commanders have declared the following players as inactive for their Week 6 game against the San Francisco 49ers.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.commanders.com/news/5-takeaways-from-jayden-daniels-week-5-press-conference",
+          "headline": "5 takeaways from Jayden Daniels' Week 5 press conference",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.commanders.com/news/5-takeaways-from-jayden-daniels-press-conference",
+          "headline": "5 takeaways from Jayden Daniels' press conference",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.commanders.com/news/key-takeaways-from-jayden-daniels-week-1-press-conference",
+          "headline": "Key takeaways from Jayden Daniels' Week 1 press conference",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.commanders.com/news/commanders-sign-devin-neal-practice-squad",
+          "headline": "Commanders sign RB Devin Neal to the practice squad",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.commanders.com/news/commanders-activate-deatrich-wise-make-multiple-practice-squad-elevations",
+          "headline": "Commanders activate Deatrich Wise, make multiple practice squad elevations",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.commanders.com/news/commanders-designate-amos-mcnichols-wise-to-return-to-practice-add-wr-to-practice-squad",
+          "headline": "Commanders designate Amos, McNichols, Wise to return to practice; add WR to practice squad",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.commanders.com/news/commanders-sign-olb-charles-snowden",
+          "headline": "Commanders sign OLB Charles Snowden to practice squad",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.commanders.com/news/commanders-add-dt-ricky-barber-to-practice-squad-elevate-2-players-to-active-roster",
+          "headline": "Commanders add DT Ricky Barber to practice squad; elevate 2 players to active roster",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.commanders.com/news/commanders-sign-wr-van-jefferson-to-practice-squad",
+          "headline": "Commanders sign WR Van Jefferson to practice squad",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -610,13 +885,43 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.azcardinals.com/news/kitan-crawford-activated-to-roster-after-ir-stint",
+          "headline": "news Kitan Crawford Activated To Roster After IR Stint Cardinals elevate Hull, Reed from practice squad",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.azcardinals.com/news/jeremiyah-love-ruled-out-against-rams",
+          "headline": "news Jeremiyah Love Ruled Out Against Rams Running back dealing with ankle sprain",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.azcardinals.com/news/jeremiyah-love-could-sit-against-rams-with-lingering-ankle-issue",
+          "headline": "news Jeremiyah Love Could Sit Against Rams With Lingering Ankle Issue Running back doesn't practice Wednesday",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.azcardinals.com/news/cardinals-open-practice-window-for-kitan-crawford",
+          "headline": "news Cardinals Open Practice Window For Kitan Crawford Safety has been on IR since opener",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.azcardinals.com/news/michael-wilson-can-live-with-his-perfect-completion-percentage",
           "headline": "news Michael Wilson Can Live With His Perfect Completion Percentage Wide receiver's pass to QB Brissett could've been TD, but got first down",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.azcardinals.com/news/focus-for-mike-lafleur-is-1-0-not-qb1",
+          "headline": "news Focus For Mike LaFleur Is 1-0, Not QB1 Jacoby Brissett hoping to lead offensive jump against Lions",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.azcardinals.com/news/cardinals-qb-jacoby-brissett-rich-with-teammate-currency-2026-season",
           "headline": "news Now QB1, Jacoby Brissett Rich With Respect From Teammates Cardinals veteran enters season as starter for fourth time in career",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.azcardinals.com/news/mike-lafleur-makes-sure-cardinals-have-instant-practice-feedback-with-video",
+          "headline": "news Mike LaFleur Makes Sure Cardinals Have Instant Practice Feedback With Video Plan is for benefit to continue into regular season in Tempe",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -682,8 +987,18 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.atlantafalcons.com/news/falcons-sign-de-charles-snowden-off-commanders-practice-squad",
+          "headline": "Falcons sign DE Charles Snowden off Commanders practice squad Oct 21, 2026 Snowden has been with Washington since September.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.atlantafalcons.com/news/a-j-terrell-returns-practice-injured-reserve-window-falcons-secondary",
           "headline": "Falcons begin A.J. Terrell's window to return from injured reserve Oct 21, 2026 Terrell returns to practice after missing time with a groin injury. The Falcons have 21 days to add their No. 1 corner to their active roste",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.atlantafalcons.com/news/falcons-release-bralen-trice-sign-tj-quinn-practice-squad",
+          "headline": "Falcons release LB Bralen Trice, sign LB TJ Quinn to practice squad Oct 20, 2026 A former third-round pick, Trice has appeared in four games this season for the Falcons.",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -697,8 +1012,28 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.atlantafalcons.com/news/kendal-daniels-michael-penix-jr-bears-pressure",
+          "headline": "Well wishes for Kendal Daniels, Michael Penix Jr. vs. pressure and more notes from Falcons vs. Bears Oct 19, 2026 Catching you up on the news, notes and quotes from the Falcons' game against the Chicago Bears",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.atlantafalcons.com/news/falcons-camp-report-michael-penix-jr-won-t-play-friday-but-remains-confident-he-ll-be-ready-for-week-1",
+          "headline": "Falcons Camp Report: Michael Penix Jr. won't play Friday, but remains confident he'll be ready for Week 1 Aug 26, 2026 Plus, notes and observations from practice.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.atlantafalcons.com/news/falcons-preseason-miami-dolphins-michael-penix-starters",
           "headline": "Falcons using final week of preseason to get feel for regular-season schedule Aug 24, 2026 Atlanta will play its starters on Friday night against the Miami Dolphins in its final preseason game.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.atlantafalcons.com/news/falcons-camp-report-defensive-line-shines-in-second-joint-practice-with-colts",
+          "headline": "Falcons Camp Report: Defensive line shines in second joint practice with Colts Aug 20, 2026 The Falcons and Colts held their second and final day of joint practices. Here's what we learned.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.atlantafalcons.com/news/falcons-camp-report-atlanta-indianapolis-colts-joint-practices-bijan-tua",
+          "headline": "Falcons Camp Report: How Atlanta's offense looked against the Colts on Day 1 of joint practices Aug 19, 2026 The Falcons and Colts held their first day of joint practices. Here's what we learned.",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -707,13 +1042,33 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.atlantafalcons.com/news/falcons-sign-bralen-trice-active-roster-chicago-bears",
+          "headline": "Falcons sign OLB Bralen Trice to active roster Oct 17, 2026 Atlanta also signed Jammie Robinson to the practice squad and elevated Drake Jackson and him for Sunday's game.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.atlantafalcons.com/news/falcons-place-yasir-abdullah-on-ir-sign-jammie-robinson",
+          "headline": "Falcons place LB Yasir Abdullah on IR, sign S Jammie Robinson Oct 10, 2026 Plus, the Falcons have used a standard practice squad elevation on Bralen Trice and Drake Jackson.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.atlantafalcons.com/news/falcons-mailbag-is-this-hot-defensive-start-sustainable-is-the-quarterback-carousel-starting-up-again",
           "headline": "Falcons Mailbag: Is this hot defensive start sustainable? Is the quarterback carousel starting up again?",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.atlantafalcons.com/news/falcons-mailbag-how-different-do-falcons-look-in-year-2-of-raheem-morris-michael-penix-jr",
+          "headline": "Falcons Mailbag: How different do Falcons look in Year 2 of Raheem Morris, Michael Penix Jr.?",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.atlantafalcons.com/news/grady-jarrett-year-10-the-return-season-ending-injury-recovery",
           "headline": "A peek behind the curtain of Grady Jarrett's return from season-ending injury Aug 29, 2024 It was a challenge unlike any other the Falcons defensive tackle had faced. He continued to work until he won.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.atlantafalcons.com/news/soldier-on-the-small-steps-of-michael-penix-jr-that-led-him-to-the-biggest-moments",
+          "headline": "Soldier on: The small steps of Michael Penix Jr. that led him to the biggest moments May 02, 2024 Story by Tori McElhaney",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -734,8 +1089,18 @@
       "fetchStatus": "OK",
       "candidates": [
         {
+          "url": "https://www.bengals.com/news/quick-hits-bengals-ravens-joe-burrow-jamarr-chase-tee-higgins-zac-taylor-calling-card",
+          "headline": "news Quick Hits | Bengals Hope To Serve AFC North Notice By Cashing Another Calling Card Game Bengals' notes and quotes from Friday at Paycor Stadium.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.bengals.com/news/bengals-ravens-week-7-2026-injury-report",
           "headline": "news Week 7 Injury Report | Bengals at Ravens Take a look at the injury reports of the Cincinnati Bengals and the Baltimore Ravens leading into Week 7 of the 2026 season.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.bengals.com/news/game-within-the-game-joe-burrow-ravens-history-rivalry-new-chapter-ja-marr-chase",
+          "headline": "news Game Within The Game | Joe Burrow's Bengals Hope To Pass On History As Ravens Rivalry Moves To New Chapter The Bengals travel to Baltimore in Week 7 to play their first day game on the road against the Ravens since ",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -744,8 +1109,23 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
-          "url": "https://www.bengals.com/news/quick-hits-bengals-finding-health-amid-lamar-jackson-s-murky-status",
-          "headline": "news Quick Hits | Bengals Finding Health Amid Lamar Jackson's Murky Status",
+          "url": "https://www.bengals.com/news/russ-yeast-active-roster-josh-kattus-emany-johnson-practice-squad-roster-update",
+          "headline": "news Bengals Sign Russ Yeast to Active Roster, Josh Kattus and Emany Johnson Added to Practice Squad | BENGALS ROSTER UPDATE",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.bengals.com/news/bengals-stats-bye-week-2026-joe-burrow-dexter-lawrence-ii-boye-mafe",
+          "headline": "news 10 Stats to Know From First Five Weeks of 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.bengals.com/news/quick-hits-al-golden-reunited-with-jack-kiser-70-percenter-joe-burrow-dohnte-s-inferno-simmers",
+          "headline": "news Quick Hits | Al Golden Reunited With Waiver Wire Pickup Jack Kiser; 70-Percenter Joe Burrow; Dohnte's Inferno Simmers",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.bengals.com/news/bengals-feel-the-formula-after-melting-dolphins-joe-burrow-zac-taylor",
+          "headline": "news Bengals Feel The Formula After Melting Dolphins",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -754,8 +1134,48 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.bengals.com/news/ke-shawn-williams-practice-squad-signed-roster-update-2026",
+          "headline": "news Bengals Sign WR Ke'Shawn Williams to Practice Squad | BENGALS ROSTER UPDATE",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.bengals.com/news/bengals-add-five-players-2026-practice-squad-josh-johnson-tanner-hudson",
+          "headline": "news Bengals Add Five Players to 2026 Practice Squad | BENGALS ROSTER UPDATE",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.bengals.com/news/bengals-set-initial-2026-practice-squad",
+          "headline": "news Bengals Sign 11 Players to 2026 Practice Squad | BENGALS ROSTER UPDATE",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.bengals.com/news/b-j-hill-cleared-to-practice-bengals-roster-update-2026",
+          "headline": "news B.J. Hill Cleared to Practice | BENGALS ROSTER UPDATE",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.bengals.com/news/josh-kattus-cleared-to-practice-2026-roster-update",
+          "headline": "news Josh Kattus Cleared to Practice | BENGALS ROSTER UPDATE",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.bengals.com/news/b-j-hill-injury-josh-kattus-bengals-roster-update",
           "headline": "news B.J. Hill Placed on Acive/Physically Unable to Perform List | BENGALS ROSTER UPDATE",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.bengals.com/news/quick-hits-ja-marr-chase-tee-higgins-bengals-dolphins-ted-karras-remembers-mike-ditka",
+          "headline": "news Quick Hits | Bengals' Playmakers Questionable; Boyhood Bears Fan Ted Karras Remembers Mike Ditka",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.bengals.com/news/quick-hits-bengals-work-through-injuries-jamarr-chase-tee-higgins-joe-burrow-peter-king",
+          "headline": "news Quick Hits | Bengals Working Through Injuries; (Jordan) Battle Of Miami; The King And I",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.bengals.com/news/quick-hits-colbie-young-gets-some-work-joe-burrow-takes-some-extra-work-bengals-dolphins",
+          "headline": "news Quick Hits | Rookie WR Colbie Young Gets Some Work While Joe Burrow Takes Some Extra Work",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -764,8 +1184,53 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.bengals.com/news/quick-hits-joe-burrow-pace-mirroring-career-year-at-safety-jordan-battle-go-with-bryan-cook-questionable",
+          "headline": "news Quick Hits | Joe Burrow Pace Mirroring Career Year; At safety, Jordan Battle Go With Bryan Cook Questionable",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.bengals.com/news/quick-hits-dax-hill-gets-another-call-erick-all-jr-wants-ball-and-win-not-praise-joe-burrow",
           "headline": "news Quick Hits | Do-It-All Dax Hill Gets Another Call; Erick All Jr. Wants Ball/Win, Not Praise; Injury Update",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.bengals.com/news/quick-hits-amarius-mims-zac-taylor-dan-pitcher-dalton-risner-joe-burrow",
+          "headline": "news Quick Hits | Mims Is The Word For Bengals As Numbers Touch Elite NFL Tackles",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.bengals.com/news/quick-hits-orlando-brown-jr-zeus-joe-burrow",
+          "headline": "news Quick Hits | All In the Family In AFC North On The Line For Bengals",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.bengals.com/news/quick-hits-joe-burrow-mike-tomlin-cam-heyward-bengals-steelers-rivalry",
+          "headline": "news Quick Hits | Joe Burrow Practices On A Rainy Day That Matches A Gritty Rivalry",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.bengals.com/news/game-within-the-game-russ-yeast-practice-squad-dolphins-week-5-2026",
+          "headline": "news Game Within The Game | Born To Be A Bengal, Russ Yeast Lives On The Edge",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.bengals.com/news/game-within-the-game-joe-burrow-c-j-uzomah-jags-super-bowl-run",
+          "headline": "news Game Within The Game | When Joe Burrow And C.J Uzomah Turned Zero Into 24-21",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.bengals.com/news/how-ravens-son-orlando-brown-jr-has-been-at-heart-of-o-line-surge-joe-burrow-ted-karras",
+          "headline": "news Game Within The Game | How Ravens' Son Orlando Brown Jr., Has Been At Heart Of Bengals O-Line Surge",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.bengals.com/news/joe-burrow-s-passion-play-lifting-bengals-again-jam",
+          "headline": "news Game Within The Game | Joe Burrow's Passion Play Lifting Bengals Again: 'That's What He Lives For'",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.bengals.com/news/game-within-the-game-joe-burrow-joe-flacco-thanksgiving-2025-ravens",
+          "headline": "news Game Within The Game | Joe Burrow And Joe Flacco Embrace One Of These Nights",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -786,13 +1251,88 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.clevelandbrowns.com/news/justin-jefferson-questionable-to-return-vs-the-ravens",
+          "headline": "Justin Jefferson questionable to return vs. the Ravens",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.clevelandbrowns.com/news/grant-delpit-being-evaluated-for-a-concussion-vs-the-ravens",
+          "headline": "Grant Delpit ruled out vs. the Ravens",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.clevelandbrowns.com/news/browns-announce-inactives-for-week-6-vs-the-ravens",
           "headline": "Browns announce inactives for Week 6 vs. the Ravens",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.clevelandbrowns.com/news/browns-offense-leans-on-preparation-from-practice-during-game-winning-drive",
+          "headline": "Browns' offense leans on preparation from practice during game-winning drive",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.clevelandbrowns.com/news/austin-barber-keeps-starting-job-at-right-guard-after-strong-week-1-performance",
           "headline": "Austin Barber keeps starting job at right guard after strong Week 1 performance",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.clevelandbrowns.com/news/browns-sign-dt-eric-johnson-ii-to-the-practice-squad",
+          "headline": "Browns sign DT Eric Johnson II to the practice squad",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.clevelandbrowns.com/news/browns-add-three-to-the-practice-squad",
+          "headline": "Browns add three to the practice squad",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.clevelandbrowns.com/news/browns-sign-rb-jaret-patterson-to-the-practice-squad",
+          "headline": "Browns sign RB Jaret Patterson to the practice squad",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.clevelandbrowns.com/news/dillon-gabriel-and-kalia-davis-eligible-to-return-to-practice",
+          "headline": "Dillon Gabriel and Kalia Davis eligible to return to practice",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.clevelandbrowns.com/news/browns-sign-cb-myles-bryant-and-te-john-fitzpatrick-to-the-practice-squad",
+          "headline": "Browns sign CB Myles Bryant and TE John FitzPatrick to the practice squad",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.clevelandbrowns.com/news/browns-sign-cb-d-angelo-ross-to-the-practice-squad",
+          "headline": "Browns sign CB D'Angelo Ross to the practice squad",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.clevelandbrowns.com/news/browns-sign-lb-krys-barnes-to-the-practice-squad",
+          "headline": "Browns sign LB Krys Barnes to the practice squad",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.clevelandbrowns.com/news/browns-elevate-lb-nathaniel-watson-from-the-practice-squad",
+          "headline": "Browns elevate LB Nathaniel Watson from the practice squad",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.clevelandbrowns.com/news/browns-sign-wr-jimmy-horn-jr-to-the-practice-squad",
+          "headline": "Browns sign WR Jimmy Horn Jr. to the practice squad",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.clevelandbrowns.com/news/todd-monken-believes-deshaun-watson-can-build-off-second-straight-win-news-notes",
+          "headline": "Todd Monken believes Deshaun Watson can build off second-straight win | News & Notes",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.clevelandbrowns.com/news/deshaun-watson-continues-to-take-strides-in-browns-offense-news-notes",
+          "headline": "Deshaun Watson continues to take strides in Browns' offense | News & Notes",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.clevelandbrowns.com/news/deshaun-watson-expected-to-start-week-2-against-the-buccaneers-news-notes",
+          "headline": "Deshaun Watson expected to start Week 2 against the Buccaneers | News & Notes",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -823,6 +1363,21 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.dallascowboys.com/news/cobie-durant-aiming-to-do-his-part-for-cowboys-secondary-help-create-turnovers",
+          "headline": "Cobie Durant aiming to do his part for Cowboys secondary, help create turnovers Cowboys CB Cobie Durant is trending towards returning on Monday night for Dallas' defense, and is looking to do his part in the secondary by",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.dallascowboys.com/news/rank-em-all-39-players-to-catch-a-td-from-dak",
+          "headline": "Rank'em: All 39 players to catch a TD from Dak After Dak Prescott's record-breaking game on Sunday to become the Cowboys' all-time leader in passing touchdowns, we've listed out all 39 players who have been on the receiv",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.dallascowboys.com/news/rank-em-top-20-standouts-from-oxnard-camp",
+          "headline": "Rank'em: Top 20 standouts from Oxnard camp Now that training camp in Oxnard is complete, let's take a look back to some of the best performers during the practices. Here are the 20 players voted on by the staff writers a",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.dallascowboys.com/news/demarvion-overshown-to-return-vs-eagles-on-mnf",
           "headline": "DeMarvion Overshown to return vs. Eagles on MNF After being sidelined the last several games with injury, DeMarvion Overshown confirmed he has been medically cleared to return for MNF versus the Eagles.",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
@@ -833,8 +1388,28 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.dallascowboys.com/news/cowboys-defense-seeking-consistency-by-turning-process-into-wins-it-s-now-or-never",
+          "headline": "Cowboys defense seeking consistency by turning process into wins: 'It's now or never' The Cowboys as a team are looking to turn the practice habits and process they believe in to wins on game days. How do they find a way",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.dallascowboys.com/news/mailbag-sending-a-message-or-changing-of-the-guard",
           "headline": "Mailbag: Sending a message or changing of the guard? By starting Malachi Lawrence and Brevyn Spann-Ford, do you think the team was just trying to send a message to Donovan Ezeiruaku and Jake Ferguson, respectively, or ar",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.dallascowboys.com/news/cowboys-sign-s-juanyeh-thomas-to-active-roster-waive-cb-caelen-carson",
+          "headline": "Cowboys sign S Juanyeh Thomas to active roster, waive CB Caelen Carson On Tuesday, the Cowboys signed S Juanyeh Thomas to their active roster from the practice squad. The corresponding move was waiving CB Caelen Carson, ",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.dallascowboys.com/news/mick-shots-feeling-the-brunt-of-all-the-blitzes",
+          "headline": "Mick Shots: Feeling the brunt of all the blitzes The Cowboys' offense has become a prime target for aggressive blitz packages, and until Dak Prescott and company prove they can punish those extra rushers, opponents will ",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.dallascowboys.com/news/spagnola-getting-blitzed-right-out-of-lambeau",
+          "headline": "Spagnola: Getting blitzed right out of Lambeau Dak Prescott was under constant pressure in the Cowboys' loss at Green Bay Sunday night, as Dallas simply had no answer for the Packers' blitz.",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -882,6 +1457,26 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.detroitlions.com/news/lions-vs-packers-practice-report-oct-22-yasin-branch-mays",
+          "headline": "news Lions vs. Packers practice report: Oct. 22",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.detroitlions.com/news/lions-vs-packers-practice-report-oct-21-yasin-branch-mays",
+          "headline": "news Lions vs. Packers practice report: Oct. 21",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.detroitlions.com/news/lions-daily-detroit-elevates-veteran-safety-from-practice-squad-before-cardinals-matchup",
+          "headline": "news LIONS DAILY: Detroit elevates veteran safety from practice squad before Cardinals matchup",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.detroitlions.com/news/lions-daily-s-brian-branch-on-return-to-practice-i-m-ready-to-go",
+          "headline": "news LIONS DAILY: S Brian Branch on return to practice: 'I'm ready to go'",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.detroitlions.com/news/qb-jared-goff-named-detroit-lions-nominee-for-walter-payton-nfl-man-of-the-year-award-presented-by-nationwide",
           "headline": "news QB Jared Goff Named Detroit Lions' Nominee for Walter Payton NFL Man of the Year Award Presented by Nationwide",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
@@ -917,6 +1512,26 @@
           "url": "https://www.houstontexans.com/news/week-6-injury-report-texans-at-jaguars",
           "headline": "Week 6 Injury Report | Texans at Jaguars",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.houstontexans.com/news/harris-hits-texans-offense-closes-2026-training-camp-with-a-statement-day-at-panthers-joint-practice",
+          "headline": "Harris Hits: Texans Offense Closes 2026 Training Camp With a Statement Day at Panthers Joint Practice",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.houstontexans.com/news/harris-hits-david-montgomery-runs-wild-as-texans-and-raiders-open-joint-practices",
+          "headline": "Harris Hits: David Montgomery Runs Wild as Texans and Raiders Open Joint Practices",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.houstontexans.com/news/harris-hits-texans-run-game-explodes-at-first-fans-practice",
+          "headline": "Harris Hits: Texans Run Game Explodes at First Fans' Practice",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.houstontexans.com/news/harris-hits-joint-practice-time",
+          "headline": "Harris Hits: Joint Practice Time!",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
     },
@@ -933,6 +1548,11 @@
         {
           "url": "https://www.chicagobears.com/news/5-things-that-stood-out-to-bears-coach-ben-johnson-in-week-7-win-patriots",
           "headline": "5 things that stood out to Bears coach Ben Johnson in Week 7 win Oct 23, 2026 After watching tape of Thursday night\u2019s 30-24 win over the Patriots, Bears coach Ben Johnson spoke to reporters about Luther Burden III\u2019s rare",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/roster-moves-chicago-bears-elevate-buddy-johnson-and-zavier-scott",
+          "headline": "Roster Moves: Chicago Bears elevate Buddy Johnson and Zavier Scott Oct 22, 2026 The Chicago Bears announced that the club has elevated linebacker Buddy Johnson and running back Zavier Scott from the practice squad for Th",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -976,6 +1596,11 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.chicagobears.com/news/roster-moves-chicago-bears-activate-noah-sewell-elevate-zavier-scott",
+          "headline": "Roster Moves: Chicago Bears activate Noah Sewell, elevate Zavier Scott Oct 10, 2026 The Chicago Bears announced that the club has activated linebacker Noah Sewell from Reserve/PUP. The Bears have also elevated running ba",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.chicagobears.com/news/injury-update-bears-rb-kyle-monangai-ruled-out-qb-caleb-williams-questionable-for-packers-game",
           "headline": "Injury Update: Bears RB Kyle Monangai ruled out, QB Caleb Williams questionable for Packers game Oct 09, 2026 Bears running back Kyle Monangai has been ruled out of Sunday's game in Green Bay with a toe injury, while qua",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
@@ -1001,6 +1626,11 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.chicagobears.com/news/roster-moves-chicago-bears-place-braxton-jones-on-ir-elevate-2",
+          "headline": "Roster Moves: Chicago Bears place Braxton Jones on IR, elevate 2 Oct 03, 2026 The Chicago Bears announced that the club has placed offensive lineman Braxton Jones on Reserve/Injured. Additionally, the Bears have elevated",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.chicagobears.com/news/injury-update-caleb-williams-officially-ruled-out-for-sunday-s-game-vs-jets",
           "headline": "Injury Update: Caleb Williams officially ruled out for Sunday's game vs. Jets Oct 02, 2026 Either Tyson Bagent or Case Keenum will start at quarterback for the Bears Sunday against the Jets in place of Caleb Williams, wh",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
@@ -1016,6 +1646,11 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.chicagobears.com/news/bears-open-db-kyler-gordon-s-21-day-practice-window",
+          "headline": "Bears open DB Kyler Gordon's 21-day practice window Oct 01, 2026 The Bears on Wednesday opened cornerback Kyler Gordon's 21-day practice window, giving them three weeks to activate him off the physically unable to perfor",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.chicagobears.com/news/bears-will-wait-to-announce-starting-qb-for-jets-game",
           "headline": "Bears will wait to announce starting QB for Jets game Sep 30, 2026 When Ben Johnson met the media Wednesday before conducting a walk-through practice, the Bears coach was not ready to name a starting quarterback for Sund",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
@@ -1023,6 +1658,36 @@
         {
           "url": "https://www.chicagobears.com/news/this-is-special-case-keenum-delivers-impressive-performance-in-bears-primetime-victory",
           "headline": "'This is special': Case Keenum delivers impressive performance in Bears' primetime victory Sep 29, 2026 The opportunity to make his first start in 1,009 days already made Monday night special for veteran quarterback Case",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/game-recap-case-keenum-defense-lead-bears-to-dominant-victory-over-eagles",
+          "headline": "Game Recap: Case Keenum, defense lead Bears to dominant victory over Eagles Sep 28, 2026 Stellar performances by third-string quarterback Case Keenum and a stifling defense led the Bears to an impressive 27-7 win over th",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/injury-update-bears-rule-out-caleb-williams-will-start-tyson-bagent-or-case-keenum-vs-eagles",
+          "headline": "Injury Update: Bears rule out Caleb Williams, will start Tyson Bagent or Case Keenum vs. Eagles Sep 26, 2026 The Bears ruled Caleb Williams out of Monday night's game against the Eagles with a hamstring injury, but they ",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/girls-flag-football-player-of-the-week-moriah-herr-week-4",
+          "headline": "Girls Flag Football Player of the Week: Moriah Herr | Week 4 Sep 25, 2026 Wheaton North High School quarterback Moriah Herr received Week 4 Player of the Week honors for her standout performances across three conference ",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/ben-johnson-confident-in-bears-qb-depth",
+          "headline": "Ben Johnson confident in Bears' QB depth Sep 23, 2026 The Bears' starting quarterback for Monday night's home game against the Eagles won't be determined until later in the week, but coach Ben Johnson is comfortable with",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/ozzy-trapilo-two-others-one-step-closer-to-game-action",
+          "headline": "Ozzy Trapilo, two others one step closer to game action Sep 23, 2026 Bears left tackle Ozzy Trapilo continued to work out without restrictions, while defensive lineman Shemar Turner and linebacker Noah Sewell returned to",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/roster-moves-chicago-bears-announce-roster-moves",
+          "headline": "Roster Moves: Chicago Bears announce roster moves Sep 22, 2026 The Chicago Bears made a series of roster moves Tuesday including signing LS Scott Daly to the active roster, signing DB Nick McCloud to the practice squad, ",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -1033,6 +1698,16 @@
       "fetchStatus": "OK",
       "candidates": [
         {
+          "url": "https://www.colts.com/news/article-series/practice-notebook/",
+          "headline": "Practice Notebook",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.colts.com/news/colts-week-7-preview-brian-flores-aggressive-vikings-defense-presents-major-challenge-for-daniel-jones-shane-steichen",
+          "headline": "news Colts Week 7 Preview: Brian Flores' aggressive Vikings defense presents major challenge for Daniel Jones, Shane Steichen The Colts will look to rebound on Sunday against an undefeated Minnesota Vikings team coming o",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.colts.com/news/practice-notebook-several-including-justin-walley-return-to-practice",
           "headline": "news Practice Notebook: Several, including Justin Walley, return to practice Wednesday's injury report had 16 Colts players listed.",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
@@ -1040,6 +1715,86 @@
         {
           "url": "https://www.colts.com/news/practice-notebook-colts-cb-sauce-gardner-not-concerned-about-calf-injury",
           "headline": "news Practice Notebook: Colts CB Sauce Gardner not concerned about calf injury Gardner exited the Colts' Week 6 loss to the Tennessee Titans in the second half with a calf injury.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.colts.com/news/colts-sign-wr-mecole-hardman-p-thomas-morstead-to-practice-squad-release-wr-eli-pancol-from-practice-squad",
+          "headline": "news Colts sign WR Mecole Hardman, P Thomas Morstead to practice squad; release WR Eli Pancol from practice squad The Colts made the roster moves on Tuesday.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.colts.com/news/colts-sign-te-pharaoh-brown-to-53-man-roster-from-practice-squad-sign-lb-germaine-pratt-to-practice-squad",
+          "headline": "Colts sign TE Pharaoh Brown to 53-man roster from practice squad, sign LB Germaine Pratt to practice squad The Colts made the roster move on Tuesday.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.colts.com/news/colts-elevate-wr-nick-westbrook-ikhine-to-active-roster-from-practice-squad-place-de-arden-key-on-ir",
+          "headline": "Colts elevate WR Nick Westbrook-Ikhine to active roster from practice squad; place DE Arden Key on IR The Colts made the roster moves Saturday ahead of Week 5 against the Pittsburgh Steelers.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.colts.com/news/colts-sign-de-carl-lawson-to-practice-squad-release-te-kenny-fletcher-jr-from-practice-squad",
+          "headline": "Colts sign DE Carl Lawson to practice squad, release TE Kenny Fletcher Jr. from practice squad The Colts made the roster move on Wednesday.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.colts.com/news/colts-elevate-wr-nick-westbrook-ikhine-from-practice-squad",
+          "headline": "Colts elevate WR Nick Westbrook-Ikhine to active roster from practice squad The roster move was made Saturday ahead of Week 4 against the Washington Commanders.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.colts.com/news/colts-sign-cb-elijah-culp-to-practice-squad",
+          "headline": "Colts sign CB Elijah Culp to practice squad The Colts announced the signing Tuesday.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.colts.com/news/colts-sign-wr-anthony-gould-to-53-man-roster-from-practice-squad-place-wr-alec-pierce-on-injured-reserve-elevate-wr-nick-westbrook-ikhine-to-active-roster-from-practice-squad",
+          "headline": "Colts sign WR Anthony Gould to 53-man roster from practice squad, place WR Alec Pierce on injured reserve, elevate WR Nick Westbrook-Ikhine to active roster from practice squad The Colts made the roster move on Saturday.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.colts.com/news/colts-sign-wr-eli-pancol-to-practice-squad",
+          "headline": "Colts sign WR Eli Pancol to practice squad The Colts made the roster move Wednesday.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.colts.com/news/colts-place-de-micheal-clemons-on-injured-reserve-release-rb-anderson-castle-from-practice-squad",
+          "headline": "Colts place DE Micheal Clemons on injured reserve, release RB Anderson Castle from practice squad The Colts made the roster moves on Tuesday in addition to signing wide receiver Darius Slayton.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.colts.com/news/colts-elevate-wr-anthony-gould-from-practice-squad-for-week-2",
+          "headline": "Colts elevate WR Anthony Gould from practice squad for Week 2 The roster move was made Saturday ahead of Sunday's game against the Kansas City Chiefs.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.colts.com/news/colts-sign-cb-jonathan-edwards-to-practice-squad-release-cb-rob-carter-jr-from-practice-squad",
+          "headline": "Colts sign CB Johnathan Edwards to practice squad; release CB Rob Carter Jr. from practice squad The Colts announced the roster moves Tuesday.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.colts.com/news/colts-elevate-cb-kenneth-harris-to-active-roster-from-practice-squad-for-week-1",
+          "headline": "Colts elevate CB Kenneth Harris to active roster from practice squad for Week 1 The Colts made the roster move on Saturday.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.colts.com/news/colts-sign-t-luke-tenuta-to-53-man-roster-from-practice-squad-waive-cb-jaylon-jones-sign-te-kenny-fletcher-jr-to-practice-squad",
+          "headline": "Colts sign T Luke Tenuta to 53-man roster from practice squad, waive CB Jaylon Jones, sign TE Kenny Fletcher Jr. to practice squad The Colts made the roster move on Tuesday.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.colts.com/news/colts-sign-rb-davon-booth-g-reid-holskey-to-practice-squad-release-rb-ulysses-bentley-iv-from-practice-squad",
+          "headline": "Colts sign RB Davon Booth, G Reid Holskey to practice squad; release RB Ulysses Bentley IV from practice squad The Colts made the roster moves Tuesday.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.colts.com/news/colts-sign-t-luke-tenuta-to-practice-squad",
+          "headline": "Colts sign T Luke Tenuta to practice squad The move was announced Monday afternoon.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.colts.com/news/colts-sign-15-players-to-practice-squad",
+          "headline": "Colts sign 15 players to practice squad The Colts made the roster moves on Monday.",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -1049,6 +1804,11 @@
       "officialNewsIndex": "https://www.jaguars.com/news/",
       "fetchStatus": "OK",
       "candidates": [
+        {
+          "url": "https://www.jaguars.com/news/roster-moves-jaguars-sign-lb-jamal-hill-to-the-practice-squad",
+          "headline": "Roster Moves: Jaguars Sign LB Jamal Hill to the Practice Squad Oct 22, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
         {
           "url": "https://www.jaguars.com/news/in-and-out-2026-week-6-murray-active-brown-and-matiscik-inactive-for-texans-vs-jaguars",
           "headline": "news In and Out, 2026 Week 6: Murray Active, Brown and Matiscik Inactive for Texans vs. Jaguars Oct 18, 2026 CB Montaric Brown, long snapper Ross Matiscik inactive for the Jaguars against the Houston Texans in a 2026 Wee",
@@ -1067,8 +1827,33 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.raiders.com/news/key-matchups-the-main-objective-is-keeping-kirk-cousins-jersey-clean-against-rams",
+          "headline": "news Key Matchups: The main objective is keeping Kirk Cousins' jersey clean against Rams Oct 22, 2026 The Rams have more than enough talent to be impose their will this Sunday in Allegiant Stadium and the Raiders will ne",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.raiders.com/news/raiders-te-carter-runyon-returns-to-practice-2026-nfl",
           "headline": "news Raiders TE Carter Runyon returns to practice Oct 14, 2026 Runyon was placed on injured reserve on Aug. 30 after suffering an injury during training camp.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.raiders.com/news/wide-receiver-dont-e-thornton-jr-returns-to-practice-raiders-week-5",
+          "headline": "news Raiders WR Dont'e Thornton Jr. returns to practice Oct 07, 2026 The Silver and Black have a 21-day period to either activate Thornton to the active roster or place him back on injured reserve.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.raiders.com/news/raiders-sign-wr-cody-white-place-wr-jack-bech-on-reserve-injured-list",
+          "headline": "news Raiders sign WR Cody White, place WR Jack Bech on Reserve/Injured list Sep 29, 2026 Additionally, the team waived WR Justin Shorter and signed WR Phillip Dorsett to the practice squad.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.raiders.com/news/raiders-sign-lb-segun-olubi-donte-thornton-injured-reserve-cody-white-practice-squad-2026-nfl-roster-transactions",
+          "headline": "news Raiders sign LB Segun Olubi Aug 31, 2026 Additionally, the team placed WR Dont'e Thornton Jr. on the Reserve/Injured list and signed WR Cody White to the practice squad.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.raiders.com/news/raiders-announce-2026-practice-squad-additions-roster-transactions",
+          "headline": "news Raiders announce 2026 practice squad additions Aug 31, 2026 The team signed 16 players to its practice squad Monday.",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1134,6 +1919,16 @@
       "fetchStatus": "OK",
       "candidates": [
         {
+          "url": "https://www.chargers.com/news/mike-mcdaniel-justin-herbert-chiefs",
+          "headline": "5 Things To Know About the Chargers Ahead of Week 7 Here is what you need to know about the Chargers ahead of a Week 7 bye",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chargers.com/news/game-recap-chiefs-week-6-justin-herbert",
+          "headline": "Game Recap: Chargers Fall to Chiefs in Week 6 Road Game The Chargers are now 0-6 and will have a Week 7 bye",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.chargers.com/news/injury-updates-jim-harbaugh-justin-herbert-chiefs",
           "headline": "5 Takeaways: Why Jim Harbaugh is 'Hellbent' on Turning Around Chargers 0-5 Start The Chargers Head Coach also gave injury updates and praised Justin Herbert's competitiveness on Monday",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
@@ -1141,6 +1936,16 @@
         {
           "url": "https://www.chargers.com/news/injury-updates-rashawn-slater-joe-alt-ladd-mcconkey",
           "headline": "5 Takeaways: Injury Updates on Rashawn Slater, Joe Alt & Derwin James Chargers Head Coach Jim Harbaugh said the team is \"still evaluating\" some injuries after Sunday's game in Seattle",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chargers.com/news/seahawks-takeaways-week-4-justin-herbert",
+          "headline": "5 Takeaways: Chargers 4th-Quarter Rally Falls Short in Seattle The Chargers couldn't complete a second-half comeback Sunday as they dropped to 0-4 this season",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chargers.com/news/bills-takeaways-week-3-defense-jim-harbaugh-justin-herbert",
+          "headline": "5 Takeaways: Why the Chargers Were 'Not Good Enough' Sunday in Loss to Bills The Chargers dropped to 0-3 despite five takeaways from the defense Sunday against the Bills",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1154,13 +1959,48 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.chargers.com/news/activate-keandre-lambert-smith-sign-caleb-murphy-active-roster-2026",
+          "headline": "Chargers Activate Lambert-Smith; Sign Murphy to Active Roster The Los Angeles Chargers today activated wide receiver KeAndre Lambert-Smith from Reserve/Injured; Designated for Return. In a corresponding move, the Bolts r",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.chargers.com/news/activate-scott-matlock-branson-taylor-sign-theo-wease-active-roster-2026",
           "headline": "Chargers Activate Matlock and Taylor; Sign Wease to Active Roster The Los Angeles Chargers today activated fullback/defensive lineman Scott Matlock and guard/tackle Branson Taylor from Reserve/Injured; Designated for Ret",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.chargers.com/news/elevate-patrick-herbert-and-caleb-murphy-2026",
+          "headline": "Los Angeles Chargers Elevate Patrick Herbert and Caleb Murphy The Los Angeles Chargers today elevated tight end Patrick Herbert and outside linebacker Caleb Murphy from the practice squad for Sunday's game.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.chargers.com/news/place-trey-pipkins-iii-injured-reserve-sign-dj-uiagalelei-active-roster-2026",
           "headline": "Los Angeles Chargers Place Trey Pipkins III on Injured Reserve; Sign DJ Uiagalelei to Active Roster The Los Angeles Chargers today placed guard/tackle Trey Pipkins III on Reserve/Injured. In a corresponding move, the tea",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chargers.com/news/david-njoku-injured-reserve-sign-marquez-valdes-scantling-active-roster-2026",
+          "headline": "Los Angeles Chargers Place David Njoku on Injured Reserve; Sign Marquez Valdes-Scantling to Active Roster The Los Angeles Chargers today placed tight end David Njoku on Reserve/Injured. In corresponding moves, the team s",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chargers.com/news/sign-hayden-rucci-2026",
+          "headline": "Los Angeles Chargers Sign Hayden Rucci The Los Angeles Chargers today signed tight end Hayden Rucci to the active roster from Jacksonville's practice squad. In a corresponding move, the team waived wide receiver Gary Jen",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chargers.com/news/elevate-isas-waxter-2026",
+          "headline": "Los Angeles Chargers Elevate Isas Waxter The Los Angeles Chargers today elevated cornerback Isas Waxter from the practice squad for Sunday's game.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chargers.com/news/keandre-lambert-smith-injured-reserve-sign-gary-jennings-2026",
+          "headline": "Chargers Place KeAndre Lambert-Smith on Injured Reserve; Sign Gary Jennings The Los Angeles Chargers today placed wide receiver KeAndre Lambert-Smith on Reserve/Injured. In corresponding moves, the team signed wide recei",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chargers.com/news/practice-squad-2026",
+          "headline": "Los Angeles Chargers Announce Roster Transactions The Los Angeles Chargers today signed punter JK Scott. In a corresponding move, the team placed linebacker Denzel Perryman on Reserve/Injured. In addition, the Bolts sign",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1218,6 +2058,31 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.miamidolphins.com/news/dolphins-make-practice-squad-moves-x4824",
+          "headline": "Dolphins make practice squad moves",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.miamidolphins.com/news/dolphins-make-practice-squad-moves-x7195",
+          "headline": "Dolphins make practice squad moves",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.miamidolphins.com/news/dolphins-sign-washington-jr-to-the-practice-squad",
+          "headline": "Dolphins sign Washington Jr. to the practice squad",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.miamidolphins.com/news/dolphins-make-practice-squad-moves-x6245",
+          "headline": "Dolphins make practice squad moves",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.miamidolphins.com/news/dolphins-sign-cooper-jr-to-practice-squad",
+          "headline": "Dolphins sign Cooper Jr. to practice squad",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.miamidolphins.com/news/transcript-qb-malik-willis-press-conference-october-21",
           "headline": "Transcript: QB Malik Willis Press Conference - October 21",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
@@ -1235,8 +2100,48 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.vikings.com/news/jihad-ward-rejoins-practice-squad-stint-with-giants-2026",
+          "headline": "news Jihad Ward Rejoins Vikings Practice Squad After Stint with Giants Oct 23, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.vikings.com/news/natrone-brooks-signing-practice-squad-2026",
+          "headline": "news Vikings Re-Sign Natrone Brooks to Practice Squad Oct 20, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.vikings.com/news/running-back-jordan-mason-return-to-practice-week-7",
+          "headline": "news Vikings Announce RB Jordan Mason to Return to Practice in Week 7 Oct 19, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.vikings.com/news/odell-beckham-jr-practice-squad-roster-moves",
+          "headline": "news Vikings Sign Odell Beckham Jr. & Jeshaun Jones to Practice Squad Oct 07, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.vikings.com/news/practice-squad-signing-cornerback-natrone-brooks",
+          "headline": "news Vikings Sign CB Natrone Brooks to Practice Squad Oct 01, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.vikings.com/news/johnny-hekker-practice-squad-signings-week-4-2026",
+          "headline": "news Vikings Sign Devin Neal, Audric Estime, Johnny Hekker & 2 More to Practice Squad Sep 30, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.vikings.com/news/jj-mccarthy-quarterback-trade-new-york-giants-2026-nfl-season",
           "headline": "news Vikings Trade J.J. McCarthy to Giants for 2027 Fifth-Round Pick Sep 28, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.vikings.com/news/jonathan-harris-rejoins-practice-squad-2026",
+          "headline": "news Jonathan Harris Rejoins Vikings Practice Squad Sep 23, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.vikings.com/news/johnny-hekker-jaret-patterson-signed-brett-thorson-injured-reserve-2026",
+          "headline": "news Vikings Sign Punter Johnny Hekker & Running Back Jaret Patterson to Practice Squad Amid Roster Moves Sep 22, 2026",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1250,8 +2155,33 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.vikings.com/news/jordan-mason-injured-reserve-deejay-dallas-signing-2026",
+          "headline": "news Vikings Place Jordan Mason on Injured Reserve, Sign DeeJay Dallas from Practice Squad Sep 16, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.vikings.com/news/jihad-ward-signed-2026-roster-move",
+          "headline": "news Vikings Sign Jihad Ward to Practice Squad Sep 09, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.vikings.com/news/2026-preseason-opener-at-giants-ravens-joint-practice-mailbag",
+          "headline": "news Mailbag: Vikings Reviewing Preseason Opener at Giants, Turning to Practice with Ravens Aug 16, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.vikings.com/news/mailbag-2026-night-practice-opening-week-giants",
+          "headline": "news Mailbag: Vikings Night Practice Offers Unique Start to Preseason Opening Week vs. Giants Aug 09, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.vikings.com/news/quarterbacks-ota-practices-defense-depth-offseason-2026",
           "headline": "news Mailbag: Vikings QBs at OTA Practices, Depth on Defense Jun 01, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.vikings.com/news/lunchbreak-kyler-murray-most-intriguing-figures-2026",
+          "headline": "news Lunchbreak: Kyler Murray Among The Athletic's 'Most Intriguing Figures' for 2026 Sep 01, 2026",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1272,6 +2202,11 @@
       "fetchStatus": "OK",
       "candidates": [
         {
+          "url": "https://www.patriots.com/news/after-further-review-drake-maye-film-breakdown-defense-review-and-quick-hit-film-notes-from-week-7-loss-to-the-bears",
+          "headline": "After Further Review: Drake Maye film breakdown, defense review and quick-hit film notes from Week 7 loss to the Bears Film review of Drake Maye and the Patriots defense from Thursday night's loss to the Bears in Chicago",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.patriots.com/news/week-7-inactives-patriots-at-bears-x7631",
           "headline": "Week 7 Inactives: Patriots at Bears",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
@@ -1289,6 +2224,16 @@
         {
           "url": "https://www.patriots.com/news/injury-report-analysis-patriots-rule-out-five-players-for-thursday-night-football-vs-the-bears",
           "headline": "Injury Report Analysis: Patriots rule out five players for Thursday Night Football vs. the Bears",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.patriots.com/news/patriots-place-wr-romeo-doubs-on-injured-reserve-sign-db-elliott-davison-to-the-53-man-roster-from-the-practice-squad-announce-additional-practice-squad-moves",
+          "headline": "Patriots Place WR Romeo Doubs on Injured Reserve; Sign DB Elliott Davison to the 53-Man Roster from the Practice Squad; Announce Additional Practice Squad Moves",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.patriots.com/news/after-further-review-drake-maye-and-a-j-brown-film-breakdown-quick-hit-film-notes-from-sunday-s-win-over-the-jets",
+          "headline": "After Further Review: Drake Maye and A.J. Brown film breakdown, quick-hit film notes from Sunday's win over the Jets",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1312,63 +2257,98 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
-          "url": "https://www.patriots.com/news/patriots-sign-t-james-hudson-iii-and-cb-kindle-vildor-release-qb-josh-dobbs",
-          "headline": "Patriots Sign T James Hudson III and CB Kindle Vildor; Release QB Josh Dobbs",
+          "url": "https://www.patriots.com/news/transcript-drake-maye-press-conference-10-14",
+          "headline": "Transcript: Drake Maye Press Conference 10/14",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
-          "url": "https://www.patriots.com/news/inactives-analysis-patriots-rb-rhamondre-stevenson-dt-christian-barmore-active-for-sunday-s-game-vs-raiders",
-          "headline": "Inactives Analysis: Patriots RB Rhamondre Stevenson, DT Christian Barmore active for Sunday's game vs. Raiders",
+          "url": "https://www.patriots.com/news/drake-maye-named-one-of-two-fedex-air-ground-players-of-the-week",
+          "headline": "Drake Maye Named One of Two FedEx Air & Ground Players of the Week",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
-          "url": "https://www.patriots.com/news/injury-report-analysis-patriots-rule-out-six-players-for-sunday-s-week-5-matchup-vs-the-raiders",
-          "headline": "Injury Report Analysis: Patriots rule out six players for Sunday's Week 5 matchup vs. the Raiders",
+          "url": "https://www.patriots.com/news/patriots-sign-rb-hassan-haskins-and-cb-d-shawn-jamison-to-the-practice-squad-release-lb-jose-ramirez-from-the-practice-squad",
+          "headline": "Patriots Sign RB Hassan Haskins and CB D'Shawn Jamison to the Practice Squad; Release LB Jose Ramirez from the Practice Squad",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
-          "url": "https://www.patriots.com/news/inactives-analysis-dre-mont-jones-craig-woodson-and-eli-raridon-return-for-sunday-s-afc-east-matchup-vs-the-bills",
-          "headline": "Inactives Analysis: Dre'Mont Jones, Craig Woodson and Eli Raridon return for Sunday's AFC East matchup vs. the Bills",
+          "url": "https://www.patriots.com/news/after-further-review-drake-maye-film-breakdown-defense-review-and-quick-hit-film-notes-from-week-5-win-over-raiders",
+          "headline": "After Further Review: Drake Maye film breakdown, defense review, and quick-hit film notes from Week 5 win over Raiders",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
-          "url": "https://www.patriots.com/news/injury-report-analysis-patriots-rule-out-christian-gonzalez-and-christian-barmore-for-sunday-s-week-4-matchup-vs-bills",
-          "headline": "Injury Report Analysis: Patriots rule out Christian Gonzalez and Christian Barmore for Sunday's Week 4 matchup vs. Bills",
+          "url": "https://www.patriots.com/news/game-notes-drake-maye-records-five-total-touchdowns-against-the-raiders",
+          "headline": "Game Notes: Drake Maye Records Five Total Touchdowns Against the Raiders",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
-          "url": "https://www.patriots.com/news/inactives-analysis-te-eli-raridon-s-craig-woodson-officially-inactive-for-sunday-s-week-3-matchup-vs-the-jaguars",
-          "headline": "Inactives Analysis: TE Eli Raridon, S Craig Woodson officially inactive for Sunday's Week 3 matchup vs. the Jaguars",
+          "url": "https://www.patriots.com/news/patriots-sign-s-mike-brown-to-the-53-man-roster-sign-lb-jose-brown-to-the-practice-squad",
+          "headline": "Patriots Sign S Mike Brown to the 53-Man Roster; Sign LB Jose Ramirez to the Practice Squad",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
-          "url": "https://www.patriots.com/news/injury-report-analysis-cb-carlton-davis-iii-set-to-return-two-players-ruled-out-two-players-listed-as-questionable-for-patriots-vs-jaguars",
-          "headline": "Injury Report Analysis: CB Carlton Davis III set to return, two players ruled out, two players listed as questionable for Patriots vs. Jaguars",
+          "url": "https://www.patriots.com/news/patriots-release-lb-jose-ramirez-sign-cb-al-zillion-hamilton-to-the-practice-squad-release-ol-da-metrius-weatherspoon-from-the-practice-squad",
+          "headline": "Patriots Release LB Jose Ramirez; Sign CB Al'Zillion Hamilton to the Practice Squad; Release OL Da'Metrius Weatherspoon from the Practice Squad",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
-          "url": "https://www.patriots.com/news/inactives-analysis-rb-treveyon-henderson-to-make-season-debut-wr-efton-chism-iii-active-vs-steelers",
-          "headline": "Inactives Analysis: RB TreVeyon Henderson, WR Efton Chism III to make season debuts vs. Steelers",
+          "url": "https://www.patriots.com/news/patriots-elevate-s-mike-brown-and-cb-kindle-vildor-from-the-practice-squad-to-the-active-roster",
+          "headline": "Patriots Elevate S Mike Brown and CB Kindle Vildor from the Practice Squad to the Active Roster",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
-          "url": "https://www.patriots.com/news/injury-report-analysis-rb-treveyon-henderson-expected-to-play-cb-carlton-davis-iii-officially-questionable-for-week-2-vs-steelers",
-          "headline": "Injury Report Analysis: RB TreVeyon Henderson expected to play, CB Carlton Davis III officially questionable for Week 2 vs. Steelers",
+          "url": "https://www.patriots.com/news/patriots-sign-ol-matt-pryor-from-the-arizona-practice-squad",
+          "headline": "Patriots Sign OL Matt Pryor from the Arizona Practice Squad",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
-          "url": "https://www.patriots.com/news/inactives-analysis-patriots-elevate-rb-lan-larison-from-practice-squad-with-treveyon-henderson-inactive-for-season-opener-vs-seahawks",
-          "headline": "Inactives Analysis: Patriots elevate RB Lan Larison from practice squad with TreVeyon Henderson inactive for season opener vs. Seahawks",
+          "url": "https://www.patriots.com/news/patriots-sign-ol-da-metrius-weatherspoon-to-the-practice-squad",
+          "headline": "Patriots Sign OL Da'Metrius Weatherspoon to the Practice Squad",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
-          "url": "https://www.patriots.com/news/injury-report-analysis-patriots-rb-treveyon-henderson-ankle-ruled-out-for-season-opener-vs-seahawks",
-          "headline": "Injury Report Analysis: Patriots RB TreVeyon Henderson (ankle) ruled out for season-opener vs. Seahawks",
+          "url": "https://www.patriots.com/news/patriots-place-ol-greg-van-roten-on-injured-reserve-and-release-lb-riley-wilson-from-the-practice-squad",
+          "headline": "Patriots Place OL Greg Van Roten on Injured Reserve and Release LB Riley Wilson from the Practice Squad",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
-          "url": "https://www.patriots.com/news/how-patriots-qb-drake-maye-can-be-even-better-in-his-third-nfl-season",
-          "headline": "How Patriots QB Drake Maye can be even better in his third NFL season",
+          "url": "https://www.patriots.com/news/patriots-elevate-p-mitch-wishnowsky-from-the-practice-squad",
+          "headline": "Patriots Elevate P Mitch Wishnowsky from the Practice Squad",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.patriots.com/news/patriots-sign-ol-xavier-newman-johnson-to-the-practice-squad-and-release-ol-jacob-rizy-from-the-practice-squad",
+          "headline": "Patriots Sign OL Xavier Newman-Johnson to the Practice Squad and Release OL Jacob Rizy from the Practice Squad",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.patriots.com/news/patriots-re-sign-s-elliott-davison-to-the-practice-squad-release-te-shane-zylstra-from-the-practice-squad",
+          "headline": "Patriots Re-Sign S Elliott Davison to the Practice Squad; Release TE Shane Zylstra from the Practice Squad",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.patriots.com/news/patriots-sign-wr-chandler-brayboy-and-lb-xavier-holmes-to-the-practice-squad-release-s-elliott-davison-and-rb-hassan-haskins-from-the-practice-squad",
+          "headline": "Patriots Sign WR Chandler Brayboy and LB Xavier Holmes to the Practice Squad; Release S Elliott Davison and RB Hassan Haskins from the Practice Squad",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.patriots.com/news/patriots-elevate-two-players-from-the-practice-squad-x2562",
+          "headline": "Patriots Elevate Two Players from the Practice Squad",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.patriots.com/news/patriots-sign-s-elliott-davison-to-the-practice-squad-release-dt-jalen-hunt-from-the-practice-squad",
+          "headline": "Patriots Sign S Elliott Davison to the Practice Squad; Release DT Jalen Hunt from the Practice Squad",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.patriots.com/news/patriots-sign-te-shane-zylstra-to-the-practice-squad-waive-s-eric-butler-and-wr-jimmy-kibble-from-injured-reserve",
+          "headline": "Patriots Sign TE Shane Zylstra to the Practice Squad; Waive S Eric Butler and WR Jimmy Kibble from Injured Reserve",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.patriots.com/news/patriots-sign-c-ben-brown-and-lb-erick-hunter-to-the-53-man-roster-announce-additional-practice-squad-moves",
+          "headline": "Patriots Sign C Ben Brown and LB Erick Hunter to the 53-Man Roster; Announce Additional Practice Squad Moves",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -1389,8 +2369,38 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.neworleanssaints.com/news/key-observations-from-saints-rams-joint-practice",
+          "headline": "Key observations from Saints-Rams joint practice",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.neworleanssaints.com/news/key-observations-from-saints-cowboys-joint-practice",
+          "headline": "Key observations from Saints-Cowboys joint practice",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.neworleanssaints.com/news/saints-training-camp-2025-news-los-angeles-rams-joint-practice-key-takeaways-julian-blackmon-thursday-august-14",
+          "headline": "Saints Training Camp 2025: Key Takeaways from Thursday, August 14",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.neworleanssaints.com/news/saints-training-camp-2025-key-takeaways-play-of-day-joint-practice-rams-wednesday-august-13",
+          "headline": "Saints Training Camp 2025: Key Takeaways from Wednesday, August 13",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.neworleanssaints.com/news/morning-break-saints-begin-practice-in-france-martin-emerson-jr-earns-nfc-honors-new-orleans-news-headlines-10-22-2026",
+          "headline": "news Morning Break: Saints begin practice in France, Martin Emerson Jr. earns NFC honors Oct 22, 2026 A collection of headlines and news about the Saints and the NFL for Thursday, October 22",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-wednesday",
           "headline": "news Saints Wednesday Injury Report: 2026 Week 7 vs. Pittsburgh Steelers Oct 21, 2026 Nine Saints listed on Wednesday's Saints Injury Report for Week 7 against the Steelers",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.neworleanssaints.com/news/five-things-to-know-about-the-new-orleans-saints-in-paris-week-7-for-wednesday-october-21",
+          "headline": "news Five things to know about the New Orleans Saints for Wednesday, October 21 Oct 21, 2026 Saints begin practice week in Paris ahead of Sunday's matchup with Steelers",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1431,6 +2441,21 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.giants.com/news/giants-sign-lb-malik-harrison-to-active-roster-olb-dawuane-smoot-joins-practice-squad-roster-moves",
+          "headline": "Giants sign LB Malik Harrison to active roster; OLB Dawuane Smoot joins practice squad",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.giants.com/news/chauncey-golston-injured-reserve-dalen-cambre-trace-ford-practice-squad-week-5-washington-commanders-roster-moves",
+          "headline": "Giants place DL Chauncey Golston on IR, elevate 2 from practice squad",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.giants.com/news/giants-sign-olb-jihad-ward-off-minnesota-vikings-practice-squad-roster-moves-week-4",
+          "headline": "Giants sign OLB Jihad Ward off Vikings practice squad",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.giants.com/news/j-j-mccarthy-trade-details-minnesota-vikings-quarterback-2027-nfl-draft-michigan-wolverines",
           "headline": "Giants acquire QB J.J. McCarthy from Vikings in exchange for 2027 draft pick",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
@@ -1441,13 +2466,58 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.giants.com/news/giants-place-cornerback-paulson-adebo-on-injured-reserve-week-2-los-angeles-rams-roster-move",
+          "headline": "Giants place CB Paulson Adebo on IR; CB Nikko Reed signed from Chargers' practice squad",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.giants.com/news/giants-sign-dl-josh-tupou-to-active-roster-wr-dalen-cambre-to-practice-squad-roster-moves-week-2",
+          "headline": "Giants sign DL Josh Tupou to active roster, WR Dalen Cambre to practice squad",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.giants.com/news/giants-waive-wr-dalen-cambre-sign-rb-phil-mafah-to-practice-squad-2026-roster-moves",
+          "headline": "Giants sign RB Phil Mafah to practice squad, waive WR Dalen Cambre",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.giants.com/news/roster-moves-week-1-dallas-cowboys-dalen-cambre-braxton-berrios-malik-harrison-practice-squad",
+          "headline": "Giants sign WR Dalen Cambre to active roster among series of roster moves",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.giants.com/news/jameis-winston-jon-runyan-jr-contract-extension-details-signed-2026-week-1-regular-season",
           "headline": "QB Jameis Winston, OL Jon Runyan Jr. sign 2-year extensions",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.giants.com/news/giants-sign-4-more-players-to-practice-squad-kingsley-eguakun-charlie-jones-darian-kinnard-elijah-jones",
+          "headline": "Giants sign 4 more players to practice squad",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.giants.com/news/2026-practice-squad-roster-moves-braxton-berrios-dalen-cambre-jalin-hyatt-jake-haener-trace-ford",
+          "headline": "Giants establish practice squad with return of 13 players",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.giants.com/news/calvin-austin-iii-injury-status-roster-new-york-giants",
           "headline": "Calvin Austin III placed on injured reserve with torn ACL",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.giants.com/news/spring-practices-otas-minicamp-odell-beckham-jr-juju-smith-schuster-dominic-zvada-arvell-reese",
+          "headline": "Fact or Fiction: Takeaways from spring practices",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.giants.com/news/ota-spring-practices-arvell-reese-francis-mauigoa-nfl-draft-2026-john-harbaugh",
+          "headline": "Fact or Fiction: OTA midway point check-in",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.giants.com/news/spring-practices-otas-minicamp-john-harbaugh-jaxson-dart-kayvon-thibodeaux-abdul-carter-2026-training-camp",
+          "headline": "Cover 3: Final thoughts from spring football",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -1458,13 +2528,28 @@
       "fetchStatus": "OK",
       "candidates": [
         {
+          "url": "https://www.newyorkjets.com/news/adonai-mitchell-to-return-against-miami-dolphins-breece-hall-dylan-parham-questionable-10-23-2026",
+          "headline": "Jets Notebook | WR Adonai Mitchell to Return Against Miami Dolphins in Week 7 RB Breece Hall & LG Dylan Parham 'Questionable' for Sunday",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.newyorkjets.com/news/jets-injury-report-week-7-vs-dolphins-friday-10-23-2026",
           "headline": "Jets Injury Report | Week 7 vs. Dolphins - Friday Breece Hall (Quad), Dylan Parham (Knee) and Kene Nwangwu (Knee) All Questionable for Week 7",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.newyorkjets.com/news/jets-vs-dolphins-game-preview-geno-smith-malik-willis-week-7-nfl-10-25-2026",
+          "headline": "Jets-Dolphins Game Preview | 'We're Right at the Cusp of It'",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.newyorkjets.com/news/jets-injury-report-week-7-vs-dolphins-thursday-10-22-2026",
           "headline": "Jets Injury Report | Week 7 vs. Dolphins - Thursday",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.newyorkjets.com/news/adonai-mitchell-dylan-parham-return-to-practice-for-jets-10-21-2026",
+          "headline": "WR Adonai Mitchell and LG Dylan Parham Return to Practice for Jets Ahead of Sunday's Matchup with the Dolphins, Head Coach Aaron Glenn Provides an Update on RB Breece Hall",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1491,6 +2576,36 @@
           "url": "https://www.newyorkjets.com/news/jets-want-to-see-improvement-in-how-they-finish-games-after-road-loss-to-new-england-10-18-2026",
           "headline": "Aaron Glenn, Jets Emphasize Finishing After Patriots Game QB Geno Smith: 'We've Got a lot of Capable Guys'",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.newyorkjets.com/news/jets-release-troy-reeder-sign-veteran-edge-quinton-bell-to-practice-squad-10-13-2026",
+          "headline": "news Jets Release LB Troy Reeder; Sign Edge Quinton Bell to Practice Squad",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.newyorkjets.com/news/jets-sign-wr-jamaal-prtichett-to-practice-squad-10-13-2026",
+          "headline": "news Jets Sign WR Jamaal Pritchett to Practice Squad",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.newyorkjets.com/news/jets-sign-kohl-levao-to-active-roster-jordan-clark-blake-grupe-to-practice-squad-10-01-2026",
+          "headline": "news Jets Sign OL Kohl Levao to Active Roster; Sign Two Players to Practice Squad",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.newyorkjets.com/news/jets-sign-kicker-jason-sanders-to-active-roster-09-29-2026",
+          "headline": "news Jets Sign K Jason Sanders to Active Roster, Add Two OL to Practice Squad",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.newyorkjets.com/news/jets-sign-troy-reeder-active-roster-will-levis-jaden-keller-practice-squad-09-22-2026",
+          "headline": "news Jets Sign LB Troy Reeder to Active Roster",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.newyorkjets.com/news/jets-at-patriots-game-preview-geno-smith-drake-mate-week-6-nfl-10-18-2026",
+          "headline": "Jets-Patriots Game Preview | A New Season",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
     },
@@ -1502,6 +2617,11 @@
         {
           "url": "https://www.steelers.com/news/week-7-injury-report-saints",
           "headline": "Week 7 Injury Report (Saints) A look at player injuries and practice participation for Week 7",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.steelers.com/news/steelers-sign-valdes-scantling",
+          "headline": "Steelers sign Valdes-Scantling The Steelers sign Marquez Valdes-Scantling to practice squad",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1517,6 +2637,21 @@
         {
           "url": "https://www.steelers.com/news/week-6-injury-report-buccaneers-x2319",
           "headline": "Updated: Week 6 Injury Report (Buccaneers) A look at player injuries and practice participation for Week 6",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.steelers.com/news/four-down-territory-teacher-s-and-student",
+          "headline": "Four-Down Territory: Teacher(s) and student It helps to have Aaron Rodgers, DK Metcalf raising up rookie receiver Germie Bernard",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.steelers.com/news/eyeing-who-s-up-next",
+          "headline": "Eyeing who's up next Aaron Rodgers won't need a program to know the names who are in line for increased opportunities",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.steelers.com/news/steelers-sign-roberts-to-practice-squad",
+          "headline": "Steelers sign Roberts to practice squad The Steelers signed linebacker Elandon Roberts to the practice squad",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1539,6 +2674,11 @@
         {
           "url": "https://www.49ers.com/news/mike-evans-active-kirk-out-vs-commanders-inactives-week-6-wasvssf",
           "headline": "news Mike Evans Active, Kirk OUT vs. Commanders; Inactives Week 6 #WASvsSF Take a look at players who have been ruled out for the San Francisco 49ers Week 6 matchup versus the Washington Commanders.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.49ers.com/news/49ers-activate-lb-jalen-graham-and-wr-malik-turner-from-practice-squad-other-moves",
+          "headline": "news 49ers Activate LB Jalen Graham and WR Malik Turner From Practice Squad; Other Moves The 49ers announced they have activated LB Jalen Graham and WR Malik Turner from the practice squad.",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1630,6 +2770,16 @@
           "url": "https://www.49ers.com/news/injury-updates-linebacker-depth-shanahan-turns-focus-to-wild-card-round-at-philadelphia",
           "headline": "Injury Updates, Linebacker Depth; Shanahan Turns Focus to Wild Card Round at Philadelphia Kyle Shanahan addressed injury updates and linebacker depth as the 49ers turn the page to a Wild Card matchup against the Philadel",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.49ers.com/news/trent-williams-ricky-pearsall-out-george-kittle-active-vs-seahawks-inactives-for-week-18-seavssf",
+          "headline": "Trent Williams, Ricky Pearsall OUT, George Kittle Active vs. Seahawks; Inactives for Week 18 #SEAvsSF Take a look at players who have been ruled out for the San Francisco 49ers Week 18 Saturday night matchup versus the S",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.49ers.com/news/brock-purdy-ranked-no-85-on-nfl-s-top-100-players-of-2026",
+          "headline": "news Brock Purdy Ranked No. 85 on NFL's 'Top 100 Players of 2026' San Francisco 49ers quarterback Brock Purdy was voted as the No. 85 player in the NFL's \"Top 100 Players of 2026\" list.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
     },
@@ -1659,8 +2809,33 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.buccaneers.com/news/bucs-use-final-practice-squad-elevation-option-ifeatu-melifonwu",
+          "headline": "Bucs Use Final Practice Squad Elevation Option on S Ifeatu Melifonwu",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buccaneers.com/news/caden-fordham-returns-bucs-practice-squad",
+          "headline": "Caden Fordham Returns to Bucs' Practice Squad",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.buccaneers.com/news/quarterback-outlook-week-seven-tetairoa-mcmillan-prowess-more-bucs-blitz",
           "headline": "news Quarterback Outlook in Week Seven, Tetairoa McMillan's Prowess & More | Bucs Blitz",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buccaneers.com/news/challenge-facing-ceedee-lamb-george-pickens-jalon-daniels-composure-mindset-more-bucs-blitz",
+          "headline": "news Challenge of Facing CeeDee Lamb and George Pickens, Jalon Daniels' Composure Mindset & More | Bucs Blitz",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buccaneers.com/news/jalon-daniels-brings-different-energy-level-getting-ted-hurst-iii-rolling-more-bucs-blitz",
+          "headline": "news Jalon Daniels Brings \"Different Energy Level,\" A'Shawn Robinson's Leadership and More | Bucs Blitz",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buccaneers.com/news/jalon-daniels-high-spirits-packers-explosive-offense-more-bucs-blitz-week-4",
+          "headline": "news Jalon Daniels' High Spirits, Packers' Explosive Offense and More | Bucs Blitz",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -1671,13 +2846,38 @@
       "fetchStatus": "OK",
       "candidates": [
         {
+          "url": "https://www.tennesseetitans.com/news/quick-hits-on-the-titans-from-friday-of-browns-week",
+          "headline": "Quick Hits on the Titans From Friday of Browns Week The Titans returned to the practice field on Wednesday at Vanderbilt Health Football Center to continue preparations for Sunday's game vs the Cleveland Browns.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.tennesseetitans.com/news/quick-hits-on-the-titans-from-thursday-of-browns-week-x7181",
+          "headline": "Quick Hits on the Titans From Thursday of Browns Week The Titans returned to the practice field on Thursday at Vanderbilt Health Football Center to continue preparations for Sunday's game vs the Cleveland Browns.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.tennesseetitans.com/news/titans-qb-cam-ward-knows-the-team-s-offense-needs-to-be-better",
           "headline": "Titans QB Cam Ward Knows The Team's Offense Needs to Be Better Aside from Ward\u2019s connection with rookie Carnell Tate for a game-tying touchdown, the Tennessee offense didn\u2019t finish drives in the end zone in Indianapolis.",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.tennesseetitans.com/news/quick-hits-on-the-titans-from-wednesday-of-browns-week-x4875",
+          "headline": "Quick Hits on the Titans From Wednesday of Browns Week Oct 21, 2026 The Titans returned to the practice field on Wednesday at Vanderbilt Health Football Center to continue preparations for Sunday's game vs the Cleveland ",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.tennesseetitans.com/news/week-7-injury-report-titans-vs-browns",
           "headline": "Week 7 Injury Report | Titans vs Browns Oct 21, 2026 Who's in, who's out for the Titans in Week 7 vs the Cleveland Browns",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.tennesseetitans.com/news/titans-lb-dorian-mausi-designated-to-return-to-practice",
+          "headline": "Titans LB Dorian Mausi Designated to Return to Practice Oct 21, 2026 This designation opens up a three-week window for Mausi to practice with the team, and he will not count against the team's 53-man roster until being a",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.tennesseetitans.com/news/titans-release-dl-jordan-elliott-while-also-making-a-pair-of-practice-squad-moves",
+          "headline": "Titans Release DL Jordan Elliott While Also Making a Pair of Practice Squad Moves Oct 20, 2026 DB Erick Hallett was signed to the practice squad and LB Chase Wilson was waived from the practice squad.",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {

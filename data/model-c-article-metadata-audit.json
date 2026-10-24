@@ -1,12 +1,12 @@
 {
   "status": "ARTICLE_METADATA_AUDIT_ONLY",
   "automaticConfirmations": 0,
-  "totalArticles": 55,
+  "totalArticles": 56,
   "counts": {
-    "WITHIN_SEVEN_DAYS": 2,
-    "OLDER_THAN_SEVEN_DAYS": 52,
+    "WITHIN_SEVEN_DAYS": 0,
+    "OLDER_THAN_SEVEN_DAYS": 53,
     "AFTER_KICKOFF": 0,
-    "DATE_UNVERIFIED": 1,
+    "DATE_UNVERIFIED": 3,
     "FETCH_FAILED": 0,
     "UNKNOWN_GAME": 0
   },
@@ -14,15 +14,15 @@
     {
       "gameId": "401873023",
       "team": "Carolina Panthers",
-      "url": "https://www.panthers.com/news/three-takeaways-from-friday-including-a-baker-mayfield-reunion-injury-updates-and-more-monroe-freeling-jaycee-horn-mike-jackson",
-      "publicationWindow": "WITHIN_SEVEN_DAYS",
+      "url": "https://www.panthers.com/news/ask-the-old-guy-celebrate-the-good-times-and-keep-working-atlanta-defense-bryce-young-xavier-legette-pro-football-hall-of-fame",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
       "starterConfirmed": false
     },
     {
       "gameId": "401873023",
       "team": "Carolina Panthers",
-      "url": "https://www.panthers.com/news/week-7-friday-injury-report-jaelan-phillips-out-monroe-freeling-questionable",
-      "publicationWindow": "WITHIN_SEVEN_DAYS",
+      "url": "https://www.panthers.com/news/ask-the-old-guy-get-back-to-the-work-chuba-hubbard-bryce-young-detroit-sunday-night-football-keep-pounding",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
       "starterConfirmed": false
     },
     {
@@ -49,7 +49,7 @@
     {
       "gameId": "401873026",
       "team": "Baltimore Ravens",
-      "url": "https://www.baltimoreravens.com/news/lamar-jackson-ankle-injury-explains-whats-going-on-ravens-bengals",
+      "url": "https://www.baltimoreravens.com/news/ravens-to-hold-training-camp-practice-at-university-of-maryland",
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
       "starterConfirmed": false
     },
@@ -63,7 +63,7 @@
     {
       "gameId": "401873026",
       "team": "Buffalo Bills",
-      "url": "https://www.buffalobills.com/news/bills-coaches-offer-preview-on-qb-drake-maye-a-rookie-cb-steps-up-and-initial-week-4-injury-outlook",
+      "url": "https://www.buffalobills.com/news/bills-37-rams-34-final-score-recap-highlights",
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
       "starterConfirmed": false
     },
@@ -77,7 +77,7 @@
     {
       "gameId": "401873031",
       "team": "Tennessee Titans",
-      "url": "https://www.tennesseetitans.com/news/titans-sign-qb-cam-ward-to-rookie-contract",
+      "url": "https://www.tennesseetitans.com/news/quick-hits-on-the-titans-from-friday-of-browns-week",
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
       "starterConfirmed": false
     },
@@ -119,7 +119,7 @@
     {
       "gameId": "401873024",
       "team": "Dallas Cowboys",
-      "url": "https://www.dallascowboys.com/news/mailbag-sending-a-message-or-changing-of-the-guard",
+      "url": "https://www.dallascowboys.com/news/mick-shots-feeling-the-brunt-of-all-the-blitzes",
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
       "starterConfirmed": false
     },
@@ -133,7 +133,7 @@
     {
       "gameId": "401873030",
       "team": "Minnesota Vikings",
-      "url": "https://www.vikings.com/news/carson-wentz-starting-week-2-at-bears",
+      "url": "https://www.vikings.com/news/lunchbreak-kyler-murray-most-intriguing-figures-2026",
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
       "starterConfirmed": false
     },
@@ -161,7 +161,7 @@
     {
       "gameId": "401873029",
       "team": "Las Vegas Raiders",
-      "url": "https://www.raiders.com/news/fernando-mendoza-raider-nation-and-the-latino-community-see-themselves",
+      "url": "https://www.raiders.com/news/key-matchups-the-main-objective-is-keeping-kirk-cousins-jersey-clean-against-rams",
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
       "starterConfirmed": false
     },
@@ -175,22 +175,22 @@
     {
       "gameId": "401873029",
       "team": "New York Jets",
-      "url": "https://www.newyorkjets.com/news/jets-week-6-notes-david-bailey-omar-cooper-jr-geno-smith-highlights-10-19-2026",
+      "url": "https://www.newyorkjets.com/news/jets-at-patriots-game-preview-geno-smith-drake-mate-week-6-nfl-10-18-2026",
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
       "starterConfirmed": false
     },
     {
       "gameId": "401873027",
       "team": "Cleveland Browns",
-      "url": "https://www.clevelandbrowns.com/news/austin-barber-keeps-starting-job-at-right-guard-after-strong-week-1-performance",
+      "url": "https://www.clevelandbrowns.com/news/dillon-gabriel-and-kalia-davis-eligible-to-return-to-practice",
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
       "starterConfirmed": false
     },
     {
       "gameId": "401873027",
       "team": "Cleveland Browns",
-      "url": "https://www.clevelandbrowns.com/news/man-under-center-part-3-the-starter",
-      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
+      "url": "https://www.clevelandbrowns.com/news/deshaun-watson-continues-to-take-strides-in-browns-offense-news-notes",
+      "publicationWindow": "DATE_UNVERIFIED",
       "starterConfirmed": false
     },
     {
@@ -203,7 +203,14 @@
     {
       "gameId": "401873027",
       "team": "Pittsburgh Steelers",
-      "url": "https://www.steelers.com/news/labriola-on-the-win-over-the-colts-x5664",
+      "url": "https://www.steelers.com/news/eyeing-who-s-up-next",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873025",
+      "team": "Atlanta Falcons",
+      "url": "https://www.atlantafalcons.com/news/falcons-mailbag-how-different-do-falcons-look-in-year-2-of-raheem-morris-michael-penix-jr",
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
       "starterConfirmed": false
     },
@@ -216,43 +223,43 @@
     },
     {
       "gameId": "401873025",
-      "team": "Atlanta Falcons",
-      "url": "https://www.atlantafalcons.com/news/falcons-injury-report-atlanta-releases-lengthy-list-as-prep-for-49ers-continues",
+      "team": "Tampa Bay Buccaneers",
+      "url": "https://www.buccaneers.com/news/challenge-facing-ceedee-lamb-george-pickens-jalon-daniels-composure-mindset-more-bucs-blitz",
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
       "starterConfirmed": false
     },
     {
       "gameId": "401873025",
       "team": "Tampa Bay Buccaneers",
-      "url": "https://www.buccaneers.com/news/roster-moves-jalen-mcmillan-ir-qb-added-practice-squad",
-      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873025",
-      "team": "Tampa Bay Buccaneers",
-      "url": "https://www.buccaneers.com/news/bucs-elevate-qb-easton-stick-lb-caden-fordham-for-packers-game",
+      "url": "https://www.buccaneers.com/news/jalon-daniels-brings-different-energy-level-getting-ted-hurst-iii-rolling-more-bucs-blitz",
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
       "starterConfirmed": false
     },
     {
       "gameId": "401873028",
       "team": "Indianapolis Colts",
-      "url": "https://www.colts.com/news/practice-notebook-colts-cb-sauce-gardner-not-concerned-about-calf-injury",
+      "url": "https://www.colts.com/news/colts-week-7-preview-brian-flores-aggressive-vikings-defense-presents-major-challenge-for-daniel-jones-shane-steichen",
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
       "starterConfirmed": false
     },
     {
       "gameId": "401873028",
       "team": "Indianapolis Colts",
-      "url": "https://www.colts.com/news/practice-notebook-several-including-justin-walley-return-to-practice",
-      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
+      "url": "https://www.colts.com/news/article-series/practice-notebook/",
+      "publicationWindow": "DATE_UNVERIFIED",
       "starterConfirmed": false
     },
     {
       "gameId": "401873028",
       "team": "Jacksonville Jaguars",
       "url": "https://www.jaguars.com/news/in-and-out-2026-week-6-murray-active-brown-and-matiscik-inactive-for-texans-vs-jaguars",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873028",
+      "team": "Jacksonville Jaguars",
+      "url": "https://www.jaguars.com/news/roster-moves-jaguars-sign-lb-jamal-hill-to-the-practice-squad",
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
       "starterConfirmed": false
     },
@@ -294,7 +301,7 @@
     {
       "gameId": "401873033",
       "team": "Kansas City Chiefs",
-      "url": "https://www.chiefs.com/news/week-2-inactive-players-colts-vs-chiefs",
+      "url": "https://www.chiefs.com/news/chiefs-announce-2026-practice-squad-and-other-roster-moves",
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
       "starterConfirmed": false
     },
@@ -315,14 +322,14 @@
     {
       "gameId": "401873034",
       "team": "New England Patriots",
-      "url": "https://www.patriots.com/news/how-patriots-qb-drake-maye-can-be-even-better-in-his-third-nfl-season",
+      "url": "https://www.patriots.com/news/after-further-review-drake-maye-and-a-j-brown-film-breakdown-quick-hit-film-notes-from-sunday-s-win-over-the-jets",
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
       "starterConfirmed": false
     },
     {
       "gameId": "401873034",
       "team": "New England Patriots",
-      "url": "https://www.patriots.com/news/patriots-sign-t-james-hudson-iii-and-cb-kindle-vildor-release-qb-josh-dobbs",
+      "url": "https://www.patriots.com/news/after-further-review-drake-maye-film-breakdown-defense-review-and-quick-hit-film-notes-from-week-5-win-over-raiders",
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
       "starterConfirmed": false
     },
@@ -336,7 +343,7 @@
     {
       "gameId": "401873034",
       "team": "Miami Dolphins",
-      "url": "https://www.miamidolphins.com/news/injury-report-week-7-dolphins-at-jets",
+      "url": "https://www.miamidolphins.com/news/dolphins-make-practice-squad-moves-x4824",
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
       "starterConfirmed": false
     },
@@ -357,14 +364,14 @@
     {
       "gameId": "401873035",
       "team": "Washington Commanders",
-      "url": "https://www.commanders.com/news/laremy-tunsil-commanders-leadership-mentorship-josh-conerly-injury",
+      "url": "https://www.commanders.com/news/5-takeaways-from-jayden-daniels-press-conference",
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
       "starterConfirmed": false
     },
     {
       "gameId": "401873035",
       "team": "Washington Commanders",
-      "url": "https://www.commanders.com/news/terry-mclaurin-knee-injury-commanders",
+      "url": "https://www.commanders.com/news/5-takeaways-from-jayden-daniels-week-5-press-conference",
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
       "starterConfirmed": false
     },
