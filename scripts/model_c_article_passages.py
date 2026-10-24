@@ -35,9 +35,11 @@ def extract(page,names):
             and not ("is seen during" in p.lower() or "are seen during" in p.lower()
                      or "photo by" in p.lower())][:3]
 
-def collect(discovery,ranked,queue,fetch=fetch_official):
+def collect(discovery,ranked,queue,fetch=fetch_official,publication_audit=None):
     teams={t["team"]:t for t in discovery["teams"]}
     games={(g["gameId"],g["team"]):g for g in queue["items"]}
+    windows={(x["gameId"],x["team"],x["url"]):x["publicationWindow"]
+             for x in (publication_audit or {}).get("items",[])}
     rows=[]
     for entry in ranked["items"]:
         game=games.get((entry["gameId"],entry["team"]),{})
@@ -47,6 +49,12 @@ def collect(discovery,ranked,queue,fetch=fetch_official):
             row={"team":entry["team"],"gameId":entry["gameId"],"url":link["url"],
                  "status":"UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
                  "starterConfirmed":False,"passages":[]}
+            window=windows.get((entry["gameId"],entry["team"],link["url"]))
+            if publication_audit is not None and window!="WITHIN_SEVEN_DAYS":
+                row["fetchStatus"]="SKIPPED_NOT_RECENT_VERIFIED"
+                row["publicationWindow"]=window or "DATE_NOT_AUDITED"
+                rows.append(row)
+                continue
             try:
                 base=teams[entry["team"]]["officialNewsIndex"]
                 row["passages"]=extract(fetch(link["url"],base),names)
@@ -62,6 +70,7 @@ if __name__=="__main__":
     discovery=json.loads((DATA/"model-c-official-qb-discovery.json").read_text())
     ranked=json.loads((DATA/"model-c-qb-ranked-news.json").read_text())
     queue=json.loads((DATA/"model-c-qb-review-queue.json").read_text())
-    output=collect(discovery,ranked,queue)
+    audit=json.loads((DATA/"model-c-article-metadata-audit.json").read_text())
+    output=collect(discovery,ranked,queue,publication_audit=audit)
     (DATA/"model-c-qb-article-passages.json").write_text(json.dumps(output,indent=2)+"\n")
     print("Review-only passages:",sum(len(x["passages"]) for x in output["items"]))
