@@ -3837,21 +3837,6 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
-          "url": "https://www.steelers.com/news/labriola-on-the-win-over-the-colts-x5664",
-          "headline": "Labriola on the win over the Colts They got NFL-caliber QB play, and the trickle-down put them over the top",
-          "score": 1,
-          "reasons": [
-            "QB_TERMS",
-            "DATE_UNVERIFIED",
-            "NO_OWN_QB_NAME",
-            "OWN_QB_STATUS_NOT_ESTABLISHED",
-            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
-          ],
-          "dateFromHeadline": null,
-          "pregameShortlistEligible": false,
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
           "url": "https://www.steelers.com/news/steelers-sign-roberts-to-practice-squad",
           "headline": "Steelers sign Roberts to practice squad The Steelers signed linebacker Elandon Roberts to the practice squad",
           "score": 0,

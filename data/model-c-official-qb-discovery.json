@@ -1,6 +1,6 @@
 {
   "status": "DISCOVERY_ONLY_NOT_STARTER_CONFIRMATION",
-  "generatedAt": "2026-10-24T11:39:27.747887+00:00",
+  "generatedAt": "2026-10-24T12:16:11.387699+00:00",
   "automaticConfirmations": 0,
   "teams": [
     {
@@ -2707,11 +2707,6 @@
         {
           "url": "https://www.steelers.com/news/steelers-sign-roberts-to-practice-squad",
           "headline": "Steelers sign Roberts to practice squad The Steelers signed linebacker Elandon Roberts to the practice squad",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.steelers.com/news/labriola-on-the-win-over-the-colts-x5664",
-          "headline": "Labriola on the win over the Colts They got NFL-caliber QB play, and the trickle-down put them over the top",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]

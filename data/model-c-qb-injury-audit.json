@@ -1,0 +1,82 @@
+{
+  "season": 2026,
+  "week": 8,
+  "status": "REVIEW_REQUIRED",
+  "generatedAt": "2026-10-24T12:16:04.059341+00:00",
+  "criticalCount": 4,
+  "alerts": [
+    {
+      "gameId": "401873027",
+      "date": "2026-11-01T18:00Z",
+      "team": "Cleveland Browns",
+      "opponent": "Pittsburgh Steelers",
+      "severity": "CRITICAL_QB_AVAILABILITY_UNMODELED",
+      "reportedUnavailable": [
+        {
+          "name": "Dillon Gabriel",
+          "status": "Injured Reserve"
+        }
+      ],
+      "depthChartCandidateUnverified": "Deshaun Watson",
+      "verifiedStarter": null,
+      "qbAdjustmentPoints": 0.0,
+      "requiresHumanReview": true,
+      "note": "Availability report is not starter confirmation. QB adjustment absent; pick is not injury-aware."
+    },
+    {
+      "gameId": "401873034",
+      "date": "2026-11-01T21:25Z",
+      "team": "New England Patriots",
+      "opponent": "Miami Dolphins",
+      "severity": "CRITICAL_QB_AVAILABILITY_UNMODELED",
+      "reportedUnavailable": [
+        {
+          "name": "Behren Morton",
+          "status": "Out"
+        }
+      ],
+      "depthChartCandidateUnverified": "Drake Maye",
+      "verifiedStarter": null,
+      "qbAdjustmentPoints": 0.0,
+      "requiresHumanReview": true,
+      "note": "Availability report is not starter confirmation. QB adjustment absent; pick is not injury-aware."
+    },
+    {
+      "gameId": "401873035",
+      "date": "2026-11-02T01:20Z",
+      "team": "Philadelphia Eagles",
+      "opponent": "Washington Commanders",
+      "severity": "CRITICAL_QB_AVAILABILITY_UNMODELED",
+      "reportedUnavailable": [
+        {
+          "name": "Jalen Hurts",
+          "status": "Injured Reserve"
+        }
+      ],
+      "depthChartCandidateUnverified": "Tanner McKee",
+      "verifiedStarter": null,
+      "qbAdjustmentPoints": 0.0,
+      "requiresHumanReview": true,
+      "note": "Availability report is not starter confirmation. QB adjustment absent; pick is not injury-aware."
+    },
+    {
+      "gameId": "401873036",
+      "date": "2026-11-03T01:15Z",
+      "team": "Chicago Bears",
+      "opponent": "Seattle Seahawks",
+      "severity": "CRITICAL_QB_AVAILABILITY_UNMODELED",
+      "reportedUnavailable": [
+        {
+          "name": "Case Keenum",
+          "status": "Out"
+        }
+      ],
+      "depthChartCandidateUnverified": "Caleb Williams",
+      "verifiedStarter": null,
+      "qbAdjustmentPoints": 0.0,
+      "requiresHumanReview": true,
+      "note": "Availability report is not starter confirmation. QB adjustment absent; pick is not injury-aware."
+    }
+  ],
+  "policy": "Do not silently label picks injury-aware when a key QB is reported unavailable and no verified score adjustment was made. Preserve frozen picks."
+}
