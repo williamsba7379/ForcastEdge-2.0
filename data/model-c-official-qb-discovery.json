@@ -1,6 +1,6 @@
 {
   "status": "DISCOVERY_ONLY_NOT_STARTER_CONFIRMATION",
-  "generatedAt": "2026-10-24T03:02:23.182735+00:00",
+  "generatedAt": "2026-10-24T03:07:43.367718+00:00",
   "automaticConfirmations": 0,
   "teams": [
     {
@@ -916,6 +916,778 @@
         {
           "url": "https://www.houstontexans.com/news/week-6-injury-report-texans-at-jaguars",
           "headline": "Week 6 Injury Report | Texans at Jaguars",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        }
+      ]
+    },
+    {
+      "team": "Chicago Bears",
+      "officialNewsIndex": "https://www.chicagobears.com/news/",
+      "fetchStatus": "OK",
+      "candidates": [
+        {
+          "url": "https://www.chicagobears.com/news/injury-update",
+          "headline": "Injury Update",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/5-things-that-stood-out-to-bears-coach-ben-johnson-in-week-7-win-patriots",
+          "headline": "5 things that stood out to Bears coach Ben Johnson in Week 7 win Oct 23, 2026 After watching tape of Thursday night\u2019s 30-24 win over the Patriots, Bears coach Ben Johnson spoke to reporters about Luther Burden III\u2019s rare",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/injury-update-bears-rg-jonah-jackson-set-to-play-vs-patriots",
+          "headline": "Injury Update: Bears RG Jonah Jackson set to play vs. Patriots Oct 21, 2026 Despite exiting last Sunday's win over the Falcons with hip and quadriceps issues that continued to impact him early in the week, Bears right gu",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/caleb-williams-named-nfc-offensive-player-of-the-week-6",
+          "headline": "Caleb Williams named NFC Offensive Player of the Week Oct 21, 2026 Bears quarterback Caleb Williams has been chosen as the NFC Offensive Player of the Week for his performance in last Sunday's 31-23 win over the Falcons.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/caleb-williams-completion-percentage-on-meteoric-rise",
+          "headline": "Caleb Williams' completion percentage on meteoric rise Oct 21, 2026 For the second straight year, Bears quarterback Caleb Williams is accomplishing an important statistical goal he set before the season by a huge margin.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/game-recap-bears-improve-to-4-2-with-road-victory-in-atlanta-2026-week-6",
+          "headline": "Game Recap: Bears improve to 4-2 with road victory in Atlanta Oct 18, 2026 After missing three games with a hamstring injury, quarterback Caleb Williams made a triumphant return Sunday in Atlanta, leading the Bears to a ",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/injury-update-caleb-williams-questionable-for-sunday-s-game-vs-falcons",
+          "headline": "Injury Update: Caleb Williams questionable for Sunday's game vs. Falcons Oct 16, 2026 Bears quarterback Caleb Williams was a full participant in practice Friday and is listed as questionable for Sunday's game against the",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/bears-qb-caleb-williams-practices-in-full-but-game-status-still-uncertain",
+          "headline": "Bears QB Caleb Williams practices in full, but game status still uncertain Oct 15, 2026 Bears quarterback Caleb Williams was a full participant in practice again Thursday, but it has not yet been determined whether he wi",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/caleb-williams-takes-another-step-toward-return-from-hamstring-injury",
+          "headline": "Caleb Williams takes another step toward return from hamstring injury Oct 14, 2026 The Bears conducted a walk-through Wednesday. But had they held a regular practice, quarterback Caleb Williams would have been a full par",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/5-things-we-learned-from-bears-coach-ben-johnson-in-week-5-loss-packers-2026",
+          "headline": "5 things we learned from Bears coach Ben Johnson in Week 5 loss Oct 12, 2026 After watching tape of Sunday's 31-7 loss in Green Bay, Bears coach Ben Johnson on Monday spoke to reporters about the need to correct mistakes",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/injury-update-bears-rb-kyle-monangai-ruled-out-qb-caleb-williams-questionable-for-packers-game",
+          "headline": "Injury Update: Bears RB Kyle Monangai ruled out, QB Caleb Williams questionable for Packers game Oct 09, 2026 Bears running back Kyle Monangai has been ruled out of Sunday's game in Green Bay with a toe injury, while qua",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/bears-qb-tyson-bagent-lauded-for-crisp-operation-of-offense",
+          "headline": "Bears QB Tyson Bagent lauded for 'crisp' operation of offense Oct 08, 2026 As Tyson Bagent prepares for his second straight start Sunday in Green Bay, the Bears are confident the fourth-year quarterback will run the offe",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/tyson-bagent-looking-forward-to-facing-rival-packers",
+          "headline": "Tyson Bagent looking forward to facing rival Packers Oct 07, 2026 Tyson Bagent is excited about starting his first rivalry game Sunday in Green Bay since 2022 since he led Shepherd University to a 30-13 road win over Shi",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/tyson-bagent-cherishes-first-start-since-2023",
+          "headline": "Tyson Bagent cherishes first start since 2023 Oct 05, 2026 Tyson Bagent circled the field a couple of hours before kickoff like he does prior to every game, but Sunday was anything but ordinary for the backup quarterback",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/game-recap-bears-ground-jets-improve-to-3-1",
+          "headline": "Game Recap: Bears ground Jets, improve to 3-1 Oct 04, 2026 The Bears' quarterback depth, running game and defense have emerged as team strengths early this season\u2014and that was the case again Sunday at Soldier Field.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/injury-update-caleb-williams-officially-ruled-out-for-sunday-s-game-vs-jets",
+          "headline": "Injury Update: Caleb Williams officially ruled out for Sunday's game vs. Jets Oct 02, 2026 Either Tyson Bagent or Case Keenum will start at quarterback for the Bears Sunday against the Jets in place of Caleb Williams, wh",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/game-prep-a-group-effort-for-bears-quarterbacks",
+          "headline": "Game prep a group effort for Bears quarterbacks Oct 02, 2026 The Bears have not yet announced their starting quarterback for Sunday's game against the Jets, but both Tyson Bagent and Case Keenum will be ready if called u",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/flag-football-player-of-week-kerra-elizabeth-serrette-week-5",
+          "headline": "Girls Flag Football Player of the Week: Kerra-Elizabeth Serrette | Week 5 Oct 02, 2026 Buffalo Grove senior Kerra-Elizabeth Serrette received Week 5 Player of the Week honors for her standout performances across three co",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/bears-will-wait-to-announce-starting-qb-for-jets-game",
+          "headline": "Bears will wait to announce starting QB for Jets game Sep 30, 2026 When Ben Johnson met the media Wednesday before conducting a walk-through practice, the Bears coach was not ready to name a starting quarterback for Sund",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/this-is-special-case-keenum-delivers-impressive-performance-in-bears-primetime-victory",
+          "headline": "'This is special': Case Keenum delivers impressive performance in Bears' primetime victory Sep 29, 2026 The opportunity to make his first start in 1,009 days already made Monday night special for veteran quarterback Case",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        }
+      ]
+    },
+    {
+      "team": "Indianapolis Colts",
+      "officialNewsIndex": "https://www.colts.com/news/",
+      "fetchStatus": "OK",
+      "candidates": [
+        {
+          "url": "https://www.colts.com/news/practice-notebook-several-including-justin-walley-return-to-practice",
+          "headline": "news Practice Notebook: Several, including Justin Walley, return to practice Wednesday's injury report had 16 Colts players listed.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.colts.com/news/practice-notebook-colts-cb-sauce-gardner-not-concerned-about-calf-injury",
+          "headline": "news Practice Notebook: Colts CB Sauce Gardner not concerned about calf injury Gardner exited the Colts' Week 6 loss to the Tennessee Titans in the second half with a calf injury.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        }
+      ]
+    },
+    {
+      "team": "Jacksonville Jaguars",
+      "officialNewsIndex": "https://www.jaguars.com/news/",
+      "fetchStatus": "OK",
+      "candidates": [
+        {
+          "url": "https://www.jaguars.com/news/in-and-out-2026-week-6-murray-active-brown-and-matiscik-inactive-for-texans-vs-jaguars",
+          "headline": "news In and Out, 2026 Week 6: Murray Active, Brown and Matiscik Inactive for Texans vs. Jaguars Oct 18, 2026 CB Montaric Brown, long snapper Ross Matiscik inactive for the Jaguars against the Houston Texans in a 2026 Wee",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        }
+      ]
+    },
+    {
+      "team": "Las Vegas Raiders",
+      "officialNewsIndex": "https://www.raiders.com/news/",
+      "fetchStatus": "OK",
+      "candidates": [
+        {
+          "url": "https://www.raiders.com/news/las-vegas-raiders-los-angeles-rams-week-7-injury-report-2026",
+          "headline": "Raiders-Rams Week 7 Injury Report: Mike Washington Jr. questionable for Sunday Take a look at the Raiders' injury report as the team prepares to face the Los Angeles Rams.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.raiders.com/news/raiders-te-carter-runyon-returns-to-practice-2026-nfl",
+          "headline": "news Raiders TE Carter Runyon returns to practice Oct 14, 2026 Runyon was placed on injured reserve on Aug. 30 after suffering an injury during training camp.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.raiders.com/news/raiders-sign-first-round-pick-fernando-mendoza-quarterback-indiana-2026-nfl-draft",
+          "headline": "news Raiders sign first-round pick QB Fernando Mendoza Jul 23, 2026 The 6-foot-5, 225-pound quarterback spent his final college season at Indiana (2025) after three years at California (2022-24), appearing in 36 career g",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.raiders.com/news/inspirado-por-los-pioneros-hispanos-tom-flores-y-jim-plunkett-el-entrenador-de-quarterbacks-de-los-raiders-mike-sullivan-cierra-el-circulo",
+          "headline": "news 'Todo es posible': inspirado por los pioneros hispanos Tom Flores y Jim Plunkett, el entrenador de quarterbacks de los Raiders, Mike Sullivan, cierra el c\u00edrculo Oct 02, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.raiders.com/news/las-vegas-raiders-week-6-inactives-vs-buffalo-bills-101826",
+          "headline": "news Las Vegas Raiders Week 6 Inactives vs. Buffalo Bills Oct 18, 2026 Before the Raiders take the field for Week 6, view the inactive players for today's game.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.raiders.com/news/las-vegas-raiders-buffalo-bills-week-6-injury-report-2026",
+          "headline": "news Raiders-Bills Week 6 Injury Report: 3 Raiders ruled out, 1 questionable to play Oct 16, 2026 Take a look at the Raiders' injury report as the team prepares to face the Buffalo Bills.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.raiders.com/news/bucky-s-breakdown-why-fernando-mendoza-s-brief-debut-was-an-encouraging-sign",
+          "headline": "news Bucky's Breakdown: Why Fernando Mendoza's brief debut was an encouraging sign Oct 14, 2026 With redshirt quarterbacks quietly developing on the practice field and out of the spotlight, they can master the playbook a",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.raiders.com/news/las-vegas-raiders-week-5-inactives-vs-new-england-patriots-101126",
+          "headline": "news Las Vegas Raiders Week 5 Inactives vs. New England Patriots Oct 11, 2026 Before the Raiders take the field for Week 5, view the inactive players for today's game.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.raiders.com/news/las-vegas-raiders-new-england-patriots-week-5-injury-report-2026",
+          "headline": "news Raiders-Patriots Week 5 Injury Report: 3 Raiders ruled out, Ashton Jeanty questionable to play Oct 09, 2026 Take a look at the Raiders' injury report as the team prepares to face the New England Patriots.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.raiders.com/news/fernando-mendoza-raider-nation-and-the-latino-community-see-themselves",
+          "headline": "news More Than a Quarterback: In Fernando Mendoza, Raider Nation and the Latino community see themselves Oct 07, 2026 For Mendoza, wearing the Silver and Black means honoring his Cuban roots, his family and the Latino co",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.raiders.com/news/las-vegas-raiders-week-4-inactives-vs-kansas-city-chiefs-100426",
+          "headline": "news Las Vegas Raiders Week 4 Inactives vs. Kansas City Chiefs Oct 04, 2026 Before the Raiders take the field for Week 4, view the inactive players for today's game.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.raiders.com/news/las-vegas-raiders-kansas-city-chiefs-week-4-injury-report-2026-season-nfl",
+          "headline": "news Raiders-Chiefs Week 4 Injury Report: Jackson Powers-Johnson ruled out for Sunday Oct 02, 2026 Take a look at the Raiders' injury report as the team prepares to face the Kansas City Chiefs.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.raiders.com/news/hispanic-heritage-month-mike-sullivan-raiders-quarterbacks-coach-tom-flores-jim-plunkett",
+          "headline": "news 'Anything is possible': Inspired by Hispanic trailblazers Tom Flores and Jim Plunkett, Raiders QBs coach Mike Sullivan comes full circle Oct 02, 2026 \"It was special, being a Raider fan in general, but to see those ",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        }
+      ]
+    },
+    {
+      "team": "Los Angeles Chargers",
+      "officialNewsIndex": "https://www.chargers.com/news/",
+      "fetchStatus": "OK",
+      "candidates": [
+        {
+          "url": "https://www.chargers.com/news/injury-updates-jim-harbaugh-justin-herbert-chiefs",
+          "headline": "5 Takeaways: Why Jim Harbaugh is 'Hellbent' on Turning Around Chargers 0-5 Start The Chargers Head Coach also gave injury updates and praised Justin Herbert's competitiveness on Monday",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chargers.com/news/injury-updates-rashawn-slater-joe-alt-ladd-mcconkey",
+          "headline": "5 Takeaways: Injury Updates on Rashawn Slater, Joe Alt & Derwin James Chargers Head Coach Jim Harbaugh said the team is \"still evaluating\" some injuries after Sunday's game in Seattle",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chargers.com/news/justin-herbert-mvp-vote-odds-2026",
+          "headline": "What Are Justin Herbert's 2026 NFL MVP Odds? The Chargers quarterback has the third-best odds on some platforms heading into the 2026 regular season",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chargers.com/news/justin-herbert-quentin-johnston-touchdown-mike-mcdaniel-2026",
+          "headline": "Justin Herbert Connects With Quentin Johnston For 65-Yard Touchdown in Preseason Finale The quarterback unleashed a 65-yard touchdown for the Chargers starting offense's first score of the preseason",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chargers.com/news/activate-scott-matlock-branson-taylor-sign-theo-wease-active-roster-2026",
+          "headline": "Chargers Activate Matlock and Taylor; Sign Wease to Active Roster The Los Angeles Chargers today activated fullback/defensive lineman Scott Matlock and guard/tackle Branson Taylor from Reserve/Injured; Designated for Ret",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chargers.com/news/place-trey-pipkins-iii-injured-reserve-sign-dj-uiagalelei-active-roster-2026",
+          "headline": "Los Angeles Chargers Place Trey Pipkins III on Injured Reserve; Sign DJ Uiagalelei to Active Roster The Los Angeles Chargers today placed guard/tackle Trey Pipkins III on Reserve/Injured. In a corresponding move, the tea",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chargers.com/news/reduce-roster-to-53-players-2026",
+          "headline": "Los Angeles Chargers Reduce Roster to 53 Players The Los Angeles Chargers today placed two players on Reserve/Injured; Designated for Return, placed one player on Reserve/Non-Football Injury and released two players. The",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        }
+      ]
+    },
+    {
+      "team": "Los Angeles Rams",
+      "officialNewsIndex": "https://www.therams.com/news/",
+      "fetchStatus": "OK",
+      "candidates": [
+        {
+          "url": "https://www.therams.com/news/injury-updates",
+          "headline": "Injury Updates",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.therams.com/news/rams-injury-report-week-7-2026-at-raiders-puka-nacua-trent-mcduffie-questionable-nate-landman-out",
+          "headline": "news Injury Report, Week 7 at Raiders: Puka Nacua and Trent McDuffie questionable, Nate Landman ruled out Oct 23, 2026 The final injury report heading into Sunday's Week 7 regular season game between the Rams and the Rai",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.therams.com/news/the-straw-that-stirs-the-drink-rams-tight-end-room-sparking-energy-in-all-phases-a-microcosm-of-team-and-its-mentality",
+          "headline": "news 'The straw that stirs the drink': Rams tight end room sparking energy in all phases, a microcosm of team and its mentality Oct 22, 2026 The Rams' tight end room's motto is being \"the straw that stirs the drink,\" aim",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.therams.com/news/matthew-stafford-been-a-part-of-these-times-before-and-i-think-that-s-where-my-role-becomes-more-important",
+          "headline": "news Matthew Stafford: 'Been a part of these times before, and I think that's where my role becomes more important' Oct 22, 2026 His leadership approach won't be anything out of character, but quarterback Matthew Staffor",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.therams.com/news/sean-mcvay-says-rams-have-not-explored-adding-a-wide-receiver-externally-in-wake-of-davante-adams-hamstring-injury",
+          "headline": "news McVay says Rams have not explored adding a wide receiver externally in wake of Davante Adams' hamstring injury Oct 21, 2026 Head coach Sean McVay said \"we've got some depth on our roster\" as the Rams prepare for Wee",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.therams.com/news/from-the-podium-head-coach-sean-mcvay-quarterback-matthew-stafford-coordinators-wide-receiver-puka-nacua-defensive-end-aaron-donald-preview-rams-week-7-matchup-with-raiders-press-conference-2026",
+          "headline": "news From the Podium: Sean McVay, Matthew Stafford, Aaron Donald and coordinators on next-man-up mentality and Rams' Week 7 matchup with Raiders Oct 21, 2026 Head coach Sean McVay, quarterback Matthew Stafford, defensive",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        }
+      ]
+    },
+    {
+      "team": "Miami Dolphins",
+      "officialNewsIndex": "https://www.miamidolphins.com/news/",
+      "fetchStatus": "OK",
+      "candidates": [
+        {
+          "url": "https://www.miamidolphins.com/news/injury-report-week-7-dolphins-at-jets",
+          "headline": "news Injury Report: Week 7 Dolphins at Jets Check out the official Week 7 injury report for the Miami Dolphins.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.miamidolphins.com/news/transcript-qb-malik-willis-press-conference-october-21",
+          "headline": "Transcript: QB Malik Willis Press Conference - October 21",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        }
+      ]
+    },
+    {
+      "team": "Minnesota Vikings",
+      "officialNewsIndex": "https://www.vikings.com/news/",
+      "fetchStatus": "OK",
+      "candidates": [
+        {
+          "url": "https://www.vikings.com/news/colts-injury-report-week-7-2026-nfl-season",
+          "headline": "news Final Vikings vs. Colts Injury Report for Week 7 of 2026 Oct 23, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.vikings.com/news/jj-mccarthy-quarterback-trade-new-york-giants-2026-nfl-season",
+          "headline": "news Vikings Trade J.J. McCarthy to Giants for 2027 Fifth-Round Pick Sep 28, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.vikings.com/news/kyler-murray-starting-quarterback-week-3-buccaneers-injury",
+          "headline": "news Kyler Murray Clears Protocol, Will Start for Vikings at Buccaneers in Week 3 Sep 21, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.vikings.com/news/carson-wentz-starting-week-2-at-bears",
+          "headline": "news Carson Wentz to Start for Vikings in Week 2 at Bears Sep 18, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.vikings.com/news/quarterbacks-ota-practices-defense-depth-offseason-2026",
+          "headline": "news Mailbag: Vikings QBs at OTA Practices, Depth on Defense Jun 01, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.vikings.com/news/lunchbreak-the-athletic-quarterback-rankings-blake-brandel",
+          "headline": "news Lunchbreak: The Athletic Unveils Quarterback Tier Rankings; A Seal of Approval at Center Aug 04, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.vikings.com/news/quarterback-comparisons-training-camp-rookies-2026",
+          "headline": "news Lunchbreak: Vikings Quarterback Comparisons Early in Camp; Rookies' Fits with Teams Jul 30, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        }
+      ]
+    },
+    {
+      "team": "New England Patriots",
+      "officialNewsIndex": "https://www.patriots.com/news/",
+      "fetchStatus": "OK",
+      "candidates": [
+        {
+          "url": "https://www.patriots.com/news/week-7-inactives-patriots-at-bears-x7631",
+          "headline": "Week 7 Inactives: Patriots at Bears",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.patriots.com/news/inactives-analysis-patriots-place-lg-alijah-vera-tucker-on-ir-rt-morgan-moses-officially-active-for-thursday-night-s-game-vs-the-bears",
+          "headline": "Inactives Analysis: Patriots place LG Alijah Vera-Tucker on IR, RT Morgan Moses officially active for Thursday night's game vs. the Bears",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.patriots.com/news/week-7-injury-report-patriots-at-bears",
+          "headline": "Week 7 Injury Report: Patriots at Bears",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.patriots.com/news/injury-report-analysis-patriots-rule-out-five-players-for-thursday-night-football-vs-the-bears",
+          "headline": "Injury Report Analysis: Patriots rule out five players for Thursday Night Football vs. the Bears",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.patriots.com/news/inactives-analysis-a-j-brown-will-campbell-treveyon-henderson-officially-active-for-week-6-matchup-vs-the-jets",
+          "headline": "Inactives Analysis: A.J. Brown, Will Campbell, TreVeyon Henderson officially active for Week 6 matchup vs. the Jets",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.patriots.com/news/week-6-inactives-jets-at-patriots",
+          "headline": "Week 6 Inactives: Jets at Patriots",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.patriots.com/news/injury-report-analysis-christian-gonzalez-expected-to-play-a-j-brown-officially-questionable-for-sunday-s-game-vs-jets",
+          "headline": "Injury Report Analysis: Christian Gonzalez expected to play, A.J. Brown officially questionable for Sunday's game vs. Jets",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.patriots.com/news/week-6-injury-report-patriots-vs-jets",
+          "headline": "Week 6 Injury Report: Patriots vs. Jets",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.patriots.com/news/patriots-sign-t-james-hudson-iii-and-cb-kindle-vildor-release-qb-josh-dobbs",
+          "headline": "Patriots Sign T James Hudson III and CB Kindle Vildor; Release QB Josh Dobbs",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.patriots.com/news/inactives-analysis-patriots-rb-rhamondre-stevenson-dt-christian-barmore-active-for-sunday-s-game-vs-raiders",
+          "headline": "Inactives Analysis: Patriots RB Rhamondre Stevenson, DT Christian Barmore active for Sunday's game vs. Raiders",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.patriots.com/news/injury-report-analysis-patriots-rule-out-six-players-for-sunday-s-week-5-matchup-vs-the-raiders",
+          "headline": "Injury Report Analysis: Patriots rule out six players for Sunday's Week 5 matchup vs. the Raiders",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.patriots.com/news/inactives-analysis-dre-mont-jones-craig-woodson-and-eli-raridon-return-for-sunday-s-afc-east-matchup-vs-the-bills",
+          "headline": "Inactives Analysis: Dre'Mont Jones, Craig Woodson and Eli Raridon return for Sunday's AFC East matchup vs. the Bills",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.patriots.com/news/injury-report-analysis-patriots-rule-out-christian-gonzalez-and-christian-barmore-for-sunday-s-week-4-matchup-vs-bills",
+          "headline": "Injury Report Analysis: Patriots rule out Christian Gonzalez and Christian Barmore for Sunday's Week 4 matchup vs. Bills",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.patriots.com/news/inactives-analysis-te-eli-raridon-s-craig-woodson-officially-inactive-for-sunday-s-week-3-matchup-vs-the-jaguars",
+          "headline": "Inactives Analysis: TE Eli Raridon, S Craig Woodson officially inactive for Sunday's Week 3 matchup vs. the Jaguars",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.patriots.com/news/injury-report-analysis-cb-carlton-davis-iii-set-to-return-two-players-ruled-out-two-players-listed-as-questionable-for-patriots-vs-jaguars",
+          "headline": "Injury Report Analysis: CB Carlton Davis III set to return, two players ruled out, two players listed as questionable for Patriots vs. Jaguars",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.patriots.com/news/inactives-analysis-rb-treveyon-henderson-to-make-season-debut-wr-efton-chism-iii-active-vs-steelers",
+          "headline": "Inactives Analysis: RB TreVeyon Henderson, WR Efton Chism III to make season debuts vs. Steelers",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.patriots.com/news/injury-report-analysis-rb-treveyon-henderson-expected-to-play-cb-carlton-davis-iii-officially-questionable-for-week-2-vs-steelers",
+          "headline": "Injury Report Analysis: RB TreVeyon Henderson expected to play, CB Carlton Davis III officially questionable for Week 2 vs. Steelers",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.patriots.com/news/inactives-analysis-patriots-elevate-rb-lan-larison-from-practice-squad-with-treveyon-henderson-inactive-for-season-opener-vs-seahawks",
+          "headline": "Inactives Analysis: Patriots elevate RB Lan Larison from practice squad with TreVeyon Henderson inactive for season opener vs. Seahawks",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.patriots.com/news/injury-report-analysis-patriots-rb-treveyon-henderson-ankle-ruled-out-for-season-opener-vs-seahawks",
+          "headline": "Injury Report Analysis: Patriots RB TreVeyon Henderson (ankle) ruled out for season-opener vs. Seahawks",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.patriots.com/news/how-patriots-qb-drake-maye-can-be-even-better-in-his-third-nfl-season",
+          "headline": "How Patriots QB Drake Maye can be even better in his third NFL season",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        }
+      ]
+    },
+    {
+      "team": "New Orleans Saints",
+      "officialNewsIndex": "https://www.neworleanssaints.com/news/",
+      "fetchStatus": "OK",
+      "candidates": [
+        {
+          "url": "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-friday",
+          "headline": "Saints Friday Injury Report: 2026 Week 7 vs. Pittsburgh Steelers Two Saints listed as questionable on Friday's Saints Injury Report for Week 7 against the Steelers",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.neworleanssaints.com/news/saints-thursday-injury-report-2026-week-7-vs-pittsburgh-steelers",
+          "headline": "Saints Thursday Injury Report: 2026 Week 7 vs. Pittsburgh Steelers",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.neworleanssaints.com/news/injury-report-pittsburgh-steelers-vs-new-orleans-saints-2026-nfl-week-7-wednesday",
+          "headline": "news Saints Wednesday Injury Report: 2026 Week 7 vs. Pittsburgh Steelers Oct 21, 2026 Nine Saints listed on Wednesday's Saints Injury Report for Week 7 against the Steelers",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.neworleanssaints.com/news/2026-nfl-week-6-new-york-giants-vs-new-orleans-saints-game-quotes",
+          "headline": "news Postgame Quotes: New Orleans Saints 34, New York Giants 27 | 2026 NFL Week 6 Oct 18, 2026 Quotes from Head Coach Kellen Moore and QB Tyler Shough",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        }
+      ]
+    },
+    {
+      "team": "New York Giants",
+      "officialNewsIndex": "https://www.giants.com/news/",
+      "fetchStatus": "OK",
+      "candidates": [
+        {
+          "url": "https://www.giants.com/news/giants-vs-texans-week-7-injury-report-tremaine-edmunds-jevon-holland-jermaine-eluemunor-andrew-thomas",
+          "headline": "news Giants vs. Texans Week 7 Injury Report: Tremaine Edmunds, Greg Newsome II ruled out View the injury report for the Week 7 matchup between the New York Giants (3-2-1) and Houston Texans (2-4).",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.giants.com/news/week-7-houston-texans-jj-mccarthy-malik-nabers-isaiah-likely-dj-reader-deonte-banks",
+          "headline": "Players to Watch: J.J. McCarthy to make starting debut for Giants",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.giants.com/news/j-j-mccarthy-to-start-quarterback-new-york-giants-week-7-houston-texans-john-harbaugh-jameis-winston",
+          "headline": "J.J. McCarthy to start for Giants in Week 7 vs. Texans",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.giants.com/news/nfl-week-6-inactives-who-s-in-who-s-out-for-giants-vs-saints",
+          "headline": "NFL Week 6 Inactives: Who's in, who's out for Giants vs. Saints",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.giants.com/news/giants-vs-saints-week-6-injury-report-abdul-carter-jermaine-eluemunor-dnp",
+          "headline": "Giants vs. Saints Week 6 Injury Report: Colton Hood, Theo Johnson, Tyler Nubin ruled out",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.giants.com/news/j-j-mccarthy-trade-details-minnesota-vikings-quarterback-2027-nfl-draft-michigan-wolverines",
+          "headline": "Giants acquire QB J.J. McCarthy from Vikings in exchange for 2027 draft pick",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.giants.com/news/giants-sign-qb-jake-haener-to-active-roster-elevate-2-from-practice-squad-braxton-berrios-malik-harrison-tennessee-titans-week-2",
+          "headline": "Giants sign QB Jake Haener to active roster; elevate 2 from practice squad",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.giants.com/news/jameis-winston-jon-runyan-jr-contract-extension-details-signed-2026-week-1-regular-season",
+          "headline": "QB Jameis Winston, OL Jon Runyan Jr. sign 2-year extensions",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.giants.com/news/calvin-austin-iii-injury-status-roster-new-york-giants",
+          "headline": "Calvin Austin III placed on injured reserve with torn ACL",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        }
+      ]
+    },
+    {
+      "team": "New York Jets",
+      "officialNewsIndex": "https://www.newyorkjets.com/news/",
+      "fetchStatus": "OK",
+      "candidates": [
+        {
+          "url": "https://www.newyorkjets.com/news/jets-injury-report-week-7-vs-dolphins-friday-10-23-2026",
+          "headline": "Jets Injury Report | Week 7 vs. Dolphins - Friday Breece Hall (Quad), Dylan Parham (Knee) and Kene Nwangwu (Knee) All Questionable for Week 7",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.newyorkjets.com/news/jets-injury-report-week-7-vs-dolphins-thursday-10-22-2026",
+          "headline": "Jets Injury Report | Week 7 vs. Dolphins - Thursday",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.newyorkjets.com/news/jets-injury-report-week-7-vs-dolphins-wednesday-10-21-2026",
+          "headline": "Jets Injury Report | Week 7 vs. Dolphins - Wednesday WR Adonai Mitchell & G Dylan Parham Begin Week as Limited Participants",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.newyorkjets.com/news/stock-report-jets-oc-frank-reich-scheme-creating-explosives-in-the-run-game-braelon-allen-10-21-2026",
+          "headline": "Stock Report | Jets OC Frank Reich's Scheme Creating Explosives in the Run Game K Jason Sanders Stays Steady; Miami QB Malik Willis Not Delivering Yet for Miami",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.newyorkjets.com/news/jets-notebook-braelon-allen-excels-in-filling-in-breece-hall-starting-role-10-19-2026",
+          "headline": "Jets Notebook | RB Braelon Allen Excels in Filling Breece Hall's Big Shoes Edge Davis Bailey and LB Jamien Sherwood Exemplify Mentality of the Defense",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.newyorkjets.com/news/jets-week-6-notes-david-bailey-omar-cooper-jr-geno-smith-highlights-10-19-2026",
+          "headline": "Jets Week 6 Stats & Notes | David Bailey's Strong Start, Omar Cooper Jr.'s Breakout & Geno Smith's Record Pace Bailey Continues Record-Setting Start, Cooper Jr. Joins Elite Rookie Company and Geno Smith Owns the Highest ",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.newyorkjets.com/news/jets-want-to-see-improvement-in-how-they-finish-games-after-road-loss-to-new-england-10-18-2026",
+          "headline": "Aaron Glenn, Jets Emphasize Finishing After Patriots Game QB Geno Smith: 'We've Got a lot of Capable Guys'",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        }
+      ]
+    },
+    {
+      "team": "Pittsburgh Steelers",
+      "officialNewsIndex": "https://www.steelers.com/news/",
+      "fetchStatus": "OK",
+      "candidates": [
+        {
+          "url": "https://www.steelers.com/news/week-7-injury-report-saints",
+          "headline": "Week 7 Injury Report (Saints) A look at player injuries and practice participation for Week 7",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.steelers.com/news/from-the-press-room-steelers-at-buccaneers",
+          "headline": "From the Press Room: Steelers at Buccaneers Coach Mike McCarthy, quarterback Aaron Rodgers and linebacker Nick Herbig shared their take from the 26-19 win at Tampa Bay",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.steelers.com/news/steelers-inactives-for-week-6-at-buccaneers",
+          "headline": "Steelers inactives for Week 6 at Buccaneers Find out who won't play today as the Steelers take on the Buccaneers at Raymond James Stadium",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.steelers.com/news/week-6-injury-report-buccaneers-x2319",
+          "headline": "Updated: Week 6 Injury Report (Buccaneers) A look at player injuries and practice participation for Week 6",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.steelers.com/news/labriola-on-the-win-over-the-colts-x5664",
+          "headline": "Labriola on the win over the Colts They got NFL-caliber QB play, and the trickle-down put them over the top",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        }
+      ]
+    },
+    {
+      "team": "San Francisco 49ers",
+      "officialNewsIndex": "https://www.49ers.com/news/",
+      "fetchStatus": "OK",
+      "candidates": [
+        {
+          "url": "https://www.49ers.com/news/49ers-rule-out-mike-evans-vs-falcons-christian-kirk-questionable-ahead-of-week-7-sfvsatl",
+          "headline": "49ers Rule Out Mike Evans vs. Falcons; Christian Kirk Questionable Ahead of Week 7 #SFvsATL The San Francisco 49ers released their latest injury updates headed into their contest against the Atlanta Falcons.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.49ers.com/news/mike-evans-active-kirk-out-vs-commanders-inactives-week-6-wasvssf",
+          "headline": "news Mike Evans Active, Kirk OUT vs. Commanders; Inactives Week 6 #WASvsSF Take a look at players who have been ruled out for the San Francisco 49ers Week 6 matchup versus the Washington Commanders.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.49ers.com/news/kyle-juszczyk-available-deebo-ruled-out-vs-commanders-in-week-6-wasvssf",
+          "headline": "news Kyle Juszczyk Available, Deebo Ruled OUT vs. Commanders in Week 6 #WASvsSF The San Francisco 49ers released their latest injury updates headed into their contest against the Washington Commanders.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.49ers.com/news/morning-reports/morning-report-49ers-prep-for-cardinals-in-week-3-qb-brock-purdy-on-offensive-line",
+          "headline": "news Morning Report: 49ers Prep for Cardinals in Week 3, QB Brock Purdy on Offensive Line\ud83d\uddde\ufe0f Catch up on the latest San Francisco 49ers headlines, powered by Cisco.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.49ers.com/news/morning-reports/morning-report-qb-brock-purdy-named-nfc-offensive-player-of-the-week-more-roster-moves",
+          "headline": "news Morning Report: QB Brock Purdy Named NFC Offensive Player of the Week, More Roster Moves \ud83d\uddde\ufe0f Catch up on the latest San Francisco 49ers headlines, powered by Cisco.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.49ers.com/news/mykel-williams-upton-stout-active-vs-seahawks-inactives-week-5-sfvssea",
+          "headline": "Mykel Williams, Upton Stout Active vs. Seahawks; Inactives Week 5 #SFvsSEA Take a look at players who have been ruled out for the San Francisco 49ers Week 5 matchup versus the Seattle Seahawks.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.49ers.com/news/juszczyk-and-three-more-ruled-out-vs-seahawks-in-week-5-williams-questionable-ahead-of-sfvssea",
+          "headline": "Juszczyk and Three More Ruled OUT vs. Seahawks in Week 5; Williams Questionable Ahead of #SFvsSEA The San Francisco 49ers released their latest injury updates headed into their contest against the Seattle Seahawks.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.49ers.com/news/romello-height-mike-evans-and-more-available-vs-broncos-inactives-for-week-4-denvssf",
+          "headline": "Romello Height, Mike Evans, and More Available vs. Broncos; Inactives for Week 4 #DENvsSF Take a look at players who have been ruled out for the San Francisco 49ers Week 4 matchup versus the Denver Broncos.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.49ers.com/news/three-players-ruled-out-vs-broncos-in-week-4-mike-evans-questionable-ahead-of-denvssf",
+          "headline": "Three Players Ruled Out vs. Broncos in Week 4; Mike Evans Questionable Ahead of #DENvsSF The San Francisco 49ers released their latest injury updates headed into their contest against the Denver Broncos.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.49ers.com/news/romello-height-and-nick-bosa-out-mike-evans-available-vs-cardinals-inactives-for-week-3-azvssf",
+          "headline": "Romello Height and Nick Bosa OUT; Mike Evans Available vs. Cardinals; Inactives for Week 3 #ARZvsSF Take a look at players who have been ruled out for the San Francisco 49ers Week 3 matchup versus the Arizona Cardinals",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.49ers.com/news/nick-bosa-out-vs-cardinals-mike-evans-questionable-ahead-of-azvssf",
+          "headline": "Nick Bosa OUT vs. Cardinals; Mike Evans Questionable Ahead of #AZvsSF The San Francisco 49ers released their latest injury updates headed into their contest against the Arizona Cardinals.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.49ers.com/news/eddy-pineiro-kaelon-black-available-vs-dolphins-inactives-for-week-2-miavssf",
+          "headline": "Eddy Pi\u00f1eiro, Kaelon Black Available vs. Dolphins; Inactives for Week 2 #MIAvsSF Take a look at players who have been ruled out for the San Francisco 49ers Week 2 matchup versus the Miami Dolphins.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.49ers.com/news/de-zhaun-stribling-out-kaelon-black-and-eddy-pineiro-questionable-vs-dolphins-injury-report-ahead-of-miavssf",
+          "headline": "De'Zhaun Stribling OUT, Kaelon Black and Eddy Pi\u00f1eiro Questionable vs. Cardinals; Injury Report Ahead of #ARIvsSF The San Francisco 49ers released their latest injury updates headed into the home opener contest against t",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.49ers.com/news/tatum-bethune-jordan-watkins-out-vs-rams-inactives-for-week-1-sfvslar",
+          "headline": "Tatum Bethune, Jordan Watkins OUT vs. Rams; Inactives for Week 1 #SFvsLAR Take a look at players who have been ruled out for the San Francisco 49ers Week 1 matchup versus the Los Angeles Rams.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.49ers.com/news/alfred-collins-out-james-thomas-jr-questionable-vs-rams-injury-report-ahead-of-sfvslar",
+          "headline": "Alfred Collins OUT, James Thompson Jr. Questionable vs. Rams; Injury Report Ahead of #SFvsLAR The San Francisco 49ers released their latest injury updates headed into the season opener contest against the Los Angeles Ram",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.49ers.com/news/ricky-pearsall-active-ji-ayir-brown-out-vs-seahawks-inactives-for-divisional-sfvssea",
+          "headline": "Ricky Pearsall Active, Ji'Ayir Brown OUT vs. Seahawks; Inactives for Divisional #SFvsSEA Take a look at players who have been ruled out for the San Francisco 49ers NFC Divisional Round matchup versus the Seattle Seahawks",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.49ers.com/news/fred-warner-out-ricky-pearsall-questionable-vs-seahawks-injury-report-ahead-of-sfvssea",
+          "headline": "Fred Warner OUT, Ricky Pearsall Questionable vs. Seahawks; Injury Report Ahead of #SFvsSEA The San Francisco 49ers released their latest injury updates headed into the Divisional Round contest against the Seattle Seahawk",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.49ers.com/news/ricky-pearsall-out-trent-williams-active-vs-eagles-inactives-for-wild-card-sfvsphi",
+          "headline": "Ricky Pearsall OUT, Trent Williams Active vs. Eagles; Inactives for Wild Card #SFvsPHI Take a look at players who have been ruled out for the San Francisco 49ers NFC Wild Card Round matchup versus the Philadelphia Eagles",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.49ers.com/news/trent-williams-renardo-green-questionable-vs-eagles-injury-report-ahead-of-sfvsphi",
+          "headline": "Trent Williams, Renardo Green Questionable vs. Eagles; Injury Report Ahead of #SFvsPHI The San Francisco 49ers released their latest injury updates headed into the Wild Card Weekend contest against the Philadelphia Eagle",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.49ers.com/news/injury-updates-linebacker-depth-shanahan-turns-focus-to-wild-card-round-at-philadelphia",
+          "headline": "Injury Updates, Linebacker Depth; Shanahan Turns Focus to Wild Card Round at Philadelphia Kyle Shanahan addressed injury updates and linebacker depth as the 49ers turn the page to a Wild Card matchup against the Philadel",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        }
+      ]
+    },
+    {
+      "team": "Tampa Bay Buccaneers",
+      "officialNewsIndex": "https://www.buccaneers.com/news/",
+      "fetchStatus": "OK",
+      "candidates": [
+        {
+          "url": "https://www.buccaneers.com/news/buccaneers-panthers-injury-report-oct-23-week-7-2026",
+          "headline": "news Buccaneers-Panthers Injury Report Oct.23: Egbuka, Goedeke and Winfield Jr. Ruled Out; Mayfield Questionable Oct 23, 2026 A look at Friday's injury report ahead of the Week Seven matchup",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buccaneers.com/news/s-j-j-roberts-and-qb-easton-stick-elevated-for-tnf-game-in-dallas",
+          "headline": "S J.J. Roberts and QB Easton Stick Elevated for TNF Game in Dallas",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buccaneers.com/news/bucs-elevate-qb-easton-stick-lb-caden-fordham-for-packers-game",
+          "headline": "Bucs Elevate QB Easton Stick, LB Caden Fordham for Packers Game",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buccaneers.com/news/roster-moves-jalen-mcmillan-ir-qb-added-practice-squad",
+          "headline": "Roster Moves: Jalen McMillan to IR, QB Added to Practice Squad",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buccaneers.com/news/quarterback-outlook-week-seven-tetairoa-mcmillan-prowess-more-bucs-blitz",
+          "headline": "news Quarterback Outlook in Week Seven, Tetairoa McMillan's Prowess & More | Bucs Blitz",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        }
+      ]
+    },
+    {
+      "team": "Tennessee Titans",
+      "officialNewsIndex": "https://www.tennesseetitans.com/news/",
+      "fetchStatus": "OK",
+      "candidates": [
+        {
+          "url": "https://www.tennesseetitans.com/news/titans-qb-cam-ward-knows-the-team-s-offense-needs-to-be-better",
+          "headline": "Titans QB Cam Ward Knows The Team's Offense Needs to Be Better Aside from Ward\u2019s connection with rookie Carnell Tate for a game-tying touchdown, the Tennessee offense didn\u2019t finish drives in the end zone in Indianapolis.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.tennesseetitans.com/news/week-7-injury-report-titans-vs-browns",
+          "headline": "Week 7 Injury Report | Titans vs Browns Oct 21, 2026 Who's in, who's out for the Titans in Week 7 vs the Cleveland Browns",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.tennesseetitans.com/news/titans-sign-qb-cam-ward-to-rookie-contract",
+          "headline": "Titans Sign QB Cam Ward to Rookie Contract May 21, 2025",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.tennesseetitans.com/news/at-the-pro-bowl-peyton-manning-talks-titans-from-hc-brian-callahan-to-qb-will-levis-to-rb-derrick-henry-and-he-told-a-great-story-about-the-late-frank-wycheck",
+          "headline": "news At the Pro Bowl, Peyton Manning Talks Titans, From HC Brian Callahan to QB Will Levis to RB Derrick Henry \u2013 and He Told a Great Story About the Late Frank Wycheck Feb 02, 2024",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
