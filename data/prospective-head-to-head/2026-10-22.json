@@ -1,5 +1,5 @@
 {
-  "status": "frozen_pre_kickoff",
+  "status": "graded",
   "frozenAt": "2026-10-17T07:27:33.509711-04:00",
   "thursday": "2026-10-22",
   "season": 2026,
@@ -15,9 +15,9 @@
       "baseline30Pick": "Chicago Bears",
       "experimental0Pick": "Chicago Bears",
       "method": "model",
-      "winner": null,
-      "baseline30Correct": null,
-      "experimental0Correct": null
+      "winner": "Chicago Bears",
+      "baseline30Correct": true,
+      "experimental0Correct": true
     },
     {
       "id": "401873011",
@@ -28,9 +28,9 @@
       "baseline30Pick": "Pittsburgh Steelers",
       "experimental0Pick": "Pittsburgh Steelers",
       "method": "model",
-      "winner": null,
-      "baseline30Correct": null,
-      "experimental0Correct": null
+      "winner": "Pittsburgh Steelers",
+      "baseline30Correct": true,
+      "experimental0Correct": true
     },
     {
       "id": "401873012",
@@ -41,9 +41,9 @@
       "baseline30Pick": "Baltimore Ravens",
       "experimental0Pick": "Baltimore Ravens",
       "method": "model",
-      "winner": null,
-      "baseline30Correct": null,
-      "experimental0Correct": null
+      "winner": "Cincinnati Bengals",
+      "baseline30Correct": false,
+      "experimental0Correct": false
     },
     {
       "id": "401873013",
@@ -54,9 +54,9 @@
       "baseline30Pick": "Cleveland Browns",
       "experimental0Pick": "Cleveland Browns",
       "method": "model",
-      "winner": null,
-      "baseline30Correct": null,
-      "experimental0Correct": null
+      "winner": "Cleveland Browns",
+      "baseline30Correct": true,
+      "experimental0Correct": true
     },
     {
       "id": "401873014",
@@ -67,9 +67,9 @@
       "baseline30Pick": "Minnesota Vikings",
       "experimental0Pick": "Minnesota Vikings",
       "method": "model",
-      "winner": null,
-      "baseline30Correct": null,
-      "experimental0Correct": null
+      "winner": "Minnesota Vikings",
+      "baseline30Correct": true,
+      "experimental0Correct": true
     },
     {
       "id": "401873015",
@@ -80,9 +80,9 @@
       "baseline30Pick": "New York Jets",
       "experimental0Pick": "New York Jets",
       "method": "model",
-      "winner": null,
-      "baseline30Correct": null,
-      "experimental0Correct": null
+      "winner": "Miami Dolphins",
+      "baseline30Correct": false,
+      "experimental0Correct": false
     },
     {
       "id": "401873016",
@@ -93,9 +93,9 @@
       "baseline30Pick": "Houston Texans",
       "experimental0Pick": "Houston Texans",
       "method": "model",
-      "winner": null,
-      "baseline30Correct": null,
-      "experimental0Correct": null
+      "winner": "New York Giants",
+      "baseline30Correct": false,
+      "experimental0Correct": false
     },
     {
       "id": "401873017",
@@ -106,9 +106,9 @@
       "baseline30Pick": "San Francisco 49ers",
       "experimental0Pick": "San Francisco 49ers",
       "method": "model",
-      "winner": null,
-      "baseline30Correct": null,
-      "experimental0Correct": null
+      "winner": "Atlanta Falcons",
+      "baseline30Correct": false,
+      "experimental0Correct": false
     },
     {
       "id": "401873018",
@@ -119,9 +119,9 @@
       "baseline30Pick": "Carolina Panthers",
       "experimental0Pick": "Carolina Panthers",
       "method": "model",
-      "winner": null,
-      "baseline30Correct": null,
-      "experimental0Correct": null
+      "winner": "Tampa Bay Buccaneers",
+      "baseline30Correct": false,
+      "experimental0Correct": false
     },
     {
       "id": "401873019",
@@ -132,9 +132,9 @@
       "baseline30Pick": "Denver Broncos",
       "experimental0Pick": "Denver Broncos",
       "method": "model",
-      "winner": null,
-      "baseline30Correct": null,
-      "experimental0Correct": null
+      "winner": "Denver Broncos",
+      "baseline30Correct": true,
+      "experimental0Correct": true
     },
     {
       "id": "401873020",
@@ -145,9 +145,9 @@
       "baseline30Pick": "Detroit Lions",
       "experimental0Pick": "Detroit Lions",
       "method": "model",
-      "winner": null,
-      "baseline30Correct": null,
-      "experimental0Correct": null
+      "winner": "Detroit Lions",
+      "baseline30Correct": true,
+      "experimental0Correct": true
     },
     {
       "id": "401873021",
@@ -158,9 +158,9 @@
       "baseline30Pick": "Las Vegas Raiders",
       "experimental0Pick": "Las Vegas Raiders",
       "method": "model",
-      "winner": null,
-      "baseline30Correct": null,
-      "experimental0Correct": null
+      "winner": "Los Angeles Rams",
+      "baseline30Correct": false,
+      "experimental0Correct": false
     },
     {
       "id": "401873022",
@@ -171,9 +171,9 @@
       "baseline30Pick": "Kansas City Chiefs",
       "experimental0Pick": "Kansas City Chiefs",
       "method": "model",
-      "winner": null,
-      "baseline30Correct": null,
-      "experimental0Correct": null
+      "winner": "Seattle Seahawks",
+      "baseline30Correct": false,
+      "experimental0Correct": false
     },
     {
       "id": "401873009",
@@ -184,9 +184,15 @@
       "baseline30Pick": "Dallas Cowboys",
       "experimental0Pick": "Dallas Cowboys",
       "method": "model",
-      "winner": null,
-      "baseline30Correct": null,
-      "experimental0Correct": null
+      "winner": "Dallas Cowboys",
+      "baseline30Correct": true,
+      "experimental0Correct": true
     }
-  ]
+  ],
+  "gradedAt": "2026-10-27T11:38:39.867251-04:00",
+  "results": {
+    "graded": 14,
+    "baseline30Correct": 7,
+    "experimental0Correct": 7
+  }
 }
