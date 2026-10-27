@@ -17,22 +17,22 @@
   ],
   "summary": {
     "A": {
-      "wins": 6,
+      "wins": 7,
       "losses": 7,
-      "pending": 1,
-      "accuracyPct": 46.15
+      "pending": 0,
+      "accuracyPct": 50.0
     },
     "B": {
-      "wins": 6,
+      "wins": 7,
       "losses": 7,
-      "pending": 1,
-      "accuracyPct": 46.15
+      "pending": 0,
+      "accuracyPct": 50.0
     },
     "C": {
-      "wins": 8,
+      "wins": 9,
       "losses": 5,
-      "pending": 1,
-      "accuracyPct": 61.54
+      "pending": 0,
+      "accuracyPct": 64.29
     }
   },
   "games": [
@@ -275,7 +275,7 @@
       "date": "2026-10-27T00:15Z",
       "away": "Dallas Cowboys",
       "home": "Philadelphia Eagles",
-      "winner": null,
+      "winner": "Dallas Cowboys",
       "picks": {
         "A": "Dallas Cowboys",
         "B": "Dallas Cowboys",
@@ -283,9 +283,9 @@
       },
       "conditionalC": false,
       "correct": {
-        "A": null,
-        "B": null,
-        "C": null
+        "A": true,
+        "B": true,
+        "C": true
       }
     }
   ]
