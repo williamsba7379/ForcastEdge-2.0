@@ -1,0 +1,147 @@
+{
+  "season": 2026,
+  "week": 8,
+  "generatedAt": "2026-10-28T20:08:10.653Z",
+  "status": "POOL_CARD_VALIDATED_WITH_LIMITATIONS",
+  "sourceReport": "data/four-model-head-to-head/2026-week-8-all-four-rerun-oct-28.json",
+  "validation": {
+    "totalGames": 14,
+    "uniqueIds": 14,
+    "allFourModelsPresent": true,
+    "officialScheduleChecked": "2026-10-28",
+    "allGamesMatchOfficialWeek8": true,
+    "verifiedQBAdjustments": 0,
+    "confidenceCalibrated": false
+  },
+  "poolPicks": [
+    {
+      "gameId": "401873023",
+      "kickoffUTC": "2026-10-30T00:15Z",
+      "away": "Carolina Panthers",
+      "home": "Green Bay Packers",
+      "pick": "Green Bay Packers",
+      "allModelsAgree": true
+    },
+    {
+      "gameId": "401873026",
+      "kickoffUTC": "2026-11-01T18:00Z",
+      "away": "Baltimore Ravens",
+      "home": "Buffalo Bills",
+      "pick": "Buffalo Bills",
+      "allModelsAgree": true
+    },
+    {
+      "gameId": "401873031",
+      "kickoffUTC": "2026-11-01T18:00Z",
+      "away": "Tennessee Titans",
+      "home": "Cincinnati Bengals",
+      "pick": "Cincinnati Bengals",
+      "allModelsAgree": true
+    },
+    {
+      "gameId": "401873024",
+      "kickoffUTC": "2026-11-01T18:00Z",
+      "away": "Arizona Cardinals",
+      "home": "Dallas Cowboys",
+      "pick": "Dallas Cowboys",
+      "allModelsAgree": true
+    },
+    {
+      "gameId": "401873030",
+      "kickoffUTC": "2026-11-01T18:00Z",
+      "away": "Minnesota Vikings",
+      "home": "Detroit Lions",
+      "pick": "Minnesota Vikings",
+      "allModelsAgree": true
+    },
+    {
+      "gameId": "401873029",
+      "kickoffUTC": "2026-11-01T18:00Z",
+      "away": "Las Vegas Raiders",
+      "home": "New York Jets",
+      "pick": "New York Jets",
+      "allModelsAgree": true
+    },
+    {
+      "gameId": "401873027",
+      "kickoffUTC": "2026-11-01T18:00Z",
+      "away": "Cleveland Browns",
+      "home": "Pittsburgh Steelers",
+      "pick": "Pittsburgh Steelers",
+      "allModelsAgree": true
+    },
+    {
+      "gameId": "401873025",
+      "kickoffUTC": "2026-11-01T18:00Z",
+      "away": "Atlanta Falcons",
+      "home": "Tampa Bay Buccaneers",
+      "pick": "Tampa Bay Buccaneers",
+      "allModelsAgree": true
+    },
+    {
+      "gameId": "401873028",
+      "kickoffUTC": "2026-11-01T18:00Z",
+      "away": "Indianapolis Colts",
+      "home": "Jacksonville Jaguars",
+      "pick": "Jacksonville Jaguars",
+      "allModelsAgree": true
+    },
+    {
+      "gameId": "401873032",
+      "kickoffUTC": "2026-11-01T21:05Z",
+      "away": "Los Angeles Chargers",
+      "home": "Los Angeles Rams",
+      "pick": "Los Angeles Rams",
+      "allModelsAgree": true
+    },
+    {
+      "gameId": "401873033",
+      "kickoffUTC": "2026-11-01T21:25Z",
+      "away": "Kansas City Chiefs",
+      "home": "Denver Broncos",
+      "pick": "Kansas City Chiefs",
+      "allModelsAgree": true
+    },
+    {
+      "gameId": "401873034",
+      "kickoffUTC": "2026-11-01T21:25Z",
+      "away": "New England Patriots",
+      "home": "Miami Dolphins",
+      "pick": "New England Patriots",
+      "allModelsAgree": true
+    },
+    {
+      "gameId": "401873035",
+      "kickoffUTC": "2026-11-02T01:20Z",
+      "away": "Philadelphia Eagles",
+      "home": "Washington Commanders",
+      "pick": "Washington Commanders",
+      "allModelsAgree": true
+    },
+    {
+      "gameId": "401873036",
+      "kickoffUTC": "2026-11-03T01:15Z",
+      "away": "Chicago Bears",
+      "home": "Seattle Seahawks",
+      "pick": "Seattle Seahawks",
+      "allModelsAgree": true
+    }
+  ],
+  "mondayTiebreaker": {
+    "matchup": "Chicago Bears at Seattle Seahawks",
+    "predictedScore": {
+      "Chicago": 20,
+      "Seattle": 25
+    },
+    "recommendedCombinedTotal": 45,
+    "method": "Provisional prior Wednesday forecast score, not an independently calibrated total model",
+    "warning": "Do not treat this as a newly calculated total-points model output."
+  },
+  "wagering": "NO VERIFIED ACTIONABLE EDGES; model C uncalibrated; no quarterback changes verified",
+  "caveats": [
+    "Starter identities not officially verified for all matchups",
+    "Model C-QB remains experimental with zero eligible adjustments",
+    "All-model agreement is not an independent confidence estimate",
+    "Preserved original frozen October 24 picks separately"
+  ]
+}
