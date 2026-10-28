@@ -6,7 +6,7 @@
     2025,
     2026
   ],
-  "updatedAt": "2026-10-24T11:08:15.749208+00:00",
+  "updatedAt": "2026-10-28T19:30:06.111148+00:00",
   "source": "ESPN public NFL scoreboard final scores",
   "games": [
     {
@@ -10018,6 +10018,149 @@
       "homeScore": 30,
       "awayScore": 24,
       "winner": "Chicago Bears"
+    },
+    {
+      "season": 2026,
+      "id": "401873009",
+      "week": 7,
+      "date": "2026-10-27T00:15Z",
+      "home": "Philadelphia Eagles",
+      "away": "Dallas Cowboys",
+      "homeScore": 21,
+      "awayScore": 38,
+      "winner": "Dallas Cowboys"
+    },
+    {
+      "season": 2026,
+      "id": "401873011",
+      "week": 7,
+      "date": "2026-10-25T13:30Z",
+      "home": "New Orleans Saints",
+      "away": "Pittsburgh Steelers",
+      "homeScore": 10,
+      "awayScore": 16,
+      "winner": "Pittsburgh Steelers"
+    },
+    {
+      "season": 2026,
+      "id": "401873012",
+      "week": 7,
+      "date": "2026-10-25T17:00Z",
+      "home": "Baltimore Ravens",
+      "away": "Cincinnati Bengals",
+      "homeScore": 13,
+      "awayScore": 35,
+      "winner": "Cincinnati Bengals"
+    },
+    {
+      "season": 2026,
+      "id": "401873013",
+      "week": 7,
+      "date": "2026-10-25T17:00Z",
+      "home": "Tennessee Titans",
+      "away": "Cleveland Browns",
+      "homeScore": 24,
+      "awayScore": 27,
+      "winner": "Cleveland Browns"
+    },
+    {
+      "season": 2026,
+      "id": "401873014",
+      "week": 7,
+      "date": "2026-10-25T17:00Z",
+      "home": "Minnesota Vikings",
+      "away": "Indianapolis Colts",
+      "homeScore": 16,
+      "awayScore": 10,
+      "winner": "Minnesota Vikings"
+    },
+    {
+      "season": 2026,
+      "id": "401873015",
+      "week": 7,
+      "date": "2026-10-25T17:00Z",
+      "home": "New York Jets",
+      "away": "Miami Dolphins",
+      "homeScore": 25,
+      "awayScore": 28,
+      "winner": "Miami Dolphins"
+    },
+    {
+      "season": 2026,
+      "id": "401873016",
+      "week": 7,
+      "date": "2026-10-25T17:00Z",
+      "home": "Houston Texans",
+      "away": "New York Giants",
+      "homeScore": 21,
+      "awayScore": 27,
+      "winner": "New York Giants"
+    },
+    {
+      "season": 2026,
+      "id": "401873017",
+      "week": 7,
+      "date": "2026-10-25T17:00Z",
+      "home": "Atlanta Falcons",
+      "away": "San Francisco 49ers",
+      "homeScore": 29,
+      "awayScore": 20,
+      "winner": "Atlanta Falcons"
+    },
+    {
+      "season": 2026,
+      "id": "401873018",
+      "week": 7,
+      "date": "2026-10-25T17:00Z",
+      "home": "Carolina Panthers",
+      "away": "Tampa Bay Buccaneers",
+      "homeScore": 13,
+      "awayScore": 43,
+      "winner": "Tampa Bay Buccaneers"
+    },
+    {
+      "season": 2026,
+      "id": "401873019",
+      "week": 7,
+      "date": "2026-10-25T20:05Z",
+      "home": "Arizona Cardinals",
+      "away": "Denver Broncos",
+      "homeScore": 16,
+      "awayScore": 30,
+      "winner": "Denver Broncos"
+    },
+    {
+      "season": 2026,
+      "id": "401873020",
+      "week": 7,
+      "date": "2026-10-25T20:25Z",
+      "home": "Detroit Lions",
+      "away": "Green Bay Packers",
+      "homeScore": 20,
+      "awayScore": 17,
+      "winner": "Detroit Lions"
+    },
+    {
+      "season": 2026,
+      "id": "401873021",
+      "week": 7,
+      "date": "2026-10-25T20:25Z",
+      "home": "Las Vegas Raiders",
+      "away": "Los Angeles Rams",
+      "homeScore": 21,
+      "awayScore": 35,
+      "winner": "Los Angeles Rams"
+    },
+    {
+      "season": 2026,
+      "id": "401873022",
+      "week": 7,
+      "date": "2026-10-26T00:20Z",
+      "home": "Seattle Seahawks",
+      "away": "Kansas City Chiefs",
+      "homeScore": 20,
+      "awayScore": 3,
+      "winner": "Seattle Seahawks"
     }
   ]
 }

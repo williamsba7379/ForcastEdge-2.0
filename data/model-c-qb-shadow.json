@@ -2,7 +2,7 @@
   "title": "Model C-QB \u2014 Experimental Shadow Test",
   "season": 2026,
   "week": 8,
-  "generatedAt": "2026-10-24T12:30:37.016809+00:00",
+  "generatedAt": "2026-10-28T19:30:09.400118+00:00",
   "status": "EXPERIMENTAL_SHADOW_ONLY",
   "method": "Pre-kickoff game-level AYA differential * 0.35, capped at +/-3 points per team; not calibrated.",
   "eligibleAdjustments": 0,
@@ -14,9 +14,9 @@
       "home": "Green Bay Packers",
       "away": "Carolina Panthers",
       "originalPick": "Green Bay Packers",
-      "originalHomeEdgePoints": 0.81,
+      "originalHomeEdgePoints": 6.62,
       "qbHomeEdgeAdjustment": 0.0,
-      "experimentalHomeEdgePoints": 0.81,
+      "experimentalHomeEdgePoints": 6.62,
       "experimentalPick": "Green Bay Packers",
       "qbAdjustments": {
         "home": {
@@ -39,9 +39,9 @@
       "home": "Buffalo Bills",
       "away": "Baltimore Ravens",
       "originalPick": "Buffalo Bills",
-      "originalHomeEdgePoints": 1.03,
+      "originalHomeEdgePoints": 6.43,
       "qbHomeEdgeAdjustment": 0.0,
-      "experimentalHomeEdgePoints": 1.03,
+      "experimentalHomeEdgePoints": 6.43,
       "experimentalPick": "Buffalo Bills",
       "qbAdjustments": {
         "home": {
@@ -64,9 +64,9 @@
       "home": "Cincinnati Bengals",
       "away": "Tennessee Titans",
       "originalPick": "Cincinnati Bengals",
-      "originalHomeEdgePoints": 11.61,
+      "originalHomeEdgePoints": 15.48,
       "qbHomeEdgeAdjustment": 0.0,
-      "experimentalHomeEdgePoints": 11.61,
+      "experimentalHomeEdgePoints": 15.48,
       "experimentalPick": "Cincinnati Bengals",
       "qbAdjustments": {
         "home": {
@@ -89,9 +89,9 @@
       "home": "Dallas Cowboys",
       "away": "Arizona Cardinals",
       "originalPick": "Dallas Cowboys",
-      "originalHomeEdgePoints": 8.63,
+      "originalHomeEdgePoints": 12.5,
       "qbHomeEdgeAdjustment": 0.0,
-      "experimentalHomeEdgePoints": 8.63,
+      "experimentalHomeEdgePoints": 12.5,
       "experimentalPick": "Dallas Cowboys",
       "qbAdjustments": {
         "home": {
@@ -114,9 +114,9 @@
       "home": "Detroit Lions",
       "away": "Minnesota Vikings",
       "originalPick": "Minnesota Vikings",
-      "originalHomeEdgePoints": -2.26,
+      "originalHomeEdgePoints": -2.23,
       "qbHomeEdgeAdjustment": 0.0,
-      "experimentalHomeEdgePoints": -2.26,
+      "experimentalHomeEdgePoints": -2.23,
       "experimentalPick": "Minnesota Vikings",
       "qbAdjustments": {
         "home": {
@@ -139,9 +139,9 @@
       "home": "New York Jets",
       "away": "Las Vegas Raiders",
       "originalPick": "New York Jets",
-      "originalHomeEdgePoints": 2.43,
+      "originalHomeEdgePoints": 5.6,
       "qbHomeEdgeAdjustment": 0.0,
-      "experimentalHomeEdgePoints": 2.43,
+      "experimentalHomeEdgePoints": 5.6,
       "experimentalPick": "New York Jets",
       "qbAdjustments": {
         "home": {
@@ -164,9 +164,9 @@
       "home": "Pittsburgh Steelers",
       "away": "Cleveland Browns",
       "originalPick": "Pittsburgh Steelers",
-      "originalHomeEdgePoints": 5.92,
+      "originalHomeEdgePoints": 6.7,
       "qbHomeEdgeAdjustment": 0.0,
-      "experimentalHomeEdgePoints": 5.92,
+      "experimentalHomeEdgePoints": 6.7,
       "experimentalPick": "Pittsburgh Steelers",
       "qbAdjustments": {
         "home": {
@@ -188,11 +188,11 @@
       "date": "2026-11-01T18:00Z",
       "home": "Tampa Bay Buccaneers",
       "away": "Atlanta Falcons",
-      "originalPick": "Atlanta Falcons",
-      "originalHomeEdgePoints": -0.23,
+      "originalPick": "Tampa Bay Buccaneers",
+      "originalHomeEdgePoints": 6.5,
       "qbHomeEdgeAdjustment": 0.0,
-      "experimentalHomeEdgePoints": -0.23,
-      "experimentalPick": "Atlanta Falcons",
+      "experimentalHomeEdgePoints": 6.5,
+      "experimentalPick": "Tampa Bay Buccaneers",
       "qbAdjustments": {
         "home": {
           "status": "NO_ADJUSTMENT",
@@ -214,9 +214,9 @@
       "home": "Jacksonville Jaguars",
       "away": "Indianapolis Colts",
       "originalPick": "Jacksonville Jaguars",
-      "originalHomeEdgePoints": 10.17,
+      "originalHomeEdgePoints": 12.73,
       "qbHomeEdgeAdjustment": 0.0,
-      "experimentalHomeEdgePoints": 10.17,
+      "experimentalHomeEdgePoints": 12.73,
       "experimentalPick": "Jacksonville Jaguars",
       "qbAdjustments": {
         "home": {
@@ -239,9 +239,9 @@
       "home": "Los Angeles Rams",
       "away": "Los Angeles Chargers",
       "originalPick": "Los Angeles Rams",
-      "originalHomeEdgePoints": 11.07,
+      "originalHomeEdgePoints": 13.52,
       "qbHomeEdgeAdjustment": 0.0,
-      "experimentalHomeEdgePoints": 11.07,
+      "experimentalHomeEdgePoints": 13.52,
       "experimentalPick": "Los Angeles Rams",
       "qbAdjustments": {
         "home": {
@@ -264,9 +264,9 @@
       "home": "Denver Broncos",
       "away": "Kansas City Chiefs",
       "originalPick": "Kansas City Chiefs",
-      "originalHomeEdgePoints": -11.16,
+      "originalHomeEdgePoints": -0.77,
       "qbHomeEdgeAdjustment": 0.0,
-      "experimentalHomeEdgePoints": -11.16,
+      "experimentalHomeEdgePoints": -0.77,
       "experimentalPick": "Kansas City Chiefs",
       "qbAdjustments": {
         "home": {
@@ -289,9 +289,9 @@
       "home": "Miami Dolphins",
       "away": "New England Patriots",
       "originalPick": "New England Patriots",
-      "originalHomeEdgePoints": -14.38,
+      "originalHomeEdgePoints": -10.88,
       "qbHomeEdgeAdjustment": 0.0,
-      "experimentalHomeEdgePoints": -14.38,
+      "experimentalHomeEdgePoints": -10.88,
       "experimentalPick": "New England Patriots",
       "qbAdjustments": {
         "home": {
@@ -313,11 +313,11 @@
       "date": "2026-11-02T01:20Z",
       "home": "Washington Commanders",
       "away": "Philadelphia Eagles",
-      "originalPick": "Philadelphia Eagles",
-      "originalHomeEdgePoints": -0.15,
+      "originalPick": "Washington Commanders",
+      "originalHomeEdgePoints": 2.33,
       "qbHomeEdgeAdjustment": 0.0,
-      "experimentalHomeEdgePoints": -0.15,
-      "experimentalPick": "Philadelphia Eagles",
+      "experimentalHomeEdgePoints": 2.33,
+      "experimentalPick": "Washington Commanders",
       "qbAdjustments": {
         "home": {
           "status": "NO_ADJUSTMENT",
@@ -339,9 +339,9 @@
       "home": "Seattle Seahawks",
       "away": "Chicago Bears",
       "originalPick": "Seattle Seahawks",
-      "originalHomeEdgePoints": 1.93,
+      "originalHomeEdgePoints": 4.2,
       "qbHomeEdgeAdjustment": 0.0,
-      "experimentalHomeEdgePoints": 1.93,
+      "experimentalHomeEdgePoints": 4.2,
       "experimentalPick": "Seattle Seahawks",
       "qbAdjustments": {
         "home": {

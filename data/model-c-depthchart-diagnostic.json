@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-24T12:30:35.764829+00:00",
+  "checkedAt": "2026-10-28T19:30:07.797080+00:00",
   "status": "DIAGNOSTIC_ONLY_NOT_STARTER_CONFIRMATION",
   "teamsChecked": 32,
   "teamsWithQB1": 32,
@@ -576,9 +576,9 @@
                   "id": "3916387",
                   "injuries": [
                     {
-                      "date": "2026-10-23T19:49Z",
-                      "longComment": "The Ravens listed Jackson as a limited participant all week, with the QB telling reporters Friday that he's \"heading in the right direction,\" per Jamison Hensley of ESPN.com. Jackson clarified that his injury is a high-ankle sprain, and while the swelling has subsided, he's still dealing with considerable pain that may limit his mobility. He suggested that a decision won't be made until Saturday or Sunday, at which point the Ravens may try to keep it under wraps until inactive lists are released at 11:30 a.m. ET on Sunday. If Jackson is out again, Tyler Huntley will make his third straight start.",
-                      "shortComment": "Jackson (ankle) was a limited participant in Friday's practice and is listed as questionable for Sunday's game against the Bengals.",
+                      "date": "2026-10-28T17:32Z",
+                      "longComment": "Jackson hasn't played since Week 4, but he was able to practice in a limited fashion throughout last week. While it won't be known until the Ravens release their first Week 8 injury report later Wednesday whether Jackson was able to upgrade to full participation, Ian Rapoport of NFL Network reported Tuesday that the quarterback is \"believed to be close to 100 percent\" and is tracking toward playing Sunday in Buffalo. During the open portion of Wednesday's session, Jackson seemed to be moving around better than he was a week ago, though he was still doing some light running with his sprained left ankle taped up, per Hensley.",
+                      "shortComment": "Jackson (ankle) was spotted on the field for the start of Wednesday's practice, Jamison Hensley of ESPN.com reports.",
                       "status": "Questionable",
                       "type": {
                         "abbreviation": "Q",

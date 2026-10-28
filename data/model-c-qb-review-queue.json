@@ -2,7 +2,7 @@
   "status": "HUMAN_REVIEW_QUEUE_ONLY",
   "season": 2026,
   "week": 8,
-  "generatedAt": "2026-10-24T12:30:37.170582+00:00",
+  "generatedAt": "2026-10-28T19:30:09.559600+00:00",
   "automaticConfirmations": 0,
   "games": 14,
   "items": [
@@ -82,9 +82,9 @@
           "team": "Baltimore Ravens",
           "player": "Lamar Jackson",
           "reportedStatus": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Sprain', 'side': 'Left', 'returnDate': '2026-10-25'}",
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Sprain', 'side': 'Left', 'returnDate': '2026-11-01'}",
           "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+          "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
           "starterConfirmed": false,
           "reviewRequired": true
         }
@@ -224,9 +224,9 @@
           "team": "Arizona Cardinals",
           "player": "Carson Beck",
           "reportedStatus": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Back', 'location': 'Torso', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}",
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Back', 'location': 'Torso', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}",
           "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+          "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
           "starterConfirmed": false,
           "reviewRequired": true
         }
@@ -403,25 +403,9 @@
       "opponent": "Pittsburgh Steelers",
       "starterVerification": "UNCONFIRMED",
       "reviewRequired": true,
-      "reportedInjuryFlags": [
-        {
-          "name": "Dillon Gabriel",
-          "reportedStatus": "Injured Reserve"
-        }
-      ],
-      "espnQuarterbackInjuryFlags": [
-        {
-          "team": "Cleveland Browns",
-          "player": "Dillon Gabriel",
-          "reportedStatus": "Injured Reserve",
-          "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Back', 'location': 'Torso', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}",
-          "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
-          "starterConfirmed": false,
-          "reviewRequired": true
-        }
-      ],
-      "espnInjuryReviewPriority": "ELEVATED",
+      "reportedInjuryFlags": [],
+      "espnQuarterbackInjuryFlags": [],
+      "espnInjuryReviewPriority": "ROUTINE",
       "espnPriorityIsPrediction": false,
       "recentPrimaryPasserCandidate": "Deshaun Watson",
       "depthChartCandidate": "Deshaun Watson",
@@ -506,38 +490,22 @@
       "opponent": "Atlanta Falcons",
       "starterVerification": "UNCONFIRMED",
       "reviewRequired": true,
-      "reportedInjuryFlags": [
-        {
-          "name": "Baker Mayfield",
-          "reportedStatus": "Questionable"
-        }
-      ],
-      "espnQuarterbackInjuryFlags": [
-        {
-          "team": "Tampa Bay Buccaneers",
-          "player": "Baker Mayfield",
-          "reportedStatus": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Thumb', 'location': 'Arm', 'returnDate': '2026-10-25'}",
-          "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
-          "starterConfirmed": false,
-          "reviewRequired": true
-        }
-      ],
-      "espnInjuryReviewPriority": "ELEVATED",
+      "reportedInjuryFlags": [],
+      "espnQuarterbackInjuryFlags": [],
+      "espnInjuryReviewPriority": "ROUTINE",
       "espnPriorityIsPrediction": false,
-      "recentPrimaryPasserCandidate": "Jalon Daniels",
+      "recentPrimaryPasserCandidate": "Baker Mayfield",
       "depthChartCandidate": "Baker Mayfield",
-      "tentativeExpectedStarter": null,
-      "quarterbackIndicatorConflict": true,
-      "quarterbackReviewPriority": "CONFLICT_REVIEW",
-      "expectedStarterEvidence": "INSUFFICIENT_OR_CONFLICTING_INDICATORS",
+      "tentativeExpectedStarter": "Baker Mayfield",
+      "quarterbackIndicatorConflict": false,
+      "quarterbackReviewPriority": "INDICATORS_AGREE",
+      "expectedStarterEvidence": "TWO_INDICATORS_AGREE_NOT_CONFIRMED",
       "confirmedStarter": null,
       "officialSourcesForManualReview": [],
       "historicalSourcesForContextOnly": [],
       "officialSourceSearchQueries": [
         "Tampa Bay Buccaneers official site starting quarterback 2026-11-01",
-        "Tampa Bay Buccaneers Jalon Daniels named starter vs Atlanta Falcons"
+        "Tampa Bay Buccaneers Baker Mayfield named starter vs Atlanta Falcons"
       ],
       "sourceEvidenceStatus": "GAME_SPECIFIC_SOURCE_REVIEW_REQUIRED",
       "sourceMatchNote": "Sources are historical/contextual only; reviewer must check exact game and kickoff.",
@@ -726,19 +694,8 @@
       "starterVerification": "UNCONFIRMED",
       "reviewRequired": true,
       "reportedInjuryFlags": [],
-      "espnQuarterbackInjuryFlags": [
-        {
-          "team": "New England Patriots",
-          "player": "Behren Morton",
-          "reportedStatus": "Out",
-          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}",
-          "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
-          "starterConfirmed": false,
-          "reviewRequired": true
-        }
-      ],
-      "espnInjuryReviewPriority": "ELEVATED",
+      "espnQuarterbackInjuryFlags": [],
+      "espnInjuryReviewPriority": "ROUTINE",
       "espnPriorityIsPrediction": false,
       "recentPrimaryPasserCandidate": "Drake Maye",
       "depthChartCandidate": "Drake Maye",
@@ -794,25 +751,9 @@
       "opponent": "Washington Commanders",
       "starterVerification": "UNCONFIRMED",
       "reviewRequired": true,
-      "reportedInjuryFlags": [
-        {
-          "name": "Jalen Hurts",
-          "reportedStatus": "Injured Reserve"
-        }
-      ],
-      "espnQuarterbackInjuryFlags": [
-        {
-          "team": "Philadelphia Eagles",
-          "player": "Jalen Hurts",
-          "reportedStatus": "Injured Reserve",
-          "description": "{'fantasyStatus': {'description': 'IR', 'abbreviation': 'IR'}, 'type': 'Calf', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Left', 'returnDate': '2027-02-15'}",
-          "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
-          "starterConfirmed": false,
-          "reviewRequired": true
-        }
-      ],
-      "espnInjuryReviewPriority": "ELEVATED",
+      "reportedInjuryFlags": [],
+      "espnQuarterbackInjuryFlags": [],
+      "espnInjuryReviewPriority": "ROUTINE",
       "espnPriorityIsPrediction": false,
       "recentPrimaryPasserCandidate": "Tanner McKee",
       "depthChartCandidate": "Tanner McKee",
@@ -860,22 +801,22 @@
       "reportedInjuryFlags": [
         {
           "name": "Marcus Mariota",
-          "reportedStatus": "Doubtful"
+          "reportedStatus": "Questionable"
         }
       ],
       "espnQuarterbackInjuryFlags": [
         {
           "team": "Washington Commanders",
           "player": "Marcus Mariota",
-          "reportedStatus": "Doubtful",
-          "description": "{'fantasyStatus': {'description': 'DOUBTFUL', 'abbreviation': 'DOUBTFUL'}, 'type': 'Knee - MCL', 'location': 'Leg', 'detail': 'Sprain', 'side': 'Right', 'returnDate': '2026-11-01'}",
+          "reportedStatus": "Questionable",
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Knee - MCL', 'location': 'Leg', 'detail': 'Sprain', 'side': 'Right', 'returnDate': '2026-11-01'}",
           "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+          "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
           "starterConfirmed": false,
           "reviewRequired": true
         }
       ],
-      "espnInjuryReviewPriority": "ELEVATED",
+      "espnInjuryReviewPriority": "STANDARD",
       "espnPriorityIsPrediction": false,
       "recentPrimaryPasserCandidate": "Jayden Daniels",
       "depthChartCandidate": "Jayden Daniels",
@@ -903,19 +844,8 @@
       "starterVerification": "UNCONFIRMED",
       "reviewRequired": true,
       "reportedInjuryFlags": [],
-      "espnQuarterbackInjuryFlags": [
-        {
-          "team": "Chicago Bears",
-          "player": "Case Keenum",
-          "reportedStatus": "Out",
-          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-02'}",
-          "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
-          "starterConfirmed": false,
-          "reviewRequired": true
-        }
-      ],
-      "espnInjuryReviewPriority": "ELEVATED",
+      "espnQuarterbackInjuryFlags": [],
+      "espnInjuryReviewPriority": "ROUTINE",
       "espnPriorityIsPrediction": false,
       "recentPrimaryPasserCandidate": "Caleb Williams",
       "depthChartCandidate": "Caleb Williams",
@@ -953,9 +883,9 @@
           "team": "Seattle Seahawks",
           "player": "Drew Lock",
           "reportedStatus": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Elbow', 'location': 'Arm', 'detail': 'Not Specified', 'side': 'Right', 'returnDate': '2026-10-25'}",
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Elbow', 'location': 'Arm', 'detail': 'Not Specified', 'side': 'Right', 'returnDate': '2026-11-02'}",
           "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+          "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
           "starterConfirmed": false,
           "reviewRequired": true
         }

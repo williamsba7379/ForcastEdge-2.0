@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-24T12:30:27.066949+00:00",
+  "generatedAt": "2026-10-28T19:29:51.224125+00:00",
   "season": 2026,
   "status": "RESEARCH_ONLY_PRIMARY_PASSERS_NOT_STARTERS",
-  "teamGameRecords": 188,
-  "gameCount": 94,
+  "teamGameRecords": 214,
+  "gameCount": 107,
   "records": [
     {
       "season": 2026,
@@ -3772,6 +3772,514 @@
       "starterConfirmed": false,
       "identityType": "FINAL_GAME_PRIMARY_PASSER_NOT_STARTER",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873010"
+    },
+    {
+      "season": 2026,
+      "gameId": "401873011",
+      "gameDate": "2026-10-25T13:30Z",
+      "team": "Pittsburgh Steelers",
+      "primaryPasser": "Aaron Rodgers",
+      "passers": [
+        {
+          "player": "Aaron Rodgers",
+          "attempts": 30,
+          "passYards": 212,
+          "passTD": 1,
+          "interceptions": 0
+        }
+      ],
+      "starterConfirmed": false,
+      "identityType": "FINAL_GAME_PRIMARY_PASSER_NOT_STARTER",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873011"
+    },
+    {
+      "season": 2026,
+      "gameId": "401873011",
+      "gameDate": "2026-10-25T13:30Z",
+      "team": "New Orleans Saints",
+      "primaryPasser": "Tyler Shough",
+      "passers": [
+        {
+          "player": "Tyler Shough",
+          "attempts": 38,
+          "passYards": 278,
+          "passTD": 1,
+          "interceptions": 1
+        }
+      ],
+      "starterConfirmed": false,
+      "identityType": "FINAL_GAME_PRIMARY_PASSER_NOT_STARTER",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873011"
+    },
+    {
+      "season": 2026,
+      "gameId": "401873017",
+      "gameDate": "2026-10-25T17:00Z",
+      "team": "San Francisco 49ers",
+      "primaryPasser": "Brock Purdy",
+      "passers": [
+        {
+          "player": "Brock Purdy",
+          "attempts": 40,
+          "passYards": 288,
+          "passTD": 1,
+          "interceptions": 2
+        }
+      ],
+      "starterConfirmed": false,
+      "identityType": "FINAL_GAME_PRIMARY_PASSER_NOT_STARTER",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873017"
+    },
+    {
+      "season": 2026,
+      "gameId": "401873017",
+      "gameDate": "2026-10-25T17:00Z",
+      "team": "Atlanta Falcons",
+      "primaryPasser": "Michael Penix Jr.",
+      "passers": [
+        {
+          "player": "Michael Penix Jr.",
+          "attempts": 34,
+          "passYards": 213,
+          "passTD": 3,
+          "interceptions": 0
+        }
+      ],
+      "starterConfirmed": false,
+      "identityType": "FINAL_GAME_PRIMARY_PASSER_NOT_STARTER",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873017"
+    },
+    {
+      "season": 2026,
+      "gameId": "401873013",
+      "gameDate": "2026-10-25T17:00Z",
+      "team": "Cleveland Browns",
+      "primaryPasser": "Deshaun Watson",
+      "passers": [
+        {
+          "player": "Deshaun Watson",
+          "attempts": 36,
+          "passYards": 308,
+          "passTD": 0,
+          "interceptions": 1
+        }
+      ],
+      "starterConfirmed": false,
+      "identityType": "FINAL_GAME_PRIMARY_PASSER_NOT_STARTER",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873013"
+    },
+    {
+      "season": 2026,
+      "gameId": "401873013",
+      "gameDate": "2026-10-25T17:00Z",
+      "team": "Tennessee Titans",
+      "primaryPasser": "Cam Ward",
+      "passers": [
+        {
+          "player": "Cam Ward",
+          "attempts": 31,
+          "passYards": 181,
+          "passTD": 0,
+          "interceptions": 1
+        }
+      ],
+      "starterConfirmed": false,
+      "identityType": "FINAL_GAME_PRIMARY_PASSER_NOT_STARTER",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873013"
+    },
+    {
+      "season": 2026,
+      "gameId": "401873014",
+      "gameDate": "2026-10-25T17:00Z",
+      "team": "Indianapolis Colts",
+      "primaryPasser": "Daniel Jones",
+      "passers": [
+        {
+          "player": "Daniel Jones",
+          "attempts": 22,
+          "passYards": 108,
+          "passTD": 0,
+          "interceptions": 1
+        }
+      ],
+      "starterConfirmed": false,
+      "identityType": "FINAL_GAME_PRIMARY_PASSER_NOT_STARTER",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873014"
+    },
+    {
+      "season": 2026,
+      "gameId": "401873014",
+      "gameDate": "2026-10-25T17:00Z",
+      "team": "Minnesota Vikings",
+      "primaryPasser": "Kyler Murray",
+      "passers": [
+        {
+          "player": "Kyler Murray",
+          "attempts": 24,
+          "passYards": 150,
+          "passTD": 1,
+          "interceptions": 0
+        }
+      ],
+      "starterConfirmed": false,
+      "identityType": "FINAL_GAME_PRIMARY_PASSER_NOT_STARTER",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873014"
+    },
+    {
+      "season": 2026,
+      "gameId": "401873015",
+      "gameDate": "2026-10-25T17:00Z",
+      "team": "Miami Dolphins",
+      "primaryPasser": "Malik Willis",
+      "passers": [
+        {
+          "player": "Malik Willis",
+          "attempts": 21,
+          "passYards": 208,
+          "passTD": 2,
+          "interceptions": 0
+        }
+      ],
+      "starterConfirmed": false,
+      "identityType": "FINAL_GAME_PRIMARY_PASSER_NOT_STARTER",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873015"
+    },
+    {
+      "season": 2026,
+      "gameId": "401873015",
+      "gameDate": "2026-10-25T17:00Z",
+      "team": "New York Jets",
+      "primaryPasser": "Geno Smith",
+      "passers": [
+        {
+          "player": "Geno Smith",
+          "attempts": 30,
+          "passYards": 287,
+          "passTD": 3,
+          "interceptions": 1
+        }
+      ],
+      "starterConfirmed": false,
+      "identityType": "FINAL_GAME_PRIMARY_PASSER_NOT_STARTER",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873015"
+    },
+    {
+      "season": 2026,
+      "gameId": "401873018",
+      "gameDate": "2026-10-25T17:00Z",
+      "team": "Tampa Bay Buccaneers",
+      "primaryPasser": "Baker Mayfield",
+      "passers": [
+        {
+          "player": "Baker Mayfield",
+          "attempts": 11,
+          "passYards": 64,
+          "passTD": 1,
+          "interceptions": 0
+        }
+      ],
+      "starterConfirmed": false,
+      "identityType": "FINAL_GAME_PRIMARY_PASSER_NOT_STARTER",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873018"
+    },
+    {
+      "season": 2026,
+      "gameId": "401873018",
+      "gameDate": "2026-10-25T17:00Z",
+      "team": "Carolina Panthers",
+      "primaryPasser": "Bryce Young",
+      "passers": [
+        {
+          "player": "Bryce Young",
+          "attempts": 27,
+          "passYards": 163,
+          "passTD": 1,
+          "interceptions": 2
+        },
+        {
+          "player": "Kenny Pickett",
+          "attempts": 4,
+          "passYards": 47,
+          "passTD": 0,
+          "interceptions": 0
+        }
+      ],
+      "starterConfirmed": false,
+      "identityType": "FINAL_GAME_PRIMARY_PASSER_NOT_STARTER",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873018"
+    },
+    {
+      "season": 2026,
+      "gameId": "401873012",
+      "gameDate": "2026-10-25T17:00Z",
+      "team": "Cincinnati Bengals",
+      "primaryPasser": "Joe Burrow",
+      "passers": [
+        {
+          "player": "Joe Burrow",
+          "attempts": 30,
+          "passYards": 292,
+          "passTD": 4,
+          "interceptions": 0
+        }
+      ],
+      "starterConfirmed": false,
+      "identityType": "FINAL_GAME_PRIMARY_PASSER_NOT_STARTER",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873012"
+    },
+    {
+      "season": 2026,
+      "gameId": "401873012",
+      "gameDate": "2026-10-25T17:00Z",
+      "team": "Baltimore Ravens",
+      "primaryPasser": "Tyler Huntley",
+      "passers": [
+        {
+          "player": "Tyler Huntley",
+          "attempts": 34,
+          "passYards": 298,
+          "passTD": 1,
+          "interceptions": 1
+        }
+      ],
+      "starterConfirmed": false,
+      "identityType": "FINAL_GAME_PRIMARY_PASSER_NOT_STARTER",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873012"
+    },
+    {
+      "season": 2026,
+      "gameId": "401873016",
+      "gameDate": "2026-10-25T17:00Z",
+      "team": "New York Giants",
+      "primaryPasser": "J.J. McCarthy",
+      "passers": [
+        {
+          "player": "J.J. McCarthy",
+          "attempts": 28,
+          "passYards": 252,
+          "passTD": 0,
+          "interceptions": 0
+        }
+      ],
+      "starterConfirmed": false,
+      "identityType": "FINAL_GAME_PRIMARY_PASSER_NOT_STARTER",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873016"
+    },
+    {
+      "season": 2026,
+      "gameId": "401873016",
+      "gameDate": "2026-10-25T17:00Z",
+      "team": "Houston Texans",
+      "primaryPasser": "C.J. Stroud",
+      "passers": [
+        {
+          "player": "C.J. Stroud",
+          "attempts": 28,
+          "passYards": 153,
+          "passTD": 2,
+          "interceptions": 0
+        }
+      ],
+      "starterConfirmed": false,
+      "identityType": "FINAL_GAME_PRIMARY_PASSER_NOT_STARTER",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873016"
+    },
+    {
+      "season": 2026,
+      "gameId": "401873019",
+      "gameDate": "2026-10-25T20:05Z",
+      "team": "Denver Broncos",
+      "primaryPasser": "Bo Nix",
+      "passers": [
+        {
+          "player": "Bo Nix",
+          "attempts": 29,
+          "passYards": 222,
+          "passTD": 1,
+          "interceptions": 0
+        }
+      ],
+      "starterConfirmed": false,
+      "identityType": "FINAL_GAME_PRIMARY_PASSER_NOT_STARTER",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873019"
+    },
+    {
+      "season": 2026,
+      "gameId": "401873019",
+      "gameDate": "2026-10-25T20:05Z",
+      "team": "Arizona Cardinals",
+      "primaryPasser": "Jacoby Brissett",
+      "passers": [
+        {
+          "player": "Jacoby Brissett",
+          "attempts": 48,
+          "passYards": 272,
+          "passTD": 1,
+          "interceptions": 0
+        }
+      ],
+      "starterConfirmed": false,
+      "identityType": "FINAL_GAME_PRIMARY_PASSER_NOT_STARTER",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873019"
+    },
+    {
+      "season": 2026,
+      "gameId": "401873020",
+      "gameDate": "2026-10-25T20:25Z",
+      "team": "Green Bay Packers",
+      "primaryPasser": "Jordan Love",
+      "passers": [
+        {
+          "player": "Jordan Love",
+          "attempts": 45,
+          "passYards": 274,
+          "passTD": 2,
+          "interceptions": 1
+        }
+      ],
+      "starterConfirmed": false,
+      "identityType": "FINAL_GAME_PRIMARY_PASSER_NOT_STARTER",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873020"
+    },
+    {
+      "season": 2026,
+      "gameId": "401873020",
+      "gameDate": "2026-10-25T20:25Z",
+      "team": "Detroit Lions",
+      "primaryPasser": "Jared Goff",
+      "passers": [
+        {
+          "player": "Jared Goff",
+          "attempts": 32,
+          "passYards": 303,
+          "passTD": 2,
+          "interceptions": 0
+        }
+      ],
+      "starterConfirmed": false,
+      "identityType": "FINAL_GAME_PRIMARY_PASSER_NOT_STARTER",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873020"
+    },
+    {
+      "season": 2026,
+      "gameId": "401873021",
+      "gameDate": "2026-10-25T20:25Z",
+      "team": "Los Angeles Rams",
+      "primaryPasser": "Matthew Stafford",
+      "passers": [
+        {
+          "player": "Matthew Stafford",
+          "attempts": 29,
+          "passYards": 195,
+          "passTD": 3,
+          "interceptions": 1
+        }
+      ],
+      "starterConfirmed": false,
+      "identityType": "FINAL_GAME_PRIMARY_PASSER_NOT_STARTER",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873021"
+    },
+    {
+      "season": 2026,
+      "gameId": "401873021",
+      "gameDate": "2026-10-25T20:25Z",
+      "team": "Las Vegas Raiders",
+      "primaryPasser": "Kirk Cousins",
+      "passers": [
+        {
+          "player": "Kirk Cousins",
+          "attempts": 44,
+          "passYards": 295,
+          "passTD": 2,
+          "interceptions": 0
+        },
+        {
+          "player": "AJ Cole",
+          "attempts": 1,
+          "passYards": 13,
+          "passTD": 0,
+          "interceptions": 0
+        }
+      ],
+      "starterConfirmed": false,
+      "identityType": "FINAL_GAME_PRIMARY_PASSER_NOT_STARTER",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873021"
+    },
+    {
+      "season": 2026,
+      "gameId": "401873022",
+      "gameDate": "2026-10-26T00:20Z",
+      "team": "Kansas City Chiefs",
+      "primaryPasser": "Patrick Mahomes",
+      "passers": [
+        {
+          "player": "Patrick Mahomes",
+          "attempts": 33,
+          "passYards": 165,
+          "passTD": 0,
+          "interceptions": 1
+        }
+      ],
+      "starterConfirmed": false,
+      "identityType": "FINAL_GAME_PRIMARY_PASSER_NOT_STARTER",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873022"
+    },
+    {
+      "season": 2026,
+      "gameId": "401873022",
+      "gameDate": "2026-10-26T00:20Z",
+      "team": "Seattle Seahawks",
+      "primaryPasser": "Sam Darnold",
+      "passers": [
+        {
+          "player": "Sam Darnold",
+          "attempts": 28,
+          "passYards": 257,
+          "passTD": 1,
+          "interceptions": 1
+        }
+      ],
+      "starterConfirmed": false,
+      "identityType": "FINAL_GAME_PRIMARY_PASSER_NOT_STARTER",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873022"
+    },
+    {
+      "season": 2026,
+      "gameId": "401873009",
+      "gameDate": "2026-10-27T00:15Z",
+      "team": "Dallas Cowboys",
+      "primaryPasser": "Dak Prescott",
+      "passers": [
+        {
+          "player": "Dak Prescott",
+          "attempts": 27,
+          "passYards": 212,
+          "passTD": 3,
+          "interceptions": 0
+        }
+      ],
+      "starterConfirmed": false,
+      "identityType": "FINAL_GAME_PRIMARY_PASSER_NOT_STARTER",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873009"
+    },
+    {
+      "season": 2026,
+      "gameId": "401873009",
+      "gameDate": "2026-10-27T00:15Z",
+      "team": "Philadelphia Eagles",
+      "primaryPasser": "Tanner McKee",
+      "passers": [
+        {
+          "player": "Tanner McKee",
+          "attempts": 35,
+          "passYards": 211,
+          "passTD": 1,
+          "interceptions": 1
+        }
+      ],
+      "starterConfirmed": false,
+      "identityType": "FINAL_GAME_PRIMARY_PASSER_NOT_STARTER",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873009"
     }
   ],
   "warning": "Primary passer is not necessarily the starting QB; no confirmed starter timeline or QB impact calibration."

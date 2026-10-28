@@ -1,16 +1,16 @@
 {
   "status": "ESPN_REPORTED_QB_INJURIES_ONLY",
   "automaticConfirmations": 0,
-  "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+  "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
   "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
   "items": [
     {
       "team": "Arizona Cardinals",
       "player": "Carson Beck",
       "reportedStatus": "Questionable",
-      "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Back', 'location': 'Torso', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-25'}",
+      "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Back', 'location': 'Torso', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -20,17 +20,7 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
-      "starterConfirmed": false,
-      "reviewRequired": true
-    },
-    {
-      "team": "Atlanta Falcons",
-      "player": "Andy Dalton",
-      "reportedStatus": "Active",
-      "description": "",
-      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -40,7 +30,17 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
+      "starterConfirmed": false,
+      "reviewRequired": true
+    },
+    {
+      "team": "Atlanta Falcons",
+      "player": "Andy Dalton",
+      "reportedStatus": "Active",
+      "description": "",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -50,7 +50,17 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
+      "starterConfirmed": false,
+      "reviewRequired": true
+    },
+    {
+      "team": "Baltimore Ravens",
+      "player": "Lamar Jackson",
+      "reportedStatus": "Questionable",
+      "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Sprain', 'side': 'Left', 'returnDate': '2026-11-01'}",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -60,17 +70,7 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
-      "starterConfirmed": false,
-      "reviewRequired": true
-    },
-    {
-      "team": "Baltimore Ravens",
-      "player": "Lamar Jackson",
-      "reportedStatus": "Questionable",
-      "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Sprain', 'side': 'Left', 'returnDate': '2026-10-25'}",
-      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -80,7 +80,7 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -90,7 +90,7 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -100,7 +100,17 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
+      "starterConfirmed": false,
+      "reviewRequired": true
+    },
+    {
+      "team": "Chicago Bears",
+      "player": "Case Keenum",
+      "reportedStatus": "Active",
+      "description": "",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -110,17 +120,7 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
-      "starterConfirmed": false,
-      "reviewRequired": true
-    },
-    {
-      "team": "Chicago Bears",
-      "player": "Case Keenum",
-      "reportedStatus": "Out",
-      "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-02'}",
-      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -130,17 +130,17 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
     {
       "team": "Cleveland Browns",
       "player": "Dillon Gabriel",
-      "reportedStatus": "Injured Reserve",
-      "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Back', 'location': 'Torso', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}",
+      "reportedStatus": "Active",
+      "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -150,7 +150,27 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
+      "starterConfirmed": false,
+      "reviewRequired": true
+    },
+    {
+      "team": "Cleveland Browns",
+      "player": "Deshaun Watson",
+      "reportedStatus": "Active",
+      "description": "",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
+      "starterConfirmed": false,
+      "reviewRequired": true
+    },
+    {
+      "team": "Cleveland Browns",
+      "player": "Shedeur Sanders",
+      "reportedStatus": "Active",
+      "description": "",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -160,17 +180,7 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
-      "starterConfirmed": false,
-      "reviewRequired": true
-    },
-    {
-      "team": "Denver Broncos",
-      "player": "Sam Ehlinger",
-      "reportedStatus": "Active",
-      "description": "",
-      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -180,7 +190,17 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
+      "starterConfirmed": false,
+      "reviewRequired": true
+    },
+    {
+      "team": "Denver Broncos",
+      "player": "Sam Ehlinger",
+      "reportedStatus": "Active",
+      "description": "",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -190,7 +210,7 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -200,17 +220,17 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
     {
-      "team": "Indianapolis Colts",
-      "player": "Anthony Richardson Sr.",
+      "team": "Houston Texans",
+      "player": "C.J. Stroud",
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -220,7 +240,7 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -230,7 +250,7 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -240,17 +260,7 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
-      "starterConfirmed": false,
-      "reviewRequired": true
-    },
-    {
-      "team": "Kansas City Chiefs",
-      "player": "Garrett Nussmeier",
-      "reportedStatus": "Active",
-      "description": "",
-      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -260,7 +270,17 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
+      "starterConfirmed": false,
+      "reviewRequired": true
+    },
+    {
+      "team": "Kansas City Chiefs",
+      "player": "Garrett Nussmeier",
+      "reportedStatus": "Active",
+      "description": "",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -270,7 +290,7 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -280,7 +300,7 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -290,7 +310,7 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -300,7 +320,7 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -310,7 +330,7 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -320,7 +340,7 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -330,7 +350,7 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -340,7 +360,7 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -350,7 +370,17 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
+      "starterConfirmed": false,
+      "reviewRequired": true
+    },
+    {
+      "team": "New England Patriots",
+      "player": "Behren Morton",
+      "reportedStatus": "Active",
+      "description": "",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -360,17 +390,7 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
-      "starterConfirmed": false,
-      "reviewRequired": true
-    },
-    {
-      "team": "New England Patriots",
-      "player": "Behren Morton",
-      "reportedStatus": "Out",
-      "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}",
-      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -380,7 +400,7 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -390,17 +410,17 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
     {
-      "team": "New York Giants",
-      "player": "J.J. McCarthy",
+      "team": "New Orleans Saints",
+      "player": "Spencer Rattler",
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -410,7 +430,7 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -420,7 +440,17 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
+      "starterConfirmed": false,
+      "reviewRequired": true
+    },
+    {
+      "team": "New York Giants",
+      "player": "J.J. McCarthy",
+      "reportedStatus": "Active",
+      "description": "",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -430,27 +460,7 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
-      "starterConfirmed": false,
-      "reviewRequired": true
-    },
-    {
-      "team": "Philadelphia Eagles",
-      "player": "Joe Milton",
-      "reportedStatus": "Active",
-      "description": "",
-      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
-      "starterConfirmed": false,
-      "reviewRequired": true
-    },
-    {
-      "team": "Philadelphia Eagles",
-      "player": "Jalen Hurts",
-      "reportedStatus": "Injured Reserve",
-      "description": "{'fantasyStatus': {'description': 'IR', 'abbreviation': 'IR'}, 'type': 'Calf', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Left', 'returnDate': '2027-02-15'}",
-      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -460,17 +470,17 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
     {
-      "team": "Pittsburgh Steelers",
-      "player": "Drew Allar",
+      "team": "Philadelphia Eagles",
+      "player": "Cole Payton",
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -480,7 +490,17 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
+      "starterConfirmed": false,
+      "reviewRequired": true
+    },
+    {
+      "team": "Pittsburgh Steelers",
+      "player": "Drew Allar",
+      "reportedStatus": "Active",
+      "description": "",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -490,7 +510,17 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
+      "starterConfirmed": false,
+      "reviewRequired": true
+    },
+    {
+      "team": "Pittsburgh Steelers",
+      "player": "Mason Rudolph",
+      "reportedStatus": "Active",
+      "description": "",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -500,7 +530,7 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -510,7 +540,7 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -518,9 +548,19 @@
       "team": "Seattle Seahawks",
       "player": "Drew Lock",
       "reportedStatus": "Questionable",
-      "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Elbow', 'location': 'Arm', 'detail': 'Not Specified', 'side': 'Right', 'returnDate': '2026-10-25'}",
+      "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Elbow', 'location': 'Arm', 'detail': 'Not Specified', 'side': 'Right', 'returnDate': '2026-11-02'}",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
+      "starterConfirmed": false,
+      "reviewRequired": true
+    },
+    {
+      "team": "Seattle Seahawks",
+      "player": "Sam Darnold",
+      "reportedStatus": "Active",
+      "description": "",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -530,7 +570,7 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -540,17 +580,17 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
     {
       "team": "Tampa Bay Buccaneers",
       "player": "Baker Mayfield",
-      "reportedStatus": "Questionable",
-      "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Thumb', 'location': 'Arm', 'returnDate': '2026-10-25'}",
+      "reportedStatus": "Active",
+      "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -560,17 +600,17 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
     {
       "team": "Washington Commanders",
       "player": "Marcus Mariota",
-      "reportedStatus": "Doubtful",
-      "description": "{'fantasyStatus': {'description': 'DOUBTFUL', 'abbreviation': 'DOUBTFUL'}, 'type': 'Knee - MCL', 'location': 'Leg', 'detail': 'Sprain', 'side': 'Right', 'returnDate': '2026-11-01'}",
+      "reportedStatus": "Questionable",
+      "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Knee - MCL', 'location': 'Leg', 'detail': 'Sprain', 'side': 'Right', 'returnDate': '2026-11-01'}",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     },
@@ -580,7 +620,7 @@
       "reportedStatus": "Active",
       "description": "",
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "retrievedAt": "2026-10-24T12:30:19.750372+00:00",
+      "retrievedAt": "2026-10-28T19:29:36.818442+00:00",
       "starterConfirmed": false,
       "reviewRequired": true
     }
