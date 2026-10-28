@@ -152,3 +152,5 @@ jobs:
             git commit -m "Update Model C review-only draft"
             git push
           fi
+
+# Manual expedited refresh requested 2026-10-28 before 15:30 ET; preserve QB safeguards.
