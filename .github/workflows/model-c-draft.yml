@@ -83,7 +83,9 @@ jobs:
         run: python3 scripts/model_c_qb_shadow_validate.py
       - name: Generate fresh four-model comparison from current pregame inputs
         if: steps.time.outputs.run == 'true'
-        run: python3 scripts/nfl_four_model_refresh.py
+        run: |
+          python3 tests/test_nfl_four_model_refresh.py
+          python3 scripts/nfl_four_model_refresh.py
       - name: Audit unmodeled critical QB injuries
         if: steps.time.outputs.run == 'true'
         run: |
