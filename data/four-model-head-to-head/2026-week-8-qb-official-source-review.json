@@ -1,0 +1,40 @@
+{
+  "season": 2026,
+  "week": 8,
+  "reviewedAt": "2026-10-28T20:09:46.975Z",
+  "status": "OFFICIAL_SOURCE_REVIEW_NO_AUTOMATIC_ADJUSTMENTS",
+  "reviews": [
+    {
+      "team": "Baltimore Ravens",
+      "game": "Baltimore Ravens at Buffalo Bills",
+      "player": "Lamar Jackson",
+      "finding": "Returned to Wednesday practice and team website quotes expectation of playing; actual Sunday starter not confirmed",
+      "classification": "EXPECTED_TO_PLAY_NOT_CONFIRMED",
+      "source": "https://www.baltimoreravens.com/news/late-for-work-ian-rapoport-lamar-jackson-rashod-bateman-scott-turner-zay-flowers",
+      "modelAction": "HOLD_BILLS_PICK_RECHECK_GAME_STATUS"
+    },
+    {
+      "team": "Philadelphia Eagles",
+      "game": "Philadelphia Eagles at Washington Commanders",
+      "player": "Jalen Hurts",
+      "finding": "Eagles officially placed Hurts on injured reserve October 17; not available for Week 8",
+      "classification": "OFFICIAL_IR_UNAVAILABLE",
+      "source": "https://www.philadelphiaeagles.com/news/eagles-place-jalen-hurts-on-injured-reserve-sign-jaydon-blue-to-the-active-roster-2026-nfl-week-6-panthers",
+      "modelAction": "HOLD_COMMANDERS_PICK_NO_NEW_POINTS_ADJUSTMENT"
+    },
+    {
+      "team": "Philadelphia Eagles",
+      "game": "Philadelphia Eagles at Washington Commanders",
+      "player": "Tanner McKee",
+      "finding": "Eagles official October 26 inactive list identifies Tanner McKee as starting quarterback ahead of Joe Milton III; Week 8 starting assignment not independently announced",
+      "classification": "OFFICIAL_PREVIOUS_START_NOT_WEEK8_CONFIRMED",
+      "source": "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-inactives-saquon-barkley-jalyx-hunt-2026-week-7-monday-night-football",
+      "modelAction": "HOLD_COMMANDERS_PICK_RECHECK_WEEK8_INACTIVES"
+    }
+  ],
+  "guardrails": [
+    "No verified game-specific starter declaration for Lamar Jackson or Tanner McKee Week 8",
+    "No calibrated replacement quarterback point penalty; no automatic adjustment",
+    "Previous Week 8 picks remain frozen in original report; review does not rewrite them"
+  ]
+}
