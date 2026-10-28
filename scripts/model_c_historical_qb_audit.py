@@ -50,6 +50,8 @@ def main():
     out=validate(qb,history)
     (DATA/"model-c-historical-qb-audit.json").write_text(json.dumps(out,indent=2)+"\n")
     print(json.dumps({k:v for k,v in out.items() if k not in ("unmatchedGameIds","errors")},indent=2))
-    if out["errors"]:raise SystemExit(1)
+    if out["errors"]:
+        print(json.dumps(out["errors"][:20], indent=2))
+        raise SystemExit(1)
 
 if __name__=="__main__":main()
