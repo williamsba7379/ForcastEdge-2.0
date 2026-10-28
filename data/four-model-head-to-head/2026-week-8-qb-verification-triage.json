@@ -1,0 +1,77 @@
+{
+  "season": 2026,
+  "week": 8,
+  "generatedAt": "2026-10-28T20:09:02.884Z",
+  "status": "QB_VERIFICATION_TRIAGE_REVIEW_ONLY",
+  "source": "data/model-c-automated-draft.json",
+  "verifiedOfficialStarterCount": 0,
+  "priorityReviews": [
+    {
+      "game": "Baltimore Ravens @ Buffalo Bills",
+      "team": "Baltimore Ravens",
+      "qb1Candidate": "Lamar Jackson",
+      "starterVerified": false,
+      "injuryFlags": [
+        {
+          "name": "Lamar Jackson",
+          "status": "Questionable"
+        }
+      ],
+      "note": "Depth chart QB1 is not an official game starter; review before kickoff."
+    },
+    {
+      "game": "Arizona Cardinals @ Dallas Cowboys",
+      "team": "Arizona Cardinals",
+      "qb1Candidate": "Jacoby Brissett",
+      "starterVerified": false,
+      "injuryFlags": [
+        {
+          "name": "Carson Beck",
+          "status": "Questionable"
+        }
+      ],
+      "note": "Depth chart QB1 is not an official game starter; review before kickoff."
+    },
+    {
+      "game": "Philadelphia Eagles @ Washington Commanders",
+      "team": "Washington Commanders",
+      "qb1Candidate": "Jayden Daniels",
+      "starterVerified": false,
+      "injuryFlags": [
+        {
+          "name": "Marcus Mariota",
+          "status": "Questionable"
+        }
+      ],
+      "note": "Depth chart QB1 is not an official game starter; review before kickoff."
+    },
+    {
+      "game": "Philadelphia Eagles @ Washington Commanders",
+      "team": "Philadelphia Eagles",
+      "qb1Candidate": "Tanner McKee",
+      "starterVerified": false,
+      "injuryFlags": [],
+      "note": "Depth chart QB1 is not an official game starter; review before kickoff."
+    },
+    {
+      "game": "Chicago Bears @ Seattle Seahawks",
+      "team": "Seattle Seahawks",
+      "qb1Candidate": "Sam Darnold",
+      "starterVerified": false,
+      "injuryFlags": [
+        {
+          "name": "Drew Lock",
+          "status": "Questionable"
+        }
+      ],
+      "note": "Depth chart QB1 is not an official game starter; review before kickoff."
+    }
+  ],
+  "allTeamsUnverified": true,
+  "notes": [
+    "Lamar Jackson is listed Questionable in the unverified injury feed; highest-priority starter review.",
+    "Philadelphia Eagles depth chart candidate Tanner McKee requires independent game-specific confirmation; do not assume Jalen Hurts starts or is out.",
+    "All QB1 names are unverified depth-chart candidates; no automatic score adjustments.",
+    "Recheck official team announcements and inactive lists nearer each kickoff."
+  ]
+}
