@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-28T19:30:07.797080+00:00",
+  "checkedAt": "2026-10-28T23:17:45.210982+00:00",
   "status": "DIAGNOSTIC_ONLY_NOT_STARTER_CONFIRMATION",
   "teamsChecked": 32,
   "teamsWithQB1": 32,
@@ -576,9 +576,9 @@
                   "id": "3916387",
                   "injuries": [
                     {
-                      "date": "2026-10-28T17:32Z",
-                      "longComment": "Jackson hasn't played since Week 4, but he was able to practice in a limited fashion throughout last week. While it won't be known until the Ravens release their first Week 8 injury report later Wednesday whether Jackson was able to upgrade to full participation, Ian Rapoport of NFL Network reported Tuesday that the quarterback is \"believed to be close to 100 percent\" and is tracking toward playing Sunday in Buffalo. During the open portion of Wednesday's session, Jackson seemed to be moving around better than he was a week ago, though he was still doing some light running with his sprained left ankle taped up, per Hensley.",
-                      "shortComment": "Jackson (ankle) was spotted on the field for the start of Wednesday's practice, Jamison Hensley of ESPN.com reports.",
+                      "date": "2026-10-28T21:40Z",
+                      "longComment": "Jackson, who hasn't played since Week 4, was able to practice in a limited fashion last week, so his upgrade to full participation Wednesday is a significant development ahead of Sunday's game against the Bills. Assuming he's able to maintain that level activity Thursday and Friday, Jackson has a chance to approach Week 8 action minus an injury designation.",
+                      "shortComment": "Jackson (ankle) was listed as a full participant in Wednesday's practice.",
                       "status": "Questionable",
                       "type": {
                         "abbreviation": "Q",

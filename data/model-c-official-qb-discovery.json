@@ -1,6 +1,6 @@
 {
   "status": "DISCOVERY_ONLY_NOT_STARTER_CONFIRMATION",
-  "generatedAt": "2026-10-28T19:30:20.425050+00:00",
+  "generatedAt": "2026-10-28T23:17:54.348811+00:00",
   "automaticConfirmations": 0,
   "teams": [
     {
@@ -10,7 +10,7 @@
       "candidates": [
         {
           "url": "https://www.baltimoreravens.com/news/lamar-jackson-injury-practice-report-emotional-boost",
-          "headline": "news With Lamar Jackson Practicing Again, Teammates Hope for 'Big Boost' Oct 28, 2026 Ravens LB Roquan Smith is not on the field at the start of practice.",
+          "headline": "news Lamar Jackson Returns to Full Practice Participation Oct 28, 2026 Ravens LB Roquan Smith is not on the field at the start of practice.",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -141,6 +141,16 @@
       "fetchStatus": "OK",
       "candidates": [
         {
+          "url": "https://www.philadelphiaeagles.com/news/eagles-at-commanders-injury-report-2026-nfl-week-8-sunday-night-football-saquon-barkley-devonta-smith",
+          "headline": "news Eagles at Commanders Injury Report Outside linebacker Nolan Smith inches toward a return after missing the Cowboys game.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.philadelphiaeagles.com/news/eagles-sign-rb-jaydon-blue-to-the-active-roster-add-three-to-the-practice-squad-dameon-pierce",
+          "headline": "news Eagles sign RB Jaydon Blue to the active roster, add three to the practice squad RB Dameon Pierce has been placed on Injured Reserve",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.philadelphiaeagles.com/news/how-to-watch-stream-and-listen-eagles-at-commanders-nfl-week-8-2026-tanner-mckee-makai-lemon-sunday-night-football",
           "headline": "news How to watch, stream, and listen | Eagles at Commanders See how to watch and listen to the Eagles\u2019 Week 8 matchup against the Washington Commanders on Sunday, November 1st at 8:20 PM.",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
@@ -152,7 +162,7 @@
         },
         {
           "url": "https://www.philadelphiaeagles.com/news/eagles-release-db-dean-clark-and-t-xavier-truss-from-the-practice-squad-nfl-week-8-commanders-2026",
-          "headline": "news Eagles release DB Dean Clark and T Xavier Truss from the practice squad Xavier Truss won two College Football Playoff National Championships at the University of Georgia.",
+          "headline": "news Eagles release DB Dean Clark and T Xavier Truss from the practice squad Oct 27, 2026",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -208,11 +218,6 @@
         {
           "url": "https://www.philadelphiaeagles.com/news/panthers-vs-eagles-game-preview-6-storylines-to-follow-2026-week-6-nfl-regular-season-crucial-catch-tanner-mckee-bryce-young",
           "headline": "news Spadaro: Game Preview vs. Panthers, 6 storylines to follow Oct 18, 2026",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.philadelphiaeagles.com/news/eagles-place-jalen-hurts-on-injured-reserve-sign-jaydon-blue-to-the-active-roster-2026-nfl-week-6-panthers",
-          "headline": "news Eagles place QB Jalen Hurts on Injured Reserve, sign RB Jaydon Blue to the active roster Oct 17, 2026",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -649,6 +654,11 @@
       "fetchStatus": "OK",
       "candidates": [
         {
+          "url": "https://www.chiefs.com/news/week-8-injury-report-chiefs-vs-broncos-2026",
+          "headline": "news Week 8 Injury Report | Chiefs vs. Broncos Oct 28, 2026 Injuries for the Chiefs Week 8 matchup against the Denver Broncos",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.chiefs.com/news/week-7-inactive-players-chiefs-vs-seahawks",
           "headline": "news Week 7 Inactive Players | Chiefs vs. Seahawks Oct 25, 2026 All the inactive players for the Chiefs Week 7 matchup against the Seahawks",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
@@ -878,8 +888,18 @@
       "fetchStatus": "OK",
       "candidates": [
         {
+          "url": "https://www.commanders.com/news/commanders-vs-eagles-week-8-injury-report-2026",
+          "headline": "news Commanders vs. Eagles Week 8 injury report The Washington Commanders have released their injury report ahead of their matchup with the Philadelphia Eagles",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.commanders.com/news/washington-commanders-fix-key-issues-ahead-of-eagles-game",
+          "headline": "news Practice notes | Commanders target key issues during bye week",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.commanders.com/news/commanders-terry-mclaurin-injured-reserve-jer-zhan-newton",
-          "headline": "news Commanders place Terry McLaurin on IR, Jer'Zhan Newton returns to practice The Washington Commanders announced the following roster move on Wednesday.",
+          "headline": "news Commanders place Terry McLaurin on IR, Jer'Zhan Newton returns to practice",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -894,22 +914,12 @@
         },
         {
           "url": "https://www.commanders.com/news/chig-okonkwo-hamstring-injury-jayden-daniels",
-          "headline": "news Chig Okonkwo reflects on injury, chemistry with Jayden Daniels",
+          "headline": "Chig Okonkwo reflects on injury, chemistry with Jayden Daniels Oct 26, 2026 Returning to the DMV was a welcome reunion for Okonkwo, who spent four seasons in Maryland\u2019s program and ended his collegiate career as a full-t",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.commanders.com/news/commanders-top-plays-treylon-burks-jayden-daniels-touchdowns-highlights",
           "headline": "Washington's top 5 offensive plays from Weeks 1-6 Oct 22, 2026 The season has not gone the was the Washington Commanders had hoped heading into the bye week, but there have still been some impressive moments on the field",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.commanders.com/news/laremy-tunsil-commanders-leadership-mentorship-josh-conerly-injury",
-          "headline": "'A real brother': Tunsil provides invaluable mentorship to Commanders O-Line Oct 21, 2026 Laremy Tunsil has not been on the field since he tore his triceps in training camp, but that does not mean he is absent from the W",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.commanders.com/news/terry-mclaurin-knee-injury-commanders",
-          "headline": "Terry McLaurin suffers season-ending knee injury vs. 49ers Oct 20, 2026 The 2019 third-round pick has been an invaluable member of the locker room as well as the franchise\u2019s most productive offensive weapon since Washing",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -975,13 +985,13 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
-          "url": "https://www.azcardinals.com/news/as-jacoby-brissett-remains-qb1-carson-beck-remains-topic",
-          "headline": "news As Jacoby Brissett Remains QB1, Carson Beck Remains Topic Rookie quarterback had back spasm flare up",
+          "url": "https://www.azcardinals.com/news/you-ve-got-mail-in-the-nfl-quarterbacks-are-always-a-talking-point",
+          "headline": "news You've Got Mail: In The NFL, Quarterbacks Are Always A Talking Point Topics include Beck timeline, Fitz's future, and spotters in the booth",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
-          "url": "https://www.azcardinals.com/news/you-ve-got-mail-in-the-nfl-quarterbacks-are-always-a-talking-point",
-          "headline": "news You've Got Mail: In The NFL, Quarterbacks Are Always A Talking Point Topics include Beck timeline, Fitz's future, and spotters in the booth",
+          "url": "https://www.azcardinals.com/news/as-jacoby-brissett-remains-qb1-carson-beck-remains-topic",
+          "headline": "news As Jacoby Brissett Remains QB1, Carson Beck Remains Topic Rookie quarterback had back spasm flare up",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1052,18 +1062,23 @@
       "fetchStatus": "OK",
       "candidates": [
         {
+          "url": "https://www.atlantafalcons.com/news/falcons-injury-report-brian-robinson-divine-deablo-non-participants-as-week-8-practices-begin",
+          "headline": "Falcons injury report: Brian Robinson, Divine Deablo non-participants as Week 8 practices begin Avieon Terrell and Olamide Zaccheaus did return to practice in limited fashion.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.atlantafalcons.com/news/michael-penix-jr-nfc-offensive-player-of-the-week",
           "headline": "Michael Penix Jr. named NFC Offensive Player of the Week This is the first time Penix has earned this kind of recognition since entering the league in 2024.",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.atlantafalcons.com/news/how-michael-penix-first-17-starts-compare-nfl-quarterbacks",
-          "headline": "How Michael Penix Jr.'s first 17 starts compare to other NFL quarterbacks Jessie Bates III says he believes Penix is a franchise quarterback. Do the stats back up that declaration?",
+          "headline": "How Michael Penix Jr.'s first 17 starts compare to other NFL quarterbacks",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.atlantafalcons.com/news/kendal-daniels-injury-craziest-week-game-winning-interception-fumble",
-          "headline": "Kendal Daniels caps off his 'craziest week' in game-winning fashion",
+          "headline": "Kendal Daniels caps off his 'craziest week' in game-winning fashion Oct 25, 2026 One week after leaving the game on a stretcher, Daniels stepped into a leadership role and provided two crucial turnovers in the Falcons' w",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1169,8 +1184,18 @@
       "fetchStatus": "OK",
       "candidates": [
         {
+          "url": "https://www.bengals.com/news/bengals-titans-week-8-2026-injury-report",
+          "headline": "news Week 8 Injury Report | Titans vs Bengals Take a look at the injury reports of the Cincinnati Bengals and the Tennessee Titans leading into Week 8 of the 2026 season.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.bengals.com/news/quick-hits-erick-all-jr-zac-taylor-bengals-tight-end-room-gets-facelift-ryan-rehkow-s-gutty-sunday",
-          "headline": "news Quick Hits | Bengals Tight End Room Gets Facelift; Ryan Rehkow's Gutty Sunday The Bengals went to Wednesday\u2019s practice prepping for Sunday\u2019s game here against the Titans (1 p.m.-Cincinnati\u2019s Local 12) while grapplin",
+          "headline": "news Quick Hits | Bengals Tight End Room Gets Facelift; Ryan Rehkow's Gutty Sunday The Bengals went to Wednesday\u2019s practice prepping for Sunday\u2019s game here against the Titans while grappling with the injuries that have r",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.bengals.com/news/joe-burrow-jaxon-smith-njigba-fedex-air-ground-player-week-7-2026-winner",
+          "headline": "news Joe Burrow Voted as FedEx Air & Ground Player of Week 7 Bengals QB Joe Burrow was named FedEx Air and Ground Player of the Week for his performance in Week 7, the NFL announced today.",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1307,16 +1332,6 @@
           "url": "https://www.bengals.com/news/how-ravens-son-orlando-brown-jr-has-been-at-heart-of-o-line-surge-joe-burrow-ted-karras",
           "headline": "news Game Within The Game | How Ravens' Son Orlando Brown Jr., Has Been At Heart Of Bengals O-Line Surge",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.bengals.com/news/joe-burrow-s-passion-play-lifting-bengals-again-jam",
-          "headline": "news Game Within The Game | Joe Burrow's Passion Play Lifting Bengals Again: 'That's What He Lives For'",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.bengals.com/news/game-within-the-game-joe-burrow-joe-flacco-thanksgiving-2025-ravens",
-          "headline": "news Game Within The Game | Joe Burrow And Joe Flacco Embrace One Of These Nights",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
     },
@@ -1428,6 +1443,11 @@
       "fetchStatus": "OK",
       "candidates": [
         {
+          "url": "https://www.dallascowboys.com/news/updates-october-2026",
+          "headline": "Updates: Quinnen, Pickens limited in Wed. practice Don't miss any of the action with our daily updates: news, notes and more throughout the Cowboys' regular season and offseason.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.dallascowboys.com/news/rank-em-all-39-players-to-catch-a-td-from-dak",
           "headline": "Rank'em: All 39 players to catch a TD from Dak After Dak Prescott's record-breaking game on Sunday to become the Cowboys' all-time leader in passing touchdowns, we've listed out all 39 players who have been on the receiv",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
@@ -1480,13 +1500,13 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
-          "url": "https://www.denverbroncos.com/news/that-s-what-we-needed-qb-bo-nix-turns-in-historic-performance-remains-focused-on-how-broncos-can-improve",
-          "headline": "'That's what we needed': QB Bo Nix turns in historic performance, remains focused on how Broncos can improve",
+          "url": "https://www.denverbroncos.com/news/injuryreport/injury-report-pat-surtain-ii-improves-to-full-participant-3-broncos-do-not-practice-ahead-of-week-8-game-vs-chiefs",
+          "headline": "Injury Report: Pat Surtain II improves to full participant, 3 Broncos do not practice ahead of Week 8 game vs. Chiefs The Broncos\u2019 All-Pro cornerback has improved to a full participant ahead of Denver\u2019s Week 8 game again",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.denverbroncos.com/news/broncos-sign-wr-eli-pancol-to-practice-squad",
-          "headline": "Broncos sign WR Eli Pancol to practice squad Denver has added a receiver to its roster.",
+          "headline": "Broncos sign WR Eli Pancol to practice squad",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -1496,6 +1516,16 @@
       "officialNewsIndex": "https://www.detroitlions.com/news/",
       "fetchStatus": "OK",
       "candidates": [
+        {
+          "url": "https://www.detroitlions.com/news/notebook-detroit-lions-joseph-returns-to-practice-goff-wonnum",
+          "headline": "news NOTEBOOK: Joseph returns to practice Tim Twentyman covers all the Detroit Lions news of the day including safety Kerby Joseph's return to practice, preparing for the Minnesota Vikings and more.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.detroitlions.com/news/lions-vs-vikings-practice-report-oct-28-gibbs-stbrown-joseph",
+          "headline": "news Lions vs. Vikings practice report: Oct. 28 Lions vs. Vikings practice report for Wednesday, October 28.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
         {
           "url": "https://www.detroitlions.com/news/inactives-lions-vs-packers-branch-mays",
           "headline": "news INACTIVES: Lions vs. Packers",
@@ -1568,6 +1598,11 @@
         {
           "url": "https://www.chicagobears.com/news/injury-update",
           "headline": "Injury Update",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/bears-embrace-stepping-into-national-spotlight",
+          "headline": "Bears embrace stepping into national spotlight Oct 28, 2026 Preparing for the second of three straight night games, Bears quarterback Caleb Williams and tight end Colston Loveland discussed how much they enjoy playing in",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1694,16 +1729,6 @@
           "url": "https://www.chicagobears.com/news/injury-update-bears-rule-out-caleb-williams-will-start-tyson-bagent-or-case-keenum-vs-eagles",
           "headline": "Injury Update: Bears rule out Caleb Williams, will start Tyson Bagent or Case Keenum vs. Eagles Sep 26, 2026 The Bears ruled Caleb Williams out of Monday night's game against the Eagles with a hamstring injury, but they ",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.chicagobears.com/news/girls-flag-football-player-of-the-week-moriah-herr-week-4",
-          "headline": "Girls Flag Football Player of the Week: Moriah Herr | Week 4 Sep 25, 2026 Wheaton North High School quarterback Moriah Herr received Week 4 Player of the Week honors for her standout performances across three conference ",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.chicagobears.com/news/ben-johnson-confident-in-bears-qb-depth",
-          "headline": "Ben Johnson confident in Bears' QB depth Sep 23, 2026 The Bears' starting quarterback for Monday night's home game against the Eagles won't be determined until later in the week, but coach Ben Johnson is comfortable with",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
     },
@@ -1715,6 +1740,11 @@
         {
           "url": "https://www.colts.com/news/article-series/practice-notebook/",
           "headline": "Practice Notebook",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.colts.com/news/practice-notebook-colts-conduct-wednesday-walkthrough",
+          "headline": "news Practice Notebook: Colts conduct Wednesday walkthrough Wednesday's practice report is an estimation of player participation if practice had happened.",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1734,12 +1764,7 @@
         },
         {
           "url": "https://www.colts.com/news/colts-elevate-lb-germaine-pratt-cb-kenneth-harris-from-practice-squad-to-active-roster-release-p-thomas-morstead-from-practice-squad",
-          "headline": "news Colts elevate LB Germaine Pratt, CB Kenneth Harris from practice squad to active roster; release P Thomas Morstead from practice squad The roster moves were made Saturday.",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.colts.com/news/colts-week-7-preview-brian-flores-aggressive-vikings-defense-presents-major-challenge-for-daniel-jones-shane-steichen",
-          "headline": "news Colts Week 7 Preview: Brian Flores' aggressive Vikings defense presents major challenge for Daniel Jones, Shane Steichen The Colts will look to rebound on Sunday against an undefeated Minnesota Vikings team coming o",
+          "headline": "Colts elevate LB Germaine Pratt, CB Kenneth Harris from practice squad to active roster; release P Thomas Morstead from practice squad The roster moves were made Saturday.",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1815,16 +1840,6 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
-          "url": "https://www.jaguars.com/news/monday-insider-excited-about-getting-back-in-the-building",
-          "headline": "Monday Insider: \"Excited About Getting Back in the Building\u2026\" Oct 26, 2026 Head Coach Liam Coen as the AFC South-leading Jaguars returned to practice Monday following their 2026 Week 7 bye week: \u201cExcited about getting ba",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.jaguars.com/news/roster-moves-jaguars-sign-lb-jamal-hill-to-the-practice-squad",
-          "headline": "Roster Moves: Jaguars Sign LB Jamal Hill to the Practice Squad Oct 22, 2026",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
           "url": "https://www.jaguars.com/news/in-and-out-2026-week-6-murray-active-brown-and-matiscik-inactive-for-texans-vs-jaguars",
           "headline": "news In and Out, 2026 Week 6: Murray Active, Brown and Matiscik Inactive for Texans vs. Jaguars Oct 18, 2026 CB Montaric Brown, long snapper Ross Matiscik inactive for the Jaguars against the Houston Texans in a 2026 Wee",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
@@ -1837,8 +1852,13 @@
       "fetchStatus": "OK",
       "candidates": [
         {
+          "url": "https://www.raiders.com/news/las-vegas-raiders-new-york-jets-week-8-injury-report",
+          "headline": "Raiders-Jets Week 8 Injury Report Take a look at the Raiders' injury report as the team prepares to face the New York Jets.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.raiders.com/news/1976-unsung-hero-john-vella-super-bowl-xi-50th-anniversary",
-          "headline": "1976 Unsung Hero: John Vella Vella was a stalwart right tackle who protected left-handed quarterback Ken Stabler\u2019s blind side as the franchise claimed its first Lombardi Trophy.",
+          "headline": "news 1976 Unsung Hero: John Vella Oct 27, 2026 Vella was a stalwart right tackle who protected left-handed quarterback Ken Stabler's blind side as the franchise claimed its first Lombardi Trophy.",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1928,6 +1948,11 @@
       "officialNewsIndex": "https://www.chargers.com/news/",
       "fetchStatus": "OK",
       "candidates": [
+        {
+          "url": "https://www.chargers.com/news/chargers-vs-rams-injury-report-mcconkey-full-james-awosika-don-t-practice-wednesday",
+          "headline": "news Chargers vs. Rams Injury Report: McConkey Full, James & Awosika Don't Practice Wednesday Take a look at the Chargers Injury Report ahead of Week 8 against the Rams",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
         {
           "url": "https://www.chargers.com/news/injury-updates-jim-harbaugh-justin-herbert-chiefs",
           "headline": "5 Takeaways: Why Jim Harbaugh is 'Hellbent' on Turning Around Chargers 0-5 Start The Chargers Head Coach also gave injury updates and praised Justin Herbert's competitiveness on Monday",
@@ -2021,6 +2046,11 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.therams.com/news/from-the-podium-head-coach-sean-mcvay-quarterback-matthew-stafford-wide-receiver-puka-nacua-defensive-end-aaron-donald-coordinators-preview-matchup-against-chargers-sofi-stadium-press-conference-2026",
+          "headline": "news From the Podium: Sean McVay and Matthew Stafford preview matchup against Chargers at SoFi Stadium Oct 28, 2026 Rams head coach Sean McVay and quarterback Matthew Stafford shared their thoughts on the upcoming matchu",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.therams.com/news/matthew-stafford-becomes-passing-touchdown-leader-in-rams-franchise-history-2026",
           "headline": "news Matthew Stafford becomes Rams' franchise leader in passing touchdowns Oct 25, 2026 With three passing touchdowns against the Raiders, Rams quarterback Matthew Stafford became the franchise leader in passing touchdow",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
@@ -2066,11 +2096,6 @@
           "url": "https://www.miamidolphins.com/news/dolphins-make-practice-squad-moves-x6245",
           "headline": "Dolphins make practice squad moves",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.miamidolphins.com/news/dolphins-sign-cooper-jr-to-practice-squad",
-          "headline": "Dolphins sign Cooper Jr. to practice squad",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
     },
@@ -2079,6 +2104,11 @@
       "officialNewsIndex": "https://www.vikings.com/news/",
       "fetchStatus": "OK",
       "candidates": [
+        {
+          "url": "https://www.vikings.com/news/lions-injury-report-week-8-2026-nfl-season",
+          "headline": "news Initial Vikings at Lions Injury Report for Week 8 of 2026 Oct 28, 2026",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
         {
           "url": "https://www.vikings.com/news/signing-tight-ends-bryson-nesbit-devin-culp-practice-squad",
           "headline": "news Vikings Sign Tight Ends Bryson Nesbit & Devin Culp to Practice Squad Oct 28, 2026",
@@ -2182,6 +2212,11 @@
       "fetchStatus": "OK",
       "candidates": [
         {
+          "url": "https://www.patriots.com/news/week-8-injury-report-patriots-at-dolphins-x9227",
+          "headline": "Week 8 Injury Report: Patriots at Dolphins The New England Patriots and the Miami Dolphins announce the following player injuries and practice participation ahead of their Week 8 game.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.patriots.com/news/patriots-sign-lb-jose-ramirez-to-the-practice-squad-release-ol-jacob-rizy-from-the-practice-squad-release-p-bryce-baringer-from-injured-reserve-list",
           "headline": "Patriots Sign LB Jose Ramirez to the Practice Squad; Release OL Jacob Rizy from the Practice Squad; Release P Bryce Baringer from Injured Reserve List",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
@@ -2254,11 +2289,6 @@
         {
           "url": "https://www.patriots.com/news/patriots-sign-rb-hassan-haskins-and-cb-d-shawn-jamison-to-the-practice-squad-release-lb-jose-ramirez-from-the-practice-squad",
           "headline": "Patriots Sign RB Hassan Haskins and CB D'Shawn Jamison to the Practice Squad; Release LB Jose Ramirez from the Practice Squad",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.patriots.com/news/after-further-review-drake-maye-film-breakdown-defense-review-and-quick-hit-film-notes-from-week-5-win-over-raiders",
-          "headline": "After Further Review: Drake Maye film breakdown, defense review, and quick-hit film notes from Week 5 win over Raiders",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2503,8 +2533,18 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.newyorkjets.com/news/jets-injury-report-week-8-vs-raiders-wednesday-10-28-2026",
+          "headline": "Jets Injury Report | Week 8 vs. Raiders - Wednesday RBs Braelon Allen (Ankle) & Breece Hall (Quad) Limited Participants",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.newyorkjets.com/news/stock-report-jets-rb-room-nearing-full-strength-mason-taylor-becoming-weapon-10-28-2026",
+          "headline": "Stock Report | Jets RB Room Nearing Full Strength Mason Taylor Emerging as a Versatile Weapon; Raiders QB Kirk Cousins Playing at a High Level at Age 38",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.newyorkjets.com/news/jnjury-update-jets-rookie-edge-david-bailey-groin-ailment-10-28-2026",
-          "headline": "Jets Practice Update | Rookie Edge David Bailey Has a Groin Injury DT T\u2019Vondre Sweat is Week-to-Week; RBs Breece Hall and Braelon Allen Limited",
+          "headline": "Jets Practice Update | Rookie Edge David Bailey Has a Groin Injury",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2553,11 +2593,6 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
-          "url": "https://www.newyorkjets.com/news/omar-cooper-jr-named-pepsi-rookie-of-the-week-10-22-2026",
-          "headline": "Jets WR Omar Cooper Jr. Named Pepsi Rookie of the Week QB Geno Smith: 'He's a Playmaker\"",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
           "url": "https://www.newyorkjets.com/news/jets-release-troy-reeder-sign-veteran-edge-quinton-bell-to-practice-squad-10-13-2026",
           "headline": "news Jets Release LB Troy Reeder; Sign Edge Quinton Bell to Practice Squad",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
@@ -2595,6 +2630,16 @@
       "fetchStatus": "OK",
       "candidates": [
         {
+          "url": "https://www.steelers.com/news/from-paris-with-fun",
+          "headline": "From Paris with fun Quarterback Aaron Rodgers called Steelers' flight home 'probably my favorite' in 22-year NFL career",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.steelers.com/news/week-8-injury-report-browns-x7058",
+          "headline": "Week 8 Injury Report (Browns) A look at player injuries and practice participation for Week 8",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.steelers.com/news/from-the-press-room-steelers-vs-saints-x3526",
           "headline": "From the Press Room: Steelers vs. Saints Coach Mike McCarthy, quarterback Aaron Rodgers and linebacker Payton Wilson shared their take from the win",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
@@ -2628,16 +2673,6 @@
           "url": "https://www.steelers.com/news/steelers-inactives-for-week-6-at-buccaneers",
           "headline": "Steelers inactives for Week 6 at Buccaneers Find out who won't play today as the Steelers take on the Buccaneers at Raymond James Stadium",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.steelers.com/news/week-6-injury-report-buccaneers-x2319",
-          "headline": "Updated: Week 6 Injury Report (Buccaneers) A look at player injuries and practice participation for Week 6",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.steelers.com/news/four-down-territory-teacher-s-and-student",
-          "headline": "Four-Down Territory: Teacher(s) and student It helps to have Aaron Rodgers, DK Metcalf raising up rookie receiver Germie Bernard",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
     },
@@ -2663,7 +2698,7 @@
         },
         {
           "url": "https://www.49ers.com/news/stout-kirk-active-vs-falcons-inactives-week-7-sfvsatl",
-          "headline": "Stout, Kirk Active vs. Falcons; Inactives Week 7 #SFvsATL",
+          "headline": "news Stout, Kirk Active vs. Falcons; Inactives Week 7 #SFvsATL Take a look at players who have been ruled out for the San Francisco 49ers Week 7 matchup versus the Atlanta Falcons.",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2789,8 +2824,23 @@
       "fetchStatus": "OK",
       "candidates": [
         {
+          "url": "https://www.buccaneers.com/news/injury-status-antoine-winfield-jr-challenge-of-michael-penix-jr-and-bijan-robinson-bucs-blitz-week-8",
+          "headline": "news Injury Status of Antoine Winfield Jr., Challenge of Michael Penix Jr. and Bijan Robinson | Bucs Blitz Oct 28, 2026 On Wednesday, Head Coach Todd Bowles fielded a variety of questions, including Antoine Winfield Jr\u2019s",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buccaneers.com/news/baker-mayfield-bucs-need-stay-ahead-chains-vs-falcons",
+          "headline": "news Baker Mayfield: Bucs Need to Stay Ahead of the Chains vs. Falcons Oct 28, 2026 A robust rushing attack created a high number of short third down situations for the Bucs in their win at Carolina and Baker Mayfield kn",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.buccaneers.com/news/buccaneers-falcons-injury-report-oct-28-week-8-2026",
+          "headline": "news Buccaneers-Falcons Injury Report Oct.28: Trotter, Gainwell, Goedeke Did Not Participate Oct 28, 2026 A look at Wednesday's injury report ahead of the Week Eight matchup",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.buccaneers.com/news/bucs-add-rb-barika-kpeenu-to-practice-squad",
-          "headline": "news Bucs Add RB Barika Kpeenu to Practice Squad Oct 27, 2026 The Buccaneers brought back rookie RB Barika Kpeenu on Tuesday, signing him to their practice squad and making room by releasing QB Brett Rypien, who was adde",
+          "headline": "Bucs Add RB Barika Kpeenu to Practice Squad",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2841,23 +2891,33 @@
       "fetchStatus": "OK",
       "candidates": [
         {
+          "url": "https://www.tennesseetitans.com/news/titans-claim-dt-jonah-laulu-off-waivers-waive-dl-timmy-horne",
+          "headline": "Titans Claim DT Jonah Laulu Off Waivers, Waive DT Timmy Horne The 6-foot-5, 289-pound Laulu played in 39 games, with 22 starts, over the past three seasons with the Raiders, and tallied 91 tackles, 5.5 sacks, and 12 quar",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.tennesseetitans.com/news/quick-hits-on-the-titans-from-wednesday-of-bengals-week-x3537",
+          "headline": "Quick Hits on the Titans From Wednesday of Bengals Week The Titans returned to the practice field on Wednesday at Vanderbilt Health Football Center to continue preparations for Sunday's game at the Cincinnati Bengals.",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.tennesseetitans.com/news/titans-qb-cam-ward-looking-to-nix-offensive-lulls",
+          "headline": "Titans QB Cam Ward Looking to Nix Offensive Lulls On the season, Ward has thrown for 1,179 yards with four touchdowns and five interceptions, with a passer rating of 73.8. He\u2019s been sacked just 11 times in seven games, a",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.tennesseetitans.com/news/week-8-injury-report-titans-at-bengals",
+          "headline": "Week 8 Injury Report | Titans at Bengals Who's in, who's out for the Titans in Week 8 vs the Cincinnati Bengals",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.tennesseetitans.com/news/titans-sign-punter-thomas-morstead-to-practice-squad",
-          "headline": "Titans Sign Punter Thomas Morstead to Practice Squad With the 49ers in 2025, Morstead averaged 43.6 yards on 44 punts, with a 36.7-yard net, putting 22 punts inside the 20-yard line.",
+          "headline": "Titans Sign Punter Thomas Morstead to Practice Squad Oct 28, 2026 With the 49ers in 2025, Morstead averaged 43.6 yards on 44 punts, with a 36.7-yard net, putting 22 punts inside the 20-yard line.",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.tennesseetitans.com/news/last-second-field-goal-dooms-titans-in-27-24-loss-to-the-browns",
           "headline": "Mistakes, Missed Opportunities Doom Titans in 27-24 Loss to the Browns Oct 25, 2026 Trailing 24-17 with just under five minutes left, Titans quarterback Cam Ward directed an 11-play, 63-yard drive that was capped off wit",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.tennesseetitans.com/news/game-inactives-week-7-titans-vs-browns",
-          "headline": "Game Inactives | Week 7 Titans vs Browns Oct 25, 2026 Who's in, who's out for the Titans and Browns in Week 7",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.tennesseetitans.com/news/quick-hits-on-the-titans-from-friday-of-browns-week",
-          "headline": "Quick Hits on the Titans From Friday of Browns Week Oct 23, 2026 The Titans returned to the practice field on Wednesday at Vanderbilt Health Football Center to continue preparations for Sunday's game vs the Cleveland Bro",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {

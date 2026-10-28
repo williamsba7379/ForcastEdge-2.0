@@ -3,10 +3,10 @@
   "season": 2026,
   "week": 8,
   "teamGameEntries": 28,
-  "totalRankedLinks": 465,
-  "eligiblePregameLinks": 1,
-  "teamsWithEligibleLinks": 1,
-  "undatedLinks": 265,
+  "totalRankedLinks": 477,
+  "eligiblePregameLinks": 2,
+  "teamsWithEligibleLinks": 2,
+  "undatedLinks": 275,
   "noEligibleLinkTeams": [
     "Carolina Panthers",
     "Green Bay Packers",
@@ -32,7 +32,6 @@
     "New England Patriots",
     "Miami Dolphins",
     "Philadelphia Eagles",
-    "Washington Commanders",
     "Chicago Bears",
     "Seattle Seahawks"
   ],
