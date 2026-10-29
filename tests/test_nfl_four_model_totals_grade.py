@@ -9,7 +9,8 @@ from nfl_four_model_totals_grade import grade, MODELS
 def game(id, home, away, score=None, market=45, predicted=47, picks=None):
     row={"id":str(id),"home":home,"away":away,
          "models":{m:{"projectedTotal":predicted,"marketTotal":market,
-                       "overUnderPick":(picks or {}).get(m,"OVER")} for m in MODELS}}
+                       "overUnderPick":(picks or {}).get(m,"OVER"),
+                       "winnerPick":home if m in ("A","C") else away} for m in MODELS}}
     final={"id":str(id),"home":home,"away":away,"completed":True,
            "homeScore":score[0],"awayScore":score[1]} if score else None
     return row,final
@@ -24,6 +25,10 @@ def test():
     history={"games":[fa,fb,fc]}
     result=grade(copy.deepcopy(source),history)
     stats=result["gradingSummary"]
+    assert stats["A"]["winnerWins"]==3 and stats["A"]["winnerLosses"]==0,stats
+    assert stats["B"]["winnerWins"]==0 and stats["B"]["winnerLosses"]==3,stats
+    assert stats["A"]["winnerAccuracyPct"]==100.0,stats
+    assert stats["B"]["winnerAccuracyPct"]==0.0,stats
     assert stats["A"]["totalsWins"]==1,stats
     assert stats["A"]["totalsLosses"]==1,stats
     assert stats["A"]["totalsPushes"]==1,stats
