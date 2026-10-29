@@ -22,6 +22,9 @@ def grade(report,history):
         row["actualTotal"]=total
         row["actualWinner"]=row["home"] if home>away else row["away"] if away>home else None
         for model in MODELS:
+            winner_pick=row["models"][model].get("winnerPick")
+            if row["actualWinner"] is not None and winner_pick in (row["home"],row["away"]):
+                summary[model]["winnerWins" if winner_pick==row["actualWinner"] else "winnerLosses"]+=1
             pred=row["models"][model]
             projected=pred.get("projectedTotal")
             if projected is not None:
@@ -39,6 +42,8 @@ def grade(report,history):
             summary[model][key]+=1
     for model,stats in summary.items():
         count=stats["totalsWins"]+stats["totalsLosses"]
+        winner_count=stats["winnerWins"]+stats["winnerLosses"]
+        stats["winnerAccuracyPct"]=round(100*stats["winnerWins"]/winner_count,2) if winner_count else None
         stats["totalsAccuracyPct"]=round(100*stats["totalsWins"]/count,2) if count else None
         stats["meanAbsoluteTotalError"]=round(stats["totalAbsoluteErrorSum"]/stats["totalErrorGames"],2) if stats["totalErrorGames"] else None
         del stats["totalAbsoluteErrorSum"]
