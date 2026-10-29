@@ -1,6 +1,6 @@
 {
   "status": "DISCOVERY_ONLY_NOT_STARTER_CONFIRMATION",
-  "generatedAt": "2026-10-28T23:17:54.348811+00:00",
+  "generatedAt": "2026-10-29T03:51:38.093648+00:00",
   "automaticConfirmations": 0,
   "teams": [
     {
@@ -975,18 +975,23 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.azcardinals.com/news/injury-report-week-8-vs-cowboys",
+          "headline": "news Injury Report: Week 8 vs Cowboys Check in on the health of the Cardinals heading into their Week 8 matchup with the Cowboys",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.azcardinals.com/news/cardinals-bring-back-zay-jones-to-practice-squad",
           "headline": "news Cardinals Bring Back Zay Jones To Practice Squad Veteran wide receiver played for team in '24 and '25",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
-          "url": "https://www.azcardinals.com/news/jalen-brooks-season-ending-injury-creates-another-challenge-for-cardinals",
-          "headline": "news Jalen Brooks' Season-Ending Injury Creates Another Challenge For Cardinals Love to return to practice on Wednesday",
+          "url": "https://www.azcardinals.com/news/you-ve-got-mail-in-the-nfl-quarterbacks-are-always-a-talking-point",
+          "headline": "news You've Got Mail: In The NFL, Quarterbacks Are Always A Talking Point Topics include Beck timeline, Fitz's future, and spotters in the booth",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
-          "url": "https://www.azcardinals.com/news/you-ve-got-mail-in-the-nfl-quarterbacks-are-always-a-talking-point",
-          "headline": "news You've Got Mail: In The NFL, Quarterbacks Are Always A Talking Point Topics include Beck timeline, Fitz's future, and spotters in the booth",
+          "url": "https://www.azcardinals.com/news/jalen-brooks-season-ending-injury-creates-another-challenge-for-cardinals",
+          "headline": "news Jalen Brooks' Season-Ending Injury Creates Another Challenge For Cardinals Love to return to practice on Wednesday",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1184,6 +1189,11 @@
       "fetchStatus": "OK",
       "candidates": [
         {
+          "url": "https://www.bengals.com/news/quick-hits-ryan-rehkow-break-out-bryan-cook-joe-burrow-applaud-jamarr-chase-cashius-howell-first-sack",
+          "headline": "news Quick Hits | Ryan Rehkow Has Been All Touch With No Looking Back; Leaders Applaud Ja'Marrspeak; Cashius Howell Reflects on First NFL Sack Notes and quotes from Wednesday at Paycor Stadium",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.bengals.com/news/bengals-titans-week-8-2026-injury-report",
           "headline": "news Week 8 Injury Report | Titans vs Bengals Take a look at the injury reports of the Cincinnati Bengals and the Tennessee Titans leading into Week 8 of the 2026 season.",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
@@ -1200,7 +1210,7 @@
         },
         {
           "url": "https://www.bengals.com/news/joe-burrow-ryan-rehkow-afc-offensive-special-teams-player-of-the-week-7-2026",
-          "headline": "news Joe Burrow, Ryan Rehkow Receive AFC Player of the Week Honors Bengals QB Joe Burrow was named AFC Offensive Player of the Week, while P Ryan Rehkow was named AFC Special Teams Player of the Week for their performanc",
+          "headline": "news Joe Burrow, Ryan Rehkow Receive AFC Player of the Week Honors",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -1326,11 +1336,6 @@
         {
           "url": "https://www.bengals.com/news/game-within-the-game-joe-burrow-c-j-uzomah-jags-super-bowl-run",
           "headline": "news Game Within The Game | When Joe Burrow And C.J Uzomah Turned Zero Into 24-21",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.bengals.com/news/how-ravens-son-orlando-brown-jr-has-been-at-heart-of-o-line-surge-joe-burrow-ted-karras",
-          "headline": "news Game Within The Game | How Ravens' Son Orlando Brown Jr., Has Been At Heart Of Bengals O-Line Surge",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -1468,11 +1473,6 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
-          "url": "https://www.dallascowboys.com/news/dak-prescott-details-how-finding-rhythm-in-run-game-can-help-spark-cowboys-offense",
-          "headline": "Dak Prescott details how finding rhythm in run game can help spark Cowboys offense Cowboys QB Dak Prescott says Dallas is \"urgent to get it done now\" in terms of stacking wins. If they want to do so, they'll need to find",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
           "url": "https://www.dallascowboys.com/news/mick-shots-feeling-the-brunt-of-all-the-blitzes",
           "headline": "Mick Shots: Feeling the brunt of all the blitzes The Cowboys' offense has become a prime target for aggressive blitz packages, and until Dak Prescott and company prove they can punish those extra rushers, opponents will ",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
@@ -1500,13 +1500,18 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
-          "url": "https://www.denverbroncos.com/news/injuryreport/injury-report-pat-surtain-ii-improves-to-full-participant-3-broncos-do-not-practice-ahead-of-week-8-game-vs-chiefs",
-          "headline": "Injury Report: Pat Surtain II improves to full participant, 3 Broncos do not practice ahead of Week 8 game vs. Chiefs The Broncos\u2019 All-Pro cornerback has improved to a full participant ahead of Denver\u2019s Week 8 game again",
+          "url": "https://www.denverbroncos.com/news/it-starts-with-me-qb-bo-nix-not-satisfied-takes-ownership-of-needed-offensive-improvement",
+          "headline": "'It starts with me': QB Bo Nix 'not satisfied,' takes ownership of needed offensive improvement \"I don\u2019t have a choice but to get better,\" Nix said. \"I can\u2019t stay the same.\"",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
           "url": "https://www.denverbroncos.com/news/broncos-sign-wr-eli-pancol-to-practice-squad",
           "headline": "Broncos sign WR Eli Pancol to practice squad",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.denverbroncos.com/news/injuryreport/injury-report-pat-surtain-ii-improves-to-full-participant-3-broncos-do-not-practice-ahead-of-week-8-game-vs-chiefs",
+          "headline": "Injury Report: Pat Surtain II improves to full participant, 3 Broncos do not practice ahead of Week 8 game vs. Chiefs The Broncos' All-Pro cornerback has improved to a full participant ahead of Denver's Week 8 game again",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -2046,6 +2051,11 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.therams.com/news/rams-injury-updates-will-not-open-21-day-practice-windows-myles-garrett-terrance-ferguson-week-8-2026-chargers-trent-mcduffie-nate-landman-davante-adams",
+          "headline": "news Injury Updates: Rams will not open 21-day practice windows for Myles Garrett or Terrance Ferguson in Week 8; latest on Trent McDuffie, Nate Landman and Davante Adams Oct 28, 2026 Rams head coach Sean McVay discusses",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.therams.com/news/from-the-podium-head-coach-sean-mcvay-quarterback-matthew-stafford-wide-receiver-puka-nacua-defensive-end-aaron-donald-coordinators-preview-matchup-against-chargers-sofi-stadium-press-conference-2026",
           "headline": "news From the Podium: Sean McVay and Matthew Stafford preview matchup against Chargers at SoFi Stadium Oct 28, 2026 Rams head coach Sean McVay and quarterback Matthew Stafford shared their thoughts on the upcoming matchu",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
@@ -2063,11 +2073,6 @@
         {
           "url": "https://www.therams.com/news/from-the-podium-head-coach-sean-mcvay-quarterback-matthew-stafford-give-run-down-on-rams-balanced-win-over-raiders-press-conference-2026",
           "headline": "news From the Podium: Sean McVay and Matthew Stafford give run down on Rams' balanced win over Raiders Oct 25, 2026 Rams head coach Sean McVay and quarterback Matthew Stafford explained how the Rams offense found a balan",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.therams.com/news/trent-mcduffie-among-rams-inactives-for-week-7-2026-at-raiders",
-          "headline": "news Trent McDuffie and Nate Landman among Rams' inactives for Week 7 at Raiders Oct 25, 2026 Inactives for Sunday's Week 7 regular season game between the Rams and the Raiders at Allegiant Stadium.",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         }
       ]
@@ -2528,6 +2533,11 @@
       "fetchStatus": "OK",
       "candidates": [
         {
+          "url": "https://www.newyorkjets.com/news/harrison-phillips-jets-looking-forward-to-raiders-qb-kirk-cousins-10-28-2026",
+          "headline": "Harrison Phillips Wants a Sack Against Old Friend, Raiders QB Kirk Cousins Jets DT: 'He's One of My All-Time Favorite Teammates'",
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.newyorkjets.com/news/jets-vs-raiders-week-8-nfl-geno-smith-kirk-cousins-10-28-2026",
           "headline": "Jets Set for Week 8 Clash with Las Vegas Raiders Raiders Defense Allowing Third-Most Yards Per Game",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
@@ -2535,11 +2545,6 @@
         {
           "url": "https://www.newyorkjets.com/news/jets-injury-report-week-8-vs-raiders-wednesday-10-28-2026",
           "headline": "Jets Injury Report | Week 8 vs. Raiders - Wednesday RBs Braelon Allen (Ankle) & Breece Hall (Quad) Limited Participants",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.newyorkjets.com/news/stock-report-jets-rb-room-nearing-full-strength-mason-taylor-becoming-weapon-10-28-2026",
-          "headline": "Stock Report | Jets RB Room Nearing Full Strength Mason Taylor Emerging as a Versatile Weapon; Raiders QB Kirk Cousins Playing at a High Level at Age 38",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
@@ -2585,11 +2590,6 @@
         {
           "url": "https://www.newyorkjets.com/news/jets-injury-report-week-7-vs-dolphins-friday-10-23-2026",
           "headline": "Jets Injury Report | Week 7 vs. Dolphins - Friday Breece Hall (Quad), Dylan Parham (Knee) and Kene Nwangwu (Knee) All Questionable for Week 7",
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.newyorkjets.com/news/jets-injury-report-week-7-vs-dolphins-thursday-10-22-2026",
-          "headline": "Jets Injury Report | Week 7 vs. Dolphins - Thursday RB Breece Hall (Quad) Limited at Practice",
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {

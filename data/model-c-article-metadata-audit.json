@@ -3,8 +3,8 @@
   "automaticConfirmations": 0,
   "totalArticles": 56,
   "counts": {
-    "WITHIN_SEVEN_DAYS": 33,
-    "OLDER_THAN_SEVEN_DAYS": 21,
+    "WITHIN_SEVEN_DAYS": 32,
+    "OLDER_THAN_SEVEN_DAYS": 22,
     "AFTER_KICKOFF": 0,
     "DATE_UNVERIFIED": 2,
     "FETCH_FAILED": 0,
@@ -91,8 +91,8 @@
     {
       "gameId": "401873031",
       "team": "Cincinnati Bengals",
-      "url": "https://www.bengals.com/news/joe-burrow-ryan-rehkow-afc-offensive-special-teams-player-of-the-week-7-2026",
-      "publicationWindow": "WITHIN_SEVEN_DAYS",
+      "url": "https://www.bengals.com/news/postgame-quick-hits-ja-marr-s-injury-jags-defense-beat-joe-burrow-s-big-passing-day",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
       "starterConfirmed": false
     },
     {
@@ -112,15 +112,15 @@
     {
       "gameId": "401873024",
       "team": "Dallas Cowboys",
-      "url": "https://www.dallascowboys.com/news/dak-prescott-details-how-finding-rhythm-in-run-game-can-help-spark-cowboys-offense",
-      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
+      "url": "https://www.dallascowboys.com/news/balance-on-offense-plays-big-role-for-dak-prescott-cowboys-in-38-21-win-over-eagles",
+      "publicationWindow": "WITHIN_SEVEN_DAYS",
       "starterConfirmed": false
     },
     {
       "gameId": "401873024",
       "team": "Dallas Cowboys",
-      "url": "https://www.dallascowboys.com/news/balance-on-offense-plays-big-role-for-dak-prescott-cowboys-in-38-21-win-over-eagles",
-      "publicationWindow": "WITHIN_SEVEN_DAYS",
+      "url": "https://www.dallascowboys.com/news/mick-shots-feeling-the-brunt-of-all-the-blitzes",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
       "starterConfirmed": false
     },
     {
@@ -308,14 +308,14 @@
     {
       "gameId": "401873033",
       "team": "Denver Broncos",
-      "url": "https://www.denverbroncos.com/news/broncos-sign-wr-eli-pancol-to-practice-squad",
+      "url": "https://www.denverbroncos.com/news/it-starts-with-me-qb-bo-nix-not-satisfied-takes-ownership-of-needed-offensive-improvement",
       "publicationWindow": "WITHIN_SEVEN_DAYS",
       "starterConfirmed": false
     },
     {
       "gameId": "401873033",
       "team": "Denver Broncos",
-      "url": "https://www.denverbroncos.com/news/injuryreport/injury-report-pat-surtain-ii-improves-to-full-participant-3-broncos-do-not-practice-ahead-of-week-8-game-vs-chiefs",
+      "url": "https://www.denverbroncos.com/news/broncos-sign-wr-eli-pancol-to-practice-squad",
       "publicationWindow": "WITHIN_SEVEN_DAYS",
       "starterConfirmed": false
     },

@@ -2,7 +2,7 @@
   "status": "HUMAN_REVIEW_QUEUE_ONLY",
   "season": 2026,
   "week": 8,
-  "generatedAt": "2026-10-28T23:17:47.735988+00:00",
+  "generatedAt": "2026-10-29T03:51:29.449427+00:00",
   "automaticConfirmations": 0,
   "games": 14,
   "items": [
@@ -84,7 +84,7 @@
           "reportedStatus": "Questionable",
           "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Sprain', 'side': 'Left', 'returnDate': '2026-11-01'}",
           "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "retrievedAt": "2026-10-28T23:17:20.108993+00:00",
+          "retrievedAt": "2026-10-29T03:50:44.654020+00:00",
           "starterConfirmed": false,
           "reviewRequired": true
         }
@@ -226,7 +226,7 @@
           "reportedStatus": "Questionable",
           "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Back', 'location': 'Torso', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-01'}",
           "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "retrievedAt": "2026-10-28T23:17:20.108993+00:00",
+          "retrievedAt": "2026-10-29T03:50:44.654020+00:00",
           "starterConfirmed": false,
           "reviewRequired": true
         }
@@ -869,7 +869,7 @@
           "reportedStatus": "Questionable",
           "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Elbow', 'location': 'Arm', 'detail': 'Not Specified', 'side': 'Right', 'returnDate': '2026-11-02'}",
           "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-          "retrievedAt": "2026-10-28T23:17:20.108993+00:00",
+          "retrievedAt": "2026-10-29T03:50:44.654020+00:00",
           "starterConfirmed": false,
           "reviewRequired": true
         }

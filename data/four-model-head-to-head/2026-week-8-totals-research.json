@@ -1,0 +1,612 @@
+{
+  "season": 2026,
+  "week": 8,
+  "generatedAt": "2026-10-29T03:51:29.342600+00:00",
+  "sourceComparisonFrozenAt": "2026-10-29T03:51:29.283722+00:00",
+  "status": "RESEARCH_ONLY_NO_MARKET_LINES",
+  "warning": "Experimental point projections, NOT validated or independent C/C-QB total models. No sportsbook lines, no O/U or ATS picks.",
+  "games": [
+    {
+      "id": "401873023",
+      "home": "Green Bay Packers",
+      "away": "Carolina Panthers",
+      "models": {
+        "A": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 25.3,
+          "projectedAway": 21.3,
+          "projectedTotal": 46.6,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "B": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 24.9,
+          "projectedAway": 22.9,
+          "projectedTotal": 47.7,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "C": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 26.6,
+          "projectedAway": 20.0,
+          "projectedTotal": 46.6,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "C-QB": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 26.6,
+          "projectedAway": 20.0,
+          "projectedTotal": 46.6,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        }
+      }
+    },
+    {
+      "id": "401873026",
+      "home": "Buffalo Bills",
+      "away": "Baltimore Ravens",
+      "models": {
+        "A": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 28.9,
+          "projectedAway": 25.0,
+          "projectedTotal": 53.9,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "B": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 29.1,
+          "projectedAway": 25.6,
+          "projectedTotal": 54.7,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "C": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 30.2,
+          "projectedAway": 23.7,
+          "projectedTotal": 53.9,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "C-QB": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 30.2,
+          "projectedAway": 23.7,
+          "projectedTotal": 53.9,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        }
+      }
+    },
+    {
+      "id": "401873031",
+      "home": "Cincinnati Bengals",
+      "away": "Tennessee Titans",
+      "models": {
+        "A": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 25.9,
+          "projectedAway": 17.4,
+          "projectedTotal": 43.2,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "B": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 25.5,
+          "projectedAway": 17.1,
+          "projectedTotal": 42.6,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "C": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 29.4,
+          "projectedAway": 13.9,
+          "projectedTotal": 43.2,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "C-QB": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 29.4,
+          "projectedAway": 13.9,
+          "projectedTotal": 43.2,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        }
+      }
+    },
+    {
+      "id": "401873024",
+      "home": "Dallas Cowboys",
+      "away": "Arizona Cardinals",
+      "models": {
+        "A": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 28.5,
+          "projectedAway": 21.5,
+          "projectedTotal": 50.0,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "B": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 29.1,
+          "projectedAway": 22.2,
+          "projectedTotal": 51.4,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "C": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 31.2,
+          "projectedAway": 18.8,
+          "projectedTotal": 50.0,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "C-QB": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 31.2,
+          "projectedAway": 18.8,
+          "projectedTotal": 50.0,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        }
+      }
+    },
+    {
+      "id": "401873030",
+      "home": "Detroit Lions",
+      "away": "Minnesota Vikings",
+      "models": {
+        "A": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 22.0,
+          "projectedAway": 22.4,
+          "projectedTotal": 44.4,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "B": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 22.2,
+          "projectedAway": 23.4,
+          "projectedTotal": 45.7,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "C": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 21.1,
+          "projectedAway": 23.3,
+          "projectedTotal": 44.4,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "C-QB": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 21.1,
+          "projectedAway": 23.3,
+          "projectedTotal": 44.4,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        }
+      }
+    },
+    {
+      "id": "401873029",
+      "home": "New York Jets",
+      "away": "Las Vegas Raiders",
+      "models": {
+        "A": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 26.1,
+          "projectedAway": 22.6,
+          "projectedTotal": 48.8,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "B": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 24.6,
+          "projectedAway": 23.0,
+          "projectedTotal": 47.6,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "C": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 27.2,
+          "projectedAway": 21.6,
+          "projectedTotal": 48.8,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "C-QB": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 27.2,
+          "projectedAway": 21.6,
+          "projectedTotal": 48.8,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        }
+      }
+    },
+    {
+      "id": "401873027",
+      "home": "Pittsburgh Steelers",
+      "away": "Cleveland Browns",
+      "models": {
+        "A": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 22.0,
+          "projectedAway": 17.9,
+          "projectedTotal": 40.0,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "B": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 22.1,
+          "projectedAway": 18.6,
+          "projectedTotal": 40.7,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "C": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 23.4,
+          "projectedAway": 16.6,
+          "projectedTotal": 40.0,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "C-QB": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 23.4,
+          "projectedAway": 16.6,
+          "projectedTotal": 40.0,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        }
+      }
+    },
+    {
+      "id": "401873025",
+      "home": "Tampa Bay Buccaneers",
+      "away": "Atlanta Falcons",
+      "models": {
+        "A": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 25.8,
+          "projectedAway": 21.8,
+          "projectedTotal": 47.7,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "B": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 24.7,
+          "projectedAway": 22.2,
+          "projectedTotal": 46.9,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "C": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 27.1,
+          "projectedAway": 20.6,
+          "projectedTotal": 47.7,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "C-QB": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 27.1,
+          "projectedAway": 20.6,
+          "projectedTotal": 47.7,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        }
+      }
+    },
+    {
+      "id": "401873028",
+      "home": "Jacksonville Jaguars",
+      "away": "Indianapolis Colts",
+      "models": {
+        "A": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 26.1,
+          "projectedAway": 19.0,
+          "projectedTotal": 45.1,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "B": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 26.4,
+          "projectedAway": 18.9,
+          "projectedTotal": 45.4,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "C": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 28.9,
+          "projectedAway": 16.2,
+          "projectedTotal": 45.1,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "C-QB": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 28.9,
+          "projectedAway": 16.2,
+          "projectedTotal": 45.1,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        }
+      }
+    },
+    {
+      "id": "401873032",
+      "home": "Los Angeles Rams",
+      "away": "Los Angeles Chargers",
+      "models": {
+        "A": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 26.1,
+          "projectedAway": 18.6,
+          "projectedTotal": 44.6,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "B": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 25.5,
+          "projectedAway": 18.1,
+          "projectedTotal": 43.6,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "C": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 29.1,
+          "projectedAway": 15.5,
+          "projectedTotal": 44.6,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "C-QB": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 29.1,
+          "projectedAway": 15.5,
+          "projectedTotal": 44.6,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        }
+      }
+    },
+    {
+      "id": "401873033",
+      "home": "Denver Broncos",
+      "away": "Kansas City Chiefs",
+      "models": {
+        "A": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 20.1,
+          "projectedAway": 19.7,
+          "projectedTotal": 39.8,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "B": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 19.6,
+          "projectedAway": 21.2,
+          "projectedTotal": 40.9,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "C": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 19.5,
+          "projectedAway": 20.3,
+          "projectedTotal": 39.8,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "C-QB": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 19.5,
+          "projectedAway": 20.3,
+          "projectedTotal": 39.8,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        }
+      }
+    },
+    {
+      "id": "401873034",
+      "home": "Miami Dolphins",
+      "away": "New England Patriots",
+      "models": {
+        "A": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 20.0,
+          "projectedAway": 24.7,
+          "projectedTotal": 44.7,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "B": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 19.1,
+          "projectedAway": 23.8,
+          "projectedTotal": 42.9,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "C": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 16.9,
+          "projectedAway": 27.8,
+          "projectedTotal": 44.7,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "C-QB": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 16.9,
+          "projectedAway": 27.8,
+          "projectedTotal": 44.7,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        }
+      }
+    },
+    {
+      "id": "401873035",
+      "home": "Washington Commanders",
+      "away": "Philadelphia Eagles",
+      "models": {
+        "A": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 24.1,
+          "projectedAway": 22.2,
+          "projectedTotal": 46.4,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "B": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 24.2,
+          "projectedAway": 22.7,
+          "projectedTotal": 46.9,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "C": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 24.4,
+          "projectedAway": 22.0,
+          "projectedTotal": 46.4,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "C-QB": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 24.4,
+          "projectedAway": 22.0,
+          "projectedTotal": 46.4,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        }
+      }
+    },
+    {
+      "id": "401873036",
+      "home": "Seattle Seahawks",
+      "away": "Chicago Bears",
+      "models": {
+        "A": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 23.3,
+          "projectedAway": 20.5,
+          "projectedTotal": 43.8,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "B": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 23.0,
+          "projectedAway": 21.0,
+          "projectedTotal": 44.0,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "C": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 24.0,
+          "projectedAway": 19.8,
+          "projectedTotal": 43.8,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        },
+        "C-QB": {
+          "status": "EXPERIMENTAL_UNCALIBRATED",
+          "projectedHome": 24.0,
+          "projectedAway": 19.8,
+          "projectedTotal": 43.8,
+          "overUnderPick": null,
+          "spreadPick": null,
+          "note": "Market total/spread not supplied: no over/under or ATS selection."
+        }
+      }
+    }
+  ]
+}

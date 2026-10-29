@@ -1705,21 +1705,6 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
-          "url": "https://www.bengals.com/news/joe-burrow-ryan-rehkow-afc-offensive-special-teams-player-of-the-week-7-2026",
-          "headline": "news Joe Burrow, Ryan Rehkow Receive AFC Player of the Week Honors Bengals QB Joe Burrow was named AFC Offensive Player of the Week, while P Ryan Rehkow was named AFC Special Teams Player of the Week for their performanc",
-          "score": 10,
-          "reasons": [
-            "OWN_QB_CANDIDATE",
-            "QB_TERMS",
-            "DATE_UNVERIFIED",
-            "OWN_QB_STATUS_NOT_ESTABLISHED",
-            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
-          ],
-          "dateFromHeadline": null,
-          "pregameShortlistEligible": false,
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
           "url": "https://www.bengals.com/news/postgame-quick-hits-ja-marr-s-injury-jags-defense-beat-joe-burrow-s-big-passing-day",
           "headline": "news Postgame Quick Hits | Ja'Marr's Injury, Jags Defense Beat Joe Burrow's Big Passing Day",
           "score": 9,
@@ -1804,8 +1789,8 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
-          "url": "https://www.bengals.com/news/how-ravens-son-orlando-brown-jr-has-been-at-heart-of-o-line-surge-joe-burrow-ted-karras",
-          "headline": "news Game Within The Game | How Ravens' Son Orlando Brown Jr., Has Been At Heart Of Bengals O-Line Surge",
+          "url": "https://www.bengals.com/news/joe-burrow-fedex-air-ground-players-of-week-7-2026-nominee",
+          "headline": "news Joe Burrow Nominated for FedEx Air & Ground Players of Week 7",
           "score": 7,
           "reasons": [
             "OWN_QB_CANDIDATE",
@@ -1818,8 +1803,8 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
-          "url": "https://www.bengals.com/news/joe-burrow-fedex-air-ground-players-of-week-7-2026-nominee",
-          "headline": "news Joe Burrow Nominated for FedEx Air & Ground Players of Week 7",
+          "url": "https://www.bengals.com/news/joe-burrow-ryan-rehkow-afc-offensive-special-teams-player-of-the-week-7-2026",
+          "headline": "news Joe Burrow, Ryan Rehkow Receive AFC Player of the Week Honors",
           "score": 7,
           "reasons": [
             "OWN_QB_CANDIDATE",
@@ -1918,6 +1903,20 @@
         {
           "url": "https://www.bengals.com/news/quick-hits-joe-burrow-knows-it-s-gone-through-baltimore-bryan-cook-lamar-jackson-derrick-henry",
           "headline": "news Quick Hits | Joe Knows: 'It's Gone Through Baltimore\"; Bryan Cook Eyes Re-Match With Lamar And King Henry",
+          "score": 7,
+          "reasons": [
+            "OWN_QB_CANDIDATE",
+            "DATE_UNVERIFIED",
+            "OWN_QB_STATUS_NOT_ESTABLISHED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
+          "url": "https://www.bengals.com/news/quick-hits-ryan-rehkow-break-out-bryan-cook-joe-burrow-applaud-jamarr-chase-cashius-howell-first-sack",
+          "headline": "news Quick Hits | Ryan Rehkow Has Been All Touch With No Looking Back; Leaders Applaud Ja'Marrspeak; Cashius Howell Reflects on First NFL Sack Notes and quotes from Wednesday at Paycor Stadium",
           "score": 7,
           "reasons": [
             "OWN_QB_CANDIDATE",
@@ -2344,6 +2343,21 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
+          "url": "https://www.azcardinals.com/news/injury-report-week-8-vs-cowboys",
+          "headline": "news Injury Report: Week 8 vs Cowboys Check in on the health of the Cardinals heading into their Week 8 matchup with the Cowboys",
+          "score": 0,
+          "reasons": [
+            "STATUS_TERMS",
+            "DATE_UNVERIFIED",
+            "NO_OWN_QB_NAME",
+            "OWN_QB_STATUS_NOT_ESTABLISHED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.azcardinals.com/news/jalen-brooks-season-ending-injury-creates-another-challenge-for-cardinals",
           "headline": "news Jalen Brooks' Season-Ending Injury Creates Another Challenge For Cardinals Love to return to practice on Wednesday",
           "score": 0,
@@ -2396,21 +2410,6 @@
       "fetchStatus": "OK",
       "reviewRequired": true,
       "rankedLinks": [
-        {
-          "url": "https://www.dallascowboys.com/news/dak-prescott-details-how-finding-rhythm-in-run-game-can-help-spark-cowboys-offense",
-          "headline": "Dak Prescott details how finding rhythm in run game can help spark Cowboys offense Cowboys QB Dak Prescott says Dallas is \"urgent to get it done now\" in terms of stacking wins. If they want to do so, they'll need to find",
-          "score": 10,
-          "reasons": [
-            "OWN_QB_CANDIDATE",
-            "QB_TERMS",
-            "DATE_UNVERIFIED",
-            "OWN_QB_STATUS_NOT_ESTABLISHED",
-            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
-          ],
-          "dateFromHeadline": null,
-          "pregameShortlistEligible": false,
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
         {
           "url": "https://www.dallascowboys.com/news/balance-on-offense-plays-big-role-for-dak-prescott-cowboys-in-38-21-win-over-eagles",
           "headline": "Balance on offense plays big role for Dak Prescott, Cowboys in 38-21 win over Eagles The Cowboys entered Monday night searching for balance on offense. They found it, with over 200 yards rushing and passing against the E",
@@ -3278,8 +3277,8 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
-          "url": "https://www.newyorkjets.com/news/stock-report-jets-rb-room-nearing-full-strength-mason-taylor-becoming-weapon-10-28-2026",
-          "headline": "Stock Report | Jets RB Room Nearing Full Strength Mason Taylor Emerging as a Versatile Weapon; Raiders QB Kirk Cousins Playing at a High Level at Age 38",
+          "url": "https://www.newyorkjets.com/news/harrison-phillips-jets-looking-forward-to-raiders-qb-kirk-cousins-10-28-2026",
+          "headline": "Harrison Phillips Wants a Sack Against Old Friend, Raiders QB Kirk Cousins Jets DT: 'He's One of My All-Time Favorite Teammates'",
           "score": 1,
           "reasons": [
             "QB_TERMS",
@@ -3325,21 +3324,6 @@
         {
           "url": "https://www.newyorkjets.com/news/jets-injury-report-week-7-vs-dolphins-friday-10-23-2026",
           "headline": "Jets Injury Report | Week 7 vs. Dolphins - Friday Breece Hall (Quad), Dylan Parham (Knee) and Kene Nwangwu (Knee) All Questionable for Week 7",
-          "score": 0,
-          "reasons": [
-            "STATUS_TERMS",
-            "DATE_UNVERIFIED",
-            "NO_OWN_QB_NAME",
-            "OWN_QB_STATUS_NOT_ESTABLISHED",
-            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
-          ],
-          "dateFromHeadline": null,
-          "pregameShortlistEligible": false,
-          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
-        },
-        {
-          "url": "https://www.newyorkjets.com/news/jets-injury-report-week-7-vs-dolphins-thursday-10-22-2026",
-          "headline": "Jets Injury Report | Week 7 vs. Dolphins - Thursday RB Breece Hall (Quad) Limited at Practice",
           "score": 0,
           "reasons": [
             "STATUS_TERMS",
@@ -5099,16 +5083,17 @@
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
         {
-          "url": "https://www.therams.com/news/trent-mcduffie-among-rams-inactives-for-week-7-2026-at-raiders",
-          "headline": "news Trent McDuffie and Nate Landman among Rams' inactives for Week 7 at Raiders Oct 25, 2026 Inactives for Sunday's Week 7 regular season game between the Rams and the Raiders at Allegiant Stadium.",
-          "score": 1,
+          "url": "https://www.therams.com/news/rams-injury-updates-will-not-open-21-day-practice-windows-myles-garrett-terrance-ferguson-week-8-2026-chargers-trent-mcduffie-nate-landman-davante-adams",
+          "headline": "news Injury Updates: Rams will not open 21-day practice windows for Myles Garrett or Terrance Ferguson in Week 8; latest on Trent McDuffie, Nate Landman and Davante Adams Oct 28, 2026 Rams head coach Sean McVay discusses",
+          "score": 3,
           "reasons": [
+            "STATUS_TERMS",
             "RECENT_PRE_GAME",
             "NO_OWN_QB_NAME",
             "OWN_QB_STATUS_NOT_ESTABLISHED",
             "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
           ],
-          "dateFromHeadline": "2026-10-25",
+          "dateFromHeadline": "2026-10-28",
           "pregameShortlistEligible": false,
           "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
         },
@@ -5362,6 +5347,21 @@
       "reviewRequired": true,
       "rankedLinks": [
         {
+          "url": "https://www.denverbroncos.com/news/it-starts-with-me-qb-bo-nix-not-satisfied-takes-ownership-of-needed-offensive-improvement",
+          "headline": "'It starts with me': QB Bo Nix 'not satisfied,' takes ownership of needed offensive improvement \"I don\u2019t have a choice but to get better,\" Nix said. \"I can\u2019t stay the same.\"",
+          "score": 10,
+          "reasons": [
+            "OWN_QB_CANDIDATE",
+            "QB_TERMS",
+            "DATE_UNVERIFIED",
+            "OWN_QB_STATUS_NOT_ESTABLISHED",
+            "NOT_ELIGIBLE_FOR_PREGAME_SHORTLIST"
+          ],
+          "dateFromHeadline": null,
+          "pregameShortlistEligible": false,
+          "status": "UNVERIFIED_LINK_FOR_HUMAN_REVIEW"
+        },
+        {
           "url": "https://www.denverbroncos.com/news/broncos-sign-wr-eli-pancol-to-practice-squad",
           "headline": "Broncos sign WR Eli Pancol to practice squad",
           "score": 0,
@@ -5378,7 +5378,7 @@
         },
         {
           "url": "https://www.denverbroncos.com/news/injuryreport/injury-report-pat-surtain-ii-improves-to-full-participant-3-broncos-do-not-practice-ahead-of-week-8-game-vs-chiefs",
-          "headline": "Injury Report: Pat Surtain II improves to full participant, 3 Broncos do not practice ahead of Week 8 game vs. Chiefs The Broncos\u2019 All-Pro cornerback has improved to a full participant ahead of Denver\u2019s Week 8 game again",
+          "headline": "Injury Report: Pat Surtain II improves to full participant, 3 Broncos do not practice ahead of Week 8 game vs. Chiefs The Broncos' All-Pro cornerback has improved to a full participant ahead of Denver's Week 8 game again",
           "score": 0,
           "reasons": [
             "STATUS_TERMS",
