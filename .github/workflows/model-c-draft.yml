@@ -81,6 +81,10 @@ jobs:
       - name: Validate Model C-QB shadow parity
         if: steps.time.outputs.run == 'true'
         run: python3 scripts/model_c_qb_shadow_validate.py
+      - name: Collect sourced NFL market totals (best effort)
+        if: steps.time.outputs.run == 'true'
+        continue-on-error: true
+        run: python3 scripts/nfl_market_totals_feed.py
       - name: Generate fresh four-model comparison from current pregame inputs
         if: steps.time.outputs.run == 'true'
         run: |
@@ -147,6 +151,7 @@ jobs:
           git add data/four-model-head-to-head/*-refresh-*.json
           git add data/four-model-head-to-head/*-totals-research.json
           git add data/four-model-head-to-head/*-totals-market-comparison.json
+          if [ -f data/nfl-market-totals.json ]; then git add data/nfl-market-totals.json; fi
           git add data/model-c-automated-draft.json data/model-c-qb-review-queue.json data/model-c-qb-ranked-news.json data/model-c-qb-ranking-audit.json
           if [ -f data/model-c-official-article-metadata.json ]; then git add data/model-c-official-article-metadata.json; fi
           if [ -f data/model-c-article-metadata-audit.json ]; then git add data/model-c-article-metadata-audit.json; fi
