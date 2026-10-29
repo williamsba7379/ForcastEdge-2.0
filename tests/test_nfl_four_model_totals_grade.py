@@ -25,6 +25,8 @@ def test():
     history={"games":[fa,fb,fc]}
     result=grade(copy.deepcopy(source),history)
     stats=result["gradingSummary"]
+    assert result["completedGames"]==3 and result["pendingGames"]==1
+    assert result["gradingStatus"]=="PARTIALLY_GRADED"
     assert stats["A"]["winnerWins"]==3 and stats["A"]["winnerLosses"]==0,stats
     assert stats["B"]["winnerWins"]==0 and stats["B"]["winnerLosses"]==3,stats
     assert stats["A"]["winnerAccuracyPct"]==100.0,stats
@@ -36,8 +38,14 @@ def test():
     assert stats["B"]["totalsPushes"]==1,stats
     assert stats["A"]["totalsAccuracyPct"]==50.0
     assert stats["A"]["totalErrorGames"]==3
+    assert stats["A"]["meanAbsoluteTotalError"]==round((2+6+2)/3,2)
+    assert stats["C"]["winnerWins"]==3 and stats["C-QB"]["winnerLosses"]==3
     assert result["games"][3]["models"]["A"].get("totalCorrect") is None
     assert source==original,"Original frozen picks mutated"
+    pending=grade(copy.deepcopy(source),{"games":[]})
+    assert pending["gradingStatus"]=="PENDING_RESULTS" and pending["completedGames"]==0
+    complete=grade(copy.deepcopy(source),{"games":[fa,fb,fc,{"id":"4","home":"Home D","away":"Away D","completed":True,"homeScore":24,"awayScore":17}]})
+    assert complete["gradingStatus"]=="COMPLETE" and complete["pendingGames"]==0
     assert grade(copy.deepcopy(source),history)["gradingSummary"]==stats,"Nondeterministic grading"
     print("PASS: win/loss/push/pending, accuracy, total error, frozen source, deterministic replay")
 if __name__=="__main__":test()
