@@ -86,6 +86,9 @@ jobs:
         run: |
           python3 tests/test_nfl_four_model_refresh.py
           python3 scripts/nfl_four_model_refresh.py
+      - name: Generate experimental score and totals research (no market picks)
+        if: steps.time.outputs.run == 'true'
+        run: python3 scripts/nfl_four_model_totals_research.py
       - name: Audit unmodeled critical QB injuries
         if: steps.time.outputs.run == 'true'
         run: |
@@ -139,6 +142,7 @@ jobs:
           if [ -f data/model-c-qb-shadow-validation.json ]; then git add data/model-c-qb-shadow-validation.json; fi
           if [ -f data/model-c-qb-injury-audit-v2.json ]; then git add data/model-c-qb-injury-audit-v2.json; fi
           git add data/four-model-head-to-head/*-refresh-*.json
+          git add data/four-model-head-to-head/*-totals-research.json
           git add data/model-c-automated-draft.json data/model-c-qb-review-queue.json data/model-c-qb-ranked-news.json data/model-c-qb-ranking-audit.json
           if [ -f data/model-c-official-article-metadata.json ]; then git add data/model-c-official-article-metadata.json; fi
           if [ -f data/model-c-article-metadata-audit.json ]; then git add data/model-c-article-metadata-audit.json; fi
