@@ -12,7 +12,10 @@ def grade(report,history):
     for row in report["games"]:
         source=results.get(str(row["id"]))
         if not source or source.get("home")!=row["home"] or source.get("away")!=row["away"]:continue
-        if source.get("completed") is not True and str(source.get("status","")).lower() not in ("final","completed","post"):continue
+        status=str(source.get("status","")).lower()
+        final_flag=source.get("completed") is True or status in ("final","completed","post")
+        verified_winner=source.get("winner") in (row["home"],row["away"])
+        if not (final_flag or (not status and verified_winner)):continue
         try:
             home=float(source.get("scoreHome",source.get("homeScore")))
             away=float(source.get("scoreAway",source.get("awayScore")))
@@ -21,6 +24,7 @@ def grade(report,history):
         total=home+away
         row["actualTotal"]=total
         row["actualWinner"]=row["home"] if home>away else row["away"] if away>home else None
+        if verified_winner and source["winner"]!=row["actualWinner"]:continue
         for model in MODELS:
             winner_pick=row["models"][model].get("winnerPick")
             if row["actualWinner"] is not None and winner_pick in (row["home"],row["away"]):
