@@ -1,0 +1,18 @@
+name: Verify NFL four-model grading
+on:
+  push:
+    paths:
+      - 'scripts/nfl_four_model_totals_grade.py'
+      - 'scripts/nfl_four_model_totals_research.py'
+      - 'tests/test_nfl_four_model_totals_grade.py'
+      - '.github/workflows/nfl-four-model-grading-tests.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test-grading:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify separate winner, over-under, and total-points accuracy
+        run: python3 tests/test_nfl_four_model_totals_grade.py
