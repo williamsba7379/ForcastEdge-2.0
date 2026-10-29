@@ -1,5 +1,5 @@
 {
-  "retrievedAt": "2026-10-29T03:53:59.576184+00:00",
+  "retrievedAt": "2026-10-29T07:41:01.214345+00:00",
   "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
   "status": "UNVERIFIED_REPORTING_FEED",
   "caution": "Reported injuries only. Not confirmed starting lineups, expected workload, or calibrated point adjustments.",
@@ -797,8 +797,8 @@
         {
           "name": "Anthony Johnson Jr.",
           "position": "S",
-          "status": "Out",
-          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Undisclosed', 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-10-18'}"
+          "status": "Injured Reserve",
+          "description": "{'fantasyStatus': {'description': 'IR', 'abbreviation': 'IR'}, 'type': 'Undisclosed', 'location': 'Other', 'returnDate': '2026-10-18'}"
         },
         {
           "name": "Coby Bryant",
