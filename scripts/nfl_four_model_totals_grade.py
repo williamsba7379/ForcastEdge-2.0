@@ -12,7 +12,7 @@ def grade(report,history):
     for row in report["games"]:
         source=results.get(str(row["id"]))
         if not source or source.get("home")!=row["home"] or source.get("away")!=row["away"]:continue
-        if source.get("completed") is False:continue
+        if source.get("completed") is not True and str(source.get("status","")).lower() not in ("final","completed","post"):continue
         try:
             home=float(source.get("scoreHome",source.get("homeScore")))
             away=float(source.get("scoreAway",source.get("awayScore")))
