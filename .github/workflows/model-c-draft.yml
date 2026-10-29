@@ -99,6 +99,9 @@ jobs:
       - name: Test four-model totals grading
         if: steps.time.outputs.run == 'true'
         run: python3 tests/test_nfl_four_model_totals_grade.py
+      - name: Test four-model totals grading with controlled finals
+        if: steps.time.outputs.run == 'true'
+        run: python3 tests/test_nfl_four_model_totals_grade.py
       - name: Grade four-model totals when final results are available
         if: steps.time.outputs.run == 'true'
         run: python3 scripts/nfl_four_model_totals_grade.py
