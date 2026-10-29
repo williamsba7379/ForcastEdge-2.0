@@ -61,12 +61,19 @@ def grade(frozen,history):
         if row["winner"] is not None:continue
         game=lookup.get(row["id"])
         if not game:continue
+        # Historical results may omit status but include a verified final winner.
+        status = str(game.get("status", "")).strip().upper()
+        final_flag = game.get("isFinal") is True or status in ("FINAL", "STATUS_FINAL", "COMPLETED")
+        verified_winner = game.get("winner") in (row["home"], row["away"])
+        if not (final_flag or (not status and verified_winner)):
+            continue
         try:
             home=float(game.get("scoreHome",game.get("homeScore")))
             away=float(game.get("scoreAway",game.get("awayScore")))
         except (TypeError,ValueError):continue
         if home==away:continue
         winner=row["home"] if home>away else row["away"]
+        if verified_winner and game["winner"] != winner:continue
         if game.get("home")!=row["home"] or game.get("away")!=row["away"]:continue
         row["winner"]=winner
         row["correct"]={m:(p==winner) for m,p in row["picks"].items()}
