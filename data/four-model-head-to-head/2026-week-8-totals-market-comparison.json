@@ -1,8 +1,8 @@
 {
   "season": 2026,
   "week": 8,
-  "generatedAt": "2026-10-29T07:41:20.532461+00:00",
-  "sourceComparisonFrozenAt": "2026-10-29T07:41:20.460953+00:00",
+  "generatedAt": "2026-10-29T08:36:09.969876+00:00",
+  "sourceComparisonFrozenAt": "2026-10-29T08:36:09.918267+00:00",
   "status": "EXPERIMENTAL_SOURCED_MARKET_COMPARISON",
   "warning": "Uncalibrated experimental totals, not wagering advice. No pick without sourced, timestamped pregame market line.",
   "games": [
@@ -22,7 +22,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 47.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": -0.9
         },
         "B": {
@@ -35,7 +35,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 47.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": 0.2
         },
         "C": {
@@ -48,7 +48,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 47.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": -0.9
         },
         "C-QB": {
@@ -61,7 +61,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 47.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": -0.9
         }
       }
@@ -82,7 +82,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 54.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": -0.6
         },
         "B": {
@@ -95,7 +95,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 54.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": 0.2
         },
         "C": {
@@ -108,7 +108,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 54.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": -0.6
         },
         "C-QB": {
@@ -121,7 +121,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 54.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": -0.6
         }
       }
@@ -142,7 +142,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 46.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": -3.3
         },
         "B": {
@@ -155,7 +155,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 46.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": -3.9
         },
         "C": {
@@ -168,7 +168,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 46.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": -3.3
         },
         "C-QB": {
@@ -181,7 +181,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 46.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": -3.3
         }
       }
@@ -202,7 +202,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 54.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": -4.5
         },
         "B": {
@@ -215,7 +215,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 54.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": -3.1
         },
         "C": {
@@ -228,7 +228,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 54.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": -4.5
         },
         "C-QB": {
@@ -241,7 +241,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 54.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": -4.5
         }
       }
@@ -262,7 +262,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 46.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": -2.1
         },
         "B": {
@@ -275,7 +275,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 46.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": -0.8
         },
         "C": {
@@ -288,7 +288,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 46.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": -2.1
         },
         "C-QB": {
@@ -301,7 +301,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 46.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": -2.1
         }
       }
@@ -322,7 +322,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 45.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": 3.3
         },
         "B": {
@@ -335,7 +335,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 45.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": 2.1
         },
         "C": {
@@ -348,7 +348,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 45.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": 3.3
         },
         "C-QB": {
@@ -361,7 +361,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 45.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": 3.3
         }
       }
@@ -382,7 +382,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 39.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": 0.5
         },
         "B": {
@@ -395,7 +395,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 39.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": 1.2
         },
         "C": {
@@ -408,7 +408,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 39.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": 0.5
         },
         "C-QB": {
@@ -421,7 +421,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 39.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": 0.5
         }
       }
@@ -442,7 +442,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 44.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": 3.2
         },
         "B": {
@@ -455,7 +455,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 44.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": 2.4
         },
         "C": {
@@ -468,7 +468,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 44.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": 3.2
         },
         "C-QB": {
@@ -481,7 +481,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 44.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": 3.2
         }
       }
@@ -502,7 +502,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 46.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": -1.4
         },
         "B": {
@@ -515,7 +515,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 46.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": -1.1
         },
         "C": {
@@ -528,7 +528,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 46.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": -1.4
         },
         "C-QB": {
@@ -541,7 +541,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 46.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": -1.4
         }
       }
@@ -562,7 +562,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 45.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": -0.9
         },
         "B": {
@@ -575,7 +575,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 45.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": -1.9
         },
         "C": {
@@ -588,7 +588,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 45.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": -0.9
         },
         "C-QB": {
@@ -601,7 +601,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 45.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": -0.9
         }
       }
@@ -622,7 +622,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 40.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": -0.7
         },
         "B": {
@@ -635,7 +635,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 40.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": 0.4
         },
         "C": {
@@ -648,7 +648,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 40.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": -0.7
         },
         "C-QB": {
@@ -661,7 +661,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 40.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": -0.7
         }
       }
@@ -682,7 +682,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 43.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": 1.2
         },
         "B": {
@@ -695,7 +695,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 43.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": -0.6
         },
         "C": {
@@ -708,7 +708,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 43.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": 1.2
         },
         "C-QB": {
@@ -721,7 +721,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 43.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": 1.2
         }
       }
@@ -742,7 +742,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 40.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": 5.9
         },
         "B": {
@@ -755,7 +755,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 40.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": 6.4
         },
         "C": {
@@ -768,7 +768,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 40.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": 5.9
         },
         "C-QB": {
@@ -781,7 +781,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 40.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": 5.9
         }
       }
@@ -802,7 +802,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 46.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": -2.7
         },
         "B": {
@@ -815,7 +815,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 46.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": -2.5
         },
         "C": {
@@ -828,7 +828,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 46.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": -2.7
         },
         "C-QB": {
@@ -841,7 +841,7 @@
           "note": "Market total/spread not supplied: no over/under or ATS selection.",
           "marketTotal": 46.5,
           "marketSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
-          "marketCapturedAt": "2026-10-29T07:41:20.369875+00:00",
+          "marketCapturedAt": "2026-10-29T08:36:09.843080+00:00",
           "totalDifference": -2.7
         }
       }
