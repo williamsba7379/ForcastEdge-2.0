@@ -22,9 +22,10 @@ def grade(report,history):
         except (TypeError,ValueError):continue
         if home<0 or away<0:continue
         total=home+away
+        actual_winner=row["home"] if home>away else row["away"] if away>home else None
+        if verified_winner and source["winner"]!=actual_winner:continue
         row["actualTotal"]=total
-        row["actualWinner"]=row["home"] if home>away else row["away"] if away>home else None
-        if verified_winner and source["winner"]!=row["actualWinner"]:continue
+        row["actualWinner"]=actual_winner
         for model in MODELS:
             winner_pick=row["models"][model].get("winnerPick")
             if row["actualWinner"] is not None and winner_pick in (row["home"],row["away"]):
@@ -52,7 +53,10 @@ def grade(report,history):
         stats["meanAbsoluteTotalError"]=round(stats["totalAbsoluteErrorSum"]/stats["totalErrorGames"],2) if stats["totalErrorGames"] else None
         del stats["totalAbsoluteErrorSum"]
     report["gradingSummary"]=summary
-    report["gradingStatus"]="PARTIALLY_GRADED" if any(s["totalErrorGames"] for s in summary.values()) else "PENDING_RESULTS"
+    completed=sum("actualTotal" in row for row in report["games"])
+    report["completedGames"]=completed
+    report["pendingGames"]=len(report["games"])-completed
+    report["gradingStatus"]="COMPLETE" if completed==len(report["games"]) and completed else "PARTIALLY_GRADED" if completed else "PENDING_RESULTS"
     return report
 
 def main():
