@@ -50,6 +50,8 @@ def build(card,history):
                 "projectedAway":round(max(0,awaypts),1),"projectedTotal":round(max(0,homepts)+max(0,awaypts),1),
                 "overUnderPick":None,"spreadPick":None,
                 "note":"Market total/spread not supplied: no over/under or ATS selection."}
+        for model in models:
+            models[model]["winnerPick"]=game["picks"][model]
         out.append({"id":game["id"],"date":game["date"],"home":game["home"],"away":game["away"],"models":models})
     return {"season":card["season"],"week":card["week"],"generatedAt":dt.datetime.now(dt.timezone.utc).isoformat(),
         "sourceComparisonFrozenAt":card["frozenAt"],"status":"RESEARCH_ONLY_NO_MARKET_LINES",
