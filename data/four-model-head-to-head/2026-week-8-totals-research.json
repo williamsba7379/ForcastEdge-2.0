@@ -1,13 +1,14 @@
 {
   "season": 2026,
   "week": 8,
-  "generatedAt": "2026-10-29T03:51:29.342600+00:00",
-  "sourceComparisonFrozenAt": "2026-10-29T03:51:29.283722+00:00",
+  "generatedAt": "2026-10-29T03:55:14.064736+00:00",
+  "sourceComparisonFrozenAt": "2026-10-29T03:55:14.019175+00:00",
   "status": "RESEARCH_ONLY_NO_MARKET_LINES",
   "warning": "Experimental point projections, NOT validated or independent C/C-QB total models. No sportsbook lines, no O/U or ATS picks.",
   "games": [
     {
       "id": "401873023",
+      "date": "2026-10-30T00:15Z",
       "home": "Green Bay Packers",
       "away": "Carolina Panthers",
       "models": {
@@ -51,6 +52,7 @@
     },
     {
       "id": "401873026",
+      "date": "2026-11-01T18:00Z",
       "home": "Buffalo Bills",
       "away": "Baltimore Ravens",
       "models": {
@@ -94,6 +96,7 @@
     },
     {
       "id": "401873031",
+      "date": "2026-11-01T18:00Z",
       "home": "Cincinnati Bengals",
       "away": "Tennessee Titans",
       "models": {
@@ -137,6 +140,7 @@
     },
     {
       "id": "401873024",
+      "date": "2026-11-01T18:00Z",
       "home": "Dallas Cowboys",
       "away": "Arizona Cardinals",
       "models": {
@@ -180,6 +184,7 @@
     },
     {
       "id": "401873030",
+      "date": "2026-11-01T18:00Z",
       "home": "Detroit Lions",
       "away": "Minnesota Vikings",
       "models": {
@@ -223,6 +228,7 @@
     },
     {
       "id": "401873029",
+      "date": "2026-11-01T18:00Z",
       "home": "New York Jets",
       "away": "Las Vegas Raiders",
       "models": {
@@ -266,6 +272,7 @@
     },
     {
       "id": "401873027",
+      "date": "2026-11-01T18:00Z",
       "home": "Pittsburgh Steelers",
       "away": "Cleveland Browns",
       "models": {
@@ -309,6 +316,7 @@
     },
     {
       "id": "401873025",
+      "date": "2026-11-01T18:00Z",
       "home": "Tampa Bay Buccaneers",
       "away": "Atlanta Falcons",
       "models": {
@@ -352,6 +360,7 @@
     },
     {
       "id": "401873028",
+      "date": "2026-11-01T18:00Z",
       "home": "Jacksonville Jaguars",
       "away": "Indianapolis Colts",
       "models": {
@@ -395,6 +404,7 @@
     },
     {
       "id": "401873032",
+      "date": "2026-11-01T21:05Z",
       "home": "Los Angeles Rams",
       "away": "Los Angeles Chargers",
       "models": {
@@ -438,6 +448,7 @@
     },
     {
       "id": "401873033",
+      "date": "2026-11-01T21:25Z",
       "home": "Denver Broncos",
       "away": "Kansas City Chiefs",
       "models": {
@@ -481,6 +492,7 @@
     },
     {
       "id": "401873034",
+      "date": "2026-11-01T21:25Z",
       "home": "Miami Dolphins",
       "away": "New England Patriots",
       "models": {
@@ -524,6 +536,7 @@
     },
     {
       "id": "401873035",
+      "date": "2026-11-02T01:20Z",
       "home": "Washington Commanders",
       "away": "Philadelphia Eagles",
       "models": {
@@ -567,6 +580,7 @@
     },
     {
       "id": "401873036",
+      "date": "2026-11-03T01:15Z",
       "home": "Seattle Seahawks",
       "away": "Chicago Bears",
       "models": {

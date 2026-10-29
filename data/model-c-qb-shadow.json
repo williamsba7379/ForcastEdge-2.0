@@ -2,7 +2,7 @@
   "title": "Model C-QB \u2014 Experimental Shadow Test",
   "season": 2026,
   "week": 8,
-  "generatedAt": "2026-10-29T03:51:29.161507+00:00",
+  "generatedAt": "2026-10-29T03:55:13.926841+00:00",
   "status": "EXPERIMENTAL_SHADOW_ONLY",
   "method": "Pre-kickoff game-level AYA differential * 0.35, capped at +/-3 points per team; not calibrated.",
   "eligibleAdjustments": 0,
