@@ -61,6 +61,10 @@ def main():
     if not files:raise ValueError("No refreshed comparison")
     card=json.loads(files[-1].read_text())
     history=json.loads((DATA/"nfl-historical-results.json").read_text())["games"]
+    draft=json.loads((DATA/"model-c-automated-draft.json").read_text())
+    edges={str(g["id"]):g["homeEdgePoints"] for g in draft["games"]}
+    for game in card["games"]:
+        game["modelCHomeEdgePoints"]=edges.get(str(game["id"]))
     result=build(card,history)
     path=OUT/(str(card["season"])+"-week-"+str(card["week"])+"-totals-research.json")
     path.write_text(json.dumps(result,indent=2)+"\n")
