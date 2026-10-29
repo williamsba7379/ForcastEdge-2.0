@@ -96,6 +96,9 @@ jobs:
       - name: Compare four-model totals to verified market quotes when available
         if: steps.time.outputs.run == 'true'
         run: python3 scripts/nfl_market_totals_compare.py
+      - name: Grade four-model totals when final results are available
+        if: steps.time.outputs.run == 'true'
+        run: python3 scripts/nfl_four_model_totals_grade.py
       - name: Audit unmodeled critical QB injuries
         if: steps.time.outputs.run == 'true'
         run: |
@@ -151,6 +154,7 @@ jobs:
           git add data/four-model-head-to-head/*-refresh-*.json
           git add data/four-model-head-to-head/*-totals-research.json
           git add data/four-model-head-to-head/*-totals-market-comparison.json
+          git add data/four-model-head-to-head/*-totals-graded.json
           if [ -f data/nfl-market-totals.json ]; then git add data/nfl-market-totals.json; fi
           git add data/model-c-automated-draft.json data/model-c-qb-review-queue.json data/model-c-qb-ranked-news.json data/model-c-qb-ranking-audit.json
           if [ -f data/model-c-official-article-metadata.json ]; then git add data/model-c-official-article-metadata.json; fi
