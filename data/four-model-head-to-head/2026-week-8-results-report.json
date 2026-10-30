@@ -1,0 +1,82 @@
+{
+  "season": 2026,
+  "week": 8,
+  "reportType": "independent_four_model_results",
+  "predictionSource": "data/four-model-head-to-head/2026-week-8-refresh-20261029T083609Z.json",
+  "predictionFrozenAt": "2026-10-29T08:36:09.918267+00:00",
+  "status": "PARTIAL_RESULTS",
+  "gamesCompleted": 1,
+  "gamesRemaining": 13,
+  "results": [
+    {
+      "gameId": "401873023",
+      "date": "2026-10-29",
+      "away": "Carolina Panthers",
+      "home": "Green Bay Packers",
+      "awayScore": 19,
+      "homeScore": 27,
+      "winner": "Green Bay Packers",
+      "totalPoints": 46,
+      "source": "https://www.packers.com/game-day/2026/reg-week8/packers-vs-panthers/",
+      "models": {
+        "A": {
+          "pregameWinner": "Green Bay Packers",
+          "winnerCorrect": true,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "B": {
+          "pregameWinner": "Green Bay Packers",
+          "winnerCorrect": true,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "C": {
+          "pregameWinner": "Green Bay Packers",
+          "winnerCorrect": true,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "C-QB": {
+          "pregameWinner": "Green Bay Packers",
+          "winnerCorrect": true,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        }
+      }
+    }
+  ],
+  "summary": {
+    "A": {
+      "winnerWins": 1,
+      "winnerLosses": 0,
+      "winnerAccuracy": 1,
+      "totalsGraded": 0
+    },
+    "B": {
+      "winnerWins": 1,
+      "winnerLosses": 0,
+      "winnerAccuracy": 1,
+      "totalsGraded": 0
+    },
+    "C": {
+      "winnerWins": 1,
+      "winnerLosses": 0,
+      "winnerAccuracy": 1,
+      "totalsGraded": 0
+    },
+    "C-QB": {
+      "winnerWins": 1,
+      "winnerLosses": 0,
+      "winnerAccuracy": 1,
+      "totalsGraded": 0
+    }
+  },
+  "rules": [
+    "Grade only predictions timestamped before kickoff",
+    "Keep frozen pregame picks immutable",
+    "Do not count unavailable over-under or total predictions as losses",
+    "Grade winner, over-under and predicted-total absolute error independently",
+    "Quarterback evidence validation remains separate from game-results grading"
+  ]
+}
