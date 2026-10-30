@@ -1,0 +1,28 @@
+name: ForecastEdge Week 8 Four-Model Results
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 * * * 0,1,2'
+permissions:
+  contents: write
+jobs:
+  grade-week-8:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Grade completed games against pregame snapshot
+        run: python scripts/grade_week8_four_models.py
+      - name: Commit results only when changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/four-model-head-to-head/2026-week-8-results-report.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update Week 8 four-model results from completed games"
+            git push
+          fi
