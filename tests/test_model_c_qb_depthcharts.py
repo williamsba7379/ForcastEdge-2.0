@@ -21,7 +21,12 @@ def main():
     mapping={"depthchart":{"offense":{"positions":{"qb":{"abbreviation":"QB",
         "athletes":[{"depth":1,"displayName":"Fixture QB One"}]}}}}}
     assert module.extract_qbs(mapping)==["Fixture QB One"]
-    # Do not treat an unranked quarterback or QB2 as a verified QB1 candidate.\n    unranked={"depthchart":[{"positions":[{"position":{"abbreviation":"QB"},\n        "athletes":[{"athlete":{"displayName":"Unranked QB"}},\n                    {"rank":2,"athlete":{"displayName":"Backup QB"}}]}]}]}\n    assert module.extract_qbs(unranked)==[]\n    assert module.extract_qbs({"depthchart":[]})==[]
+    # Do not treat an unranked quarterback or QB2 as a verified QB1 candidate.
+    unranked={"depthchart":[{"positions":[{"position":{"abbreviation":"QB"},
+        "athletes":[{"athlete":{"displayName":"Unranked QB"}},
+                    {"rank":2,"athlete":{"displayName":"Backup QB"}}]}]}]}
+    assert module.extract_qbs(unranked)==[]
+    assert module.extract_qbs({"depthchart":[]})==[]
     print("PASS: QB1 depth chart candidate extraction; never confirms game starter")
 
 if __name__=="__main__":main()
