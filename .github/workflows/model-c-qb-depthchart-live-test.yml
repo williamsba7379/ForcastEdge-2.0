@@ -1,5 +1,10 @@
 name: Model C QB depthchart live validation
 on:
+  pull_request:
+    paths:
+      - '.github/workflows/model-c-qb-depthchart-live-test.yml'
+      - 'scripts/model_c_qb_depthcharts.py'
+      - 'tests/test_model_c_qb_depthcharts.py'
   push:
     paths:
       - '.github/workflows/model-c-qb-depthchart-live-test.yml'
