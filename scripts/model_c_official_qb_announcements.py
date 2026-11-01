@@ -34,7 +34,7 @@ def classify(team, html):
     parser.feed(html)
     visible = " ".join(" ".join(parser.parts).split())
     # Only a date displayed in the article text; no JSON-LD, metadata, or crawl time.
-    match = re.search(r"\\b(Oct\\s+\\d{1,2},\\s+2026)\\s+at\\s+\\d{1,2}:\\d{2}\\s+[AP]M\\b", visible)
+    match = re.search(r"\b(Oct\s+\d{1,2},\s+2026)\s+at\s+\d{1,2}:\d{2}\s+[AP]M\b", visible)
     date = match.group(1) if match else None
     if not date:
         return {"status": "UNVERIFIED_ARTICLE_DATE", "articleDate": None, "evidence": "NONE"}
