@@ -11,6 +11,8 @@ on:
       - 'tests/test_model_c_official_qb_announcements.py'
       - 'tests/test_model_c_official_qb_date_evidence.py'
       - '.github/workflows/model-c-official-qb-depthchart-test.yml'
+      - 'scripts/model_c_live_game_evidence.py'
+      - 'tests/test_model_c_live_game_evidence.py'
   workflow_dispatch:
 permissions:
   contents: read
@@ -33,3 +35,17 @@ jobs:
         run: python3 scripts/model_c_official_qb_announcements.py
       - name: Live official four-team QB1 read-only diagnostic
         run: python3 scripts/model_c_official_qb_depthcharts.py
+      - name: Offline live-game evidence integration fixtures
+        run: python3 tests/test_model_c_live_game_evidence.py
+      - name: Live single-matchup evidence (read-only)
+        run: |
+          mkdir -p diagnostics
+          python3 scripts/model_c_live_game_evidence.py > diagnostics/model-c-live-game-evidence.json
+          cat diagnostics/model-c-live-game-evidence.json
+      - name: Save read-only evidence artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: model-c-live-game-evidence-${{ github.sha }}
+          path: diagnostics/model-c-live-game-evidence.json
+          if-no-files-found: warn
