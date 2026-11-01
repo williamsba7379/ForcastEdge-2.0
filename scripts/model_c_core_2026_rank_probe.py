@@ -7,6 +7,35 @@ import urllib.request
 URL="https://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2026/teams/6/depthcharts"
 RANK_FIELDS=("rank","depth","depthOrder","order","slot")
 
+def describe_core_items(payload):
+    """Bounded shape-only inspection. No values, URLs, IDs, player names, or raw references."""
+    items = payload.get("items") if isinstance(payload, dict) else None
+    if not isinstance(items, list):
+        return {"itemsType": type(items).__name__, "sampleItems": []}
+    samples = []
+    for item in items[:3]:
+        if not isinstance(item, dict):
+            samples.append({"type": type(item).__name__})
+            continue
+        fields = {}
+        for key in sorted(item)[:12]:
+            value = item[key]
+            detail = {"type": type(value).__name__}
+            if isinstance(value, dict):
+                detail["keys"] = sorted(value)[:12]
+                detail["hasRef"] = "$ref" in value
+            elif isinstance(value, list):
+                detail["length"] = len(value)
+                if value:
+                    first = value[0]
+                    detail["firstType"] = type(first).__name__
+                    if isinstance(first, dict):
+                        detail["firstKeys"] = sorted(first)[:12]
+                        detail["firstHasRef"] = "$ref" in first
+            fields[key] = detail
+        samples.append({"fields": fields, "hasRef": "$ref" in item})
+    return {"itemsType": "list", "itemCount": len(items), "sampleItems": samples}
+
 def summarize(payload):
     if not isinstance(payload,dict):
         return {"status":"UNSUPPORTED_PAYLOAD","type":type(payload).__name__}
@@ -44,13 +73,28 @@ def test():
     assert "PRIVATE" not in json.dumps(result)
     assert summarize({"items":[{"positions":[{"position":{"abbreviation":"QB"},"athletes":[{"athlete":{"displayName":"Never infer"}}]}]}]})["qbEntriesWithExplicitRank"]==0
     assert summarize({"depthchart":[]})["status"]=="UNSUPPORTED_PAYLOAD"
-    print("PASS: Core structure-only probe fixtures, explicit rank, fail-closed unranked, no player data")
+    private="PRIVATE_PLAYER_SECRET_987"
+    linked={"items":[{"$ref":"https://private.example/"+private},
+                     {"positions":{"$ref":"https://private.example/"+private},
+                      "athletes":[{"$ref":"https://private.example/"+private}]},
+                     {"name":private,"positions":[{"athlete":{"displayName":private}}]},
+                     {"name":"ignored-fourth"}]}
+    diagnostic=describe_core_items(linked)
+    assert diagnostic["itemCount"]==4 and len(diagnostic["sampleItems"])==3
+    assert diagnostic["sampleItems"][0]["hasRef"] is True
+    assert diagnostic["sampleItems"][1]["fields"]["positions"]["hasRef"] is True
+    assert diagnostic["sampleItems"][1]["fields"]["athletes"]["firstHasRef"] is True
+    assert private not in json.dumps(diagnostic)
+    assert summarize(linked)["qbEntriesWithExplicitRank"]==0
+    assert describe_core_items({"items":"not-a-list"})["sampleItems"]==[]
+    print("PASS: Core rank fixtures, bounded three-record reference diagnostics, no player data, fail-closed")
 
 def live():
     req=urllib.request.Request(URL,headers={"User-Agent":"ForecastEdge/2.0","Accept":"application/json"})
     with urllib.request.urlopen(req,timeout=18) as response: payload=json.load(response)
     report=summarize(payload)
     print("ESPN Core 2026 structure-only diagnostic:",json.dumps(report,sort_keys=True))
+    print("ESPN Core 2026 item-shape diagnostic:",json.dumps(describe_core_items(payload),sort_keys=True))
     if report["status"]!="STRUCTURE_ONLY" or report["qbPositions"]<1 or report["qbEntriesWithExplicitRank"]<1:
         raise RuntimeError("Core 2026 explicit QB ranking not established; no starter promoted")
     print("PASS: explicit depth-chart rank exists; game-specific starter still unconfirmed")
