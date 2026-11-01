@@ -63,6 +63,27 @@ def extract_first_string_qb(html):
         raise ValueError("Require exactly one explicitly labeled first-string QB row")
     return candidates[0]
 
+MAX_SOURCE_AGE_DAYS = 7
+
+def assess_freshness(source_date, now=None):
+    """Undated, future-dated and stale pages are not production eligible."""
+    now = now or dt.datetime.now(dt.timezone.utc)
+    if not source_date:
+        return {"freshness": "UNKNOWN", "productionEligible": False}
+    try:
+        parsed = dt.datetime.strptime(source_date, "%m/%d/%y").date()
+    except ValueError:
+        try:
+            parsed = dt.datetime.strptime(source_date, "%m/%d/%Y").date()
+        except ValueError:
+            return {"freshness": "INVALID_DATE", "productionEligible": False}
+    age = (now.date() - parsed).days
+    if age < 0:
+        return {"freshness": "FUTURE_DATED", "productionEligible": False}
+    if age > MAX_SOURCE_AGE_DAYS:
+        return {"freshness": "STALE", "productionEligible": False}
+    return {"freshness": "CURRENT", "productionEligible": True}
+
 def inspect_source(team, url):
     if team not in SOURCES or url != SOURCES[team]:
         raise ValueError("Unapproved official source")
@@ -78,11 +99,12 @@ def inspect_source(team, url):
     qb = extract_first_string_qb(text)
     updated = re.search(r"Updated as of\s+(\d{1,2}/\d{1,2}/\d{2,4})", text, re.I)
     source_date = updated.group(1) if updated else None
+    freshness = assess_freshness(source_date)
     return {"team": team, "qb1DepthChartCandidate": qb, "source": url,
             "retrievedAt": dt.datetime.now(dt.timezone.utc).isoformat(),
             "sourceUpdatedAt": source_date,
             "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
-            "freshness": "DATED" if source_date else "UNKNOWN",
+            **freshness,
             "note": "First-string depth chart does not confirm next-game starter."}
 
 def main():
