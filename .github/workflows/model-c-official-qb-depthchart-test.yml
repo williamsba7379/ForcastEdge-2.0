@@ -5,6 +5,8 @@ on:
       - 'scripts/model_c_official_qb_depthcharts.py'
       - 'tests/test_model_c_official_qb_depthcharts.py'
       - 'scripts/model_c_official_qb_date_evidence.py'
+      - 'scripts/model_c_official_qb_announcements.py'
+      - 'tests/test_model_c_official_qb_announcements.py'
       - 'tests/test_model_c_official_qb_date_evidence.py'
       - '.github/workflows/model-c-official-qb-depthchart-test.yml'
   workflow_dispatch:
@@ -21,5 +23,9 @@ jobs:
         run: python3 tests/test_model_c_official_qb_date_evidence.py
       - name: Live source-date evidence read-only diagnostic
         run: python3 scripts/model_c_official_qb_date_evidence.py
+      - name: Offline official announcement fixtures
+        run: python3 tests/test_model_c_official_qb_announcements.py
+      - name: Live official announcement read-only diagnostic
+        run: python3 scripts/model_c_official_qb_announcements.py
       - name: Live official four-team QB1 read-only diagnostic
         run: python3 scripts/model_c_official_qb_depthcharts.py
