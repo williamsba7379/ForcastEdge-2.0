@@ -50,6 +50,12 @@ def main():
     assert "athletes" in shape_keyed["qbShapes"][0]["keys"]
     assert shape_keyed["qbShapes"][0]["athletes"]["firstKeys"]==["athlete"]
     assert "Keyed QB One" not in __import__("json").dumps(shape_keyed)
+    assert shape_keyed["qbShapes"][0]["positionMeta"]["type"] == "NoneType"
+    assert shape_keyed["qbShapes"][0]["athletes"]["rankFieldsPresent"] == []
+    keyed["depthchart"][0]["positions"]["qb"]["position"] = {"abbreviation":"QB", "name":"Quarterback"}
+    shape_with_meta=module.describe_depthchart_shape(keyed)
+    assert shape_with_meta["qbShapes"][0]["positionMeta"]["keys"] == ["abbreviation", "name"]
+    assert module.extract_qbs(keyed) == []
     print("PASS: keyed QB extraction, explicit rank safeguards and bounded shape-only diagnostics")
 
 if __name__=="__main__":main()
