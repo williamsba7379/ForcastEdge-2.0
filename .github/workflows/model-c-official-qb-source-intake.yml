@@ -1,0 +1,17 @@
+name: Model C official QB source intake safeguards
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/model_c_official_qb_source_intake.py'
+      - '.github/workflows/model-c-official-qb-source-intake.yml'
+permissions:
+  contents: read
+jobs:
+  offline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Offline fail-closed official QB source intake fixtures
+        run: python3 scripts/model_c_official_qb_source_intake.py
