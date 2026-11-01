@@ -1,5 +1,5 @@
 {
-  "retrievedAt": "2026-11-01T02:49:23.867024+00:00",
+  "retrievedAt": "2026-11-01T03:06:37.881208+00:00",
   "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
   "status": "UNVERIFIED_REPORTING_FEED",
   "caution": "Reported injuries only. Not confirmed starting lineups, expected workload, or calibrated point adjustments.",
@@ -795,6 +795,18 @@
       "teamId": "3",
       "players": [
         {
+          "name": "Jack Sanborn",
+          "position": "LB",
+          "status": "Active",
+          "description": ""
+        },
+        {
+          "name": "Malik Muhammad II",
+          "position": "CB",
+          "status": "Questionable",
+          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Toe', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-02'}"
+        },
+        {
           "name": "T.J. Edwards",
           "position": "LB",
           "status": "Active",
@@ -805,12 +817,6 @@
           "position": "LB",
           "status": "Questionable",
           "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Ankle', 'location': 'Leg', 'returnDate': '2026-11-02'}"
-        },
-        {
-          "name": "Jack Sanborn",
-          "position": "LB",
-          "status": "Active",
-          "description": ""
         },
         {
           "name": "Colston Loveland",
@@ -931,12 +937,6 @@
           "position": "QB",
           "status": "Active",
           "description": ""
-        },
-        {
-          "name": "Malik Muhammad II",
-          "position": "CB",
-          "status": "Questionable",
-          "description": "{'fantasyStatus': {'description': 'QUESTIONABLE', 'abbreviation': 'QUESTIONABLE'}, 'type': 'Toe', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-02'}"
         },
         {
           "name": "Tyrique Stevenson Sr.",
@@ -1266,6 +1266,12 @@
       "teamId": "6",
       "players": [
         {
+          "name": "James Mitchell",
+          "position": "TE",
+          "status": "Active",
+          "description": ""
+        },
+        {
           "name": "P.J. Locke",
           "position": "S",
           "status": "Questionable",
@@ -1406,12 +1412,6 @@
         {
           "name": "Tyler Guyton",
           "position": "OT",
-          "status": "Active",
-          "description": ""
-        },
-        {
-          "name": "Juanyeh Thomas",
-          "position": "S",
           "status": "Active",
           "description": ""
         }
@@ -2522,16 +2522,16 @@
       "teamId": "13",
       "players": [
         {
-          "name": "Jack Bech",
-          "position": "WR",
-          "status": "Active",
-          "description": ""
-        },
-        {
           "name": "Patrick Johnson",
           "position": "DE",
           "status": "Injured Reserve",
           "description": "{'fantasyStatus': {'description': 'IR', 'abbreviation': 'IR'}, 'type': 'Neck', 'location': 'Head', 'detail': 'Stinger', 'side': 'Not Specified', 'returnDate': '2026-11-29'}"
+        },
+        {
+          "name": "Jack Bech",
+          "position": "WR",
+          "status": "Active",
+          "description": ""
         },
         {
           "name": "Ian Thomas",
