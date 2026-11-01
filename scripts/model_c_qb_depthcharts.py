@@ -48,6 +48,8 @@ def describe_depthchart_shape(payload):
             qb_shapes.append({"type": type(record).__name__})
             continue
         details = {"keys": sorted(record)[:12]}
+        meta = record.get("position")
+        details["positionMeta"] = {"type": type(meta).__name__, "keys": sorted(meta)[:12] if isinstance(meta, dict) else []}
         for field in ("athletes", "players", "entries"):
             value = record.get(field)
             if isinstance(value, list):
