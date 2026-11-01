@@ -4,6 +4,8 @@ on:
     paths:
       - 'scripts/model_c_official_qb_depthcharts.py'
       - 'tests/test_model_c_official_qb_depthcharts.py'
+      - 'scripts/model_c_official_qb_date_evidence.py'
+      - 'tests/test_model_c_official_qb_date_evidence.py'
       - '.github/workflows/model-c-official-qb-depthchart-test.yml'
   workflow_dispatch:
 permissions:
@@ -15,5 +17,9 @@ jobs:
       - uses: actions/checkout@v4
       - name: Offline official QB fixtures
         run: python3 tests/test_model_c_official_qb_depthcharts.py
+      - name: Offline source-date evidence fixtures
+        run: python3 tests/test_model_c_official_qb_date_evidence.py
+      - name: Live source-date evidence read-only diagnostic
+        run: python3 scripts/model_c_official_qb_date_evidence.py
       - name: Live official four-team QB1 read-only diagnostic
         run: python3 scripts/model_c_official_qb_depthcharts.py
