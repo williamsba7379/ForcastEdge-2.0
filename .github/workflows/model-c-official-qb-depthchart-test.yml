@@ -1,0 +1,19 @@
+name: Model C official QB depthchart isolated validation
+on:
+  push:
+    paths:
+      - 'scripts/model_c_official_qb_depthcharts.py'
+      - 'tests/test_model_c_official_qb_depthcharts.py'
+      - '.github/workflows/model-c-official-qb-depthchart-test.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Offline official QB fixtures
+        run: python3 tests/test_model_c_official_qb_depthcharts.py
+      - name: Live official 49ers and Ravens QB1 read-only check
+        run: python3 scripts/model_c_official_qb_depthcharts.py
