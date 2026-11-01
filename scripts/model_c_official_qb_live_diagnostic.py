@@ -4,9 +4,7 @@
 Only retrieves explicitly supplied official NFL HTTPS article URLs. No model writes.
 """
 import argparse
-import datetime as dt
 import hashlib
-import html
 import json
 import re
 import ssl
@@ -63,7 +61,12 @@ def fixtures():
     class Fail:
         def open(self,*args,**kwargs):raise urllib.error.URLError("fixture")
     assert retrieve(url,Fail())["status"]=="FETCH_FAILED_CLOSED"
-    assert NoRedirect().redirect_request(None,None,302,"",{},"https://evil.example") is None if False else True
+    try:
+        NoRedirect().redirect_request(None,None,302,"redirect",{},"https://evil.example")
+    except ValueError as exc:
+        assert str(exc)=="REDIRECT_BLOCKED"
+    else:
+        raise AssertionError("Redirect was not blocked")
     print("PASS: strict HTTPS host, no redirects, final URL, content type, size bound, fail-closed transport, no starter inference")
 
 if __name__=="__main__":
