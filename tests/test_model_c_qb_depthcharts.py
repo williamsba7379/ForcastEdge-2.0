@@ -38,6 +38,18 @@ def main():
     assert secret not in __import__("json").dumps(shape)
     assert module.extract_qbs(payload) == []
     assert len(module.describe_depthchart_shape({"depthchart": [{}] * 9})["sampleCharts"]) == 2
-    print("PASS: QB1 extraction and bounded shape-only diagnostics; never confirms game starter")
+    # ESPN keyed-position fixture: key identifies QB, but record lacks position metadata.
+    keyed={"depthchart":[{"positions":{"qb":{"athletes":[
+        {"rank":1,"athlete":{"displayName":"Keyed QB One"}},
+        {"rank":2,"athlete":{"displayName":"Keyed QB Two"}}]},
+        "rb":{"athletes":[{"rank":1,"athlete":{"displayName":"Running Back"}}]}}}]}
+    assert module.extract_qbs(keyed)==["Keyed QB One"]
+    keyed["depthchart"][0]["positions"]["qb"]["athletes"][0].pop("rank")
+    assert module.extract_qbs(keyed)==[]
+    shape_keyed=module.describe_depthchart_shape(keyed)
+    assert "athletes" in shape_keyed["qbShapes"][0]["keys"]
+    assert shape_keyed["qbShapes"][0]["athletes"]["firstKeys"]==["athlete"]
+    assert "Keyed QB One" not in __import__("json").dumps(shape_keyed)
+    print("PASS: keyed QB extraction, explicit rank safeguards and bounded shape-only diagnostics")
 
 if __name__=="__main__":main()
