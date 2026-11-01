@@ -13,6 +13,33 @@ def fetch(url):
     with urllib.request.urlopen(req,timeout=18) as response:
         return json.load(response)
 
+def describe_depthchart_shape(payload):
+    """Only bounded field names/types, never player values or records."""
+    charts = payload.get("depthchart") if isinstance(payload, dict) else None
+    if not isinstance(charts, list):
+        return {"depthchartType": type(charts).__name__, "sampleCharts": []}
+    samples = []
+    for chart in charts[:2]:
+        if not isinstance(chart, dict):
+            samples.append({"type": type(chart).__name__})
+            continue
+        fields = {}
+        for key in sorted(chart)[:8]:
+            value = chart[key]
+            info = {"type": type(value).__name__}
+            if isinstance(value, dict):
+                info["keys"] = sorted(value)[:8]
+            elif isinstance(value, list):
+                info["length"] = len(value)
+                if value:
+                    first = value[0]
+                    info["firstType"] = type(first).__name__
+                    if isinstance(first, dict):
+                        info["firstKeys"] = sorted(first)[:8]
+            fields[key] = info
+        samples.append({"fields": fields})
+    return {"depthchartType": "list", "sampleCharts": samples}
+
 def extract_qbs(payload):
     """Extract explicitly ranked QB1 only; never infer a starter from list order."""
     charts = payload.get("depthchart") or payload.get("depthcharts") or []
@@ -65,7 +92,7 @@ def main():
             payload=fetch(url)
             candidates=extract_qbs(payload)
             if not candidates and len(empty_shapes)<3:
-                empty_shapes.append({"team":name,"topLevelKeys":sorted(payload.keys()) if isinstance(payload,dict) else [type(payload).__name__],"depthchartType":type(payload.get("depthchart")).__name__ if isinstance(payload,dict) else "unknown"})
+                empty_shapes.append({"team":name,"topLevelKeys":sorted(payload.keys()) if isinstance(payload,dict) else [type(payload).__name__],"shape":describe_depthchart_shape(payload)})
         except (OSError,ValueError,KeyError,TypeError) as exc:
             if len(failures)<3:
                 failures.append({"team":name,"errorType":type(exc).__name__,"error":str(exc)[:180]})
