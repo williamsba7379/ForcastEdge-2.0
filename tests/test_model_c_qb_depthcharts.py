@@ -27,6 +27,17 @@ def main():
                     {"rank":2,"athlete":{"displayName":"Backup QB"}}]}]}]}
     assert module.extract_qbs(unranked)==[]
     assert module.extract_qbs({"depthchart":[]})==[]
-    print("PASS: QB1 depth chart candidate extraction; never confirms game starter")
+    # Bounded diagnostic must not print any player data or infer QB1.
+    secret = "PRIVATE_PLAYER_NAME_987"
+    payload = {"depthchart": [{"section": {"positions": [{"athletes": [{"displayName": secret}]}]},
+                              "athletes": [{"displayName": secret}]}]}
+    shape = module.describe_depthchart_shape(payload)
+    assert shape["depthchartType"] == "list"
+    assert shape["sampleCharts"][0]["fields"]["section"]["keys"] == ["positions"]
+    assert shape["sampleCharts"][0]["fields"]["athletes"]["firstKeys"] == ["displayName"]
+    assert secret not in __import__("json").dumps(shape)
+    assert module.extract_qbs(payload) == []
+    assert len(module.describe_depthchart_shape({"depthchart": [{}] * 9})["sampleCharts"]) == 2
+    print("PASS: QB1 extraction and bounded shape-only diagnostics; never confirms game starter")
 
 if __name__=="__main__":main()
