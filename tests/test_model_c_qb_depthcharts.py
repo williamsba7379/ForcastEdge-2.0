@@ -56,6 +56,15 @@ def main():
     shape_with_meta=module.describe_depthchart_shape(keyed)
     assert shape_with_meta["qbShapes"][0]["positionMeta"]["keys"] == ["abbreviation", "name"]
     assert module.extract_qbs(keyed) == []
+    # Live ESPN shape: a QB position object contains unranked athlete records.
+    live_shape={"depthchart":[{"positions":{"qb":{"position":{"abbreviation":"QB","displayName":"Quarterback"},
+        "athletes":[{"displayName":"Fixture A","id":"100"},{"displayName":"Fixture B","id":"101"},
+                    {"displayName":"Fixture C","id":"102"},{"displayName":"Fixture D","id":"103"}]}}}]}
+    assert module.extract_qbs(live_shape)==[], "Never infer QB1 from ESPN list order"
+    live_diag=module.describe_depthchart_shape(live_shape)
+    assert live_diag["qbShapes"][0]["athletes"]["length"]==4
+    assert live_diag["qbShapes"][0]["athletes"]["rankFieldsPresent"]==[]
+    assert "Fixture A" not in __import__("json").dumps(live_diag)
     print("PASS: keyed QB extraction, explicit rank safeguards and bounded shape-only diagnostics")
 
 if __name__=="__main__":main()
