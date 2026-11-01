@@ -38,7 +38,28 @@ def describe_depthchart_shape(payload):
                         info["firstKeys"] = sorted(first)[:8]
             fields[key] = info
         samples.append({"fields": fields})
-    return {"depthchartType": "list", "sampleCharts": samples}
+    qb_shapes = []
+    for chart in charts:
+        positions = chart.get("positions") if isinstance(chart, dict) else None
+        if not isinstance(positions, dict) or "qb" not in positions:
+            continue
+        record = positions["qb"]
+        if not isinstance(record, dict):
+            qb_shapes.append({"type": type(record).__name__})
+            continue
+        details = {"keys": sorted(record)[:12]}
+        for field in ("athletes", "players", "entries"):
+            value = record.get(field)
+            if isinstance(value, list):
+                details[field] = {"type": "list", "length": len(value)}
+                if value:
+                    details[field]["firstType"] = type(value[0]).__name__
+                    if isinstance(value[0], dict):
+                        details[field]["firstKeys"] = sorted(value[0])[:12]
+        qb_shapes.append(details)
+        if len(qb_shapes) >= 2:
+            break
+    return {"depthchartType": "list", "sampleCharts": samples, "qbShapes": qb_shapes}
 
 def extract_qbs(payload):
     """Extract explicitly ranked QB1 only; never infer a starter from list order."""
@@ -51,15 +72,17 @@ def extract_qbs(payload):
             continue
         positions = chart.get("positions") or {}
         if isinstance(positions, dict):
-            positions = list(positions.values())
+            positions = list(positions.items())
+        elif isinstance(positions, list):
+            positions = [(None, item) for item in positions]
         if not isinstance(positions, list):
             continue
-        for position in positions:
+        for position_key, position in positions:
             if not isinstance(position, dict):
                 continue
             meta = position.get("position") or {}
             abbr = meta.get("abbreviation") if isinstance(meta, dict) else None
-            abbr = abbr or position.get("abbreviation") or position.get("positionAbbreviation")
+            abbr = abbr or position.get("abbreviation") or position.get("positionAbbreviation") or position_key
             if str(abbr).upper() != "QB":
                 continue
             athletes = position.get("athletes") or []
