@@ -1,5 +1,5 @@
 {
-  "retrievedAt": "2026-11-01T17:07:48.865242+00:00",
+  "retrievedAt": "2026-11-01T17:15:27.925870+00:00",
   "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
   "status": "UNVERIFIED_REPORTING_FEED",
   "caution": "Reported injuries only. Not confirmed starting lineups, expected workload, or calibrated point adjustments.",
@@ -167,6 +167,12 @@
       "teamId": "1",
       "players": [
         {
+          "name": "Avieon Terrell",
+          "position": "CB",
+          "status": "Active",
+          "description": ""
+        },
+        {
           "name": "Andy Dalton",
           "position": "QB",
           "status": "Out",
@@ -176,13 +182,13 @@
           "name": "Jack Strand",
           "position": "QB",
           "status": "Out",
-          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other'}"
+          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
         },
         {
           "name": "Robert Longerbeam",
           "position": "CB",
           "status": "Out",
-          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other'}"
+          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
         },
         {
           "name": "Brian Robinson Jr.",
@@ -194,7 +200,7 @@
           "name": "Drake Jackson",
           "position": "DE",
           "status": "Out",
-          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other'}"
+          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
         },
         {
           "name": "Olamide Zaccheaus",
@@ -211,12 +217,6 @@
         {
           "name": "Samson Ebukam",
           "position": "DE",
-          "status": "Active",
-          "description": ""
-        },
-        {
-          "name": "Avieon Terrell",
-          "position": "CB",
           "status": "Active",
           "description": ""
         },
@@ -2072,7 +2072,7 @@
           "name": "Kevin Givens",
           "position": "DT",
           "status": "Out",
-          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other'}"
+          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
         },
         {
           "name": "Anthony Gould",
@@ -2084,19 +2084,19 @@
           "name": "Charlie Heck",
           "position": "OT",
           "status": "Out",
-          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other'}"
+          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
         },
         {
           "name": "Riley Leonard",
           "position": "QB",
           "status": "Out",
-          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other'}"
+          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
         },
         {
           "name": "Pharaoh Brown",
           "position": "TE",
           "status": "Out",
-          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other'}"
+          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
         },
         {
           "name": "Jonathan Taylor",
@@ -2229,13 +2229,13 @@
           "name": "Jamal Hill",
           "position": "LB",
           "status": "Out",
-          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other'}"
+          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-05'}"
         },
         {
           "name": "Alijah Huzzie",
           "position": "CB",
           "status": "Out",
-          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other'}"
+          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-05'}"
         },
         {
           "name": "Antonio Johnson",
@@ -2525,37 +2525,37 @@
           "name": "Aidan O'Connell",
           "position": "QB",
           "status": "Out",
-          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other'}"
+          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
         },
         {
           "name": "JJ Pegues",
           "position": "DT",
           "status": "Out",
-          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other'}"
+          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
         },
         {
           "name": "Dont'e Thornton Jr.",
           "position": "WR",
           "status": "Out",
-          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other'}"
+          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
         },
         {
           "name": "Dalton Johnson",
           "position": "S",
           "status": "Out",
-          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other'}"
+          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
         },
         {
           "name": "Tristin McCollum",
           "position": "S",
           "status": "Out",
-          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other'}"
+          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
         },
         {
           "name": "Bryce Cabeldue",
           "position": "G",
           "status": "Out",
-          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other'}"
+          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
         },
         {
           "name": "Jackson Powers-Johnson",
@@ -2567,7 +2567,7 @@
           "name": "Malik Benson",
           "position": "WR",
           "status": "Out",
-          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other'}"
+          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
         },
         {
           "name": "Maxx Crosby",
@@ -3787,7 +3787,7 @@
           "name": "Tim Patrick",
           "position": "WR",
           "status": "Out",
-          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'returnDate': '2026-11-08'}"
+          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
         },
         {
           "name": "Dylan Parham",
@@ -3799,7 +3799,7 @@
           "name": "Nahshon Wright",
           "position": "CB",
           "status": "Out",
-          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other'}"
+          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
         },
         {
           "name": "Max Mitchell",
@@ -3817,7 +3817,7 @@
           "name": "Kohl Levao",
           "position": "G",
           "status": "Out",
-          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other'}"
+          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
         },
         {
           "name": "Breece Hall",
@@ -4101,13 +4101,13 @@
           "name": "Eli Heidenreich",
           "position": "RB",
           "status": "Out",
-          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other'}"
+          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
         },
         {
           "name": "Will Howard",
           "position": "QB",
           "status": "Out",
-          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other'}"
+          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
         },
         {
           "name": "Brandin Echols",
@@ -4119,7 +4119,7 @@
           "name": "Drew Allar",
           "position": "QB",
           "status": "Out",
-          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other'}"
+          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
         },
         {
           "name": "Ben Skowronek",
@@ -4584,31 +4584,31 @@
           "name": "Billy Schrauth",
           "position": "G",
           "status": "Out",
-          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other'}"
+          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
         },
         {
           "name": "Ayden Garnes",
           "position": "CB",
           "status": "Out",
-          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other'}"
+          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
         },
         {
           "name": "Luke Haggard",
           "position": "G",
           "status": "Out",
-          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other'}"
+          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
         },
         {
           "name": "DeMonte Capehart",
           "position": "DT",
           "status": "Out",
-          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other'}"
+          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
         },
         {
           "name": "Emeka Egbuka",
           "position": "WR",
           "status": "Out",
-          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': 'Foot', 'location': 'Leg', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
+          "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': 'Foot', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
         },
         {
           "name": "Luke Goedeke",
