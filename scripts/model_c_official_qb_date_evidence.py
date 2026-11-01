@@ -10,8 +10,8 @@ SOURCES = {
     "BUF": "https://www.buffalobills.com/team/depth-chart",
     "PIT": "https://www.steelers.com/team/depth-chart/",
 }
-DATE = r"(?:\\d{1,2}/\\d{1,2}/\\d{2,4}|(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\\.?\\s+\\d{1,2},?\\s+\\d{4})"
-EXPLICIT = re.compile(r"\\b(?:depth\\s*chart\\s+)?(?:updated|last\\s+updated|as\\s+of)\\s*(?:as\\s+of|:|-)?\\s*(" + DATE + r")\\b", re.I)
+DATE = r"(?:\d{1,2}/\d{1,2}/\d{2,4}|(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+\d{1,2},?\s+\d{4})"
+EXPLICIT = re.compile(r"\b(?:depth\s*chart\s+)?(?:updated|last\s+updated|as\s+of)\s*(?:as\s+of|:|-)?\s*(" + DATE + r")\b", re.I)
 
 class VisibleText(HTMLParser):
     def __init__(self):
@@ -34,12 +34,12 @@ def evidence(html):
     parser = VisibleText()
     parser.feed(html)
     visible = " ".join(" ".join(parser.parts).split())
-    heading = re.search(r"\\bdepth\\s+chart\\b", visible, re.I)
+    heading = re.search(r"\bdepth\s+chart\b", visible, re.I)
     if not heading:
         return {"status": "NO_DEPTH_CHART_HEADING", "dates": []}
     # Only the first 450 visible characters following the heading; not a full-page date scan.
     region = visible[heading.end():heading.end() + 450]
-    region = re.split(r"\\b(?:Offense|Defense|Special Teams|Latest News|Related Articles)\\b", region, maxsplit=1, flags=re.I)[0]
+    region = re.split(r"\b(?:Offense|Defense|Special Teams|Latest News|Related Articles)\b", region, maxsplit=1, flags=re.I)[0]
     dates = list(dict.fromkeys(m.group(1) for m in EXPLICIT.finditer(region)))
     return {"status": "EXPLICIT_HEADING_DATE" if len(dates) == 1 else "NO_UNAMBIGUOUS_HEADING_DATE", "dates": dates[:2]}
 
