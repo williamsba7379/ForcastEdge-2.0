@@ -48,6 +48,9 @@ def classify(team, html, game_date=None):
         if published > target or (target - published).days > 7:
             return {"status": "STALE_OR_FUTURE_REPORT", "articleDate": date, "evidence": "NONE",
                     "starterConfirmed": False, "depthChartFreshnessAffected": False}
+    if team == "BAL" and ("Lamar Jackson" not in visible or "Buffalo Bills" not in visible):
+        return {"status": "SUBJECT_OR_OPPONENT_MISMATCH", "articleDate": date, "evidence": "NONE",
+                "starterConfirmed": False, "depthChartFreshnessAffected": False}
     if team == "BAL" and re.search(r"Head Coach Jesse Minter announced Friday that Jackson will play against the Buffalo Bills", visible, re.I):
         evidence = "COACH_ANNOUNCED_AVAILABLE_FOR_MATCHUP"
     else:
@@ -67,7 +70,7 @@ def main():
                 if len(raw) > 2_000_000:
                     raise ValueError("Page too large")
             results[team] = {"source": url, "subject": player, "opponent": opponent,
-                             **classify(team, raw.decode("utf-8", errors="strict"))}
+                             **classify(team, raw.decode("utf-8", errors="strict"), game_date="2026-11-01")}
         except (OSError, ValueError, UnicodeError) as exc:
             results[team] = {"source": url, "status": "UNVERIFIED", "reason": type(exc).__name__,
                              "starterConfirmed": False, "depthChartFreshnessAffected": False}
