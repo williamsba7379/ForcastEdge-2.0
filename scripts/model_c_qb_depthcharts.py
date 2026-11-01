@@ -58,6 +58,7 @@ def describe_depthchart_shape(payload):
                     details[field]["firstType"] = type(value[0]).__name__
                     if isinstance(value[0], dict):
                         details[field]["firstKeys"] = sorted(value[0])[:12]
+                        details[field]["rankFieldsPresent"] = [k for k in ("rank", "depth", "depthOrder", "order", "slot") if k in value[0]]
         qb_shapes.append(details)
         if len(qb_shapes) >= 2:
             break
