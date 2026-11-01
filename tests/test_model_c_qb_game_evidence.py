@@ -7,7 +7,7 @@ mod = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(mod)
 game = dict(gameId="2026-W8-BAL-BUF", team="BAL", opponent="BUF", quarterback="Lamar Jackson", gameDate="2026-11-01")
 report = dict(gameId=game["gameId"], team="BAL", opponent="BUF", quarterback="Lamar Jackson",
-              publicationDate="2026-10-30", sourceType="OFFICIAL_TEAM",
+              gameDate=game["gameDate"], publicationDate="2026-10-30", sourceType="OFFICIAL_TEAM",
               sourceUrl="https://www.baltimoreravens.com/news/example", evidence="AVAILABLE")
 def status(g=game, r=None):
     return mod.validate(g, [report if r is None else r])["status"]
@@ -29,3 +29,32 @@ for reports in ([report], [report, {**report, "evidence": "UNAVAILABLE"}]):
     assert result["depthChartFreshnessAffected"] is False
     assert result["productionEligible"] is False
 print("PASS: game-specific official QB evidence fails closed on mismatch, stale, conflict and invalid context")
+
+# Reject spoofed, wrong-team, malformed and non-news official-source URLs.
+for url in (
+    "https://example.com/news/report",
+    "https://www.buffalobills.com/news/report",
+    "https://www.baltimoreravens.com.evil.example/news/report",
+    "https://www.baltimoreravens.com@evil.example/news/report",
+    "https://evil.example@www.baltimoreravens.com/news/report",
+    "https://www.baltimoreravens.com:443/news/report",
+    "http://www.baltimoreravens.com/news/report",
+    "https://www.baltimoreravens.com/team/depth-chart",
+    "https://www.baltimoreravens.com/\nnews/report",
+    "https://[invalid", None, 42, {}, [],
+):
+    result = mod.validate(game, [{**report, "sourceUrl": url}])
+    assert result["status"] == "UNVERIFIED_SOURCE", (url, result)
+    assert all(result[k] is False for k in ("starterConfirmed", "productionEligible", "depthChartFreshnessAffected"))
+for value in ("2026-11-02", "bad", None, 42):
+    assert status(r={**report, "gameDate": value}) == "MISMATCHED_GAME_OR_QB"
+missing_date = {k: v for k, v in report.items() if k != "gameDate"}
+assert status(r=missing_date) == "MISMATCHED_GAME_OR_QB"
+for team, host in mod.OFFICIAL_HOSTS.items():
+    matched_game = {**game, "team": team, "opponent": "SF"}
+    matched_report = {**report, **matched_game, "sourceUrl": "https://" + host + "/news/fixture"}
+    result = mod.validate(matched_game, [matched_report])
+    assert result["status"] == "READ_ONLY_MATCHED_EVIDENCE"
+    assert all(result[k] is False for k in ("starterConfirmed", "productionEligible", "depthChartFreshnessAffected"))
+assert not mod.official_source("UNKNOWN", report["sourceUrl"])
+print("PASS: exact team source host and required report game-date safeguards")
