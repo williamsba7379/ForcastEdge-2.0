@@ -9,6 +9,8 @@ from html.parser import HTMLParser
 SOURCES = {
     "SF": "https://www.49ers.com/team/depth-chart",
     "BAL": "https://www.baltimoreravens.com/team/depth-chart",
+    "BUF": "https://www.buffalobills.com/team/depth-chart",
+    "PIT": "https://www.steelers.com/team/depth-chart/",
 }
 class TableReader(HTMLParser):
     def __init__(self):
@@ -48,14 +50,15 @@ def extract_first_string_qb(html):
         headers = None
         for row in table:
             normalized = [x.strip().lower() for x in row]
-            if normalized and normalized[0] in ("position", "pos") and "1st" in normalized:
+            if normalized and normalized[0] in ("position", "pos") and sum(x in ("1st", "first") for x in normalized) == 1:
                 headers = normalized
                 continue
             if headers is None or not normalized or normalized[0] != "qb":
                 continue
             if len(row) != len(headers):
                 raise ValueError("Ambiguous QB table columns")
-            qb = row[headers.index("1st")].strip()
+            first_index = next(i for i, heading in enumerate(headers) if heading in ("1st", "first"))
+            qb = row[first_index].strip()
             if not qb or qb in ("-", "—") or not re.fullmatch(r"[A-Za-zÀ-ÿ.' -]{3,90}(?: Jr\.| Sr\.| II| III| IV)?", qb):
                 raise ValueError("Missing or invalid first-string QB")
             candidates.append(qb)
@@ -115,7 +118,10 @@ def main():
             results[team] = inspect_source(team, url)
         except (OSError, ValueError, UnicodeError) as exc:
             results[team] = {"source": url, "status": "UNVERIFIED", "reason": type(exc).__name__}
-    print(json.dumps({"status": "READ_ONLY_OFFICIAL_DEPTH_CHART_DIAGNOSTIC", "teams": results}, indent=2))
+    total = len(results)
+    ranked = sum("qb1DepthChartCandidate" in v for v in results.values())
+    eligible = sum(v.get("productionEligible") is True for v in results.values())
+    print(json.dumps({"status": "READ_ONLY_OFFICIAL_DEPTH_CHART_DIAGNOSTIC", "coverage": {"totalNFLTeams": 32, "sourcesConfigured": total, "explicitlyRanked": ranked, "freshnessEligible": eligible}, "teams": results}, indent=2))
     if any("qb1DepthChartCandidate" not in value for value in results.values()):
         raise RuntimeError("Official source validation incomplete; no snapshot modified")
 
