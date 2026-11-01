@@ -2,7 +2,7 @@
   "title": "Model C \u2014 Automated Review Draft",
   "season": 2026,
   "week": 8,
-  "generatedAt": "2026-11-01T12:15:43.811996-05:00",
+  "generatedAt": "2026-11-01T12:50:36.083232-05:00",
   "status": "AUTOMATED_REVIEW_ONLY",
   "reviewRequired": true,
   "method": "Point-differential baseline plus optional documented quarterback/injury adjustments; no unverified automatic injury claims.",
@@ -388,7 +388,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-11-01T17:15:27.925870+00:00",
+      "injuryRetrievedAt": "2026-11-01T17:50:19.259341+00:00",
       "id": "401873023",
       "date": "2026-10-30T00:15Z",
       "away": "Carolina Panthers",
@@ -480,6 +480,18 @@
       "injuryReports": {
         "away": [
           {
+            "name": "T.J. Tampa",
+            "position": "CB",
+            "status": "Active",
+            "description": ""
+          },
+          {
+            "name": "Joe Fagnano",
+            "position": "QB",
+            "status": "Out",
+            "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-05'}"
+          },
+          {
             "name": "Aeneas Peebles",
             "position": "DT",
             "status": "Out",
@@ -514,18 +526,6 @@
             "position": "OT",
             "status": "Out",
             "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-05'}"
-          },
-          {
-            "name": "Joe Fagnano",
-            "position": "QB",
-            "status": "Out",
-            "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-05'}"
-          },
-          {
-            "name": "T.J. Tampa",
-            "position": "CB",
-            "status": "Active",
-            "description": ""
           },
           {
             "name": "Adam Randall",
@@ -632,6 +632,18 @@
         ],
         "home": [
           {
+            "name": "Greg Gaines",
+            "position": "DT",
+            "status": "Out",
+            "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': 'Calf', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-09'}"
+          },
+          {
+            "name": "Spencer Brown",
+            "position": "OT",
+            "status": "Out",
+            "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': 'Back', 'location': 'Torso', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-09'}"
+          },
+          {
             "name": "C.J. Gardner-Johnson",
             "position": "S",
             "status": "Suspension",
@@ -656,22 +668,10 @@
             "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-09'}"
           },
           {
-            "name": "Spencer Brown",
-            "position": "OT",
-            "status": "Out",
-            "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': 'Back', 'location': 'Torso', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-09'}"
-          },
-          {
             "name": "Mike Danna",
             "position": "DE",
             "status": "Out",
             "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-09'}"
-          },
-          {
-            "name": "Greg Gaines",
-            "position": "DT",
-            "status": "Out",
-            "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': 'Calf', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-09'}"
           },
           {
             "name": "TJ Parker",
@@ -784,7 +784,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-11-01T17:15:27.925870+00:00",
+      "injuryRetrievedAt": "2026-11-01T17:50:19.259341+00:00",
       "id": "401873026",
       "date": "2026-11-01T18:00Z",
       "away": "Baltimore Ravens",
@@ -871,6 +871,12 @@
       "injuryReports": {
         "away": [
           {
+            "name": "Jaylon Jones",
+            "position": "CB",
+            "status": "Out",
+            "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-15'}"
+          },
+          {
             "name": "Kylen Granson",
             "position": "TE",
             "status": "Out",
@@ -905,12 +911,6 @@
             "position": "DT",
             "status": "Out",
             "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-15'}"
-          },
-          {
-            "name": "Jaylon Jones",
-            "position": "CB",
-            "status": "Out",
-            "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-15'}"
           },
           {
             "name": "Brandon Crenshaw-Dickson",
@@ -1175,7 +1175,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-11-01T17:15:27.925870+00:00",
+      "injuryRetrievedAt": "2026-11-01T17:50:19.259341+00:00",
       "id": "401873031",
       "date": "2026-11-01T18:00Z",
       "away": "Tennessee Titans",
@@ -1231,7 +1231,7 @@
               "name": "Carson Beck",
               "position": "QB",
               "status": "Out",
-              "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
+              "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Right', 'returnDate': '2026-11-08'}"
             }
           ]
         },
@@ -1261,6 +1261,24 @@
       },
       "injuryReports": {
         "away": [
+          {
+            "name": "Max Melton",
+            "position": "CB",
+            "status": "Active",
+            "description": ""
+          },
+          {
+            "name": "Andrew Wingard",
+            "position": "S",
+            "status": "Active",
+            "description": ""
+          },
+          {
+            "name": "Carson Beck",
+            "position": "QB",
+            "status": "Out",
+            "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Right', 'returnDate': '2026-11-08'}"
+          },
           {
             "name": "Walter Nolen III",
             "position": "DT",
@@ -1298,28 +1316,10 @@
             "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
           },
           {
-            "name": "Max Melton",
-            "position": "CB",
-            "status": "Active",
-            "description": ""
-          },
-          {
-            "name": "Andrew Wingard",
-            "position": "S",
-            "status": "Active",
-            "description": ""
-          },
-          {
             "name": "Hjalte Froholdt",
             "position": "C",
             "status": "Active",
             "description": ""
-          },
-          {
-            "name": "Carson Beck",
-            "position": "QB",
-            "status": "Out",
-            "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
           },
           {
             "name": "Kenny Yeboah",
@@ -1414,6 +1414,12 @@
         ],
         "home": [
           {
+            "name": "P.J. Locke",
+            "position": "S",
+            "status": "Active",
+            "description": ""
+          },
+          {
             "name": "Kenny Clark",
             "position": "DT",
             "status": "Active",
@@ -1464,12 +1470,6 @@
           {
             "name": "James Mitchell",
             "position": "TE",
-            "status": "Active",
-            "description": ""
-          },
-          {
-            "name": "P.J. Locke",
-            "position": "S",
             "status": "Active",
             "description": ""
           },
@@ -1566,7 +1566,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-11-01T17:15:27.925870+00:00",
+      "injuryRetrievedAt": "2026-11-01T17:50:19.259341+00:00",
       "id": "401873024",
       "date": "2026-11-01T18:00Z",
       "away": "Arizona Cardinals",
@@ -1659,6 +1659,18 @@
       "injuryReports": {
         "away": [
           {
+            "name": "Max Brosmer",
+            "position": "QB",
+            "status": "Out",
+            "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-09'}"
+          },
+          {
+            "name": "Jauan Jennings",
+            "position": "WR",
+            "status": "Active",
+            "description": ""
+          },
+          {
             "name": "Jakobe Thomas",
             "position": "S",
             "status": "Out",
@@ -1673,12 +1685,6 @@
           {
             "name": "Elijah Williams",
             "position": "DE",
-            "status": "Out",
-            "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-09'}"
-          },
-          {
-            "name": "Max Brosmer",
-            "position": "QB",
             "status": "Out",
             "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-09'}"
           },
@@ -1745,12 +1751,6 @@
           {
             "name": "Harrison Smith",
             "position": "S",
-            "status": "Active",
-            "description": ""
-          },
-          {
-            "name": "Jauan Jennings",
-            "position": "WR",
             "status": "Active",
             "description": ""
           },
@@ -1963,7 +1963,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-11-01T17:15:27.925870+00:00",
+      "injuryRetrievedAt": "2026-11-01T17:50:19.259341+00:00",
       "id": "401873030",
       "date": "2026-11-01T18:00Z",
       "away": "Minnesota Vikings",
@@ -2062,6 +2062,18 @@
       "injuryReports": {
         "away": [
           {
+            "name": "Malik Benson",
+            "position": "WR",
+            "status": "Out",
+            "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
+          },
+          {
+            "name": "Dont'e Thornton Jr.",
+            "position": "WR",
+            "status": "Out",
+            "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
+          },
+          {
             "name": "Aidan O'Connell",
             "position": "QB",
             "status": "Out",
@@ -2070,12 +2082,6 @@
           {
             "name": "JJ Pegues",
             "position": "DT",
-            "status": "Out",
-            "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
-          },
-          {
-            "name": "Dont'e Thornton Jr.",
-            "position": "WR",
             "status": "Out",
             "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
           },
@@ -2102,12 +2108,6 @@
             "position": "G",
             "status": "Active",
             "description": ""
-          },
-          {
-            "name": "Malik Benson",
-            "position": "WR",
-            "status": "Out",
-            "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
           },
           {
             "name": "Maxx Crosby",
@@ -2214,6 +2214,12 @@
         ],
         "home": [
           {
+            "name": "Dylan Parham",
+            "position": "G",
+            "status": "Active",
+            "description": ""
+          },
+          {
             "name": "David Bailey",
             "position": "LB",
             "status": "Out",
@@ -2224,12 +2230,6 @@
             "position": "WR",
             "status": "Out",
             "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
-          },
-          {
-            "name": "Dylan Parham",
-            "position": "G",
-            "status": "Active",
-            "description": ""
           },
           {
             "name": "Nahshon Wright",
@@ -2366,7 +2366,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-11-01T17:15:27.925870+00:00",
+      "injuryRetrievedAt": "2026-11-01T17:50:19.259341+00:00",
       "id": "401873029",
       "date": "2026-11-01T18:00Z",
       "away": "Las Vegas Raiders",
@@ -2419,13 +2419,13 @@
           "availability": "UNKNOWN",
           "reportedQuarterbacks": [
             {
-              "name": "Taylen Green",
+              "name": "Dillon Gabriel",
               "position": "QB",
               "status": "Out",
               "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
             },
             {
-              "name": "Dillon Gabriel",
+              "name": "Taylen Green",
               "position": "QB",
               "status": "Out",
               "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
@@ -2483,6 +2483,18 @@
       "injuryReports": {
         "away": [
           {
+            "name": "Daniel Thomas",
+            "position": "S",
+            "status": "Active",
+            "description": ""
+          },
+          {
+            "name": "Dillon Gabriel",
+            "position": "QB",
+            "status": "Out",
+            "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
+          },
+          {
             "name": "Myles Harden",
             "position": "CB",
             "status": "Active",
@@ -2517,18 +2529,6 @@
             "position": "RB",
             "status": "Out",
             "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
-          },
-          {
-            "name": "Dillon Gabriel",
-            "position": "QB",
-            "status": "Out",
-            "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
-          },
-          {
-            "name": "Daniel Thomas",
-            "position": "S",
-            "status": "Active",
-            "description": ""
           },
           {
             "name": "Tytus Howard",
@@ -2635,6 +2635,18 @@
         ],
         "home": [
           {
+            "name": "Will Howard",
+            "position": "QB",
+            "status": "Out",
+            "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
+          },
+          {
+            "name": "Ben Skowronek",
+            "position": "WR",
+            "status": "Out",
+            "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': 'Calf', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-15'}"
+          },
+          {
             "name": "Doneiko Slaughter",
             "position": "CB",
             "status": "Out",
@@ -2643,12 +2655,6 @@
           {
             "name": "Eli Heidenreich",
             "position": "RB",
-            "status": "Out",
-            "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
-          },
-          {
-            "name": "Will Howard",
-            "position": "QB",
             "status": "Out",
             "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
           },
@@ -2663,12 +2669,6 @@
             "position": "QB",
             "status": "Out",
             "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
-          },
-          {
-            "name": "Ben Skowronek",
-            "position": "WR",
-            "status": "Out",
-            "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': 'Calf', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-15'}"
           },
           {
             "name": "Brandon Johnson",
@@ -2787,7 +2787,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-11-01T17:15:27.925870+00:00",
+      "injuryRetrievedAt": "2026-11-01T17:50:19.259341+00:00",
       "id": "401873027",
       "date": "2026-11-01T18:00Z",
       "away": "Cleveland Browns",
@@ -2843,7 +2843,7 @@
               "name": "Andy Dalton",
               "position": "QB",
               "status": "Out",
-              "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'returnDate': '2026-11-08'}"
+              "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
             },
             {
               "name": "Jack Strand",
@@ -2886,6 +2886,12 @@
       "injuryReports": {
         "away": [
           {
+            "name": "Olamide Zaccheaus",
+            "position": "WR",
+            "status": "Active",
+            "description": ""
+          },
+          {
             "name": "Avieon Terrell",
             "position": "CB",
             "status": "Active",
@@ -2895,7 +2901,7 @@
             "name": "Andy Dalton",
             "position": "QB",
             "status": "Out",
-            "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'returnDate': '2026-11-08'}"
+            "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
           },
           {
             "name": "Jack Strand",
@@ -2920,12 +2926,6 @@
             "position": "DE",
             "status": "Out",
             "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
-          },
-          {
-            "name": "Olamide Zaccheaus",
-            "position": "WR",
-            "status": "Active",
-            "description": ""
           },
           {
             "name": "Charles Snowden",
@@ -3038,6 +3038,18 @@
         ],
         "home": [
           {
+            "name": "Luke Goedeke",
+            "position": "OT",
+            "status": "Active",
+            "description": ""
+          },
+          {
+            "name": "Graham Barton",
+            "position": "C",
+            "status": "Active",
+            "description": ""
+          },
+          {
             "name": "Tez Johnson",
             "position": "WR",
             "status": "Active",
@@ -3084,18 +3096,6 @@
             "position": "WR",
             "status": "Out",
             "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': 'Foot', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
-          },
-          {
-            "name": "Luke Goedeke",
-            "position": "OT",
-            "status": "Active",
-            "description": ""
-          },
-          {
-            "name": "Graham Barton",
-            "position": "C",
-            "status": "Active",
-            "description": ""
           },
           {
             "name": "Josiah Trotter",
@@ -3190,7 +3190,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-11-01T17:15:27.925870+00:00",
+      "injuryRetrievedAt": "2026-11-01T17:50:19.259341+00:00",
       "id": "401873025",
       "date": "2026-11-01T18:00Z",
       "away": "Atlanta Falcons",
@@ -3277,6 +3277,12 @@
       "injuryReports": {
         "away": [
           {
+            "name": "Riley Leonard",
+            "position": "QB",
+            "status": "Out",
+            "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
+          },
+          {
             "name": "Drew Ogletree",
             "position": "TE",
             "status": "Active",
@@ -3309,12 +3315,6 @@
           {
             "name": "Charlie Heck",
             "position": "OT",
-            "status": "Out",
-            "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
-          },
-          {
-            "name": "Riley Leonard",
-            "position": "QB",
             "status": "Out",
             "description": "{'fantasyStatus': {'description': 'INACTIVE', 'abbreviation': 'INACTIVE'}, 'type': \"Coach's Decision\", 'location': 'Other', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
           },
@@ -3581,7 +3581,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-11-01T17:15:27.925870+00:00",
+      "injuryRetrievedAt": "2026-11-01T17:50:19.259341+00:00",
       "id": "401873028",
       "date": "2026-11-01T18:00Z",
       "away": "Indianapolis Colts",
@@ -3972,7 +3972,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-11-01T17:15:27.925870+00:00",
+      "injuryRetrievedAt": "2026-11-01T17:50:19.259341+00:00",
       "id": "401873032",
       "date": "2026-11-01T21:05Z",
       "away": "Los Angeles Chargers",
@@ -4375,7 +4375,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-11-01T17:15:27.925870+00:00",
+      "injuryRetrievedAt": "2026-11-01T17:50:19.259341+00:00",
       "id": "401873033",
       "date": "2026-11-01T21:25Z",
       "away": "Kansas City Chiefs",
@@ -4772,7 +4772,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-11-01T17:15:27.925870+00:00",
+      "injuryRetrievedAt": "2026-11-01T17:50:19.259341+00:00",
       "id": "401873034",
       "date": "2026-11-01T21:25Z",
       "away": "New England Patriots",
@@ -5156,7 +5156,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-11-01T17:15:27.925870+00:00",
+      "injuryRetrievedAt": "2026-11-01T17:50:19.259341+00:00",
       "id": "401873035",
       "date": "2026-11-02T01:20Z",
       "away": "Philadelphia Eagles",
@@ -5559,7 +5559,7 @@
         ]
       },
       "injurySource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
-      "injuryRetrievedAt": "2026-11-01T17:15:27.925870+00:00",
+      "injuryRetrievedAt": "2026-11-01T17:50:19.259341+00:00",
       "id": "401873036",
       "date": "2026-11-03T01:15Z",
       "away": "Chicago Bears",
