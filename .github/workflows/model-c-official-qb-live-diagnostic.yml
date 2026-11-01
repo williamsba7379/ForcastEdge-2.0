@@ -1,0 +1,17 @@
+name: Model C official QB live transport diagnostic
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/model_c_official_qb_live_diagnostic.py'
+      - '.github/workflows/model-c-official-qb-live-diagnostic.yml'
+permissions:
+  contents: read
+jobs:
+  offline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Offline read-only source transport fixtures
+        run: python3 scripts/model_c_official_qb_live_diagnostic.py
