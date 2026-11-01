@@ -26,7 +26,7 @@ class Text(HTMLParser):
         if not self.hidden:
             self.parts.append(data)
 
-def classify(team, html):
+def classify(team, html, game_date=None):
     """Evidence is contextual and informational, not a production eligibility flag."""
     if team not in SOURCES:
         raise ValueError("Unapproved team")
@@ -38,6 +38,16 @@ def classify(team, html):
     date = match.group(1) if match else None
     if not date:
         return {"status": "UNVERIFIED_ARTICLE_DATE", "articleDate": None, "evidence": "NONE"}
+    if game_date is not None:
+        try:
+            published = dt.datetime.strptime(date, "%b %d, %Y").date()
+            target = dt.date.fromisoformat(game_date)
+        except (ValueError, TypeError):
+            return {"status": "INVALID_GAME_DATE", "articleDate": date, "evidence": "NONE",
+                    "starterConfirmed": False, "depthChartFreshnessAffected": False}
+        if published > target or (target - published).days > 7:
+            return {"status": "STALE_OR_FUTURE_REPORT", "articleDate": date, "evidence": "NONE",
+                    "starterConfirmed": False, "depthChartFreshnessAffected": False}
     if team == "BAL" and re.search(r"Head Coach Jesse Minter announced Friday that Jackson will play against the Buffalo Bills", visible, re.I):
         evidence = "COACH_ANNOUNCED_AVAILABLE_FOR_MATCHUP"
     else:
