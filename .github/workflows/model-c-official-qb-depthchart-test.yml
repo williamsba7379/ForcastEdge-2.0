@@ -15,5 +15,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Offline official QB fixtures
         run: python3 tests/test_model_c_official_qb_depthcharts.py
-      - name: Live official 49ers and Ravens QB1 read-only check
+      - name: Live official four-team QB1 read-only diagnostic
         run: python3 scripts/model_c_official_qb_depthcharts.py
