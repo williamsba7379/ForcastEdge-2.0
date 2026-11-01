@@ -19,7 +19,8 @@ for html in (table(first="Starter"), table(player=""), table(player="—"),
         pass
     else:
         raise AssertionError("Unverified or ambiguous QB accepted")
-assert set(mod.SOURCES) == {"SF", "BAL"}
+assert set(mod.SOURCES) == {"SF", "BAL", "BUF", "PIT"}
+assert mod.extract_first_string_qb(table(first="First", player="Fixture Quarterback")) == "Fixture Quarterback"
 clock = dt.datetime(2026, 11, 1, tzinfo=dt.timezone.utc)
 assert mod.assess_freshness("10/27/26", clock) == {"freshness": "CURRENT", "productionEligible": True}
 assert mod.assess_freshness(None, clock)["productionEligible"] is False
