@@ -1,5 +1,5 @@
 {
-  "retrievedAt": "2026-11-01T03:06:37.881208+00:00",
+  "retrievedAt": "2026-11-01T11:13:26.369882+00:00",
   "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
   "status": "UNVERIFIED_REPORTING_FEED",
   "caution": "Reported injuries only. Not confirmed starting lineups, expected workload, or calibrated point adjustments.",
@@ -167,6 +167,12 @@
       "teamId": "1",
       "players": [
         {
+          "name": "Cameron Williams",
+          "position": "OL",
+          "status": "Injured Reserve",
+          "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
+        },
+        {
           "name": "Billy Bowman Jr.",
           "position": "CB",
           "status": "Out",
@@ -306,12 +312,6 @@
         },
         {
           "name": "Jack Strand",
-          "position": "QB",
-          "status": "Active",
-          "description": ""
-        },
-        {
-          "name": "Andy Dalton",
           "position": "QB",
           "status": "Active",
           "description": ""
@@ -1423,6 +1423,12 @@
       "teamId": "7",
       "players": [
         {
+          "name": "Taylor Rapp",
+          "position": "S",
+          "status": "Active",
+          "description": ""
+        },
+        {
           "name": "Cody Schrader",
           "position": "RB",
           "status": "Active",
@@ -1565,12 +1571,6 @@
           "position": "LB",
           "status": "Injured Reserve",
           "description": "{'fantasyStatus': {'description': 'IR', 'abbreviation': 'IR'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-27'}"
-        },
-        {
-          "name": "Jonathon Cooper",
-          "position": "LB",
-          "status": "Active",
-          "description": ""
         }
       ]
     },
@@ -3935,6 +3935,12 @@
       "teamId": "21",
       "players": [
         {
+          "name": "Jakorian Bennett",
+          "position": "CB",
+          "status": "Injured Reserve",
+          "description": "{'fantasyStatus': {'description': 'IR-R', 'abbreviation': 'IR-R'}, 'type': 'Knee', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
+        },
+        {
           "name": "Elijah Mitchell",
           "position": "RB",
           "status": "Active",
@@ -4075,12 +4081,6 @@
         {
           "name": "Darius Cooper",
           "position": "WR",
-          "status": "Active",
-          "description": ""
-        },
-        {
-          "name": "Jake Majors",
-          "position": "C",
           "status": "Active",
           "description": ""
         }
@@ -4406,6 +4406,12 @@
       "teamId": "26",
       "players": [
         {
+          "name": "Charles Cross",
+          "position": "OT",
+          "status": "Out",
+          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Sprain', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
+        },
+        {
           "name": "Tyrice Knight",
           "position": "LB",
           "status": "Active",
@@ -4434,12 +4440,6 @@
           "position": "LB",
           "status": "Doubtful",
           "description": "{'fantasyStatus': {'description': 'DOUBTFUL', 'abbreviation': 'DOUBTFUL'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Not Specified', 'side': 'Not Specified', 'returnDate': '2026-11-02'}"
-        },
-        {
-          "name": "Charles Cross",
-          "position": "OT",
-          "status": "Out",
-          "description": "{'fantasyStatus': {'description': 'OUT', 'abbreviation': 'OUT'}, 'type': 'Ankle', 'location': 'Leg', 'detail': 'Sprain', 'side': 'Not Specified', 'returnDate': '2026-11-08'}"
         },
         {
           "name": "Rashid Shaheed",
