@@ -56,7 +56,7 @@ def extract_first_string_qb(html):
             if len(row) != len(headers):
                 raise ValueError("Ambiguous QB table columns")
             qb = row[headers.index("1st")].strip()
-            if not qb or qb in ("-", "—") or not re.fullmatch(r"[A-Za-zÀ-ÿ.' -]{3,90}(?: Jr\\.| Sr\\.| II| III| IV)?", qb):
+            if not qb or qb in ("-", "—") or not re.fullmatch(r"[A-Za-zÀ-ÿ.' -]{3,90}(?: Jr\.| Sr\.| II| III| IV)?", qb):
                 raise ValueError("Missing or invalid first-string QB")
             candidates.append(qb)
     if len(candidates) != 1:
@@ -76,7 +76,7 @@ def inspect_source(team, url):
             raise ValueError("Page too large")
     text = html.decode("utf-8", errors="strict")
     qb = extract_first_string_qb(text)
-    updated = re.search(r"Updated as of\\s+(\\d{1,2}/\\d{1,2}/\\d{2,4})", text, re.I)
+    updated = re.search(r"Updated as of\s+(\d{1,2}/\d{1,2}/\d{2,4})", text, re.I)
     source_date = updated.group(1) if updated else None
     return {"team": team, "qb1DepthChartCandidate": qb, "source": url,
             "retrievedAt": dt.datetime.now(dt.timezone.utc).isoformat(),
