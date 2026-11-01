@@ -10,14 +10,13 @@
   "results": [
     {
       "gameId": "401873023",
-      "date": "2026-10-29",
+      "date": "2026-10-30T00:15Z",
       "away": "Carolina Panthers",
       "home": "Green Bay Packers",
       "awayScore": 19,
       "homeScore": 27,
       "winner": "Green Bay Packers",
       "totalPoints": 46,
-      "source": "https://www.packers.com/game-day/2026/reg-week8/packers-vs-panthers/",
       "models": {
         "A": {
           "pregameWinner": "Green Bay Packers",
@@ -43,40 +42,41 @@
           "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
           "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
         }
-      }
+      },
+      "scoreSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8"
     }
   ],
   "summary": {
     "A": {
       "winnerWins": 1,
       "winnerLosses": 0,
-      "winnerAccuracy": 1,
+      "winnerAccuracy": 1.0,
       "totalsGraded": 0
     },
     "B": {
       "winnerWins": 1,
       "winnerLosses": 0,
-      "winnerAccuracy": 1,
+      "winnerAccuracy": 1.0,
       "totalsGraded": 0
     },
     "C": {
       "winnerWins": 1,
       "winnerLosses": 0,
-      "winnerAccuracy": 1,
+      "winnerAccuracy": 1.0,
       "totalsGraded": 0
     },
     "C-QB": {
       "winnerWins": 1,
       "winnerLosses": 0,
-      "winnerAccuracy": 1,
+      "winnerAccuracy": 1.0,
       "totalsGraded": 0
     }
   },
   "rules": [
-    "Grade only predictions timestamped before kickoff",
-    "Keep frozen pregame picks immutable",
-    "Do not count unavailable over-under or total predictions as losses",
-    "Grade winner, over-under and predicted-total absolute error independently",
-    "Quarterback evidence validation remains separate from game-results grading"
+    "Grade only immutable pre-kickoff winner picks from the specified snapshot",
+    "Do not use revised post-kickoff predictions",
+    "Missing pregame totals and betting lines remain ungraded, never losses",
+    "QB source validation and model grading are separate",
+    "Only completed ESPN scoreboard games are graded"
   ]
 }
