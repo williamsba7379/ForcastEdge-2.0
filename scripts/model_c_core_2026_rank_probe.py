@@ -48,11 +48,20 @@ def summarize(payload):
     unranked=0
     for chart in items[:20]:
         if not isinstance(chart,dict): continue
-        for pos in chart.get("positions",[]) if isinstance(chart.get("positions"),list) else []:
+        raw_positions=chart.get("positions")
+        if isinstance(raw_positions,dict):
+            entries=list(raw_positions.items())
+        elif isinstance(raw_positions,list):
+            entries=[(None,pos) for pos in raw_positions]
+        else:
+            entries=[]
+        for key,pos in entries:
             if not isinstance(pos,dict): continue
             positions+=1
             meta=pos.get("position") or {}
-            if not isinstance(meta,dict) or str(meta.get("abbreviation","")).upper()!="QB":continue
+            abbr=meta.get("abbreviation") if isinstance(meta,dict) else None
+            abbr=abbr or pos.get("abbreviation") or key
+            if str(abbr).upper()!="QB":continue
             qb_positions+=1
             for athlete in pos.get("athletes",[]) if isinstance(pos.get("athletes"),list) else []:
                 if not isinstance(athlete,dict):continue
@@ -73,6 +82,14 @@ def test():
     assert "PRIVATE" not in json.dumps(result)
     assert summarize({"items":[{"positions":[{"position":{"abbreviation":"QB"},"athletes":[{"athlete":{"displayName":"Never infer"}}]}]}]})["qbEntriesWithExplicitRank"]==0
     assert summarize({"depthchart":[]})["status"]=="UNSUPPORTED_PAYLOAD"
+    keyed={"items":[{"positions":{"qb":{"athletes":[{"rank":1,"athlete":{"displayName":"Private QB"}},
+          {"athlete":{"displayName":"Backup"}}]},"rb":{"athletes":[{"rank":1}]}}}]}
+    keyed_result=summarize(keyed)
+    assert keyed_result["positionsInspected"]==2 and keyed_result["qbPositions"]==1
+    assert keyed_result["qbEntriesWithExplicitRank"]==1 and keyed_result["qbEntriesWithoutExplicitRank"]==1
+    keyed["items"][0]["positions"]["qb"]["athletes"][0].pop("rank")
+    assert summarize(keyed)["qbEntriesWithExplicitRank"]==0
+    assert "Private QB" not in json.dumps(summarize(keyed))
     private="PRIVATE_PLAYER_SECRET_987"
     linked={"items":[{"$ref":"https://private.example/"+private},
                      {"positions":{"$ref":"https://private.example/"+private},
