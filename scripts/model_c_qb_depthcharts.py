@@ -108,6 +108,7 @@ def main():
     results={}
     failures=[]
     empty_shapes=[]
+    unranked_qb_teams=0
     for entry in entries:
         team=entry.get("team",entry)
         name=team.get("displayName")
@@ -117,6 +118,8 @@ def main():
         try:
             payload=fetch(url)
             candidates=extract_qbs(payload)
+            if not candidates and any(s.get("athletes", {}).get("length", 0)>0 and not s.get("athletes", {}).get("rankFieldsPresent") for s in describe_depthchart_shape(payload).get("qbShapes", [])):
+                unranked_qb_teams+=1
             if not candidates and len(empty_shapes)<3:
                 empty_shapes.append({"team":name,"topLevelKeys":sorted(payload.keys()) if isinstance(payload,dict) else [type(payload).__name__],"shape":describe_depthchart_shape(payload)})
         except (OSError,ValueError,KeyError,TypeError) as exc:
@@ -128,7 +131,7 @@ def main():
           "note":"QB1 is a depth-chart listing, not a confirmed game starter."}
     if len(results)<25:raise RuntimeError("Insufficient team coverage; previous snapshot preserved")
     if not any(x["qb1Candidate"] for x in results.values()):
-        print("QB retrieval diagnostic (no player data):",json.dumps({"sampleFailures":failures,"sampleEmptyPayloadShapes":empty_shapes}))
+        print("QB retrieval diagnostic (no player data):",json.dumps({"sampleFailures":failures,"sampleEmptyPayloadShapes":empty_shapes,"unrankedQBTeamsSampled":unranked_qb_teams,"diagnosis":"UNRANKED_ESPN_QB_DEPTHCHART" if unranked_qb_teams else "NO_EXPLICIT_QB1_RANK_OR_RETRIEVAL_ERROR"}))
         raise RuntimeError("Zero QB1 candidates from all teams; refusing to replace prior snapshot")
     out={"retrievedAt":dt.datetime.now(dt.timezone.utc).isoformat(),
       "status":"DEPTH_CHART_CANDIDATES_ONLY","teams":results}
