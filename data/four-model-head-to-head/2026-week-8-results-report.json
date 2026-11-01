@@ -5,8 +5,8 @@
   "predictionSource": "data/four-model-head-to-head/2026-week-8-refresh-20261029T083609Z.json",
   "predictionFrozenAt": "2026-10-29T08:36:09.918267+00:00",
   "status": "PARTIAL_RESULTS",
-  "gamesCompleted": 1,
-  "gamesRemaining": 13,
+  "gamesCompleted": 9,
+  "gamesRemaining": 5,
   "results": [
     {
       "gameId": "401873023",
@@ -44,31 +44,327 @@
         }
       },
       "scoreSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8"
+    },
+    {
+      "gameId": "401873026",
+      "date": "2026-11-01T18:00Z",
+      "away": "Baltimore Ravens",
+      "home": "Buffalo Bills",
+      "awayScore": 10,
+      "homeScore": 36,
+      "winner": "Buffalo Bills",
+      "totalPoints": 46,
+      "models": {
+        "A": {
+          "pregameWinner": "Buffalo Bills",
+          "winnerCorrect": true,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "B": {
+          "pregameWinner": "Buffalo Bills",
+          "winnerCorrect": true,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "C": {
+          "pregameWinner": "Buffalo Bills",
+          "winnerCorrect": true,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "C-QB": {
+          "pregameWinner": "Buffalo Bills",
+          "winnerCorrect": true,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        }
+      },
+      "scoreSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8"
+    },
+    {
+      "gameId": "401873031",
+      "date": "2026-11-01T18:00Z",
+      "away": "Tennessee Titans",
+      "home": "Cincinnati Bengals",
+      "awayScore": 36,
+      "homeScore": 43,
+      "winner": "Cincinnati Bengals",
+      "totalPoints": 79,
+      "models": {
+        "A": {
+          "pregameWinner": "Cincinnati Bengals",
+          "winnerCorrect": true,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "B": {
+          "pregameWinner": "Cincinnati Bengals",
+          "winnerCorrect": true,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "C": {
+          "pregameWinner": "Cincinnati Bengals",
+          "winnerCorrect": true,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "C-QB": {
+          "pregameWinner": "Cincinnati Bengals",
+          "winnerCorrect": true,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        }
+      },
+      "scoreSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8"
+    },
+    {
+      "gameId": "401873024",
+      "date": "2026-11-01T18:00Z",
+      "away": "Arizona Cardinals",
+      "home": "Dallas Cowboys",
+      "awayScore": 33,
+      "homeScore": 30,
+      "winner": "Arizona Cardinals",
+      "totalPoints": 63,
+      "models": {
+        "A": {
+          "pregameWinner": "Dallas Cowboys",
+          "winnerCorrect": false,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "B": {
+          "pregameWinner": "Dallas Cowboys",
+          "winnerCorrect": false,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "C": {
+          "pregameWinner": "Dallas Cowboys",
+          "winnerCorrect": false,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "C-QB": {
+          "pregameWinner": "Dallas Cowboys",
+          "winnerCorrect": false,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        }
+      },
+      "scoreSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8"
+    },
+    {
+      "gameId": "401873030",
+      "date": "2026-11-01T18:00Z",
+      "away": "Minnesota Vikings",
+      "home": "Detroit Lions",
+      "awayScore": 15,
+      "homeScore": 19,
+      "winner": "Detroit Lions",
+      "totalPoints": 34,
+      "models": {
+        "A": {
+          "pregameWinner": "Minnesota Vikings",
+          "winnerCorrect": false,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "B": {
+          "pregameWinner": "Minnesota Vikings",
+          "winnerCorrect": false,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "C": {
+          "pregameWinner": "Minnesota Vikings",
+          "winnerCorrect": false,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "C-QB": {
+          "pregameWinner": "Minnesota Vikings",
+          "winnerCorrect": false,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        }
+      },
+      "scoreSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8"
+    },
+    {
+      "gameId": "401873029",
+      "date": "2026-11-01T18:00Z",
+      "away": "Las Vegas Raiders",
+      "home": "New York Jets",
+      "awayScore": 38,
+      "homeScore": 33,
+      "winner": "Las Vegas Raiders",
+      "totalPoints": 71,
+      "models": {
+        "A": {
+          "pregameWinner": "New York Jets",
+          "winnerCorrect": false,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "B": {
+          "pregameWinner": "New York Jets",
+          "winnerCorrect": false,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "C": {
+          "pregameWinner": "New York Jets",
+          "winnerCorrect": false,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "C-QB": {
+          "pregameWinner": "New York Jets",
+          "winnerCorrect": false,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        }
+      },
+      "scoreSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8"
+    },
+    {
+      "gameId": "401873027",
+      "date": "2026-11-01T18:00Z",
+      "away": "Cleveland Browns",
+      "home": "Pittsburgh Steelers",
+      "awayScore": 6,
+      "homeScore": 27,
+      "winner": "Pittsburgh Steelers",
+      "totalPoints": 33,
+      "models": {
+        "A": {
+          "pregameWinner": "Pittsburgh Steelers",
+          "winnerCorrect": true,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "B": {
+          "pregameWinner": "Pittsburgh Steelers",
+          "winnerCorrect": true,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "C": {
+          "pregameWinner": "Pittsburgh Steelers",
+          "winnerCorrect": true,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "C-QB": {
+          "pregameWinner": "Pittsburgh Steelers",
+          "winnerCorrect": true,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        }
+      },
+      "scoreSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8"
+    },
+    {
+      "gameId": "401873025",
+      "date": "2026-11-01T18:00Z",
+      "away": "Atlanta Falcons",
+      "home": "Tampa Bay Buccaneers",
+      "awayScore": 0,
+      "homeScore": 16,
+      "winner": "Tampa Bay Buccaneers",
+      "totalPoints": 16,
+      "models": {
+        "A": {
+          "pregameWinner": "Tampa Bay Buccaneers",
+          "winnerCorrect": true,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "B": {
+          "pregameWinner": "Tampa Bay Buccaneers",
+          "winnerCorrect": true,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "C": {
+          "pregameWinner": "Tampa Bay Buccaneers",
+          "winnerCorrect": true,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "C-QB": {
+          "pregameWinner": "Tampa Bay Buccaneers",
+          "winnerCorrect": true,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        }
+      },
+      "scoreSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8"
+    },
+    {
+      "gameId": "401873028",
+      "date": "2026-11-01T18:00Z",
+      "away": "Indianapolis Colts",
+      "home": "Jacksonville Jaguars",
+      "awayScore": 7,
+      "homeScore": 42,
+      "winner": "Jacksonville Jaguars",
+      "totalPoints": 49,
+      "models": {
+        "A": {
+          "pregameWinner": "Jacksonville Jaguars",
+          "winnerCorrect": true,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "B": {
+          "pregameWinner": "Jacksonville Jaguars",
+          "winnerCorrect": true,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "C": {
+          "pregameWinner": "Jacksonville Jaguars",
+          "winnerCorrect": true,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "C-QB": {
+          "pregameWinner": "Jacksonville Jaguars",
+          "winnerCorrect": true,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        }
+      },
+      "scoreSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8"
     }
   ],
   "summary": {
     "A": {
-      "winnerWins": 1,
-      "winnerLosses": 0,
-      "winnerAccuracy": 1.0,
+      "winnerWins": 6,
+      "winnerLosses": 3,
+      "winnerAccuracy": 0.6667,
       "totalsGraded": 0
     },
     "B": {
-      "winnerWins": 1,
-      "winnerLosses": 0,
-      "winnerAccuracy": 1.0,
+      "winnerWins": 6,
+      "winnerLosses": 3,
+      "winnerAccuracy": 0.6667,
       "totalsGraded": 0
     },
     "C": {
-      "winnerWins": 1,
-      "winnerLosses": 0,
-      "winnerAccuracy": 1.0,
+      "winnerWins": 6,
+      "winnerLosses": 3,
+      "winnerAccuracy": 0.6667,
       "totalsGraded": 0
     },
     "C-QB": {
-      "winnerWins": 1,
-      "winnerLosses": 0,
-      "winnerAccuracy": 1.0,
+      "winnerWins": 6,
+      "winnerLosses": 3,
+      "winnerAccuracy": 0.6667,
       "totalsGraded": 0
     }
   },
