@@ -7,7 +7,7 @@ mod = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(mod)
 def page(body, date="Oct 30, 2026 at 01:56 PM"):
     return "<html><h1>Official injury report</h1><p>" + date + "</p><p>" + body + "</p></html>"
-statement = "Head Coach Jesse Minter announced Friday that Jackson will play against the Buffalo Bills"
+statement = "Lamar Jackson. Head Coach Jesse Minter announced Friday that Jackson will play against the Buffalo Bills"
 r = mod.classify("BAL", page(statement))
 assert r["evidence"] == "COACH_ANNOUNCED_AVAILABLE_FOR_MATCHUP"
 assert r["starterConfirmed"] is False and r["depthChartFreshnessAffected"] is False
@@ -19,3 +19,9 @@ assert mod.classify("BAL", page(statement, "Undated"))["evidence"] == "NONE"
 assert mod.classify("BAL", "<script>Oct 30, 2026 at 01:56 PM</script>" + statement)["evidence"] == "NONE"
 assert mod.classify("BAL", page("Lamar Jackson is listed on the depth chart"))["starterConfirmed"] is False
 print("PASS: official announcement classification and fail-closed boundaries")
+
+assert mod.classify("BAL", page(statement), game_date="2026-11-09")["status"] == "STALE_OR_FUTURE_REPORT"
+assert mod.classify("BAL", page(statement), game_date="2026-10-29")["status"] == "STALE_OR_FUTURE_REPORT"
+assert mod.classify("BAL", page(statement), game_date="invalid")["status"] == "INVALID_GAME_DATE"
+assert mod.classify("BAL", page("Head Coach Jesse Minter announced Friday that Jackson will play against the Buffalo Bills"), game_date="2026-11-01")["status"] == "SUBJECT_OR_OPPONENT_MISMATCH"
+assert mod.classify("BAL", page(statement), game_date="2026-11-01")["evidence"] == "COACH_ANNOUNCED_AVAILABLE_FOR_MATCHUP"
