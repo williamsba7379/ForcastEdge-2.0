@@ -5,8 +5,8 @@
   "predictionSource": "data/four-model-head-to-head/2026-week-8-refresh-20261029T083609Z.json",
   "predictionFrozenAt": "2026-10-29T08:36:09.918267+00:00",
   "status": "PARTIAL_RESULTS",
-  "gamesCompleted": 12,
-  "gamesRemaining": 2,
+  "gamesCompleted": 13,
+  "gamesRemaining": 1,
   "results": [
     {
       "gameId": "401873023",
@@ -451,31 +451,68 @@
         }
       },
       "scoreSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8"
+    },
+    {
+      "gameId": "401873035",
+      "date": "2026-11-02T01:20Z",
+      "away": "Philadelphia Eagles",
+      "home": "Washington Commanders",
+      "awayScore": 10,
+      "homeScore": 27,
+      "winner": "Washington Commanders",
+      "totalPoints": 37,
+      "models": {
+        "A": {
+          "pregameWinner": "Washington Commanders",
+          "winnerCorrect": true,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "B": {
+          "pregameWinner": "Washington Commanders",
+          "winnerCorrect": true,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "C": {
+          "pregameWinner": "Washington Commanders",
+          "winnerCorrect": true,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "C-QB": {
+          "pregameWinner": "Washington Commanders",
+          "winnerCorrect": true,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        }
+      },
+      "scoreSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8"
     }
   ],
   "summary": {
     "A": {
-      "winnerWins": 8,
+      "winnerWins": 9,
       "winnerLosses": 4,
-      "winnerAccuracy": 0.6667,
+      "winnerAccuracy": 0.6923,
       "totalsGraded": 0
     },
     "B": {
-      "winnerWins": 8,
+      "winnerWins": 9,
       "winnerLosses": 4,
-      "winnerAccuracy": 0.6667,
+      "winnerAccuracy": 0.6923,
       "totalsGraded": 0
     },
     "C": {
-      "winnerWins": 8,
+      "winnerWins": 9,
       "winnerLosses": 4,
-      "winnerAccuracy": 0.6667,
+      "winnerAccuracy": 0.6923,
       "totalsGraded": 0
     },
     "C-QB": {
-      "winnerWins": 8,
+      "winnerWins": 9,
       "winnerLosses": 4,
-      "winnerAccuracy": 0.6667,
+      "winnerAccuracy": 0.6923,
       "totalsGraded": 0
     }
   },
