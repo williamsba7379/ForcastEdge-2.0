@@ -5,8 +5,8 @@
   "predictionSource": "data/four-model-head-to-head/2026-week-8-refresh-20261029T083609Z.json",
   "predictionFrozenAt": "2026-10-29T08:36:09.918267+00:00",
   "status": "PARTIAL_RESULTS",
-  "gamesCompleted": 9,
-  "gamesRemaining": 5,
+  "gamesCompleted": 12,
+  "gamesRemaining": 2,
   "results": [
     {
       "gameId": "401873023",
@@ -340,30 +340,141 @@
         }
       },
       "scoreSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8"
+    },
+    {
+      "gameId": "401873032",
+      "date": "2026-11-01T21:05Z",
+      "away": "Los Angeles Chargers",
+      "home": "Los Angeles Rams",
+      "awayScore": 9,
+      "homeScore": 24,
+      "winner": "Los Angeles Rams",
+      "totalPoints": 33,
+      "models": {
+        "A": {
+          "pregameWinner": "Los Angeles Rams",
+          "winnerCorrect": true,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "B": {
+          "pregameWinner": "Los Angeles Rams",
+          "winnerCorrect": true,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "C": {
+          "pregameWinner": "Los Angeles Rams",
+          "winnerCorrect": true,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "C-QB": {
+          "pregameWinner": "Los Angeles Rams",
+          "winnerCorrect": true,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        }
+      },
+      "scoreSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8"
+    },
+    {
+      "gameId": "401873033",
+      "date": "2026-11-01T21:25Z",
+      "away": "Kansas City Chiefs",
+      "home": "Denver Broncos",
+      "awayScore": 24,
+      "homeScore": 28,
+      "winner": "Denver Broncos",
+      "totalPoints": 52,
+      "models": {
+        "A": {
+          "pregameWinner": "Kansas City Chiefs",
+          "winnerCorrect": false,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "B": {
+          "pregameWinner": "Kansas City Chiefs",
+          "winnerCorrect": false,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "C": {
+          "pregameWinner": "Kansas City Chiefs",
+          "winnerCorrect": false,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "C-QB": {
+          "pregameWinner": "Kansas City Chiefs",
+          "winnerCorrect": false,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        }
+      },
+      "scoreSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8"
+    },
+    {
+      "gameId": "401873034",
+      "date": "2026-11-01T21:25Z",
+      "away": "New England Patriots",
+      "home": "Miami Dolphins",
+      "awayScore": 24,
+      "homeScore": 19,
+      "winner": "New England Patriots",
+      "totalPoints": 43,
+      "models": {
+        "A": {
+          "pregameWinner": "New England Patriots",
+          "winnerCorrect": true,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "B": {
+          "pregameWinner": "New England Patriots",
+          "winnerCorrect": true,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "C": {
+          "pregameWinner": "New England Patriots",
+          "winnerCorrect": true,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "C-QB": {
+          "pregameWinner": "New England Patriots",
+          "winnerCorrect": true,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        }
+      },
+      "scoreSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8"
     }
   ],
   "summary": {
     "A": {
-      "winnerWins": 6,
-      "winnerLosses": 3,
+      "winnerWins": 8,
+      "winnerLosses": 4,
       "winnerAccuracy": 0.6667,
       "totalsGraded": 0
     },
     "B": {
-      "winnerWins": 6,
-      "winnerLosses": 3,
+      "winnerWins": 8,
+      "winnerLosses": 4,
       "winnerAccuracy": 0.6667,
       "totalsGraded": 0
     },
     "C": {
-      "winnerWins": 6,
-      "winnerLosses": 3,
+      "winnerWins": 8,
+      "winnerLosses": 4,
       "winnerAccuracy": 0.6667,
       "totalsGraded": 0
     },
     "C-QB": {
-      "winnerWins": 6,
-      "winnerLosses": 3,
+      "winnerWins": 8,
+      "winnerLosses": 4,
       "winnerAccuracy": 0.6667,
       "totalsGraded": 0
     }
