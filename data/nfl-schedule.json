@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-11-02T11:21:16.587769+00:00",
+  "updatedAt": "2026-11-03T11:21:10.994432+00:00",
   "weeks": [
     {
       "week": 8,
@@ -101,7 +101,7 @@
           "date": "2026-11-03T01:15Z",
           "away": "Chicago Bears",
           "home": "Seattle Seahawks",
-          "status": "STATUS_SCHEDULED"
+          "status": "STATUS_FINAL"
         }
       ]
     },
