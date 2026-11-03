@@ -4,9 +4,9 @@
   "reportType": "independent_four_model_results",
   "predictionSource": "data/four-model-head-to-head/2026-week-8-refresh-20261029T083609Z.json",
   "predictionFrozenAt": "2026-10-29T08:36:09.918267+00:00",
-  "status": "PARTIAL_RESULTS",
-  "gamesCompleted": 13,
-  "gamesRemaining": 1,
+  "status": "COMPLETE",
+  "gamesCompleted": 14,
+  "gamesRemaining": 0,
   "results": [
     {
       "gameId": "401873023",
@@ -488,31 +488,68 @@
         }
       },
       "scoreSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8"
+    },
+    {
+      "gameId": "401873036",
+      "date": "2026-11-03T01:15Z",
+      "away": "Chicago Bears",
+      "home": "Seattle Seahawks",
+      "awayScore": 34,
+      "homeScore": 17,
+      "winner": "Chicago Bears",
+      "totalPoints": 51,
+      "models": {
+        "A": {
+          "pregameWinner": "Seattle Seahawks",
+          "winnerCorrect": false,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "B": {
+          "pregameWinner": "Seattle Seahawks",
+          "winnerCorrect": false,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "C": {
+          "pregameWinner": "Seattle Seahawks",
+          "winnerCorrect": false,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        },
+        "C-QB": {
+          "pregameWinner": "Seattle Seahawks",
+          "winnerCorrect": false,
+          "overUnder": "NOT_GRADED_MISSING_LOCKED_LINE",
+          "totalPointsError": "NOT_GRADED_MISSING_LOCKED_PREDICTION"
+        }
+      },
+      "scoreSource": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=8"
     }
   ],
   "summary": {
     "A": {
       "winnerWins": 9,
-      "winnerLosses": 4,
-      "winnerAccuracy": 0.6923,
+      "winnerLosses": 5,
+      "winnerAccuracy": 0.6429,
       "totalsGraded": 0
     },
     "B": {
       "winnerWins": 9,
-      "winnerLosses": 4,
-      "winnerAccuracy": 0.6923,
+      "winnerLosses": 5,
+      "winnerAccuracy": 0.6429,
       "totalsGraded": 0
     },
     "C": {
       "winnerWins": 9,
-      "winnerLosses": 4,
-      "winnerAccuracy": 0.6923,
+      "winnerLosses": 5,
+      "winnerAccuracy": 0.6429,
       "totalsGraded": 0
     },
     "C-QB": {
       "winnerWins": 9,
-      "winnerLosses": 4,
-      "winnerAccuracy": 0.6923,
+      "winnerLosses": 5,
+      "winnerAccuracy": 0.6429,
       "totalsGraded": 0
     }
   },
