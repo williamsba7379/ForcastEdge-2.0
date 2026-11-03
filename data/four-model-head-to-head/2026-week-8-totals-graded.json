@@ -856,6 +856,7 @@
       "totalsLosses": 0,
       "totalsPushes": 0,
       "totalErrorGames": 0,
+      "winnerAccuracyPct": null,
       "totalsAccuracyPct": null,
       "meanAbsoluteTotalError": null
     },
@@ -866,6 +867,7 @@
       "totalsLosses": 0,
       "totalsPushes": 0,
       "totalErrorGames": 0,
+      "winnerAccuracyPct": null,
       "totalsAccuracyPct": null,
       "meanAbsoluteTotalError": null
     },
@@ -876,6 +878,7 @@
       "totalsLosses": 0,
       "totalsPushes": 0,
       "totalErrorGames": 0,
+      "winnerAccuracyPct": null,
       "totalsAccuracyPct": null,
       "meanAbsoluteTotalError": null
     },
@@ -886,9 +889,12 @@
       "totalsLosses": 0,
       "totalsPushes": 0,
       "totalErrorGames": 0,
+      "winnerAccuracyPct": null,
       "totalsAccuracyPct": null,
       "meanAbsoluteTotalError": null
     }
   },
+  "completedGames": 0,
+  "pendingGames": 14,
   "gradingStatus": "PENDING_RESULTS"
 }
