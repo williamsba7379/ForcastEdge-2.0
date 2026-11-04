@@ -31,11 +31,18 @@ def verify(repo,history,report,manifest,cutoff,expected_ids):
         errors.append("RAW_SHA256_MISMATCH")
     try:
         parsed=json.loads(raw)
-        if parsed.get("provider")!="ESPN" or parsed.get("sourceUrl")!=manifest.get("sourceUrl"):
-            errors.append("RAW_SOURCE_MISMATCH")
-        if parsed.get("season")!=report.get("season") or parsed.get("week")!=report.get("week"):
-            errors.append("RAW_SCOPE_MISMATCH")
-        raw_rows=parsed["results"]
+        if "events" in parsed:
+            from scripts.nfl_espn_trusted_capture_offline import inspect_response
+            capture=inspect_response(manifest["sourceUrl"],raw,manifest["retrievedAt"],cutoff,report["season"],report["week"],[g["gameId"] for g in report["results"]])
+            if capture["status"]!="CAPTURE_VALIDATED_OFFLINE":
+                errors.extend(capture["failures"])
+            raw_rows=capture["results"]
+        else:
+            if parsed.get("provider")!="ESPN" or parsed.get("sourceUrl")!=manifest.get("sourceUrl"):
+                errors.append("RAW_SOURCE_MISMATCH")
+            if parsed.get("season")!=report.get("season") or parsed.get("week")!=report.get("week"):
+                errors.append("RAW_SCOPE_MISMATCH")
+            raw_rows=parsed["results"]
         report_rows=report["results"]
         def index(rows):
             keys=[str(g["gameId"]) for g in rows]
