@@ -40,7 +40,9 @@ jobs:
           git diff --cached --name-only | grep -vE '^research/week9-integrity/(week8-evidence|week9-replay)-[0-9]{8}T[0-9]{6}Z.json$' && exit 1 || true
           test "$(git diff --cached --name-only | wc -l)" -eq 2
           git commit -m 'Archive immutable Week 8 source retrieval and Week 9 research replay evidence'
-          git push
+          git fetch origin isolation/week9-readiness-gate-2026
+          git rebase origin/isolation/week9-readiness-gate-2026
+          git push origin HEAD:isolation/week9-readiness-gate-2026
       - name: Require complete reproducibility and historical availability before any promotion
         run: |
           test "${{ steps.replay.outcome }}" = "success"
