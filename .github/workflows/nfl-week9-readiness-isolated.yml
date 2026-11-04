@@ -7,6 +7,8 @@ on:
     paths:
       - scripts/nfl_week9_readiness.py
       - tests/test_nfl_week9_readiness.py
+      - tests/test_nfl_market_week_isolation.py
+      - scripts/nfl_market_totals_compare.py
       - .github/workflows/nfl-week9-readiness-isolated.yml
 permissions:
   contents: read
@@ -17,6 +19,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Offline fail-closed fixtures
         run: python3 -m unittest discover -s tests -p 'test_nfl_week9_readiness.py' -v
+      - name: Market-week regression fixtures
+        run: python3 -m unittest discover -s tests -p 'test_nfl_market_week_isolation.py' -v
       - name: Audit Week 9 inputs (fail closed)
         run: |
           python3 scripts/nfl_week9_readiness.py | tee week9-readiness.json
