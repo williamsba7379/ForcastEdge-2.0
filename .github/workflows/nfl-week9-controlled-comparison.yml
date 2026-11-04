@@ -1,0 +1,27 @@
+name: Isolated Week 9 controlled four-model comparison
+on:
+  push:
+    branches: [isolation/week9-readiness-gate-2026]
+    paths:
+      - .github/workflows/nfl-week9-controlled-comparison.yml
+      - scripts/nfl_week9_controlled_comparison.py
+      - tests/test_nfl_week9_controlled_comparison.py
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  controlled-comparison:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Offline controlled comparison safeguards
+        run: python3 -m unittest discover -s tests -p 'test_nfl_week9_controlled_comparison.py' -v
+      - name: Compare frozen 15 games with in-memory repaired history
+        run: PYTHONPATH=.:scripts python3 scripts/nfl_week9_controlled_comparison.py
+      - name: Verify no tracked modifications
+        run: |
+          test -z "$(git status --porcelain --untracked-files=no)"
+          echo 'No production history or frozen predictions changed. Promotion blocked.'
