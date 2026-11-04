@@ -8,7 +8,11 @@ from nfl_four_model_head_to_head import DATA, OUT, stamp
 
 def compare(research, market):
     if (research["season"],research["week"]) != (market.get("season"),market.get("week")):
-        raise ValueError("Market week mismatch")
+        # A zero-quote feed from a previous week is not market evidence.
+        # Treat it as unavailable, never as a current quote or a betting edge.
+        if market.get("games"):
+            raise ValueError("Market week mismatch with nonempty quotes")
+        market = {"season": research["season"], "week": research["week"], "games": []}
     by_id={str(g["id"]):g for g in research["games"]}
     seen=set()
     for quote in market.get("games",[]):
