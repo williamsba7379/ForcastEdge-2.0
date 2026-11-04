@@ -5,6 +5,8 @@ on:
       - isolation/week9-readiness-gate-2026
     paths:
       - .github/workflows/nfl-week9-integrity-research.yml
+      - scripts/nfl_week9_integrity_research.py
+      - tests/test_nfl_week9_integrity_research.py
   workflow_dispatch:
 permissions:
   contents: write
