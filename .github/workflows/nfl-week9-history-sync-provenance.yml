@@ -20,7 +20,7 @@ jobs:
       - name: Validate fifteen offline synchronization fixtures
         run: python3 -m unittest discover -s tests -p 'test_nfl_week9_history_sync_provenance.py' -v
       - name: Audit archived Week 8 results versus frozen Week 9 historical inputs
-        run: python3 scripts/nfl_week9_history_sync_provenance.py
+        run: PYTHONPATH=. python3 scripts/nfl_week9_history_sync_provenance.py
       - name: Verify no tracked files changed
         run: |
           test -z "$(git status --porcelain --untracked-files=no)"
