@@ -6,6 +6,7 @@ on:
       - scripts/nfl_offline_capture_archive_sync.py
       - scripts/nfl_future_immutable_evidence.py
       - tests/test_nfl_offline_capture_archive_sync.py
+      - tests/test_nfl_pipeline_security_audit.py
       - .github/workflows/nfl-offline-capture-archive-sync.yml
   workflow_dispatch:
 permissions:
@@ -23,6 +24,8 @@ jobs:
         run: PYTHONPATH=. python3 -m unittest discover -s tests -p 'test_nfl_future_immutable_evidence.py' -v
       - name: Existing offline capture regression fixtures
         run: PYTHONPATH=. python3 -m unittest discover -s tests -p 'test_nfl_espn_trusted_capture_offline.py' -v
+      - name: Security audit adversarial trust-boundary fixtures
+        run: PYTHONPATH=. python3 -m unittest discover -s tests -p 'test_nfl_pipeline_security_audit.py' -v
       - name: Verify tracked files unchanged
         run: |
           test -z "$(git status --porcelain --untracked-files=no)"
