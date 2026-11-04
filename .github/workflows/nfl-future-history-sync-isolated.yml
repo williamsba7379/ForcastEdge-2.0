@@ -1,0 +1,24 @@
+name: Isolated future-week historical synchronization safeguard
+on:
+  push:
+    branches: [isolation/week9-readiness-gate-2026]
+    paths:
+      - scripts/nfl_future_history_sync_gate.py
+      - tests/test_nfl_future_history_sync_gate.py
+      - .github/workflows/nfl-future-history-sync-isolated.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  offline-only:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Run sixteen offline fail-closed fixtures
+        run: PYTHONPATH=. python3 -m unittest discover -s tests -p 'test_nfl_future_history_sync_gate.py' -v
+      - name: Verify zero tracked changes
+        run: |
+          test -z "$(git status --porcelain --untracked-files=no)"
+          echo 'Research-only: no production writes, no promotion.'
