@@ -18,7 +18,7 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
       - name: Offline controlled comparison safeguards
-        run: python3 -m unittest discover -s tests -p 'test_nfl_week9_controlled_comparison.py' -v
+        run: PYTHONPATH=.:scripts python3 -m unittest discover -s tests -p 'test_nfl_week9_controlled_comparison.py' -v
       - name: Compare frozen 15 games with in-memory repaired history
         run: PYTHONPATH=.:scripts python3 scripts/nfl_week9_controlled_comparison.py
       - name: Verify no tracked modifications
