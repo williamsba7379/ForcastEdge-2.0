@@ -3,7 +3,10 @@ import hashlib
 import unittest
 from scripts.nfl_espn_hardened_mock_boundary import harden
 from scripts.nfl_future_history_sync_gate import sha
-from tests.test_nfl_espn_mock_transport_contract import fixture
+import sys
+from pathlib import Path
+sys.path.insert(0,str(Path(__file__).parent))
+from test_nfl_espn_mock_transport_contract import fixture
 
 def setup():
     response,manifest=fixture()
