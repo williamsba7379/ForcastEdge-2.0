@@ -86,7 +86,9 @@ def audit(history,week8,card,now):
         old=extract_history(historical,min(stamp(card["frozenAt"]),stamp(g["date"])),2026)
         away=team_form(old,g["away"]);home=team_form(old,g["home"])
         margin=(home or 0)-(away or 0)+1.5
-        return g["home"] if margin>=0 else g["away"]
+        # Match production Model C: round projected margin to two decimals BEFORE choosing winner.
+        # This resolves Chicago/Tampa near-zero floating-point boundary without changing frozen picks.
+        return g["home"] if round(margin,2)>=0 else g["away"]
     for g in card["games"]:
         original=pick_ab(g,history,stamp(card["frozenAt"]))
         if any(original[m]!=g["picks"][m] for m in ("A","B")):
