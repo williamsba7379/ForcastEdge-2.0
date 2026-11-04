@@ -79,18 +79,33 @@ def audit(history,week8,card,now):
     if any(str(g["id"]) in original_ids for g in rows):
         raise ValueError("Duplicate historical game")
     baseline=[];replayed=[]
+    starters=json.loads((DATA/"model-c-qb-starters.json").read_text())
+    if starters.get("teams") or any(g.get("qbHomeEdgeAdjustment")!=0 for g in card["games"]):
+        raise ValueError("QB evidence changed; manual independent replay required")
+    def c_pick(g,historical):
+        old=extract_history(historical,min(stamp(card["frozenAt"]),stamp(g["date"])),2026)
+        away=team_form(old,g["away"]);home=team_form(old,g["home"])
+        margin=(home or 0)-(away or 0)+1.5
+        return g["home"] if margin>=0 else g["away"]
     for g in card["games"]:
         original=pick_ab(g,history,stamp(card["frozenAt"]))
         if any(original[m]!=g["picks"][m] for m in ("A","B")):
             baseline.append({"id":g["id"],"matchup":g["away"]+" @ "+g["home"],
                              "expected":{m:g["picks"][m] for m in ("A","B")},"reproduced":original})
+        original_c=c_pick(g,history)
+        if original_c!=g["picks"]["C"]:
+            baseline.append({"id":g["id"],"matchup":g["away"]+" @ "+g["home"],"model":"C",
+                             "expected":g["picks"]["C"],"reproduced":original_c})
         combined={**history,"games":history["games"]+rows}
         after=pick_ab(g,combined,stamp(card["frozenAt"]))
+        after_c=c_pick(g,combined)
         replayed.append({"id":g["id"],"matchup":g["away"]+" @ "+g["home"],
                          "frozen":g["picks"],"researchAB":after,
                          "changedAB":[m for m in ("A","B") if after[m]!=g["picks"][m]],
-                         "C":"NOT_REPLAYED_WITH_ELIGIBLE_EVIDENCE",
-                         "C-QB":"NOT_REPLAYED_WITH_ELIGIBLE_EVIDENCE"})
+                         "conditionalResearchC":after_c,"conditionalResearchCQB":after_c,
+                         "changedC":after_c!=g["picks"]["C"],
+                         "changedCQB":after_c!=g["picks"]["C-QB"],
+                         "eligibility":"NOT_PROVEN_AS_OF_FREEZE"})
     return baseline,replayed,rows
 
 def main():
@@ -112,8 +127,8 @@ def main():
     with ev.open("x") as f:json.dump(snapshot,f,indent=2)
     report={"status":"RESEARCH_ONLY_NOT_PROMOTION_READY","frozenCard":FROZEN,
             "baselineDiscrepancies":baseline,"replayedGames":replayed,
-            "changedGames":sum(bool(g["changedAB"]) for g in replayed),
-            "sourceEvidence":ev.name,"missingCAndCQBReplays":True,
+            "changedGames":sum(bool(g["changedAB"]) or g["changedC"] or g["changedCQB"] for g in replayed),
+            "sourceEvidence":ev.name,"conditionalCAndCQBReplays":True,
             "historicalAvailabilityProven":False}
     with (OUT/("week9-replay-"+stamp_id+".json")).open("x") as f:json.dump(report,f,indent=2)
     print(json.dumps({"evidence":str(ev),"baselineDiscrepancies":baseline,
