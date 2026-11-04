@@ -1,0 +1,27 @@
+name: Isolated Week 9 in-memory historical repair proposal
+on:
+  push:
+    branches: [isolation/week9-readiness-gate-2026]
+    paths:
+      - .github/workflows/nfl-week9-in-memory-repair.yml
+      - scripts/nfl_week9_in_memory_repair.py
+      - tests/test_nfl_week9_in_memory_repair.py
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  research-only:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Twelve offline candidate and rollback fixtures
+        run: python3 -m unittest discover -s tests -p 'test_nfl_week9_in_memory_repair.py' -v
+      - name: Validate candidate against immutable Week 8 commit
+        run: PYTHONPATH=. python3 scripts/nfl_week9_in_memory_repair.py
+      - name: Confirm tracked files untouched
+        run: |
+          test -z "$(git status --porcelain --untracked-files=no)"
+          echo 'Candidate exists only in memory; production promotion is prohibited'
