@@ -23,6 +23,8 @@ class IntegrityTests(unittest.TestCase):
    return .7*sum(d)/len(d)+.3*sum(d[-3:])/3
   edge=weighted(home)-weighted(away)+1.5
   self.assertLess(abs(edge),1e-10)
+  self.assertEqual(round(edge,2),0.0)
+  self.assertTrue(round(edge,2)>=0, "Production C rounds before winner choice")
  def test_future_result_not_used(self):
   g={"date":"2026-11-08T18:00:00Z","home":"Home","away":"Away"}
   h={"games":[{"season":2026,"date":"2026-11-09T18:00:00Z","home":"Home","away":"Away","homeScore":100,"awayScore":0}]}
