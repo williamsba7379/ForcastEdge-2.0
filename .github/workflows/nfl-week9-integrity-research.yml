@@ -26,10 +26,11 @@ jobs:
         run: |
           python3 - <<'PY'
           import glob, json, re, datetime
-          ev=[json.load(open(p)) for p in glob.glob('research/week9-integrity/week8-evidence-*.json')]
-          rp=[json.load(open(p)) for p in glob.glob('research/week9-integrity/week9-replay-*.json')]
-          assert len(ev)==len(rp)==1
-          e=ev[0]; report=rp[0]
+          evidence_paths=sorted(glob.glob('research/week9-integrity/week8-evidence-*.json'))
+          replay_paths=sorted(glob.glob('research/week9-integrity/week9-replay-*.json'))
+          assert evidence_paths and replay_paths, 'No current evidence or replay files'
+          assert evidence_paths[-1].split('week8-evidence-')[-1] == replay_paths[-1].split('week9-replay-')[-1], 'Evidence/replay timestamp mismatch'
+          e=json.load(open(evidence_paths[-1])); report=json.load(open(replay_paths[-1]))
           assert len(e['games'])==14 and len(report['replayedGames'])==15
           assert e['week9AvailabilityVerified'] is False and report['historicalAvailabilityProven'] is False
           assert all(g['finalizationTimestamp'] is None and g['originalRetrievalTimestamp'] is None for g in e['games'])
