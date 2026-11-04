@@ -1,0 +1,24 @@
+name: Isolated immutable ESPN evidence verification
+on:
+  push:
+    branches: [isolation/week9-readiness-gate-2026]
+    paths:
+      - scripts/nfl_future_immutable_evidence.py
+      - tests/test_nfl_future_immutable_evidence.py
+      - .github/workflows/nfl-future-immutable-evidence-isolated.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  offline-immutable:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Verify sixteen hostile offline evidence fixtures
+        run: PYTHONPATH=. python3 -m unittest discover -s tests -p 'test_nfl_future_immutable_evidence.py' -v
+      - name: Confirm no tracked modifications
+        run: |
+          test -z "$(git status --porcelain --untracked-files=no)"
+          echo 'Research only; promotion prohibited.'
