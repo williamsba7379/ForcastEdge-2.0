@@ -1,0 +1,27 @@
+name: Isolated NFL Week 9 readiness audit
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - isolation/week9-readiness-gate-2026
+    paths:
+      - scripts/nfl_week9_readiness.py
+      - tests/test_nfl_week9_readiness.py
+      - .github/workflows/nfl-week9-readiness-isolated.yml
+permissions:
+  contents: read
+jobs:
+  offline-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Offline fail-closed fixtures
+        run: python3 -m unittest discover -s tests -p 'test_nfl_week9_readiness.py' -v
+      - name: Audit current Week 9 inputs (expected to fail closed until refreshed)
+        run: |
+          python3 scripts/nfl_week9_readiness.py > week9-readiness.json || true
+          cat week9-readiness.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: week9-readiness-audit
+          path: week9-readiness.json
