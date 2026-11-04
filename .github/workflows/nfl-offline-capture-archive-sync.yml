@@ -1,0 +1,29 @@
+name: Isolated offline ESPN capture archive history integration
+on:
+  push:
+    branches: [isolation/week9-readiness-gate-2026]
+    paths:
+      - scripts/nfl_offline_capture_archive_sync.py
+      - scripts/nfl_future_immutable_evidence.py
+      - tests/test_nfl_offline_capture_archive_sync.py
+      - .github/workflows/nfl-offline-capture-archive-sync.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  offline-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Thirteen hostile end-to-end integration fixtures
+        run: PYTHONPATH=. python3 -m unittest discover -s tests -p 'test_nfl_offline_capture_archive_sync.py' -v
+      - name: Existing immutable archive regression fixtures
+        run: PYTHONPATH=. python3 -m unittest discover -s tests -p 'test_nfl_future_immutable_evidence.py' -v
+      - name: Existing offline capture regression fixtures
+        run: PYTHONPATH=. python3 -m unittest discover -s tests -p 'test_nfl_espn_trusted_capture_offline.py' -v
+      - name: Verify tracked files unchanged
+        run: |
+          test -z "$(git status --porcelain --untracked-files=no)"
+          echo 'No network capture, no production writes, no promotion.'
