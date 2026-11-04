@@ -49,7 +49,8 @@ def main():
     if proposal["status"]!="RESEARCH_READY" or proposal["addedCount"]!=14:
         raise ValueError("Candidate validation failed")
     qb=json.loads((root/"data/model-c-qb-starters.json").read_text())
-    adj=json.loads((root/"data/model-c-verified-adjustments.json").read_text())
+    adjustment_path=root/"data/model-c-verified-adjustments.json"
+    adj=json.loads(adjustment_path.read_text()) if adjustment_path.exists() else {"games":{}}
     result=compare(history,candidate,frozen,qb,adj)
     print(json.dumps({"proposalOriginalHash":proposal["originalHistorySha256"],
         "proposalCandidateHash":proposal["candidateSha256"],**result},indent=2))
