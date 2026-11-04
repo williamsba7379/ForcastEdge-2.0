@@ -24,6 +24,7 @@ jobs:
         run: python3 scripts/nfl_week9_history_freshness_gate.py --expect-blocked
       - name: Assert no working tree modifications or promotion
         run: |
-          test -z "$(git status --porcelain --untracked-files=no)"\n          echo "Tracked repository files unchanged; Python test caches are ignored for this check"
+          test -z "$(git status --porcelain --untracked-files=no)"
+          echo "Tracked repository files unchanged; Python test caches are ignored for this check"
           echo 'EXPECTED_HISTORY_FRESHNESS_BLOCK: 14 Week 8 finals absent from Week 9 historical input'
           echo 'No files changed; no predictions regenerated; no production promotion'
