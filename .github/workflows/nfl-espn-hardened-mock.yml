@@ -1,0 +1,26 @@
+name: Isolated hardened ESPN mock trust boundary
+on:
+  push:
+    branches: [isolation/week9-readiness-gate-2026]
+    paths:
+      - scripts/nfl_espn_hardened_mock_boundary.py
+      - tests/test_nfl_espn_hardened_mock_boundary.py
+      - .github/workflows/nfl-espn-hardened-mock.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  offline-security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Hardened trust-boundary hostile fixtures
+        run: PYTHONPATH=.:tests python3 -m unittest discover -s tests -p 'test_nfl_espn_hardened_mock_boundary.py' -v
+      - name: Existing transport fixtures
+        run: PYTHONPATH=. python3 -m unittest discover -s tests -p 'test_nfl_espn_mock_transport_contract.py' -v
+      - name: No tracked changes
+        run: |
+          test -z "$(git status --porcelain --untracked-files=no)"
+          echo 'No network calls, no production changes, no promotion.'
