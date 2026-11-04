@@ -23,6 +23,7 @@ jobs:
         run: python3 -m unittest discover -s tests -p 'test_nfl_market_week_isolation.py' -v
       - name: Audit Week 9 inputs (fail closed)
         run: |
+          set -o pipefail
           python3 scripts/nfl_week9_readiness.py | tee week9-readiness.json
       - uses: actions/upload-artifact@v4
         if: always()
