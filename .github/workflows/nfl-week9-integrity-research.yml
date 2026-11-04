@@ -40,6 +40,7 @@ jobs:
             datetime.datetime.fromisoformat(src['retrievedAt'])
             print('Verified current-source metadata:',src['url'],src['retrievedAt'],src['sha256RawResponse'])
           assert len({g['id'] for g in report['replayedGames']})==15
+          assert report['baselineDiscrepancies']==[], 'Frozen baseline mismatch: fail closed even when evidence archiving succeeds'
           assert all(g['eligibility']=='NOT_PROVEN_AS_OF_FREEZE' for g in report['replayedGames'])
           print('Replay baseline discrepancies:',len(report['baselineDiscrepancies']))
           print('Conditional changes:',report['changedGames'],'Promotion permitted: NO')
