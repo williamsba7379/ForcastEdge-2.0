@@ -1,0 +1,27 @@
+name: Isolated Week 9 history synchronization provenance audit
+on:
+  push:
+    branches: [isolation/week9-readiness-gate-2026]
+    paths:
+      - .github/workflows/nfl-week9-history-sync-provenance.yml
+      - scripts/nfl_week9_history_sync_provenance.py
+      - tests/test_nfl_week9_history_sync_provenance.py
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit-only:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Validate fifteen offline synchronization fixtures
+        run: python3 -m unittest discover -s tests -p 'test_nfl_week9_history_sync_provenance.py' -v
+      - name: Audit archived Week 8 results versus frozen Week 9 historical inputs
+        run: python3 scripts/nfl_week9_history_sync_provenance.py
+      - name: Verify no tracked files changed
+        run: |
+          test -z "$(git status --porcelain --untracked-files=no)"
+          echo 'Research-only: history synchronization BLOCKED, promotion prohibited'
