@@ -1,0 +1,46 @@
+name: Isolated Week 9 historical integrity research
+on:
+  push:
+    branches:
+      - isolation/week9-readiness-gate-2026
+    paths:
+      - .github/workflows/nfl-week9-integrity-research.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  historical-research:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Offline historical audit tests
+        run: python3 -m unittest discover -s tests -p 'test_nfl_week9_integrity_research.py' -v
+      - name: Capture current raw-source hashes and replay without touching frozen data
+        id: replay
+        continue-on-error: true
+        run: python3 scripts/nfl_week9_integrity_research.py
+      - name: Upload research-only evidence even on baseline mismatch
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: week9-integrity-research-only
+          if-no-files-found: warn
+          path: research/week9-integrity/*.json
+      - name: Commit only new timestamped research evidence (never historical or frozen files)
+        if: always()
+        run: |
+          if ! ls research/week9-integrity/week8-evidence-*.json >/dev/null 2>&1; then
+            echo 'No source evidence captured; cannot commit'; exit 1
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add research/week9-integrity/week8-evidence-*.json research/week9-integrity/week9-replay-*.json
+          git diff --cached --name-only | grep -vE '^research/week9-integrity/(week8-evidence|week9-replay)-[0-9]{8}T[0-9]{6}Z.json$' && exit 1 || true
+          test "$(git diff --cached --name-only | wc -l)" -eq 2
+          git commit -m 'Archive immutable Week 8 source retrieval and Week 9 research replay evidence'
+          git push
+      - name: Require complete reproducibility and historical availability before any promotion
+        run: |
+          test "${{ steps.replay.outcome }}" = "success"
+          echo 'Research evidence archived; promotion remains blocked pending historical availability and C/C-QB replay'
+          exit 1
