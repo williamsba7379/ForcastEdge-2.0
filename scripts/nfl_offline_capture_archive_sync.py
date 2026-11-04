@@ -30,7 +30,7 @@ def run(repo,history,raw,url,retrieved_at,archived_at,cutoff,season,week,expecte
     manifest={"provider":"ESPN","sourceUrl":url,"rawResponseSha256":hashlib.sha256(raw).hexdigest(),
               "archiveCommit":commit,"archivePath":path,"archiveBlob":blob,
               "retrievedAt":retrieved_at,"archivedAt":archived_at,"reportSha256":sha(report)}
-    outcome,candidate=verify(repo,history,report,manifest,cutoff,expected_ids)
+    outcome,candidate=verify(repo,history,report,manifest,cutoff,expected_ids,require_native=True)
     if outcome["status"]!="RESEARCH_READY":
         return {"status":"BLOCKED","stage":"VERIFY_OR_SYNC","failures":outcome["errors"],
                 "promotionAuthorized":False,"originalSha256":sha(history),"candidateSha256":sha(history),
