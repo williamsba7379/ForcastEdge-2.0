@@ -8,7 +8,7 @@ from scripts.nfl_future_history_sync_gate import gate,sha,time
 def git(repo,*args):
     return subprocess.check_output(["git","-C",str(repo),*args],stderr=subprocess.DEVNULL)
 
-def verify(repo,history,report,manifest,cutoff,expected_ids):
+def verify(repo,history,report,manifest,cutoff,expected_ids,require_native=False):
     errors=[]
     commit=manifest.get("archiveCommit","")
     path=manifest.get("archivePath","")
@@ -23,7 +23,8 @@ def verify(repo,history,report,manifest,cutoff,expected_ids):
             blob=git(repo,"rev-parse",commit+":"+path).decode().strip()
             if blob!=manifest.get("archiveBlob"): errors.append("BLOB_MISMATCH")
             committed=time(git(repo,"show","-s","--format=%cI",commit).decode().strip())
-            if committed>time(cutoff) or committed>time(manifest["archivedAt"]):
+            authored=time(git(repo,"show","-s","--format=%aI",commit).decode().strip())
+            if committed>time(cutoff) or committed>time(manifest["archivedAt"]) or authored>time(cutoff) or authored>time(manifest["archivedAt"]):
                 errors.append("COMMIT_AFTER_ARCHIVE_OR_CUTOFF")
         except (subprocess.CalledProcessError,ValueError,KeyError,TypeError,AttributeError):
             errors.append("ARCHIVE_NOT_VERIFIED")
@@ -31,6 +32,8 @@ def verify(repo,history,report,manifest,cutoff,expected_ids):
         errors.append("RAW_SHA256_MISMATCH")
     try:
         parsed=json.loads(raw)
+        if require_native and "events" not in parsed:
+            errors.append("NATIVE_ESPN_EVENTS_REQUIRED")
         if "events" in parsed:
             from scripts.nfl_espn_trusted_capture_offline import inspect_response
             capture=inspect_response(manifest["sourceUrl"],raw,manifest["retrievedAt"],cutoff,report["season"],report["week"],[g["gameId"] for g in report["results"]])
