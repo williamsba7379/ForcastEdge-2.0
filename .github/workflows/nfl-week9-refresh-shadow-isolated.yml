@@ -1,0 +1,44 @@
+name: Isolated Week 9 C and C-QB shadow refresh
+on:
+  push:
+    branches:
+      - isolation/week9-readiness-gate-2026
+    paths:
+      - .github/workflows/nfl-week9-refresh-shadow-isolated.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  refresh-without-publishing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Offline readiness and market regression tests
+        run: |
+          python3 -m unittest discover -s tests -p 'test_nfl_week9_readiness.py' -v
+          python3 -m unittest discover -s tests -p 'test_nfl_market_week_isolation.py' -v
+      - name: Recompute Model C draft in runner only
+        run: python3 scripts/model_c_engine.py
+      - name: Recompute C-QB experimental shadow in runner only
+        run: python3 scripts/model_c_qb_shadow.py
+      - name: Verify C-QB parity
+        run: python3 scripts/model_c_qb_shadow_validate.py
+      - name: Fail closed on Week 9 readiness
+        run: |
+          set -o pipefail
+          python3 scripts/nfl_week9_readiness.py | tee week9-readiness.json
+      - name: Generate independent A/B/C/C-QB refresh in runner only
+        run: |
+          python3 tests/test_nfl_four_model_refresh.py
+          python3 scripts/nfl_four_model_refresh.py
+      - name: Save audit and pregame drafts for review only
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: week9-shadow-review-only
+          if-no-files-found: ignore
+          path: |
+            week9-readiness.json
+            data/model-c-automated-draft.json
+            data/model-c-qb-shadow.json
+            data/four-model-head-to-head/2026-week-9-refresh-*.json
