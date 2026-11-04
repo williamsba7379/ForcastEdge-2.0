@@ -1,0 +1,29 @@
+name: Isolated Week 9 historical input freshness gate
+on:
+  push:
+    branches:
+      - isolation/week9-readiness-gate-2026
+    paths:
+      - .github/workflows/nfl-week9-history-freshness-isolated.yml
+      - scripts/nfl_week9_history_freshness_gate.py
+      - tests/test_nfl_week9_history_freshness_gate.py
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  read-only-history-freshness:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Nine offline fail-closed fixture tests
+        run: python3 -m unittest discover -s tests -p 'test_nfl_week9_history_freshness_gate.py' -v
+      - name: Assert 14 archived finals missing from frozen Week 9 historical input
+        run: python3 scripts/nfl_week9_history_freshness_gate.py --expect-blocked
+      - name: Assert no working tree modifications or promotion
+        run: |
+          test -z "$(git status --porcelain)"
+          echo 'EXPECTED_HISTORY_FRESHNESS_BLOCK: 14 Week 8 finals absent from Week 9 historical input'
+          echo 'No files changed; no predictions regenerated; no production promotion'
