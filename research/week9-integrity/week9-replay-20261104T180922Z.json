@@ -1,0 +1,316 @@
+{
+  "status": "RESEARCH_ONLY_NOT_PROMOTION_READY",
+  "frozenCard": "2026-week-9-refresh-20261104T171826Z.json",
+  "baselineDiscrepancies": [],
+  "replayedGames": [
+    {
+      "id": "401873037",
+      "matchup": "Jacksonville Jaguars @ Baltimore Ravens",
+      "frozen": {
+        "A": "Jacksonville Jaguars",
+        "B": "Jacksonville Jaguars",
+        "C": "Jacksonville Jaguars",
+        "C-QB": "Jacksonville Jaguars"
+      },
+      "researchAB": {
+        "A": "Jacksonville Jaguars",
+        "B": "Jacksonville Jaguars"
+      },
+      "changedAB": [],
+      "conditionalResearchC": "Jacksonville Jaguars",
+      "conditionalResearchCQB": "Jacksonville Jaguars",
+      "changedC": false,
+      "changedCQB": false,
+      "eligibility": "NOT_PROVEN_AS_OF_FREEZE"
+    },
+    {
+      "id": "401873038",
+      "matchup": "Cincinnati Bengals @ Atlanta Falcons",
+      "frozen": {
+        "A": "Cincinnati Bengals",
+        "B": "Cincinnati Bengals",
+        "C": "Cincinnati Bengals",
+        "C-QB": "Cincinnati Bengals"
+      },
+      "researchAB": {
+        "A": "Cincinnati Bengals",
+        "B": "Cincinnati Bengals"
+      },
+      "changedAB": [],
+      "conditionalResearchC": "Cincinnati Bengals",
+      "conditionalResearchCQB": "Cincinnati Bengals",
+      "changedC": false,
+      "changedCQB": false,
+      "eligibility": "NOT_PROVEN_AS_OF_FREEZE"
+    },
+    {
+      "id": "401873040",
+      "matchup": "Dallas Cowboys @ Indianapolis Colts",
+      "frozen": {
+        "A": "Dallas Cowboys",
+        "B": "Dallas Cowboys",
+        "C": "Dallas Cowboys",
+        "C-QB": "Dallas Cowboys"
+      },
+      "researchAB": {
+        "A": "Dallas Cowboys",
+        "B": "Dallas Cowboys"
+      },
+      "changedAB": [],
+      "conditionalResearchC": "Dallas Cowboys",
+      "conditionalResearchCQB": "Dallas Cowboys",
+      "changedC": false,
+      "changedCQB": false,
+      "eligibility": "NOT_PROVEN_AS_OF_FREEZE"
+    },
+    {
+      "id": "401873045",
+      "matchup": "New York Jets @ Kansas City Chiefs",
+      "frozen": {
+        "A": "Kansas City Chiefs",
+        "B": "Kansas City Chiefs",
+        "C": "Kansas City Chiefs",
+        "C-QB": "Kansas City Chiefs"
+      },
+      "researchAB": {
+        "A": "Kansas City Chiefs",
+        "B": "Kansas City Chiefs"
+      },
+      "changedAB": [],
+      "conditionalResearchC": "Kansas City Chiefs",
+      "conditionalResearchCQB": "Kansas City Chiefs",
+      "changedC": false,
+      "changedCQB": false,
+      "eligibility": "NOT_PROVEN_AS_OF_FREEZE"
+    },
+    {
+      "id": "401873042",
+      "matchup": "Detroit Lions @ Miami Dolphins",
+      "frozen": {
+        "A": "Detroit Lions",
+        "B": "Detroit Lions",
+        "C": "Detroit Lions",
+        "C-QB": "Detroit Lions"
+      },
+      "researchAB": {
+        "A": "Detroit Lions",
+        "B": "Detroit Lions"
+      },
+      "changedAB": [],
+      "conditionalResearchC": "Detroit Lions",
+      "conditionalResearchCQB": "Detroit Lions",
+      "changedC": false,
+      "changedCQB": false,
+      "eligibility": "NOT_PROVEN_AS_OF_FREEZE"
+    },
+    {
+      "id": "401873039",
+      "matchup": "Cleveland Browns @ New Orleans Saints",
+      "frozen": {
+        "A": "Cleveland Browns",
+        "B": "Cleveland Browns",
+        "C": "Cleveland Browns",
+        "C-QB": "Cleveland Browns"
+      },
+      "researchAB": {
+        "A": "New Orleans Saints",
+        "B": "New Orleans Saints"
+      },
+      "changedAB": [
+        "A",
+        "B"
+      ],
+      "conditionalResearchC": "New Orleans Saints",
+      "conditionalResearchCQB": "New Orleans Saints",
+      "changedC": true,
+      "changedCQB": true,
+      "eligibility": "NOT_PROVEN_AS_OF_FREEZE"
+    },
+    {
+      "id": "401873044",
+      "matchup": "New York Giants @ Philadelphia Eagles",
+      "frozen": {
+        "A": "New York Giants",
+        "B": "New York Giants",
+        "C": "New York Giants",
+        "C-QB": "New York Giants"
+      },
+      "researchAB": {
+        "A": "New York Giants",
+        "B": "New York Giants"
+      },
+      "changedAB": [],
+      "conditionalResearchC": "New York Giants",
+      "conditionalResearchCQB": "New York Giants",
+      "changedC": false,
+      "changedCQB": false,
+      "eligibility": "NOT_PROVEN_AS_OF_FREEZE"
+    },
+    {
+      "id": "401873043",
+      "matchup": "Los Angeles Rams @ Washington Commanders",
+      "frozen": {
+        "A": "Los Angeles Rams",
+        "B": "Los Angeles Rams",
+        "C": "Los Angeles Rams",
+        "C-QB": "Los Angeles Rams"
+      },
+      "researchAB": {
+        "A": "Los Angeles Rams",
+        "B": "Los Angeles Rams"
+      },
+      "changedAB": [],
+      "conditionalResearchC": "Los Angeles Rams",
+      "conditionalResearchCQB": "Los Angeles Rams",
+      "changedC": false,
+      "changedCQB": false,
+      "eligibility": "NOT_PROVEN_AS_OF_FREEZE"
+    },
+    {
+      "id": "401873041",
+      "matchup": "Denver Broncos @ Carolina Panthers",
+      "frozen": {
+        "A": "Denver Broncos",
+        "B": "Denver Broncos",
+        "C": "Denver Broncos",
+        "C-QB": "Denver Broncos"
+      },
+      "researchAB": {
+        "A": "Denver Broncos",
+        "B": "Denver Broncos"
+      },
+      "changedAB": [],
+      "conditionalResearchC": "Denver Broncos",
+      "conditionalResearchCQB": "Denver Broncos",
+      "changedC": false,
+      "changedCQB": false,
+      "eligibility": "NOT_PROVEN_AS_OF_FREEZE"
+    },
+    {
+      "id": "401873046",
+      "matchup": "Houston Texans @ Los Angeles Chargers",
+      "frozen": {
+        "A": "Houston Texans",
+        "B": "Houston Texans",
+        "C": "Houston Texans",
+        "C-QB": "Houston Texans"
+      },
+      "researchAB": {
+        "A": "Houston Texans",
+        "B": "Houston Texans"
+      },
+      "changedAB": [],
+      "conditionalResearchC": "Houston Texans",
+      "conditionalResearchCQB": "Houston Texans",
+      "changedC": false,
+      "changedCQB": false,
+      "eligibility": "NOT_PROVEN_AS_OF_FREEZE"
+    },
+    {
+      "id": "401873049",
+      "matchup": "Green Bay Packers @ New England Patriots",
+      "frozen": {
+        "A": "New England Patriots",
+        "B": "New England Patriots",
+        "C": "New England Patriots",
+        "C-QB": "New England Patriots"
+      },
+      "researchAB": {
+        "A": "New England Patriots",
+        "B": "New England Patriots"
+      },
+      "changedAB": [],
+      "conditionalResearchC": "New England Patriots",
+      "conditionalResearchCQB": "New England Patriots",
+      "changedC": false,
+      "changedCQB": false,
+      "eligibility": "NOT_PROVEN_AS_OF_FREEZE"
+    },
+    {
+      "id": "401873047",
+      "matchup": "Las Vegas Raiders @ San Francisco 49ers",
+      "frozen": {
+        "A": "San Francisco 49ers",
+        "B": "San Francisco 49ers",
+        "C": "San Francisco 49ers",
+        "C-QB": "San Francisco 49ers"
+      },
+      "researchAB": {
+        "A": "San Francisco 49ers",
+        "B": "San Francisco 49ers"
+      },
+      "changedAB": [],
+      "conditionalResearchC": "San Francisco 49ers",
+      "conditionalResearchCQB": "San Francisco 49ers",
+      "changedC": false,
+      "changedCQB": false,
+      "eligibility": "NOT_PROVEN_AS_OF_FREEZE"
+    },
+    {
+      "id": "401873048",
+      "matchup": "Arizona Cardinals @ Seattle Seahawks",
+      "frozen": {
+        "A": "Seattle Seahawks",
+        "B": "Seattle Seahawks",
+        "C": "Seattle Seahawks",
+        "C-QB": "Seattle Seahawks"
+      },
+      "researchAB": {
+        "A": "Seattle Seahawks",
+        "B": "Seattle Seahawks"
+      },
+      "changedAB": [],
+      "conditionalResearchC": "Seattle Seahawks",
+      "conditionalResearchCQB": "Seattle Seahawks",
+      "changedC": false,
+      "changedCQB": false,
+      "eligibility": "NOT_PROVEN_AS_OF_FREEZE"
+    },
+    {
+      "id": "401873050",
+      "matchup": "Tampa Bay Buccaneers @ Chicago Bears",
+      "frozen": {
+        "A": "Chicago Bears",
+        "B": "Chicago Bears",
+        "C": "Chicago Bears",
+        "C-QB": "Chicago Bears"
+      },
+      "researchAB": {
+        "A": "Chicago Bears",
+        "B": "Chicago Bears"
+      },
+      "changedAB": [],
+      "conditionalResearchC": "Chicago Bears",
+      "conditionalResearchCQB": "Chicago Bears",
+      "changedC": false,
+      "changedCQB": false,
+      "eligibility": "NOT_PROVEN_AS_OF_FREEZE"
+    },
+    {
+      "id": "401873051",
+      "matchup": "Buffalo Bills @ Minnesota Vikings",
+      "frozen": {
+        "A": "Minnesota Vikings",
+        "B": "Minnesota Vikings",
+        "C": "Minnesota Vikings",
+        "C-QB": "Minnesota Vikings"
+      },
+      "researchAB": {
+        "A": "Buffalo Bills",
+        "B": "Minnesota Vikings"
+      },
+      "changedAB": [
+        "A"
+      ],
+      "conditionalResearchC": "Buffalo Bills",
+      "conditionalResearchCQB": "Buffalo Bills",
+      "changedC": true,
+      "changedCQB": true,
+      "eligibility": "NOT_PROVEN_AS_OF_FREEZE"
+    }
+  ],
+  "changedGames": 2,
+  "sourceEvidence": "week8-evidence-20261104T180922Z.json",
+  "conditionalCAndCQBReplays": true,
+  "historicalAvailabilityProven": false
+}
