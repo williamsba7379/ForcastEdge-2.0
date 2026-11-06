@@ -19,7 +19,7 @@ def replay(snapshot, frozen, metric_fn):
     ids=set()
     for obs in records:
         row=obs.get("game")
-        if not isinstance(row,dict) or not obs.get("sourceUrl") or not obs.get("retrievedAt") or not obs.get("observedFinalAt") or not obs.get("sha256"):
+        if not isinstance(row,dict) or not obs.get("sourceUrl") or not obs.get("retrievedAt") or not obs.get("observedFinalAt") or not obs.get("sha256") or not obs.get("responseSha256"):
             raise ValueError("MISSING_SOURCE_OR_FINALIZATION_PROVENANCE")
         if obs.get("finalObservationType") not in ("FIRST_OBSERVED_BY_COLLECTOR","VERIFIED_SOURCE_FINAL_TIMESTAMP"):\n            raise ValueError("UNVERIFIED_FINAL_OBSERVATION_TYPE")\n        if hashlib.sha256(canonical(row)).hexdigest()!=obs["sha256"]:
             raise ValueError("CONTENT_HASH_MISMATCH")
