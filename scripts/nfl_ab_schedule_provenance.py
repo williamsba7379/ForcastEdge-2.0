@@ -6,16 +6,30 @@ Never treats an unverified local schedule or a later response as a freeze.
 import base64
 import hashlib
 import json
+import urllib.parse
 from scripts.nfl_ab_archive_adapter import parse_time
 from scripts.nfl_ab_strict_replay import canonical
 
 ESPN_SCHEDULE_URL="https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard"
 
+def validate_schedule_url(url):
+    parsed=urllib.parse.urlsplit(url)
+    if (parsed.scheme!="https" or parsed.netloc!="site.api.espn.com"
+            or parsed.path!="/apis/site/v2/sports/football/nfl/scoreboard"
+            or parsed.username or parsed.password or parsed.fragment):
+        raise ValueError("UNTRUSTED_SCHEDULE_SOURCE")
+    params=urllib.parse.parse_qs(parsed.query,strict_parsing=True)
+    if set(params)!={"dates","seasontype","week"} or any(len(v)!=1 for v in params.values()):
+        raise ValueError("INVALID_SCHEDULE_QUERY")
+    if params["seasontype"]!=["2"] or not params["dates"][0].isdigit() or not params["week"][0].isdigit():
+        raise ValueError("INVALID_SCHEDULE_QUERY")
+    if not (2000<=int(params["dates"][0])<=2100 and 1<=int(params["week"][0])<=18):
+        raise ValueError("INVALID_SCHEDULE_QUERY")
+
 def capture_schedule_response(raw_body, retrieved_at, source_url=ESPN_SCHEDULE_URL):
     if not isinstance(raw_body,bytes) or not raw_body:
         raise ValueError("MISSING_RAW_SCHEDULE_RESPONSE")
-    if not isinstance(source_url,str) or not source_url.startswith(ESPN_SCHEDULE_URL):
-        raise ValueError("UNTRUSTED_SCHEDULE_SOURCE")
+    validate_schedule_url(source_url)
     parse_time(retrieved_at)
     payload=json.loads(raw_body)
     if not isinstance(payload,dict) or not isinstance(payload.get("events"),list):
@@ -28,8 +42,7 @@ def verify_schedule_evidence(evidence, cutoff, expected_schedule):
     if not isinstance(evidence,dict) or evidence.get("schemaVersion")!=1:
         raise ValueError("MISSING_SCHEDULE_PROVENANCE")
     url=evidence.get("sourceUrl")
-    if not isinstance(url,str) or not url.startswith(ESPN_SCHEDULE_URL):
-        raise ValueError("UNTRUSTED_SCHEDULE_SOURCE")
+    validate_schedule_url(url)
     if parse_time(evidence["retrievedAt"])>parse_time(cutoff):
         raise ValueError("SCHEDULE_AFTER_CUTOFF")
     try:
@@ -55,6 +68,8 @@ def verify_schedule_evidence(evidence, cutoff, expected_schedule):
         if row["id"] in observed:
             raise ValueError("DUPLICATE_SCHEDULE_EVENT")
         observed[row["id"]]=row
+    if not observed:
+        raise ValueError("EMPTY_WEEK_SCHEDULE")
     expected={str(g["id"]):g for g in expected_schedule}
     if len(expected)!=len(expected_schedule) or set(expected)!=set(observed):
         raise ValueError("SCHEDULE_COVERAGE_MISMATCH")
