@@ -15,4 +15,4 @@ jobs:
         with:
           python-version: '3.11'
       - name: Run isolated A/B archive, replay, capture and publisher tests
-        run: python -m unittest discover -s tests -p 'test_nfl_*readiness.py' -v && python -m unittest tests.test_nfl_ab_archive_adapter tests.test_nfl_ab_strict_replay tests.test_nfl_ab_input_capture -v
+        run: python -m unittest discover -s tests -p 'test_nfl_publisher_readiness.py' -v && python -m unittest discover -s tests -p 'test_nfl_ab_*.py' -v
