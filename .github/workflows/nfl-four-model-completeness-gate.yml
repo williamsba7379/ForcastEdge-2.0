@@ -5,7 +5,7 @@ on:
       card:
         description: 'Existing frozen card path, never modified'
         required: true
-        default: 'data/four-model-head-to-head/2026-week-9.json'
+        default: 'data/four-model-head-to-head/2026-week-8.json'
       expected_games:
         description: 'Expected scheduled games'
         required: true
@@ -71,7 +71,7 @@ jobs:
               print("card=__MISSING_UPCOMING_FROZEN_CARD__.json")
           PY
       - name: Validate frozen card without modifying it
-        if: (github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && steps.timecheck.outputs.active == 'true')) || (github.event_name == 'schedule' && steps.timecheck.outputs.active == 'true')
+        if: github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && steps.timecheck.outputs.active == 'true')
         id: gate
         continue-on-error: true
         env:
@@ -81,7 +81,9 @@ jobs:
           if [ -n "$EXPECTED" ]; then
             python scripts/nfl_four_model_completeness.py "$CARD" --expected-games "$EXPECTED"
           else
-            python scripts/nfl_four_model_completeness.py "$CARD"
+            echo '::error::Expected game count is unavailable; schedule coverage cannot be verified'
+            python scripts/nfl_four_model_completeness.py "$CARD" || true
+            exit 1
           fi
       - name: Summarize missing evidence
         if: always() && (github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && steps.timecheck.outputs.active == 'true'))
