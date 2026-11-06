@@ -19,13 +19,18 @@ def stamp(value):
 def finite(value):
     return isinstance(value, (int, float)) and not isinstance(value, bool) and math.isfinite(value)
 
-def validate(card, expected_games=None):
+def validate(card, expected_games=None, schedule=None):
     errors = []
     games = card.get("games")
     if not isinstance(games, list) or not games:
         return ["MISSING_GAMES"]
     if expected_games is not None and len(games) != expected_games:
         errors.append("GAME_COVERAGE expected=%d actual=%d" % (expected_games, len(games)))
+    if schedule is not None:
+        expected_ids = {str(g["id"]) for g in schedule["games"]}
+        actual_ids = {str(g.get("id")) for g in games}
+        if expected_ids != actual_ids:
+            errors.append("SCHEDULE_ID_MISMATCH missing=%s unexpected=%s" % (sorted(expected_ids-actual_ids),sorted(actual_ids-expected_ids)))
     seen = set()
     for i, game in enumerate(games):
         ident = str(game.get("id") or "")
@@ -86,10 +91,13 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument("card", type=Path)
     p.add_argument("--expected-games", type=int)
+    p.add_argument("--schedule", type=Path)
     p.add_argument("--output", type=Path, default=Path("completeness-report.json"))
     args = p.parse_args()
     try:
-        errors = validate(json.loads(args.card.read_text()), args.expected_games)
+        schedule = json.loads(args.schedule.read_text()) if args.schedule else None
+        expected = len(schedule["games"]) if schedule else args.expected_games
+        errors = validate(json.loads(args.card.read_text()), expected, schedule)
     except (OSError, ValueError, TypeError, json.JSONDecodeError) as exc:
         errors = ["UNREADABLE_CARD " + str(exc)]
     report = {"status": "FAILED_COMPLETENESS_CHECK" if errors else "PASS", "missing_count": len(errors), "issues": errors, "source": str(args.card), "read_only": True}
