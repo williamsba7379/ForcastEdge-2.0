@@ -1,0 +1,58 @@
+name: NFL four-model completeness gate (isolated)
+on:
+  workflow_dispatch:
+    inputs:
+      card:
+        description: 'Existing frozen card path, never modified'
+        required: true
+        default: 'data/four-model-head-to-head/2026-week-9.json'
+      expected_games:
+        description: 'Expected scheduled games'
+        required: true
+        default: '15'
+  push:
+    branches: [audit/four-model-completeness-gate]
+    paths:
+      - 'scripts/nfl_four_model_completeness.py'
+      - 'tests/test_nfl_four_model_completeness.py'
+      - '.github/workflows/nfl-four-model-completeness-gate.yml'
+permissions:
+  contents: read
+  issues: write
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Offline missing-field regression tests
+        run: python -m unittest discover -s tests -p test_nfl_four_model_completeness.py -v
+      - name: Validate frozen card without modifying it
+        if: github.event_name == 'workflow_dispatch'
+        id: gate
+        continue-on-error: true
+        env:
+          CARD: ${{ inputs.card }}
+          EXPECTED: ${{ inputs.expected_games }}
+        run: python scripts/nfl_four_model_completeness.py "$CARD" --expected-games "$EXPECTED"
+      - name: Summarize missing evidence
+        if: always() && github.event_name == 'workflow_dispatch'
+        run: |
+          if [ -f completeness-report.json ]; then cat completeness-report.json >> "$GITHUB_STEP_SUMMARY"; else echo 'Validator failed before writing report' >> "$GITHUB_STEP_SUMMARY"; fi
+      - uses: actions/upload-artifact@v4
+        if: always() && github.event_name == 'workflow_dispatch'
+        with:
+          name: nfl-completeness-audit
+          path: completeness-report.json
+          if-no-files-found: warn
+      - name: Create pre-kickoff failure alert issue
+        if: github.event_name == 'workflow_dispatch' && steps.gate.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create --title "NFL COMPLETENESS FAILED: pre-kickoff action required" --body "Four-model frozen card did not pass the completeness gate. Review this workflow run and its nfl-completeness-audit artifact BEFORE kickoff. No picks or NO BET were changed." || echo "::warning::Issue alert failed; check Actions permissions"
+      - name: Fail closed
+        if: github.event_name == 'workflow_dispatch' && steps.gate.outcome == 'failure'
+        run: exit 1
