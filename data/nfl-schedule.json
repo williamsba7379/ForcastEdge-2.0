@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-11-05T11:24:40.227267+00:00",
+  "updatedAt": "2026-11-06T11:22:59.843511+00:00",
   "weeks": [
     {
       "week": 9,
@@ -10,7 +10,7 @@
           "date": "2026-11-06T01:15Z",
           "away": "Jacksonville Jaguars",
           "home": "Baltimore Ravens",
-          "status": "STATUS_SCHEDULED"
+          "status": "STATUS_FINAL"
         },
         {
           "id": "401873038",
