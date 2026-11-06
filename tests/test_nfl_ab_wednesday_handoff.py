@@ -1,6 +1,7 @@
 """Isolated A/B Wednesday handoff regression tests; no production writes."""
 import copy
 import unittest
+from unittest.mock import patch
 from scripts.nfl_ab_wednesday_handoff import build_ab_wednesday_handoff
 from test_nfl_ab_full_slate_audit import fixture,CUTOFF
 
@@ -22,6 +23,20 @@ class WednesdayHandoffTests(unittest.TestCase):
         self.assertFalse(out["officialFrozen"])
         self.assertTrue(out["noBet"])
         self.assertEqual(len(out["snapshotSha256"]),64)
+    def test_disagreeing_model_picks_remain_separate(self):
+        snap,slate,schedule=inputs()
+        def verified_audit(snapshot,fixtures,cutoff,expected_ids):
+            rows=[]
+            for i,g in enumerate(fixtures):
+                rows.append({"id":g["id"],"home":g["home"],"away":g["away"],
+                             "A":g["home"],"B":g["away"] if i==0 else g["home"],
+                             "A_home_edge":2.0,"B_home_edge":-1.0 if i==0 else 1.0,
+                             "home_history_games":2,"away_history_games":2})
+            return {"coverage":len(rows),"cutoff":"2026-11-04T16:00:00+00:00","games":rows}
+        with patch("scripts.nfl_ab_wednesday_handoff.audit",side_effect=verified_audit):
+            result=build_ab_wednesday_handoff(snap,slate,CUTOFF,schedule)
+        self.assertNotEqual(result["games"][0]["picks"]["A"],result["games"][0]["picks"]["B"])
+        self.assertEqual(result["games"][1]["picks"]["A"],result["games"][1]["picks"]["B"])
     def test_repeat_is_deterministic_and_input_unchanged(self):
         snap,slate,schedule=inputs()
         before=copy.deepcopy((snap,slate,schedule))
