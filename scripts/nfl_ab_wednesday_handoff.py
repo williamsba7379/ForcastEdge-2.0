@@ -70,3 +70,12 @@ def build_verified_wednesday_handoff(snapshot, fixtures, cutoff, expected_schedu
     result["scheduleProvenance"]=provenance
     result["captureCompletedAt"]=snapshot["capturedAt"]
     return result
+
+def build_two_source_wednesday_handoff(snapshot, fixtures, cutoff, expected_schedule,
+                                       espn_evidence, official_evidence):
+    """Research-only A/B handoff; fail closed unless both schedule sources agree."""
+    from scripts.nfl_ab_independent_schedule import verify_independent_schedule
+    provenance=verify_independent_schedule(espn_evidence,official_evidence,cutoff,expected_schedule)
+    result=build_verified_wednesday_handoff(snapshot,fixtures,cutoff,expected_schedule,espn_evidence)
+    result["scheduleProvenance"]=provenance
+    return result
