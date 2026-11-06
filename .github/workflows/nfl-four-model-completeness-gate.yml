@@ -10,6 +10,11 @@ on:
         description: 'Expected scheduled games'
         required: true
         default: '15'
+  # UTC hours cover both Eastern daylight and standard time.
+  # Scheduled workflows run ONLY when present on the default branch.
+  schedule:
+    - cron: '0 15 * * 3'
+    - cron: '0 16 * * 3'
   push:
     branches: [audit/four-model-completeness-gate]
     paths:
@@ -22,37 +27,78 @@ permissions:
 jobs:
   validate:
     runs-on: ubuntu-latest
+    env:
+      TZ: America/New_York
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: Verify local Wednesday 11 AM Eastern schedule
+        id: timecheck
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import datetime, os
+          from zoneinfo import ZoneInfo
+          local = datetime.datetime.now(ZoneInfo("America/New_York"))
+          allowed = local.weekday() == 2 and local.hour == 11
+          print("active=" + ("true" if allowed else "false"))
+          PY
       - name: Offline missing-field regression tests
         run: python -m unittest discover -s tests -p test_nfl_four_model_completeness.py -v
+      - name: Select upcoming card for scheduled audit
+        if: github.event_name == 'schedule' && steps.timecheck.outputs.active == 'true'
+        id: select
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import datetime, json
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+          now = datetime.datetime.now(datetime.timezone.utc)
+          candidates = []
+          for path in Path("data/four-model-head-to-head").glob("*.json"):
+              try:
+                  obj = json.loads(path.read_text())
+                  dates = [datetime.datetime.fromisoformat(g["date"].replace("Z","+00:00")) for g in obj["games"]]
+                  if dates and min(dates) > now and len(obj["games"]) >= 1:
+                      candidates.append((min(dates), path))
+              except (ValueError, KeyError, TypeError):
+                  continue
+          if candidates:
+              selected = min(candidates)[1]
+              print("card=" + str(selected))
+          else:
+              print("card=__MISSING_UPCOMING_FROZEN_CARD__.json")
+          PY
       - name: Validate frozen card without modifying it
-        if: github.event_name == 'workflow_dispatch'
+        if: (github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && steps.timecheck.outputs.active == 'true')) || (github.event_name == 'schedule' && steps.timecheck.outputs.active == 'true')
         id: gate
         continue-on-error: true
         env:
-          CARD: ${{ inputs.card }}
+          CARD: ${{ github.event_name == 'schedule' && steps.select.outputs.card || inputs.card }}
           EXPECTED: ${{ inputs.expected_games }}
-        run: python scripts/nfl_four_model_completeness.py "$CARD" --expected-games "$EXPECTED"
+        run: |
+          if [ -n "$EXPECTED" ]; then
+            python scripts/nfl_four_model_completeness.py "$CARD" --expected-games "$EXPECTED"
+          else
+            python scripts/nfl_four_model_completeness.py "$CARD"
+          fi
       - name: Summarize missing evidence
-        if: always() && github.event_name == 'workflow_dispatch'
+        if: always() && (github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && steps.timecheck.outputs.active == 'true'))
         run: |
           if [ -f completeness-report.json ]; then cat completeness-report.json >> "$GITHUB_STEP_SUMMARY"; else echo 'Validator failed before writing report' >> "$GITHUB_STEP_SUMMARY"; fi
       - uses: actions/upload-artifact@v4
-        if: always() && github.event_name == 'workflow_dispatch'
+        if: always() && (github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && steps.timecheck.outputs.active == 'true'))
         with:
           name: nfl-completeness-audit
           path: completeness-report.json
           if-no-files-found: warn
       - name: Create pre-kickoff failure alert issue
-        if: github.event_name == 'workflow_dispatch' && steps.gate.outcome == 'failure'
+        if: (github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && steps.timecheck.outputs.active == 'true')) && steps.gate.outcome == 'failure'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           gh issue create --title "NFL COMPLETENESS FAILED: pre-kickoff action required" --body "Four-model frozen card did not pass the completeness gate. Review this workflow run and its nfl-completeness-audit artifact BEFORE kickoff. No picks or NO BET were changed." || echo "::warning::Issue alert failed; check Actions permissions"
       - name: Fail closed
-        if: github.event_name == 'workflow_dispatch' && steps.gate.outcome == 'failure'
+        if: (github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && steps.timecheck.outputs.active == 'true')) && steps.gate.outcome == 'failure'
         run: exit 1
