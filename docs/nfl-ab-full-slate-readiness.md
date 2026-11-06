@@ -14,3 +14,13 @@ Remaining publication blockers:
 5. Four-model publication must require all four selections for every scheduled game, with traceable source times, explicit NO BET, and no invented scores, spread, total or confidence. Produce a printable report only from a complete verified card.
 
 Do not merge this draft PR or modify frozen picks, NO BET, C/C-QB, existing PRs or production workflows without separately approved validation.
+
+## Wednesday A/B read-only handoff (draft branch only)
+
+`scripts/nfl_ab_wednesday_handoff.py` calls the strict v2 raw-response full-slate audit with a separate, independently supplied schedule. It rejects missing, duplicate or changed IDs, teams, kickoff dates and seasons. Each row contains **both** `picks.A` and `picks.B`, even when equal, with research edges and per-team historical sample sizes. SHA-256 digests bind the input capture and expected schedule. It never creates a freeze, wager, printable report, or production artifact; `publishable=false` and `officialFrozen=false` are explicit.
+
+`tests/test_nfl_ab_wednesday_handoff.py` covers a synthetic 15-game complete slate, determinism, no mutation, cutoff and hash tampering, missing history, schedule mismatch, identical A/B selections, and preservation of disagreement. The disagreement-preservation test uses a mocked *audit result* solely to exercise the adapter mapping; it is not evidence of a real historical disagreement.
+
+Hosted workflow discovery already runs `test_nfl_ab_*.py`, which includes the new adapter tests. A green hosted result is required before treating the isolated branch as validated. A separate independent Wednesday schedule snapshot and an authentic, on-time ESPN capture must be provided for actual games; no retrospective Week 9 backfill is permitted.
+
+C/C-QB still require separately verified QB evidence and frozen pre-kickoff model selections. The four-model publisher must fail closed when either is absent. The present A/B research handoff provides winner-only choices and *does not* supply validated score, spread, total, calibrated confidence or market timestamps; printable output must not invent these.
