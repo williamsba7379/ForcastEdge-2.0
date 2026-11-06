@@ -1,5 +1,8 @@
 name: NFL A-B isolated ESPN live capture diagnostic
 on:
+  push:
+    branches:
+      - audit/nfl-four-model-publisher-diagnostic
   workflow_dispatch:
 permissions:
   contents: read
