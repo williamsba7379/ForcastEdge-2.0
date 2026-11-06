@@ -13,8 +13,8 @@ on:
   # UTC hours cover both Eastern daylight and standard time.
   # Scheduled workflows run ONLY when present on the default branch.
   schedule:
-    - cron: '0 15 * * 3'
-    - cron: '0 16 * * 3'
+    - cron: '11 11 * * 3'
+      timezone: 'America/New_York'
   push:
     branches: [audit/four-model-completeness-gate]
     paths:
@@ -46,6 +46,11 @@ jobs:
           PY
       - name: Offline missing-field regression tests
         run: python -m unittest discover -s tests -p test_nfl_four_model_completeness.py -v
+      - name: Capture independent NFL schedule
+        if: github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && steps.timecheck.outputs.active == 'true')
+        id: schedulecheck
+        continue-on-error: true
+        run: python scripts/nfl_schedule_audit.py
       - name: Select upcoming card for scheduled audit
         if: github.event_name == 'schedule' && steps.timecheck.outputs.active == 'true'
         id: select
@@ -78,13 +83,12 @@ jobs:
           CARD: ${{ github.event_name == 'schedule' && steps.select.outputs.card || inputs.card }}
           EXPECTED: ${{ inputs.expected_games }}
         run: |
-          if [ -n "$EXPECTED" ]; then
-            python scripts/nfl_four_model_completeness.py "$CARD" --expected-games "$EXPECTED"
-          else
-            echo '::error::Expected game count is unavailable; schedule coverage cannot be verified'
+          if [ ! -s nfl-schedule-audit.json ]; then
+            echo '::error::Independent ESPN schedule unavailable; fail closed'
             python scripts/nfl_four_model_completeness.py "$CARD" || true
             exit 1
           fi
+          python scripts/nfl_four_model_completeness.py "$CARD" --schedule nfl-schedule-audit.json
       - name: Summarize missing evidence
         if: always() && (github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && steps.timecheck.outputs.active == 'true'))
         run: |
@@ -93,10 +97,10 @@ jobs:
         if: always() && (github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && steps.timecheck.outputs.active == 'true'))
         with:
           name: nfl-completeness-audit
-          path: completeness-report.json
+          path: |\n            completeness-report.json\n            nfl-schedule-audit.json
           if-no-files-found: warn
       - name: Create pre-kickoff failure alert issue
-        if: (github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && steps.timecheck.outputs.active == 'true')) && steps.gate.outcome == 'failure'
+        if: (github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && steps.timecheck.outputs.active == 'true')) && (steps.gate.outcome == 'failure' || steps.schedulecheck.outcome == 'failure')
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
