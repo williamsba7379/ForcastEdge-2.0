@@ -19,6 +19,7 @@ on:
     branches: [audit/four-model-completeness-gate]
     paths:
       - 'scripts/nfl_four_model_completeness.py'
+      - 'scripts/nfl_printable_picks.py'
       - 'tests/test_nfl_four_model_completeness.py'
       - '.github/workflows/nfl-four-model-completeness-gate.yml'
 permissions:
@@ -89,6 +90,12 @@ jobs:
             exit 1
           fi
           python scripts/nfl_four_model_completeness.py "$CARD" --schedule nfl-schedule-audit.json
+      - name: Generate printable and shareable picks HTML
+        if: github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && steps.timecheck.outputs.active == 'true')
+        continue-on-error: true
+        env:
+          CARD: ${{ github.event_name == 'schedule' && steps.select.outputs.card || inputs.card }}
+        run: python scripts/nfl_printable_picks.py "$CARD"
       - name: Summarize missing evidence
         if: always() && (github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && steps.timecheck.outputs.active == 'true'))
         run: |
@@ -100,6 +107,7 @@ jobs:
           path: |
             completeness-report.json
             nfl-schedule-audit.json
+            nfl-printable-picks.html
           if-no-files-found: warn
       - name: Create pre-kickoff failure alert issue
         if: (github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && steps.timecheck.outputs.active == 'true')) && (steps.gate.outcome == 'failure' || steps.schedulecheck.outcome == 'failure')
