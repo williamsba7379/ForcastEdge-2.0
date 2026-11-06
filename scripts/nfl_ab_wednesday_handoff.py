@@ -79,3 +79,24 @@ def build_two_source_wednesday_handoff(snapshot, fixtures, cutoff, expected_sche
     result=build_verified_wednesday_handoff(snapshot,fixtures,cutoff,expected_schedule,espn_evidence)
     result["scheduleProvenance"]=provenance
     return result
+
+def build_official_html_reviewed_handoff(snapshot, fixtures, cutoff, expected_schedule,
+                                         espn_evidence, official_html_capture, reviewed_games):
+    """Fail-closed two-source research handoff with verifiable raw NFL HTML."""
+    from scripts.nfl_ab_official_html_capture import verify_reviewed_normalization
+    from scripts.nfl_ab_schedule_provenance import verify_schedule_evidence
+    official=verify_reviewed_normalization(official_html_capture,reviewed_games,cutoff)
+    espn=verify_schedule_evidence(espn_evidence,cutoff,expected_schedule)
+    def key(g):
+        return (parse_time(g["date"]),g["home"].strip().casefold(),g["away"].strip().casefold())
+    primary=[key(g) for g in expected_schedule]
+    second=[key(g) for g in official["games"]]
+    if len(primary)!=len(set(primary)) or len(second)!=len(set(second)) or set(primary)!=set(second):
+        raise ValueError("INDEPENDENT_SCHEDULE_MISMATCH")
+    result=build_verified_wednesday_handoff(snapshot,fixtures,cutoff,expected_schedule,espn_evidence)
+    result["scheduleProvenance"]={**espn,
+        "officialHtmlSha256":official["responseSha256"],
+        "officialHtmlRetrievedAt":official["retrievedAt"],
+        "normalizationMethod":official["normalizationMethod"],
+        "independentSourceVerified":True}
+    return result
