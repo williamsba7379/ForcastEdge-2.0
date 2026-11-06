@@ -13,6 +13,10 @@ class CompletenessTests(unittest.TestCase):
     def test_post_kickoff_freeze_fails(self):
         card={"frozenAt":"2026-11-06T16:00:00Z","games":[{"id":"1","date":"2026-11-05T20:00:00Z","home":"H","away":"A","picks":{}}]}
         self.assertTrue(any("POST_KICKOFF_FREEZE" in x for x in validate(card)))
+    def test_independent_schedule_identity_mismatch_fails(self):
+        card={"frozenAt":"2026-11-04T16:00:00Z","games":[{"id":"1","date":"2026-11-05T20:00:00Z","home":"H","away":"A","picks":{}}]}
+        source={"games":[{"id":"2","date":"2026-11-05T20:00:00Z"}]}
+        self.assertTrue(any("SCHEDULE_ID_MISMATCH" in issue for issue in validate(card,1,source)))
     def test_empty_card_fails(self):
         self.assertEqual(validate({"games":[]}),["MISSING_GAMES"])
 
