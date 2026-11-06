@@ -1,0 +1,18 @@
+name: NFL A-B isolated historical provenance tests
+on:
+  push:
+    branches:
+      - audit/nfl-four-model-publisher-diagnostic
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  offline-provenance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run isolated A/B archive, replay, capture and publisher tests
+        run: python -m unittest discover -s tests -p 'test_nfl_*readiness.py' -v && python -m unittest tests.test_nfl_ab_archive_adapter tests.test_nfl_ab_strict_replay tests.test_nfl_ab_input_capture -v
