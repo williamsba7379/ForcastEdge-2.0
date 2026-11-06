@@ -48,6 +48,19 @@ def audit(snapshot, fixtures, cutoff, expected_ids):
         matching=[e for e in payload["events"] if str(e.get("id"))==str(row["id"])]
         if len(matching)!=1 or matching[0].get("status",{}).get("type",{}).get("completed") is not True:
             raise ValueError("RAW_FINAL_NOT_CONFIRMED")
+        raw=matching[0]
+        try:
+            sides=raw["competitions"][0]["competitors"]
+            home=next(c for c in sides if c["homeAway"]=="home")
+            away=next(c for c in sides if c["homeAway"]=="away")
+            if (home["team"]["displayName"]!=row["home"] or
+                away["team"]["displayName"]!=row["away"] or
+                int(home["score"])!=row["homeScore"] or
+                int(away["score"])!=row["awayScore"] or
+                parse_time(raw["date"])!=parse_time(row["date"])):
+                raise ValueError("RAW_GAME_CONTENT_MISMATCH")
+        except (KeyError,IndexError,StopIteration,TypeError) as exc:
+            raise ValueError("RAW_GAME_CONTENT_MISMATCH") from exc
         if not (parse_time(row["date"])<parse_time(obs["observedFinalAt"])<=parse_time(obs["retrievedAt"])<=stamp):
             raise ValueError("HISTORICAL_FINAL_AFTER_CUTOFF")
         if row.get("completed") is not True or not isinstance(row.get("homeScore"),int) or not isinstance(row.get("awayScore"),int):
