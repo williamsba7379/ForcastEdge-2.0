@@ -11,7 +11,7 @@ def fixture():
         game={"id":str(i),"date":"2026-10-%02dT18:00:00Z"%(10+i),
               "season":2026,"home":"Home","away":"Away","homeScore":27,"awayScore":17,"completed":True}
         observations.append({"game":game,"sourceUrl":"https://example.org/verified",
-                             "observedFinalAt":"2026-10-%02dT22:00:00Z"%(10+i),\n                             "finalObservationType":"FIRST_OBSERVED_BY_COLLECTOR",
+                             "observedFinalAt":"2026-10-%02dT22:00:00Z"%(10+i),\n                             "finalObservationType":"FIRST_OBSERVED_BY_COLLECTOR",\n                             "responseSha256":"f"*64,
                              "retrievedAt":"2026-10-%02dT23:00:00Z"%(10+i),
                              "sha256":hashlib.sha256(canonical(game)).hexdigest()})
     frozen={"frozenAt":CUTOFF,"season":2026,"games":[{"id":"target","date":"2026-11-06T01:15:00Z",
