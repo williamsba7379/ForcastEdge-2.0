@@ -25,7 +25,9 @@ def capture(fetch,season,cutoff,observed_at):
     ids=set()
     for week in range(1,19):
         url=BASE+"?"+urllib.parse.urlencode({"dates":season,"seasontype":2,"week":week})
-        payload=fetch(url)
+        response=fetch(url)
+        payload=response["payload"] if isinstance(response,dict) and "payload" in response else response
+        response_hash=response.get("responseSha256") if isinstance(response,dict) else None
         if not isinstance(payload,dict) or not isinstance(payload.get("events"),list):
             raise ValueError("INVALID_ESPN_SCOREBOARD")
         for event in payload["events"]:
@@ -49,7 +51,8 @@ def capture(fetch,season,cutoff,observed_at):
             ids.add(game["id"])
             observations.append({"game":game,"sourceUrl":url,"retrievedAt":observed_at,
                  "observedFinalAt":observed_at,"finalObservationType":"FIRST_OBSERVED_BY_COLLECTOR",
-                 "sha256":hashlib.sha256(canonical(game)).hexdigest()})
+                 "sha256":hashlib.sha256(canonical(game)).hexdigest(),
+                 "responseSha256":response_hash})
     observations.sort(key=lambda x:(x["game"]["date"],x["game"]["id"]))
     return {"schemaVersion":1,"season":season,"capturedAt":observed_at,
             "cutoff":cutoff.isoformat(),"observationCaveat":"Final first observed at capture; not official final timestamp",
@@ -61,7 +64,7 @@ def fetch_json(url):
         if response.status!=200:raise ValueError("ESPN_HTTP_FAILURE")
         body=response.read(8_000_001)
         if len(body)>8_000_000:raise ValueError("ESPN_RESPONSE_TOO_LARGE")
-        return json.loads(body)
+        return {"payload":json.loads(body),"responseSha256":hashlib.sha256(body).hexdigest()}
 
 def main():
     p=argparse.ArgumentParser()
