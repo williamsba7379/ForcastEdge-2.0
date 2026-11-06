@@ -53,3 +53,20 @@ def build_ab_wednesday_handoff(snapshot, fixtures, cutoff, expected_schedule):
             "expectedCount":len(expected_ids),"games":rows,
             "missingFields":["C","C-QB","projectedScore","spread","total","confidence"],
             "noBet":True,"readOnly":True}
+
+def build_verified_wednesday_handoff(snapshot, fixtures, cutoff, expected_schedule, schedule_evidence):
+    """Strict entry point requiring independently hashed, on-time ESPN schedule."""
+    from scripts.nfl_ab_schedule_provenance import verify_schedule_evidence
+    from scripts.nfl_ab_archive_adapter import parse_time
+    if parse_time(snapshot["capturedAt"])>parse_time(cutoff):
+        raise ValueError("CAPTURE_COMPLETED_AFTER_CUTOFF")
+    if parse_time(snapshot["cutoff"])!=parse_time(cutoff):
+        raise ValueError("CAPTURE_CUTOFF_MISMATCH")
+    times=[parse_time(r["retrievedAt"]) for r in snapshot["responses"]]
+    if times and parse_time(snapshot["capturedAt"])<max(times):
+        raise ValueError("CAPTURE_BEFORE_LAST_RESPONSE")
+    provenance=verify_schedule_evidence(schedule_evidence,cutoff,expected_schedule)
+    result=build_ab_wednesday_handoff(snapshot,fixtures,cutoff,expected_schedule)
+    result["scheduleProvenance"]=provenance
+    result["captureCompletedAt"]=snapshot["capturedAt"]
+    return result
