@@ -97,7 +97,9 @@ jobs:
         if: always() && (github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && steps.timecheck.outputs.active == 'true'))
         with:
           name: nfl-completeness-audit
-          path: |\n            completeness-report.json\n            nfl-schedule-audit.json
+          path: |
+            completeness-report.json
+            nfl-schedule-audit.json
           if-no-files-found: warn
       - name: Create pre-kickoff failure alert issue
         if: (github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && steps.timecheck.outputs.active == 'true')) && (steps.gate.outcome == 'failure' || steps.schedulecheck.outcome == 'failure')
@@ -106,5 +108,5 @@ jobs:
         run: |
           gh issue create --title "NFL COMPLETENESS FAILED: pre-kickoff action required" --body "Four-model frozen card did not pass the completeness gate. Review this workflow run and its nfl-completeness-audit artifact BEFORE kickoff. No picks or NO BET were changed." || echo "::warning::Issue alert failed; check Actions permissions"
       - name: Fail closed
-        if: (github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && steps.timecheck.outputs.active == 'true')) && steps.gate.outcome == 'failure'
+        if: (github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && steps.timecheck.outputs.active == 'true')) && (steps.gate.outcome == 'failure' || steps.schedulecheck.outcome == 'failure')
         run: exit 1
