@@ -26,7 +26,7 @@ def validate_schedule_url(url):
     if not (2000<=int(params["dates"][0])<=2100 and 1<=int(params["week"][0])<=18):
         raise ValueError("INVALID_SCHEDULE_QUERY")
 
-def capture_schedule_response(raw_body, retrieved_at, source_url=ESPN_SCHEDULE_URL):
+def capture_schedule_response(raw_body, retrieved_at, source_url=ESPN_SCHEDULE_URL+'?dates=2026&seasontype=2&week=9'):
     if not isinstance(raw_body,bytes) or not raw_body:
         raise ValueError("MISSING_RAW_SCHEDULE_RESPONSE")
     validate_schedule_url(source_url)
