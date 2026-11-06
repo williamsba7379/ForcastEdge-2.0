@@ -5,7 +5,7 @@ Never fetch current results to pretend they were known at an earlier cutoff.
 import datetime as dt
 import hashlib
 import json
-from nfl_ab_archive_adapter import parse_time
+from scripts.nfl_ab_archive_adapter import parse_time
 
 def canonical(row):
     return json.dumps(row,sort_keys=True,separators=(",",":"),ensure_ascii=False).encode()
