@@ -1,0 +1,27 @@
+name: NFL A-B isolated ESPN live capture diagnostic
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run isolated offline regression suite
+        run: |
+          python -m unittest discover -s tests -p 'test_nfl_publisher_readiness.py' -v
+          python -m unittest discover -s tests -p 'test_nfl_ab_*.py' -v
+      - name: Capture current ESPN finals with new real-time cutoff
+        run: |
+          cutoff=$(python -c 'import datetime as d; print((d.datetime.now(d.timezone.utc)+d.timedelta(minutes=10)).isoformat())')
+          python -m scripts.nfl_ab_input_capture --season 2026 --cutoff "$cutoff" --output "$RUNNER_TEMP/nfl-ab-live-capture.json"
+      - name: Upload isolated diagnostic evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: nfl-ab-live-capture
+          path: ${{ runner.temp }}/nfl-ab-live-capture.json
+          retention-days: 7
