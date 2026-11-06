@@ -3,6 +3,7 @@
 Never fetch current results to pretend they were known at an earlier cutoff.
 """
 import datetime as dt
+import base64
 import hashlib
 import json
 from scripts.nfl_ab_archive_adapter import parse_time
@@ -15,6 +16,20 @@ def replay(snapshot, frozen, metric_fn):
     records=snapshot.get("observations")
     if not isinstance(records,list):
         raise ValueError("MISSING_OBSERVATION_SNAPSHOT")
+    responses=snapshot.get("responses")
+    if snapshot.get("schemaVersion",0)>=2:
+        if not isinstance(responses,list):
+            raise ValueError("MISSING_RAW_RESPONSE_EVIDENCE")
+        for response in responses:
+            try:
+                body=base64.b64decode(response["rawBodyBase64"],validate=True)
+                if hashlib.sha256(body).hexdigest()!=response["responseSha256"]:
+                    raise ValueError("RAW_ESPN_HASH_MISMATCH")
+                json.loads(body)
+                if parse_time(response["retrievedAt"])>cutoff:
+                    raise ValueError("FUTURE_ESPN_RESPONSE")
+            except (KeyError,TypeError) as exc:
+                raise ValueError("MISSING_RAW_RESPONSE_EVIDENCE") from exc
     history=[]
     ids=set()
     for obs in records:
@@ -25,6 +40,20 @@ def replay(snapshot, frozen, metric_fn):
             raise ValueError("UNVERIFIED_FINAL_OBSERVATION_TYPE")
         if hashlib.sha256(canonical(row)).hexdigest()!=obs["sha256"]:
             raise ValueError("CONTENT_HASH_MISMATCH")
+        if snapshot.get("schemaVersion",0)>=2:
+            try:
+                source=responses[obs["responseId"]]
+                if (source["id"]!=obs["responseId"] or
+                    source["sourceUrl"]!=obs["sourceUrl"] or
+                    source["retrievedAt"]!=obs["retrievedAt"] or
+                    source["responseSha256"]!=obs["responseSha256"]):
+                    raise ValueError("ESPN_RESPONSE_LINK_MISMATCH")
+                payload=json.loads(base64.b64decode(source["rawBodyBase64"],validate=True))
+                matching=[e for e in payload["events"] if str(e["id"])==str(row["id"])]
+                if len(matching)!=1 or matching[0]["status"]["type"]["completed"] is not True:
+                    raise ValueError("ESPN_RAW_GAME_NOT_VERIFIED")
+            except (IndexError,KeyError,TypeError) as exc:
+                raise ValueError("ESPN_RESPONSE_LINK_MISMATCH") from exc
         observed=parse_time(obs["observedFinalAt"])
         retrieved=parse_time(obs["retrievedAt"])
         game_time=parse_time(row["date"])
