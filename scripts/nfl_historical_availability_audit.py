@@ -5,9 +5,10 @@ import datetime as dt
 import hashlib
 import json
 from pathlib import Path
+from urllib.parse import urlsplit
 
 UTC = dt.timezone.utc
-REQUIRED = ("gameId", "source", "observedFinalAt", "retrievedAt", "contentSha256")
+REQUIRED = ("gameId", "source", "observedFinalAt", "retrievedAt", "contentSha256", "kickoffAt", "rawResponse")
 
 def timestamp(value):
     if not isinstance(value, str):
@@ -30,7 +31,7 @@ def validate(record, cutoff):
         digest = record["contentSha256"]
         if not isinstance(record["gameId"], str) or not record["gameId"].strip():
             return False, "INVALID_GAME_ID"
-        if not isinstance(source, str) or not source.startswith("https://") or "/" not in source[8:]:
+        if not isinstance(source, str) or urlsplit(source).scheme != "https" or urlsplit(source).hostname not in ("site.api.espn.com", "www.nfl.com", "nfl.com"):
             return False, "INVALID_SOURCE"
         if not isinstance(digest, str) or len(digest) != 64 or any(c not in "0123456789abcdef" for c in digest):
             return False, "INVALID_CONTENT_HASH"
