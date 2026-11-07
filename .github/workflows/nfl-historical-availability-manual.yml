@@ -1,0 +1,38 @@
+name: NFL historical availability - isolated manual tests
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-validation:
+    if: github.ref == 'refs/heads/audit/historical-availability-validator'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out isolated branch
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Configure Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Execute offline unittest suite
+        shell: bash
+        env:
+          PYTHONPATH: scripts
+          PYTHONDONTWRITEBYTECODE: '1'
+        run: |
+          set -o pipefail
+          mkdir -p /tmp/forecastedge-historical-audit
+          python -m unittest discover -s tests -p 'test_nfl_historical_availability_audit.py' -v 2>&1 | tee /tmp/forecastedge-historical-audit/unittest.log
+      - name: Upload test log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: historical-availability-offline-tests
+          path: /tmp/forecastedge-historical-audit/unittest.log
+          if-no-files-found: error
+          retention-days: 14
