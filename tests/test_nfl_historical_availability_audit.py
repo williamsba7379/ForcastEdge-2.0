@@ -49,6 +49,12 @@ class AvailabilityTests(unittest.TestCase):
     def test_missing_kickoff(self):
         row=fixture();del row["kickoffAt"]
         self.assertFalse(validate(row,CUTOFF)[0])
+    def test_missing_raw_response(self):
+        row=fixture();del row["rawResponse"]
+        self.assertEqual(validate(row,CUTOFF)[1],"UNVERIFIED_HISTORICAL_AVAILABILITY")
+    def test_untrusted_source_host(self):
+        row=fixture();row["source"]="https://example.com/scoreboard"
+        self.assertEqual(validate(row,CUTOFF)[1],"INVALID_SOURCE")
     def test_summary(self):
         good=fixture();bad=fixture();bad["retrievedAt"]=CUTOFF
         result=audit([good,bad],CUTOFF)
