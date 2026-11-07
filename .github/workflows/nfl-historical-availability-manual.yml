@@ -1,8 +1,5 @@
 name: NFL historical availability - isolated manual tests
 on:
-  push:
-    branches:
-      - audit/historical-availability-validator
   workflow_dispatch:
 
 permissions:
