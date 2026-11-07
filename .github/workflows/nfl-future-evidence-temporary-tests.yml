@@ -1,4 +1,5 @@
 name: NFL future evidence - temporary isolated 28 tests
+# Rerun after first-observed timestamp compatibility fix
 on:
   push:
     branches:
