@@ -66,7 +66,7 @@ def capture(*, game_id, kickoff_at, source, raw_response, retrieved_at,
                 return None, "MISSING_FINAL_SCORE"
         evidence = {
             "gameId": game_id, "source": source, "kickoffAt": iso(kickoff),
-            "observedFinalAt": iso(observed), "retrievedAt": iso(retrieved),
+            "observedFinalAt": iso(retrieved), "retrievedAt": iso(retrieved),
             "contentSha256": hashlib.sha256(raw_response).hexdigest(),
             "rawResponse": raw_response.decode("utf-8"),
             "observationType": "FIRST_SEEN_FINAL_NOT_OFFICIAL_FINALIZATION",
