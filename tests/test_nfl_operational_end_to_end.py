@@ -5,6 +5,8 @@ import pathlib
 import sys
 import unittest
 from copy import deepcopy
+from tempfile import TemporaryDirectory
+from unittest.mock import patch
 
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"scripts"))
@@ -12,6 +14,7 @@ sys.path.insert(0,str(ROOT/"research"))
 from nfl_four_model_head_to_head import freeze,grade as grade_winners
 from nfl_market_totals_compare import compare
 from nfl_four_model_totals_grade import grade as grade_totals
+from nfl_live_wednesday_rehearsal import rehearsal, wednesday_cutoff
 from nfl_operational_readiness import audit, rehearse_handoff
 
 NOW=dt.datetime.fromisoformat("2026-11-04T16:00:00+00:00")
@@ -73,6 +76,38 @@ class Rehearsal(unittest.TestCase):
         archived = {"season": schedule["season"], "weeks": [schedule]}
         with self.assertRaisesRegex(ValueError, "schedule mismatch"):
             rehearse_handoff(archived, draft, shadow, {"games": []}, NOW.isoformat())
+
+    def test_live_entry_point_runs_real_engines_with_controlled_clock(self):
+        schedule, _, _ = fixture()
+        captured = "2026-11-04T15:54:00Z"
+        snapshots = {
+            "nfl-schedule.json": {"season": 2026, "weeks": [schedule], "updatedAt": captured},
+            "nfl-historical-results.json": {"games": [], "updatedAt": captured},
+            "model-c-qb-starters.json": {"teams": {}},
+            "model-c-historical-qb-games.json": {"records": []},
+        }
+
+        class RehearsalClock(dt.datetime):
+            @classmethod
+            def now(cls, tz):
+                return cls(2026, 11, 4, 15, 55, tzinfo=dt.timezone.utc).astimezone(tz)
+
+        with TemporaryDirectory() as directory, patch.object(dt, "datetime", RehearsalClock):
+            source = pathlib.Path(directory)
+            for name, value in snapshots.items():
+                (source / name).write_text(json.dumps(value))
+            result = rehearsal(source)
+            self.assertEqual({p.name for p in source.iterdir()}, set(snapshots))
+        self.assertEqual(result["games"], 15)
+        self.assertEqual(result["models"], ["A", "B", "C", "C-QB"])
+        self.assertEqual(result["verifiedQbSides"], 0)
+        self.assertEqual(result["gamesWithValidatedMarketTotals"], 0)
+        self.assertFalse(result["productionReady"])
+
+    def test_live_window_rejects_cutoff_and_other_days(self):
+        for timestamp in (NOW, NOW + dt.timedelta(days=1)):
+            with self.subTest(timestamp=timestamp), self.assertRaisesRegex(ValueError, "before 11 AM"):
+                wednesday_cutoff(timestamp)
 
     def test_market_missing_is_no_bet(self):
         schedule,draft,shadow=fixture()
