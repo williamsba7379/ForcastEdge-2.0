@@ -1,0 +1,42 @@
+name: NFL isolated capture and manifest - temporary 76 offline tests
+on:
+  push:
+    branches:
+      - audit/historical-availability-validator
+    paths:
+      - .github/workflows/nfl-capture-manifest-temporary.yml
+permissions:
+  contents: read
+jobs:
+  offline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run all 76 isolated offline evidence tests
+        shell: bash
+        env:
+          PYTHONPATH: scripts:tests
+          PYTHONDONTWRITEBYTECODE: '1'
+        run: |
+          set -euo pipefail
+          python -m unittest discover -s tests -p 'test_nfl_historical_availability_audit.py' -v 2>&1 | tee /tmp/historical.log
+          python -m unittest discover -s tests -p 'test_nfl_future_final_evidence.py' -v 2>&1 | tee /tmp/future.log
+          python -m unittest discover -s tests -p 'test_nfl_future_evidence_safeguards.py' -v 2>&1 | tee /tmp/safeguards.log
+          python -m unittest discover -s tests -p 'test_nfl_sqlite_evidence_store.py' -v 2>&1 | tee /tmp/sqlite.log
+          python -m unittest discover -s tests -p 'test_nfl_sqlite_crash_recovery.py' -v 2>&1 | tee /tmp/crash.log
+          python -m unittest discover -s tests -p 'test_nfl_sqlite_tamper_evidence.py' -v 2>&1 | tee /tmp/tamper.log
+          python -m unittest discover -s tests -p 'test_nfl_offline_capture_envelope.py' -v 2>&1 | tee /tmp/capture.log
+          python -m unittest discover -s tests -p 'test_nfl_signed_evidence_manifest.py' -v 2>&1 | tee /tmp/manifest.log
+      - name: Upload isolated offline test logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: isolated-nfl-76-test-logs
+          path: /tmp/*.log
+          retention-days: 14
