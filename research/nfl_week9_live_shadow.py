@@ -5,6 +5,7 @@ import json
 import os
 import sys
 import urllib.request
+import urllib.error
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parent))
 from nfl_week9_real_archive_replay import replay, RUN, ARTIFACT
@@ -20,9 +21,14 @@ def get(url):
     req=urllib.request.Request(url,headers={"Accept":"application/vnd.github+json",
         "User-Agent":"ForecastEdge-research-only-replay",
         **({"Authorization":"Bearer "+token} if token else {})})
-    with urllib.request.urlopen(req,timeout=30) as response:
-        if response.status!=200:raise ValueError("HTTP_FETCH_FAILED")
-        return response.read()
+    try:
+        with urllib.request.urlopen(req,timeout=30) as response:
+            if response.status!=200:raise ValueError("HTTP_FETCH_FAILED")
+            return response.read()
+    except urllib.error.HTTPError as exc:
+        # Fail closed and report endpoint category without exposing tokens or redirect URLs.
+        kind = "artifact_zip" if url.endswith("/zip") else ("run_metadata" if "/actions/runs/" in url else "contents_or_artifact_metadata")
+        raise ValueError("GITHUB_HTTP_%s_%s" % (exc.code,kind)) from None
 
 def main():
     prefix="https://api.github.com/repos/"+REPO
