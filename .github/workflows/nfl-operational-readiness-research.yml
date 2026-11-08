@@ -12,4 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Test fail-closed four-model readiness
-        run: python3 -m unittest discover -s tests -p test_nfl_operational_readiness.py -v
+        run: |
+          python3 -m unittest discover -s tests -p test_nfl_operational_readiness.py -v
+          python3 -m unittest discover -s tests -p test_nfl_operational_end_to_end.py -v
