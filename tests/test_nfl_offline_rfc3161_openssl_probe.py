@@ -3,13 +3,11 @@
 Test-only CA and TSA keys are generated inside a temporary directory, never
 committed. Tests require a locally installed OpenSSL 3.x; no downloads.
 """
-import os
 from pathlib import Path
 import shutil
 import subprocess
 import tempfile
 import unittest
-from unittest.mock import patch
 
 from nfl_offline_rfc3161_openssl_probe import verify_timestamp
 
@@ -19,8 +17,11 @@ class OfflineOpenSSLProbeTests(unittest.TestCase):
     def setUpClass(cls):
         cls.exe = shutil.which("openssl")
         if cls.exe is None:
-            raise unittest.SkipTest("Local OpenSSL unavailable; hosted validation required")
+            raise RuntimeError("OpenSSL 3 required; missing executable is a test failure")
         cls.exe = str(Path(cls.exe).resolve())
+        version = subprocess.run([cls.exe, "version"], capture_output=True, text=True, timeout=10, check=True).stdout
+        if not version.startswith("OpenSSL 3."):
+            raise RuntimeError("OpenSSL 3 required; unsupported version")
 
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
@@ -89,9 +90,16 @@ authorityKeyIdentifier = keyid,issuer
         request = self.root / "stamp.tsq"
         self.cmd("ts", "-query", "-data", self.evidence, "-sha256",
                  "-cert", "-out", request)
-        self.cmd("ts", "-reply", "-queryfile", request,
-                 "-signer", self.signer, "-inkey", self.root / "tsa.key",
-                 "-chain", self.roots, "-tspolicy", "1.2.3.4.5",
+        tsa_config = self.root / "tsa.cnf"
+        tsa_config.write_text("[tsa]\ndefault_tsa = local_tsa\n[local_tsa]\n"
+                              "serial = " + str(self.root / "tsa-serial") + "\n"
+                              "crypto_device = builtin\nsigner_digest = sha256\n"
+                              "default_policy = 1.2.3.4.5\ndigests = sha256\n"
+                              "accuracy = secs:1\nordering = yes\n")
+        (self.root / "tsa-serial").write_text("01\n")
+        self.cmd("ts", "-reply", "-config", tsa_config, "-section", "local_tsa",
+                 "-queryfile", request, "-signer", self.signer,
+                 "-inkey", self.root / "tsa.key", "-chain", self.roots,
                  "-out", self.response)
 
     def result(self, **changes):
@@ -111,7 +119,7 @@ authorityKeyIdentifier = keyid,issuer
 
     def test_tampered_signature(self):
         data = bytearray(self.response.read_bytes())
-        data[-10] ^= 1
+        data[-1] ^= 1  # Alter signed response tail; must fail verification
         self.response.write_bytes(data)
         self.deny()
 
@@ -129,7 +137,15 @@ authorityKeyIdentifier = keyid,issuer
     def test_invalid_timestamp_signing_purpose(self):
         other = self.root / "wrong-purpose.pem"
         # A valid CA certificate cannot serve as a timestamp-only TSA signer.
-        other.write_bytes(self.roots.read_bytes())
+        self.cmd("req", "-newkey", "rsa:2048", "-nodes",
+                 "-keyout", self.root / "wrong.key", "-out", self.root / "wrong.csr",
+                 "-subj", "/CN=Wrong Purpose TSA")
+        wrong_config = self.root / "wrong.cnf"
+        config = (self.root / "ca.cnf").read_text()
+        wrong_config.write_text(config.replace("extendedKeyUsage = critical,timeStamping",
+                                               "extendedKeyUsage = critical,serverAuth"))
+        self.cmd("ca", "-batch", "-config", wrong_config, "-in",
+                 self.root / "wrong.csr", "-out", other, "-notext")
         self.deny(signer=str(other))
 
     def test_missing_or_invalid_revocation_evidence(self):
