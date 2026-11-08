@@ -12,7 +12,7 @@ sys.path.insert(0,str(ROOT/"research"))
 from nfl_four_model_head_to_head import freeze,grade as grade_winners
 from nfl_market_totals_compare import compare
 from nfl_four_model_totals_grade import grade as grade_totals
-from nfl_operational_readiness import audit
+from nfl_operational_readiness import audit, rehearse_handoff
 
 NOW=dt.datetime.fromisoformat("2026-11-04T16:00:00+00:00")
 def fixture():
@@ -27,7 +27,8 @@ def fixture():
            "games":[game(g) for g in games]}
     shadow={"season":2026,"week":9,"generatedAt":"2026-11-04T15:59:30Z",
             "status":"EXPERIMENTAL_SHADOW_ONLY","games":[{
-                "id":g["id"],"originalPick":g["home"],"originalHomeEdgePoints":1.5,
+                "id":g["id"],"date":g["date"],"home":g["home"],"away":g["away"],
+                "originalPick":g["home"],"originalHomeEdgePoints":1.5,
                 "experimentalPick":g["home"],"qbHomeEdgeAdjustment":0,
                 "qbAdjustments":{"home":{"status":"UNCONFIRMED"},"away":{"status":"UNCONFIRMED"}}
             } for g in games]}
@@ -46,6 +47,33 @@ class Rehearsal(unittest.TestCase):
         readiness=audit(schedule,draft,shadow,card,NOW.isoformat(),official_qb_evidence=False)
         self.assertIn("QB_VERIFICATION_MISSING",readiness["reasons"])
         self.assertFalse(readiness["productionReady"])
+    def test_same_slate_outputs_pass_directly_to_four_model_handoff(self):
+        schedule, draft, shadow = fixture()
+        archived = {"season": schedule["season"], "weeks": [schedule]}
+        card = rehearse_handoff(archived, draft, shadow, {"games": []}, NOW.isoformat())
+        self.assertEqual(card["status"], "RESEARCH_REHEARSAL_ONLY")
+        self.assertEqual({g["id"] for g in card["games"]}, {g["id"] for g in schedule["games"]})
+        self.assertTrue(all(set(g["picks"]) == {"A", "B", "C", "C-QB"} for g in card["games"]))
+
+    def test_handoff_rejects_stale_mismatched_and_late_outputs(self):
+        for field, value, error in (
+            ("week", 8, "week mismatch"),
+            ("generatedAt", "2026-11-03T23:00:00Z", "timestamp outside"),
+            ("generatedAt", "2026-11-04T15:58:00Z", "timestamp outside"),
+            ("generatedAt", "2026-11-04T16:00:01Z", "timestamp outside"),
+        ):
+            with self.subTest(field=field, value=value):
+                schedule, draft, shadow = fixture()
+                shadow[field] = value
+                archived = {"season": schedule["season"], "weeks": [schedule]}
+                with self.assertRaisesRegex(ValueError, error):
+                    rehearse_handoff(archived, draft, shadow, {"games": []}, NOW.isoformat())
+        schedule, draft, shadow = fixture()
+        shadow["games"][0]["date"] = "2026-11-06T02:00:00Z"
+        archived = {"season": schedule["season"], "weeks": [schedule]}
+        with self.assertRaisesRegex(ValueError, "schedule mismatch"):
+            rehearse_handoff(archived, draft, shadow, {"games": []}, NOW.isoformat())
+
     def test_market_missing_is_no_bet(self):
         schedule,draft,shadow=fixture()
         g=schedule["games"][0]
