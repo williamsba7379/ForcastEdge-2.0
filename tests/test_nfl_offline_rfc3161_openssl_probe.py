@@ -124,23 +124,28 @@ authorityKeyIdentifier = keyid,issuer
         data = bytearray(self.response.read_bytes())
         # Walk the DER RFC3161 response -> ContentInfo -> SignedData ->
         # signerInfos -> SignerInfo, rather than matching arbitrary bytes.
-        def tlv(pos):
-            if pos >= len(data):
-                raise ValueError("truncated DER")
+        def tlv(pos, limit=None):
+            limit = len(data) if limit is None else limit
+            if pos < 0 or pos + 2 > limit:
+                raise ValueError("truncated DER header")
             tag = data[pos]
             length_octet = data[pos + 1]
             if length_octet < 128:
                 length, header = length_octet, 2
             else:
                 n = length_octet & 127
-                if not 1 <= n <= 4:
-                    raise ValueError("unsupported DER length")
+                if not 1 <= n <= 4 or pos + 2 + n > limit:
+                    raise ValueError("invalid DER length header")
+                if data[pos + 2] == 0:
+                    raise ValueError("nonminimal DER length")
                 length = int.from_bytes(data[pos + 2:pos + 2 + n], "big")
+                if length < 128:
+                    raise ValueError("nonminimal DER length encoding")
                 header = 2 + n
             body = pos + header
             end = body + length
-            if end > len(data):
-                raise ValueError("truncated DER body")
+            if end > limit:
+                raise ValueError("truncated or escaping DER body")
             return tag, body, end
 
         def children(pos, expected):
@@ -150,28 +155,44 @@ authorityKeyIdentifier = keyid,issuer
             result = []
             while body < end:
                 result.append(body)
-                body = tlv(body)[2]
-            if body != end:
-                raise ValueError("invalid DER structure")
+                body = tlv(body, end)[2]
             return result
 
         response_parts = children(0, 0x30)
         self.assertEqual(tlv(0)[2], len(data))
         self.assertEqual(len(response_parts), 2)
         content_info = children(response_parts[1], 0x30)
+        self.assertEqual(len(content_info), 2)
+        self.assertEqual(tlv(content_info[0])[0], 0x06)
         self.assertEqual(bytes(data[tlv(content_info[0])[1]:tlv(content_info[0])[2]]),
                          bytes.fromhex("2a864886f70d010702"))  # signedData OID
-        signed_data = children(children(content_info[1], 0xa0)[0], 0x30)
-        signer_sets = [p for p in signed_data if tlv(p)[0] == 0x31]
-        self.assertEqual(len(signer_sets), 1)
-        signer_infos = children(signer_sets[0], 0x31)
+        wrapped = children(content_info[1], 0xa0)
+        self.assertEqual(len(wrapped), 1)
+        signed_data = children(wrapped[0], 0x30)
+        self.assertGreaterEqual(len(signed_data), 4)
+        self.assertEqual([tlv(p)[0] for p in signed_data[:3]],
+                         [0x02, 0x31, 0x30])  # version, digestAlgorithms, encapContentInfo
+        # signerInfos is the mandatory final field, not digestAlgorithms.
+        self.assertEqual(tlv(signed_data[-1])[0], 0x31)
+        self.assertTrue(all(tlv(p)[0] in (0xa0, 0xa1) for p in signed_data[3:-1]))
+        signer_infos = children(signed_data[-1], 0x31)
         self.assertEqual(len(signer_infos), 1)
         signer_fields = children(signer_infos[0], 0x30)
-        # Signature is the OCTET STRING immediately after signatureAlgorithm.
-        algorithms = [i for i, p in enumerate(signer_fields) if tlv(p)[0] == 0x30]
-        self.assertGreaterEqual(len(algorithms), 2)
-        signature_index = algorithms[-1] + 1
-        self.assertLess(signature_index, len(signer_fields))
+        tags = [tlv(p)[0] for p in signer_fields]
+        # SignerInfo: version, sid, digestAlgorithm, [signedAttrs],
+        # signatureAlgorithm, signature, [unsignedAttrs].
+        self.assertGreaterEqual(len(tags), 5)
+        self.assertEqual(tags[0], 0x02)
+        self.assertIn(tags[1], (0x30, 0x80))  # issuerAndSerial or subjectKeyIdentifier
+        self.assertEqual(tags[2], 0x30)
+        cursor = 3
+        if tags[cursor] == 0xa0:
+            cursor += 1
+        self.assertEqual(tags[cursor], 0x30)  # signatureAlgorithm
+        signature_index = cursor + 1
+        self.assertLess(signature_index, len(tags))
+        self.assertEqual(tags[signature_index], 0x04)
+        self.assertEqual(tags[signature_index + 1:], [] if len(tags) == signature_index + 1 else [0xa1])
         signature_tag, signature_body, signature_end = tlv(signer_fields[signature_index])
         self.assertEqual(signature_tag, 0x04)
         self.assertEqual(signature_end - signature_body, 256)
