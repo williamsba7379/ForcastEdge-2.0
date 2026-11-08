@@ -7,7 +7,7 @@ import zipfile
 MAX_DOWNLOAD=25_000_000
 MAX_MEMBER=10_000_000
 MAX_MEMBERS=50
-TRUSTED_SUFFIXES=(".actions.githubusercontent.com",".blob.core.windows.net",".githubusercontent.com")
+TRUSTED_SUFFIXES=(".actions.githubusercontent.com",".blob.core.windows.net")
 
 def trusted_redirect(url):
     u=urllib.parse.urlsplit(url)
