@@ -70,11 +70,19 @@ def verify_timestamp(*, openssl, response, evidence, roots, signer, crl,
         response_file, evidence_file, roots_file, signer_file, crl_file = paths
         # Validate supplied TSA signer certificate against explicit roots and
         # locally supplied CRL. Never rely on network or system CA trust.
+        # Reject malformed, incorrectly signed, or wrong-issuer CRLs before
+        # certificate-path verification. Never fetch revocation data online.
+        crl_check = run(["crl", "-in", crl_file, "-noout", "-verify",
+                         "-CAfile", roots_file])
+        if crl_check.returncode != 0:
+            return False, "CRL_SIGNATURE_REJECTED", meta
         chain = run(["verify", "-CAfile", roots_file, "-CRLfile", crl_file,
                      "-crl_check", "-attime", str(verification_time),
                      "-purpose", "timestampsign", signer_file])
         if chain.returncode != 0:
             return False, "CERTIFICATE_OR_REVOCATION_REJECTED", meta
+        # The historical availability of this CRL cannot be established by
+        # -attime alone. This remains offline research, never production proof.
         # Verify original request (nonce and policy) AND the evidence imprint.
         # OpenSSL ts -verify has no -CRLfile option. CRL checking above is
         # separate; it does not establish identity of an embedded CMS signer.
