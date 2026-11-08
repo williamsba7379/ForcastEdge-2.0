@@ -22,11 +22,11 @@ def sign(obj, key):
     return dict(obj, signature=hmac.new(key, canonical_bytes(obj), hashlib.sha256).hexdigest())
 
 
-class ProofReadinessIntegrationTests(OfflineReadinessGateTests):
-    """Inherit fixture construction, not its tests (disable inherited tests below)."""
+class ProofReadinessIntegrationTests(unittest.TestCase):
+    """Reuse the existing fixture setup without inheriting its test methods."""
 
     def setUp(self):
-        super().setUp()
+        OfflineReadinessGateTests.setUp(self)
         base = self.kw
         timestamp = sign(dict(
             kind="timestamp", authorityId="ts-fixture", proofId="ts-proof-001",
@@ -86,11 +86,6 @@ class ProofReadinessIntegrationTests(OfflineReadinessGateTests):
         self.assertIs(metadata["productionReady"], False)
         self.assertNotEqual(reason, "PRODUCTION_READY")
 
-
-# Prevent unittest from collecting inherited tests in this module:
-for _name in tuple(vars(OfflineReadinessGateTests)):
-    if _name.startswith("test_"):
-        delattr(ProofReadinessIntegrationTests, _name)
 
 if __name__ == "__main__":
     unittest.main()
