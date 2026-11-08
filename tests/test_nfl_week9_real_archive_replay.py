@@ -117,7 +117,7 @@ class ArchivedWeek9Replay(unittest.TestCase):
 
     def test_changed_kickoff_rejected(self):
         s = copy.deepcopy(self.schedule)
-        s["games"][0]["date"] = "2026-11-06T02:15:00Z"
+        s["games"][1]["date"] = "2026-11-08T15:30:00Z"
         with self.assertRaisesRegex(ValueError, "Kickoff"):
             self.check(schedule=s)
 
