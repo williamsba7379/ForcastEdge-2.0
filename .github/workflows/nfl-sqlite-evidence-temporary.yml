@@ -1,0 +1,38 @@
+name: NFL isolated SQLite evidence - temporary 58 offline tests
+on:
+  push:
+    branches:
+      - audit/historical-availability-validator
+    paths:
+      - .github/workflows/nfl-sqlite-evidence-temporary.yml
+permissions:
+  contents: read
+jobs:
+  offline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run 48 existing and 10 SQLite offline tests
+        shell: bash
+        env:
+          PYTHONPATH: scripts
+          PYTHONDONTWRITEBYTECODE: '1'
+        run: |
+          set -euo pipefail
+          python -m unittest discover -s tests -p 'test_nfl_historical_availability_audit.py' -v 2>&1 | tee /tmp/historical.log
+          python -m unittest discover -s tests -p 'test_nfl_future_final_evidence.py' -v 2>&1 | tee /tmp/future.log
+          python -m unittest discover -s tests -p 'test_nfl_future_evidence_safeguards.py' -v 2>&1 | tee /tmp/safeguards.log
+          python -m unittest discover -s tests -p 'test_nfl_sqlite_evidence_store.py' -v 2>&1 | tee /tmp/sqlite.log
+      - name: Upload isolated offline test logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: isolated-nfl-sqlite-58-test-logs
+          path: /tmp/*.log
+          retention-days: 14
