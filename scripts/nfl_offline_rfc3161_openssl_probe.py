@@ -20,8 +20,10 @@ def verify_timestamp(*, openssl, response, evidence, roots, signer, crl,
     if production_requested:
         return False, "PRODUCTION_AUTHORIZATION_FORBIDDEN", meta
     try:
+        if not isinstance(workdir, (str, os.PathLike)) or not Path(workdir).is_absolute() or Path(workdir).is_symlink():
+            return False, "INVALID_WORKDIR", meta
         root = Path(workdir).resolve(strict=True)
-        if not root.is_dir() or root.is_symlink():
+        if not root.is_dir():
             return False, "INVALID_WORKDIR", meta
         if not isinstance(timeout, (int, float)) or isinstance(timeout, bool) or not 0 < timeout <= 30:
             return False, "INVALID_TIMEOUT", meta
@@ -39,10 +41,12 @@ def verify_timestamp(*, openssl, response, evidence, roots, signer, crl,
             return str(resolved)
         # Executable must be explicitly approved, absolute, and not inside the
         # evidence directory; never resolve it from PATH.
-        if not isinstance(openssl, str) or not Path(openssl).is_absolute():
+        if not isinstance(openssl, str) or not Path(openssl).is_absolute() or Path(openssl).is_symlink():
             return False, "UNAPPROVED_OPENSSL", meta
         exe = Path(openssl).resolve(strict=True)
-        if not exe.is_file() or not os.access(exe, os.X_OK) or exe.is_relative_to(root):
+        if not exe.is_file() or not os.access(exe, os.X_OK) or exe.is_relative_to(root) or str(exe) not in ("/usr/bin/openssl", "/bin/openssl"):
+            return False, "UNAPPROVED_OPENSSL", meta
+        if Path(openssl).resolve() != exe:
             return False, "UNAPPROVED_OPENSSL", meta
         paths = [local_file(p, limit) for p, limit in (
             (response, 2_000_000), (evidence, 20_000_000),
@@ -63,7 +67,8 @@ def verify_timestamp(*, openssl, response, evidence, roots, signer, crl,
         if chain.returncode != 0:
             return False, "CERTIFICATE_OR_REVOCATION_REJECTED", meta
         ts = run(["ts", "-verify", "-in", response_file, "-data", evidence_file,
-                  "-CAfile", roots_file, "-untrusted", signer_file])
+                  "-CAfile", roots_file, "-untrusted", signer_file,
+                  "-CRLfile", crl_file, "-crl_check"])
         if ts.returncode != 0:
             return False, "TIMESTAMP_VERIFICATION_FAILED", meta
         return True, "OFFLINE_OPENSSL_VERIFIED_RESEARCH_ONLY", meta
