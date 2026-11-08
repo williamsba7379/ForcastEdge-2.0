@@ -26,6 +26,9 @@ class SQLiteAppendOnlyEvidence:
         if self.path == ':memory:':
             raise ValueError('durable file path required')
         with self._connect() as db:
+            mode = db.execute('PRAGMA journal_mode=DELETE').fetchone()[0].lower()
+            if mode != 'delete':
+                raise RuntimeError('UNVERIFIED_SQLITE_JOURNAL_MODE')
             db.executescript(_SCHEMA)
 
     @contextmanager
@@ -33,6 +36,9 @@ class SQLiteAppendOnlyEvidence:
         db = sqlite3.connect(self.path, timeout=10, isolation_level=None)
         try:
             db.execute('PRAGMA busy_timeout=10000')
+            db.execute('PRAGMA synchronous=FULL')
+            if db.execute('PRAGMA synchronous').fetchone()[0] != 2:
+                raise RuntimeError('UNVERIFIED_SQLITE_SYNCHRONOUS_MODE')
             yield db
         finally:
             db.close()
