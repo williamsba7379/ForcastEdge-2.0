@@ -4,6 +4,7 @@ import io
 import json
 import zipfile
 from nfl_real_artifact_shadow import parse_time, NotReady
+from nfl_shadow_security import read_zip_members
 
 RUN=41876281307
 ARTIFACT=13346712960
@@ -21,10 +22,9 @@ def replay(run, artifact, zip_bytes, schedule):
             or artifact.get("workflow_run",{}).get("id")!=RUN
             or artifact.get("workflow_run",{}).get("head_sha")!=COMMIT):
             raise NotReady("ARTIFACT_PROVENANCE_MISMATCH")
-        with zipfile.ZipFile(io.BytesIO(zip_bytes)) as z:
-            if MEMBER not in z.namelist():raise NotReady("SNAPSHOT_MISSING")
-            raw=z.read(MEMBER)
-            readiness=json.loads(z.read("week9-readiness.json"))
+        members=read_zip_members(zip_bytes,[MEMBER,"week9-readiness.json"])
+        raw=members[MEMBER]
+        readiness=json.loads(members["week9-readiness.json"])
         if hashlib.sha256(raw).hexdigest()!=DIGEST:
             raise NotReady("PAYLOAD_DIGEST_MISMATCH")
         snapshot=json.loads(raw)
