@@ -1,0 +1,15 @@
+name: NFL real-artifact shadow verifier offline checks
+on:
+  push:
+    branches:
+      - research/nfl-real-artifact-shadow-verifier
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  shadow-offline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run isolated mocked GitHub artifact authentication checks
+        run: python3 -m unittest discover -s tests -p test_nfl_real_artifact_shadow.py -v
