@@ -4,6 +4,7 @@ Test-only CA and TSA keys are generated inside a temporary directory, never
 committed. Tests require a locally installed OpenSSL 3.x; no downloads.
 """
 from pathlib import Path
+import time
 import shutil
 import subprocess
 import tempfile
@@ -37,7 +38,8 @@ class OfflineOpenSSLProbeTests(unittest.TestCase):
         self.kw = dict(openssl=self.exe, response=str(self.response),
                        evidence=str(self.evidence), roots=str(self.roots),
                        signer=str(self.signer), crl=str(self.crl),
-                       workdir=str(self.root), request=str(self.request))
+                       workdir=str(self.root), request=str(self.request),
+                       verification_time=int(time.time()))
         self._make_fixture()
 
     def cmd(self, *args):
@@ -114,15 +116,13 @@ authorityKeyIdentifier = keyid,issuer
 
     def test_valid_locally_signed_rfc3161_evidence(self):
         ok, reason, meta = self.result()
-        self.assertFalse(ok, "Signer identity must fail closed until cryptographically bound")
-        self.assertIn(reason, ("TIMESTAMP_SIGNER_IDENTITY_BINDING_PENDING",
-                               "TIMESTAMP_VERIFICATION_FAILED",
-                               "CERTIFICATE_OR_REVOCATION_REJECTED"))
+        self.assertTrue(ok, reason)
+        self.assertEqual(reason, "OFFLINE_OPENSSL_VERIFIED_RESEARCH_ONLY")
         self.assertFalse(meta["productionReady"])
 
     def test_tampered_signature(self):
         data = bytearray(self.response.read_bytes())
-        data[-1] ^= 1  # Fixed mutation; signature-byte location not yet proven
+        data[-1] ^= 1  # Response corruption; cryptographic-signature targeting remains pending
         self.response.write_bytes(data)
         self.deny()
 
@@ -149,7 +149,8 @@ authorityKeyIdentifier = keyid,issuer
                                                "extendedKeyUsage = critical,serverAuth"))
         self.cmd("ca", "-batch", "-config", wrong_config, "-in",
                  self.root / "wrong.csr", "-out", other, "-notext")
-        self.deny(signer=str(other))
+        self.assertEqual(self.deny(signer=str(other)),
+                         "CERTIFICATE_OR_REVOCATION_REJECTED")
 
     def test_missing_or_invalid_revocation_evidence(self):
         self.deny(crl=str(self.root / "missing.crl"))
@@ -162,6 +163,8 @@ authorityKeyIdentifier = keyid,issuer
         self.assertEqual(self.deny(openssl="/nonexistent/openssl"), "OFFLINE_EXECUTION_OR_INPUT_FAILURE")
         self.assertEqual(self.deny(request=None),
                          "ORIGINAL_REQUEST_REQUIRED_FOR_NONCE_AND_POLICY")
+        self.assertEqual(self.deny(verification_time=None),
+                         "EXPLICIT_VERIFICATION_TIME_REQUIRED")
 
     def test_production_authorization_rejected(self):
         self.assertEqual(self.deny(production_requested=True),
