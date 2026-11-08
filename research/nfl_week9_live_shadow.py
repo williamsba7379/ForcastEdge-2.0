@@ -10,18 +10,11 @@ import urllib.parse
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parent))
 from nfl_week9_real_archive_replay import replay, RUN, ARTIFACT
+from nfl_shadow_security import SafeArtifactRedirect, bounded_read
 
 REPO="williamsba7379/ForcastEdge-2.0"
 SCHEDULE_COMMIT="e81ccee600c14dae6efcc57baf8217ac77180319"
 SCHEDULE_PATH="tests/fixtures/nfl_week9_20261104_espn_schedule.json"
-
-class SafeArtifactRedirect(urllib.request.HTTPRedirectHandler):
-    def redirect_request(self, req, fp, code, msg, headers, newurl):
-        host=urllib.parse.urlparse(newurl).hostname or ''
-        if not (newurl.startswith('https://') and (host.endswith('.actions.githubusercontent.com') or host.endswith('.blob.core.windows.net') or host.endswith('.githubusercontent.com'))):
-            raise ValueError('UNTRUSTED_ARTIFACT_REDIRECT')
-        # Signed artifact download URLs must not receive GitHub bearer credentials.
-        return urllib.request.Request(newurl,headers={'User-Agent':'ForecastEdge-research-only-replay'})
 
 def get(url):
     if not url.startswith("https://api.github.com/repos/"+REPO+"/"):
@@ -33,7 +26,7 @@ def get(url):
     try:
         with urllib.request.build_opener(SafeArtifactRedirect()).open(req,timeout=30) as response:
             if response.status!=200:raise ValueError("HTTP_FETCH_FAILED")
-            return response.read()
+            return bounded_read(response)
     except urllib.error.HTTPError as exc:
         # Fail closed and report endpoint category without exposing tokens or redirect URLs.
         kind = "artifact_zip" if url.endswith("/zip") else ("run_metadata" if "/actions/runs/" in url else "contents_or_artifact_metadata")
