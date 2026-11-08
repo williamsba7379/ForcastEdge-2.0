@@ -33,10 +33,11 @@ class OfflineOpenSSLProbeTests(unittest.TestCase):
         self.signer = self.root / "tsa.pem"
         self.crl = self.root / "root.crl"
         self.response = self.root / "stamp.tsr"
+        self.request = self.root / "stamp.tsq"
         self.kw = dict(openssl=self.exe, response=str(self.response),
                        evidence=str(self.evidence), roots=str(self.roots),
                        signer=str(self.signer), crl=str(self.crl),
-                       workdir=str(self.root))
+                       workdir=str(self.root), request=str(self.request))
         self._make_fixture()
 
     def cmd(self, *args):
@@ -87,7 +88,7 @@ authorityKeyIdentifier = keyid,issuer
         self.cmd("ca", "-batch", "-config", config, "-in", self.root / "tsa.csr",
                  "-out", self.signer, "-notext")
         self.cmd("ca", "-gencrl", "-config", config, "-out", self.crl)
-        request = self.root / "stamp.tsq"
+        request = self.request
         self.cmd("ts", "-query", "-data", self.evidence, "-sha256",
                  "-cert", "-out", request)
         tsa_config = self.root / "tsa.cnf"
@@ -113,13 +114,15 @@ authorityKeyIdentifier = keyid,issuer
 
     def test_valid_locally_signed_rfc3161_evidence(self):
         ok, reason, meta = self.result()
-        self.assertTrue(ok, reason)
-        self.assertEqual(reason, "OFFLINE_OPENSSL_VERIFIED_RESEARCH_ONLY")
+        self.assertFalse(ok, "Signer identity must fail closed until cryptographically bound")
+        self.assertIn(reason, ("TIMESTAMP_SIGNER_IDENTITY_BINDING_PENDING",
+                               "TIMESTAMP_VERIFICATION_FAILED",
+                               "CERTIFICATE_OR_REVOCATION_REJECTED"))
         self.assertFalse(meta["productionReady"])
 
     def test_tampered_signature(self):
         data = bytearray(self.response.read_bytes())
-        data[-1] ^= 1  # Alter signed response tail; must fail verification
+        data[-1] ^= 1  # Fixed mutation; signature-byte location not yet proven
         self.response.write_bytes(data)
         self.deny()
 
@@ -157,6 +160,8 @@ authorityKeyIdentifier = keyid,issuer
         self.response.write_bytes(b"not an RFC3161 token")
         self.deny()
         self.assertEqual(self.deny(openssl="/nonexistent/openssl"), "OFFLINE_EXECUTION_OR_INPUT_FAILURE")
+        self.assertEqual(self.deny(request=None),
+                         "ORIGINAL_REQUEST_REQUIRED_FOR_NONCE_AND_POLICY")
 
     def test_production_authorization_rejected(self):
         self.assertEqual(self.deny(production_requested=True),
