@@ -16,6 +16,7 @@ jobs:
         run: |
           python3 -m unittest discover -s tests -p test_nfl_real_artifact_shadow.py -v
           python3 -m unittest discover -s tests -p test_nfl_week9_real_replay_shadow.py -v
+          python3 -m unittest discover -s tests -p test_nfl_shadow_security_lineage.py -v
       - name: Live read-only replay of actual pinned Week 9 research artifact
         env:
           GITHUB_TOKEN: ${{ github.token }}
