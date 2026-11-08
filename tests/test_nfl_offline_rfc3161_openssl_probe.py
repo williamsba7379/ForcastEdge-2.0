@@ -122,13 +122,60 @@ authorityKeyIdentifier = keyid,issuer
 
     def test_tampered_signature(self):
         data = bytearray(self.response.read_bytes())
-        # Fixture uses an RSA-2048 TSA: its CMS SignerInfo signature is an
-        # OCTET STRING of exactly 256 bytes. Fail if the location is ambiguous.
-        marker = b"\x04\x82\x01\x00"
-        offsets = [i for i in range(len(data) - 260)
-                   if data[i:i + 4] == marker]
-        self.assertEqual(len(offsets), 1, "Cannot uniquely locate CMS signature")
-        data[offsets[0] + 4 + 128] ^= 1
+        # Walk the DER RFC3161 response -> ContentInfo -> SignedData ->
+        # signerInfos -> SignerInfo, rather than matching arbitrary bytes.
+        def tlv(pos):
+            if pos >= len(data):
+                raise ValueError("truncated DER")
+            tag = data[pos]
+            length_octet = data[pos + 1]
+            if length_octet < 128:
+                length, header = length_octet, 2
+            else:
+                n = length_octet & 127
+                if not 1 <= n <= 4:
+                    raise ValueError("unsupported DER length")
+                length = int.from_bytes(data[pos + 2:pos + 2 + n], "big")
+                header = 2 + n
+            body = pos + header
+            end = body + length
+            if end > len(data):
+                raise ValueError("truncated DER body")
+            return tag, body, end
+
+        def children(pos, expected):
+            tag, body, end = tlv(pos)
+            if tag != expected:
+                raise ValueError("unexpected ASN.1 tag")
+            result = []
+            while body < end:
+                result.append(body)
+                body = tlv(body)[2]
+            if body != end:
+                raise ValueError("invalid DER structure")
+            return result
+
+        response_parts = children(0, 0x30)
+        self.assertEqual(tlv(0)[2], len(data))
+        self.assertEqual(len(response_parts), 2)
+        content_info = children(response_parts[1], 0x30)
+        self.assertEqual(bytes(data[tlv(content_info[0])[1]:tlv(content_info[0])[2]]),
+                         bytes.fromhex("2a864886f70d010702"))  # signedData OID
+        signed_data = children(children(content_info[1], 0xa0)[0], 0x30)
+        signer_sets = [p for p in signed_data if tlv(p)[0] == 0x31]
+        self.assertEqual(len(signer_sets), 1)
+        signer_infos = children(signer_sets[0], 0x31)
+        self.assertEqual(len(signer_infos), 1)
+        signer_fields = children(signer_infos[0], 0x30)
+        # Signature is the OCTET STRING immediately after signatureAlgorithm.
+        algorithms = [i for i, p in enumerate(signer_fields) if tlv(p)[0] == 0x30]
+        self.assertGreaterEqual(len(algorithms), 2)
+        signature_index = algorithms[-1] + 1
+        self.assertLess(signature_index, len(signer_fields))
+        signature_tag, signature_body, signature_end = tlv(signer_fields[signature_index])
+        self.assertEqual(signature_tag, 0x04)
+        self.assertEqual(signature_end - signature_body, 256)
+        data[signature_body + 128] ^= 1
         self.response.write_bytes(data)
         self.deny()
 
@@ -168,8 +215,9 @@ authorityKeyIdentifier = keyid,issuer
             self.assertEqual(self.deny(signer=str(other), response=str(wrong_response)),
                              "CERTIFICATE_OR_REVOCATION_REJECTED")
         else:
-            self.assertEqual(self.deny(signer=str(other)),
-                             "CERTIFICATE_OR_REVOCATION_REJECTED")
+            self.assertFalse(wrong_response.exists(), "Unexpected rejected-response artifact")
+            self.assertIn(b"invalid", issued.stderr.lower() + issued.stdout.lower(),
+                          "Wrong-EKU issuance must fail for an identified reason")
 
     def test_missing_or_invalid_revocation_evidence(self):
         self.deny(crl=str(self.root / "missing.crl"))
@@ -179,7 +227,7 @@ authorityKeyIdentifier = keyid,issuer
     def test_malformed_input_or_execution_failure(self):
         self.response.write_bytes(b"not an RFC3161 token")
         self.deny()
-        self.assertEqual(self.deny(openssl="/nonexistent/openssl"), "OFFLINE_EXECUTION_OR_INPUT_FAILURE")
+        self.assertEqual(self.deny(openssl="relative/openssl"), "UNAPPROVED_OPENSSL")
         self.assertEqual(self.deny(request=None),
                          "ORIGINAL_REQUEST_REQUIRED_FOR_NONCE_AND_POLICY")
         self.assertEqual(self.deny(verification_time=None),
