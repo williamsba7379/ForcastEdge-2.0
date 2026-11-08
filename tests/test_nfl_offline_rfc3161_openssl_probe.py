@@ -122,7 +122,13 @@ authorityKeyIdentifier = keyid,issuer
 
     def test_tampered_signature(self):
         data = bytearray(self.response.read_bytes())
-        data[-1] ^= 1  # Response corruption; cryptographic-signature targeting remains pending
+        # Fixture uses an RSA-2048 TSA: its CMS SignerInfo signature is an
+        # OCTET STRING of exactly 256 bytes. Fail if the location is ambiguous.
+        marker = b"\x04\x82\x01\x00"
+        offsets = [i for i in range(len(data) - 260)
+                   if data[i:i + 4] == marker]
+        self.assertEqual(len(offsets), 1, "Cannot uniquely locate CMS signature")
+        data[offsets[0] + 4 + 128] ^= 1
         self.response.write_bytes(data)
         self.deny()
 
@@ -149,8 +155,21 @@ authorityKeyIdentifier = keyid,issuer
                                                "extendedKeyUsage = critical,serverAuth"))
         self.cmd("ca", "-batch", "-config", wrong_config, "-in",
                  self.root / "wrong.csr", "-out", other, "-notext")
-        self.assertEqual(self.deny(signer=str(other)),
-                         "CERTIFICATE_OR_REVOCATION_REJECTED")
+        # OpenSSL should refuse issuance by a signer without timeStamping EKU.
+        # If issuance unexpectedly succeeds, the probe must reject that token.
+        wrong_response = self.root / "wrong-purpose.tsr"
+        issued = subprocess.run([self.exe, "ts", "-reply", "-config",
+                                 str(self.root / "tsa.cnf"), "-section", "local_tsa",
+                                 "-queryfile", str(self.request), "-signer", str(other),
+                                 "-inkey", str(self.root / "wrong.key"),
+                                 "-chain", str(self.roots), "-out", str(wrong_response)],
+                                cwd=self.root, capture_output=True, timeout=10)
+        if issued.returncode == 0:
+            self.assertEqual(self.deny(signer=str(other), response=str(wrong_response)),
+                             "CERTIFICATE_OR_REVOCATION_REJECTED")
+        else:
+            self.assertEqual(self.deny(signer=str(other)),
+                             "CERTIFICATE_OR_REVOCATION_REJECTED")
 
     def test_missing_or_invalid_revocation_evidence(self):
         self.deny(crl=str(self.root / "missing.crl"))
