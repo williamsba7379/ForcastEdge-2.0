@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-11-08T11:10:46.579914+00:00",
+  "updatedAt": "2026-11-09T11:22:20.696175+00:00",
   "weeks": [
     {
       "week": 9,
@@ -17,91 +17,91 @@
           "date": "2026-11-08T14:30Z",
           "away": "Cincinnati Bengals",
           "home": "Atlanta Falcons",
-          "status": "STATUS_SCHEDULED"
+          "status": "STATUS_FINAL"
         },
         {
           "id": "401873040",
           "date": "2026-11-08T18:00Z",
           "away": "Dallas Cowboys",
           "home": "Indianapolis Colts",
-          "status": "STATUS_SCHEDULED"
+          "status": "STATUS_FINAL"
         },
         {
           "id": "401873045",
           "date": "2026-11-08T18:00Z",
           "away": "New York Jets",
           "home": "Kansas City Chiefs",
-          "status": "STATUS_SCHEDULED"
+          "status": "STATUS_FINAL"
         },
         {
           "id": "401873042",
           "date": "2026-11-08T18:00Z",
           "away": "Detroit Lions",
           "home": "Miami Dolphins",
-          "status": "STATUS_SCHEDULED"
+          "status": "STATUS_FINAL"
         },
         {
           "id": "401873039",
           "date": "2026-11-08T18:00Z",
           "away": "Cleveland Browns",
           "home": "New Orleans Saints",
-          "status": "STATUS_SCHEDULED"
+          "status": "STATUS_FINAL"
         },
         {
           "id": "401873044",
           "date": "2026-11-08T18:00Z",
           "away": "New York Giants",
           "home": "Philadelphia Eagles",
-          "status": "STATUS_SCHEDULED"
+          "status": "STATUS_FINAL"
         },
         {
           "id": "401873043",
           "date": "2026-11-08T18:00Z",
           "away": "Los Angeles Rams",
           "home": "Washington Commanders",
-          "status": "STATUS_SCHEDULED"
+          "status": "STATUS_FINAL"
         },
         {
           "id": "401873041",
           "date": "2026-11-08T18:00Z",
           "away": "Denver Broncos",
           "home": "Carolina Panthers",
-          "status": "STATUS_SCHEDULED"
+          "status": "STATUS_FINAL"
         },
         {
           "id": "401873046",
           "date": "2026-11-08T21:05Z",
           "away": "Houston Texans",
           "home": "Los Angeles Chargers",
-          "status": "STATUS_SCHEDULED"
+          "status": "STATUS_FINAL"
         },
         {
           "id": "401873049",
           "date": "2026-11-08T21:25Z",
           "away": "Green Bay Packers",
           "home": "New England Patriots",
-          "status": "STATUS_SCHEDULED"
+          "status": "STATUS_FINAL"
         },
         {
           "id": "401873047",
           "date": "2026-11-08T21:25Z",
           "away": "Las Vegas Raiders",
           "home": "San Francisco 49ers",
-          "status": "STATUS_SCHEDULED"
+          "status": "STATUS_FINAL"
         },
         {
           "id": "401873048",
           "date": "2026-11-08T21:25Z",
           "away": "Arizona Cardinals",
           "home": "Seattle Seahawks",
-          "status": "STATUS_SCHEDULED"
+          "status": "STATUS_FINAL"
         },
         {
           "id": "401873050",
           "date": "2026-11-09T01:20Z",
           "away": "Tampa Bay Buccaneers",
           "home": "Chicago Bears",
-          "status": "STATUS_SCHEDULED"
+          "status": "STATUS_FINAL"
         },
         {
           "id": "401873051",
