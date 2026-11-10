@@ -2,15 +2,16 @@
 """Offline, append-only Model C QB updates. No production workflow entry point."""
 import argparse
 import copy
+from contextlib import contextmanager
 import datetime as dt
 import fcntl
 import hashlib
-import importlib.util
 import json
 import os
 from pathlib import Path
 import re
 import tempfile
+import types
 from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -65,17 +66,19 @@ def load_engine(bundle):
     require(re.fullmatch(r'[0-9a-f]{40}', version) is not None, 'Pinned model commit required')
     require(bundle['engineLink'] == REPO + version + '/scripts/model_c_engine.py',
             'Engine link must identify the exact model commit')
-    require(hashlib.sha256(ENGINE.read_bytes()).hexdigest() == bundle['engineSha256'],
+    source = ENGINE.read_bytes()
+    require(hashlib.sha256(source).hexdigest() == bundle['engineSha256'],
             'Exact frozen engine bytes unavailable; cannot substitute a newer version')
-    spec = importlib.util.spec_from_file_location('isolated_model_c', ENGINE)
-    engine = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(engine)
+    # Compile exactly the bytes hashed above, without importing/writing a .pyc file.
+    engine = types.ModuleType('isolated_model_c')
+    engine.__file__ = str(ENGINE)
+    exec(compile(source, str(ENGINE), 'exec'), engine.__dict__)
     require(getattr(engine, 'ISOLATED_API_VERSION', None) == 1,
             'Frozen engine has no supported isolated API')
     return engine
 
 
-def validate_bundle(bundle, now):
+def validate_bundle(bundle, now, replay=True):
     require(bundle['schemaVersion'] == 1, 'Unsupported baseline bundle')
     require(bundle['reviewed'] is True, 'Baseline provenance requires review')
     require(pinned_link(bundle['originalLink']), 'Immutable original link required')
@@ -114,14 +117,14 @@ def validate_bundle(bundle, now):
                 check_asof(item)
     check_asof(args)
     # Replay ONLY the affected game at its original generation time.
-    replay = engine.predict_game(target, now=generated, **args)
-    require(canonical(replay) == canonical(game),
-            'Original game cannot be reproduced exactly; no update may be published')
+    if replay:
+        original = engine.predict_game(target, now=generated, **args)
+        require(canonical(original) == canonical(game),
+                'Original game cannot be reproduced exactly; no update may be published')
     return engine, target, args, frozen, kickoff
 
 
-def prepare(bundle, event, now):
-    engine, target, args, frozen, kickoff = validate_bundle(bundle, now)
+def validate_event(bundle, event, now, engine, target, args, frozen, kickoff):
     team = event['team']
     require(str(event['gameId']) == str(target['id']) and team in (target['away'], target['home']),
             'QB evidence must identify this exact game and team')
@@ -139,10 +142,17 @@ def prepare(bundle, event, now):
     reported = stamp(event['reportedAt'])
     require(frozen < reported <= now < kickoff, 'Evidence must be new and prekickoff')
     require(event['previousStatus'] != event['newStatus'], 'No meaningful status transition')
+    severity = {'STARTER': 0, 'AVAILABLE': 0, 'CLEARED': 0, 'QUESTIONABLE': 1, 'DOUBTFUL': 2, 'OUT': 3}
+    if event['change'] == 'DOWNGRADED' and event['previousStatus'] in severity:
+        require(severity[event['newStatus']] > severity[event['previousStatus']],
+                'Reported downgrade does not worsen availability')
     require(bool(event['quarterback'].strip()), 'Quarterback identity required')
     side = 'home' if team == target['home'] else 'away'
     assumption = bundle['original']['quarterbacks'][side]
     identities = {assumption.get(k) for k in ('starter', 'recentPrimaryPasser', 'depthChartQB1Candidate')}
+    effective = args['qb_declarations'].get(team, {})
+    if effective.get('starter'):
+        identities = {effective['starter']}
     require(event['quarterback'] in identities, 'QB does not match the archived baseline assumption')
     declaration = event['declaration']
     require(declaration['team'] == team and str(declaration['gameId']) == str(target['id']),
@@ -161,17 +171,42 @@ def prepare(bundle, event, now):
                 and declaration['starter'] == event['quarterback'],
                 'Unavailable/uncertain declaration must not promote a replacement')
         require(not event.get('replacement'), 'Replacement needs a separate confirmed starter event')
+    # The engine has no calibrated QB-dependent numeric adjustment updater. An old
+    # target-side adjustment cannot be assumed valid for a changed QB assumption.
+    adjustment = args['adjustments'].get('games', {}).get(str(target['id']), {}).get(side)
+    require(not adjustment, 'Existing target-side points require dependent-input reassessment')
+    return team, declaration
+
+
+def identity_keys(bundle, event):
+    identity = {k: event.get(k) for k in ('gameId', 'team', 'quarterback', 'newStatus', 'replacement')}
+    identity['gameId'] = str(identity['gameId'])
+    baseline_key = digest({k: bundle[k] for k in ('modelVersion', 'engineSha256', 'inputsSha256',
+                                                'frozenAt', 'modelCGeneratedAt', 'original')})
+    return baseline_key, digest({'baseline': baseline_key, 'status': identity})
+
+
+def prepare(bundle, event, now, previous_records=()):
+    engine, target, args, frozen, kickoff = validate_bundle(bundle, now)
     changed = copy.deepcopy(args)
+    baseline_key, status_key = identity_keys(bundle, event)
+    previous_links = []
+    for previous in sorted(previous_records, key=lambda row: stamp(row['sourceProvenance']['reportedAt'])):
+        require(previous['baselineKey'] == baseline_key and previous['rating'] == 'NO BET',
+                'Previous record baseline mismatch')
+        require(stamp(previous['generatedAt']) <= now, 'Future-dated prior update')
+        prior_event = previous['sourceProvenance']
+        prior_team, prior_declaration = validate_event(
+            bundle, prior_event, now, engine, target, changed, frozen, kickoff)
+        changed['qb_declarations'][prior_team] = copy.deepcopy(prior_declaration)
+        previous_links.append(previous['dedupKey'])
+    team, declaration = validate_event(bundle, event, now, engine, target, changed, frozen, kickoff)
     changed['qb_declarations'][team] = copy.deepcopy(declaration)
     # No ad hoc/calibration-free QB point conversion is supported.
     # All other inputs, including documented adjustments, remain byte-equivalent.
     updated = engine.predict_game(target, now=now, **changed)
     require(updated['rating'] == 'NO BET', 'NO BET must be retained')
-    identity = {k: event.get(k) for k in ('gameId', 'team', 'quarterback', 'newStatus', 'replacement')}
-    identity['gameId'] = str(identity['gameId'])
-    baseline_key = digest({k: bundle[k] for k in ('modelVersion', 'engineSha256', 'inputsSha256',
-                                                'frozenAt', 'modelCGeneratedAt', 'original')})
-    status_key = digest({'baseline': baseline_key, 'status': identity})
+    reported = stamp(event['reportedAt'])
     key = digest({'status': status_key, 'reportedAt': reported.isoformat()})
     return {
         'schemaVersion': 1, 'label': 'UPDATED MODEL C', 'generatedAt': now.isoformat(),
@@ -180,8 +215,11 @@ def prepare(bundle, event, now):
         'inputsLink': bundle['inputsLink'], 'modelVersion': bundle['modelVersion'],
         'engineSha256': bundle['engineSha256'], 'season': bundle['season'], 'week': bundle['week'],
         'sourceProvenance': event, 'original': bundle['original'], 'updated': updated,
-        'inputChanges': [{'path': 'qb_declarations/' + team,
-                         'previous': args['qb_declarations'].get(team), 'new': declaration}],
+        'inputChanges': [{'path': 'qb_declarations/' + name,
+                         'previous': args['qb_declarations'].get(name), 'new': value}
+                        for name, value in sorted(changed['qb_declarations'].items())
+                        if value != args['qb_declarations'].get(name)],
+        'priorUpdateIds': previous_links,
         'otherInputChanges': [], 'evaluationTimeChangedFrom': bundle['modelCGeneratedAt'],
         'explanation': ('QB evidence is updated. This Model C version does not translate QB '
                         'status into points automatically. Original numeric adjustment inputs '
@@ -190,7 +228,8 @@ def prepare(bundle, event, now):
     }
 
 
-def append_record(directory, record, clock=utcnow):
+@contextmanager
+def archive_lock(directory):
     directory = Path(directory).resolve()
     require(directory.name == 'model-c-isolated-updates' and directory.is_dir(),
             'Use an existing dedicated model-c-isolated-updates directory')
@@ -199,35 +238,67 @@ def append_record(directory, record, clock=utcnow):
     fd = os.open(directory / '.lock', os.O_CREAT | os.O_RDWR | os.O_NOFOLLOW, 0o600)
     with os.fdopen(fd, 'w') as lock:
         fcntl.flock(lock, fcntl.LOCK_EX)
-        prior = []
-        for path in directory.glob('*.json'):
+        yield directory
+
+
+def _publish(directory, record, clock):
+    kickoff = stamp(record['updated']['date'])
+    now = clock()
+    require(stamp(record['generatedAt']) <= now < kickoff, 'Kickoff reached before publication')
+    filename = now.strftime('%Y%m%dT%H%M%S%fZ') + '-' + record['dedupKey'] + '.json'
+    dest = directory / filename
+    temp_fd, temporary = tempfile.mkstemp(prefix='.pending-', dir=directory)
+    try:
+        with os.fdopen(temp_fd, 'w') as output:
+            output.write(json.dumps(record, indent=2, allow_nan=False) + '\n')
+            output.flush()
+            os.fsync(output.fileno())
+        require(clock() < kickoff, 'Kickoff reached before publication')
+        os.link(temporary, dest)  # Fails if the destination exists; no overwrite.
+        directory_fd = os.open(directory, os.O_RDONLY | os.O_DIRECTORY)
+        try:
+            os.fsync(directory_fd)
+        finally:
+            os.close(directory_fd)
+    finally:
+        os.unlink(temporary)
+    return dest
+
+
+def process_update(directory, bundle, event, clock=utcnow):
+    # Hold one lock through dedup, cumulative-input reconstruction and publication.
+    # A duplicate never reaches either baseline replay or updated model evaluation.
+    with archive_lock(directory) as archive:
+        now = clock()
+        validate_bundle(bundle, now, replay=False)
+        baseline_key, status_key = identity_keys(bundle, event)
+        previous_records = []
+        for path in archive.glob('*.json'):
             require(not path.is_symlink(), 'Refusing symlink in update archive')
             previous = json.loads(path.read_text())
-            if (previous['baselineKey'] == record['baselineKey'] and
-                    previous['sourceProvenance']['team'] == record['sourceProvenance']['team']):
-                prior.append(previous)
-        if prior:
-            latest = max(prior, key=lambda row: stamp(row['sourceProvenance']['reportedAt']))
-            if latest['statusKey'] == record['statusKey']:
-                return None
-            require(stamp(record['sourceProvenance']['reportedAt']) >
-                    stamp(latest['sourceProvenance']['reportedAt']), 'Stale or conflicting status transition')
-        kickoff = stamp(record['updated']['date'])
-        now = clock()
-        require(stamp(record['generatedAt']) <= now < kickoff, 'Kickoff reached before publication')
-        filename = now.strftime('%Y%m%dT%H%M%S%fZ') + '-' + record['dedupKey'] + '.json'
-        dest = directory / filename
-        temp_fd, temporary = tempfile.mkstemp(prefix='.pending-', dir=directory)
-        try:
-            with os.fdopen(temp_fd, 'w') as output:
-                output.write(json.dumps(record, indent=2, allow_nan=False) + '\n')
-                output.flush()
-                os.fsync(output.fileno())
-            require(clock() < kickoff, 'Kickoff reached before publication')
-            os.link(temporary, dest)  # Fails if the destination exists; no overwrite.
-        finally:
-            os.unlink(temporary)
-        return dest
+            if previous['baselineKey'] == baseline_key:
+                previous_records.append(previous)
+        team_records = [row for row in previous_records
+                        if row['sourceProvenance']['team'] == event['team']]
+        if team_records:
+            def relevant(row):
+                earlier = row['sourceProvenance']
+                if event['change'] == 'REPLACED':
+                    return earlier['change'] == 'REPLACED'
+                return ((earlier['change'] != 'REPLACED' and
+                         earlier['quarterback'] == event['quarterback']) or
+                        (earlier['change'] == 'REPLACED' and
+                         earlier.get('replacement') == event['quarterback']))
+            status_records = [row for row in team_records if relevant(row)]
+            if status_records:
+                latest_status = max(status_records, key=lambda row: stamp(row['sourceProvenance']['reportedAt']))
+                if latest_status['statusKey'] == status_key:
+                    return None
+            latest = max(team_records, key=lambda row: stamp(row['sourceProvenance']['reportedAt']))
+            require(stamp(event['reportedAt']) > stamp(latest['sourceProvenance']['reportedAt']),
+                    'Stale or conflicting status transition')
+        record = prepare(bundle, event, now, previous_records)
+        return _publish(archive, record, clock)
 
 
 def main():
@@ -239,11 +310,10 @@ def main():
     try:
         bundle = json.loads(args.baseline.read_text())
         event = json.loads(args.event.read_text())
-        record = prepare(bundle, event, utcnow())
-        path = append_record(args.output_dir, record)
+        path = process_update(args.output_dir, bundle, event)
         print(json.dumps({'status': 'UPDATED MODEL C' if path else 'DUPLICATE_SUPPRESSED',
                           'record': str(path) if path else None}))
-    except (ValueError, KeyError, TypeError, AttributeError, OSError, RuntimeError) as exc:
+    except (ValueError, KeyError, TypeError, AttributeError, OSError, RuntimeError, SyntaxError, ImportError) as exc:
         print(json.dumps({'label': 'NEEDS REASSESSMENT', 'status': 'UPDATE BLOCKED', 'reason': str(exc)}))
         raise SystemExit(2)
 
