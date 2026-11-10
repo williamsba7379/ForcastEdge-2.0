@@ -20,9 +20,12 @@ archive the exact API-capable engine and original inputs alongside its original
 prediction before a subsequent QB change can qualify.
 
 QB status alone has no automatic numeric effect in this Model C calculation.
-This first draft changes the affected team's official QB declaration only; it
-does not accept fresh numeric adjustments or derive points from passer statistics.
-All original adjustment inputs remain fixed. Consequently a successful status
+This draft changes official QB declarations only; it does not accept fresh numeric
+adjustments or derive points from passer statistics. Any existing target-side
+adjustment blocks the run for dependent-input reassessment, including adjustments
+whose dependency is unknown. The runner cannot safely assume an old QB-specific
+point input still applies after a change. No existing adjustment is silently
+removed or replaced. Consequently a successful status
 update can keep the original winner and model margin unchanged. That is model
 behavior, not evidence that the QB change has no football impact. Projected scores,
 market spreads, totals and calibrated probabilities are not supplied by this
@@ -31,6 +34,8 @@ engine and must not be inferred from its margin or UNVALIDATED confidence label.
 ## Required reviewed baseline bundle (JSON)
 
 The runner consumes, but does not create or alter, an archived baseline bundle.
+It reads and hashes the installed engine once, then evaluates precisely those bytes
+without consulting or writing Python bytecode caches.
 Required fields:
 
 | Field | Requirement |
@@ -84,7 +89,8 @@ at or before the update, and before kickoff. `previousStatus` and `newStatus` mu
 differ. The declaration must include matching `team`, `gameId`, `source`, `asOf`,
 `evidenceText`, `reviewed: true`, `starter`, and `status`. Confirmed starters must
 also satisfy the engine's existing `sourceType: TEAM_ANNOUNCEMENT` and seven-day,
-pregame source-time checks. A nonconfirmed replacement is not promoted.
+pregame source-time checks. A nonconfirmed replacement is not promoted. A purported
+downgrade that improves a known availability status is rejected.
 
 This is intentionally conservative: protocol clearance without confirmation that
 the player will start cannot be used to fabricate a confirmed-starter declaration.
@@ -103,6 +109,14 @@ python scripts/model_c_isolated_update.py \
   --output-dir /path/outside/repository/model-c-isolated-updates
 ```
 
+Use the same durable archive for every check of a baseline. An empty or different
+archive cannot supply previous-state context or cross-run duplicate suppression.
+Previous successful QB changes for both sides of the game are reconstructed before
+the new event is applied, so an update cannot silently revert another team's QB
+status. A replacement can subsequently be ruled out using the replacement's name.
+The archived original remains immutable; cumulative declaration changes and prior
+update IDs are recorded alongside it. Non-QB inputs stay fixed.
+
 There is no backdating clock option. The runner rechecks kickoff immediately before
 publication and exits 2 with NEEDS REASSESSMENT / UPDATE BLOCKED on failure. It
 prints DUPLICATE_SUPPRESSED for the same latest semantic status and prediction
@@ -111,8 +125,13 @@ back to a formerly recorded status after an intervening substantive change.
 
 Successful records retain the original and updated complete game outputs, original
 links, model SHA/hash, source evidence, exact declaration diff, effective evaluation
-time change, NO BET, and `gradingImplemented: false`. A process lock serializes
-deduplication; a fully written temporary file is published by exclusive hard link.
+time change, NO BET, and `gradingImplemented: false`. A process lock covers
+deduplication, cumulative QB state, model evaluation and publication. Duplicate
+reports and stale conflicting transitions are checked before any model replay or
+update calculation. Availability is tracked separately from replacement
+announcements so repeating an old starter's OUT status after naming the replacement
+does not trigger another run. A fully written temporary file is published by
+exclusive hard link and its directory is flushed for durability.
 No earlier update is overwritten. Archive all successful files durably before the
 working environment expires. The runner is not an operating-system sandbox: run
 only reviewed repository code with reviewed provenance. The record files are
@@ -124,9 +143,11 @@ available for later separate evaluation; **separate grading is not implemented**
 python -m unittest discover -s tests -p 'test_model_c_isolated_update.py' -v
 ```
 
-Tests use synthetic 2030 fixtures only, including exact weekly-output regression
+19 tests use synthetic 2030 fixtures only, including exact weekly-output regression
 against the unmodified engine blob `f727e761bd7ab52b5fa6224b29e80d7bf5e68fd9`,
 single-game invocation counting, exact baseline replay, input/hash failures,
 official-source and practice/expectation rejection, full-slate size/ID checks,
 postkickoff refusal, concurrent duplicate suppression, later substantive
-transitions, append-only records and preservation of NO BET.
+transitions, cumulative updates for both teams, replacement injury, dependent-point
+blocking, no bytecode cache writes, pre-evaluation duplicate suppression,
+append-only records and preservation of NO BET.
