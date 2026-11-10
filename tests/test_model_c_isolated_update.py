@@ -128,24 +128,23 @@ class IsolatedUpdates(unittest.TestCase):
 
     def test_append_only_dedup_and_concurrency(self):
         bundle, event = fixture()
-        record = runner.prepare(bundle, event, NOW)
         with tempfile.TemporaryDirectory() as temp:
             directory = Path(temp) / 'model-c-isolated-updates'
             directory.mkdir()
             with ThreadPoolExecutor(max_workers=2) as pool:
-                paths = list(pool.map(lambda _: runner.append_record(directory, record, lambda: NOW), range(2)))
+                paths = list(pool.map(lambda _: runner.process_update(directory, bundle, event, lambda: NOW), range(2)))
             self.assertEqual(sum(p is not None for p in paths), 1)
             path = next(p for p in paths if p)
             frozen_bytes = path.read_bytes()
             event['reportedAt'] = NOW.isoformat()
             event['declaration']['asOf'] = NOW.isoformat()
-            duplicate = runner.prepare(bundle, event, NOW)
-            self.assertIsNone(runner.append_record(directory, duplicate, lambda: NOW))
+            with patch.object(runner, 'load_engine', return_value=engine), \
+                 patch.object(engine, 'predict_game', wraps=engine.predict_game) as predict:
+                self.assertIsNone(runner.process_update(directory, bundle, event, lambda: NOW))
+                predict.assert_not_called()
             self.assertEqual(path.read_bytes(), frozen_bytes)
-            with self.assertRaisesRegex(runner.Blocked, 'Kickoff'):
-                runner.append_record(directory, dict(record, statusKey='different',
-                                     sourceProvenance=dict(event, reportedAt=(NOW + dt.timedelta(seconds=1)).isoformat())),
-                                     lambda: KICKOFF)
+            with self.assertRaisesRegex(runner.Blocked, '[Kk]ickoff'):
+                runner.process_update(directory, bundle, event, lambda: KICKOFF)
             self.assertEqual(len(list(directory.glob('*.json'))), 1)
 
     def test_later_substantive_return_to_same_status_is_recorded(self):
@@ -161,8 +160,7 @@ class IsolatedUpdates(unittest.TestCase):
                 current['declaration'].update(asOf=current['reportedAt'], starter='Old QB',
                                               status='CONFIRMED_STARTER' if status == 'CLEARED' else 'CONFIRMED_RULED_OUT')
                 now = NOW + dt.timedelta(hours=index, minutes=1)
-                record = runner.prepare(bundle, current, now)
-                self.assertIsNotNone(runner.append_record(directory, record, lambda: now))
+                self.assertIsNotNone(runner.process_update(directory, bundle, current, lambda: now))
             self.assertEqual(len(list(directory.glob('*.json'))), 3)
 
     def test_weekly_output_matches_pre_refactor_engine(self):
@@ -187,9 +185,129 @@ class IsolatedUpdates(unittest.TestCase):
 
     def test_production_output_directory_is_rejected(self):
         bundle, event = fixture()
-        record = runner.prepare(bundle, event, NOW)
         with self.assertRaises(runner.Blocked):
-            runner.append_record(SCRIPTS, record)
+            runner.process_update(SCRIPTS, bundle, event, lambda: NOW)
+
+    def test_both_teams_updates_are_cumulative(self):
+        bundle, away = fixture()
+        bundle['inputs']['qb_candidates']['Home'] = {'candidate': 'Home Old'}
+        bundle['inputsSha256'] = runner.digest(bundle['inputs'])
+        args = {k: v for k, v in bundle['inputs'].items() if k != 'selected'}
+        bundle['original'] = engine.predict_game(bundle['inputs']['selected']['games'][0], now=GENERATED, **args)
+        home = copy.deepcopy(away)
+        home.update(team='Home', quarterback='Home Old', replacement='Home New', reportedAt=NOW.isoformat())
+        home['declaration'].update(team='Home', starter='Home New', asOf=NOW.isoformat())
+        with tempfile.TemporaryDirectory() as temp:
+            directory = Path(temp) / 'model-c-isolated-updates'
+            directory.mkdir()
+            first = runner.process_update(directory, bundle, away, lambda: NOW)
+            original_bytes = first.read_bytes()
+            second = runner.process_update(directory, bundle, home, lambda: NOW + dt.timedelta(minutes=1))
+            result = json.loads(second.read_text())
+            self.assertEqual(result['updated']['quarterbacks']['away']['starter'], 'New QB')
+            self.assertEqual(result['updated']['quarterbacks']['home']['starter'], 'Home New')
+            self.assertEqual(len(result['inputChanges']), 2)
+            self.assertEqual(len(result['priorUpdateIds']), 1)
+            self.assertEqual(first.read_bytes(), original_bytes)
+
+    def test_replacement_can_later_be_ruled_out_without_reverting(self):
+        bundle, event = fixture()
+        with tempfile.TemporaryDirectory() as temp:
+            directory = Path(temp) / 'model-c-isolated-updates'
+            directory.mkdir()
+            runner.process_update(directory, bundle, event, lambda: NOW)
+            event.update(quarterback='New QB', replacement=None, change='RULED_OUT',
+                         previousStatus='STARTER', newStatus='OUT', reportedAt=NOW.isoformat())
+            event['declaration'].update(starter='New QB', status='CONFIRMED_RULED_OUT', asOf=NOW.isoformat())
+            path = runner.process_update(directory, bundle, event, lambda: NOW + dt.timedelta(minutes=1))
+            result = json.loads(path.read_text())
+            self.assertIsNone(result['updated']['quarterbacks']['away']['starter'])
+            self.assertEqual(result['inputChanges'][0]['new']['starter'], 'New QB')
+
+    def test_numeric_dependency_is_blocked_instead_of_carried_forward(self):
+        for reason in ('QB injury points', 'Unknown adjustment', 'Non-QB adjustment'):
+            with self.subTest(reason=reason):
+                bundle, event = fixture()
+                bundle['inputs']['adjustments']['games']['0'] = {'away': {
+                    'points': -2, 'reason': reason, 'source': 'https://nfl.com/test',
+                    'asOf': (GENERATED - dt.timedelta(hours=1)).isoformat()}}
+                bundle['inputsSha256'] = runner.digest(bundle['inputs'])
+                args = {k: v for k, v in bundle['inputs'].items() if k != 'selected'}
+                bundle['original'] = engine.predict_game(bundle['inputs']['selected']['games'][0], now=GENERATED, **args)
+                with self.assertRaisesRegex(runner.Blocked, 'dependent-input reassessment'):
+                    runner.prepare(bundle, event, NOW)
+
+    def test_upgrading_from_out_is_not_a_downgrade(self):
+        bundle, event = fixture()
+        event.update(change='DOWNGRADED', newStatus='QUESTIONABLE', previousStatus='OUT', replacement=None)
+        event['declaration'].update(starter='Old QB', status='CONFIRMED_DOWNGRADED')
+        with self.assertRaisesRegex(runner.Blocked, 'does not worsen'):
+            runner.prepare(bundle, event, NOW)
+
+    def test_hash_loader_never_uses_import_cache_or_creates_bytecode(self):
+        bundle, _ = fixture()
+        with tempfile.TemporaryDirectory() as temp:
+            path = Path(temp) / 'model_c_engine.py'
+            path.write_bytes(runner.ENGINE.read_bytes())
+            with patch.object(runner, 'ENGINE', path):
+                self.assertEqual(runner.load_engine(bundle).ISOLATED_API_VERSION, 1)
+            self.assertFalse((Path(temp) / '__pycache__').exists())
+
+    def test_kickoff_during_evaluation_blocks_publication(self):
+        bundle, event = fixture()
+        with tempfile.TemporaryDirectory() as temp:
+            directory = Path(temp) / 'model-c-isolated-updates'
+            directory.mkdir()
+            ticks = iter((NOW, KICKOFF))
+            with self.assertRaisesRegex(runner.Blocked, '[Kk]ickoff'):
+                runner.process_update(directory, bundle, event, lambda: next(ticks))
+            self.assertEqual(list(directory.glob('*.json')), [])
+
+    def test_simultaneous_dedup_does_not_rerun_the_model(self):
+        bundle, event = fixture()
+        with tempfile.TemporaryDirectory() as temp:
+            directory = Path(temp) / 'model-c-isolated-updates'
+            directory.mkdir()
+            with patch.object(runner, 'load_engine', return_value=engine), \
+                 patch.object(engine, 'predict_game', wraps=engine.predict_game) as predict, \
+                 ThreadPoolExecutor(max_workers=2) as pool:
+                paths = list(pool.map(lambda _: runner.process_update(directory, bundle, event, lambda: NOW), range(2)))
+                self.assertEqual(predict.call_count, 2)  # One baseline replay + one update total.
+            self.assertEqual(sum(path is not None for path in paths), 1)
+
+    def test_stale_conflicting_status_does_not_execute_model(self):
+        bundle, event = fixture()
+        with tempfile.TemporaryDirectory() as temp:
+            directory = Path(temp) / 'model-c-isolated-updates'
+            directory.mkdir()
+            runner.process_update(directory, bundle, event, lambda: NOW)
+            event.update(quarterback='New QB', change='RULED_OUT', newStatus='OUT', replacement=None)
+            with patch.object(runner, 'load_engine', return_value=engine), \
+                 patch.object(engine, 'predict_game', wraps=engine.predict_game) as predict:
+                with self.assertRaisesRegex(runner.Blocked, 'Stale or conflicting'):
+                    runner.process_update(directory, bundle, event, lambda: NOW)
+                predict.assert_not_called()
+
+    def test_repeat_out_after_replacement_is_suppressed_without_model(self):
+        bundle, replacement = fixture()
+        ruled_out = copy.deepcopy(replacement)
+        ruled_out.update(change='RULED_OUT', newStatus='OUT', replacement=None)
+        ruled_out['declaration'].update(starter='Old QB', status='CONFIRMED_RULED_OUT')
+        replacement['reportedAt'] = NOW.isoformat()
+        replacement['declaration']['asOf'] = NOW.isoformat()
+        with tempfile.TemporaryDirectory() as temp:
+            directory = Path(temp) / 'model-c-isolated-updates'
+            directory.mkdir()
+            runner.process_update(directory, bundle, ruled_out, lambda: NOW)
+            runner.process_update(directory, bundle, replacement, lambda: NOW + dt.timedelta(minutes=1))
+            ruled_out['reportedAt'] = (NOW + dt.timedelta(minutes=2)).isoformat()
+            ruled_out['declaration']['asOf'] = ruled_out['reportedAt']
+            with patch.object(runner, 'load_engine', return_value=engine), \
+                 patch.object(engine, 'predict_game', wraps=engine.predict_game) as predict:
+                self.assertIsNone(runner.process_update(directory, bundle, ruled_out,
+                                                       lambda: NOW + dt.timedelta(minutes=3)))
+                predict.assert_not_called()
+            self.assertEqual(len(list(directory.glob('*.json'))), 2)
 
 
 if __name__ == '__main__':
