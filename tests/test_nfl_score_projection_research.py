@@ -28,6 +28,11 @@ class ScoreResearchTests(unittest.TestCase):
         rows=prior(history(),dt.datetime(2026,9,3,tzinfo=dt.timezone.utc),2026)
         self.assertEqual(len(rows),2)
         self.assertEqual(project(rows,"Home","Away")["status"],"INSUFFICIENT_PRIOR_TEAM_GAMES")
+    def test_identical_kickoff_timestamps_do_not_crash(self):
+        data=history()
+        data["games"][1]["date"]=data["games"][0]["date"]
+        report=walkforward(data,2026)
+        self.assertEqual(report["status"],"RESEARCH_BACKTEST_ONLY_NOT_VALIDATED")
     def test_walkforward_is_unvalidated_and_no_qb(self):
         r=walkforward(history(),2026)
         self.assertEqual(r["C-QB"]["graded"],0)
