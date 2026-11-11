@@ -97,7 +97,9 @@ def rehearse(input_dir, now):
 
 if __name__ == "__main__":
     try:
-        print(json.dumps(rehearse(ROOT / "data", dt.datetime.now(dt.timezone.utc)), indent=2))
+        result = rehearse(ROOT / "data", dt.datetime.now(dt.timezone.utc))
+        print("FORECASTEDGE_REHEARSAL_JSON_BEGIN")
+        print(json.dumps(result, indent=2))
     except Exception as exc:
         print(json.dumps({"status":"BLOCKED", "reason":str(exc)}))
         sys.exit(1)
