@@ -8,6 +8,7 @@ from unittest.mock import patch
 from zoneinfo import ZoneInfo
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "scripts"))
 import model_c_engine
 import model_c_qb_shadow
@@ -41,6 +42,10 @@ def rehearse(input_dir, now):
     selected = weeks[0]
     if len(selected["games"]) < 10 or len({str(g["id"]) for g in selected["games"]}) != len(selected["games"]):
         raise ValueError("INVALID_SCHEDULE_COVERAGE")
+    # Rehearsal may only use evidence captured by the supplied cutoff.
+    for name in ("model-c-qb-starters.json", "model-c-historical-qb-games.json"):
+        if not (input_dir / name).exists():
+            raise ValueError("MISSING_REQUIRED_QB_SOURCE:" + name)
     with TemporaryDirectory(prefix="nfl-shadow-only-") as tmp:
         data = pathlib.Path(tmp)
         for name in FILES:
@@ -48,7 +53,7 @@ def rehearse(input_dir, now):
         for name in OPTIONAL:
             if (input_dir / name).exists():
                 (data / name).write_bytes((input_dir / name).read_bytes())
-        with patch.object(model_c_engine, "DATA", data), patch.object(model_c_qb_shadow, "DATA", data), patch.object(four, "DATA", data):
+        with patch.object(model_c_engine, "DATA", data), patch.object(model_c_qb_shadow, "DATA", data), patch.object(four, "DATA", data), patch.object(four, "OUT", data / "four-model-head-to-head"):
             # Real Model C and C-QB engines run; no repository files are modified.
             model_c_engine.main()
             model_c_qb_shadow.main()
@@ -58,7 +63,9 @@ def rehearse(input_dir, now):
             card = four.freeze(draft, shadow, history, now)
     if (draft["season"], draft["week"]) != (schedule["season"], selected["week"]):
         raise ValueError("STALE_MODEL_C_WEEK")
-    if len(card["games"]) != len(selected["games"]) or any(set(g["picks"]) != {"A", "B", "C", "C-QB"} for g in card["games"]):
+    expected_ids = {str(g["id"]) for g in selected["games"]}
+    actual_ids = {str(g["id"]) for g in card["games"]}
+    if len(card["games"]) != len(selected["games"]) or actual_ids != expected_ids or any(set(g["picks"]) != {"A", "B", "C", "C-QB"} for g in card["games"]):
         raise ValueError("INCOMPLETE_FOUR_MODEL_HANDOFF")
     # No independent schedule confirmation, frozen source hashes, calibrated scores or
     # complete official QB evidence is supplied by this runner. Do not mark delivery ready.
