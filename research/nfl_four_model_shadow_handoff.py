@@ -58,7 +58,7 @@ def rehearse(input_dir, now):
             card = four.freeze(draft, shadow, history, now)
     if (draft["season"], draft["week"]) != (schedule["season"], selected["week"]):
         raise ValueError("STALE_MODEL_C_WEEK")
-    if len(card["games"]) != len(selected["games"]) or any(set(g["picks"]) != set(four.MODELS) for g in card["games"]) if hasattr(four, "MODELS") else len(card["games"]) != len(selected["games"]):
+    if len(card["games"]) != len(selected["games"]) or any(set(g["picks"]) != {"A", "B", "C", "C-QB"} for g in card["games"]):
         raise ValueError("INCOMPLETE_FOUR_MODEL_HANDOFF")
     # No independent schedule confirmation, frozen source hashes, calibrated scores or
     # complete official QB evidence is supplied by this runner. Do not mark delivery ready.
