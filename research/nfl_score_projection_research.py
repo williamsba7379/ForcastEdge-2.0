@@ -81,7 +81,7 @@ def walkforward(raw, season, *, min_date=None):
             candidates.append((when,g,actual_h,actual_a))
         except (ValueError,KeyError,TypeError):continue
     errors = {m:{"n":0,"home":0.,"away":0.,"margin":0.,"total":0.} for m in ("A","B","C")}
-    for when,g,actual_h,actual_a in sorted(candidates):
+    for when,g,actual_h,actual_a in sorted(candidates, key=lambda item: (item[0], str(item[1].get("id", "")))):
         rows = prior(raw,when,season)
         prediction = project(rows,g["home"],g["away"])
         if prediction["status"] != "RESEARCH_ONLY_NOT_DELIVERABLE": continue
