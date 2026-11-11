@@ -9,6 +9,8 @@ on:
     paths:
       - 'research/nfl_delivery_failclosed.py'
       - 'research/nfl_four_model_shadow_handoff.py'
+      - 'research/nfl_delivery_provenance_inventory.py'
+      - 'tests/test_nfl_delivery_provenance_inventory.py'
       - 'tests/test_nfl_delivery_failclosed.py'
       - '.github/workflows/nfl-delivery-failclosed-research.yml'
   workflow_dispatch:
@@ -23,6 +25,10 @@ jobs:
         env:
           PYTHONPATH: .
         run: python3 -m unittest discover -s tests -p test_nfl_delivery_failclosed.py -v
+      - name: Run provenance inventory fail-closed tests
+        env:
+          PYTHONPATH: .
+        run: python3 -m unittest discover -s tests -p test_nfl_delivery_provenance_inventory.py -v
       - name: Assert actual current-week artifacts are rejected when incomplete
         run: |
           if python3 research/nfl_delivery_failclosed.py > /tmp/nfl-delivery-readiness.json; then
@@ -52,6 +58,8 @@ jobs:
             grep -q '"status": "RESEARCH_ONLY_NOT_DELIVERABLE"' /tmp/nfl-real-engine-rehearsal.json
             grep -q '"games": 14' /tmp/nfl-real-engine-rehearsal.json
             grep -q '"winnerRows": 56' /tmp/nfl-real-engine-rehearsal.json
+            grep -q '"completeRows": 0' /tmp/nfl-real-engine-rehearsal.json
+            grep -q '"cutoffET": "2026-11-11T11:00:00-05:00"' /tmp/nfl-real-engine-rehearsal.json
             grep -q '"published": false' /tmp/nfl-real-engine-rehearsal.json
             grep -q '"historicalWednesdayFreezeVerified": false' /tmp/nfl-real-engine-rehearsal.json
           fi
