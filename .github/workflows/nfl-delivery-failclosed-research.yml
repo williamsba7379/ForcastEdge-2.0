@@ -23,6 +23,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Regression test stale weekly production inputs
+        env:
+          PYTHONPATH: .
+        run: python3 -m unittest discover -s tests -p test_nfl_weekly_stale_input_gate.py -v
       - name: Run fail-closed synthetic unit tests
         env:
           PYTHONPATH: .
