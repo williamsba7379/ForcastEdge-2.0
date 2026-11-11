@@ -91,6 +91,15 @@ def main():
     draft=json.loads((DATA/"model-c-automated-draft.json").read_text())
     shadow=json.loads((DATA/"model-c-qb-shadow.json").read_text())
     history=json.loads((DATA/"nfl-historical-results.json").read_text())
+    schedule=json.loads((DATA/"nfl-schedule.json").read_text())
+    now=dt.datetime.now(dt.timezone.utc)
+    from zoneinfo import ZoneInfo
+    eastern=now.astimezone(ZoneInfo("America/New_York"))
+    thursday=eastern.date()+dt.timedelta(days=(3-eastern.weekday())%7)
+    monday=thursday+dt.timedelta(days=4)
+    current=[w for w in schedule.get("weeks",[]) if any(thursday<=stamp(g["date"]).astimezone(ZoneInfo("America/New_York")).date()<=monday for g in w.get("games",[]))]
+    if len(current)!=1 or (draft["season"],draft["week"])!=(schedule["season"],current[0]["week"]) or (shadow["season"],shadow["week"])!=(schedule["season"],current[0]["week"]):
+        raise RuntimeError("STALE_MODEL_INPUTS_REFUSE_FREEZE: Current Thu-Mon week must match both model source artifacts")
     path=OUT/(str(draft["season"])+"-week-"+str(draft["week"])+".json")
     now=dt.datetime.now(dt.timezone.utc)
     if path.exists():
