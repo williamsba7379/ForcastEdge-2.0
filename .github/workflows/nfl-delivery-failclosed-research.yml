@@ -10,6 +10,8 @@ on:
       - 'research/nfl_delivery_failclosed.py'
       - 'research/nfl_four_model_shadow_handoff.py'
       - 'research/nfl_delivery_provenance_inventory.py'
+      - 'research/nfl_score_projection_research.py'
+      - 'tests/test_nfl_score_projection_research.py'
       - 'tests/test_nfl_delivery_provenance_inventory.py'
       - 'tests/test_nfl_delivery_failclosed.py'
       - '.github/workflows/nfl-delivery-failclosed-research.yml'
@@ -29,6 +31,17 @@ jobs:
         env:
           PYTHONPATH: .
         run: python3 -m unittest discover -s tests -p test_nfl_delivery_provenance_inventory.py -v
+      - name: Run score research fail-closed tests
+        env:
+          PYTHONPATH: .
+        run: python3 -m unittest discover -s tests -p test_nfl_score_projection_research.py -v
+      - name: Walk-forward score research (never publish)
+        env:
+          PYTHONPATH: .
+        run: |
+          python3 research/nfl_score_projection_research.py > /tmp/nfl-score-walkforward.json
+          cat /tmp/nfl-score-walkforward.json
+          python3 -c 'import json; d=json.load(open("/tmp/nfl-score-walkforward.json")); assert d["status"] == "RESEARCH_BACKTEST_ONLY_NOT_VALIDATED"; assert d["published"] is False; assert d["C-QB"]["graded"] == 0'
       - name: Assert actual current-week artifacts are rejected when incomplete
         run: |
           if python3 research/nfl_delivery_failclosed.py > /tmp/nfl-delivery-readiness.json; then
