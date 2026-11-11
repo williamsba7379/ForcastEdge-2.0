@@ -24,7 +24,7 @@ def evaluate(*, target_wednesday, runs, artifacts, deadline_minutes=30):
         raise ValueError("target_wednesday must be Wednesday")
     cutoff = dt.datetime.combine(day, dt.time(11), ET).astimezone(dt.timezone.utc)
     deadline = cutoff + dt.timedelta(minutes=deadline_minutes)
-    early, eligible = [], []
+    early, eligible, late = [], [], []
     for run in runs:
         if run.get("event") != "schedule":
             continue
@@ -36,8 +36,10 @@ def evaluate(*, target_wednesday, runs, artifacts, deadline_minutes=30):
             early.append(run)
         elif start <= deadline:
             eligible.append(run)
+        else:
+            late.append(run)
     if not eligible:
-        return {"status":"FAIL", "reason":"MISSING_REQUIRED_DELIVERY", "earlyChecks":len(early)}
+        return {"status":"FAIL", "reason":"LATE_DELIVERY_ATTEMPT" if late else "MISSING_REQUIRED_DELIVERY", "earlyChecks":len(early), "lateChecks":len(late)}
     # A valid delivery requires one fully successful scheduled run; later runs cannot mask failed attempts.
     reasons = []
     for run in eligible:
