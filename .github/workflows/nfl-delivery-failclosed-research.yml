@@ -3,6 +3,14 @@ on:
   push:
     branches:
       - repair/nfl-weekly-delivery-failclosed-20261111
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'research/nfl_delivery_failclosed.py'
+      - 'research/nfl_four_model_shadow_handoff.py'
+      - 'tests/test_nfl_delivery_failclosed.py'
+      - '.github/workflows/nfl-delivery-failclosed-research.yml'
   workflow_dispatch:
 permissions:
   contents: read
