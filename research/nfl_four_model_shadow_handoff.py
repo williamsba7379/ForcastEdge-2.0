@@ -14,6 +14,7 @@ import model_c_engine
 import model_c_qb_shadow
 import nfl_four_model_head_to_head as four
 from research.nfl_delivery_failclosed import validate, parse
+from research.nfl_delivery_provenance_inventory import audit
 
 ET = ZoneInfo("America/New_York")
 FILES = ("nfl-schedule.json", "nfl-historical-results.json",
@@ -73,11 +74,12 @@ def rehearse(input_dir, now):
     # No independent schedule confirmation, frozen source hashes, calibrated scores or
     # complete official QB evidence is supplied by this runner. Do not mark delivery ready.
     result = validate(schedule, card, execution_now)
+    inventory = audit(schedule, card, now)
     return {"status": "RESEARCH_ONLY_NOT_DELIVERABLE", "season": draft["season"],
             "week": draft["week"], "games": len(card["games"]),
             "winnerRows": sum(len(g["picks"]) for g in card["games"]),
             "realEngines": ["model_c_engine", "model_c_qb_shadow", "nfl_four_model_head_to_head.freeze"],
-            "readiness": result, "published": False, "executionAt": execution_now.isoformat(),
+            "readiness": result, "provenanceInventory": inventory, "published": False, "executionAt": execution_now.isoformat(),
             "inputCutoff": now.isoformat(), "historicalWednesdayFreezeVerified": False}
 
 if __name__ == "__main__":
