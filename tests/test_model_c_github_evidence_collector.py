@@ -45,7 +45,7 @@ class Collector(unittest.TestCase):
             e[3]["C"]["raw"]=raw;e[3]["C"]["sha256"]=hashlib.sha256(raw.encode()).hexdigest()
         self.reject("STALE_ARTIFACT",change)
     def test_tampered(self):
-        self.reject("TAMPERED_ARTIFACT",lambda e:e[3]["C"]["sha256"]="0"*64)
+        self.reject("TAMPERED_ARTIFACT",lambda e:e[3]["C"].update(sha256="0"*64))
     def test_wrong_commit_ref(self):
         self.reject("MISSING_SAVED_ARTIFACT",lambda e:e[3]["C-QB"].update(ref=SHA0))
     def test_missing_changed_file(self):
