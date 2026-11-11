@@ -1,5 +1,6 @@
 """Draft-only rehearsal: run real engines on isolated copied inputs, never publish."""
 import datetime as dt
+import hashlib
 import json
 import pathlib
 import sys
@@ -60,6 +61,16 @@ def rehearse(input_dir, now):
             model_c_qb_shadow.main()
             draft = json.loads((data / "model-c-automated-draft.json").read_text())
             shadow = json.loads((data / "model-c-qb-shadow.json").read_text())
+            draft_bytes = (data / "model-c-automated-draft.json").read_bytes()
+            shadow_bytes = (data / "model-c-qb-shadow.json").read_bytes()
+            if (draft["season"], draft["week"]) != (shadow["season"], shadow["week"]):
+                raise ValueError("STALE_OR_MISMATCHED_C_QB_WEEK")
+            expected = {str(g["id"]) for g in selected["games"]}
+            if (len(draft["games"]) != len(expected) or
+                {str(g["id"]) for g in draft["games"]} != expected or
+                len(shadow["games"]) != len(expected) or
+                {str(g["id"]) for g in shadow["games"]} != expected):
+                raise ValueError("MODEL_C_C_QB_GAME_ID_MISMATCH")
             # Real A/B calculation from existing comparison engine, not a new surrogate.
             # Real engines timestamp at execution time, which can be later than the
             # schedule/input cutoff. Do not mislabel this as a historical freeze.
@@ -78,6 +89,8 @@ def rehearse(input_dir, now):
     return {"status": "RESEARCH_ONLY_NOT_DELIVERABLE", "season": draft["season"],
             "week": draft["week"], "games": len(card["games"]),
             "winnerRows": sum(len(g["picks"]) for g in card["games"]),
+            "sourceArtifacts": {"modelC": {"sha256": hashlib.sha256(draft_bytes).hexdigest(), "status": draft["status"], "generatedAt": draft["generatedAt"]},
+                                "modelCQB": {"sha256": hashlib.sha256(shadow_bytes).hexdigest(), "status": shadow["status"], "generatedAt": shadow["generatedAt"]}},
             "realEngines": ["model_c_engine", "model_c_qb_shadow", "nfl_four_model_head_to_head.freeze"],
             "readiness": result, "provenanceInventory": inventory, "published": False, "executionAt": execution_now.isoformat(),
             "inputCutoff": now.isoformat(), "historicalWednesdayFreezeVerified": False}
