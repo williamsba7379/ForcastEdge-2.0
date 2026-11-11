@@ -33,4 +33,19 @@ jobs:
             echo "Expected fail-closed result: real delivery NOT READY."
           fi
 
-# Research-only; isolated real-engine rehearsal requires reviewed pre-cutoff inputs.
+      - name: Execute isolated real-engine rehearsal (research only)
+        env:
+          PYTHONPATH: .
+        run: |
+          set +e
+          python3 research/nfl_four_model_shadow_handoff.py > /tmp/nfl-real-engine-rehearsal.json 2>&1
+          code=$?
+          set -e
+          cat /tmp/nfl-real-engine-rehearsal.json
+          echo "Rehearsal exit code: $code"
+          echo "Rehearsal is diagnostic only; never certifies Wednesday pre-cutoff delivery."
+          if [ "$code" -eq 0 ]; then
+            python3 -c 'import json; d=json.load(open("/tmp/nfl-real-engine-rehearsal.json")); assert d["status"] == "RESEARCH_ONLY_NOT_DELIVERABLE"; assert d["published"] is False'
+          fi
+
+# Draft-only research. No frozen artifacts are written to the checkout.
