@@ -49,7 +49,11 @@ jobs:
             exit "$code"
           fi
           if [ "$code" -eq 0 ]; then
-            python3 -c 'import json; d=json.load(open("/tmp/nfl-real-engine-rehearsal.json")); assert d["status"] == "RESEARCH_ONLY_NOT_DELIVERABLE"; assert d["published"] is False'
+            grep -q '"status": "RESEARCH_ONLY_NOT_DELIVERABLE"' /tmp/nfl-real-engine-rehearsal.json
+            grep -q '"games": 14' /tmp/nfl-real-engine-rehearsal.json
+            grep -q '"winnerRows": 56' /tmp/nfl-real-engine-rehearsal.json
+            grep -q '"published": false' /tmp/nfl-real-engine-rehearsal.json
+            grep -q '"historicalWednesdayFreezeVerified": false' /tmp/nfl-real-engine-rehearsal.json
           fi
 
 # Draft-only research. No frozen artifacts are written to the checkout.
