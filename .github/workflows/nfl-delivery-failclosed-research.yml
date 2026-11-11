@@ -1,0 +1,17 @@
+name: NFL delivery fail-closed research
+on:
+  push:
+    branches:
+      - repair/nfl-weekly-delivery-failclosed-20261111
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run fail-closed unit tests
+        run: python3 -m unittest discover -s tests -p test_nfl_delivery_failclosed.py -v
+      - name: Verify actual current-week artifacts fail closed
+        run: python3 research/nfl_delivery_failclosed.py
