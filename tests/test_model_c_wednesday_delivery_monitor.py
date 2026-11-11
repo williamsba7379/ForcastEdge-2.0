@@ -26,7 +26,10 @@ class WednesdayMonitor(unittest.TestCase):
     def test_180_failed_qb_audit_skipped_commit(self):
         steps={k:"success" for k in REQUIRED}
         steps["Commit draft only"]="skipped"
-        r=evaluate(target_wednesday=DAY,runs=[run(conclusion="failure",steps=steps)],artifacts={})
+        r=evaluate(target_wednesday=DAY,runs=[run(start="2026-11-11T16:46:00Z",conclusion="failure",steps=steps)],artifacts={})
+        self.assertEqual(r["reason"],"LATE_DELIVERY_ATTEMPT")
+    def test_failed_in_window_job(self):
+        r=evaluate(target_wednesday=DAY,runs=[run(conclusion="failure")],artifacts={})
         self.assertEqual(r["reason"],"FAILED_REQUIRED_JOB")
     def test_missing_required_run(self):
         self.assertEqual(evaluate(target_wednesday=DAY,runs=[],artifacts={})["status"],"FAIL")
