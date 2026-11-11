@@ -60,7 +60,10 @@ def rehearse(input_dir, now):
             draft = json.loads((data / "model-c-automated-draft.json").read_text())
             shadow = json.loads((data / "model-c-qb-shadow.json").read_text())
             # Real A/B calculation from existing comparison engine, not a new surrogate.
-            # Real engines timestamp at execution time, which can be later than the\n            # schedule/input cutoff. Do not mislabel this as a historical freeze.\n            execution_now = dt.datetime.now(dt.timezone.utc)\n            card = four.freeze(draft, shadow, history, execution_now)
+            # Real engines timestamp at execution time, which can be later than the
+            # schedule/input cutoff. Do not mislabel this as a historical freeze.
+            execution_now = dt.datetime.now(dt.timezone.utc)
+            card = four.freeze(draft, shadow, history, execution_now)
     if (draft["season"], draft["week"]) != (schedule["season"], selected["week"]):
         raise ValueError("STALE_MODEL_C_WEEK")
     expected_ids = {str(g["id"]) for g in selected["games"]}
@@ -74,7 +77,8 @@ def rehearse(input_dir, now):
             "week": draft["week"], "games": len(card["games"]),
             "winnerRows": sum(len(g["picks"]) for g in card["games"]),
             "realEngines": ["model_c_engine", "model_c_qb_shadow", "nfl_four_model_head_to_head.freeze"],
-            "readiness": result, "published": False, "executionAt": execution_now.isoformat(),\n            "inputCutoff": now.isoformat(), "historicalWednesdayFreezeVerified": False}
+            "readiness": result, "published": False, "executionAt": execution_now.isoformat(),
+            "inputCutoff": now.isoformat(), "historicalWednesdayFreezeVerified": False}
 
 if __name__ == "__main__":
     try:
