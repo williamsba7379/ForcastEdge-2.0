@@ -24,3 +24,5 @@ jobs:
             cat /tmp/nfl-delivery-readiness.json
             echo "Expected fail-closed result: real delivery NOT READY."
           fi
+
+# Research-only; isolated real-engine rehearsal requires reviewed pre-cutoff inputs.
