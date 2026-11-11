@@ -73,7 +73,7 @@ jobs:
             grep -q '"winnerRows": 56' /tmp/nfl-real-engine-rehearsal.json
             grep -q '"completeRows": 0' /tmp/nfl-real-engine-rehearsal.json
             grep -q '"cutoffET": "2026-11-11T11:00:00-05:00"' /tmp/nfl-real-engine-rehearsal.json
-            python3 -c 'import json,re; d=json.load(open("/tmp/nfl-real-engine-rehearsal.json")); assert d["status"]=="RESEARCH_ONLY_NOT_DELIVERABLE"; assert set(d["sourceArtifacts"])=={"modelC","modelCQB"}; assert all(re.fullmatch("[0-9a-f]{64}", v["sha256"]) for v in d["sourceArtifacts"].values()); assert d["sourceArtifacts"]["modelC"]["status"]=="AUTOMATED_REVIEW_ONLY"; assert d["sourceArtifacts"]["modelCQB"]["status"]=="EXPERIMENTAL_SHADOW_ONLY"; assert d["readiness"]["validCompleteRows"]==0; assert d["published"] is False'
+            python3 -c 'import json,re; d=json.loads(open("/tmp/nfl-real-engine-rehearsal.json").read().split("FORECASTEDGE_REHEARSAL_JSON_BEGIN\\n",1)[1]); assert d["status"]=="RESEARCH_ONLY_NOT_DELIVERABLE"; assert set(d["sourceArtifacts"])=={"modelC","modelCQB"}; assert all(re.fullmatch("[0-9a-f]{64}", v["sha256"]) for v in d["sourceArtifacts"].values()); assert d["sourceArtifacts"]["modelC"]["status"]=="AUTOMATED_REVIEW_ONLY"; assert d["sourceArtifacts"]["modelCQB"]["status"]=="EXPERIMENTAL_SHADOW_ONLY"; assert d["readiness"]["validCompleteRows"]==0; assert d["published"] is False'
             grep -q '"published": false' /tmp/nfl-real-engine-rehearsal.json
             grep -q '"historicalWednesdayFreezeVerified": false' /tmp/nfl-real-engine-rehearsal.json
           fi
