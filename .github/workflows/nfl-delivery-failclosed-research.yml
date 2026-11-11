@@ -9,6 +9,8 @@ on:
     paths:
       - 'research/nfl_delivery_failclosed.py'
       - 'research/model_c_wednesday_delivery_monitor.py'
+      - 'research/model_c_github_evidence_collector.py'
+      - 'tests/test_model_c_github_evidence_collector.py'
       - 'tests/test_model_c_wednesday_delivery_monitor.py'
       - 'research/nfl_four_model_shadow_handoff.py'
       - 'research/nfl_delivery_provenance_inventory.py'
@@ -25,6 +27,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Regression test GitHub evidence collector fail-closed
+        env:
+          PYTHONPATH: .
+        run: python3 -m unittest discover -s tests -p test_model_c_github_evidence_collector.py -v
       - name: Regression test read-only Wednesday Model C delivery monitor
         env:
           PYTHONPATH: .
