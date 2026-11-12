@@ -112,31 +112,7 @@ jobs:
           data=pathlib.Path(path).read_bytes()
           validate_review_manifest(path,os.environ["REVIEW_SHA"],data)
           PY
-        env:
-          CAPTURE_RUN: ${{ inputs.capture_run_id }}
-          REVIEWED: ${{ inputs.reviewed_games_path }}
-        run: |
-          [[ "$CAPTURE_RUN" =~ ^[0-9]+$ ]] || exit 1
-          test -f "$REVIEWED" || exit 1
       - name: Download existing raw evidence (no new network capture)
-        uses: actions/download-artifact@v4
-        with:
-          name: nfl-ab-raw-capture
-          run-id: ${{ inputs.capture_run_id }}
-          github-token: ${{ github.token }}
-          path: ${{ runner.temp }}/captured
-      - name: Review original capture without changing its timestamps
-        env:
-          REVIEWED: ${{ inputs.reviewed_games_path }}
-        run: |
-          python -m scripts.nfl_ab_two_stage_rehearsal review --bundle "$RUNNER_TEMP/captured/nfl-ab-raw-capture.json" --reviewed-games "$REVIEWED" --output "$RUNNER_TEMP/nfl-ab-reviewed-comparison.json"
-      - name: Upload research-only review
-        uses: actions/upload-artifact@v4
-        with:
-          name: nfl-ab-reviewed-comparison
-          path: ${{ runner.temp }}/nfl-ab-reviewed-comparison.json
-          retention-days: 30
-          if-no-files-found: error      - name: Download existing raw evidence (no new network capture)
         uses: actions/download-artifact@v4
         with:
           name: nfl-ab-raw-capture
