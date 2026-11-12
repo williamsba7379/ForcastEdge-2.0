@@ -96,6 +96,11 @@ jobs:
           cat /tmp/nfl-real-engine-rehearsal.json
           echo "Rehearsal exit code: $code"
           echo "Rehearsal is diagnostic only; never certifies Wednesday pre-cutoff delivery."
+          if [ "$code" -eq 1 ] && [ "$(TZ=America/New_York date +%u)" != 3 ] &&
+            grep -Fxq '{"status": "BLOCKED", "reason": "WEDNESDAY_REHEARSAL_ONLY"}' /tmp/nfl-real-engine-rehearsal.json; then
+            echo "Verified that the real-engine rehearsal refuses to run outside Wednesday."
+            exit 0
+          fi
           if [ "$code" -ne 0 ]; then
             echo "::error::Isolated real-engine rehearsal failed with exit code $code"
             exit "$code"
