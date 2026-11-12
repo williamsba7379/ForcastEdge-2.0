@@ -31,6 +31,10 @@ on:
         description: 'Exact 40-character capture commit SHA (review only)'
         required: false
         type: string
+      reviewed_manifest_commit_sha:
+        description: 'Exact reviewed manifest commit SHA after capture'
+        required: false
+        type: string
       reviewed_games_sha256:
         description: 'SHA-256 of separately reviewed manifest committed after capture'
         required: false
@@ -83,6 +87,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
@@ -91,34 +97,62 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           CAPTURE_RUN: ${{ inputs.capture_run_id }}
           CAPTURE_SHA: ${{ inputs.capture_commit_sha }}
+          REVIEW_COMMIT: ${{ inputs.reviewed_manifest_commit_sha }}
+          REVIEW_HEAD: ${{ github.sha }}
           REVIEWED: ${{ inputs.reviewed_games_path }}
           REVIEW_SHA: ${{ inputs.reviewed_games_sha256 }}
           REPO: ${{ github.repository }}
         run: |
           python - <<'PY'
           import json, os, pathlib, subprocess
-          from scripts.nfl_ab_review_provenance_guard import validate_capture_run, validate_capture_artifact, validate_review_manifest
+          from scripts.nfl_ab_review_provenance_guard import validate_capture_run, validate_artifact_expiry, validate_capture_review_chain, validate_review_manifest
           rid=os.environ["CAPTURE_RUN"]
           sha=os.environ["CAPTURE_SHA"]
           repo=os.environ["REPO"]
           run=json.loads(subprocess.check_output(["gh","api",f"repos/{repo}/actions/runs/{rid}"]))
           validate_capture_run(run,rid,sha)
+          review_sha=os.environ["REVIEW_COMMIT"]
+          if review_sha!=os.environ["REVIEW_HEAD"]:
+              raise ValueError("REVIEW_HEAD_MISMATCH")
+          ancestor=subprocess.run(["git","merge-base","--is-ancestor",sha,review_sha],check=False).returncode==0
+          manifest_commit=json.loads(subprocess.check_output(["gh","api",f"repos/{repo}/commits/{review_sha}"]))
+          validate_capture_review_chain(run,sha,review_sha,manifest_commit,ancestor)
+          changed=subprocess.check_output(["git","diff-tree","--no-commit-id","--name-only","-r",review_sha],text=True).splitlines()
+          if os.environ["REVIEWED"] not in changed:
+              raise ValueError("MANIFEST_NOT_COMMITTED_IN_REVIEW_COMMIT")
           artifacts=json.loads(subprocess.check_output(["gh","api",f"repos/{repo}/actions/runs/{rid}/artifacts"]))["artifacts"]
           matches=[a for a in artifacts if a.get("name")=="nfl-ab-raw-capture"]
           if len(matches)!=1:
               raise ValueError("MISSING_OR_DUPLICATE_CAPTURE_ARTIFACT")
-          validate_capture_artifact(matches[0],rid)
+          from datetime import datetime,timezone
+          validate_artifact_expiry(matches[0],rid,datetime.now(timezone.utc).isoformat())
+          pathlib.Path(os.environ["RUNNER_TEMP"],"nfl-ab-artifact-metadata.json").write_text(json.dumps(matches[0]))
           path=os.environ["REVIEWED"]
           data=pathlib.Path(path).read_bytes()
           validate_review_manifest(path,os.environ["REVIEW_SHA"],data)
           PY
-      - name: Download existing raw evidence (no new network capture)
-        uses: actions/download-artifact@v4
-        with:
-          name: nfl-ab-raw-capture
-          run-id: ${{ inputs.capture_run_id }}
-          github-token: ${{ github.token }}
-          path: ${{ runner.temp }}/captured
+      - name: Download and verify exact capture archive and extracted bytes
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          python - <<'PY'
+          import hashlib, io, json, os, pathlib, subprocess, zipfile
+          from scripts.nfl_ab_review_provenance_guard import verify_archive_digest
+          metadata=json.loads(pathlib.Path(os.environ["RUNNER_TEMP"],"nfl-ab-artifact-metadata.json").read_text())
+          archive=subprocess.check_output(["gh","api",f"repos/{os.environ['REPO']}/actions/artifacts/{metadata['id']}/zip"])
+          verify_archive_digest(archive,metadata)
+          with zipfile.ZipFile(io.BytesIO(archive)) as z:
+              if z.namelist()!=["nfl-ab-raw-capture.json"]:
+                  raise ValueError("UNEXPECTED_CAPTURE_ARCHIVE_MEMBERS")
+              content=z.read("nfl-ab-raw-capture.json")
+          bundle=json.loads(content)
+          if bundle.get("kind")!="RESEARCH_ONLY_INDEPENDENT_CAPTURE":
+              raise ValueError("INVALID_CAPTURE_ARCHIVE_CONTENT")
+          output=pathlib.Path(os.environ["RUNNER_TEMP"],"captured")
+          output.mkdir(exist_ok=True)
+          (output/"nfl-ab-raw-capture.json").write_bytes(content)
+          PY
       - name: Review original capture without changing its timestamps
         env:
           REVIEWED: ${{ inputs.reviewed_games_path }}
