@@ -8,6 +8,8 @@ on:
       - main
     paths:
       - 'research/nfl_delivery_failclosed.py'
+      - 'research/nfl_current_week_input_preflight.py'
+      - 'tests/test_nfl_current_week_input_preflight.py'
       - 'research/model_c_wednesday_delivery_monitor.py'
       - 'research/model_c_github_evidence_collector.py'
       - 'tests/test_model_c_github_evidence_collector.py'
@@ -41,6 +43,10 @@ jobs:
         run: python3 -m unittest discover -s tests -p test_model_c_delivery_outcome_gate.py -v
       - name: Regression test nullable QB injury history
         run: python3 -m unittest discover -s tests -p test_model_c_qb_injury_nullable_history.py -v
+      - name: Regression test read-only current-week input preflight
+        env:
+          PYTHONPATH: .
+        run: python3 -m unittest discover -s tests -p test_nfl_current_week_input_preflight.py -v
       - name: Regression test stale weekly production inputs
         env:
           PYTHONPATH: .
