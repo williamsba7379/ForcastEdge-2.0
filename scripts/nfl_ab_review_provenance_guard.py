@@ -3,6 +3,7 @@ import hashlib
 import json
 import re
 from pathlib import PurePosixPath
+from scripts.nfl_ab_archive_adapter import parse_time
 
 BRANCH="audit/nfl-four-model-publisher-diagnostic"
 WORKFLOW=".github/workflows/nfl-ab-wednesday-evidence-rehearsal.yml"
@@ -41,3 +42,39 @@ def validate_review_manifest(path, expected_sha, data):
     if not isinstance(games,list) or not games:
         raise ValueError("EMPTY_REVIEW_MANIFEST")
     return games
+
+def validate_capture_review_chain(run, capture_sha, review_sha, manifest_commit, ancestor_ok):
+    """Fail closed on commit lineage and post-capture GitHub commit evidence."""
+    if not isinstance(review_sha,str) or not HEX40.fullmatch(review_sha):
+        raise ValueError("INVALID_REVIEW_COMMIT")
+    if not isinstance(capture_sha,str) or not HEX40.fullmatch(capture_sha) or review_sha==capture_sha or ancestor_ok is not True:
+        raise ValueError("INVALID_COMMIT_LINEAGE")
+    if not isinstance(manifest_commit,dict) or manifest_commit.get("sha")!=review_sha:
+        raise ValueError("MANIFEST_COMMIT_MISMATCH")
+    completed=run.get("updated_at")
+    committed=manifest_commit.get("commit",{}).get("committer",{}).get("date")
+    if not completed or not committed or parse_time(committed)<=parse_time(completed):
+        raise ValueError("REVIEW_NOT_AFTER_CAPTURE")
+    return True
+
+def validate_artifact_expiry(artifact, run_id, now):
+    validate_capture_artifact(artifact,run_id)
+    if not isinstance(artifact.get("id"),int) or artifact["id"]<=0:
+        raise ValueError("INVALID_ARTIFACT_ID")
+    digest=artifact.get("digest")
+    if not isinstance(digest,str) or not re.fullmatch(r"sha256:[0-9a-f]{64}",digest):
+        raise ValueError("MISSING_ARTIFACT_DIGEST")
+    created=artifact.get("created_at")
+    expires=artifact.get("expires_at")
+    if not created or not expires:
+        raise ValueError("MISSING_ARTIFACT_RETENTION")
+    start,end,now_time=parse_time(created),parse_time(expires),parse_time(now)
+    if not (dt.timedelta(days=29)<=end-start<=dt.timedelta(days=31)) or not (start<=now_time<end):
+        raise ValueError("ARTIFACT_EXPIRED_OR_RETENTION_MISMATCH")
+    return True
+
+def verify_archive_digest(archive_bytes, artifact):
+    expected=artifact.get("digest","")
+    if "sha256:"+hashlib.sha256(archive_bytes).hexdigest()!=expected:
+        raise ValueError("ARTIFACT_ARCHIVE_DIGEST_MISMATCH")
+    return True
