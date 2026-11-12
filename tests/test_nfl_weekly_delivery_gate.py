@@ -10,7 +10,7 @@ from nfl_weekly_delivery_gate import validate
 CUTOFF = "2026-11-04T16:00:00Z"
 
 def fixture():
-    game = {"id": "week9-game", "away": "AWAY", "home": "HOME", "date": "2026-11-05T01:15:00Z"}
+    game = {"id": "week9-game", "away": "AWAY", "home": "HOME", "date": "2026-11-06T01:15:00Z"}
     schedule = {"season": 2026, "week": 9, "source": "espn", "sha256": "a"*64,
                 "capturedAt": "2026-11-04T15:50:00Z", "games": [game]}
     independent = copy.deepcopy(schedule)
