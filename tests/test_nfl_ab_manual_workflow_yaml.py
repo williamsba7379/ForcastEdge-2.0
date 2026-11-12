@@ -17,20 +17,20 @@ def strict_mapping_keys(text):
         if not line.strip() or line.lstrip().startswith("#"):
             continue
         indent=len(line)-len(line.lstrip(" "))
-        if "\\t" in line[:indent] or indent%2:
+        if "\t" in line[:indent] or indent%2:
             raise ValueError("INVALID_YAML_INDENT")
         if scalar_indent is not None:
             if indent>scalar_indent:
                 continue
             scalar_indent=None
-        is_item=bool(re.match(r"^\\s*- ",line))
+        is_item=bool(re.match(r"^\s*- ",line))
         effective_indent=indent+2 if is_item else indent
         while len(contexts)>1 and contexts[-1][0]>=effective_indent:
             contexts.pop()
         if is_item:
             item_index+=1
             contexts.append((indent+1,{},set()))
-        m=re.match(r"^\\s*(?:- )?([A-Za-z_][A-Za-z_0-9-]*):(?:\\s|$)",line)
+        m=re.match(r"^\s*(?:- )?([A-Za-z_][A-Za-z_0-9-]*):(?:\s|$)",line)
         if m:
             key=m.group(1)
             parent=contexts[-1]
