@@ -19,10 +19,10 @@ def extract_step(label):
                 raise ValueError("INVALID_SHADOW_INDENT")
             block.append(line[10:])
         else: block.append("")
-    script="\\n".join(block)
-    if not script.startswith("python - <<'PY'\\n") or not script.rstrip().endswith("PY"):
+    script="\n".join(block)
+    if not script.startswith("python - <<'PY'\n") or not script.rstrip().endswith("PY"):
         raise ValueError("INVALID_SHADOW_SCRIPT")
-    return script[len("python - <<'PY'\\n"):script.rfind("\\nPY")]
+    return script[len("python - <<'PY'\n"):script.rfind("\nPY")]
 
 class ShadowWorkflowTests(unittest.TestCase):
     def test_real_review_step_extraction(self):
