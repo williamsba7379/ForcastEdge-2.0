@@ -1,0 +1,59 @@
+name: NFL A-B manual Wednesday evidence rehearsal (research only)
+on:
+  workflow_dispatch:
+    inputs:
+      season:
+        description: 'NFL season'
+        required: true
+        type: string
+      week:
+        description: 'NFL regular season week'
+        required: true
+        type: string
+      cutoff:
+        description: 'Wednesday 11 AM Eastern as UTC ISO timestamp'
+        required: true
+        type: string
+      reviewed_games_path:
+        description: 'Pre-reviewed NFL HTML game snippets JSON path in checkout (required for live capture)'
+        required: true
+        type: string
+permissions:
+  contents: read
+jobs:
+  offline-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Fail-closed offline tests
+        run: |
+          python -m unittest tests.test_nfl_ab_wednesday_evidence_rehearsal -v
+          python -m unittest discover -s tests -p 'test_nfl_ab_*.py' -v
+  live-rehearsal:
+    needs: offline-tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Capture and compare independent sources, never freeze
+        env:
+          SEASON: ${{ inputs.season }}
+          WEEK: ${{ inputs.week }}
+          CUTOFF: ${{ inputs.cutoff }}
+          REVIEWED: ${{ inputs.reviewed_games_path }}
+        run: |
+          python -m scripts.nfl_ab_wednesday_evidence_rehearsal \
+            --season "$SEASON" --week "$WEEK" --cutoff "$CUTOFF" \
+            --reviewed-games "$REVIEWED" --output "$RUNNER_TEMP/nfl-ab-research-evidence.json"
+      - name: Upload successful research-only evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: nfl-ab-research-wednesday-evidence
+          path: ${{ runner.temp }}/nfl-ab-research-evidence.json
+          retention-days: 30
+          if-no-files-found: error
