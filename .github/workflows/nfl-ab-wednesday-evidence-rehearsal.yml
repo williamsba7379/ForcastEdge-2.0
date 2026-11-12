@@ -2,29 +2,38 @@ name: NFL A-B manual Wednesday evidence rehearsal (research only)
 on:
   workflow_dispatch:
     inputs:
-      run_live_capture:
-        description: 'Explicitly enable live NFL and ESPN collection (default: tests only)'
+      stage:
+        description: 'offline-tests, capture, or review; default never accesses live sites'
         required: true
-        type: boolean
-        default: false
+        type: choice
+        options:
+          - offline-tests
+          - capture
+          - review
+        default: offline-tests
       season:
-        description: 'NFL season'
-        required: true
+        description: 'NFL season (capture only)'
+        required: false
         type: string
       week:
-        description: 'NFL regular season week'
-        required: true
+        description: 'NFL week (capture only)'
+        required: false
         type: string
       cutoff:
-        description: 'Wednesday 11 AM Eastern as UTC ISO timestamp'
-        required: true
+        description: 'Wednesday 11 AM ET as offset-aware ISO timestamp (capture only)'
+        required: false
+        type: string
+      capture_run_id:
+        description: 'Existing capture run ID (review only)'
+        required: false
         type: string
       reviewed_games_path:
-        description: 'Pre-reviewed NFL HTML game snippets JSON path in checkout (required for live capture)'
-        required: true
+        description: 'Reviewed manifest path in checkout (review only)'
+        required: false
         type: string
 permissions:
   contents: read
+  actions: read
 jobs:
   offline-tests:
     runs-on: ubuntu-latest
@@ -35,10 +44,9 @@ jobs:
           python-version: '3.11'
       - name: Fail-closed offline tests
         run: |
-          python -m unittest discover -s tests -p 'test_nfl_ab_wednesday_evidence_rehearsal.py' -v
           python -m unittest discover -s tests -p 'test_nfl_ab_*.py' -v
-  live-rehearsal:
-    if: ${{ inputs.run_live_capture == true }}
+  capture:
+    if: ${{ inputs.stage == 'capture' }}
     needs: offline-tests
     runs-on: ubuntu-latest
     steps:
@@ -46,20 +54,53 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Capture and compare independent sources, never freeze
+      - name: Capture independent raw evidence, never freeze
         env:
           SEASON: ${{ inputs.season }}
           WEEK: ${{ inputs.week }}
           CUTOFF: ${{ inputs.cutoff }}
-          REVIEWED: ${{ inputs.reviewed_games_path }}
         run: |
-          python -m scripts.nfl_ab_wednesday_evidence_rehearsal \
-            --season "$SEASON" --week "$WEEK" --cutoff "$CUTOFF" \
-            --reviewed-games "$REVIEWED" --output "$RUNNER_TEMP/nfl-ab-research-evidence.json"
-      - name: Upload successful research-only evidence
+          test -n "$SEASON" && test -n "$WEEK" && test -n "$CUTOFF"
+          python -m scripts.nfl_ab_two_stage_rehearsal capture --season "$SEASON" --week "$WEEK" --cutoff "$CUTOFF" --output "$RUNNER_TEMP/nfl-ab-raw-capture.json"
+      - name: Upload immutable research-only capture
         uses: actions/upload-artifact@v4
         with:
-          name: nfl-ab-research-wednesday-evidence
-          path: ${{ runner.temp }}/nfl-ab-research-evidence.json
+          name: nfl-ab-raw-capture
+          path: ${{ runner.temp }}/nfl-ab-raw-capture.json
+          retention-days: 30
+          if-no-files-found: error
+  review:
+    if: ${{ inputs.stage == 'review' }}
+    needs: offline-tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Require existing capture run and reviewed manifest
+        env:
+          CAPTURE_RUN: ${{ inputs.capture_run_id }}
+          REVIEWED: ${{ inputs.reviewed_games_path }}
+        run: |
+          [[ "$CAPTURE_RUN" =~ ^[0-9]+$ ]] || exit 1
+          test -f "$REVIEWED" || exit 1
+      - name: Download existing raw evidence (no new network capture)
+        uses: actions/download-artifact@v4
+        with:
+          name: nfl-ab-raw-capture
+          run-id: ${{ inputs.capture_run_id }}
+          github-token: ${{ github.token }}
+          path: ${{ runner.temp }}/captured
+      - name: Review original capture without changing its timestamps
+        env:
+          REVIEWED: ${{ inputs.reviewed_games_path }}
+        run: |
+          python -m scripts.nfl_ab_two_stage_rehearsal review --bundle "$RUNNER_TEMP/captured/nfl-ab-raw-capture.json" --reviewed-games "$REVIEWED" --output "$RUNNER_TEMP/nfl-ab-reviewed-comparison.json"
+      - name: Upload research-only review
+        uses: actions/upload-artifact@v4
+        with:
+          name: nfl-ab-reviewed-comparison
+          path: ${{ runner.temp }}/nfl-ab-reviewed-comparison.json
           retention-days: 30
           if-no-files-found: error
