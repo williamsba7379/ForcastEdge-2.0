@@ -9,6 +9,8 @@ from scripts.nfl_ab_two_stage_rehearsal import capture,review,validate_bundle
 class TwoStageTests(unittest.TestCase):
     def bundle(self):
         nfl,reviewed,espn=fixture()
+        # Match the kind marker returned by collect_wednesday_schedule.
+        espn["kind"]="ISOLATED_WEDNESDAY_SCHEDULE_EVIDENCE"
         b={"kind":"RESEARCH_ONLY_INDEPENDENT_CAPTURE","schemaVersion":1,
            "season":2026,"week":11,"cutoff":CUTOFF,
            "nfl":nfl,"espn":espn,"officialFrozen":False,
