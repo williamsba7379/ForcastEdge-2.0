@@ -1,5 +1,6 @@
 """Fail-closed metadata validation for manual research-only capture/review workflows."""
 import hashlib
+import datetime as dt
 import json
 import re
 from pathlib import PurePosixPath
