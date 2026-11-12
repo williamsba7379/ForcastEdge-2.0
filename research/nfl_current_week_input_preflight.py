@@ -40,8 +40,9 @@ def check(data_dir, now):
     if selected and history:
         ids = {str(g["id"]) for g in history.get("games", [])}
         # Only games listed as completed in the selected schedule can be required here.
-        completed = [g for g in selected["games"] if str(g.get("status", "")).upper() in
-                     ("FINAL", "STATUS_FINAL", "COMPLETED")]
+        completed = [g for w in schedule.get("weeks", []) for g in w.get("games", [])
+                     if str(g.get("status", "")).upper() in ("FINAL", "STATUS_FINAL", "COMPLETED")
+                     and parse(g["date"]) < now]
         for g in completed:
             if str(g["id"]) not in ids:
                 missing.append({"code": "MISSING_COMPLETED_HISTORY", "gameId": str(g["id"])})
