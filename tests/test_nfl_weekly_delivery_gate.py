@@ -83,5 +83,35 @@ class WeekNineFailureRegression(unittest.TestCase):
         validate(*args)
         self.assertEqual(args, before)
 
+
+    def test_controlled_full_thursday_monday_slate(self):
+        args = fixture()
+        # Synthetic full slate: one Thursday, twelve Sunday, one Monday, one Friday.
+        dates = ["2026-11-06T01:15:00Z"] + ["2026-11-08T18:00:00Z"] * 12 + [
+            "2026-11-10T01:15:00Z", "2026-11-07T01:00:00Z"]
+        games = [{**args[0]["games"][0], "id": str(i), "date": date}
+                 for i, date in enumerate(dates)]
+        args[0]["games"] = copy.deepcopy(games)
+        args[1]["games"] = copy.deepcopy(games)
+        args[2]["games"] = copy.deepcopy(games)
+        args[3]["games"] = copy.deepcopy(games)
+        args[4]["games"] = [{**game, "picks": {m: "HOME" for m in ("A", "B", "C", "C-QB")}}
+                             for game in games]
+        result = validate(*args)
+        self.assertEqual(result["games"], 15)
+        self.assertEqual(result["modelRows"], 60)
+        self.assertFalse(result["productionReady"])
+        args[3]["games"].pop()
+        with self.assertRaisesRegex(ValueError, "SLATE_MISMATCH_MODEL_C_QB"):
+            validate(*args)
+
+    def test_market_week_mismatch_blocks_full_slate(self):
+        args = fixture()
+        args[5]["week"] = 8
+        before = copy.deepcopy(args)
+        with self.assertRaisesRegex(ValueError, "MARKET_WEEK_MISMATCH"):
+            validate(*args)
+        self.assertEqual(args, before)
+
 if __name__ == "__main__":
     unittest.main()
