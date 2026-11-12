@@ -41,7 +41,9 @@ class InputPreflightTests(unittest.TestCase):
         self.assertIn("MODEL_GAME_IDS_MISMATCH", self.codes(result))
         self.assertFalse(result["wednesdayHandoffReady"])
     def test_missing_completed_historical_game(self):
-        self.files["nfl-schedule.json"]["weeks"][0]["games"][0]["status"] = "FINAL"
+        self.files["nfl-schedule.json"]["weeks"].append({"week": 9, "games": [
+            {"id": "completed-g9", "date": "2026-11-09T01:15:00Z",
+             "home": "Other Home", "away": "Other Away", "status": "FINAL"}]})
         self.assertIn("MISSING_COMPLETED_HISTORY", self.codes(self.run_check()))
     def test_missing_official_qb_evidence(self):
         result = self.run_check()
