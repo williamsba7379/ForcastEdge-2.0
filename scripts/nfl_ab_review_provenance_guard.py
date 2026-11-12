@@ -7,9 +7,10 @@ from pathlib import PurePosixPath
 BRANCH="audit/nfl-four-model-publisher-diagnostic"
 WORKFLOW=".github/workflows/nfl-ab-wednesday-evidence-rehearsal.yml"
 HEX64=re.compile(r"^[0-9a-f]{64}$")
+HEX40=re.compile(r"^[0-9a-f]{40}$")
 
 def validate_capture_run(run, run_id, sha):
-    if not isinstance(run,dict) or not isinstance(run_id,str) or not run_id.isdecimal() or not isinstance(sha,str) or not HEX64.fullmatch(sha):
+    if not isinstance(run,dict) or not isinstance(run_id,str) or not run_id.isdecimal() or not isinstance(sha,str) or not HEX40.fullmatch(sha):
         raise ValueError("INVALID_CAPTURE_IDENTITY")
     if (run.get("id")!=int(run_id) or run.get("event")!="workflow_dispatch"
         or run.get("name")!="NFL A-B manual Wednesday evidence rehearsal (research only)"
