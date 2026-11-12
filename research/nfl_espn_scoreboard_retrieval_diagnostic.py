@@ -40,7 +40,7 @@ def events(payload):
         return None
     if isinstance(payload.get("events"), list):
         return payload["events"]
-    for key in ("sbData", "scoreboard", "page"):
+    for key in ("sbData", "scoreboard", "page", "content"):
         item = payload.get(key)
         if isinstance(item, dict):
             found = events(item)
@@ -49,7 +49,8 @@ def events(payload):
     return None
 
 def normalize(event):
-    competitors = event.get("competitions", [{}])[0].get("competitors", [])
+    competitions = event.get("competitions") or []
+    competitors = competitions[0].get("competitors", []) if competitions and isinstance(competitions[0], dict) else []
     teams = {}
     for c in competitors:
         side = c.get("homeAway")
@@ -57,9 +58,22 @@ def normalize(event):
             teams[side] = {"name": c.get("team", {}).get("displayName"),
                            "score": c.get("score")}
     status = event.get("status", {}).get("type", {})
-    return {"espnEventId": str(event.get("id", "")), "kickoffUTC": event.get("date"),
+    raw_id = event.get("id")
+    return {"espnEventId": str(raw_id) if raw_id is not None else "", "kickoffUTC": event.get("date"),
             "home": teams.get("home"), "away": teams.get("away"),
             "completed": status.get("completed"), "state": status.get("state")}
+
+def valid_score(value):
+    return isinstance(value, (str, int)) and str(value).isdigit() and int(value) >= 0
+
+def valid_kickoff(value):
+    if not isinstance(value, str):
+        return False
+    try:
+        parsed = dt.datetime.fromisoformat(value.replace("Z", "+00:00"))
+        return parsed.tzinfo is not None and parsed.utcoffset() == dt.timedelta(0)
+    except ValueError:
+        return False
 
 def main():
     report = {"mode": "READ_ONLY_RESEARCH", "season": YEAR, "seasonType": 2,
@@ -78,12 +92,17 @@ def main():
             games = events(payload)
             if games is not None:
                 response["eventCount"] = len(games)
-                response["games"] = [normalize(g) for g in games]
+                try:
+                    response["games"] = [normalize(g) for g in games]
+                except (TypeError, ValueError, AttributeError, KeyError) as e:
+                    response["games"] = []
+                    response["error"] = "MALFORMED_EVENT_DATA_" + type(e).__name__
                 ids = [g["espnEventId"] for g in response["games"]]
-                response["valid"] = (len(games) == expected and len(set(ids)) == expected
-                    and all(g["espnEventId"] and g["kickoffUTC"] and g["completed"] is True
+                response["valid"] = (len(games) == expected and len(response["games"]) == expected and len(set(ids)) == expected
+                    and all(g["espnEventId"].isdigit() and valid_kickoff(g["kickoffUTC"]) and g["completed"] is True
                             and g["state"] == "post" and g["home"] and g["away"]
-                            and g["home"]["score"] is not None and g["away"]["score"] is not None
+                            and g["home"]["name"] and g["away"]["name"]
+                            and valid_score(g["home"]["score"]) and valid_score(g["away"]["score"])
                             for g in response["games"]))
                 if response["valid"]:
                     successful.append((name, response["games"]))
