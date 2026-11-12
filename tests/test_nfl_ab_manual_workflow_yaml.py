@@ -45,7 +45,7 @@ class WorkflowYamlTests(unittest.TestCase):
     def test_workflow_structure_and_safety(self):
         text=PATH.read_text()
         strict_mapping_keys(text)
-        for label in ("Download existing raw evidence","Review original capture","Upload research-only review","Verify exact capture run"):
+        for label in ("Download and verify exact capture archive and extracted bytes","Review original capture","Upload research-only review","Verify exact capture run"):
             self.assertEqual(text.count("- name: "+label),1)
         for required in ("validate_capture_run(", "validate_capture_artifact(", "validate_review_manifest(", "capture_commit_sha:", "reviewed_games_sha256:", "retention-days: 30", "contents: read", "actions: read"):
             self.assertIn(required,text)
