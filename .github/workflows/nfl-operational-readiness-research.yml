@@ -16,3 +16,4 @@ jobs:
           python3 -m unittest discover -s tests -p test_nfl_operational_readiness.py -v
           python3 -m unittest discover -s tests -p test_nfl_operational_end_to_end.py -v
           python3 -m unittest discover -s tests -p test_nfl_weekly_delivery_gate.py -v
+          python3 -m unittest discover -s tests -p test_nfl_source_evidence_gate.py -v
