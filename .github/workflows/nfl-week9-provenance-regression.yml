@@ -1,0 +1,25 @@
+name: Isolated NFL Week 9 provenance regression
+on:
+  push:
+    branches:
+      - audit/nfl-week9-freeze-provenance-regression
+    paths:
+      - 'tests/test_nfl_week9_provenance_regression.py'
+      - 'tests/test_nfl_week9_real_archive_replay.py'
+      - 'tests/test_nfl_week9_isolated_delivery_gate.py'
+      - 'scripts/nfl_week9_isolated_delivery_gate.py'
+      - 'tests/fixtures/nfl_week9_20261104_*.json'
+      - '.github/workflows/nfl-week9-provenance-regression.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  offline-regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run fail-closed offline regressions and real archive replay
+        run: |
+          python3 -m unittest discover -s tests -p test_nfl_week9_provenance_regression.py -v
+          python3 -m unittest discover -s tests -p test_nfl_week9_real_archive_replay.py -v
+          python3 -m unittest discover -s tests -p test_nfl_week9_isolated_delivery_gate.py -v
