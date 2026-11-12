@@ -20,6 +20,7 @@ on:
       - 'tests/test_nfl_score_projection_research.py'
       - 'tests/test_nfl_delivery_provenance_inventory.py'
       - 'tests/test_nfl_delivery_failclosed.py'
+      - 'tests/test_nfl_wednesday_card_save.py'
       - '.github/workflows/nfl-delivery-failclosed-research.yml'
   workflow_dispatch:
 permissions:
@@ -55,6 +56,10 @@ jobs:
         env:
           PYTHONPATH: .
         run: python3 -m unittest discover -s tests -p test_nfl_delivery_failclosed.py -v
+      - name: Rehearse saving a complete Wednesday test card
+        env:
+          PYTHONPATH: .
+        run: python3 -m unittest discover -s tests -p test_nfl_wednesday_card_save.py -v
       - name: Run provenance inventory fail-closed tests
         env:
           PYTHONPATH: .
