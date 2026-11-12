@@ -47,7 +47,7 @@ class WorkflowYamlTests(unittest.TestCase):
         strict_mapping_keys(text)
         for label in ("Download and verify exact capture archive and extracted bytes","Review original capture","Upload research-only review","Verify exact capture run"):
             self.assertEqual(text.count("- name: "+label),1)
-        for required in ("validate_capture_run(", "validate_capture_artifact(", "validate_review_manifest(", "capture_commit_sha:", "reviewed_games_sha256:", "retention-days: 30", "contents: read", "actions: read"):
+        for required in ("validate_capture_run(", "validate_artifact_expiry(", "validate_review_manifest(", "capture_commit_sha:", "reviewed_games_sha256:", "retention-days: 30", "contents: read", "actions: read"):
             self.assertIn(required,text)
     def test_duplicate_mapping_rejected(self):
         with self.assertRaisesRegex(ValueError,"DUPLICATE_YAML_KEY"):
