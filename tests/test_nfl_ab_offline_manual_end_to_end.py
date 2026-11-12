@@ -16,6 +16,8 @@ class OfflineManualExecutionTests(unittest.TestCase):
         now=dt.datetime.now(dt.timezone.utc)
         capture_at=now-dt.timedelta(minutes=10)
         commit_at=capture_at+dt.timedelta(minutes=(-1 if early else 2))
+        verify_script=extract_step("Verify exact capture run, artifact identity and reviewed manifest")
+        download_script=extract_step("Download and verify exact capture archive and extracted bytes")
         with tempfile.TemporaryDirectory() as temp:
             root=pathlib.Path(temp)
             manifest=root/PATH
@@ -61,8 +63,8 @@ class OfflineManualExecutionTests(unittest.TestCase):
             try:
                 os.chdir(root)
                 with patch.dict(os.environ,env),patch("subprocess.check_output",side_effect=check),patch("subprocess.run",side_effect=run_mock):
-                    exec(compile(extract_step("Verify exact capture run, artifact identity and reviewed manifest"),"manual-review-verify","exec"),{"__name__":"__main__"})
-                    exec(compile(extract_step("Download and verify exact capture archive and extracted bytes"),"manual-review-download","exec"),{"__name__":"__main__"})
+                    exec(compile(verify_script,"manual-review-verify","exec"),{"__name__":"__main__"})
+                    exec(compile(download_script,"manual-review-download","exec"),{"__name__":"__main__"})
                 saved=json.loads((root/"captured/nfl-ab-raw-capture.json").read_text())
                 result=review(saved,games)
                 self.assertEqual(result["status"],"SCHEDULE_EVIDENCE_PASS")
