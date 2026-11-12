@@ -2,6 +2,11 @@ name: NFL A-B manual Wednesday evidence rehearsal (research only)
 on:
   workflow_dispatch:
     inputs:
+      run_live_capture:
+        description: 'Explicitly enable live NFL and ESPN collection (default: tests only)'
+        required: true
+        type: boolean
+        default: false
       season:
         description: 'NFL season'
         required: true
@@ -33,6 +38,7 @@ jobs:
           python -m unittest discover -s tests -p 'test_nfl_ab_wednesday_evidence_rehearsal.py' -v
           python -m unittest discover -s tests -p 'test_nfl_ab_*.py' -v
   live-rehearsal:
+    if: ${{ inputs.run_live_capture == true }}
     needs: offline-tests
     runs-on: ubuntu-latest
     steps:
