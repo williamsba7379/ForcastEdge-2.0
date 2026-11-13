@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-11-12T11:25:10.208168+00:00",
+  "updatedAt": "2026-11-13T17:57:36.288187+00:00",
   "weeks": [
     {
       "week": 10,
@@ -10,7 +10,7 @@
           "date": "2026-11-13T01:15Z",
           "away": "Washington Commanders",
           "home": "New York Giants",
-          "status": "STATUS_SCHEDULED"
+          "status": "STATUS_FINAL"
         },
         {
           "id": "401873053",
