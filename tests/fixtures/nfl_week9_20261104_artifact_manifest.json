@@ -1,0 +1,17 @@
+{
+  "sourceRunId": 41876281307,
+  "sourceCommit": "9a0c8af1b786c32fb4df6421553be32fc623f660",
+  "artifactId": 13346712960,
+  "artifactPath": "data/four-model-head-to-head/2026-week-9-refresh-20261104T171826Z.json",
+  "artifactSha256": "6b74de78645bd17f910f5f0e5b51679b324c4f452aafb8e199f1ba3a4c32c250",
+  "scheduleBlobSha": "4726014261345b88aa116ea388aa7b1efee142f1",
+  "scheduleUpdatedAt": "2026-11-04T11:29:29.298565+00:00",
+  "season": 2026,
+  "week": 9,
+  "gameCount": 15,
+  "modelCount": 4,
+  "status": "FRESH_PREKICKOFF_SNAPSHOT",
+  "frozenAt": "2026-11-04T17:18:26.363923+00:00",
+  "firstKickoff": "2026-11-06T01:15Z",
+  "mode": "READ_ONLY_NO_FREEZE"
+}
