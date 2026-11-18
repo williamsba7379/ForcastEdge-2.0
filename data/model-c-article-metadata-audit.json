@@ -1,10 +1,10 @@
 {
   "status": "ARTICLE_METADATA_AUDIT_ONLY",
   "automaticConfirmations": 0,
-  "totalArticles": 56,
+  "totalArticles": 51,
   "counts": {
-    "WITHIN_SEVEN_DAYS": 32,
-    "OLDER_THAN_SEVEN_DAYS": 22,
+    "WITHIN_SEVEN_DAYS": 20,
+    "OLDER_THAN_SEVEN_DAYS": 29,
     "AFTER_KICKOFF": 0,
     "DATE_UNVERIFIED": 2,
     "FETCH_FAILED": 0,
@@ -12,394 +12,359 @@
   },
   "items": [
     {
-      "gameId": "401873023",
-      "team": "Carolina Panthers",
-      "url": "https://www.panthers.com/news/four-takeaways-from-tuesday-including-bryce-young-shaking-up-his-routine-damien-lewis",
-      "publicationWindow": "WITHIN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873023",
-      "team": "Carolina Panthers",
-      "url": "https://www.panthers.com/news/ask-the-old-guy-celebrate-the-good-times-and-keep-working-atlanta-defense-bryce-young-xavier-legette-pro-football-hall-of-fame",
-      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873023",
-      "team": "Green Bay Packers",
-      "url": "https://www.packers.com/news/unexpected-debut-was-meaningful-to-john-williams-oct-28-2026",
-      "publicationWindow": "WITHIN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873023",
-      "team": "Green Bay Packers",
-      "url": "https://www.packers.com/news/packers-lions-week-7-inactives-oct-25-2026",
-      "publicationWindow": "WITHIN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873026",
-      "team": "Baltimore Ravens",
-      "url": "https://www.baltimoreravens.com/news/lamar-jackson-injury-practice-report-emotional-boost",
-      "publicationWindow": "WITHIN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873026",
-      "team": "Baltimore Ravens",
-      "url": "https://www.baltimoreravens.com/news/jesse-minter-discusses-ravens-leadership-lamar-jackson-status-to-be-updated-wednesday-for-week-8-buffalo-bills",
-      "publicationWindow": "WITHIN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873026",
-      "team": "Buffalo Bills",
-      "url": "https://www.buffalobills.com/news/buffalo-bills-become-first-nfl-team-to-win-cannes-corporate-media-tv-award-with-josh-allen-mvp-reaction-video",
-      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873026",
-      "team": "Buffalo Bills",
-      "url": "https://www.buffalobills.com/news/what-does-a-week-inside-the-bills-quarterback-room-with-josh-allen-look-like",
-      "publicationWindow": "WITHIN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873031",
-      "team": "Tennessee Titans",
-      "url": "https://www.tennesseetitans.com/news/last-second-field-goal-dooms-titans-in-27-24-loss-to-the-browns",
-      "publicationWindow": "WITHIN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873031",
-      "team": "Tennessee Titans",
-      "url": "https://www.tennesseetitans.com/news/titans-qb-cam-ward-looking-to-nix-offensive-lulls",
-      "publicationWindow": "WITHIN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873031",
-      "team": "Cincinnati Bengals",
-      "url": "https://www.bengals.com/news/joe-burrow-jaxon-smith-njigba-fedex-air-ground-player-week-7-2026-winner",
-      "publicationWindow": "WITHIN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873031",
-      "team": "Cincinnati Bengals",
-      "url": "https://www.bengals.com/news/postgame-quick-hits-ja-marr-s-injury-jags-defense-beat-joe-burrow-s-big-passing-day",
-      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873024",
-      "team": "Arizona Cardinals",
-      "url": "https://www.azcardinals.com/news/as-jacoby-brissett-remains-qb1-carson-beck-remains-topic",
-      "publicationWindow": "WITHIN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873024",
-      "team": "Arizona Cardinals",
-      "url": "https://www.azcardinals.com/news/cardinals-qb-jacoby-brissett-rich-with-teammate-currency-2026-season",
-      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873024",
-      "team": "Dallas Cowboys",
-      "url": "https://www.dallascowboys.com/news/balance-on-offense-plays-big-role-for-dak-prescott-cowboys-in-38-21-win-over-eagles",
-      "publicationWindow": "WITHIN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873024",
-      "team": "Dallas Cowboys",
-      "url": "https://www.dallascowboys.com/news/mick-shots-feeling-the-brunt-of-all-the-blitzes",
-      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873030",
-      "team": "Minnesota Vikings",
-      "url": "https://www.vikings.com/news/lions-injury-report-week-8-2026-nfl-season",
-      "publicationWindow": "WITHIN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873030",
-      "team": "Minnesota Vikings",
-      "url": "https://www.vikings.com/news/signing-tight-ends-bryson-nesbit-devin-culp-practice-squad",
-      "publicationWindow": "WITHIN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873030",
-      "team": "Detroit Lions",
-      "url": "https://www.detroitlions.com/news/qb-jared-goff-named-detroit-lions-nominee-for-2022-walter-payton-nfl-man-of-the-",
-      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873030",
-      "team": "Detroit Lions",
-      "url": "https://www.detroitlions.com/news/qb-jared-goff-named-detroit-lions-nominee-for-walter-payton-nfl-man-of-the-year-award-presented-by-nationwide",
-      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873029",
-      "team": "Las Vegas Raiders",
-      "url": "https://www.raiders.com/news/1976-unsung-hero-john-vella-super-bowl-xi-50th-anniversary",
-      "publicationWindow": "WITHIN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873029",
-      "team": "Las Vegas Raiders",
-      "url": "https://www.raiders.com/news/las-vegas-raiders-week-7-inactives-vs-los-angeles-rams",
-      "publicationWindow": "WITHIN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873029",
-      "team": "New York Jets",
-      "url": "https://www.newyorkjets.com/news/geno-smith-reflecting-on-jets-performance-vs-dolphins-10-25-2026",
-      "publicationWindow": "WITHIN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873029",
-      "team": "New York Jets",
-      "url": "https://www.newyorkjets.com/news/jets-vs-raiders-week-8-nfl-geno-smith-kirk-cousins-10-28-2026",
-      "publicationWindow": "WITHIN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873027",
-      "team": "Cleveland Browns",
-      "url": "https://www.clevelandbrowns.com/news/deshaun-watson-continues-to-take-strides-in-browns-offense-news-notes",
-      "publicationWindow": "DATE_UNVERIFIED",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873027",
-      "team": "Cleveland Browns",
-      "url": "https://www.clevelandbrowns.com/news/deshaun-watson-expected-to-start-week-2-against-the-buccaneers-news-notes",
-      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873027",
-      "team": "Pittsburgh Steelers",
-      "url": "https://www.steelers.com/news/from-paris-with-fun",
-      "publicationWindow": "WITHIN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873027",
-      "team": "Pittsburgh Steelers",
-      "url": "https://www.steelers.com/news/from-the-press-room-steelers-at-buccaneers",
-      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873025",
-      "team": "Atlanta Falcons",
-      "url": "https://www.atlantafalcons.com/news/falcons-mailbag-how-different-do-falcons-look-in-year-2-of-raheem-morris-michael-penix-jr",
-      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873025",
-      "team": "Atlanta Falcons",
-      "url": "https://www.atlantafalcons.com/news/how-michael-penix-first-17-starts-compare-nfl-quarterbacks",
-      "publicationWindow": "WITHIN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873025",
-      "team": "Tampa Bay Buccaneers",
-      "url": "https://www.buccaneers.com/news/baker-mayfield-bucs-need-stay-ahead-chains-vs-falcons",
-      "publicationWindow": "WITHIN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873025",
-      "team": "Tampa Bay Buccaneers",
-      "url": "https://www.buccaneers.com/news/baker-mayfield-next-level-leadership-getting-ball-in-hands-of-chris-godwin-jr-and-more-bucs-blitz",
-      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873028",
+      "gameId": "401873066",
       "team": "Indianapolis Colts",
-      "url": "https://www.colts.com/news/shane-steichen-not-considering-qb-change-pleased-with-colts-effort-in-low-scoring-loss-to-vikings",
+      "url": "https://www.colts.com/news/practice-notebook-both-colts-starting-tackles-cornerbacks-listed-as-dnp-for-second-consecutive-day-ahead-of-week-11-game-vs-texans",
       "publicationWindow": "WITHIN_SEVEN_DAYS",
       "starterConfirmed": false
     },
     {
-      "gameId": "401873028",
+      "gameId": "401873066",
       "team": "Indianapolis Colts",
       "url": "https://www.colts.com/news/article-series/practice-notebook/",
       "publicationWindow": "DATE_UNVERIFIED",
       "starterConfirmed": false
     },
     {
-      "gameId": "401873028",
-      "team": "Jacksonville Jaguars",
-      "url": "https://www.jaguars.com/news/tuesday-insider-walker-ready-for-the-moment",
-      "publicationWindow": "WITHIN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873028",
-      "team": "Jacksonville Jaguars",
-      "url": "https://www.jaguars.com/news/in-and-out-2026-week-6-murray-active-brown-and-matiscik-inactive-for-texans-vs-jaguars",
+      "gameId": "401873066",
+      "team": "Houston Texans",
+      "url": "https://www.houstontexans.com/news/cj-stroud-afc-offensive-player-of-the-week-6",
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
       "starterConfirmed": false
     },
     {
-      "gameId": "401873032",
+      "gameId": "401873066",
+      "team": "Houston Texans",
+      "url": "https://www.houstontexans.com/news/houston-texans-qb-c-j-stroud-named-afc-offensive-player-of-the-week",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873070",
+      "team": "Miami Dolphins",
+      "url": "https://www.miamidolphins.com/news/dolphins-make-roster-moves-x7086",
+      "publicationWindow": "WITHIN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873070",
+      "team": "Miami Dolphins",
+      "url": "https://www.miamidolphins.com/news/top-quotes-dolphins-travel-to-indianapolis-with-a-new-quarterback-new-captain",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873070",
+      "team": "Buffalo Bills",
+      "url": "https://www.buffalobills.com/news/what-does-a-week-inside-the-bills-quarterback-room-with-josh-allen-look-like",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873070",
+      "team": "Buffalo Bills",
+      "url": "https://www.buffalobills.com/news/bills-36-ravens-10-final-score-recap-highlights",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873071",
+      "team": "New Orleans Saints",
+      "url": "https://www.neworleanssaints.com/news/carolina-panthers-vs-new-orleans-saints-2026-nfl-week-10-postgame-quotes",
+      "publicationWindow": "WITHIN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873071",
+      "team": "New Orleans Saints",
+      "url": "https://www.neworleanssaints.com/news/new-orleans-saints-inactives-carolina-panthers-2026-nfl-week-10",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873071",
+      "team": "Chicago Bears",
+      "url": "https://www.chicagobears.com/news/bears-hoping-to-hit-the-ground-running-after-bye-week",
+      "publicationWindow": "WITHIN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873071",
+      "team": "Chicago Bears",
+      "url": "https://www.chicagobears.com/news/bears-receiver-luther-burden-iii-clears-concussion-protocol",
+      "publicationWindow": "WITHIN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873073",
+      "team": "Tennessee Titans",
+      "url": "https://www.tennesseetitans.com/news/titans-fall-40-23-to-jaguars-drop-to-1-8-on-season",
+      "publicationWindow": "WITHIN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873073",
+      "team": "Tennessee Titans",
+      "url": "https://www.tennesseetitans.com/news/game-inactives-week-10-titans-vs-jaguars",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873073",
+      "team": "Dallas Cowboys",
+      "url": "https://www.dallascowboys.com/news/dak-prescott-on-loss-to-49ers-we-ve-gotta-be-better",
+      "publicationWindow": "WITHIN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873073",
+      "team": "Dallas Cowboys",
+      "url": "https://www.dallascowboys.com/news/mailbag-run-the-two-minute-offense-more",
+      "publicationWindow": "WITHIN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873072",
+      "team": "Tampa Bay Buccaneers",
+      "url": "https://www.buccaneers.com/news/baker-mayfield-next-level-leadership-getting-ball-in-hands-of-chris-godwin-jr-and-more-bucs-blitz",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873072",
+      "team": "Tampa Bay Buccaneers",
+      "url": "https://www.buccaneers.com/news/explosive-weapon-tez-johnson-baker-mayfield-progression-more-bucs-blitz",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873072",
+      "team": "Detroit Lions",
+      "url": "https://www.detroitlions.com/news/qb-jared-goff-named-detroit-lions-nominee-for-2022-walter-payton-nfl-man-of-the-",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873072",
+      "team": "Detroit Lions",
+      "url": "https://www.detroitlions.com/news/qb-jared-goff-named-detroit-lions-nominee-for-walter-payton-nfl-man-of-the-year-award-presented-by-nationwide",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873067",
+      "team": "Arizona Cardinals",
+      "url": "https://www.azcardinals.com/news/for-starters-carson-beck-ready-to-play-first-game-against-rams",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873067",
+      "team": "Arizona Cardinals",
+      "url": "https://www.azcardinals.com/news/quarterback-in-flux-after-gardner-minshew-banged-up-arm-injury-carson-beck",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873067",
+      "team": "Kansas City Chiefs",
+      "url": "https://www.chiefs.com/news/chiefs-defeat-falcons-35-13-as-patrick-mahomes-throws-five-touchdowns",
+      "publicationWindow": "WITHIN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873067",
+      "team": "Kansas City Chiefs",
+      "url": "https://www.chiefs.com/news/week-10-inactive-players-chiefs-vs-falcons",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873076",
+      "team": "Pittsburgh Steelers",
+      "url": "https://www.steelers.com/news/from-the-press-room-steelers-at-bengals-x5307",
+      "publicationWindow": "WITHIN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873076",
+      "team": "Pittsburgh Steelers",
+      "url": "https://www.steelers.com/news/i-m-feeling-good-right-now",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873076",
+      "team": "Philadelphia Eagles",
+      "url": "https://www.philadelphiaeagles.com/news/aaa-official-review-what-did-the-eagles-joe-milton-learn-from-the-qb-s-first-start-giants-nfl-week-9-2026",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873076",
+      "team": "Philadelphia Eagles",
+      "url": "https://www.philadelphiaeagles.com/news/eagles-sign-quentin-skinner-2026-week-11",
+      "publicationWindow": "WITHIN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873068",
+      "team": "Baltimore Ravens",
+      "url": "https://www.baltimoreravens.com/news/game-preview-jacoby-brissett-ravens-first-start-week-10-against-chargers-monday-night-football",
+      "publicationWindow": "WITHIN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873068",
+      "team": "Baltimore Ravens",
+      "url": "https://www.baltimoreravens.com/news/grades-snap-counts-jacoby-brissett-gets-high-marks-after-ravens-debut",
+      "publicationWindow": "WITHIN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873068",
+      "team": "Carolina Panthers",
+      "url": "https://www.panthers.com/news/ask-the-old-guy-get-back-to-the-work-chuba-hubbard-bryce-young-detroit-sunday-night-football-keep-pounding",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873068",
+      "team": "Carolina Panthers",
+      "url": "https://www.panthers.com/news/ask-the-old-guy-perfect-way-to-head-into-the-bye-bryce-young-tetairoa-mcmillan-dave-canales-brad-idzik",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873074",
+      "team": "New York Jets",
+      "url": "https://www.newyorkjets.com/news/jets-rookie-qb-cade-klubnik-displayed-grit-in-relief-of-geno-smith-11-15-2026",
+      "publicationWindow": "WITHIN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873074",
+      "team": "New York Jets",
+      "url": "https://www.newyorkjets.com/news/geno-smith-outperforming-expectations-jets-11-12-2026",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873074",
       "team": "Los Angeles Chargers",
       "url": "https://www.chargers.com/news/justin-herbert-mvp-vote-odds-2026",
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
       "starterConfirmed": false
     },
     {
-      "gameId": "401873032",
+      "gameId": "401873074",
       "team": "Los Angeles Chargers",
       "url": "https://www.chargers.com/news/justin-herbert-quentin-johnston-touchdown-mike-mcdaniel-2026",
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
       "starterConfirmed": false
     },
     {
-      "gameId": "401873032",
-      "team": "Los Angeles Rams",
-      "url": "https://www.therams.com/news/from-the-podium-head-coach-sean-mcvay-quarterback-matthew-stafford-give-run-down-on-rams-balanced-win-over-raiders-press-conference-2026",
+      "gameId": "401873075",
+      "team": "Las Vegas Raiders",
+      "url": "https://www.raiders.com/news/by-the-numbers-raiders-generate-some-positives-despite-negative-outcome-against-seahawks",
       "publicationWindow": "WITHIN_SEVEN_DAYS",
       "starterConfirmed": false
     },
     {
-      "gameId": "401873032",
-      "team": "Los Angeles Rams",
-      "url": "https://www.therams.com/news/from-the-podium-head-coach-sean-mcvay-quarterback-matthew-stafford-wide-receiver-puka-nacua-defensive-end-aaron-donald-coordinators-preview-matchup-against-chargers-sofi-stadium-press-conference-2026",
+      "gameId": "401873075",
+      "team": "Las Vegas Raiders",
+      "url": "https://www.raiders.com/news/gutierrez-steep-learning-curve-in-first-start-outlines-both-potential-inexperience-of-fernando-mendoza",
       "publicationWindow": "WITHIN_SEVEN_DAYS",
       "starterConfirmed": false
     },
     {
-      "gameId": "401873033",
-      "team": "Kansas City Chiefs",
-      "url": "https://www.chiefs.com/news/week-7-inactive-players-chiefs-vs-seahawks",
-      "publicationWindow": "WITHIN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873033",
-      "team": "Kansas City Chiefs",
-      "url": "https://www.chiefs.com/news/week-8-injury-report-chiefs-vs-broncos-2026",
-      "publicationWindow": "WITHIN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873033",
+      "gameId": "401873075",
       "team": "Denver Broncos",
-      "url": "https://www.denverbroncos.com/news/it-starts-with-me-qb-bo-nix-not-satisfied-takes-ownership-of-needed-offensive-improvement",
-      "publicationWindow": "WITHIN_SEVEN_DAYS",
+      "url": "https://www.denverbroncos.com/news/injuryreport/",
+      "publicationWindow": "DATE_UNVERIFIED",
       "starterConfirmed": false
     },
     {
-      "gameId": "401873033",
-      "team": "Denver Broncos",
-      "url": "https://www.denverbroncos.com/news/broncos-sign-wr-eli-pancol-to-practice-squad",
-      "publicationWindow": "WITHIN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873034",
-      "team": "New England Patriots",
-      "url": "https://www.patriots.com/news/after-further-review-drake-maye-and-a-j-brown-film-breakdown-quick-hit-film-notes-from-sunday-s-win-over-the-jets",
+      "gameId": "401873069",
+      "team": "Jacksonville Jaguars",
+      "url": "https://www.jaguars.com/news/in-and-out-2026-week-10-davis-bates-inactive-for-jaguars-vs-titans",
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
       "starterConfirmed": false
     },
     {
-      "gameId": "401873034",
-      "team": "New England Patriots",
-      "url": "https://www.patriots.com/news/after-further-review-drake-maye-film-breakdown-defense-review-and-quick-hit-film-notes-from-week-7-loss-to-the-bears",
+      "gameId": "401873069",
+      "team": "Jacksonville Jaguars",
+      "url": "https://www.jaguars.com/news/jaguars-injury-report-update-hainsey-cleared-for-week-10",
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
       "starterConfirmed": false
     },
     {
-      "gameId": "401873034",
-      "team": "Miami Dolphins",
-      "url": "https://www.miamidolphins.com/news/dolphins-make-practice-squad-moves-x4824",
+      "gameId": "401873069",
+      "team": "New York Giants",
+      "url": "https://www.giants.com/news/j-j-mccarthy-trade-details-minnesota-vikings-quarterback-2027-nfl-draft-michigan-wolverines",
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
       "starterConfirmed": false
     },
     {
-      "gameId": "401873034",
-      "team": "Miami Dolphins",
-      "url": "https://www.miamidolphins.com/news/dolphins-make-practice-squad-moves-x6245",
+      "gameId": "401873069",
+      "team": "New York Giants",
+      "url": "https://www.giants.com/news/giants-sign-qb-jake-haener-to-active-roster-elevate-2-from-practice-squad-braxton-berrios-malik-harrison-tennessee-titans-week-2",
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
       "starterConfirmed": false
     },
     {
-      "gameId": "401873035",
-      "team": "Philadelphia Eagles",
-      "url": "https://www.philadelphiaeagles.com/news/makai-lemon-reflects-on-his-first-career-touchdown-cowboys-nfl-week-7-2026-tanner-mckee",
+      "gameId": "401873077",
+      "team": "Minnesota Vikings",
+      "url": "https://www.vikings.com/news/kevin-oconnell-kirk-cousins-prep-lines-packers-week-10",
       "publicationWindow": "WITHIN_SEVEN_DAYS",
       "starterConfirmed": false
     },
     {
-      "gameId": "401873035",
-      "team": "Philadelphia Eagles",
-      "url": "https://www.philadelphiaeagles.com/news/spadaro-game-preview-vs-cowboys-6-storylines-to-follow-eagles-tanner-mckee-saquon-barkley-dak-prescott-nfl-week-7",
+      "gameId": "401873077",
+      "team": "Minnesota Vikings",
+      "url": "https://www.vikings.com/news/signing-safety-danthony-bell-to-practice-squad-2026",
       "publicationWindow": "WITHIN_SEVEN_DAYS",
       "starterConfirmed": false
     },
     {
-      "gameId": "401873035",
+      "gameId": "401873077",
+      "team": "San Francisco 49ers",
+      "url": "https://www.49ers.com/news/morning-reports/morning-report-locker-room-reactions-brock-purdy-50-career-starts",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873077",
+      "team": "San Francisco 49ers",
+      "url": "https://www.49ers.com/news/49ers-activate-lb-jalen-graham-and-wr-malik-turner-from-practice-squad-other-moves",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873078",
+      "team": "Cincinnati Bengals",
+      "url": "https://www.bengals.com/news/joe-burrow-afc-offensive-player-week-10-2026",
+      "publicationWindow": "WITHIN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873078",
+      "team": "Cincinnati Bengals",
+      "url": "https://www.bengals.com/news/quick-hits-bengals-prep-for-madrid-joe-burrow-ted-karras-jamarr-chase-tee-higgins-cashius-howell",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
+      "starterConfirmed": false
+    },
+    {
+      "gameId": "401873078",
       "team": "Washington Commanders",
-      "url": "https://www.commanders.com/news/chig-okonkwo-hamstring-injury-jayden-daniels",
+      "url": "https://www.commanders.com/news/jayden-daniels-commanders-comeback-win-giants",
       "publicationWindow": "WITHIN_SEVEN_DAYS",
       "starterConfirmed": false
     },
     {
-      "gameId": "401873035",
+      "gameId": "401873078",
       "team": "Washington Commanders",
       "url": "https://www.commanders.com/news/5-takeaways-from-jayden-daniels-press-conference",
-      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873036",
-      "team": "Chicago Bears",
-      "url": "https://www.chicagobears.com/news/bears-embrace-stepping-into-national-spotlight",
-      "publicationWindow": "WITHIN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873036",
-      "team": "Chicago Bears",
-      "url": "https://www.chicagobears.com/news/bears-qb-caleb-williams-practices-in-full-but-game-status-still-uncertain",
-      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873036",
-      "team": "Seattle Seahawks",
-      "url": "https://www.seahawks.com/news/sam-darnold-and-offense-have-more-effective-cleaner-showing-in-week-7-win",
-      "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
-      "starterConfirmed": false
-    },
-    {
-      "gameId": "401873036",
-      "team": "Seattle Seahawks",
-      "url": "https://www.seahawks.com/news/seahawks-qb-sam-darnold-after-two-interceptions-in-loss-to-broncos-i-ve-got-to-be-better",
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS",
       "starterConfirmed": false
     }

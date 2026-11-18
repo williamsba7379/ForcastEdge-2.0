@@ -1,10 +1,91 @@
 {
   "season": 2026,
-  "week": 8,
-  "generatedAt": "2026-10-29T08:36:10.153293+00:00",
-  "reviewCount": 0,
-  "urgentCount": 0,
-  "status": "NO_FLAGS",
-  "alerts": [],
+  "week": 11,
+  "generatedAt": "2026-11-18T17:14:43.906868+00:00",
+  "reviewCount": 4,
+  "urgentCount": 3,
+  "status": "REVIEW_REQUIRED",
+  "alerts": [
+    {
+      "gameId": "401873070",
+      "team": "Miami Dolphins",
+      "opponent": "Buffalo Bills",
+      "priority": "P1_ESTABLISHED_PRIMARY_PASSER_ABSENT",
+      "reportedUnavailable": [
+        {
+          "name": "Malik Willis",
+          "status": "Injured Reserve"
+        }
+      ],
+      "priorPrimaryPasserGames": {
+        "Malik Willis": 8
+      },
+      "currentQB1CandidateUnverified": "Kyle McCord",
+      "recentPrimaryPasserUnverified": "Kyle McCord",
+      "pointsAdjustment": 0,
+      "status": "UNMODELED_HUMAN_REVIEW_REQUIRED",
+      "note": "Historical primary passer is not proof of a start. No score penalty without verified pregame evidence."
+    },
+    {
+      "gameId": "401873067",
+      "team": "Arizona Cardinals",
+      "opponent": "Kansas City Chiefs",
+      "priority": "P2_ROLE_REVIEW_REQUIRED",
+      "reportedUnavailable": [
+        {
+          "name": "Gardner Minshew II",
+          "status": "Injured Reserve"
+        }
+      ],
+      "priorPrimaryPasserGames": {
+        "Gardner Minshew II": 1
+      },
+      "currentQB1CandidateUnverified": "Carson Beck",
+      "recentPrimaryPasserUnverified": "Carson Beck",
+      "pointsAdjustment": 0,
+      "status": "UNMODELED_HUMAN_REVIEW_REQUIRED",
+      "note": "Historical primary passer is not proof of a start. No score penalty without verified pregame evidence."
+    },
+    {
+      "gameId": "401873068",
+      "team": "Baltimore Ravens",
+      "opponent": "Carolina Panthers",
+      "priority": "P1_ESTABLISHED_PRIMARY_PASSER_ABSENT",
+      "reportedUnavailable": [
+        {
+          "name": "Lamar Jackson",
+          "status": "Injured Reserve"
+        }
+      ],
+      "priorPrimaryPasserGames": {
+        "Lamar Jackson": 4
+      },
+      "currentQB1CandidateUnverified": "Jacoby Brissett",
+      "recentPrimaryPasserUnverified": "Jacoby Brissett",
+      "pointsAdjustment": 0,
+      "status": "UNMODELED_HUMAN_REVIEW_REQUIRED",
+      "note": "Historical primary passer is not proof of a start. No score penalty without verified pregame evidence."
+    },
+    {
+      "gameId": "401873077",
+      "team": "Minnesota Vikings",
+      "opponent": "San Francisco 49ers",
+      "priority": "P1_ESTABLISHED_PRIMARY_PASSER_ABSENT",
+      "reportedUnavailable": [
+        {
+          "name": "Kyler Murray",
+          "status": "Out"
+        }
+      ],
+      "priorPrimaryPasserGames": {
+        "Kyler Murray": 5
+      },
+      "currentQB1CandidateUnverified": "Kirk Cousins",
+      "recentPrimaryPasserUnverified": "Kirk Cousins",
+      "pointsAdjustment": 0,
+      "status": "UNMODELED_HUMAN_REVIEW_REQUIRED",
+      "note": "Historical primary passer is not proof of a start. No score penalty without verified pregame evidence."
+    }
+  ],
   "policy": "Never rewrite frozen predictions. Injury feeds and depth charts are not official starter verification."
 }

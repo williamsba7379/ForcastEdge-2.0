@@ -1,0 +1,373 @@
+{
+  "season": 2026,
+  "week": 11,
+  "status": "FRESH_PREKICKOFF_SNAPSHOT",
+  "frozenAt": "2026-11-18T17:14:43.640570+00:00",
+  "modelCGeneratedAt": "2026-11-18T12:14:43.343559-05:00",
+  "modelCQBGeneratedAt": "2026-11-18T17:14:43.391672+00:00",
+  "models": {
+    "A": "30% recent differential",
+    "B": "0% recent differential",
+    "C": "existing Model C automated review draft",
+    "C-QB": "experimental QB shadow"
+  },
+  "warning": "Winner-only experimental head-to-head; C/C-QB review-only, no calibrated bets.",
+  "games": [
+    {
+      "id": "401873066",
+      "date": "2026-11-20T01:15Z",
+      "home": "Houston Texans",
+      "away": "Indianapolis Colts",
+      "picks": {
+        "A": "Houston Texans",
+        "B": "Houston Texans",
+        "C": "Houston Texans",
+        "C-QB": "Houston Texans"
+      },
+      "qbHomeEdgeAdjustment": 0.0,
+      "qbAdjustments": {
+        "home": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        },
+        "away": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        }
+      },
+      "winner": null,
+      "correct": null
+    },
+    {
+      "id": "401873070",
+      "date": "2026-11-22T18:00Z",
+      "home": "Buffalo Bills",
+      "away": "Miami Dolphins",
+      "picks": {
+        "A": "Buffalo Bills",
+        "B": "Buffalo Bills",
+        "C": "Buffalo Bills",
+        "C-QB": "Buffalo Bills"
+      },
+      "qbHomeEdgeAdjustment": 0.0,
+      "qbAdjustments": {
+        "home": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        },
+        "away": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        }
+      },
+      "winner": null,
+      "correct": null
+    },
+    {
+      "id": "401873071",
+      "date": "2026-11-22T18:00Z",
+      "home": "Chicago Bears",
+      "away": "New Orleans Saints",
+      "picks": {
+        "A": "Chicago Bears",
+        "B": "Chicago Bears",
+        "C": "Chicago Bears",
+        "C-QB": "Chicago Bears"
+      },
+      "qbHomeEdgeAdjustment": 0.0,
+      "qbAdjustments": {
+        "home": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        },
+        "away": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        }
+      },
+      "winner": null,
+      "correct": null
+    },
+    {
+      "id": "401873073",
+      "date": "2026-11-22T18:00Z",
+      "home": "Dallas Cowboys",
+      "away": "Tennessee Titans",
+      "picks": {
+        "A": "Dallas Cowboys",
+        "B": "Dallas Cowboys",
+        "C": "Dallas Cowboys",
+        "C-QB": "Dallas Cowboys"
+      },
+      "qbHomeEdgeAdjustment": 0.0,
+      "qbAdjustments": {
+        "home": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        },
+        "away": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        }
+      },
+      "winner": null,
+      "correct": null
+    },
+    {
+      "id": "401873072",
+      "date": "2026-11-22T18:00Z",
+      "home": "Detroit Lions",
+      "away": "Tampa Bay Buccaneers",
+      "picks": {
+        "A": "Detroit Lions",
+        "B": "Detroit Lions",
+        "C": "Detroit Lions",
+        "C-QB": "Detroit Lions"
+      },
+      "qbHomeEdgeAdjustment": 0.0,
+      "qbAdjustments": {
+        "home": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        },
+        "away": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        }
+      },
+      "winner": null,
+      "correct": null
+    },
+    {
+      "id": "401873067",
+      "date": "2026-11-22T18:00Z",
+      "home": "Kansas City Chiefs",
+      "away": "Arizona Cardinals",
+      "picks": {
+        "A": "Kansas City Chiefs",
+        "B": "Kansas City Chiefs",
+        "C": "Kansas City Chiefs",
+        "C-QB": "Kansas City Chiefs"
+      },
+      "qbHomeEdgeAdjustment": 0.0,
+      "qbAdjustments": {
+        "home": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        },
+        "away": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        }
+      },
+      "winner": null,
+      "correct": null
+    },
+    {
+      "id": "401873076",
+      "date": "2026-11-22T18:00Z",
+      "home": "Philadelphia Eagles",
+      "away": "Pittsburgh Steelers",
+      "picks": {
+        "A": "Pittsburgh Steelers",
+        "B": "Pittsburgh Steelers",
+        "C": "Pittsburgh Steelers",
+        "C-QB": "Pittsburgh Steelers"
+      },
+      "qbHomeEdgeAdjustment": 0.0,
+      "qbAdjustments": {
+        "home": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        },
+        "away": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        }
+      },
+      "winner": null,
+      "correct": null
+    },
+    {
+      "id": "401873068",
+      "date": "2026-11-22T18:00Z",
+      "home": "Carolina Panthers",
+      "away": "Baltimore Ravens",
+      "picks": {
+        "A": "Carolina Panthers",
+        "B": "Carolina Panthers",
+        "C": "Carolina Panthers",
+        "C-QB": "Carolina Panthers"
+      },
+      "qbHomeEdgeAdjustment": 0.0,
+      "qbAdjustments": {
+        "home": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        },
+        "away": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        }
+      },
+      "winner": null,
+      "correct": null
+    },
+    {
+      "id": "401873074",
+      "date": "2026-11-22T21:05Z",
+      "home": "Los Angeles Chargers",
+      "away": "New York Jets",
+      "picks": {
+        "A": "New York Jets",
+        "B": "New York Jets",
+        "C": "New York Jets",
+        "C-QB": "New York Jets"
+      },
+      "qbHomeEdgeAdjustment": 0.0,
+      "qbAdjustments": {
+        "home": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        },
+        "away": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        }
+      },
+      "winner": null,
+      "correct": null
+    },
+    {
+      "id": "401873075",
+      "date": "2026-11-22T21:25Z",
+      "home": "Denver Broncos",
+      "away": "Las Vegas Raiders",
+      "picks": {
+        "A": "Denver Broncos",
+        "B": "Denver Broncos",
+        "C": "Denver Broncos",
+        "C-QB": "Denver Broncos"
+      },
+      "qbHomeEdgeAdjustment": 0.0,
+      "qbAdjustments": {
+        "home": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        },
+        "away": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        }
+      },
+      "winner": null,
+      "correct": null
+    },
+    {
+      "id": "401873069",
+      "date": "2026-11-22T21:25Z",
+      "home": "New York Giants",
+      "away": "Jacksonville Jaguars",
+      "picks": {
+        "A": "Jacksonville Jaguars",
+        "B": "Jacksonville Jaguars",
+        "C": "Jacksonville Jaguars",
+        "C-QB": "Jacksonville Jaguars"
+      },
+      "qbHomeEdgeAdjustment": 0.0,
+      "qbAdjustments": {
+        "home": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        },
+        "away": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        }
+      },
+      "winner": null,
+      "correct": null
+    },
+    {
+      "id": "401873077",
+      "date": "2026-11-23T01:20Z",
+      "home": "San Francisco 49ers",
+      "away": "Minnesota Vikings",
+      "picks": {
+        "A": "San Francisco 49ers",
+        "B": "San Francisco 49ers",
+        "C": "San Francisco 49ers",
+        "C-QB": "San Francisco 49ers"
+      },
+      "qbHomeEdgeAdjustment": 0.0,
+      "qbAdjustments": {
+        "home": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        },
+        "away": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        }
+      },
+      "winner": null,
+      "correct": null
+    },
+    {
+      "id": "401873078",
+      "date": "2026-11-24T01:15Z",
+      "home": "Washington Commanders",
+      "away": "Cincinnati Bengals",
+      "picks": {
+        "A": "Cincinnati Bengals",
+        "B": "Cincinnati Bengals",
+        "C": "Cincinnati Bengals",
+        "C-QB": "Cincinnati Bengals"
+      },
+      "qbHomeEdgeAdjustment": 0.0,
+      "qbAdjustments": {
+        "home": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        },
+        "away": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        }
+      },
+      "winner": null,
+      "correct": null
+    }
+  ],
+  "inputFreshnessHours": {
+    "C": 0.0,
+    "C-QB": 0.0
+  },
+  "note": "A/B recomputed from latest completed-game history; C and C-QB taken from current independently generated draft/shadow. Historical frozen cards unchanged."
+}

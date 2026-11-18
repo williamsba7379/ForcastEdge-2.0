@@ -3,20 +3,28 @@
   "automaticConfirmations": 0,
   "items": [
     {
-      "team": "Carolina Panthers",
-      "gameId": "401873023",
-      "url": "https://www.panthers.com/news/four-takeaways-from-tuesday-including-bryce-young-shaking-up-his-routine-damien-lewis",
+      "team": "Indianapolis Colts",
+      "gameId": "401873066",
+      "url": "https://www.colts.com/news/practice-notebook-both-colts-starting-tackles-cornerbacks-listed-as-dnp-for-second-consecutive-day-ahead-of-week-11-game-vs-texans",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
-      "passages": [
-        "CHARLOTTE \u2014 Bryce Young is a man who likes his routine. During the football season, the quarterback knows what every day will hold. Mondays are film study, Tuesdays are recovery, and Wednesdays, Thursdays, and Fridays are practice days followed by long nights spent breaking down his own film and taking notes."
-      ],
+      "passages": [],
       "fetchStatus": "OK"
     },
     {
-      "team": "Carolina Panthers",
-      "gameId": "401873023",
-      "url": "https://www.panthers.com/news/ask-the-old-guy-celebrate-the-good-times-and-keep-working-atlanta-defense-bryce-young-xavier-legette-pro-football-hall-of-fame",
+      "team": "Indianapolis Colts",
+      "gameId": "401873066",
+      "url": "https://www.colts.com/news/article-series/practice-notebook/",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "DATE_UNVERIFIED"
+    },
+    {
+      "team": "Houston Texans",
+      "gameId": "401873066",
+      "url": "https://www.houstontexans.com/news/cj-stroud-afc-offensive-player-of-the-week-6",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
@@ -24,49 +32,30 @@
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
-      "team": "Green Bay Packers",
-      "gameId": "401873023",
-      "url": "https://www.packers.com/news/unexpected-debut-was-meaningful-to-john-williams-oct-28-2026",
+      "team": "Houston Texans",
+      "gameId": "401873066",
+      "url": "https://www.houstontexans.com/news/houston-texans-qb-c-j-stroud-named-afc-offensive-player-of-the-week",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
-      "team": "Green Bay Packers",
-      "gameId": "401873023",
-      "url": "https://www.packers.com/news/packers-lions-week-7-inactives-oct-25-2026",
-      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
-      "starterConfirmed": false,
-      "passages": [],
-      "fetchStatus": "OK"
-    },
-    {
-      "team": "Baltimore Ravens",
-      "gameId": "401873026",
-      "url": "https://www.baltimoreravens.com/news/lamar-jackson-injury-practice-report-emotional-boost",
+      "team": "Miami Dolphins",
+      "gameId": "401873070",
+      "url": "https://www.miamidolphins.com/news/dolphins-make-roster-moves-x7086",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [
-        "Lamar Jackson returned to full practice participation Wednesday, a positive indication for his chances to play Sunday against the Buffalo Bills."
+        "The Miami Dolphins announced today that they have placed defensive lineman Zach Sieler and quarterback Malik Willis on the injured reserve list and waived cornerback Reese Taylor."
       ],
       "fetchStatus": "OK"
     },
     {
-      "team": "Baltimore Ravens",
-      "gameId": "401873026",
-      "url": "https://www.baltimoreravens.com/news/jesse-minter-discusses-ravens-leadership-lamar-jackson-status-to-be-updated-wednesday-for-week-8-buffalo-bills",
-      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
-      "starterConfirmed": false,
-      "passages": [
-        "Minter said more would be known about Lamar Jackson's status on Wednesday when the Ravens resume practice. They are hoping the two-time MVP will return to the lineup on Sunday when the Ravens visit the Buffalo Bills."
-      ],
-      "fetchStatus": "OK"
-    },
-    {
-      "team": "Buffalo Bills",
-      "gameId": "401873026",
-      "url": "https://www.buffalobills.com/news/buffalo-bills-become-first-nfl-team-to-win-cannes-corporate-media-tv-award-with-josh-allen-mvp-reaction-video",
+      "team": "Miami Dolphins",
+      "gameId": "401873070",
+      "url": "https://www.miamidolphins.com/news/top-quotes-dolphins-travel-to-indianapolis-with-a-new-quarterback-new-captain",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
@@ -75,8 +64,58 @@
     },
     {
       "team": "Buffalo Bills",
-      "gameId": "401873026",
+      "gameId": "401873070",
       "url": "https://www.buffalobills.com/news/what-does-a-week-inside-the-bills-quarterback-room-with-josh-allen-look-like",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
+    },
+    {
+      "team": "Buffalo Bills",
+      "gameId": "401873070",
+      "url": "https://www.buffalobills.com/news/bills-36-ravens-10-final-score-recap-highlights",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
+    },
+    {
+      "team": "New Orleans Saints",
+      "gameId": "401873071",
+      "url": "https://www.neworleanssaints.com/news/carolina-panthers-vs-new-orleans-saints-2026-nfl-week-10-postgame-quotes",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "New Orleans Saints",
+      "gameId": "401873071",
+      "url": "https://www.neworleanssaints.com/news/new-orleans-saints-inactives-carolina-panthers-2026-nfl-week-10",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
+    },
+    {
+      "team": "Chicago Bears",
+      "gameId": "401873071",
+      "url": "https://www.chicagobears.com/news/bears-hoping-to-hit-the-ground-running-after-bye-week",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [
+        "They've won four straight since quarterback Caleb Williams returned after missing three games with a hamstring injury and are 6-1 since a 1-1 start."
+      ],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Chicago Bears",
+      "gameId": "401873071",
+      "url": "https://www.chicagobears.com/news/bears-receiver-luther-burden-iii-clears-concussion-protocol",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
@@ -84,8 +123,8 @@
     },
     {
       "team": "Tennessee Titans",
-      "gameId": "401873031",
-      "url": "https://www.tennesseetitans.com/news/last-second-field-goal-dooms-titans-in-27-24-loss-to-the-browns",
+      "gameId": "401873073",
+      "url": "https://www.tennesseetitans.com/news/titans-fall-40-23-to-jaguars-drop-to-1-8-on-season",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [
@@ -95,47 +134,8 @@
     },
     {
       "team": "Tennessee Titans",
-      "gameId": "401873031",
-      "url": "https://www.tennesseetitans.com/news/titans-qb-cam-ward-looking-to-nix-offensive-lulls",
-      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
-      "starterConfirmed": false,
-      "passages": [],
-      "fetchStatus": "OK"
-    },
-    {
-      "team": "Cincinnati Bengals",
-      "gameId": "401873031",
-      "url": "https://www.bengals.com/news/joe-burrow-jaxon-smith-njigba-fedex-air-ground-player-week-7-2026-winner",
-      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
-      "starterConfirmed": false,
-      "passages": [],
-      "fetchStatus": "OK"
-    },
-    {
-      "team": "Cincinnati Bengals",
-      "gameId": "401873031",
-      "url": "https://www.bengals.com/news/postgame-quick-hits-ja-marr-s-injury-jags-defense-beat-joe-burrow-s-big-passing-day",
-      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
-      "starterConfirmed": false,
-      "passages": [],
-      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
-      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
-    },
-    {
-      "team": "Arizona Cardinals",
-      "gameId": "401873024",
-      "url": "https://www.azcardinals.com/news/as-jacoby-brissett-remains-qb1-carson-beck-remains-topic",
-      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
-      "starterConfirmed": false,
-      "passages": [
-        "Carson Beck just had a back spasm flare up on him, and that's why he missed some practice time last week. The rookie quarterback will move around on Tuesday, coach Mike LaFleur said, to see what Beck can do in practice."
-      ],
-      "fetchStatus": "OK"
-    },
-    {
-      "team": "Arizona Cardinals",
-      "gameId": "401873024",
-      "url": "https://www.azcardinals.com/news/cardinals-qb-jacoby-brissett-rich-with-teammate-currency-2026-season",
+      "gameId": "401873073",
+      "url": "https://www.tennesseetitans.com/news/game-inactives-week-10-titans-vs-jaguars",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
@@ -144,8 +144,8 @@
     },
     {
       "team": "Dallas Cowboys",
-      "gameId": "401873024",
-      "url": "https://www.dallascowboys.com/news/balance-on-offense-plays-big-role-for-dak-prescott-cowboys-in-38-21-win-over-eagles",
+      "gameId": "401873073",
+      "url": "https://www.dallascowboys.com/news/dak-prescott-on-loss-to-49ers-we-ve-gotta-be-better",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
@@ -153,8 +153,17 @@
     },
     {
       "team": "Dallas Cowboys",
-      "gameId": "401873024",
-      "url": "https://www.dallascowboys.com/news/mick-shots-feeling-the-brunt-of-all-the-blitzes",
+      "gameId": "401873073",
+      "url": "https://www.dallascowboys.com/news/mailbag-run-the-two-minute-offense-more",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Tampa Bay Buccaneers",
+      "gameId": "401873072",
+      "url": "https://www.buccaneers.com/news/baker-mayfield-next-level-leadership-getting-ball-in-hands-of-chris-godwin-jr-and-more-bucs-blitz",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
@@ -162,26 +171,18 @@
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
-      "team": "Minnesota Vikings",
-      "gameId": "401873030",
-      "url": "https://www.vikings.com/news/lions-injury-report-week-8-2026-nfl-season",
+      "team": "Tampa Bay Buccaneers",
+      "gameId": "401873072",
+      "url": "https://www.buccaneers.com/news/explosive-weapon-tez-johnson-baker-mayfield-progression-more-bucs-blitz",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
-      "fetchStatus": "OK"
-    },
-    {
-      "team": "Minnesota Vikings",
-      "gameId": "401873030",
-      "url": "https://www.vikings.com/news/signing-tight-ends-bryson-nesbit-devin-culp-practice-squad",
-      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
-      "starterConfirmed": false,
-      "passages": [],
-      "fetchStatus": "OK"
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
       "team": "Detroit Lions",
-      "gameId": "401873030",
+      "gameId": "401873072",
       "url": "https://www.detroitlions.com/news/qb-jared-goff-named-detroit-lions-nominee-for-2022-walter-payton-nfl-man-of-the-",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
@@ -191,7 +192,7 @@
     },
     {
       "team": "Detroit Lions",
-      "gameId": "401873030",
+      "gameId": "401873072",
       "url": "https://www.detroitlions.com/news/qb-jared-goff-named-detroit-lions-nominee-for-walter-payton-nfl-man-of-the-year-award-presented-by-nationwide",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
@@ -200,55 +201,38 @@
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
-      "team": "Las Vegas Raiders",
-      "gameId": "401873029",
-      "url": "https://www.raiders.com/news/1976-unsung-hero-john-vella-super-bowl-xi-50th-anniversary",
-      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
-      "starterConfirmed": false,
-      "passages": [],
-      "fetchStatus": "OK"
-    },
-    {
-      "team": "Las Vegas Raiders",
-      "gameId": "401873029",
-      "url": "https://www.raiders.com/news/las-vegas-raiders-week-7-inactives-vs-los-angeles-rams",
-      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
-      "starterConfirmed": false,
-      "passages": [],
-      "fetchStatus": "OK"
-    },
-    {
-      "team": "New York Jets",
-      "gameId": "401873029",
-      "url": "https://www.newyorkjets.com/news/geno-smith-reflecting-on-jets-performance-vs-dolphins-10-25-2026",
-      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
-      "starterConfirmed": false,
-      "passages": [],
-      "fetchStatus": "OK"
-    },
-    {
-      "team": "New York Jets",
-      "gameId": "401873029",
-      "url": "https://www.newyorkjets.com/news/jets-vs-raiders-week-8-nfl-geno-smith-kirk-cousins-10-28-2026",
-      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
-      "starterConfirmed": false,
-      "passages": [],
-      "fetchStatus": "OK"
-    },
-    {
-      "team": "Cleveland Browns",
-      "gameId": "401873027",
-      "url": "https://www.clevelandbrowns.com/news/deshaun-watson-continues-to-take-strides-in-browns-offense-news-notes",
+      "team": "Arizona Cardinals",
+      "gameId": "401873067",
+      "url": "https://www.azcardinals.com/news/for-starters-carson-beck-ready-to-play-first-game-against-rams",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
       "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
-      "publicationWindow": "DATE_UNVERIFIED"
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
-      "team": "Cleveland Browns",
-      "gameId": "401873027",
-      "url": "https://www.clevelandbrowns.com/news/deshaun-watson-expected-to-start-week-2-against-the-buccaneers-news-notes",
+      "team": "Arizona Cardinals",
+      "gameId": "401873067",
+      "url": "https://www.azcardinals.com/news/quarterback-in-flux-after-gardner-minshew-banged-up-arm-injury-carson-beck",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
+    },
+    {
+      "team": "Kansas City Chiefs",
+      "gameId": "401873067",
+      "url": "https://www.chiefs.com/news/chiefs-defeat-falcons-35-13-as-patrick-mahomes-throws-five-touchdowns",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Kansas City Chiefs",
+      "gameId": "401873067",
+      "url": "https://www.chiefs.com/news/week-10-inactive-players-chiefs-vs-falcons",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
@@ -257,19 +241,17 @@
     },
     {
       "team": "Pittsburgh Steelers",
-      "gameId": "401873027",
-      "url": "https://www.steelers.com/news/from-paris-with-fun",
+      "gameId": "401873076",
+      "url": "https://www.steelers.com/news/from-the-press-room-steelers-at-bengals-x5307",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
-      "passages": [
-        "Aaron Rodgers and the Steelers are amping up practice ahead of Sunday's game with Lions"
-      ],
+      "passages": [],
       "fetchStatus": "OK"
     },
     {
       "team": "Pittsburgh Steelers",
-      "gameId": "401873027",
-      "url": "https://www.steelers.com/news/from-the-press-room-steelers-at-buccaneers",
+      "gameId": "401873076",
+      "url": "https://www.steelers.com/news/i-m-feeling-good-right-now",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
@@ -277,9 +259,9 @@
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
-      "team": "Atlanta Falcons",
-      "gameId": "401873025",
-      "url": "https://www.atlantafalcons.com/news/falcons-mailbag-how-different-do-falcons-look-in-year-2-of-raheem-morris-michael-penix-jr",
+      "team": "Philadelphia Eagles",
+      "gameId": "401873076",
+      "url": "https://www.philadelphiaeagles.com/news/aaa-official-review-what-did-the-eagles-joe-milton-learn-from-the-qb-s-first-start-giants-nfl-week-9-2026",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
@@ -287,31 +269,38 @@
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
-      "team": "Atlanta Falcons",
-      "gameId": "401873025",
-      "url": "https://www.atlantafalcons.com/news/how-michael-penix-first-17-starts-compare-nfl-quarterbacks",
+      "team": "Philadelphia Eagles",
+      "gameId": "401873076",
+      "url": "https://www.philadelphiaeagles.com/news/eagles-sign-quentin-skinner-2026-week-11",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
       "fetchStatus": "OK"
     },
     {
-      "team": "Tampa Bay Buccaneers",
-      "gameId": "401873025",
-      "url": "https://www.buccaneers.com/news/baker-mayfield-bucs-need-stay-ahead-chains-vs-falcons",
+      "team": "Baltimore Ravens",
+      "gameId": "401873068",
+      "url": "https://www.baltimoreravens.com/news/game-preview-jacoby-brissett-ravens-first-start-week-10-against-chargers-monday-night-football",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Baltimore Ravens",
+      "gameId": "401873068",
+      "url": "https://www.baltimoreravens.com/news/grades-snap-counts-jacoby-brissett-gets-high-marks-after-ravens-debut",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [
-        "\"It's wild,\" said quarterback Baker Mayfield, whose injured right thumb was mostly tested out on the exchange of the ball with his running backs. \"I mean, that was obviously a really, really efficient day for us. Guys up front clearing the lanes out, backs were hitting their tracks, tight ends, receivers, everybody was blocking, so everybody was in",
-        "The Buccaneers brought back rookie RB Barika Kpeenu on Tuesday, signing him to their practice squad and making room by releasing QB Brett Rypien, who was added when Baker Mayfield suffered a thumb injury a month ago",
-        "Tampa Bay Buccaneers Quarterback Baker Mayfield spoke to the media following Wednesday's Week 8 practice. QB Baker Mayfield discussed his recovery, WR Tez Johnson's natural instinct to make plays and keeping the momentum vs. the Atlanta Falcons."
+        "Vega Ioane gets high marks in first start at center. Nnamdi Madubuike keeps building. Lamar Jackson was spectacular before his injury."
       ],
       "fetchStatus": "OK"
     },
     {
-      "team": "Tampa Bay Buccaneers",
-      "gameId": "401873025",
-      "url": "https://www.buccaneers.com/news/baker-mayfield-next-level-leadership-getting-ball-in-hands-of-chris-godwin-jr-and-more-bucs-blitz",
+      "team": "Carolina Panthers",
+      "gameId": "401873068",
+      "url": "https://www.panthers.com/news/ask-the-old-guy-get-back-to-the-work-chuba-hubbard-bryce-young-detroit-sunday-night-football-keep-pounding",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
@@ -319,37 +308,30 @@
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
-      "team": "Indianapolis Colts",
-      "gameId": "401873028",
-      "url": "https://www.colts.com/news/shane-steichen-not-considering-qb-change-pleased-with-colts-effort-in-low-scoring-loss-to-vikings",
-      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
-      "starterConfirmed": false,
-      "passages": [],
-      "fetchStatus": "OK"
-    },
-    {
-      "team": "Indianapolis Colts",
-      "gameId": "401873028",
-      "url": "https://www.colts.com/news/article-series/practice-notebook/",
+      "team": "Carolina Panthers",
+      "gameId": "401873068",
+      "url": "https://www.panthers.com/news/ask-the-old-guy-perfect-way-to-head-into-the-bye-bryce-young-tetairoa-mcmillan-dave-canales-brad-idzik",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
       "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
-      "publicationWindow": "DATE_UNVERIFIED"
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
-      "team": "Jacksonville Jaguars",
-      "gameId": "401873028",
-      "url": "https://www.jaguars.com/news/tuesday-insider-walker-ready-for-the-moment",
+      "team": "New York Jets",
+      "gameId": "401873074",
+      "url": "https://www.newyorkjets.com/news/jets-rookie-qb-cade-klubnik-displayed-grit-in-relief-of-geno-smith-11-15-2026",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
-      "passages": [],
+      "passages": [
+        "Rookie QB Cade Klubnik Makes Professional Debut in Second Half, Relieving Injured Geno Smith"
+      ],
       "fetchStatus": "OK"
     },
     {
-      "team": "Jacksonville Jaguars",
-      "gameId": "401873028",
-      "url": "https://www.jaguars.com/news/in-and-out-2026-week-6-murray-active-brown-and-matiscik-inactive-for-texans-vs-jaguars",
+      "team": "New York Jets",
+      "gameId": "401873074",
+      "url": "https://www.newyorkjets.com/news/geno-smith-outperforming-expectations-jets-11-12-2026",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
@@ -358,7 +340,7 @@
     },
     {
       "team": "Los Angeles Chargers",
-      "gameId": "401873032",
+      "gameId": "401873074",
       "url": "https://www.chargers.com/news/justin-herbert-mvp-vote-odds-2026",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
@@ -368,7 +350,7 @@
     },
     {
       "team": "Los Angeles Chargers",
-      "gameId": "401873032",
+      "gameId": "401873074",
       "url": "https://www.chargers.com/news/justin-herbert-quentin-johnston-touchdown-mike-mcdaniel-2026",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
@@ -377,132 +359,39 @@
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
-      "team": "Los Angeles Rams",
-      "gameId": "401873032",
-      "url": "https://www.therams.com/news/from-the-podium-head-coach-sean-mcvay-quarterback-matthew-stafford-give-run-down-on-rams-balanced-win-over-raiders-press-conference-2026",
+      "team": "Las Vegas Raiders",
+      "gameId": "401873075",
+      "url": "https://www.raiders.com/news/by-the-numbers-raiders-generate-some-positives-despite-negative-outcome-against-seahawks",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
       "fetchStatus": "OK"
     },
     {
-      "team": "Los Angeles Rams",
-      "gameId": "401873032",
-      "url": "https://www.therams.com/news/from-the-podium-head-coach-sean-mcvay-quarterback-matthew-stafford-wide-receiver-puka-nacua-defensive-end-aaron-donald-coordinators-preview-matchup-against-chargers-sofi-stadium-press-conference-2026",
-      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
-      "starterConfirmed": false,
-      "passages": [],
-      "fetchStatus": "OK"
-    },
-    {
-      "team": "Kansas City Chiefs",
-      "gameId": "401873033",
-      "url": "https://www.chiefs.com/news/week-7-inactive-players-chiefs-vs-seahawks",
-      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
-      "starterConfirmed": false,
-      "passages": [],
-      "fetchStatus": "OK"
-    },
-    {
-      "team": "Kansas City Chiefs",
-      "gameId": "401873033",
-      "url": "https://www.chiefs.com/news/week-8-injury-report-chiefs-vs-broncos-2026",
-      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
-      "starterConfirmed": false,
-      "passages": [],
-      "fetchStatus": "OK"
-    },
-    {
-      "team": "Denver Broncos",
-      "gameId": "401873033",
-      "url": "https://www.denverbroncos.com/news/it-starts-with-me-qb-bo-nix-not-satisfied-takes-ownership-of-needed-offensive-improvement",
-      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
-      "starterConfirmed": false,
-      "passages": [],
-      "fetchStatus": "OK"
-    },
-    {
-      "team": "Denver Broncos",
-      "gameId": "401873033",
-      "url": "https://www.denverbroncos.com/news/broncos-sign-wr-eli-pancol-to-practice-squad",
-      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
-      "starterConfirmed": false,
-      "passages": [],
-      "fetchStatus": "OK"
-    },
-    {
-      "team": "New England Patriots",
-      "gameId": "401873034",
-      "url": "https://www.patriots.com/news/after-further-review-drake-maye-and-a-j-brown-film-breakdown-quick-hit-film-notes-from-sunday-s-win-over-the-jets",
-      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
-      "starterConfirmed": false,
-      "passages": [],
-      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
-      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
-    },
-    {
-      "team": "New England Patriots",
-      "gameId": "401873034",
-      "url": "https://www.patriots.com/news/after-further-review-drake-maye-film-breakdown-defense-review-and-quick-hit-film-notes-from-week-7-loss-to-the-bears",
-      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
-      "starterConfirmed": false,
-      "passages": [],
-      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
-      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
-    },
-    {
-      "team": "Miami Dolphins",
-      "gameId": "401873034",
-      "url": "https://www.miamidolphins.com/news/dolphins-make-practice-squad-moves-x4824",
-      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
-      "starterConfirmed": false,
-      "passages": [],
-      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
-      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
-    },
-    {
-      "team": "Miami Dolphins",
-      "gameId": "401873034",
-      "url": "https://www.miamidolphins.com/news/dolphins-make-practice-squad-moves-x6245",
-      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
-      "starterConfirmed": false,
-      "passages": [],
-      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
-      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
-    },
-    {
-      "team": "Philadelphia Eagles",
-      "gameId": "401873035",
-      "url": "https://www.philadelphiaeagles.com/news/makai-lemon-reflects-on-his-first-career-touchdown-cowboys-nfl-week-7-2026-tanner-mckee",
-      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
-      "starterConfirmed": false,
-      "passages": [],
-      "fetchStatus": "OK"
-    },
-    {
-      "team": "Philadelphia Eagles",
-      "gameId": "401873035",
-      "url": "https://www.philadelphiaeagles.com/news/spadaro-game-preview-vs-cowboys-6-storylines-to-follow-eagles-tanner-mckee-saquon-barkley-dak-prescott-nfl-week-7",
-      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
-      "starterConfirmed": false,
-      "passages": [],
-      "fetchStatus": "OK"
-    },
-    {
-      "team": "Washington Commanders",
-      "gameId": "401873035",
-      "url": "https://www.commanders.com/news/chig-okonkwo-hamstring-injury-jayden-daniels",
+      "team": "Las Vegas Raiders",
+      "gameId": "401873075",
+      "url": "https://www.raiders.com/news/gutierrez-steep-learning-curve-in-first-start-outlines-both-potential-inexperience-of-fernando-mendoza",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [
-        "The wait was worth it, however, as Jayden Daniels was also making his home debut after missing two weeks with an elbow injury."
+        "Head Coach Klint Kubiak details rookie quarterback Fernando Mendoza's first NFL start, discusses the mindset moving forward and provides an injury update on tight end Brock Bowers."
       ],
       "fetchStatus": "OK"
     },
     {
-      "team": "Washington Commanders",
-      "gameId": "401873035",
-      "url": "https://www.commanders.com/news/5-takeaways-from-jayden-daniels-press-conference",
+      "team": "Denver Broncos",
+      "gameId": "401873075",
+      "url": "https://www.denverbroncos.com/news/injuryreport/",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "DATE_UNVERIFIED"
+    },
+    {
+      "team": "Jacksonville Jaguars",
+      "gameId": "401873069",
+      "url": "https://www.jaguars.com/news/in-and-out-2026-week-10-davis-bates-inactive-for-jaguars-vs-titans",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
@@ -510,18 +399,57 @@
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
-      "team": "Chicago Bears",
-      "gameId": "401873036",
-      "url": "https://www.chicagobears.com/news/bears-embrace-stepping-into-national-spotlight",
+      "team": "Jacksonville Jaguars",
+      "gameId": "401873069",
+      "url": "https://www.jaguars.com/news/jaguars-injury-report-update-hainsey-cleared-for-week-10",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
+    },
+    {
+      "team": "New York Giants",
+      "gameId": "401873069",
+      "url": "https://www.giants.com/news/j-j-mccarthy-trade-details-minnesota-vikings-quarterback-2027-nfl-draft-michigan-wolverines",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
+    },
+    {
+      "team": "New York Giants",
+      "gameId": "401873069",
+      "url": "https://www.giants.com/news/giants-sign-qb-jake-haener-to-active-roster-elevate-2-from-practice-squad-braxton-berrios-malik-harrison-tennessee-titans-week-2",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
+    },
+    {
+      "team": "Minnesota Vikings",
+      "gameId": "401873077",
+      "url": "https://www.vikings.com/news/kevin-oconnell-kirk-cousins-prep-lines-packers-week-10",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
       "fetchStatus": "OK"
     },
     {
-      "team": "Chicago Bears",
-      "gameId": "401873036",
-      "url": "https://www.chicagobears.com/news/bears-qb-caleb-williams-practices-in-full-but-game-status-still-uncertain",
+      "team": "Minnesota Vikings",
+      "gameId": "401873077",
+      "url": "https://www.vikings.com/news/signing-safety-danthony-bell-to-practice-squad-2026",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "San Francisco 49ers",
+      "gameId": "401873077",
+      "url": "https://www.49ers.com/news/morning-reports/morning-report-locker-room-reactions-brock-purdy-50-career-starts",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
@@ -529,9 +457,9 @@
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
-      "team": "Seattle Seahawks",
-      "gameId": "401873036",
-      "url": "https://www.seahawks.com/news/sam-darnold-and-offense-have-more-effective-cleaner-showing-in-week-7-win",
+      "team": "San Francisco 49ers",
+      "gameId": "401873077",
+      "url": "https://www.49ers.com/news/49ers-activate-lb-jalen-graham-and-wr-malik-turner-from-practice-squad-other-moves",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],
@@ -539,9 +467,37 @@
       "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
     },
     {
-      "team": "Seattle Seahawks",
-      "gameId": "401873036",
-      "url": "https://www.seahawks.com/news/seahawks-qb-sam-darnold-after-two-interceptions-in-loss-to-broncos-i-ve-got-to-be-better",
+      "team": "Cincinnati Bengals",
+      "gameId": "401873078",
+      "url": "https://www.bengals.com/news/joe-burrow-afc-offensive-player-week-10-2026",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Cincinnati Bengals",
+      "gameId": "401873078",
+      "url": "https://www.bengals.com/news/quick-hits-bengals-prep-for-madrid-joe-burrow-ted-karras-jamarr-chase-tee-higgins-cashius-howell",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "SKIPPED_NOT_RECENT_VERIFIED",
+      "publicationWindow": "OLDER_THAN_SEVEN_DAYS"
+    },
+    {
+      "team": "Washington Commanders",
+      "gameId": "401873078",
+      "url": "https://www.commanders.com/news/jayden-daniels-commanders-comeback-win-giants",
+      "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
+      "starterConfirmed": false,
+      "passages": [],
+      "fetchStatus": "OK"
+    },
+    {
+      "team": "Washington Commanders",
+      "gameId": "401873078",
+      "url": "https://www.commanders.com/news/5-takeaways-from-jayden-daniels-press-conference",
       "status": "UNVERIFIED_PASSAGES_FOR_HUMAN_REVIEW",
       "starterConfirmed": false,
       "passages": [],

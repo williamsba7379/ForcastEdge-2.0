@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-29T08:36:07.838359+00:00",
+  "checkedAt": "2026-11-18T17:14:41.993865+00:00",
   "status": "DIAGNOSTIC_ONLY_NOT_STARTER_CONFIRMATION",
   "teamsChecked": 32,
   "teamsWithQB1": 32,
@@ -10,7 +10,7 @@
       "team": "Arizona Cardinals",
       "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/22/depthcharts",
       "qb1Candidates": [
-        "Jacoby Brissett"
+        "Carson Beck"
       ],
       "topLevelKeys": [
         "depthchart",
@@ -77,13 +77,13 @@
               },
               "athleteSample": [
                 {
-                  "displayName": "Jacoby Brissett",
-                  "guid": "efcb42e5-0bef-62d1-b58b-dbc17fde2479",
-                  "id": "2578570",
+                  "displayName": "Carson Beck",
+                  "guid": "baca19aa-8fab-3a5e-9bb0-6cfcbcbc1b57",
+                  "id": "4430841",
                   "injuries": [],
                   "links": [
                     {
-                      "href": "https://www.espn.com/nfl/player/_/id/2578570/jacoby-brissett",
+                      "href": "https://www.espn.com/nfl/player/_/id/4430841/carson-beck",
                       "isExternal": false,
                       "isPremium": false,
                       "language": "en-US",
@@ -96,7 +96,7 @@
                       "text": "Player Card"
                     },
                     {
-                      "href": "https://www.espn.com/nfl/player/stats/_/id/2578570/jacoby-brissett",
+                      "href": "https://www.espn.com/nfl/player/stats/_/id/4430841/carson-beck",
                       "isExternal": false,
                       "isPremium": false,
                       "language": "en-US",
@@ -109,7 +109,7 @@
                       "text": "Stats"
                     },
                     {
-                      "href": "sportscenter://x-callback-url/showClubhouse?uid=s:20~l:28~a:2578570&section=stats",
+                      "href": "sportscenter://x-callback-url/showClubhouse?uid=s:20~l:28~a:4430841&section=stats",
                       "isExternal": false,
                       "isPremium": false,
                       "language": "en-US",
@@ -123,7 +123,7 @@
                       "text": "Stats"
                     },
                     {
-                      "href": "https://www.espn.com/nfl/player/splits/_/id/2578570/jacoby-brissett",
+                      "href": "https://www.espn.com/nfl/player/splits/_/id/4430841/carson-beck",
                       "isExternal": false,
                       "isPremium": false,
                       "language": "en-US",
@@ -136,7 +136,7 @@
                       "text": "Splits"
                     },
                     {
-                      "href": "https://www.espn.com/nfl/player/gamelog/_/id/2578570/jacoby-brissett",
+                      "href": "https://www.espn.com/nfl/player/gamelog/_/id/4430841/carson-beck",
                       "isExternal": false,
                       "isPremium": false,
                       "language": "en-US",
@@ -149,7 +149,7 @@
                       "text": "Game Log"
                     },
                     {
-                      "href": "sportscenter://x-callback-url/showClubhouse?uid=s:20~l:28~a:2578570&section=gamelog",
+                      "href": "sportscenter://x-callback-url/showClubhouse?uid=s:20~l:28~a:4430841&section=gamelog",
                       "isExternal": false,
                       "isPremium": false,
                       "language": "en-US",
@@ -163,7 +163,7 @@
                       "text": "Game Log"
                     },
                     {
-                      "href": "https://www.espn.com/nfl/player/news/_/id/2578570/jacoby-brissett",
+                      "href": "https://www.espn.com/nfl/player/news/_/id/4430841/carson-beck",
                       "isExternal": false,
                       "isPremium": false,
                       "language": "en-US",
@@ -176,7 +176,7 @@
                       "text": "News"
                     },
                     {
-                      "href": "sportscenter://x-callback-url/showClubhouse?uid=s:20~l:28~a:2578570&section=news",
+                      "href": "sportscenter://x-callback-url/showClubhouse?uid=s:20~l:28~a:4430841&section=news",
                       "isExternal": false,
                       "isPremium": false,
                       "language": "en-US",
@@ -190,7 +190,7 @@
                       "text": "News"
                     },
                     {
-                      "href": "https://www.espn.com/nfl/player/bio/_/id/2578570/jacoby-brissett",
+                      "href": "https://www.espn.com/nfl/player/bio/_/id/4430841/carson-beck",
                       "isExternal": false,
                       "isPremium": false,
                       "language": "en-US",
@@ -203,7 +203,7 @@
                       "text": "Bio"
                     },
                     {
-                      "href": "sportscenter://x-callback-url/showClubhouse?uid=s:20~l:28~a:2578570&section=bio",
+                      "href": "sportscenter://x-callback-url/showClubhouse?uid=s:20~l:28~a:4430841&section=bio",
                       "isExternal": false,
                       "isPremium": false,
                       "language": "en-US",
@@ -217,7 +217,7 @@
                       "text": "Bio"
                     },
                     {
-                      "href": "https://www.espn.com/nfl/player/_/id/2578570/jacoby-brissett",
+                      "href": "https://www.espn.com/nfl/player/_/id/4430841/carson-beck",
                       "isExternal": false,
                       "isPremium": false,
                       "language": "en-US",
@@ -230,7 +230,7 @@
                       "text": "Overview"
                     },
                     {
-                      "href": "sportscenter://x-callback-url/showClubhouse?uid=s:20~l:28~a:2578570",
+                      "href": "sportscenter://x-callback-url/showClubhouse?uid=s:20~l:28~a:4430841",
                       "isExternal": false,
                       "isPremium": false,
                       "language": "en-US",
@@ -244,8 +244,8 @@
                       "text": "Overview"
                     }
                   ],
-                  "shortName": "J. Brissett",
-                  "uid": "s:20~l:28~a:2578570"
+                  "shortName": "C. Beck",
+                  "uid": "s:20~l:28~a:4430841"
                 }
               ]
             }
@@ -504,7 +504,7 @@
       "team": "Baltimore Ravens",
       "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/33/depthcharts",
       "qb1Candidates": [
-        "Lamar Jackson"
+        "Jacoby Brissett"
       ],
       "topLevelKeys": [
         "depthchart",
@@ -571,26 +571,13 @@
               },
               "athleteSample": [
                 {
-                  "displayName": "Lamar Jackson",
-                  "guid": "7d76fbb1-1c5e-d9f4-954f-cad43f720ae2",
-                  "id": "3916387",
-                  "injuries": [
-                    {
-                      "date": "2026-10-28T21:40Z",
-                      "longComment": "Jackson, who hasn't played since Week 4, was able to practice in a limited fashion last week, so his upgrade to full participation Wednesday is a significant development ahead of Sunday's game against the Bills. Assuming he's able to maintain that level of activity Thursday and Friday, Jackson has a chance to approach Week 8 action minus an injury designation.",
-                      "shortComment": "Jackson (ankle) was listed as a full participant in Wednesday's practice.",
-                      "status": "Questionable",
-                      "type": {
-                        "abbreviation": "Q",
-                        "description": "questionable",
-                        "id": "2",
-                        "name": "INJURY_STATUS_QUESTIONABLE"
-                      }
-                    }
-                  ],
+                  "displayName": "Jacoby Brissett",
+                  "guid": "efcb42e5-0bef-62d1-b58b-dbc17fde2479",
+                  "id": "2578570",
+                  "injuries": [],
                   "links": [
                     {
-                      "href": "https://www.espn.com/nfl/player/_/id/3916387/lamar-jackson",
+                      "href": "https://www.espn.com/nfl/player/_/id/2578570/jacoby-brissett",
                       "isExternal": false,
                       "isPremium": false,
                       "language": "en-US",
@@ -603,7 +590,7 @@
                       "text": "Player Card"
                     },
                     {
-                      "href": "https://www.espn.com/nfl/player/stats/_/id/3916387/lamar-jackson",
+                      "href": "https://www.espn.com/nfl/player/stats/_/id/2578570/jacoby-brissett",
                       "isExternal": false,
                       "isPremium": false,
                       "language": "en-US",
@@ -616,7 +603,7 @@
                       "text": "Stats"
                     },
                     {
-                      "href": "sportscenter://x-callback-url/showClubhouse?uid=s:20~l:28~a:3916387&section=stats",
+                      "href": "sportscenter://x-callback-url/showClubhouse?uid=s:20~l:28~a:2578570&section=stats",
                       "isExternal": false,
                       "isPremium": false,
                       "language": "en-US",
@@ -630,7 +617,7 @@
                       "text": "Stats"
                     },
                     {
-                      "href": "https://www.espn.com/nfl/player/splits/_/id/3916387/lamar-jackson",
+                      "href": "https://www.espn.com/nfl/player/splits/_/id/2578570/jacoby-brissett",
                       "isExternal": false,
                       "isPremium": false,
                       "language": "en-US",
@@ -643,7 +630,7 @@
                       "text": "Splits"
                     },
                     {
-                      "href": "https://www.espn.com/nfl/player/gamelog/_/id/3916387/lamar-jackson",
+                      "href": "https://www.espn.com/nfl/player/gamelog/_/id/2578570/jacoby-brissett",
                       "isExternal": false,
                       "isPremium": false,
                       "language": "en-US",
@@ -656,7 +643,7 @@
                       "text": "Game Log"
                     },
                     {
-                      "href": "sportscenter://x-callback-url/showClubhouse?uid=s:20~l:28~a:3916387&section=gamelog",
+                      "href": "sportscenter://x-callback-url/showClubhouse?uid=s:20~l:28~a:2578570&section=gamelog",
                       "isExternal": false,
                       "isPremium": false,
                       "language": "en-US",
@@ -670,7 +657,7 @@
                       "text": "Game Log"
                     },
                     {
-                      "href": "https://www.espn.com/nfl/player/news/_/id/3916387/lamar-jackson",
+                      "href": "https://www.espn.com/nfl/player/news/_/id/2578570/jacoby-brissett",
                       "isExternal": false,
                       "isPremium": false,
                       "language": "en-US",
@@ -683,7 +670,7 @@
                       "text": "News"
                     },
                     {
-                      "href": "sportscenter://x-callback-url/showClubhouse?uid=s:20~l:28~a:3916387&section=news",
+                      "href": "sportscenter://x-callback-url/showClubhouse?uid=s:20~l:28~a:2578570&section=news",
                       "isExternal": false,
                       "isPremium": false,
                       "language": "en-US",
@@ -697,7 +684,7 @@
                       "text": "News"
                     },
                     {
-                      "href": "https://www.espn.com/nfl/player/bio/_/id/3916387/lamar-jackson",
+                      "href": "https://www.espn.com/nfl/player/bio/_/id/2578570/jacoby-brissett",
                       "isExternal": false,
                       "isPremium": false,
                       "language": "en-US",
@@ -710,7 +697,7 @@
                       "text": "Bio"
                     },
                     {
-                      "href": "sportscenter://x-callback-url/showClubhouse?uid=s:20~l:28~a:3916387&section=bio",
+                      "href": "sportscenter://x-callback-url/showClubhouse?uid=s:20~l:28~a:2578570&section=bio",
                       "isExternal": false,
                       "isPremium": false,
                       "language": "en-US",
@@ -724,7 +711,7 @@
                       "text": "Bio"
                     },
                     {
-                      "href": "https://www.espn.com/nfl/player/_/id/3916387/lamar-jackson",
+                      "href": "https://www.espn.com/nfl/player/_/id/2578570/jacoby-brissett",
                       "isExternal": false,
                       "isPremium": false,
                       "language": "en-US",
@@ -737,7 +724,7 @@
                       "text": "Overview"
                     },
                     {
-                      "href": "sportscenter://x-callback-url/showClubhouse?uid=s:20~l:28~a:3916387",
+                      "href": "sportscenter://x-callback-url/showClubhouse?uid=s:20~l:28~a:2578570",
                       "isExternal": false,
                       "isPremium": false,
                       "language": "en-US",
@@ -751,8 +738,8 @@
                       "text": "Overview"
                     }
                   ],
-                  "shortName": "L. Jackson",
-                  "uid": "s:20~l:28~a:3916387"
+                  "shortName": "J. Brissett",
+                  "uid": "s:20~l:28~a:2578570"
                 }
               ]
             }

@@ -1,9 +1,9 @@
 {
-  "retrievedAt": "2026-10-29T08:36:07.782969+00:00",
+  "retrievedAt": "2026-11-18T17:14:41.936242+00:00",
   "status": "DEPTH_CHART_CANDIDATES_ONLY",
   "teams": {
     "Arizona Cardinals": {
-      "qb1Candidate": "Jacoby Brissett",
+      "qb1Candidate": "Carson Beck",
       "candidateCount": 1,
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/22/depthcharts",
       "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
@@ -17,7 +17,7 @@
       "note": "QB1 is the first listed quarterback when ESPN omits rank; not a confirmed game starter."
     },
     "Baltimore Ravens": {
-      "qb1Candidate": "Lamar Jackson",
+      "qb1Candidate": "Jacoby Brissett",
       "candidateCount": 1,
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/33/depthcharts",
       "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
@@ -115,7 +115,7 @@
       "note": "QB1 is the first listed quarterback when ESPN omits rank; not a confirmed game starter."
     },
     "Las Vegas Raiders": {
-      "qb1Candidate": "Kirk Cousins",
+      "qb1Candidate": "Fernando Mendoza",
       "candidateCount": 1,
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/13/depthcharts",
       "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
@@ -136,14 +136,14 @@
       "note": "QB1 is the first listed quarterback when ESPN omits rank; not a confirmed game starter."
     },
     "Miami Dolphins": {
-      "qb1Candidate": "Malik Willis",
+      "qb1Candidate": "Kyle McCord",
       "candidateCount": 1,
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/15/depthcharts",
       "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
       "note": "QB1 is the first listed quarterback when ESPN omits rank; not a confirmed game starter."
     },
     "Minnesota Vikings": {
-      "qb1Candidate": "Kyler Murray",
+      "qb1Candidate": "Kirk Cousins",
       "candidateCount": 1,
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/16/depthcharts",
       "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
@@ -178,7 +178,7 @@
       "note": "QB1 is the first listed quarterback when ESPN omits rank; not a confirmed game starter."
     },
     "Philadelphia Eagles": {
-      "qb1Candidate": "Tanner McKee",
+      "qb1Candidate": "Joe Milton",
       "candidateCount": 1,
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/21/depthcharts",
       "verification": "DEPTH_CHART_ONLY_NOT_CONFIRMED",
