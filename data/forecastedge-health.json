@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-18T12:12:22.205169+00:00",
+  "checkedAt": "2026-11-18T20:52:25.701793+00:00",
   "checks": [
     {
       "name": "NFL scoreboard",
@@ -7,12 +7,12 @@
       "cadenceHours": 3,
       "staleAfterHours": 9,
       "latestConclusion": "success",
-      "latestRunUrl": "https://github.com/williamsba7379/ForcastEdge-2.0/actions/runs/44296045423",
+      "latestRunUrl": "https://github.com/williamsba7379/ForcastEdge-2.0/actions/runs/44391266080",
       "latestRunStatus": "completed",
-      "lastSuccessAt": "2026-11-18T11:35:15Z",
-      "ageHours": 0.6,
+      "lastSuccessAt": "2026-11-18T20:27:44Z",
+      "ageHours": 0.4,
       "status": "healthy",
-      "reason": "Last successful run 0.6 hours ago."
+      "reason": "Last successful run 0.4 hours ago."
     },
     {
       "name": "NFL schedule",
@@ -20,12 +20,12 @@
       "cadenceHours": 24,
       "staleAfterHours": 48,
       "latestConclusion": "success",
-      "latestRunUrl": "https://github.com/williamsba7379/ForcastEdge-2.0/actions/runs/44156777268",
+      "latestRunUrl": "https://github.com/williamsba7379/ForcastEdge-2.0/actions/runs/44375277462",
       "latestRunStatus": "completed",
-      "lastSuccessAt": "2026-11-17T19:16:19Z",
-      "ageHours": 16.9,
+      "lastSuccessAt": "2026-11-18T18:57:21Z",
+      "ageHours": 1.9,
       "status": "healthy",
-      "reason": "Last successful run 16.9 hours ago."
+      "reason": "Last successful run 1.9 hours ago."
     },
     {
       "name": "Weekly prediction draft",
@@ -33,12 +33,12 @@
       "cadenceHours": 168,
       "staleAfterHours": 192,
       "latestConclusion": "success",
-      "latestRunUrl": "https://github.com/williamsba7379/ForcastEdge-2.0/actions/runs/43049758072",
+      "latestRunUrl": "https://github.com/williamsba7379/ForcastEdge-2.0/actions/runs/44339145141",
       "latestRunStatus": "completed",
-      "lastSuccessAt": "2026-11-11T15:34:46Z",
-      "ageHours": 164.6,
+      "lastSuccessAt": "2026-11-18T15:44:40Z",
+      "ageHours": 5.1,
       "status": "healthy",
-      "reason": "Last successful run 164.6 hours ago."
+      "reason": "Last successful run 5.1 hours ago."
     }
   ],
   "note": "Workflow run checks, not a guarantee that published content is current."
