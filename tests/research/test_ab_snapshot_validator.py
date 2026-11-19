@@ -96,5 +96,58 @@ class ValidatorTests(unittest.TestCase):
         p, r, s = fixture()
         self.assertIn("E016_ARTIFACT_INVALID",run(p,r,s,{"artifactSha256":"0"*64})["errors"])
 
+
+
+class AdversarialTests(unittest.TestCase):
+    def test_before_cutoff_one_ms(self):
+        p,r,s=fixture();p["responses"][0]["responseCompletedUtc"]="2026-10-28T14:59:59.999Z"
+        self.assertTrue(run(p,r,s)["passed"])
+    def test_started_after_completion(self):
+        p,r,s=fixture();p["responses"][0]["requestStartedUtc"]="2026-10-28T15:00:00.000Z"
+        self.assertIn("E007_TIME_CONFLICT",run(p,r,s)["errors"])
+    def test_unverified_schedule_digest(self):
+        p,r,s=fixture();p["scheduleSha256"]="0"*64
+        self.assertIn("E014_SCHEDULE_INVALID",run(p,r,s)["errors"])
+    def test_duplicate_schedule_game(self):
+        import json
+        p,r,s=fixture();d=json.loads(s);d["events"].append(copy.deepcopy(d["events"][0]))
+        s=canonical(d);p["scheduleSha256"]=digest(s)
+        self.assertIn("E010_GAME_DUPLICATE",run(p,r,s)["errors"])
+    def test_pending_excluded(self):
+        import json
+        p,r,s=fixture();d=json.loads(s)
+        d["events"].append({"id":"synthetic-pending","homeTeamId":"C","awayTeamId":"D","kickoffUtc":"2026-10-29T00:00:00.000Z","state":"PENDING"})
+        s=canonical(d);p["scheduleSha256"]=digest(s);p["excludedGameIds"]=["synthetic-pending"]
+        self.assertTrue(run(p,r,s)["passed"])
+    def test_pending_included(self):
+        import json
+        p,r,s=fixture();d=json.loads(s);d["events"][0]["state"]="PENDING"
+        s=canonical(d);p["scheduleSha256"]=digest(s)
+        self.assertIn("E013_COVERAGE_UNEXPECTED",run(p,r,s)["errors"])
+    def test_untrusted_source_url(self):
+        p,r,s=fixture();p["responses"][0]["url"]="https://site.api.espn.com"
+        self.assertIn("E018_ISOLATION_VIOLATION",run(p,r,s)["errors"])
+    def test_noncanonical_payload(self):
+        import json
+        p,r,s=fixture();raw=json.dumps(p,indent=2).encode()
+        a={"capturePayloadSha256":digest(raw),"scheduleSha256":digest(s),"kind":"SYNTHETIC_TEST_ONLY","proof":"SYNTHETIC_VALID","timingClassification":"SYNTHETIC_VERIFIED"}
+        self.assertIn("E002_CANONICAL_INVALID",validate(raw,r,s,a)["errors"])
+    def test_duplicate_json_key(self):
+        p,r,s=fixture();raw=canonical(p).replace(b'"freezeDate":',b'"freezeDate":"2026-10-28","freezeDate":',1)
+        a={"capturePayloadSha256":digest(raw),"scheduleSha256":digest(s),"kind":"SYNTHETIC_TEST_ONLY","proof":"SYNTHETIC_VALID","timingClassification":"SYNTHETIC_VERIFIED"}
+        self.assertIn("E001_SCHEMA_INVALID",validate(raw,r,s,a)["errors"])
+    def test_malformed_timestamp(self):
+        p,r,s=fixture();p["responses"][0]["responseCompletedUtc"]="2026-10-28T15:00:00Z"
+        self.assertIn("E007_TIME_CONFLICT",run(p,r,s)["errors"])
+    def test_conflicting_source_score(self):
+        import json
+        p,r,s=fixture();d=json.loads(r["r1"]);d["events"][0]["competitions"][0]["competitors"][0]["score"]=27
+        r["r1"]=canonical(d);p["responses"][0]["sha256"]=digest(r["r1"]);p["responses"][0]["byteLength"]=len(r["r1"])
+        self.assertIn("E011_GAME_CONFLICT",run(p,r,s)["errors"])
+    def test_artifact_wrong_bytes(self):
+        p,r,s=fixture();raw=canonical(p)
+        a={"capturePayloadSha256":digest(raw),"scheduleSha256":digest(s),"kind":"SYNTHETIC_TEST_ONLY","proof":"SYNTHETIC_VALID","timingClassification":"SYNTHETIC_VERIFIED","artifactSha256":digest(b"expected")}
+        self.assertIn("E016_ARTIFACT_INVALID",validate(raw,r,s,a,b"actual")["errors"])
+
 if __name__ == "__main__":
     unittest.main()
