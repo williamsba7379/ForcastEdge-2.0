@@ -274,5 +274,48 @@ class P0SecurityTests(unittest.TestCase):
         p,r,s=fixture();p["responses"][0]["url"]="synthetic://"
         self.assertFalse(run(p,r,s)["passed"])
 
+
+class P0BoundedAndNestedTests(unittest.TestCase):
+    def test_nested_source_status_wrong_type(self):
+        import json
+        p,r,s=fixture();d=json.loads(r["r1"]);d["events"][0]["status"]=[]
+        r["r1"]=canonical(d);p["responses"][0]["sha256"]=digest(r["r1"]);p["responses"][0]["byteLength"]=len(r["r1"])
+        self.assertIn("E001_SCHEMA_INVALID",run(p,r,s)["errors"])
+
+    def test_unhashable_excluded_id(self):
+        p,r,s=fixture();p["excludedGameIds"]=[[]]
+        self.assertIn("E001_SCHEMA_INVALID",run(p,r,s)["errors"])
+
+    def test_unhashable_game_response_id(self):
+        p,r,s=fixture();p["games"][0]["responseId"]=[]
+        self.assertIn("E001_SCHEMA_INVALID",run(p,r,s)["errors"])
+
+    def test_oversized_payload(self):
+        p,r,s=fixture();p["extra"]="x"*1_048_576
+        self.assertIn("E001_SCHEMA_INVALID",run(p,r,s)["errors"])
+
+    def test_deep_payload(self):
+        p,r,s=fixture();x=0
+        for _ in range(100): x=[x]
+        p["extra"]=x
+        self.assertIn("E001_SCHEMA_INVALID",run(p,r,s)["errors"])
+
+    def test_deep_raw_json_over_recursion_limit(self):
+        p,r,s=fixture()
+        raw=b"["*1100+b"0"+b"]"*1100
+        self.assertIn("E001_SCHEMA_INVALID",validate(raw,r,s,{})["errors"])
+
+    def test_oversized_response(self):
+        p,r,s=fixture();r["r1"]=b"x"*1_048_577
+        self.assertIn("E001_SCHEMA_INVALID",run(p,r,s)["errors"])
+
+    def test_oversized_schedule(self):
+        p,r,s=fixture();s=b"x"*1_048_577
+        self.assertIn("E001_SCHEMA_INVALID",run(p,r,s)["errors"])
+
+    def test_oversized_artifact(self):
+        p,r,s=fixture();raw=canonical(p)
+        self.assertIn("E016_ARTIFACT_INVALID",validate(raw,r,s,{},b"x"*1_048_577)["errors"])
+
 if __name__ == "__main__":
     unittest.main()
