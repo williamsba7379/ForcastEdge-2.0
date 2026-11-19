@@ -194,5 +194,85 @@ class EvidenceGapTests(unittest.TestCase):
         p,r,s=fixture()
         self.assertIn("E016_ARTIFACT_INVALID",run(p,r,s,{"retentionProof":"unverified-external-claim"})["errors"])
 
+
+class P0SecurityTests(unittest.TestCase):
+    """Offline synthetic negative fixtures; no external sources."""
+    def attest(self,p,s):
+        raw=canonical(p)
+        seal_time=p["cutoffUtc"]
+        return {"capturePayloadSha256":digest(raw),"scheduleSha256":digest(s),
+                "kind":"SYNTHETIC_TEST_ONLY","proof":"SYNTHETIC_VALID",
+                "timingClassification":"SYNTHETIC_VERIFIED",
+                "syntheticSeal":{"sealedAtUtc":seal_time,"bindingSha256":digest(canonical({
+                    "capturePayloadSha256":digest(raw),"scheduleSha256":digest(s),
+                    "sealedAtUtc":seal_time,"kind":"SYNTHETIC_TEST_ONLY"}))}}
+
+    def test_truncated_json(self):
+        p,r,s=fixture()
+        self.assertIn("E001_SCHEMA_INVALID",validate(canonical(p)[:-1],r,s,{})["errors"])
+
+    def test_invalid_utf8(self):
+        p,r,s=fixture()
+        self.assertIn("E001_SCHEMA_INVALID",validate(b"\\xff",r,s,{})["errors"])
+
+    def test_json_nan(self):
+        p,r,s=fixture()
+        self.assertIn("E001_SCHEMA_INVALID",validate(b'{"value":NaN}',r,s,{})["errors"])
+
+    def test_payload_games_wrong_type(self):
+        p,r,s=fixture();p["games"]=None
+        self.assertIn("E001_SCHEMA_INVALID",run(p,r,s)["errors"])
+
+    def test_payload_responses_wrong_type(self):
+        p,r,s=fixture();p["responses"]=None
+        self.assertIn("E001_SCHEMA_INVALID",run(p,r,s)["errors"])
+
+    def test_response_url_wrong_type(self):
+        p,r,s=fixture();p["responses"][0]["url"]=None
+        self.assertIn("E001_SCHEMA_INVALID",run(p,r,s)["errors"])
+
+    def test_response_id_unhashable(self):
+        p,r,s=fixture();p["responses"][0]["responseId"]=[]
+        self.assertIn("E001_SCHEMA_INVALID",run(p,r,s)["errors"])
+
+    def test_attestation_wrong_type(self):
+        p,r,s=fixture()
+        self.assertIn("E001_SCHEMA_INVALID",validate(canonical(p),r,s,[])["errors"])
+
+    def test_synthetic_seal_wrong_type(self):
+        p,r,s=fixture()
+        self.assertIn("E001_SCHEMA_INVALID",run(p,r,s,{"syntheticSeal":[]})["errors"])
+
+    def test_schedule_events_wrong_type(self):
+        p,r,s=fixture();s=canonical({"events":None})
+        p["scheduleSha256"]=digest(s);p["scheduleCapture"]["responseSha256"]=digest(s)
+        self.assertIn("E001_SCHEMA_INVALID",run(p,r,s)["errors"])
+
+    def test_source_events_wrong_type(self):
+        p,r,s=fixture();r["r1"]=canonical({"events":None})
+        p["responses"][0]["sha256"]=digest(r["r1"])
+        p["responses"][0]["byteLength"]=len(r["r1"])
+        self.assertIn("E001_SCHEMA_INVALID",run(p,r,s)["errors"])
+
+    def test_source_file_scheme_rejected(self):
+        p,r,s=fixture();p["responses"][0]["url"]="file:///tmp/synthetic.json"
+        self.assertIn("E018_ISOLATION_VIOLATION",run(p,r,s)["errors"])
+
+    def test_source_data_scheme_rejected(self):
+        p,r,s=fixture();p["responses"][0]["url"]="data:application/json,{}"
+        self.assertIn("E018_ISOLATION_VIOLATION",run(p,r,s)["errors"])
+
+    def test_source_https_scheme_rejected(self):
+        p,r,s=fixture();p["responses"][0]["url"]="https://example.invalid/synthetic"
+        self.assertIn("E018_ISOLATION_VIOLATION",run(p,r,s)["errors"])
+
+    def test_source_url_missing(self):
+        p,r,s=fixture();del p["responses"][0]["url"]
+        self.assertIn("E001_SCHEMA_INVALID",run(p,r,s)["errors"])
+
+    def test_source_url_synthetic_prefix_only(self):
+        p,r,s=fixture();p["responses"][0]["url"]="synthetic://"
+        self.assertFalse(run(p,r,s)["passed"])
+
 if __name__ == "__main__":
     unittest.main()
