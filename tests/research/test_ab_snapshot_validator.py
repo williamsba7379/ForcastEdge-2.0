@@ -382,7 +382,7 @@ class RFC8785RestrictedSubsetTests(unittest.TestCase):
         self.assertEqual(canonical({"x":"\b\t\n\f\r\x0f"}), b'{"x":"\\b\\t\\n\\f\\r\\u000f"}')
 
     def test_rfc_literal_and_slash_serialization(self):
-        self.assertEqual(canonical({"x":[None, True, False, "/", "\\", "\""]}), b'{"x":[null,true,false,"/","\\\\","\\""]}')
+        self.assertEqual(canonical({"x":[None, True, False, "/", "\\", "\""]}), b'{"x":[null,true,false,"/","\\\\","\\\""]}')
 
     def test_rfc_recursive_sorting_and_array_order(self):
         self.assertEqual(canonical({"z":[{"b":2,"a":1},{"d":4,"c":3}],"a":0}),
