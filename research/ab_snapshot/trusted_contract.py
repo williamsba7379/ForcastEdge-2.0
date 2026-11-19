@@ -39,7 +39,9 @@ def verify(envelope_bytes, payload_bytes, schedule_bytes, trusted_keys, seen_cap
             return _fail('E101_INPUT_INVALID')
         if not all(HEX.fullmatch(e[k]) for k in ('payloadSha256','scheduleSha256')):
             return _fail('E101_INPUT_INVALID')
-        if not re.fullmatch(r'[A-Za-z0-9_-]{8,80}',e['captureId']) or not re.fullmatch(r'[A-Za-z0-9_.:/-]{1,256}',e['sourceIdentity']):
+        if (not re.fullmatch(r'[A-Za-z0-9_-]{8,80}',e['captureId'])
+                or not re.fullmatch(r'[A-Za-z0-9_.:/-]{1,256}',e['sourceIdentity'])
+                or not re.fullmatch(r'[A-Za-z0-9_.-]{1,128}',e['signerKeyId'])):
             return _fail('E101_INPUT_INVALID')
         if not isinstance(trusted_keys,dict) or not isinstance(seen_captures,(set,frozenset)) or not isinstance(expected_context,dict):
             return _fail('E101_INPUT_INVALID')
