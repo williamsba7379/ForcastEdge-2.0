@@ -6,6 +6,7 @@ from dataclasses import dataclass
 from contextlib import closing
 from datetime import datetime
 from pathlib import Path
+from types import MappingProxyType
 from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PublicKey
 
 class TrustStateError(ValueError):
@@ -46,7 +47,7 @@ class SyntheticTrustStore:
             if record.revoked_at is not None:
                 _time(record.revoked_at)
             keys[record.key_id] = record
-        self._keys = keys
+        self._keys = MappingProxyType(keys)
 
     def authorize(self, key_id, purpose, signed_at):
         record = self._keys.get(key_id) if isinstance(key_id, str) else None
