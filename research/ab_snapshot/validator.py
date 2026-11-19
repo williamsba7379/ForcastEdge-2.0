@@ -133,7 +133,8 @@ def validate(payload_bytes, responses, schedule_bytes, attestation, artifact_byt
             if rid not in responses: flag("E004_SOURCE_MISSING"); continue
             raw = responses[rid]
             if digest(raw) != r["sha256"] or len(raw) != r["byteLength"]: flag("E003_SOURCE_HASH_MISMATCH")
-            if not r["url"].startswith("synthetic://"): flag("E018_ISOLATION_VIOLATION")
+            if not isinstance(r["url"], str): flag("E001_SCHEMA_INVALID")
+            elif not r["url"].startswith("synthetic://") or len(r["url"]) <= len("synthetic://"): flag("E018_ISOLATION_VIOLATION")
             start, end = timestamp(r["requestStartedUtc"]), timestamp(r["responseCompletedUtc"])
             if start > end: flag("E007_TIME_CONFLICT")
             if end > limit: flag("E005_CAPTURE_LATE")
