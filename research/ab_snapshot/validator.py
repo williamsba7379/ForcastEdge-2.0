@@ -28,7 +28,22 @@ def canonical(value):
             return
         raise EvidenceError("E002_CANONICAL_INVALID", "value")
     check(value)
-    return json.dumps(value, sort_keys=True, separators=(",", ":"), ensure_ascii=False).encode("utf-8")
+    # Restricted RFC 8785 subset: reject unsafe integers and unsupported floats.
+    def safe(x):
+        if type(x) is int and abs(x) > 9007199254740991:
+            raise EvidenceError("E002_CANONICAL_INVALID", "unsafe_integer")
+        if isinstance(x, list):
+            for y in x: safe(y)
+        if isinstance(x, dict):
+            for y in x.values(): safe(y)
+    safe(value)
+    # JCS sorts property names by UTF-16 code units.
+    def ordered(x):
+        if isinstance(x, dict):
+            return {k: ordered(x[k]) for k in sorted(x, key=lambda k: k.encode("utf-16-be"))}
+        if isinstance(x, list): return [ordered(y) for y in x]
+        return x
+    return json.dumps(ordered(value), sort_keys=False, separators=(",", ":"), ensure_ascii=False).encode("utf-8")
 
 def digest(raw):
     return hashlib.sha256(raw).hexdigest()
@@ -80,9 +95,35 @@ def validate(payload_bytes, responses, schedule_bytes, attestation, artifact_byt
         if attestation.get("kind") != "SYNTHETIC_TEST_ONLY" or attestation.get("proof") != "SYNTHETIC_VALID":
             flag("E017_ATTESTATION_INVALID")
         if attestation.get("timingClassification") != "SYNTHETIC_VERIFIED": flag("E006_TIME_UNVERIFIED")
+        # Digest-bound synthetic seal is a test fixture, NOT real timestamp authentication.
+        seal = attestation.get("syntheticSeal", {})
+        expected_seal = digest(canonical({
+            "capturePayloadSha256": digest(payload_bytes),
+            "scheduleSha256": digest(schedule_bytes),
+            "sealedAtUtc": seal.get("sealedAtUtc"),
+            "kind": "SYNTHETIC_TEST_ONLY"
+        }))
+        if seal.get("bindingSha256") != expected_seal:
+            flag("E017_ATTESTATION_INVALID")
+        else:
+            if timestamp(seal["sealedAtUtc"]) > limit: flag("E005_CAPTURE_LATE")
+        schedule_capture = p.get("scheduleCapture")
+        if not isinstance(schedule_capture, dict):
+            flag("E014_SCHEDULE_INVALID")
+        else:
+            if schedule_capture.get("responseSha256") != digest(schedule_bytes):
+                flag("E014_SCHEDULE_INVALID")
+            try:
+                if timestamp(schedule_capture["completedAtUtc"]) > limit:
+                    flag("E005_CAPTURE_LATE")
+            except (KeyError, EvidenceError):
+                flag("E014_SCHEDULE_INVALID")
         if artifact_bytes is not None and digest(artifact_bytes) != attestation.get("artifactSha256"):
             flag("E016_ARTIFACT_INVALID")
         elif artifact_bytes is None and attestation.get("artifactSha256") is not None:
+            flag("E016_ARTIFACT_INVALID")
+        # An in-memory digest cannot establish external retention or immutability.
+        if attestation.get("retentionProof") not in (None, "SYNTHETIC_TEST_ONLY"):
             flag("E016_ARTIFACT_INVALID")
         response_map = {}
         for r in p["responses"]:
@@ -102,6 +143,24 @@ def validate(payload_bytes, responses, schedule_bytes, attestation, artifact_byt
             gid = str(event["id"])
             if gid in expected: flag("E010_GAME_DUPLICATE")
             expected[gid] = event
+        # Reconcile all retained observations, including unselected responses.
+        observations = {}
+        for rid, raw in responses.items():
+            try:
+                source = parse(raw)
+                for event in source["events"]:
+                    gid = str(event["id"])
+                    comp = event["competitions"][0]["competitors"]
+                    home = next(c for c in comp if c["homeAway"] == "home")
+                    away = next(c for c in comp if c["homeAway"] == "away")
+                    signature = (home["team"]["id"], away["team"]["id"],
+                                 home["score"], away["score"],
+                                 event.get("status", {}).get("type", {}).get("completed"))
+                    if gid in observations and observations[gid] != signature:
+                        flag("E011_GAME_CONFLICT")
+                    observations[gid] = signature
+            except (KeyError, IndexError, TypeError, StopIteration, EvidenceError):
+                flag("E001_SCHEMA_INVALID")
         seen = set()
         for g in p["games"]:
             gid, rid = str(g["gameId"]), g["responseId"]
