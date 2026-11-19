@@ -182,6 +182,14 @@ class EvidenceGapTests(unittest.TestCase):
         second=copy.deepcopy(p["responses"][0]);second["responseId"]="r2";second["sha256"]=digest(r["r2"]);second["byteLength"]=len(r["r2"])
         p["responses"].append(second)
         self.assertIn("E011_GAME_CONFLICT",run(p,r,s)["errors"])
+    def test_unselected_response_duplicate(self):
+        import json
+        p,r,s=fixture()
+        e=json.loads(r["r1"]);e["events"].append(copy.deepcopy(e["events"][0]))
+        r["r2"]=canonical(e)
+        second=copy.deepcopy(p["responses"][0]);second["responseId"]="r2";second["sha256"]=digest(r["r2"]);second["byteLength"]=len(r["r2"])
+        p["responses"].append(second)
+        self.assertIn("E010_GAME_DUPLICATE",run(p,r,s)["errors"])
     def test_unsupported_retention_proof(self):
         p,r,s=fixture()
         self.assertIn("E016_ARTIFACT_INVALID",run(p,r,s,{"retentionProof":"unverified-external-claim"})["errors"])
