@@ -368,5 +368,62 @@ class P0BoundaryTests(unittest.TestCase):
         self.assertEqual(run(p,r,s),run(p,r,s))
         self.assertEqual(run(p,r,s)['errors'],['E001_SCHEMA_INVALID'])
 
+
+class RFC8785RestrictedSubsetTests(unittest.TestCase):
+    """Normative RFC 8785 sections 3.2.2/3.2.3; unsupported numbers fail closed."""
+    def test_rfc_sorting_example(self):
+        value = {"\u20ac":"Euro Sign", "\r":"Carriage Return", "\ufb33":"Hebrew Letter Dalet With Dagesh",
+                 "1":"One", "\U0001f600":"Emoji: Grinning Face", "\u0080":"Control", "\u00f6":"Latin Small Letter O With Diaeresis"}
+        import json
+        result = json.loads(canonical(value))
+        self.assertEqual(list(result), ["\r", "1", "\u0080", "\u00f6", "\u20ac", "\U0001f600", "\ufb33"])
+
+    def test_rfc_control_character_serialization(self):
+        self.assertEqual(canonical({"x":"\b\t\n\f\r\x0f"}), b'{"x":"\\b\\t\\n\\f\\r\\u000f"}')
+
+    def test_rfc_literal_and_slash_serialization(self):
+        self.assertEqual(canonical({"x":[None, True, False, "/", "\\", "\""]}), b'{"x":[null,true,false,"/","\\\\","\\""]}')
+
+    def test_rfc_recursive_sorting_and_array_order(self):
+        self.assertEqual(canonical({"z":[{"b":2,"a":1},{"d":4,"c":3}],"a":0}),
+                         b'{"a":0,"z":[{"a":1,"b":2},{"c":3,"d":4}]}')
+
+    def test_rfc_unicode_not_normalized(self):
+        self.assertNotEqual(canonical({"x":"\u00e9"}), canonical({"x":"e\u0301"}))
+
+    def test_rfc_reject_lone_surrogate_in_key_and_value(self):
+        from research.ab_snapshot.validator import EvidenceError
+        for value in ({"\ud800":1},{"x":"\udfff"}):
+            with self.subTest(value=repr(value)), self.assertRaises(EvidenceError) as cm:
+                canonical(value)
+            self.assertEqual(cm.exception.code,"E002_CANONICAL_INVALID")
+
+    def test_rfc_reject_duplicate_json_property(self):
+        from research.ab_snapshot.validator import parse, EvidenceError
+        with self.assertRaises(EvidenceError) as cm: parse(b'{"a":1,"a":2}')
+        self.assertEqual(cm.exception.code,"E001_SCHEMA_INVALID")
+
+    def test_rfc_reject_nonfinite_json_numbers(self):
+        from research.ab_snapshot.validator import parse, EvidenceError
+        for raw in (b'{"x":NaN}', b'{"x":Infinity}', b'{"x":-Infinity}'):
+            with self.subTest(raw=raw), self.assertRaises(EvidenceError) as cm: parse(raw)
+            self.assertEqual(cm.exception.code,"E001_SCHEMA_INVALID")
+
+    def test_subset_reject_floats_including_negative_zero(self):
+        from research.ab_snapshot.validator import EvidenceError
+        for number in (4.5, -0.0, 1e30, 1e-27):
+            with self.subTest(number=number), self.assertRaises(EvidenceError) as cm: canonical({"x":number})
+            self.assertEqual(cm.exception.code,"E002_CANONICAL_INVALID")
+
+    def test_subset_reject_unsafe_integer_both_signs(self):
+        from research.ab_snapshot.validator import EvidenceError
+        for number in (9007199254740992,-9007199254740992):
+            with self.subTest(number=number), self.assertRaises(EvidenceError) as cm: canonical({"x":number})
+            self.assertEqual(cm.exception.code,"E002_CANONICAL_INVALID")
+
+    def test_subset_safe_integer_boundary(self):
+        self.assertEqual(canonical({"x":9007199254740991}), b'{"x":9007199254740991}')
+        self.assertEqual(canonical({"x":-9007199254740991}), b'{"x":-9007199254740991}')
+
 if __name__ == "__main__":
     unittest.main()
