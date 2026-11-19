@@ -317,5 +317,56 @@ class P0BoundedAndNestedTests(unittest.TestCase):
         p,r,s=fixture();raw=canonical(p)
         self.assertIn("E016_ARTIFACT_INVALID",validate(raw,r,s,{},b"x"*1_048_577)["errors"])
 
+
+class P0BoundaryTests(unittest.TestCase):
+    def test_parse_exact_size_boundary(self):
+        from research.ab_snapshot.validator import parse, EvidenceError, MAX_BYTES
+        self.assertEqual(len(parse(b'"'+b'x'*(MAX_BYTES-2)+b'"')), MAX_BYTES-2)
+        with self.assertRaises(EvidenceError) as cm:
+            parse(b'"'+b'x'*(MAX_BYTES-1)+b'"')
+        self.assertEqual(cm.exception.code, 'E001_SCHEMA_INVALID')
+
+    def test_parse_exact_depth_boundary(self):
+        from research.ab_snapshot.validator import parse, EvidenceError, MAX_DEPTH
+        self.assertIsNotNone(parse(b'['*MAX_DEPTH+b'0'+b']'*MAX_DEPTH))
+        with self.assertRaises(EvidenceError) as cm:
+            parse(b'['*(MAX_DEPTH+1)+b'0'+b']'*(MAX_DEPTH+1))
+        self.assertEqual(cm.exception.code, 'E001_SCHEMA_INVALID')
+
+    def test_response_count_at_limit_rejected_as_unexpected_not_schema(self):
+        from research.ab_snapshot.validator import MAX_RESPONSES
+        p,r,s=fixture()
+        for i in range(MAX_RESPONSES-1): r['extra'+str(i)]=r['r1']
+        result=run(p,r,s)
+        self.assertFalse(result['passed'])
+        self.assertIn('E013_COVERAGE_UNEXPECTED',result['errors'])
+        self.assertNotIn('E001_SCHEMA_INVALID',result['errors'])
+
+    def test_response_count_over_limit(self):
+        from research.ab_snapshot.validator import MAX_RESPONSES
+        p,r,s=fixture()
+        for i in range(MAX_RESPONSES): r['extra'+str(i)]=r['r1']
+        self.assertEqual(run(p,r,s)['errors'], ['E001_SCHEMA_INVALID'])
+
+    def test_response_dictionary_nonstring_id(self):
+        p,r,s=fixture();r[7]=b'{}'
+        self.assertEqual(run(p,r,s)['errors'], ['E001_SCHEMA_INVALID'])
+
+    def test_response_dictionary_wrong_shape(self):
+        p,r,s=fixture()
+        for value in (None, [], {'r1':None}, {'r1':'not-bytes'}):
+            self.assertEqual(run(p,value,s)['errors'], ['E001_SCHEMA_INVALID'])
+
+    def test_error_order_repeatable(self):
+        p,r,s=fixture();p['responses'][0]['url']='file:///tmp/nope';p['games'][0]['homeScore']=99
+        results=[run(p,r,s) for _ in range(5)]
+        self.assertTrue(all(x==results[0] for x in results))
+        self.assertEqual(results[0]['errors'], sorted(set(results[0]['errors'])))
+
+    def test_oversized_response_deterministic(self):
+        p,r,s=fixture();r['r1']=b'x'*1_048_577
+        self.assertEqual(run(p,r,s),run(p,r,s))
+        self.assertEqual(run(p,r,s)['errors'],['E001_SCHEMA_INVALID'])
+
 if __name__ == "__main__":
     unittest.main()
