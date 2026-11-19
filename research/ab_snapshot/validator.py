@@ -10,6 +10,7 @@ UTC = timezone.utc
 HEX = re.compile(r"^[0-9a-f]{64}$")
 MAX_BYTES = 1_048_576
 MAX_DEPTH = 64
+MAX_RESPONSES = 128
 class EvidenceError(ValueError):
     def __init__(self, code, field):
         self.code, self.field = code, field
@@ -93,7 +94,9 @@ def validate(payload_bytes, responses, schedule_bytes, attestation, artifact_byt
     errors = set()
     def flag(code): errors.add(code)
     try:
-        if not isinstance(responses, dict) or any(not isinstance(raw, (bytes, bytearray)) or len(raw) > MAX_BYTES for raw in responses.values()):
+        if (not isinstance(responses, dict) or len(responses) > MAX_RESPONSES
+                or any(not isinstance(rid, str) or not isinstance(raw, (bytes, bytearray))
+                       or len(raw) > MAX_BYTES for rid, raw in responses.items())):
             raise EvidenceError("E001_SCHEMA_INVALID", "responses")
         if artifact_bytes is not None and (not isinstance(artifact_bytes, (bytes, bytearray)) or len(artifact_bytes) > MAX_BYTES):
             raise EvidenceError("E016_ARTIFACT_INVALID", "artifact_size")
