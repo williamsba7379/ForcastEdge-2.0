@@ -47,7 +47,7 @@ def parse(raw):
         raise EvidenceError("E001_SCHEMA_INVALID", "json") from exc
 
 def timestamp(s):
-    if not isinstance(s, str) or not re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3}Z", s):
+    if not isinstance(s, str) or not re.fullmatch(r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z", s):
         raise EvidenceError("E007_TIME_CONFLICT", "timestamp")
     try: return datetime.fromisoformat(s.replace("Z", "+00:00"))
     except ValueError as exc: raise EvidenceError("E007_TIME_CONFLICT", "timestamp") from exc
