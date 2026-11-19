@@ -173,7 +173,7 @@ class EvidenceGapTests(unittest.TestCase):
         from research.ab_snapshot.validator import EvidenceError
         with self.assertRaises(EvidenceError): canonical({"x":9007199254740992})
     def test_unicode_utf16_key_order(self):
-        self.assertEqual(canonical({"\\U0001f600":1,"\\ue000":2}), '{"😀":1,"":2}'.encode())
+        self.assertEqual(canonical({chr(0x1F600):1,chr(0xE000):2}), '{"😀":1,"":2}'.encode())
     def test_multi_response_conflict(self):
         import json
         p,r,s=fixture()
