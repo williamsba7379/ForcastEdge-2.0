@@ -8,6 +8,8 @@ from zoneinfo import ZoneInfo
 
 UTC = timezone.utc
 HEX = re.compile(r"^[0-9a-f]{64}$")
+MAX_BYTES = 1_048_576
+MAX_DEPTH = 64
 class EvidenceError(ValueError):
     def __init__(self, code, field):
         self.code, self.field = code, field
@@ -49,6 +51,8 @@ def digest(raw):
     return hashlib.sha256(raw).hexdigest()
 
 def parse(raw):
+    if not isinstance(raw, (bytes, bytearray)) or len(raw) > MAX_BYTES:
+        raise EvidenceError("E001_SCHEMA_INVALID", "input_size")
     def pairs(p):
         d = {}
         for k, v in p:
@@ -56,7 +60,17 @@ def parse(raw):
             d[k] = v
         return d
     try:
-        return json.loads(raw, object_pairs_hook=pairs, parse_constant=lambda x: (_ for _ in ()).throw(ValueError(x)))
+        value = json.loads(raw, object_pairs_hook=pairs, parse_constant=lambda x: (_ for _ in ()).throw(ValueError(x)))
+        stack = [(value, 0)]
+        while stack:
+            item, depth = stack.pop()
+            if depth > MAX_DEPTH:
+                raise EvidenceError("E001_SCHEMA_INVALID", "nesting_depth")
+            if isinstance(item, dict):
+                stack.extend((v, depth + 1) for v in item.values())
+            elif isinstance(item, list):
+                stack.extend((v, depth + 1) for v in item)
+        return value
     except EvidenceError: raise
     except (ValueError, UnicodeError, TypeError) as exc:
         raise EvidenceError("E001_SCHEMA_INVALID", "json") from exc
@@ -79,6 +93,10 @@ def validate(payload_bytes, responses, schedule_bytes, attestation, artifact_byt
     errors = set()
     def flag(code): errors.add(code)
     try:
+        if not isinstance(responses, dict) or any(not isinstance(raw, (bytes, bytearray)) or len(raw) > MAX_BYTES for raw in responses.values()):
+            raise EvidenceError("E001_SCHEMA_INVALID", "responses")
+        if artifact_bytes is not None and (not isinstance(artifact_bytes, (bytes, bytearray)) or len(artifact_bytes) > MAX_BYTES):
+            raise EvidenceError("E016_ARTIFACT_INVALID", "artifact_size")
         p = parse(payload_bytes)
         s = parse(schedule_bytes)
         if not isinstance(p, dict) or not isinstance(s, dict): raise EvidenceError("E001_SCHEMA_INVALID", "root")
@@ -204,5 +222,5 @@ def validate(payload_bytes, responses, schedule_bytes, attestation, artifact_byt
         if set(p.get("excludedGameIds", [])) != set(expected)-seen:
             flag("E012_COVERAGE_MISSING")
     except EvidenceError as exc: flag(exc.code)
-    except (KeyError, TypeError, AttributeError, ValueError, IndexError): flag("E001_SCHEMA_INVALID")
+    except (KeyError, TypeError, AttributeError, ValueError, IndexError, RecursionError, OverflowError): flag("E001_SCHEMA_INVALID")
     return {"passed": not errors, "errors": sorted(errors), "syntheticOnly": True}
