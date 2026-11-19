@@ -56,6 +56,10 @@ class VersionedPolicyGate:
         with self._lock:
             if version <= self._version:
                 raise TrustStateError('E304_POLICY_ROLLBACK')
+            if self._store is not None:
+                for key_id, previous in self._store._keys.items():
+                    if previous.revoked_at is not None and key_id in store._keys:
+                        raise TrustStateError('E306_REVOKED_KEY_REUSE')
             self._version, self._store = version, store
 
     def verify(self, required_version, envelope, payload, schedule, registry, context):
