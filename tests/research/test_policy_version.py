@@ -45,8 +45,9 @@ class PolicyVersionTests(unittest.TestCase):
     def test_revocation_does_not_consume_capture(self):
         self.gate.update(*self.manifest(2,'2026-10-01T00:00:00.000Z'))
         self.assertEqual(self.verify(2)['errors'],['E203_KEY_REVOKED'])
-        self.gate.update(*self.manifest(3))
-        self.assertTrue(self.verify(3)['passed'])
+        with self.assertRaises(TrustStateError) as cm: self.gate.update(*self.manifest(3))
+        self.assertEqual(cm.exception.code,'E306_REVOKED_KEY_REUSE')
+        self.assertTrue(self.registry.register('capture_0001','0'*64))
     def test_wrong_root_signature_rejected(self):
         manifest,_=self.manifest(2)
         with self.assertRaises(TrustStateError): self.gate.update(manifest,Ed25519PrivateKey.generate().sign(manifest))
