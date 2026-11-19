@@ -213,7 +213,7 @@ class P0SecurityTests(unittest.TestCase):
 
     def test_invalid_utf8(self):
         p,r,s=fixture()
-        self.assertIn("E001_SCHEMA_INVALID",validate(b"\\xff",r,s,{})["errors"])
+        self.assertIn("E001_SCHEMA_INVALID",validate(bytes([0xff]),r,s,{})["errors"])
 
     def test_json_nan(self):
         p,r,s=fixture()
