@@ -148,8 +148,11 @@ def validate(payload_bytes, responses, schedule_bytes, attestation, artifact_byt
         for rid, raw in responses.items():
             try:
                 source = parse(raw)
+                response_seen = set()
                 for event in source["events"]:
                     gid = str(event["id"])
+                    if gid in response_seen: flag("E010_GAME_DUPLICATE")
+                    response_seen.add(gid)
                     comp = event["competitions"][0]["competitors"]
                     home = next(c for c in comp if c["homeAway"] == "home")
                     away = next(c for c in comp if c["homeAway"] == "away")
