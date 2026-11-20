@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-11-19T19:05:44.293520+00:00",
+  "updatedAt": "2026-11-20T18:43:09.389327+00:00",
   "weeks": [
     {
       "week": 11,
@@ -10,7 +10,7 @@
           "date": "2026-11-20T01:15Z",
           "away": "Indianapolis Colts",
           "home": "Houston Texans",
-          "status": "STATUS_SCHEDULED"
+          "status": "STATUS_FINAL"
         },
         {
           "id": "401873070",
