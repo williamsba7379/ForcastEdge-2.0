@@ -1,10 +1,10 @@
 {
   "season": 2026,
   "week": 8,
-  "generatedAt": "2026-10-29T08:36:09.969876+00:00",
+  "generatedAt": "2026-11-21T15:15:35.584522+00:00",
   "sourceComparisonFrozenAt": "2026-10-29T08:36:09.918267+00:00",
   "status": "RESEARCH_ONLY_NO_MARKET_LINES",
-  "warning": "Experimental point projections, NOT validated or independent C/C-QB total models. No sportsbook lines, no O/U or ATS picks.",
+  "warning": "Experimental uncalibrated totals: C uses recent scoring environment; C-QB differs only with verified QB-specific total impact. No sportsbook lines, no O/U or ATS picks.",
   "games": [
     {
       "id": "401873023",
@@ -19,7 +19,9 @@
           "projectedTotal": 46.6,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "RECENCY_WEIGHTED_OFFENSE_DEFENSE",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Green Bay Packers"
         },
         "B": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
@@ -28,25 +30,31 @@
           "projectedTotal": 47.7,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "SEASON_OFFENSE_DEFENSE",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Green Bay Packers"
         },
         "C": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
-          "projectedHome": 26.6,
-          "projectedAway": 20.0,
-          "projectedTotal": 46.6,
+          "projectedHome": 24.9,
+          "projectedAway": 20.8,
+          "projectedTotal": 45.7,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "RECENCY_PLUS_SCORING_ENVIRONMENT",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Green Bay Packers"
         },
         "C-QB": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
-          "projectedHome": 26.6,
-          "projectedAway": 20.0,
-          "projectedTotal": 46.6,
+          "projectedHome": 24.9,
+          "projectedAway": 20.8,
+          "projectedTotal": 45.7,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "SCORING_ENVIRONMENT_PLUS_VERIFIED_QB_TOTAL_ONLY",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Green Bay Packers"
         }
       }
     },
@@ -63,7 +71,9 @@
           "projectedTotal": 53.9,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "RECENCY_WEIGHTED_OFFENSE_DEFENSE",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Buffalo Bills"
         },
         "B": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
@@ -72,25 +82,31 @@
           "projectedTotal": 54.7,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "SEASON_OFFENSE_DEFENSE",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Buffalo Bills"
         },
         "C": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
-          "projectedHome": 30.2,
-          "projectedAway": 23.7,
-          "projectedTotal": 53.9,
+          "projectedHome": 28.6,
+          "projectedAway": 24.7,
+          "projectedTotal": 53.3,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "RECENCY_PLUS_SCORING_ENVIRONMENT",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Buffalo Bills"
         },
         "C-QB": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
-          "projectedHome": 30.2,
-          "projectedAway": 23.7,
-          "projectedTotal": 53.9,
+          "projectedHome": 28.6,
+          "projectedAway": 24.7,
+          "projectedTotal": 53.3,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "SCORING_ENVIRONMENT_PLUS_VERIFIED_QB_TOTAL_ONLY",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Buffalo Bills"
         }
       }
     },
@@ -107,7 +123,9 @@
           "projectedTotal": 43.2,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "RECENCY_WEIGHTED_OFFENSE_DEFENSE",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Cincinnati Bengals"
         },
         "B": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
@@ -116,25 +134,31 @@
           "projectedTotal": 42.6,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "SEASON_OFFENSE_DEFENSE",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Cincinnati Bengals"
         },
         "C": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
-          "projectedHome": 29.4,
-          "projectedAway": 13.9,
-          "projectedTotal": 43.2,
+          "projectedHome": 26.1,
+          "projectedAway": 17.6,
+          "projectedTotal": 43.7,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "RECENCY_PLUS_SCORING_ENVIRONMENT",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Cincinnati Bengals"
         },
         "C-QB": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
-          "projectedHome": 29.4,
-          "projectedAway": 13.9,
-          "projectedTotal": 43.2,
+          "projectedHome": 26.1,
+          "projectedAway": 17.6,
+          "projectedTotal": 43.7,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "SCORING_ENVIRONMENT_PLUS_VERIFIED_QB_TOTAL_ONLY",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Cincinnati Bengals"
         }
       }
     },
@@ -151,7 +175,9 @@
           "projectedTotal": 50.0,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "RECENCY_WEIGHTED_OFFENSE_DEFENSE",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Dallas Cowboys"
         },
         "B": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
@@ -160,25 +186,31 @@
           "projectedTotal": 51.4,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "SEASON_OFFENSE_DEFENSE",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Dallas Cowboys"
         },
         "C": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
-          "projectedHome": 31.2,
-          "projectedAway": 18.8,
-          "projectedTotal": 50.0,
+          "projectedHome": 27.9,
+          "projectedAway": 20.9,
+          "projectedTotal": 48.9,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "RECENCY_PLUS_SCORING_ENVIRONMENT",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Dallas Cowboys"
         },
         "C-QB": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
-          "projectedHome": 31.2,
-          "projectedAway": 18.8,
-          "projectedTotal": 50.0,
+          "projectedHome": 27.9,
+          "projectedAway": 20.9,
+          "projectedTotal": 48.9,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "SCORING_ENVIRONMENT_PLUS_VERIFIED_QB_TOTAL_ONLY",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Dallas Cowboys"
         }
       }
     },
@@ -195,7 +227,9 @@
           "projectedTotal": 44.4,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "RECENCY_WEIGHTED_OFFENSE_DEFENSE",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Minnesota Vikings"
         },
         "B": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
@@ -204,25 +238,31 @@
           "projectedTotal": 45.7,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "SEASON_OFFENSE_DEFENSE",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Minnesota Vikings"
         },
         "C": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
-          "projectedHome": 21.1,
-          "projectedAway": 23.3,
-          "projectedTotal": 44.4,
+          "projectedHome": 21.5,
+          "projectedAway": 21.8,
+          "projectedTotal": 43.3,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "RECENCY_PLUS_SCORING_ENVIRONMENT",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Minnesota Vikings"
         },
         "C-QB": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
-          "projectedHome": 21.1,
-          "projectedAway": 23.3,
-          "projectedTotal": 44.4,
+          "projectedHome": 21.5,
+          "projectedAway": 21.8,
+          "projectedTotal": 43.3,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "SCORING_ENVIRONMENT_PLUS_VERIFIED_QB_TOTAL_ONLY",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Minnesota Vikings"
         }
       }
     },
@@ -239,7 +279,9 @@
           "projectedTotal": 48.8,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "RECENCY_WEIGHTED_OFFENSE_DEFENSE",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "New York Jets"
         },
         "B": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
@@ -248,25 +290,31 @@
           "projectedTotal": 47.6,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "SEASON_OFFENSE_DEFENSE",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "New York Jets"
         },
         "C": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
-          "projectedHome": 27.2,
-          "projectedAway": 21.6,
-          "projectedTotal": 48.8,
+          "projectedHome": 26.6,
+          "projectedAway": 23.1,
+          "projectedTotal": 49.7,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "RECENCY_PLUS_SCORING_ENVIRONMENT",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "New York Jets"
         },
         "C-QB": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
-          "projectedHome": 27.2,
-          "projectedAway": 21.6,
-          "projectedTotal": 48.8,
+          "projectedHome": 26.6,
+          "projectedAway": 23.1,
+          "projectedTotal": 49.7,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "SCORING_ENVIRONMENT_PLUS_VERIFIED_QB_TOTAL_ONLY",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "New York Jets"
         }
       }
     },
@@ -283,7 +331,9 @@
           "projectedTotal": 40.0,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "RECENCY_WEIGHTED_OFFENSE_DEFENSE",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Pittsburgh Steelers"
         },
         "B": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
@@ -292,25 +342,31 @@
           "projectedTotal": 40.7,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "SEASON_OFFENSE_DEFENSE",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Pittsburgh Steelers"
         },
         "C": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
-          "projectedHome": 23.4,
-          "projectedAway": 16.6,
-          "projectedTotal": 40.0,
+          "projectedHome": 21.8,
+          "projectedAway": 17.7,
+          "projectedTotal": 39.4,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "RECENCY_PLUS_SCORING_ENVIRONMENT",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Pittsburgh Steelers"
         },
         "C-QB": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
-          "projectedHome": 23.4,
-          "projectedAway": 16.6,
-          "projectedTotal": 40.0,
+          "projectedHome": 21.8,
+          "projectedAway": 17.7,
+          "projectedTotal": 39.4,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "SCORING_ENVIRONMENT_PLUS_VERIFIED_QB_TOTAL_ONLY",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Pittsburgh Steelers"
         }
       }
     },
@@ -327,7 +383,9 @@
           "projectedTotal": 47.7,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "RECENCY_WEIGHTED_OFFENSE_DEFENSE",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Tampa Bay Buccaneers"
         },
         "B": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
@@ -336,25 +394,31 @@
           "projectedTotal": 46.9,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "SEASON_OFFENSE_DEFENSE",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Tampa Bay Buccaneers"
         },
         "C": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
-          "projectedHome": 27.1,
-          "projectedAway": 20.6,
-          "projectedTotal": 47.7,
+          "projectedHome": 26.2,
+          "projectedAway": 22.2,
+          "projectedTotal": 48.3,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "RECENCY_PLUS_SCORING_ENVIRONMENT",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Tampa Bay Buccaneers"
         },
         "C-QB": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
-          "projectedHome": 27.1,
-          "projectedAway": 20.6,
-          "projectedTotal": 47.7,
+          "projectedHome": 26.2,
+          "projectedAway": 22.2,
+          "projectedTotal": 48.3,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "SCORING_ENVIRONMENT_PLUS_VERIFIED_QB_TOTAL_ONLY",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Tampa Bay Buccaneers"
         }
       }
     },
@@ -371,7 +435,9 @@
           "projectedTotal": 45.1,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "RECENCY_WEIGHTED_OFFENSE_DEFENSE",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Jacksonville Jaguars"
         },
         "B": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
@@ -380,25 +446,31 @@
           "projectedTotal": 45.4,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "SEASON_OFFENSE_DEFENSE",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Jacksonville Jaguars"
         },
         "C": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
-          "projectedHome": 28.9,
-          "projectedAway": 16.2,
-          "projectedTotal": 45.1,
+          "projectedHome": 26.0,
+          "projectedAway": 18.9,
+          "projectedTotal": 45.0,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "RECENCY_PLUS_SCORING_ENVIRONMENT",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Jacksonville Jaguars"
         },
         "C-QB": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
-          "projectedHome": 28.9,
-          "projectedAway": 16.2,
-          "projectedTotal": 45.1,
+          "projectedHome": 26.0,
+          "projectedAway": 18.9,
+          "projectedTotal": 45.0,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "SCORING_ENVIRONMENT_PLUS_VERIFIED_QB_TOTAL_ONLY",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Jacksonville Jaguars"
         }
       }
     },
@@ -415,7 +487,9 @@
           "projectedTotal": 44.6,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "RECENCY_WEIGHTED_OFFENSE_DEFENSE",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Los Angeles Rams"
         },
         "B": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
@@ -424,25 +498,31 @@
           "projectedTotal": 43.6,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "SEASON_OFFENSE_DEFENSE",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Los Angeles Rams"
         },
         "C": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
-          "projectedHome": 29.1,
-          "projectedAway": 15.5,
-          "projectedTotal": 44.6,
+          "projectedHome": 26.5,
+          "projectedAway": 19.0,
+          "projectedTotal": 45.5,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "RECENCY_PLUS_SCORING_ENVIRONMENT",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Los Angeles Rams"
         },
         "C-QB": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
-          "projectedHome": 29.1,
-          "projectedAway": 15.5,
-          "projectedTotal": 44.6,
+          "projectedHome": 26.5,
+          "projectedAway": 19.0,
+          "projectedTotal": 45.5,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "SCORING_ENVIRONMENT_PLUS_VERIFIED_QB_TOTAL_ONLY",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Los Angeles Rams"
         }
       }
     },
@@ -459,7 +539,9 @@
           "projectedTotal": 39.8,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "RECENCY_WEIGHTED_OFFENSE_DEFENSE",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Kansas City Chiefs"
         },
         "B": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
@@ -468,25 +550,31 @@
           "projectedTotal": 40.9,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "SEASON_OFFENSE_DEFENSE",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Kansas City Chiefs"
         },
         "C": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
-          "projectedHome": 19.5,
-          "projectedAway": 20.3,
-          "projectedTotal": 39.8,
+          "projectedHome": 19.7,
+          "projectedAway": 19.3,
+          "projectedTotal": 39.0,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "RECENCY_PLUS_SCORING_ENVIRONMENT",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Kansas City Chiefs"
         },
         "C-QB": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
-          "projectedHome": 19.5,
-          "projectedAway": 20.3,
-          "projectedTotal": 39.8,
+          "projectedHome": 19.7,
+          "projectedAway": 19.3,
+          "projectedTotal": 39.0,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "SCORING_ENVIRONMENT_PLUS_VERIFIED_QB_TOTAL_ONLY",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Kansas City Chiefs"
         }
       }
     },
@@ -503,7 +591,9 @@
           "projectedTotal": 44.7,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "RECENCY_WEIGHTED_OFFENSE_DEFENSE",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "New England Patriots"
         },
         "B": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
@@ -512,25 +602,31 @@
           "projectedTotal": 42.9,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "SEASON_OFFENSE_DEFENSE",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "New England Patriots"
         },
         "C": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
-          "projectedHome": 16.9,
-          "projectedAway": 27.8,
-          "projectedTotal": 44.7,
+          "projectedHome": 20.8,
+          "projectedAway": 25.5,
+          "projectedTotal": 46.3,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "RECENCY_PLUS_SCORING_ENVIRONMENT",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "New England Patriots"
         },
         "C-QB": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
-          "projectedHome": 16.9,
-          "projectedAway": 27.8,
-          "projectedTotal": 44.7,
+          "projectedHome": 20.8,
+          "projectedAway": 25.5,
+          "projectedTotal": 46.3,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "SCORING_ENVIRONMENT_PLUS_VERIFIED_QB_TOTAL_ONLY",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "New England Patriots"
         }
       }
     },
@@ -547,7 +643,9 @@
           "projectedTotal": 46.4,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "RECENCY_WEIGHTED_OFFENSE_DEFENSE",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Washington Commanders"
         },
         "B": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
@@ -556,25 +654,31 @@
           "projectedTotal": 46.9,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "SEASON_OFFENSE_DEFENSE",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Washington Commanders"
         },
         "C": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
-          "projectedHome": 24.4,
+          "projectedHome": 23.9,
           "projectedAway": 22.0,
-          "projectedTotal": 46.4,
+          "projectedTotal": 45.9,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "RECENCY_PLUS_SCORING_ENVIRONMENT",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Washington Commanders"
         },
         "C-QB": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
-          "projectedHome": 24.4,
+          "projectedHome": 23.9,
           "projectedAway": 22.0,
-          "projectedTotal": 46.4,
+          "projectedTotal": 45.9,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "SCORING_ENVIRONMENT_PLUS_VERIFIED_QB_TOTAL_ONLY",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Washington Commanders"
         }
       }
     },
@@ -591,7 +695,9 @@
           "projectedTotal": 43.8,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "RECENCY_WEIGHTED_OFFENSE_DEFENSE",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Seattle Seahawks"
         },
         "B": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
@@ -600,25 +706,31 @@
           "projectedTotal": 44.0,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "SEASON_OFFENSE_DEFENSE",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Seattle Seahawks"
         },
         "C": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
-          "projectedHome": 24.0,
-          "projectedAway": 19.8,
-          "projectedTotal": 43.8,
+          "projectedHome": 23.3,
+          "projectedAway": 20.4,
+          "projectedTotal": 43.7,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "RECENCY_PLUS_SCORING_ENVIRONMENT",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Seattle Seahawks"
         },
         "C-QB": {
           "status": "EXPERIMENTAL_UNCALIBRATED",
-          "projectedHome": 24.0,
-          "projectedAway": 19.8,
-          "projectedTotal": 43.8,
+          "projectedHome": 23.3,
+          "projectedAway": 20.4,
+          "projectedTotal": 43.7,
           "overUnderPick": null,
           "spreadPick": null,
-          "note": "Market total/spread not supplied: no over/under or ATS selection."
+          "totalMethod": "SCORING_ENVIRONMENT_PLUS_VERIFIED_QB_TOTAL_ONLY",
+          "note": "Experimental, uncalibrated. C-QB total equals C without verified QB total impact; no sportsbook pick without sourced market line.",
+          "winnerPick": "Seattle Seahawks"
         }
       }
     }

@@ -1,10 +1,151 @@
 {
   "season": 2026,
-  "week": 8,
-  "generatedAt": "2026-10-29T08:36:10.153293+00:00",
-  "reviewCount": 0,
-  "urgentCount": 0,
-  "status": "NO_FLAGS",
-  "alerts": [],
+  "week": 12,
+  "generatedAt": "2026-11-21T15:15:35.736864+00:00",
+  "reviewCount": 7,
+  "urgentCount": 5,
+  "status": "REVIEW_REQUIRED",
+  "alerts": [
+    {
+      "gameId": "401873088",
+      "team": "Indianapolis Colts",
+      "opponent": "New York Giants",
+      "priority": "P2_ROLE_REVIEW_REQUIRED",
+      "reportedUnavailable": [
+        {
+          "name": "Riley Leonard",
+          "status": "Out"
+        }
+      ],
+      "priorPrimaryPasserGames": {
+        "Riley Leonard": 0
+      },
+      "currentQB1CandidateUnverified": "Anthony Richardson Sr.",
+      "recentPrimaryPasserUnverified": "Daniel Jones",
+      "pointsAdjustment": 0,
+      "status": "UNMODELED_HUMAN_REVIEW_REQUIRED",
+      "note": "Historical primary passer is not proof of a start. No score penalty without verified pregame evidence."
+    },
+    {
+      "gameId": "401873089",
+      "team": "Miami Dolphins",
+      "opponent": "New York Jets",
+      "priority": "P1_ESTABLISHED_PRIMARY_PASSER_ABSENT",
+      "reportedUnavailable": [
+        {
+          "name": "Malik Willis",
+          "status": "Injured Reserve"
+        }
+      ],
+      "priorPrimaryPasserGames": {
+        "Malik Willis": 8
+      },
+      "currentQB1CandidateUnverified": "Kyle McCord",
+      "recentPrimaryPasserUnverified": "Kyle McCord",
+      "pointsAdjustment": 0,
+      "status": "UNMODELED_HUMAN_REVIEW_REQUIRED",
+      "note": "Historical primary passer is not proof of a start. No score penalty without verified pregame evidence."
+    },
+    {
+      "gameId": "401873084",
+      "team": "Minnesota Vikings",
+      "opponent": "Atlanta Falcons",
+      "priority": "P1_ESTABLISHED_PRIMARY_PASSER_ABSENT",
+      "reportedUnavailable": [
+        {
+          "name": "Kyler Murray",
+          "status": "Out"
+        }
+      ],
+      "priorPrimaryPasserGames": {
+        "Kyler Murray": 5
+      },
+      "currentQB1CandidateUnverified": "Kirk Cousins",
+      "recentPrimaryPasserUnverified": "Kirk Cousins",
+      "pointsAdjustment": 0,
+      "status": "UNMODELED_HUMAN_REVIEW_REQUIRED",
+      "note": "Historical primary passer is not proof of a start. No score penalty without verified pregame evidence."
+    },
+    {
+      "gameId": "401873085",
+      "team": "Baltimore Ravens",
+      "opponent": "Houston Texans",
+      "priority": "P1_ESTABLISHED_PRIMARY_PASSER_ABSENT",
+      "reportedUnavailable": [
+        {
+          "name": "Lamar Jackson",
+          "status": "Injured Reserve"
+        }
+      ],
+      "priorPrimaryPasserGames": {
+        "Lamar Jackson": 4
+      },
+      "currentQB1CandidateUnverified": "Jacoby Brissett",
+      "recentPrimaryPasserUnverified": "Jacoby Brissett",
+      "pointsAdjustment": 0,
+      "status": "UNMODELED_HUMAN_REVIEW_REQUIRED",
+      "note": "Historical primary passer is not proof of a start. No score penalty without verified pregame evidence."
+    },
+    {
+      "gameId": "401873093",
+      "team": "New England Patriots",
+      "opponent": "Los Angeles Chargers",
+      "priority": "P1_ESTABLISHED_PRIMARY_PASSER_ABSENT",
+      "reportedUnavailable": [
+        {
+          "name": "Drake Maye",
+          "status": "Out"
+        }
+      ],
+      "priorPrimaryPasserGames": {
+        "Drake Maye": 9
+      },
+      "currentQB1CandidateUnverified": "Drake Maye",
+      "recentPrimaryPasserUnverified": "Tommy DeVito",
+      "pointsAdjustment": 0,
+      "status": "UNMODELED_HUMAN_REVIEW_REQUIRED",
+      "note": "Historical primary passer is not proof of a start. No score penalty without verified pregame evidence."
+    },
+    {
+      "gameId": "401873092",
+      "team": "Arizona Cardinals",
+      "opponent": "Washington Commanders",
+      "priority": "P2_ROLE_REVIEW_REQUIRED",
+      "reportedUnavailable": [
+        {
+          "name": "Gardner Minshew II",
+          "status": "Injured Reserve"
+        }
+      ],
+      "priorPrimaryPasserGames": {
+        "Gardner Minshew II": 1
+      },
+      "currentQB1CandidateUnverified": "Carson Beck",
+      "recentPrimaryPasserUnverified": "Carson Beck",
+      "pointsAdjustment": 0,
+      "status": "UNMODELED_HUMAN_REVIEW_REQUIRED",
+      "note": "Historical primary passer is not proof of a start. No score penalty without verified pregame evidence."
+    },
+    {
+      "gameId": "401873091",
+      "team": "Seattle Seahawks",
+      "opponent": "San Francisco 49ers",
+      "priority": "P1_ESTABLISHED_PRIMARY_PASSER_ABSENT",
+      "reportedUnavailable": [
+        {
+          "name": "Sam Darnold",
+          "status": "Out"
+        }
+      ],
+      "priorPrimaryPasserGames": {
+        "Sam Darnold": 6
+      },
+      "currentQB1CandidateUnverified": "Sam Darnold",
+      "recentPrimaryPasserUnverified": "Drew Lock",
+      "pointsAdjustment": 0,
+      "status": "UNMODELED_HUMAN_REVIEW_REQUIRED",
+      "note": "Historical primary passer is not proof of a start. No score penalty without verified pregame evidence."
+    }
+  ],
   "policy": "Never rewrite frozen predictions. Injury feeds and depth charts are not official starter verification."
 }

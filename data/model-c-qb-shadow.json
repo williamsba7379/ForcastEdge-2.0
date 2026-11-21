@@ -1,247 +1,22 @@
 {
   "title": "Model C-QB \u2014 Experimental Shadow Test",
   "season": 2026,
-  "week": 8,
-  "generatedAt": "2026-10-29T08:36:09.705114+00:00",
+  "week": 12,
+  "generatedAt": "2026-11-21T15:15:35.166506+00:00",
   "status": "EXPERIMENTAL_SHADOW_ONLY",
   "method": "Pre-kickoff game-level AYA differential * 0.35, capped at +/-3 points per team; not calibrated.",
   "eligibleAdjustments": 0,
   "warning": "No retrospective grading against information published after kickoff. Original Model C predictions remain unchanged.",
   "games": [
     {
-      "id": "401873023",
-      "date": "2026-10-30T00:15Z",
-      "home": "Green Bay Packers",
-      "away": "Carolina Panthers",
-      "originalPick": "Green Bay Packers",
-      "originalHomeEdgePoints": 6.62,
-      "qbHomeEdgeAdjustment": 0.0,
-      "experimentalHomeEdgePoints": 6.62,
-      "experimentalPick": "Green Bay Packers",
-      "qbAdjustments": {
-        "home": {
-          "status": "NO_ADJUSTMENT",
-          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
-          "points": 0.0
-        },
-        "away": {
-          "status": "NO_ADJUSTMENT",
-          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
-          "points": 0.0
-        }
-      },
-      "rating": "NO BET",
-      "confidence": "UNVALIDATED"
-    },
-    {
-      "id": "401873026",
-      "date": "2026-11-01T18:00Z",
-      "home": "Buffalo Bills",
-      "away": "Baltimore Ravens",
-      "originalPick": "Buffalo Bills",
-      "originalHomeEdgePoints": 6.43,
-      "qbHomeEdgeAdjustment": 0.0,
-      "experimentalHomeEdgePoints": 6.43,
-      "experimentalPick": "Buffalo Bills",
-      "qbAdjustments": {
-        "home": {
-          "status": "NO_ADJUSTMENT",
-          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
-          "points": 0.0
-        },
-        "away": {
-          "status": "NO_ADJUSTMENT",
-          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
-          "points": 0.0
-        }
-      },
-      "rating": "NO BET",
-      "confidence": "UNVALIDATED"
-    },
-    {
-      "id": "401873031",
-      "date": "2026-11-01T18:00Z",
-      "home": "Cincinnati Bengals",
-      "away": "Tennessee Titans",
-      "originalPick": "Cincinnati Bengals",
-      "originalHomeEdgePoints": 15.48,
-      "qbHomeEdgeAdjustment": 0.0,
-      "experimentalHomeEdgePoints": 15.48,
-      "experimentalPick": "Cincinnati Bengals",
-      "qbAdjustments": {
-        "home": {
-          "status": "NO_ADJUSTMENT",
-          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
-          "points": 0.0
-        },
-        "away": {
-          "status": "NO_ADJUSTMENT",
-          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
-          "points": 0.0
-        }
-      },
-      "rating": "NO BET",
-      "confidence": "UNVALIDATED"
-    },
-    {
-      "id": "401873024",
-      "date": "2026-11-01T18:00Z",
-      "home": "Dallas Cowboys",
-      "away": "Arizona Cardinals",
-      "originalPick": "Dallas Cowboys",
-      "originalHomeEdgePoints": 12.5,
-      "qbHomeEdgeAdjustment": 0.0,
-      "experimentalHomeEdgePoints": 12.5,
-      "experimentalPick": "Dallas Cowboys",
-      "qbAdjustments": {
-        "home": {
-          "status": "NO_ADJUSTMENT",
-          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
-          "points": 0.0
-        },
-        "away": {
-          "status": "NO_ADJUSTMENT",
-          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
-          "points": 0.0
-        }
-      },
-      "rating": "NO BET",
-      "confidence": "UNVALIDATED"
-    },
-    {
-      "id": "401873030",
-      "date": "2026-11-01T18:00Z",
-      "home": "Detroit Lions",
-      "away": "Minnesota Vikings",
-      "originalPick": "Minnesota Vikings",
-      "originalHomeEdgePoints": -2.23,
-      "qbHomeEdgeAdjustment": 0.0,
-      "experimentalHomeEdgePoints": -2.23,
-      "experimentalPick": "Minnesota Vikings",
-      "qbAdjustments": {
-        "home": {
-          "status": "NO_ADJUSTMENT",
-          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
-          "points": 0.0
-        },
-        "away": {
-          "status": "NO_ADJUSTMENT",
-          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
-          "points": 0.0
-        }
-      },
-      "rating": "NO BET",
-      "confidence": "UNVALIDATED"
-    },
-    {
-      "id": "401873029",
-      "date": "2026-11-01T18:00Z",
-      "home": "New York Jets",
-      "away": "Las Vegas Raiders",
-      "originalPick": "New York Jets",
-      "originalHomeEdgePoints": 5.6,
-      "qbHomeEdgeAdjustment": 0.0,
-      "experimentalHomeEdgePoints": 5.6,
-      "experimentalPick": "New York Jets",
-      "qbAdjustments": {
-        "home": {
-          "status": "NO_ADJUSTMENT",
-          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
-          "points": 0.0
-        },
-        "away": {
-          "status": "NO_ADJUSTMENT",
-          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
-          "points": 0.0
-        }
-      },
-      "rating": "NO BET",
-      "confidence": "UNVALIDATED"
-    },
-    {
-      "id": "401873027",
-      "date": "2026-11-01T18:00Z",
-      "home": "Pittsburgh Steelers",
-      "away": "Cleveland Browns",
-      "originalPick": "Pittsburgh Steelers",
-      "originalHomeEdgePoints": 6.7,
-      "qbHomeEdgeAdjustment": 0.0,
-      "experimentalHomeEdgePoints": 6.7,
-      "experimentalPick": "Pittsburgh Steelers",
-      "qbAdjustments": {
-        "home": {
-          "status": "NO_ADJUSTMENT",
-          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
-          "points": 0.0
-        },
-        "away": {
-          "status": "NO_ADJUSTMENT",
-          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
-          "points": 0.0
-        }
-      },
-      "rating": "NO BET",
-      "confidence": "UNVALIDATED"
-    },
-    {
-      "id": "401873025",
-      "date": "2026-11-01T18:00Z",
-      "home": "Tampa Bay Buccaneers",
-      "away": "Atlanta Falcons",
-      "originalPick": "Tampa Bay Buccaneers",
-      "originalHomeEdgePoints": 6.5,
-      "qbHomeEdgeAdjustment": 0.0,
-      "experimentalHomeEdgePoints": 6.5,
-      "experimentalPick": "Tampa Bay Buccaneers",
-      "qbAdjustments": {
-        "home": {
-          "status": "NO_ADJUSTMENT",
-          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
-          "points": 0.0
-        },
-        "away": {
-          "status": "NO_ADJUSTMENT",
-          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
-          "points": 0.0
-        }
-      },
-      "rating": "NO BET",
-      "confidence": "UNVALIDATED"
-    },
-    {
-      "id": "401873028",
-      "date": "2026-11-01T18:00Z",
-      "home": "Jacksonville Jaguars",
-      "away": "Indianapolis Colts",
-      "originalPick": "Jacksonville Jaguars",
-      "originalHomeEdgePoints": 12.73,
-      "qbHomeEdgeAdjustment": 0.0,
-      "experimentalHomeEdgePoints": 12.73,
-      "experimentalPick": "Jacksonville Jaguars",
-      "qbAdjustments": {
-        "home": {
-          "status": "NO_ADJUSTMENT",
-          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
-          "points": 0.0
-        },
-        "away": {
-          "status": "NO_ADJUSTMENT",
-          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
-          "points": 0.0
-        }
-      },
-      "rating": "NO BET",
-      "confidence": "UNVALIDATED"
-    },
-    {
-      "id": "401873032",
-      "date": "2026-11-01T21:05Z",
+      "id": "401873079",
+      "date": "2026-11-26T01:00Z",
       "home": "Los Angeles Rams",
-      "away": "Los Angeles Chargers",
+      "away": "Green Bay Packers",
       "originalPick": "Los Angeles Rams",
-      "originalHomeEdgePoints": 13.52,
+      "originalHomeEdgePoints": 9.82,
       "qbHomeEdgeAdjustment": 0.0,
-      "experimentalHomeEdgePoints": 13.52,
+      "experimentalHomeEdgePoints": 9.82,
       "experimentalPick": "Los Angeles Rams",
       "qbAdjustments": {
         "home": {
@@ -259,15 +34,15 @@
       "confidence": "UNVALIDATED"
     },
     {
-      "id": "401873033",
-      "date": "2026-11-01T21:25Z",
-      "home": "Denver Broncos",
-      "away": "Kansas City Chiefs",
-      "originalPick": "Kansas City Chiefs",
-      "originalHomeEdgePoints": -0.77,
+      "id": "401873081",
+      "date": "2026-11-26T18:00Z",
+      "home": "Detroit Lions",
+      "away": "Chicago Bears",
+      "originalPick": "Detroit Lions",
+      "originalHomeEdgePoints": 2.88,
       "qbHomeEdgeAdjustment": 0.0,
-      "experimentalHomeEdgePoints": -0.77,
-      "experimentalPick": "Kansas City Chiefs",
+      "experimentalHomeEdgePoints": 2.88,
+      "experimentalPick": "Detroit Lions",
       "qbAdjustments": {
         "home": {
           "status": "NO_ADJUSTMENT",
@@ -284,14 +59,239 @@
       "confidence": "UNVALIDATED"
     },
     {
-      "id": "401873034",
-      "date": "2026-11-01T21:25Z",
+      "id": "401873080",
+      "date": "2026-11-26T21:30Z",
+      "home": "Dallas Cowboys",
+      "away": "Philadelphia Eagles",
+      "originalPick": "Dallas Cowboys",
+      "originalHomeEdgePoints": 11.16,
+      "qbHomeEdgeAdjustment": 0.0,
+      "experimentalHomeEdgePoints": 11.16,
+      "experimentalPick": "Dallas Cowboys",
+      "qbAdjustments": {
+        "home": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        },
+        "away": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        }
+      },
+      "rating": "NO BET",
+      "confidence": "UNVALIDATED"
+    },
+    {
+      "id": "401873082",
+      "date": "2026-11-27T01:20Z",
+      "home": "Buffalo Bills",
+      "away": "Kansas City Chiefs",
+      "originalPick": "Buffalo Bills",
+      "originalHomeEdgePoints": 4.14,
+      "qbHomeEdgeAdjustment": 0.0,
+      "experimentalHomeEdgePoints": 4.14,
+      "experimentalPick": "Buffalo Bills",
+      "qbAdjustments": {
+        "home": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        },
+        "away": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        }
+      },
+      "rating": "NO BET",
+      "confidence": "UNVALIDATED"
+    },
+    {
+      "id": "401873083",
+      "date": "2026-11-27T20:00Z",
+      "home": "Pittsburgh Steelers",
+      "away": "Denver Broncos",
+      "originalPick": "Pittsburgh Steelers",
+      "originalHomeEdgePoints": 0.21,
+      "qbHomeEdgeAdjustment": 0.0,
+      "experimentalHomeEdgePoints": 0.21,
+      "experimentalPick": "Pittsburgh Steelers",
+      "qbAdjustments": {
+        "home": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        },
+        "away": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        }
+      },
+      "rating": "NO BET",
+      "confidence": "UNVALIDATED"
+    },
+    {
+      "id": "401873087",
+      "date": "2026-11-29T18:00Z",
+      "home": "Cincinnati Bengals",
+      "away": "New Orleans Saints",
+      "originalPick": "Cincinnati Bengals",
+      "originalHomeEdgePoints": 15.96,
+      "qbHomeEdgeAdjustment": 0.0,
+      "experimentalHomeEdgePoints": 15.96,
+      "experimentalPick": "Cincinnati Bengals",
+      "qbAdjustments": {
+        "home": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        },
+        "away": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        }
+      },
+      "rating": "NO BET",
+      "confidence": "UNVALIDATED"
+    },
+    {
+      "id": "401873088",
+      "date": "2026-11-29T18:00Z",
+      "home": "Indianapolis Colts",
+      "away": "New York Giants",
+      "originalPick": "New York Giants",
+      "originalHomeEdgePoints": -8.12,
+      "qbHomeEdgeAdjustment": 0.0,
+      "experimentalHomeEdgePoints": -8.12,
+      "experimentalPick": "New York Giants",
+      "qbAdjustments": {
+        "home": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        },
+        "away": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        }
+      },
+      "rating": "NO BET",
+      "confidence": "UNVALIDATED"
+    },
+    {
+      "id": "401873089",
+      "date": "2026-11-29T18:00Z",
       "home": "Miami Dolphins",
+      "away": "New York Jets",
+      "originalPick": "Miami Dolphins",
+      "originalHomeEdgePoints": 2.79,
+      "qbHomeEdgeAdjustment": 0.0,
+      "experimentalHomeEdgePoints": 2.79,
+      "experimentalPick": "Miami Dolphins",
+      "qbAdjustments": {
+        "home": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        },
+        "away": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        }
+      },
+      "rating": "NO BET",
+      "confidence": "UNVALIDATED"
+    },
+    {
+      "id": "401873084",
+      "date": "2026-11-29T18:00Z",
+      "home": "Minnesota Vikings",
+      "away": "Atlanta Falcons",
+      "originalPick": "Minnesota Vikings",
+      "originalHomeEdgePoints": 14.78,
+      "qbHomeEdgeAdjustment": 0.0,
+      "experimentalHomeEdgePoints": 14.78,
+      "experimentalPick": "Minnesota Vikings",
+      "qbAdjustments": {
+        "home": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        },
+        "away": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        }
+      },
+      "rating": "NO BET",
+      "confidence": "UNVALIDATED"
+    },
+    {
+      "id": "401873090",
+      "date": "2026-11-29T18:00Z",
+      "home": "Jacksonville Jaguars",
+      "away": "Tennessee Titans",
+      "originalPick": "Jacksonville Jaguars",
+      "originalHomeEdgePoints": 27.02,
+      "qbHomeEdgeAdjustment": 0.0,
+      "experimentalHomeEdgePoints": 27.02,
+      "experimentalPick": "Jacksonville Jaguars",
+      "qbAdjustments": {
+        "home": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        },
+        "away": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        }
+      },
+      "rating": "NO BET",
+      "confidence": "UNVALIDATED"
+    },
+    {
+      "id": "401873085",
+      "date": "2026-11-29T18:00Z",
+      "home": "Houston Texans",
+      "away": "Baltimore Ravens",
+      "originalPick": "Houston Texans",
+      "originalHomeEdgePoints": 16.99,
+      "qbHomeEdgeAdjustment": 0.0,
+      "experimentalHomeEdgePoints": 16.99,
+      "experimentalPick": "Houston Texans",
+      "qbAdjustments": {
+        "home": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        },
+        "away": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        }
+      },
+      "rating": "NO BET",
+      "confidence": "UNVALIDATED"
+    },
+    {
+      "id": "401873093",
+      "date": "2026-11-29T21:05Z",
+      "home": "Los Angeles Chargers",
       "away": "New England Patriots",
       "originalPick": "New England Patriots",
-      "originalHomeEdgePoints": -10.88,
+      "originalHomeEdgePoints": -4.02,
       "qbHomeEdgeAdjustment": 0.0,
-      "experimentalHomeEdgePoints": -10.88,
+      "experimentalHomeEdgePoints": -4.02,
       "experimentalPick": "New England Patriots",
       "qbAdjustments": {
         "home": {
@@ -309,14 +309,14 @@
       "confidence": "UNVALIDATED"
     },
     {
-      "id": "401873035",
-      "date": "2026-11-02T01:20Z",
-      "home": "Washington Commanders",
-      "away": "Philadelphia Eagles",
+      "id": "401873092",
+      "date": "2026-11-29T21:25Z",
+      "home": "Arizona Cardinals",
+      "away": "Washington Commanders",
       "originalPick": "Washington Commanders",
-      "originalHomeEdgePoints": 2.33,
+      "originalHomeEdgePoints": -8.95,
       "qbHomeEdgeAdjustment": 0.0,
-      "experimentalHomeEdgePoints": 2.33,
+      "experimentalHomeEdgePoints": -8.95,
       "experimentalPick": "Washington Commanders",
       "qbAdjustments": {
         "home": {
@@ -334,15 +334,65 @@
       "confidence": "UNVALIDATED"
     },
     {
-      "id": "401873036",
-      "date": "2026-11-03T01:15Z",
-      "home": "Seattle Seahawks",
-      "away": "Chicago Bears",
-      "originalPick": "Seattle Seahawks",
-      "originalHomeEdgePoints": 4.2,
+      "id": "401873091",
+      "date": "2026-11-29T21:25Z",
+      "home": "San Francisco 49ers",
+      "away": "Seattle Seahawks",
+      "originalPick": "San Francisco 49ers",
+      "originalHomeEdgePoints": 6.05,
       "qbHomeEdgeAdjustment": 0.0,
-      "experimentalHomeEdgePoints": 4.2,
-      "experimentalPick": "Seattle Seahawks",
+      "experimentalHomeEdgePoints": 6.05,
+      "experimentalPick": "San Francisco 49ers",
+      "qbAdjustments": {
+        "home": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        },
+        "away": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        }
+      },
+      "rating": "NO BET",
+      "confidence": "UNVALIDATED"
+    },
+    {
+      "id": "401873086",
+      "date": "2026-11-30T01:20Z",
+      "home": "Cleveland Browns",
+      "away": "Las Vegas Raiders",
+      "originalPick": "Cleveland Browns",
+      "originalHomeEdgePoints": 2.42,
+      "qbHomeEdgeAdjustment": 0.0,
+      "experimentalHomeEdgePoints": 2.42,
+      "experimentalPick": "Cleveland Browns",
+      "qbAdjustments": {
+        "home": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        },
+        "away": {
+          "status": "NO_ADJUSTMENT",
+          "reason": "No reviewed, game-specific confirmed starter available before kickoff",
+          "points": 0.0
+        }
+      },
+      "rating": "NO BET",
+      "confidence": "UNVALIDATED"
+    },
+    {
+      "id": "401873094",
+      "date": "2026-12-01T01:15Z",
+      "home": "Tampa Bay Buccaneers",
+      "away": "Carolina Panthers",
+      "originalPick": "Tampa Bay Buccaneers",
+      "originalHomeEdgePoints": 9.99,
+      "qbHomeEdgeAdjustment": 0.0,
+      "experimentalHomeEdgePoints": 9.99,
+      "experimentalPick": "Tampa Bay Buccaneers",
       "qbAdjustments": {
         "home": {
           "status": "NO_ADJUSTMENT",

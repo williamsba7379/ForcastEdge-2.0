@@ -23,3 +23,57 @@ assert all(a["status"]=="UNMODELED_HUMAN_REVIEW_REQUIRED" for a in result["alert
 assert all(a["pointsAdjustment"]==0 for a in result["alerts"])
 assert len(shadow["games"])==len(draft["games"])
 print("PASS: QB audit regression; no speculative score changes")
+
+# Synthetic fixtures: exercise build() without writing repository data.
+def synthetic_case(records):
+    draft_fixture = {
+        "season": 2026,
+        "week": 11,
+        "games": [{
+            "id": "synthetic-qb-001",
+            "date": "2026-11-22T18:00:00Z",
+            "home": "Test Home",
+            "away": "Test Away",
+            "quarterbacks": {
+                "home": {
+                    "reportedQuarterbacks": [{"name": "Test QB", "status": "out"}],
+                    "depthChartQB1Candidate": None,
+                    "recentPrimaryPasser": None,
+                },
+                "away": {"reportedQuarterbacks": []},
+            },
+        }],
+    }
+    shadow_fixture = {
+        "games": [{
+            "id": "synthetic-qb-001",
+            "qbAdjustments": {
+                "home": {"status": "NO_ADJUSTMENT"},
+                "away": {"status": "NO_ADJUSTMENT"},
+            },
+        }],
+    }
+    return build(draft_fixture, shadow_fixture, {"records": records})
+
+
+null_passer = synthetic_case([{
+    "team": "Test Home",
+    "primaryPasser": None,
+    "gameDate": "2026-11-15T18:00:00Z",
+}])
+assert null_passer["reviewCount"] == 1
+assert null_passer["urgentCount"] == 0
+assert null_passer["alerts"][0]["priority"] == "P2_ROLE_REVIEW_REQUIRED"
+assert null_passer["alerts"][0]["priorPrimaryPasserGames"] == {"Test QB": 0}
+assert null_passer["alerts"][0]["pointsAdjustment"] == 0
+
+established = synthetic_case([
+    {"team": "Test Home", "primaryPasser": "Test QB",
+     "gameDate": "2026-11-01T18:00:00Z"},
+    {"team": "Test Home", "primaryPasser": "Test QB",
+     "gameDate": "2026-11-08T18:00:00Z"},
+])
+assert established["alerts"][0]["priority"] == "P1_ESTABLISHED_PRIMARY_PASSER_ABSENT"
+assert established["alerts"][0]["priorPrimaryPasserGames"] == {"Test QB": 2}
+assert established["alerts"][0]["pointsAdjustment"] == 0
+print("PASS: synthetic nullable QB and established passer")
