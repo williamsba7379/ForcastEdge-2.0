@@ -149,7 +149,7 @@ jobs:
         if: steps.time.outputs.run == 'true'
         run: python3 tests/test_model_c_draft_contract.py
       - name: Commit draft only
-        if: steps.time.outputs.run == 'true'
+        if: steps.time.outputs.run == 'true' && github.ref != 'refs/heads/main'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
