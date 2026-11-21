@@ -1,0 +1,119 @@
+name: NFL delivery fail-closed research
+on:
+  push:
+    branches:
+      - repair/nfl-weekly-delivery-failclosed-20261111
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'research/nfl_delivery_failclosed.py'
+      - 'research/nfl_current_week_input_preflight.py'
+      - 'tests/test_nfl_current_week_input_preflight.py'
+      - 'research/model_c_wednesday_delivery_monitor.py'
+      - 'research/model_c_github_evidence_collector.py'
+      - 'tests/test_model_c_github_evidence_collector.py'
+      - 'tests/test_model_c_wednesday_delivery_monitor.py'
+      - 'research/nfl_four_model_shadow_handoff.py'
+      - 'research/nfl_delivery_provenance_inventory.py'
+      - 'research/nfl_score_projection_research.py'
+      - 'tests/test_nfl_score_projection_research.py'
+      - 'tests/test_nfl_delivery_provenance_inventory.py'
+      - 'tests/test_nfl_delivery_failclosed.py'
+      - 'tests/test_nfl_wednesday_card_save.py'
+      - '.github/workflows/nfl-delivery-failclosed-research.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Regression test GitHub evidence collector fail-closed
+        env:
+          PYTHONPATH: .
+        run: python3 -m unittest discover -s tests -p test_model_c_github_evidence_collector.py -v
+      - name: Regression test read-only Wednesday Model C delivery monitor
+        env:
+          PYTHONPATH: .
+        run: python3 -m unittest discover -s tests -p test_model_c_wednesday_delivery_monitor.py -v
+      - name: Regression test Model C false-success delivery
+        env:
+          PYTHONPATH: .
+        run: python3 -m unittest discover -s tests -p test_model_c_delivery_outcome_gate.py -v
+      - name: Regression test nullable QB injury history
+        run: python3 -m unittest discover -s tests -p test_model_c_qb_injury_nullable_history.py -v
+      - name: Regression test read-only current-week input preflight
+        env:
+          PYTHONPATH: .
+        run: python3 -m unittest discover -s tests -p test_nfl_current_week_input_preflight.py -v
+      - name: Regression test stale weekly production inputs
+        env:
+          PYTHONPATH: .
+        run: python3 -m unittest discover -s tests -p test_nfl_weekly_stale_input_gate.py -v
+      - name: Run fail-closed synthetic unit tests
+        env:
+          PYTHONPATH: .
+        run: python3 -m unittest discover -s tests -p test_nfl_delivery_failclosed.py -v
+      - name: Rehearse saving a complete Wednesday test card
+        env:
+          PYTHONPATH: .
+        run: python3 -m unittest discover -s tests -p test_nfl_wednesday_card_save.py -v
+      - name: Run provenance inventory fail-closed tests
+        env:
+          PYTHONPATH: .
+        run: python3 -m unittest discover -s tests -p test_nfl_delivery_provenance_inventory.py -v
+      - name: Run score research fail-closed tests
+        env:
+          PYTHONPATH: .
+        run: python3 -m unittest discover -s tests -p test_nfl_score_projection_research.py -v
+      - name: Walk-forward score research (never publish)
+        env:
+          PYTHONPATH: .
+        run: |
+          python3 research/nfl_score_projection_research.py > /tmp/nfl-score-walkforward.json
+          cat /tmp/nfl-score-walkforward.json
+          python3 -c 'import json; d=json.load(open("/tmp/nfl-score-walkforward.json")); assert d["status"] == "RESEARCH_BACKTEST_ONLY_NOT_VALIDATED"; assert d["published"] is False; assert d["C-QB"]["graded"] == 0'
+      - name: Assert actual current-week artifacts are rejected when incomplete
+        run: |
+          if python3 research/nfl_delivery_failclosed.py > /tmp/nfl-delivery-readiness.json; then
+            cat /tmp/nfl-delivery-readiness.json
+            echo "Real delivery passed: separately review provenance and model independence."
+          else
+            cat /tmp/nfl-delivery-readiness.json
+            echo "Expected fail-closed result: real delivery NOT READY."
+          fi
+
+      - name: Execute isolated real-engine rehearsal (research only)
+        env:
+          PYTHONPATH: .
+        run: |
+          set +e
+          python3 research/nfl_four_model_shadow_handoff.py > /tmp/nfl-real-engine-rehearsal.json 2>&1
+          code=$?
+          set -e
+          cat /tmp/nfl-real-engine-rehearsal.json
+          echo "Rehearsal exit code: $code"
+          echo "Rehearsal is diagnostic only; never certifies Wednesday pre-cutoff delivery."
+          if [ "$code" -eq 1 ] && [ "$(TZ=America/New_York date +%u)" != 3 ] &&
+            grep -Fxq '{"status": "BLOCKED", "reason": "WEDNESDAY_REHEARSAL_ONLY"}' /tmp/nfl-real-engine-rehearsal.json; then
+            echo "Verified that the real-engine rehearsal refuses to run outside Wednesday."
+            exit 0
+          fi
+          if [ "$code" -ne 0 ]; then
+            echo "::error::Isolated real-engine rehearsal failed with exit code $code"
+            exit "$code"
+          fi
+          if [ "$code" -eq 0 ]; then
+            grep -q '"status": "RESEARCH_ONLY_NOT_DELIVERABLE"' /tmp/nfl-real-engine-rehearsal.json
+            grep -q '"games": 14' /tmp/nfl-real-engine-rehearsal.json
+            grep -q '"winnerRows": 56' /tmp/nfl-real-engine-rehearsal.json
+            grep -q '"completeRows": 0' /tmp/nfl-real-engine-rehearsal.json
+            grep -q '"cutoffET": "2026-11-11T11:00:00-05:00"' /tmp/nfl-real-engine-rehearsal.json
+            python3 -c 'import json,re; d=json.loads(open("/tmp/nfl-real-engine-rehearsal.json").read().split("FORECASTEDGE_REHEARSAL_JSON_BEGIN\n",1)[1]); assert d["status"]=="RESEARCH_ONLY_NOT_DELIVERABLE"; assert set(d["sourceArtifacts"])=={"modelC","modelCQB"}; assert all(re.fullmatch("[0-9a-f]{64}", v["sha256"]) for v in d["sourceArtifacts"].values()); assert d["sourceArtifacts"]["modelC"]["status"]=="AUTOMATED_REVIEW_ONLY"; assert d["sourceArtifacts"]["modelCQB"]["status"]=="EXPERIMENTAL_SHADOW_ONLY"; assert d["readiness"]["validCompleteRows"]==0; assert d["published"] is False'
+            grep -q '"published": false' /tmp/nfl-real-engine-rehearsal.json
+            grep -q '"historicalWednesdayFreezeVerified": false' /tmp/nfl-real-engine-rehearsal.json
+          fi
+
+# Draft-only research. No frozen artifacts are written to the checkout.
