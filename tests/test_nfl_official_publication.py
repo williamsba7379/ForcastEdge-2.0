@@ -64,7 +64,7 @@ class ContractTests(unittest.TestCase):
         # Independent published SHA-256 known-answer for canonical {"a":1,"b":2}.
         self.assertEqual(sha256(canonical({"b":2.0,"a":1})).hexdigest(),"43258cff783fe7036d8a43033f830adfc60ec037382473548ac742b888292777")
     def test_canonical_rejects_non_ascii(self):
-        with self.assertRaises(ValueError):canonical({"name":"caf\\u00e9"})
+        with self.assertRaises(ValueError):canonical({"name":"café"})
     def test_reject_noncanonical_number(self):
         with self.assertRaises(ValueError):canonical({"confidence":0.3})
     def test_schema_contract_matches_card(self):

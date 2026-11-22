@@ -41,13 +41,24 @@ def prepare(card_path,schedule_path,schema_path,output_dir,*,trusted_evidence=No
         raise ValueError("Output must be a new direct child of disposable research root")
     card=validate_files(card_path,schedule_path,schema_path,trusted_evidence=trusted_evidence,verify_release=verify_release,verify_schedule=verify_schedule)
     name=str(card["season"])+"-week-"+str(card["week"])
-    target.mkdir(mode=0o700)
-    # No overwrite and no following symlinks. No latest pointer, GitHub write or production path.
-    flags=os.O_WRONLY|os.O_CREAT|os.O_EXCL|os.O_NOFOLLOW
-    for filename,content in ((name+".json",json.dumps(card,indent=2)+"\n"),(name+".html",printable(card))):
-        fd=os.open(target/filename,flags,0o600)
-        with os.fdopen(fd,"w",encoding="utf-8") as f:
-            f.write(content)
-            f.flush()
-            os.fsync(f.fileno())
+    # Descriptor-relative creation limits path substitution; only use in an isolated,
+    # single-writer disposable container with independent filesystem restrictions.
+    rootfd=os.open(root,os.O_RDONLY|os.O_DIRECTORY|os.O_NOFOLLOW)
+    try:
+        os.mkdir(target.name,mode=0o700,dir_fd=rootfd)
+        dirfd=os.open(target.name,os.O_RDONLY|os.O_DIRECTORY|os.O_NOFOLLOW,dir_fd=rootfd)
+        try:
+            flags=os.O_WRONLY|os.O_CREAT|os.O_EXCL|os.O_NOFOLLOW
+            for filename,content in ((name+".json",json.dumps(card,indent=2)+"\n"),(name+".html",printable(card))):
+                fd=os.open(filename,flags,0o600,dir_fd=dirfd)
+                with os.fdopen(fd,"w",encoding="utf-8") as f:
+                    f.write(content)
+                    f.flush()
+                    os.fsync(f.fileno())
+            os.fsync(dirfd)
+        finally:
+            os.close(dirfd)
+        os.fsync(rootfd)
+    finally:
+        os.close(rootfd)
     return name
