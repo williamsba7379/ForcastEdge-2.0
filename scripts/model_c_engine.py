@@ -120,6 +120,105 @@ def official_starter_valid(declaration, game, team, now):
     except (ValueError,TypeError,AttributeError,KeyError):
         return False
 
+ISOLATED_API_VERSION = 1
+
+
+def validate_original_slate(selected):
+    """Keep the weekly engine's minimum-slate guard for isolated evaluations."""
+    if len(selected["games"]) < 10:
+        raise RuntimeError("Too few scheduled games; refusing to publish.")
+    ids = [str(g["id"]) for g in selected["games"]]
+    if len(ids) != len(set(ids)):
+        raise ValueError("Duplicate game IDs in original slate")
+
+
+def predict_game(g, year, now, history_raw, adjustments, injury_snapshot,
+                 qb_declarations, qb_stats, qb_candidates, depthchart_candidates):
+    """Pure extraction of the existing per-game calculation; no file writes."""
+    injury_teams={t.get("team"):t for t in injury_snapshot.get("teams",[])}
+    kickoff=dt.datetime.fromisoformat(g["date"].replace("Z","+00:00"))
+    history=extract_history(history_raw,min(kickoff,now.astimezone(dt.timezone.utc)),year)
+    away=team_form(history,g["away"]);home=team_form(history,g["home"])
+    missing=away is None or home is None
+    base=(home or 0)-(away or 0)+1.5
+    verified=adjustments.get("games",{}).get(str(g["id"]),{})
+    delta=0.0;used=[]
+    for side,sign in (("home",1),("away",-1)):
+        item=verified.get(side)
+        if item and isinstance(item.get("points"),(int,float)) and item.get("source") and item.get("asOf"):
+            if abs(item["points"])>12:raise ValueError("Adjustment exceeds safety cap")
+            delta+=sign*item["points"]
+            used.append({"team":g[side],"points":item["points"],"source":item["source"],"asOf":item["asOf"],"reason":item.get("reason","")})
+    margin=round(base+delta,2)
+    pick=g["home"] if margin>=0 else g["away"]
+    injury_reports={side:injury_teams.get(g[side],{}).get("players",[]) for side in ("away","home")}
+    quarterbacks={}
+    for side in ("away","home"):
+        team=g[side]
+        declaration=qb_declarations.get(team,{})
+        starter=declaration.get("starter")
+        source=declaration.get("source")
+        asof=declaration.get("asOf")
+        valid=official_starter_valid(declaration,g,team,now)
+        qbs=[p for p in injury_reports[side] if p.get("position","").upper()=="QB"]
+        matched=next((p for p in qbs if p.get("name","").casefold()==str(starter).casefold()),None) if valid else None
+        candidate=qb_candidates.get(team,{})
+        depthchart=depthchart_candidates.get(team,{})
+        quarterbacks[side]={"depthChartQB1Candidate":depthchart.get("qb1Candidate"),"depthChartSource":depthchart.get("source"),"depthChartIsConfirmedStarter":False,"recentPrimaryPasser":candidate.get("candidate"),"recentPrimaryPasserGameDate":candidate.get("lastGameDate"),"recentPrimaryPasserSource":candidate.get("source"),"recentPrimaryPasserIsConfirmedStarter":False,"starter":starter if valid else None,
+          "starterSource":source if valid else None,"starterAsOf":asof if valid else None,
+          "verification":"OFFICIAL_GAME_SPECIFIC" if valid else "UNCONFIRMED",
+          "injuryStatus":matched.get("status") if matched else "NOT REPORTED",
+          "availability":"REVIEW REQUIRED" if matched else "UNKNOWN",
+          "reportedQuarterbacks":qbs}
+    # Review-only QB injury and candidate discrepancies; never automatically change picks.
+    qb_alerts={}
+    for side in ("away","home"):
+        qb=quarterbacks[side]
+        reported={str(p.get("name","")).casefold():p for p in qb["reportedQuarterbacks"]}
+        primary=qb.get("recentPrimaryPasser")
+        depth=qb.get("depthChartQB1Candidate")
+        flags=[]
+        for name in set(x for x in (primary,depth) if x):
+            record=reported.get(name.casefold())
+            if record and str(record.get("status","")).casefold() not in ("active","healthy","available"):
+                flags.append({"name":name,"reportedStatus":record.get("status")})
+        # Injury-feed classifications are advisory; only game-specific official
+        # confirmations can establish actual availability or starter identity.
+        categories=[]
+        for name,record in reported.items():
+            status=str(record.get("status","")).strip().casefold()
+            details=str(record.get("description","")).casefold()
+            coach_decision="coach's decision" in details or "coaches decision" in details
+            if coach_decision:
+                category="NON_INJURY_INACTIVE"
+            elif status in ("out","injured reserve","ir"):
+                category="REPORTED_UNAVAILABLE"
+            elif status in ("questionable","doubtful"):
+                category="UNCERTAIN"
+            elif status in ("active","available","healthy"):
+                category="REPORTED_AVAILABLE"
+            else:
+                category="UNKNOWN"
+            categories.append({"name":record.get("name"),"reportedStatus":record.get("status"),
+                "category":category,"sourceType":"UNVERIFIED_REPORTING_FEED"})
+            if category in ("REPORTED_UNAVAILABLE","UNCERTAIN"):
+                if not any(str(x["name"]).casefold()==name for x in flags):
+                    flags.append({"name":record.get("name"),"reportedStatus":record.get("status")})
+        mismatch=bool(primary and depth and primary.casefold()!=depth.casefold())
+        qb_alerts[side]={"reviewRequired":bool(flags or mismatch or qb["verification"]!="OFFICIAL_GAME_SPECIFIC"),
+            "injuryFlags":flags,"reportedQbAvailability":categories,"candidateMismatch":mismatch,
+            "starterConfirmed":qb["verification"]=="OFFICIAL_GAME_SPECIFIC",
+            "note":"Reported unavailable is not independently confirmed; available does not mean confirmed starter. Coach-decision inactive is not an injury. No automatic points."}
+    qb_comparisons={side:qb_performance_comparison(g[side],(qb_declarations.get(g[side],{}) if quarterbacks[side]["verification"]=="OFFICIAL_GAME_SPECIFIC" else {}),qb_stats,now.astimezone(dt.timezone.utc),kickoff) for side in ("away","home")}
+    return {"qbReviewAlerts":qb_alerts,"qbPerformanceComparisons":qb_comparisons,"quarterbacks":quarterbacks,"injuryReports":injury_reports,"injurySource":injury_snapshot.get("source"),
+      "injuryRetrievedAt":injury_snapshot.get("retrievedAt"),"id":g["id"],"date":g["date"],"away":g["away"],"home":g["home"],"pick":pick,
+      "homeEdgePoints":margin,"baseHomeEdgePoints":round(base,2),"verifiedAdjustmentHomeEdgePoints":round(delta,2),
+      "confidence":"UNVALIDATED","rating":"NO BET","verifiedAdjustments":used,
+      "dataWarnings":(["Missing team history; used neutral rating"] if missing else [])+
+      (["No verified quarterback/injury adjustment; NOT an injury-aware pick"] if not used else []),
+      "reason":"70% season + 30% last-three scoring differential, +1.5 home points; explicit verified adjustments only. Not calibrated."}
+
+
 def main():
     now=dt.datetime.now(ET)
     schedule=load("nfl-schedule.json")
@@ -141,89 +240,10 @@ def main():
     except FileNotFoundError: qb_candidates={}
     try: depthchart_candidates=load("model-c-qb-depthcharts.json").get("teams",{})
     except FileNotFoundError: depthchart_candidates={}
-    games=[]
-    for g in selected["games"]:
-        kickoff=dt.datetime.fromisoformat(g["date"].replace("Z","+00:00"))
-        history=extract_history(history_raw,min(kickoff,now.astimezone(dt.timezone.utc)),year)
-        away=team_form(history,g["away"]);home=team_form(history,g["home"])
-        missing=away is None or home is None
-        base=(home or 0)-(away or 0)+1.5
-        verified=adjustments.get("games",{}).get(str(g["id"]),{})
-        delta=0.0;used=[]
-        for side,sign in (("home",1),("away",-1)):
-            item=verified.get(side)
-            if item and isinstance(item.get("points"),(int,float)) and item.get("source") and item.get("asOf"):
-                if abs(item["points"])>12:raise ValueError("Adjustment exceeds safety cap")
-                delta+=sign*item["points"]
-                used.append({"team":g[side],"points":item["points"],"source":item["source"],"asOf":item["asOf"],"reason":item.get("reason","")})
-        margin=round(base+delta,2)
-        pick=g["home"] if margin>=0 else g["away"]
-        injury_reports={side:injury_teams.get(g[side],{}).get("players",[]) for side in ("away","home")}
-        quarterbacks={}
-        for side in ("away","home"):
-            team=g[side]
-            declaration=qb_declarations.get(team,{})
-            starter=declaration.get("starter")
-            source=declaration.get("source")
-            asof=declaration.get("asOf")
-            valid=official_starter_valid(declaration,g,team,now)
-            qbs=[p for p in injury_reports[side] if p.get("position","").upper()=="QB"]
-            matched=next((p for p in qbs if p.get("name","").casefold()==str(starter).casefold()),None) if valid else None
-            candidate=qb_candidates.get(team,{})
-            depthchart=depthchart_candidates.get(team,{})
-            quarterbacks[side]={"depthChartQB1Candidate":depthchart.get("qb1Candidate"),"depthChartSource":depthchart.get("source"),"depthChartIsConfirmedStarter":False,"recentPrimaryPasser":candidate.get("candidate"),"recentPrimaryPasserGameDate":candidate.get("lastGameDate"),"recentPrimaryPasserSource":candidate.get("source"),"recentPrimaryPasserIsConfirmedStarter":False,"starter":starter if valid else None,
-              "starterSource":source if valid else None,"starterAsOf":asof if valid else None,
-              "verification":"OFFICIAL_GAME_SPECIFIC" if valid else "UNCONFIRMED",
-              "injuryStatus":matched.get("status") if matched else "NOT REPORTED",
-              "availability":"REVIEW REQUIRED" if matched else "UNKNOWN",
-              "reportedQuarterbacks":qbs}
-        # Review-only QB injury and candidate discrepancies; never automatically change picks.
-        qb_alerts={}
-        for side in ("away","home"):
-            qb=quarterbacks[side]
-            reported={str(p.get("name","")).casefold():p for p in qb["reportedQuarterbacks"]}
-            primary=qb.get("recentPrimaryPasser")
-            depth=qb.get("depthChartQB1Candidate")
-            flags=[]
-            for name in set(x for x in (primary,depth) if x):
-                record=reported.get(name.casefold())
-                if record and str(record.get("status","")).casefold() not in ("active","healthy","available"):
-                    flags.append({"name":name,"reportedStatus":record.get("status")})
-            # Injury-feed classifications are advisory; only game-specific official
-            # confirmations can establish actual availability or starter identity.
-            categories=[]
-            for name,record in reported.items():
-                status=str(record.get("status","")).strip().casefold()
-                details=str(record.get("description","")).casefold()
-                coach_decision="coach's decision" in details or "coaches decision" in details
-                if coach_decision:
-                    category="NON_INJURY_INACTIVE"
-                elif status in ("out","injured reserve","ir"):
-                    category="REPORTED_UNAVAILABLE"
-                elif status in ("questionable","doubtful"):
-                    category="UNCERTAIN"
-                elif status in ("active","available","healthy"):
-                    category="REPORTED_AVAILABLE"
-                else:
-                    category="UNKNOWN"
-                categories.append({"name":record.get("name"),"reportedStatus":record.get("status"),
-                    "category":category,"sourceType":"UNVERIFIED_REPORTING_FEED"})
-                if category in ("REPORTED_UNAVAILABLE","UNCERTAIN"):
-                    if not any(str(x["name"]).casefold()==name for x in flags):
-                        flags.append({"name":record.get("name"),"reportedStatus":record.get("status")})
-            mismatch=bool(primary and depth and primary.casefold()!=depth.casefold())
-            qb_alerts[side]={"reviewRequired":bool(flags or mismatch or qb["verification"]!="OFFICIAL_GAME_SPECIFIC"),
-                "injuryFlags":flags,"reportedQbAvailability":categories,"candidateMismatch":mismatch,
-                "starterConfirmed":qb["verification"]=="OFFICIAL_GAME_SPECIFIC",
-                "note":"Reported unavailable is not independently confirmed; available does not mean confirmed starter. Coach-decision inactive is not an injury. No automatic points."}
-        qb_comparisons={side:qb_performance_comparison(g[side],(qb_declarations.get(g[side],{}) if quarterbacks[side]["verification"]=="OFFICIAL_GAME_SPECIFIC" else {}),qb_stats,now.astimezone(dt.timezone.utc),kickoff) for side in ("away","home")}
-        games.append({"qbReviewAlerts":qb_alerts,"qbPerformanceComparisons":qb_comparisons,"quarterbacks":quarterbacks,"injuryReports":injury_reports,"injurySource":injury_snapshot.get("source"),
-          "injuryRetrievedAt":injury_snapshot.get("retrievedAt"),"id":g["id"],"date":g["date"],"away":g["away"],"home":g["home"],"pick":pick,
-          "homeEdgePoints":margin,"baseHomeEdgePoints":round(base,2),"verifiedAdjustmentHomeEdgePoints":round(delta,2),
-          "confidence":"UNVALIDATED","rating":"NO BET","verifiedAdjustments":used,
-          "dataWarnings":(["Missing team history; used neutral rating"] if missing else [])+
-          (["No verified quarterback/injury adjustment; NOT an injury-aware pick"] if not used else []),
-          "reason":"70% season + 30% last-three scoring differential, +1.5 home points; explicit verified adjustments only. Not calibrated."})
+    validate_original_slate(selected)
+    games=[predict_game(g, year, now, history_raw, adjustments, injury_snapshot,
+                        qb_declarations, qb_stats, qb_candidates, depthchart_candidates)
+           for g in selected["games"]]
     if len(games)<10:raise RuntimeError("Too few scheduled games; refusing to publish.")
     out={"title":"Model C — Automated Review Draft","season":year,"week":week,"generatedAt":now.isoformat(),
          "status":"AUTOMATED_REVIEW_ONLY","reviewRequired":True,
@@ -235,3 +255,4 @@ def main():
     print(f"Generated Model C Week {week} review-only draft: {len(games)} games; {sum(bool(g['verifiedAdjustments']) for g in games)} verified-adjusted.")
 
 if __name__=="__main__":main()
+
