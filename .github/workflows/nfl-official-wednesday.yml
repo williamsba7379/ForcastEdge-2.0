@@ -1,5 +1,5 @@
 name: NFL official Wednesday handoff — DISABLED RESEARCH STUB
-# No on: triggers. This file is intentionally non-runnable and non-publishing.
+# No event triggers; unconditional false job guard. Research-only and non-publishing.
 # Future workflow wiring requires a separate explicit approval.
 on: {}
 permissions:

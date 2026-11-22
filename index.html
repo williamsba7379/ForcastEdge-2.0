@@ -32,23 +32,36 @@
   document.getElementById('refreshModels').onclick=loadModels;
 })();
 </script><script src="./system-health.js" defer></script><script src="./original-forecastedge.js" defer></script><script src="./model-c.js" defer></script><script>
-/* Proposed official-card reader. OFF by default; never mutates saved picks. */
+/* Proposed official-card reader. OFF by default; no live publishing or stored-pick writes. */
 window.ForecastEdgeOfficialResearch = Object.freeze({
   enabled: false,
   async readApprovedCard() {
-    if (!this.enabled) throw new Error("Official publication reader disabled pending production approval");
-    const pointer = await fetch("./data/official-four-model/latest.json", {cache:"no-store"});
-    if (!pointer.ok) throw new Error("Official-card pointer unavailable");
-    const meta = await pointer.json();
-    if (!/^\\d{4}-week-(?:[1-9]|1[0-8])\\.json$/.test(meta.filename || "")) throw new Error("Invalid official-card path");
-    const response = await fetch("./data/official-four-model/"+meta.filename, {cache:"no-store"});
-    if (!response.ok) throw new Error("Official card unavailable");
-    const card = await response.json();
-    if (card.cardHash !== meta.cardHash || !Array.isArray(card.games) || !card.games.length ||
-        !card.games.every(g => g.models && ["A","B","C","C-QB"].every(m => g.models[m])) ||
-        card.status !== "FROZEN_ON_TIME" && card.status !== "FROZEN_LATE") throw new Error("Unverified official card");
-    // Browser SHA-256 verification and full schema validation must be added before enabling.
-    throw new Error("Reader cannot be enabled before independent hash and schema verification approval");
+    if (!this.enabled) throw new Error("Official publication reader disabled pending approval");
+    // Fail closed even if enabled is accidentally changed: release authority and
+    // independent verification are not configured in this research scaffold.
+    throw new Error("No independent release verifier configured; publication unavailable");
+  },
+  async verifyResearchCard(card, pointer, expectedSeason, expectedWeek) {
+    if (!card || !pointer || !Number.isInteger(expectedSeason) || !Number.isInteger(expectedWeek)) throw new Error("Missing trusted context");
+    const filename = String(pointer.filename || "");
+    if (!/^\\d{4}-week-(?:[1-9]|1[0-8])\\.json$/.test(filename)) throw new Error("Invalid filename");
+    if (filename !== expectedSeason+"-week-"+expectedWeek+".json" || card.season !== expectedSeason || card.week !== expectedWeek) throw new Error("Wrong week");
+    if (!Array.isArray(card.games) || !card.games.length || !card.games.every(g => g.models && Object.keys(g.models).sort().join(",")==="A,B,C,C-QB")) throw new Error("Incomplete models");
+    if (!["FROZEN_ON_TIME","FROZEN_LATE"].includes(card.status) || !["DELIVERED_ON_TIME","DELIVERED_LATE"].includes(card.deliveryStatus)) throw new Error("Invalid release status");
+    if (!/^[a-f0-9]{64}$/.test(String(card.cardHash)) || card.cardHash !== pointer.cardHash) throw new Error("Invalid digest");
+    const canonical = value => {
+      if (Array.isArray(value)) return "["+value.map(canonical).join(",")+"]";
+      if (value !== null && typeof value === "object") return "{"+Object.keys(value).sort().map(k=>JSON.stringify(k)+":"+canonical(value[k])).join(",")+"}";
+      return JSON.stringify(value);
+    };
+    const core={...card}; delete core.cardHash;
+    const bytes=new TextEncoder().encode(canonical(core));
+    if (!globalThis.crypto || !crypto.subtle) throw new Error("Crypto unavailable");
+    const digest=Array.from(new Uint8Array(await crypto.subtle.digest("SHA-256",bytes))).map(x=>x.toString(16).padStart(2,"0")).join("");
+    if (digest !== card.cardHash) throw new Error("Tampered card");
+    // A matching digest is NOT independent approval. Never return an official card
+    // without separate signed-release and complete-schema verification.
+    throw new Error("Independent release authority and schema validation not configured");
   }
 });
 </script></body></html>

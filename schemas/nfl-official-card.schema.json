@@ -15,7 +15,9 @@
     "publisherId",
     "inputManifestHash",
     "cardHash",
-    "games"
+    "games",
+    "deliveryStatus",
+    "releaseEvidence"
   ],
   "properties": {
     "schemaVersion": {
@@ -69,6 +71,15 @@
       "items": {
         "$ref": "#/$defs/game"
       }
+    },
+    "deliveryStatus": {
+      "enum": [
+        "DELIVERED_ON_TIME",
+        "DELIVERED_LATE"
+      ]
+    },
+    "releaseEvidence": {
+      "$ref": "#/$defs/releaseEvidence"
     }
   },
   "$defs": {
@@ -78,7 +89,8 @@
       "required": [
         "source",
         "capturedAt",
-        "sha256"
+        "sha256",
+        "artifactId"
       ],
       "properties": {
         "source": {
@@ -92,6 +104,10 @@
         "sha256": {
           "type": "string",
           "pattern": "^[a-f0-9]{64}$"
+        },
+        "artifactId": {
+          "type": "string",
+          "minLength": 1
         }
       }
     },
@@ -210,6 +226,39 @@
               "$ref": "#/$defs/model"
             }
           }
+        }
+      }
+    },
+    "releaseEvidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "authorityId",
+        "manifestSha256",
+        "approvedAt",
+        "signature",
+        "keyId"
+      ],
+      "properties": {
+        "authorityId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "manifestSha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "approvedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "signature": {
+          "type": "string",
+          "minLength": 1
+        },
+        "keyId": {
+          "type": "string",
+          "minLength": 1
         }
       }
     }

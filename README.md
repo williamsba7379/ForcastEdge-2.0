@@ -24,3 +24,10 @@ Proposed immutable weekly JSON and printable HTML paths: `data/official-four-mod
 The proposed validation contract requires independently approved schedule inputs, all A/B/C/C-QB rows, QB and market evidence, actual timestamped SHA-256 provenance, Wednesday 11 AM America/New_York cutoff and fail-closed behavior. NO BET is mandatory.
 Actual publication, automatic workflow execution, tests, PR, merge, deployment and any production change require separate authorization.
 Historical content verification is unauthorized; PR #15/#16 VM validation remains deferred.
+
+### Correction-pass safeguards (nonproduction, untested)
+The workflow remains triggerless, read-only and guarded by a false job condition. The reader remains disabled and rejects all cards even after local hash checks until independent signed-release and schema verification are available. No automatic fetch or production path is enabled.
+The JSON contract separates freeze status from delivery status and requires a release-evidence record; these self-declared fields alone are **not proof**. A separately controlled verifier and trusted artifact manifest are mandatory inputs, and no such authority is provisioned by this branch. Never infer historical certification from these records.
+Research artifact preparation requires an explicitly configured disposable root, a new direct-child directory and exclusive file creation. It cannot write latest.json. Filesystem checks alone are not a substitute for separately enforced container isolation and cannot guarantee defense against a malicious concurrent actor.
+Immutable history and rollback require independent signed/timestamped checkpoints, append-only retention and separate recovery approval; none is implemented or authorized in this isolated scaffold. NO BET remains a research-only restriction, not a production reclassification.
+The test definitions are synthetic and have not been executed. No PR, workflow, merge or production activation is authorized.
