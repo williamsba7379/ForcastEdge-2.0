@@ -1,40 +1,64 @@
-name: NFL four-model Wednesday review preflight (nonpublishing)
+name: NFL four-model delivery monitor (read-only, nonpublishing)
 on:
   schedule:
-    - cron: '0 15 * * 3'
-    - cron: '0 16 * * 3'
+    - cron: '20 15 * * 3'
+    - cron: '20 16 * * 3'
+    - cron: '20 17 * * 3'
   workflow_dispatch:
 permissions:
   contents: read
+  actions: read
+concurrency:
+  group: nfl-review-monitor-${{ github.ref }}
+  cancel-in-progress: false
 jobs:
-  review-preflight:
+  monitor:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Check Wednesday 11 AM America/New_York window
-        id: window
+      - name: Inspect scheduled same-day Model C run and artifact metadata
         env:
-          TZ: America/New_York
+          GH_TOKEN: ${{ github.token }}
+          GH_REPOSITORY: ${{ github.repository }}
         run: |
           python3 - <<'PY'
-          import datetime as dt, os
+          import datetime as dt
+          import json
+          import os
+          import urllib.request
           from zoneinfo import ZoneInfo
+
           now = dt.datetime.now(ZoneInfo("America/New_York"))
-          eligible = now.weekday() == 2 and now.hour == 11
-          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
-              f.write("eligible=" + str(eligible).lower() + "\n")
-          print("Eastern:", now.isoformat(), "eligible:", eligible)
+          if now.weekday() != 2:
+              print("NOT_SCHEDULED_WEDNESDAY; DELIVERY_UNVERIFIED")
+              raise SystemExit(0)
+          date = now.date()
+          repo = os.environ["GH_REPOSITORY"]
+          base = "https://api.github.com/repos/" + repo
+          def get(path):
+              req = urllib.request.Request(base + path, headers={
+                  "Authorization": "Bearer " + os.environ["GH_TOKEN"],
+                  "Accept": "application/vnd.github+json",
+                  "X-GitHub-Api-Version": "2022-11-28",
+              })
+              with urllib.request.urlopen(req, timeout=20) as response:
+                  return json.load(response)
+          try:
+              runs = get("/actions/workflows/model-c-draft.yml/runs?event=schedule&per_page=100")["workflow_runs"]
+              candidates = [r for r in runs if
+                  dt.datetime.fromisoformat(r["created_at"].replace("Z", "+00:00")).astimezone(ZoneInfo("America/New_York")).date() == date]
+              if not candidates:
+                  raise ValueError("No scheduled same-day Model C run")
+              r = max(candidates, key=lambda x: (x["run_number"], x["run_attempt"]))
+              if r["status"] != "completed" or r["conclusion"] != "success":
+                  raise ValueError("Scheduled Model C run not successfully completed: " + str(r["status"]))
+              arts = get("/actions/runs/" + str(r["id"]) + "/artifacts?per_page=100")["artifacts"]
+              expected = "nfl-review-" + str(r["id"]) + "-" + str(r["run_attempt"])
+              matches = [a for a in arts if a["name"] == expected and not a.get("expired")]
+              if len(matches) != 1:
+                  raise ValueError("Expected single same-run archive metadata not found")
+              print("ARTIFACT_METADATA_PRESENT_REVIEW_ONLY; DELIVERY_UNVERIFIED; integrityVerified=false")
+              print("run_id=", r["id"], "attempt=", r["run_attempt"], "artifact_id=", matches[0]["id"])
+          except Exception as exc:
+              print("DELIVERY_UNVERIFIED; BLOCKED:", str(exc))
+              raise SystemExit(1)
           PY
-      - name: Prepare current-week four-model review from authentic existing inputs
-        if: steps.window.outputs.eligible == 'true'
-        run: |
-          mkdir -p /tmp/forecastedge-review
-          python3 scripts/nfl_current_week_review_handoff.py \
-            --schedule data/nfl-schedule.json \
-            --draft data/model-c-automated-draft.json \
-            --shadow data/model-c-qb-shadow.json \
-            --history data/nfl-historical-results.json \
-            --as-of "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
-            --json /tmp/forecastedge-review/four-model-review-latest.json \
-            --html /tmp/forecastedge-review/four-model-review.html
-          echo 'REVIEW ONLY: local runner files; no upload, commit, push, deployment or publication'

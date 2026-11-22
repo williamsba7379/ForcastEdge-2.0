@@ -1,19 +1,14 @@
 name: Generate Model C review-only draft
 on:
-  push:
-    paths:
-      - '.github/workflows/model-c-draft.yml'
-      - 'scripts/model_c_*.py'
-      - 'tests/test_model_c_*.py'
-      - 'data/model-c-official-qb-source-review.json'
-      - 'data/model-c-qb-starters.json'
-      - 'data/model-c-qb-reviewed-announcements.json'
   schedule:
     - cron: '5 15 * * 3'
     - cron: '5 16 * * 3'
   workflow_dispatch:
 permissions:
-  contents: write
+  contents: read
+concurrency:
+  group: model-c-review-${{ github.ref }}
+  cancel-in-progress: false
 jobs:
   model-c:
     runs-on: ubuntu-latest
@@ -24,7 +19,7 @@ jobs:
         env:
           EVENT_NAME: ${{ github.event_name }}
         run: |
-          if [ "$EVENT_NAME" = "workflow_dispatch" ] || [ "$EVENT_NAME" = "push" ] || [ "$(TZ=America/New_York date '+%u %H')" = "3 11" ]; then
+          if [ "$EVENT_NAME" = "workflow_dispatch" ] || [ "$(TZ=America/New_York date '+%u %H')" = "3 11" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
           else
             echo "run=false" >> "$GITHUB_OUTPUT"
@@ -72,6 +67,10 @@ jobs:
       - name: Validate reviewed official QB announcements
         if: steps.time.outputs.run == 'true'
         run: python3 scripts/model_c_qb_verified_intake.py
+      - name: Remove checkout copies of generated same-run inputs
+        if: steps.time.outputs.run == 'true'
+        run: |
+          rm -f data/model-c-automated-draft.json data/model-c-qb-shadow.json
       - name: Generate independent Model C review draft
         if: steps.time.outputs.run == 'true'
         run: python3 scripts/model_c_engine.py
@@ -148,38 +147,30 @@ jobs:
       - name: Validate generated Model C review draft
         if: steps.time.outputs.run == 'true'
         run: python3 tests/test_model_c_draft_contract.py
-      - name: Commit draft only
+      - name: Create same-run review-only archive
         if: steps.time.outputs.run == 'true'
+        env:
+          REVIEW_RUN_ID: ${{ github.run_id }}
+          REVIEW_RUN_ATTEMPT: ${{ github.run_attempt }}
+          REVIEW_RUN_SHA: ${{ github.sha }}
+          REVIEW_RUN_STARTED_AT: ${{ github.event.repository.pushed_at }}
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if [ -f data/model-c-qb-starters.json ]; then git add data/model-c-qb-starters.json; fi
-          if [ -f data/model-c-qb-shadow.json ]; then git add data/model-c-qb-shadow.json; fi
-          if [ -f data/model-c-qb-shadow-validation.json ]; then git add data/model-c-qb-shadow-validation.json; fi
-          if [ -f data/model-c-qb-injury-audit-v2.json ]; then git add data/model-c-qb-injury-audit-v2.json; fi
-          git add data/four-model-head-to-head/*-refresh-*.json
-          git add data/four-model-head-to-head/*-totals-research.json
-          git add data/four-model-head-to-head/*-totals-market-comparison.json
-          git add data/four-model-head-to-head/*-totals-graded.json
-          if [ -f data/nfl-market-totals.json ]; then git add data/nfl-market-totals.json; fi
-          git add data/model-c-automated-draft.json data/model-c-qb-review-queue.json data/model-c-qb-ranked-news.json data/model-c-qb-ranking-audit.json
-          if [ -f data/model-c-official-article-metadata.json ]; then git add data/model-c-official-article-metadata.json; fi
-          if [ -f data/model-c-article-metadata-audit.json ]; then git add data/model-c-article-metadata-audit.json; fi
-          if [ -f data/model-c-qb-article-passages.json ]; then git add data/model-c-qb-article-passages.json; fi
-          if [ -f data/model-c-official-qb-discovery.json ]; then git add data/model-c-official-qb-discovery.json; fi
-          if [ -f data/model-c-qb-performance.json ]; then git add data/model-c-qb-performance.json; fi
-          if [ -f data/model-c-historical-qb-games.json ]; then git add data/model-c-historical-qb-games.json; fi
-          if [ -f data/model-c-historical-qb-audit.json ]; then git add data/model-c-historical-qb-audit.json; fi
-          if [ -f data/model-c-historical-score-reconciliation.json ]; then git add data/model-c-historical-score-reconciliation.json; fi
-          if [ -f data/nfl-historical-results.json ]; then git add data/nfl-historical-results.json; fi
-          if [ -f data/model-c-qb-candidates.json ]; then git add data/model-c-qb-candidates.json; fi
-          if [ -f data/model-c-qb-depthcharts.json ]; then git add data/model-c-qb-depthcharts.json; fi
-          if [ -f data/model-c-depthchart-diagnostic.json ]; then git add data/model-c-depthchart-diagnostic.json; fi
-          if [ -f data/model-c-injury-snapshot.json ]; then git add data/model-c-injury-snapshot.json; fi
-          if [ -f data/model-c-espn-qb-status.json ]; then git add data/model-c-espn-qb-status.json; fi
-          if ! git diff --cached --quiet; then
-            git commit -m "Update Model C review-only draft"
-            git push
-          fi
+          mkdir -p /tmp/forecastedge-review
+          python3 scripts/nfl_current_week_review_handoff.py \
+            --schedule data/nfl-schedule.json \
+            --draft data/model-c-automated-draft.json \
+            --shadow data/model-c-qb-shadow.json \
+            --history data/nfl-historical-results.json \
+            --as-of "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
+            --archive /tmp/forecastedge-review/four-model-review.tar.gz
+      - name: Upload one review-only archive
+        if: steps.time.outputs.run == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: nfl-review-${{ github.run_id }}-${{ github.run_attempt }}
+          path: /tmp/forecastedge-review/four-model-review.tar.gz
+          if-no-files-found: error
+          retention-days: 7
+          compression-level: 0
 
 # Manual expedited refresh requested 2026-10-28 before 15:30 ET; preserve QB safeguards.
