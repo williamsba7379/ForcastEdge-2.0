@@ -7,7 +7,6 @@ from model_c_engine import extract_history,team_form
 
 DATA=pathlib.Path(__file__).resolve().parents[1]/"data"
 OUT=DATA/"four-model-head-to-head"
-OUT.mkdir(parents=True,exist_ok=True)
 
 def stamp(value):
     return dt.datetime.fromisoformat(value.replace("Z","+00:00"))
@@ -91,6 +90,7 @@ def main():
     draft=json.loads((DATA/"model-c-automated-draft.json").read_text())
     shadow=json.loads((DATA/"model-c-qb-shadow.json").read_text())
     history=json.loads((DATA/"nfl-historical-results.json").read_text())
+    OUT.mkdir(parents=True,exist_ok=True)
     path=OUT/(str(draft["season"])+"-week-"+str(draft["week"])+".json")
     now=dt.datetime.now(dt.timezone.utc)
     if path.exists():
