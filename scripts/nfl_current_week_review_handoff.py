@@ -179,7 +179,7 @@ def main():
             raise SystemExit("BLOCKED: invalid local archive digest")
         fd_receipt = os.open(receipt, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o600)
         with os.fdopen(fd_receipt, "w") as out:
-            out.write(digest + "\\n")
+            out.write(digest + "\n")
             out.flush()
             os.fsync(out.fileno())
         # The incomplete marker is deliberately retained after any earlier
