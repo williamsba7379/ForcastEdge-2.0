@@ -1,0 +1,429 @@
+"""Synthetic-only tests: no network, no production imports, no live score data."""
+import copy
+import unittest
+from datetime import datetime, timezone
+from research.ab_snapshot.validator import canonical, digest, validate, cutoff
+
+def fixture(day="2026-10-28"):
+    limit = cutoff(day)
+    stamp = lambda dt: dt.strftime("%Y-%m-%dT%H:%M:%S.000Z")
+    before = stamp(limit.replace(minute=59, hour=limit.hour-1))
+    game = {"id":"synthetic-001","status":{"type":{"completed":True}},
+            "competitions":[{"competitors":[
+                {"homeAway":"home","team":{"id":"H"},"score":24},
+                {"homeAway":"away","team":{"id":"A"},"score":17}]}]}
+    raw = canonical({"events":[game]})
+    schedule = canonical({"events":[{"id":"synthetic-001","homeTeamId":"H","awayTeamId":"A",
+        "kickoffUtc":"2026-10-25T17:00:00.000Z","state":"FINAL"}]})
+    p = {"schemaVersion":"1.2-synthetic","purpose":"research-ab-score-snapshot",
+         "freezeDate":day,"cutoffUtc":stamp(limit),"scheduleSha256":digest(schedule),
+         "scheduleCapture":{"responseSha256":digest(schedule),"completedAtUtc":before},
+         "excludedGameIds":[],
+         "responses":[{"responseId":"r1","url":"synthetic://scoreboard",
+                       "requestStartedUtc":before,"responseCompletedUtc":before,
+                       "sha256":digest(raw),"byteLength":len(raw)}],
+         "games":[{"gameId":"synthetic-001","responseId":"r1",
+                   "homeTeamId":"H","awayTeamId":"A",
+                   "kickoffUtc":"2026-10-25T17:00:00.000Z",
+                   "homeScore":24,"awayScore":17,"winnerTeamId":"H"}]}
+    return p, {"r1":raw}, schedule
+
+def run(p, responses, schedule, attestation_overrides=None):
+    raw = canonical(p)
+    a = {"capturePayloadSha256":digest(raw),"scheduleSha256":digest(schedule),
+         "kind":"SYNTHETIC_TEST_ONLY","proof":"SYNTHETIC_VALID",
+         "timingClassification":"SYNTHETIC_VERIFIED"}
+    a["syntheticSeal"]={"sealedAtUtc":p["cutoffUtc"]}
+    a["syntheticSeal"]["bindingSha256"]=digest(canonical({
+        "capturePayloadSha256":digest(raw),"scheduleSha256":digest(schedule),
+        "sealedAtUtc":p["cutoffUtc"],"kind":"SYNTHETIC_TEST_ONLY"}))
+    a.update(attestation_overrides or {})
+    return validate(raw, responses, schedule, a)
+
+class ValidatorTests(unittest.TestCase):
+    def test_valid(self):
+        self.assertEqual(run(*fixture())["errors"], [])
+    def test_cutoff_dst(self):
+        for day, hour in [("2026-03-04",16),("2026-03-11",15),
+                          ("2026-10-28",15),("2026-11-04",16)]:
+            self.assertEqual(cutoff(day).hour, hour)
+    def test_exact_boundary(self):
+        p, r, s = fixture()
+        p["responses"][0]["responseCompletedUtc"] = p["cutoffUtc"]
+        self.assertTrue(run(p,r,s)["passed"])
+    def test_late(self):
+        p, r, s = fixture()
+        p["responses"][0]["responseCompletedUtc"] = "2026-10-28T15:00:00.001Z"
+        self.assertIn("E005_CAPTURE_LATE",run(p,r,s)["errors"])
+    def test_tampered_response(self):
+        p, r, s = fixture()
+        r["r1"] += b" "
+        self.assertIn("E003_SOURCE_HASH_MISMATCH",run(p,r,s)["errors"])
+    def test_missing_response(self):
+        p, r, s = fixture()
+        self.assertIn("E004_SOURCE_MISSING",run(p,{},s)["errors"])
+    def test_claimed_time(self):
+        p, r, s = fixture()
+        self.assertIn("E006_TIME_UNVERIFIED",run(p,r,s,{"timingClassification":"CLAIMED"})["errors"])
+    def test_invalid_attestation(self):
+        p, r, s = fixture()
+        self.assertIn("E017_ATTESTATION_INVALID",run(p,r,s,{"proof":"FORGED"})["errors"])
+    def test_missing_final(self):
+        p, r, s = fixture()
+        e = {"events":[{"id":"synthetic-001","status":{"type":{"completed":False}},
+            "competitions":[{"competitors":[{"homeAway":"home","team":{"id":"H"},"score":24},
+            {"homeAway":"away","team":{"id":"A"},"score":17}]}]}]}
+        r["r1"]=canonical(e);p["responses"][0]["sha256"]=digest(r["r1"]);p["responses"][0]["byteLength"]=len(r["r1"])
+        self.assertIn("E008_STATUS_NOT_FINAL",run(p,r,s)["errors"])
+    def test_duplicate(self):
+        p, r, s = fixture()
+        p["games"].append(copy.deepcopy(p["games"][0]))
+        self.assertIn("E010_GAME_DUPLICATE",run(p,r,s)["errors"])
+    def test_conflict(self):
+        p, r, s = fixture()
+        p["games"][0]["homeScore"]=28
+        self.assertIn("E011_GAME_CONFLICT",run(p,r,s)["errors"])
+    def test_missing_coverage(self):
+        p, r, s = fixture()
+        p["games"]=[]
+        self.assertIn("E012_COVERAGE_MISSING",run(p,r,s)["errors"])
+    def test_unexpected_game(self):
+        p, r, s = fixture()
+        p["games"][0]["gameId"]="synthetic-999"
+        self.assertIn("E013_COVERAGE_UNEXPECTED",run(p,r,s)["errors"])
+    def test_bad_schedule(self):
+        p, r, s = fixture()
+        self.assertIn("E014_SCHEDULE_INVALID",run(p,r,s+b" ")["errors"])
+    def test_bad_payload(self):
+        p, r, s = fixture()
+        self.assertIn("E015_PAYLOAD_HASH_MISMATCH",run(p,r,s,{"capturePayloadSha256":"0"*64})["errors"])
+    def test_artifact_missing(self):
+        p, r, s = fixture()
+        self.assertIn("E016_ARTIFACT_INVALID",run(p,r,s,{"artifactSha256":"0"*64})["errors"])
+
+
+
+class AdversarialTests(unittest.TestCase):
+    def test_before_cutoff_one_ms(self):
+        p,r,s=fixture();p["responses"][0]["responseCompletedUtc"]="2026-10-28T14:59:59.999Z"
+        self.assertTrue(run(p,r,s)["passed"])
+    def test_started_after_completion(self):
+        p,r,s=fixture();p["responses"][0]["requestStartedUtc"]="2026-10-28T15:00:00.000Z"
+        self.assertIn("E007_TIME_CONFLICT",run(p,r,s)["errors"])
+    def test_unverified_schedule_digest(self):
+        p,r,s=fixture();p["scheduleSha256"]="0"*64
+        self.assertIn("E014_SCHEDULE_INVALID",run(p,r,s)["errors"])
+    def test_duplicate_schedule_game(self):
+        import json
+        p,r,s=fixture();d=json.loads(s);d["events"].append(copy.deepcopy(d["events"][0]))
+        s=canonical(d);p["scheduleSha256"]=digest(s);p["scheduleCapture"]["responseSha256"]=digest(s)
+        self.assertIn("E010_GAME_DUPLICATE",run(p,r,s)["errors"])
+    def test_pending_excluded(self):
+        import json
+        p,r,s=fixture();d=json.loads(s)
+        d["events"].append({"id":"synthetic-pending","homeTeamId":"C","awayTeamId":"D","kickoffUtc":"2026-10-29T00:00:00.000Z","state":"PENDING"})
+        s=canonical(d);p["scheduleSha256"]=digest(s);p["scheduleCapture"]["responseSha256"]=digest(s);p["excludedGameIds"]=["synthetic-pending"]
+        self.assertTrue(run(p,r,s)["passed"])
+    def test_pending_included(self):
+        import json
+        p,r,s=fixture();d=json.loads(s);d["events"][0]["state"]="PENDING"
+        s=canonical(d);p["scheduleSha256"]=digest(s)
+        self.assertIn("E013_COVERAGE_UNEXPECTED",run(p,r,s)["errors"])
+    def test_untrusted_source_url(self):
+        p,r,s=fixture();p["responses"][0]["url"]="https://site.api.espn.com"
+        self.assertIn("E018_ISOLATION_VIOLATION",run(p,r,s)["errors"])
+    def test_noncanonical_payload(self):
+        import json
+        p,r,s=fixture();raw=json.dumps(p,indent=2).encode()
+        a={"capturePayloadSha256":digest(raw),"scheduleSha256":digest(s),"kind":"SYNTHETIC_TEST_ONLY","proof":"SYNTHETIC_VALID","timingClassification":"SYNTHETIC_VERIFIED"}
+        self.assertIn("E002_CANONICAL_INVALID",validate(raw,r,s,a)["errors"])
+    def test_duplicate_json_key(self):
+        p,r,s=fixture();raw=canonical(p).replace(b'"freezeDate":',b'"freezeDate":"2026-10-28","freezeDate":',1)
+        a={"capturePayloadSha256":digest(raw),"scheduleSha256":digest(s),"kind":"SYNTHETIC_TEST_ONLY","proof":"SYNTHETIC_VALID","timingClassification":"SYNTHETIC_VERIFIED"}
+        self.assertIn("E001_SCHEMA_INVALID",validate(raw,r,s,a)["errors"])
+    def test_malformed_timestamp(self):
+        p,r,s=fixture();p["responses"][0]["responseCompletedUtc"]="2026-10-28T15:00:00Z"
+        self.assertIn("E007_TIME_CONFLICT",run(p,r,s)["errors"])
+    def test_conflicting_source_score(self):
+        import json
+        p,r,s=fixture();d=json.loads(r["r1"]);d["events"][0]["competitions"][0]["competitors"][0]["score"]=27
+        r["r1"]=canonical(d);p["responses"][0]["sha256"]=digest(r["r1"]);p["responses"][0]["byteLength"]=len(r["r1"])
+        self.assertIn("E011_GAME_CONFLICT",run(p,r,s)["errors"])
+    def test_artifact_wrong_bytes(self):
+        p,r,s=fixture();raw=canonical(p)
+        a={"capturePayloadSha256":digest(raw),"scheduleSha256":digest(s),"kind":"SYNTHETIC_TEST_ONLY","proof":"SYNTHETIC_VALID","timingClassification":"SYNTHETIC_VERIFIED","artifactSha256":digest(b"expected")}
+        self.assertIn("E016_ARTIFACT_INVALID",validate(raw,r,s,a,b"actual")["errors"])
+
+
+class EvidenceGapTests(unittest.TestCase):
+    def test_schedule_after_cutoff(self):
+        p,r,s=fixture();p["scheduleCapture"]["completedAtUtc"]="2026-10-28T15:00:00.001Z"
+        self.assertIn("E005_CAPTURE_LATE",run(p,r,s)["errors"])
+    def test_missing_schedule_capture(self):
+        p,r,s=fixture();del p["scheduleCapture"]
+        self.assertIn("E014_SCHEDULE_INVALID",run(p,r,s)["errors"])
+    def test_seal_wrong_digest(self):
+        p,r,s=fixture()
+        self.assertIn("E017_ATTESTATION_INVALID",run(p,r,s,{"syntheticSeal":{"sealedAtUtc":p["cutoffUtc"],"bindingSha256":"0"*64}})["errors"])
+    def test_seal_after_cutoff(self):
+        p,r,s=fixture();seal={"sealedAtUtc":"2026-10-28T15:00:00.001Z"}
+        seal["bindingSha256"]=digest(canonical({"capturePayloadSha256":digest(canonical(p)),"scheduleSha256":digest(s),"sealedAtUtc":seal["sealedAtUtc"],"kind":"SYNTHETIC_TEST_ONLY"}))
+        self.assertIn("E005_CAPTURE_LATE",run(p,r,s,{"syntheticSeal":seal})["errors"])
+    def test_unsafe_integer_rejected(self):
+        from research.ab_snapshot.validator import EvidenceError
+        with self.assertRaises(EvidenceError): canonical({"x":9007199254740992})
+    def test_unicode_utf16_key_order(self):
+        self.assertEqual(canonical({chr(0x1F600):1,chr(0xE000):2}), '{"😀":1,"":2}'.encode())
+    def test_multi_response_conflict(self):
+        import json
+        p,r,s=fixture()
+        other=json.loads(r["r1"]);other["events"][0]["competitions"][0]["competitors"][0]["score"]=99
+        r["r2"]=canonical(other)
+        second=copy.deepcopy(p["responses"][0]);second["responseId"]="r2";second["sha256"]=digest(r["r2"]);second["byteLength"]=len(r["r2"])
+        p["responses"].append(second)
+        self.assertIn("E011_GAME_CONFLICT",run(p,r,s)["errors"])
+    def test_unselected_response_duplicate(self):
+        import json
+        p,r,s=fixture()
+        e=json.loads(r["r1"]);e["events"].append(copy.deepcopy(e["events"][0]))
+        r["r2"]=canonical(e)
+        second=copy.deepcopy(p["responses"][0]);second["responseId"]="r2";second["sha256"]=digest(r["r2"]);second["byteLength"]=len(r["r2"])
+        p["responses"].append(second)
+        self.assertIn("E010_GAME_DUPLICATE",run(p,r,s)["errors"])
+    def test_unsupported_retention_proof(self):
+        p,r,s=fixture()
+        self.assertIn("E016_ARTIFACT_INVALID",run(p,r,s,{"retentionProof":"unverified-external-claim"})["errors"])
+
+
+class P0SecurityTests(unittest.TestCase):
+    """Offline synthetic negative fixtures; no external sources."""
+    def attest(self,p,s):
+        raw=canonical(p)
+        seal_time=p["cutoffUtc"]
+        return {"capturePayloadSha256":digest(raw),"scheduleSha256":digest(s),
+                "kind":"SYNTHETIC_TEST_ONLY","proof":"SYNTHETIC_VALID",
+                "timingClassification":"SYNTHETIC_VERIFIED",
+                "syntheticSeal":{"sealedAtUtc":seal_time,"bindingSha256":digest(canonical({
+                    "capturePayloadSha256":digest(raw),"scheduleSha256":digest(s),
+                    "sealedAtUtc":seal_time,"kind":"SYNTHETIC_TEST_ONLY"}))}}
+
+    def test_truncated_json(self):
+        p,r,s=fixture()
+        self.assertIn("E001_SCHEMA_INVALID",validate(canonical(p)[:-1],r,s,{})["errors"])
+
+    def test_invalid_utf8(self):
+        p,r,s=fixture()
+        self.assertIn("E001_SCHEMA_INVALID",validate(bytes([0xff]),r,s,{})["errors"])
+
+    def test_json_nan(self):
+        p,r,s=fixture()
+        self.assertIn("E001_SCHEMA_INVALID",validate(b'{"value":NaN}',r,s,{})["errors"])
+
+    def test_payload_games_wrong_type(self):
+        p,r,s=fixture();p["games"]=None
+        self.assertIn("E001_SCHEMA_INVALID",run(p,r,s)["errors"])
+
+    def test_payload_responses_wrong_type(self):
+        p,r,s=fixture();p["responses"]=None
+        self.assertIn("E001_SCHEMA_INVALID",run(p,r,s)["errors"])
+
+    def test_response_url_wrong_type(self):
+        p,r,s=fixture();p["responses"][0]["url"]=None
+        self.assertIn("E001_SCHEMA_INVALID",run(p,r,s)["errors"])
+
+    def test_response_id_unhashable(self):
+        p,r,s=fixture();p["responses"][0]["responseId"]=[]
+        self.assertIn("E001_SCHEMA_INVALID",run(p,r,s)["errors"])
+
+    def test_attestation_wrong_type(self):
+        p,r,s=fixture()
+        self.assertIn("E001_SCHEMA_INVALID",validate(canonical(p),r,s,[])["errors"])
+
+    def test_synthetic_seal_wrong_type(self):
+        p,r,s=fixture()
+        self.assertIn("E001_SCHEMA_INVALID",run(p,r,s,{"syntheticSeal":[]})["errors"])
+
+    def test_schedule_events_wrong_type(self):
+        p,r,s=fixture();s=canonical({"events":None})
+        p["scheduleSha256"]=digest(s);p["scheduleCapture"]["responseSha256"]=digest(s)
+        self.assertIn("E001_SCHEMA_INVALID",run(p,r,s)["errors"])
+
+    def test_source_events_wrong_type(self):
+        p,r,s=fixture();r["r1"]=canonical({"events":None})
+        p["responses"][0]["sha256"]=digest(r["r1"])
+        p["responses"][0]["byteLength"]=len(r["r1"])
+        self.assertIn("E001_SCHEMA_INVALID",run(p,r,s)["errors"])
+
+    def test_source_file_scheme_rejected(self):
+        p,r,s=fixture();p["responses"][0]["url"]="file:///tmp/synthetic.json"
+        self.assertIn("E018_ISOLATION_VIOLATION",run(p,r,s)["errors"])
+
+    def test_source_data_scheme_rejected(self):
+        p,r,s=fixture();p["responses"][0]["url"]="data:application/json,{}"
+        self.assertIn("E018_ISOLATION_VIOLATION",run(p,r,s)["errors"])
+
+    def test_source_https_scheme_rejected(self):
+        p,r,s=fixture();p["responses"][0]["url"]="https://example.invalid/synthetic"
+        self.assertIn("E018_ISOLATION_VIOLATION",run(p,r,s)["errors"])
+
+    def test_source_url_missing(self):
+        p,r,s=fixture();del p["responses"][0]["url"]
+        self.assertIn("E001_SCHEMA_INVALID",run(p,r,s)["errors"])
+
+    def test_source_url_synthetic_prefix_only(self):
+        p,r,s=fixture();p["responses"][0]["url"]="synthetic://"
+        self.assertFalse(run(p,r,s)["passed"])
+
+
+class P0BoundedAndNestedTests(unittest.TestCase):
+    def test_nested_source_status_wrong_type(self):
+        import json
+        p,r,s=fixture();d=json.loads(r["r1"]);d["events"][0]["status"]=[]
+        r["r1"]=canonical(d);p["responses"][0]["sha256"]=digest(r["r1"]);p["responses"][0]["byteLength"]=len(r["r1"])
+        self.assertIn("E001_SCHEMA_INVALID",run(p,r,s)["errors"])
+
+    def test_unhashable_excluded_id(self):
+        p,r,s=fixture();p["excludedGameIds"]=[[]]
+        self.assertIn("E001_SCHEMA_INVALID",run(p,r,s)["errors"])
+
+    def test_unhashable_game_response_id(self):
+        p,r,s=fixture();p["games"][0]["responseId"]=[]
+        self.assertIn("E001_SCHEMA_INVALID",run(p,r,s)["errors"])
+
+    def test_oversized_payload(self):
+        p,r,s=fixture();p["extra"]="x"*1_048_576
+        self.assertIn("E001_SCHEMA_INVALID",run(p,r,s)["errors"])
+
+    def test_deep_payload(self):
+        p,r,s=fixture();x=0
+        for _ in range(100): x=[x]
+        p["extra"]=x
+        self.assertIn("E001_SCHEMA_INVALID",run(p,r,s)["errors"])
+
+    def test_deep_raw_json_over_recursion_limit(self):
+        p,r,s=fixture()
+        raw=b"["*1100+b"0"+b"]"*1100
+        self.assertIn("E001_SCHEMA_INVALID",validate(raw,r,s,{})["errors"])
+
+    def test_oversized_response(self):
+        p,r,s=fixture();r["r1"]=b"x"*1_048_577
+        self.assertIn("E001_SCHEMA_INVALID",run(p,r,s)["errors"])
+
+    def test_oversized_schedule(self):
+        p,r,s=fixture();s=b"x"*1_048_577
+        self.assertIn("E001_SCHEMA_INVALID",run(p,r,s)["errors"])
+
+    def test_oversized_artifact(self):
+        p,r,s=fixture();raw=canonical(p)
+        self.assertIn("E016_ARTIFACT_INVALID",validate(raw,r,s,{},b"x"*1_048_577)["errors"])
+
+
+class P0BoundaryTests(unittest.TestCase):
+    def test_parse_exact_size_boundary(self):
+        from research.ab_snapshot.validator import parse, EvidenceError, MAX_BYTES
+        self.assertEqual(len(parse(b'"'+b'x'*(MAX_BYTES-2)+b'"')), MAX_BYTES-2)
+        with self.assertRaises(EvidenceError) as cm:
+            parse(b'"'+b'x'*(MAX_BYTES-1)+b'"')
+        self.assertEqual(cm.exception.code, 'E001_SCHEMA_INVALID')
+
+    def test_parse_exact_depth_boundary(self):
+        from research.ab_snapshot.validator import parse, EvidenceError, MAX_DEPTH
+        self.assertIsNotNone(parse(b'['*MAX_DEPTH+b'0'+b']'*MAX_DEPTH))
+        with self.assertRaises(EvidenceError) as cm:
+            parse(b'['*(MAX_DEPTH+1)+b'0'+b']'*(MAX_DEPTH+1))
+        self.assertEqual(cm.exception.code, 'E001_SCHEMA_INVALID')
+
+    def test_response_count_at_limit_rejected_as_unexpected_not_schema(self):
+        from research.ab_snapshot.validator import MAX_RESPONSES
+        p,r,s=fixture()
+        for i in range(MAX_RESPONSES-1): r['extra'+str(i)]=r['r1']
+        result=run(p,r,s)
+        self.assertFalse(result['passed'])
+        self.assertIn('E013_COVERAGE_UNEXPECTED',result['errors'])
+        self.assertNotIn('E001_SCHEMA_INVALID',result['errors'])
+
+    def test_response_count_over_limit(self):
+        from research.ab_snapshot.validator import MAX_RESPONSES
+        p,r,s=fixture()
+        for i in range(MAX_RESPONSES): r['extra'+str(i)]=r['r1']
+        self.assertEqual(run(p,r,s)['errors'], ['E001_SCHEMA_INVALID'])
+
+    def test_response_dictionary_nonstring_id(self):
+        p,r,s=fixture();r[7]=b'{}'
+        self.assertEqual(run(p,r,s)['errors'], ['E001_SCHEMA_INVALID'])
+
+    def test_response_dictionary_wrong_shape(self):
+        p,r,s=fixture()
+        for value in (None, [], {'r1':None}, {'r1':'not-bytes'}):
+            self.assertEqual(run(p,value,s)['errors'], ['E001_SCHEMA_INVALID'])
+
+    def test_error_order_repeatable(self):
+        p,r,s=fixture();p['responses'][0]['url']='file:///tmp/nope';p['games'][0]['homeScore']=99
+        results=[run(p,r,s) for _ in range(5)]
+        self.assertTrue(all(x==results[0] for x in results))
+        self.assertEqual(results[0]['errors'], sorted(set(results[0]['errors'])))
+
+    def test_oversized_response_deterministic(self):
+        p,r,s=fixture();r['r1']=b'x'*1_048_577
+        self.assertEqual(run(p,r,s),run(p,r,s))
+        self.assertEqual(run(p,r,s)['errors'],['E001_SCHEMA_INVALID'])
+
+
+class RFC8785RestrictedSubsetTests(unittest.TestCase):
+    """Normative RFC 8785 sections 3.2.2/3.2.3; unsupported numbers fail closed."""
+    def test_rfc_sorting_example(self):
+        value = {"\u20ac":"Euro Sign", "\r":"Carriage Return", "\ufb33":"Hebrew Letter Dalet With Dagesh",
+                 "1":"One", "\U0001f600":"Emoji: Grinning Face", "\u0080":"Control", "\u00f6":"Latin Small Letter O With Diaeresis"}
+        import json
+        result = json.loads(canonical(value))
+        self.assertEqual(list(result), ["\r", "1", "\u0080", "\u00f6", "\u20ac", "\U0001f600", "\ufb33"])
+
+    def test_rfc_control_character_serialization(self):
+        self.assertEqual(canonical({"x":"\b\t\n\f\r\x0f"}), b'{"x":"\\b\\t\\n\\f\\r\\u000f"}')
+
+    def test_rfc_literal_and_slash_serialization(self):
+        self.assertEqual(canonical({"x":[None, True, False, "/", "\\", "\""]}), b'{"x":[null,true,false,"/","\\\\","\\\""]}')
+
+    def test_rfc_recursive_sorting_and_array_order(self):
+        self.assertEqual(canonical({"z":[{"b":2,"a":1},{"d":4,"c":3}],"a":0}),
+                         b'{"a":0,"z":[{"a":1,"b":2},{"c":3,"d":4}]}')
+
+    def test_rfc_unicode_not_normalized(self):
+        self.assertNotEqual(canonical({"x":"\u00e9"}), canonical({"x":"e\u0301"}))
+
+    def test_rfc_reject_lone_surrogate_in_key_and_value(self):
+        from research.ab_snapshot.validator import EvidenceError
+        for value in ({"\ud800":1},{"x":"\udfff"}):
+            with self.subTest(value=repr(value)), self.assertRaises(EvidenceError) as cm:
+                canonical(value)
+            self.assertEqual(cm.exception.code,"E002_CANONICAL_INVALID")
+
+    def test_rfc_reject_duplicate_json_property(self):
+        from research.ab_snapshot.validator import parse, EvidenceError
+        with self.assertRaises(EvidenceError) as cm: parse(b'{"a":1,"a":2}')
+        self.assertEqual(cm.exception.code,"E001_SCHEMA_INVALID")
+
+    def test_rfc_reject_nonfinite_json_numbers(self):
+        from research.ab_snapshot.validator import parse, EvidenceError
+        for raw in (b'{"x":NaN}', b'{"x":Infinity}', b'{"x":-Infinity}'):
+            with self.subTest(raw=raw), self.assertRaises(EvidenceError) as cm: parse(raw)
+            self.assertEqual(cm.exception.code,"E001_SCHEMA_INVALID")
+
+    def test_subset_reject_floats_including_negative_zero(self):
+        from research.ab_snapshot.validator import EvidenceError
+        for number in (4.5, -0.0, 1e30, 1e-27):
+            with self.subTest(number=number), self.assertRaises(EvidenceError) as cm: canonical({"x":number})
+            self.assertEqual(cm.exception.code,"E002_CANONICAL_INVALID")
+
+    def test_subset_reject_unsafe_integer_both_signs(self):
+        from research.ab_snapshot.validator import EvidenceError
+        for number in (9007199254740992,-9007199254740992):
+            with self.subTest(number=number), self.assertRaises(EvidenceError) as cm: canonical({"x":number})
+            self.assertEqual(cm.exception.code,"E002_CANONICAL_INVALID")
+
+    def test_subset_safe_integer_boundary(self):
+        self.assertEqual(canonical({"x":9007199254740991}), b'{"x":9007199254740991}')
+        self.assertEqual(canonical({"x":-9007199254740991}), b'{"x":-9007199254740991}')
+
+if __name__ == "__main__":
+    unittest.main()
