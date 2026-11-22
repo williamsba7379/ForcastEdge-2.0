@@ -55,8 +55,9 @@ class ContractTests(unittest.TestCase):
         self.card["games"][0]["models"]["X"]=copy.deepcopy(self.card["games"][0]["models"]["A"]);self.seal()
         with self.assertRaises(ValueError):self.verify()
     def test_wrong_slate_cutoff_fails(self):
-        self.card["cutoffAt"]=(dt.datetime.fromisoformat(self.cutoff)-dt.timedelta(days=7)).isoformat();self.seal()
-        with self.assertRaises(ValueError):self.verify()
+        # Thursday 11 AM is not the required Wednesday cutoff; assert the actual gate.
+        self.card["cutoffAt"]=(dt.datetime.fromisoformat(self.cutoff)+dt.timedelta(days=1)).isoformat();self.seal()
+        with self.assertRaisesRegex(ValueError,"Wrong Wednesday cutoff"):self.verify()
 
     def test_rejected_schedule_authority(self):
         with self.assertRaisesRegex(ValueError,"Independent schedule authority rejected"):self.verify(schedule_authority=lambda *_:False)
@@ -95,8 +96,8 @@ class ContractTests(unittest.TestCase):
     def test_cross_language_rejection_vectors(self):
         for obj in (
             {"confidence": 0.3},
-            {"text": "caf\\u00e9"},
-            {"text": "line\\nfeed"},
+            {"text": "café"},
+            {"text": "line\nfeed"},
             {"value": float("nan")},
             {"value": float("inf")},
             {"value": 9007199254740992},
