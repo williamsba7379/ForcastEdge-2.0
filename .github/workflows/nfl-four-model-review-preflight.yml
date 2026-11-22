@@ -25,34 +25,16 @@ jobs:
               f.write("eligible=" + str(eligible).lower() + "\n")
           print("Eastern:", now.isoformat(), "eligible:", eligible)
           PY
-      - name: Check available four-model winner card; generate local review only
+      - name: Prepare current-week four-model review from authentic existing inputs
         if: steps.window.outputs.eligible == 'true'
         run: |
-          python3 - <<'PY'
-          import json, pathlib, datetime as dt
-          from zoneinfo import ZoneInfo
-          now=dt.datetime.now(ZoneInfo("America/New_York"))
-          schedule=json.loads(pathlib.Path("data/nfl-schedule.json").read_text())
-          upcoming=[]
-          for week in schedule["weeks"]:
-              dates=[dt.datetime.fromisoformat(g["date"].replace("Z","+00:00")) for g in week["games"]]
-              if dates and min(dates)>now.astimezone(dt.timezone.utc):
-                  upcoming.append((min(dates),week))
-          if not upcoming:
-              raise SystemExit("BLOCKED: no future complete slate in local schedule")
-          week=min(upcoming,key=lambda row:row[0])[1]["week"]
-          path=pathlib.Path(f"data/four-model-head-to-head/{schedule['season']}-week-{week}.json")
-          if not path.is_file():
-              raise SystemExit(f"BLOCKED: missing existing four-model card {path}; no fabricated picks")
-          card=json.loads(path.read_text())
-          if card.get("week")!=week or card.get("season")!=schedule["season"]:
-              raise SystemExit("BLOCKED: wrong season/week")
-          pathlib.Path("review-source-path.txt").write_text(str(path))
-          print("Existing review-only source:",path)
-          PY
           mkdir -p /tmp/forecastedge-review
-          python3 scripts/nfl_four_model_review_report.py \
-            --card "$(cat review-source-path.txt)" \
-            --html /tmp/forecastedge-review/four-model-review.html \
-            --json /tmp/forecastedge-review/four-model-review-latest.json
+          python3 scripts/nfl_current_week_review_handoff.py \
+            --schedule data/nfl-schedule.json \
+            --draft data/model-c-automated-draft.json \
+            --shadow data/model-c-qb-shadow.json \
+            --history data/nfl-historical-results.json \
+            --as-of "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
+            --json /tmp/forecastedge-review/four-model-review-latest.json \
+            --html /tmp/forecastedge-review/four-model-review.html
           echo 'REVIEW ONLY: local runner files; no upload, commit, push, deployment or publication'
