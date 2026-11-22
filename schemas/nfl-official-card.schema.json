@@ -17,7 +17,8 @@
     "cardHash",
     "games",
     "deliveryStatus",
-    "releaseEvidence"
+    "releaseEvidence",
+    "scheduleEvidence"
   ],
   "properties": {
     "schemaVersion": {
@@ -80,6 +81,9 @@
     },
     "releaseEvidence": {
       "$ref": "#/$defs/releaseEvidence"
+    },
+    "scheduleEvidence": {
+      "$ref": "#/$defs/evidence"
     }
   },
   "$defs": {
@@ -137,7 +141,8 @@
           "minLength": 1
         },
         "spreadLine": {
-          "type": "number"
+          "type": "number",
+          "multipleOf": 0.5
         },
         "totalPick": {
           "enum": [
@@ -146,20 +151,24 @@
           ]
         },
         "totalLine": {
-          "type": "number"
+          "type": "number",
+          "multipleOf": 0.5
         },
         "projectedHomeScore": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "multipleOf": 0.5
         },
         "projectedAwayScore": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "multipleOf": 0.5
         },
         "confidence": {
           "type": "number",
           "minimum": 0,
-          "maximum": 1
+          "maximum": 1,
+          "multipleOf": 0.5
         },
         "wagerStatus": {
           "const": "NO BET"
@@ -262,5 +271,6 @@
         }
       }
     }
-  }
+  },
+  "$comment": "Research-only restricted canonical JSON: ASCII printable strings, integer or exact half-unit numeric values, sorted keys, UTF-8 SHA-256; not full RFC 8785. Independent authority is required."
 }

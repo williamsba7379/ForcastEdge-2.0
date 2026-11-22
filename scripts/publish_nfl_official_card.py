@@ -22,7 +22,7 @@ def printable(card):
             lines.append("<tr>"+"".join("<td>"+esc(v)+"</td>" for v in vals)+"</tr>")
     return "\n".join(lines+["</tbody></table></body></html>"])+"\n"
 
-def prepare(card_path,schedule_path,schema_path,output_dir,*,trusted_evidence=None,verify_release=None):
+def prepare(card_path,schedule_path,schema_path,output_dir,*,trusted_evidence=None,verify_release=None,verify_schedule=None):
     if os.environ.get("FORECASTEDGE_RESEARCH_PREPARE")!="EXPLICIT_LOCAL_ONLY":
         raise RuntimeError("Research preparation disabled")
     # An environment variable is not a security boundary: require a caller-supplied
@@ -30,13 +30,16 @@ def prepare(card_path,schedule_path,schema_path,output_dir,*,trusted_evidence=No
     root=os.environ.get("FORECASTEDGE_DISPOSABLE_RESEARCH_ROOT")
     if not root:
         raise ValueError("Missing disposable research root")
-    root=Path(root).resolve(strict=True)
-    if not root.is_dir() or root.is_symlink() or (root.stat().st_mode & 0o022):
+    original_root=Path(root)
+    if original_root.is_symlink() or not original_root.is_absolute():
+        raise ValueError("Research root must be absolute and not a symlink")
+    root=original_root.resolve(strict=True)
+    if not root.is_dir() or (root.stat().st_mode & 0o022):
         raise ValueError("Unsafe research root")
     target=Path(output_dir)
-    if not target.is_absolute() or target.is_symlink() or target.exists() or target.parent.resolve(strict=True)!=root:
+    if not target.is_absolute() or target.is_symlink() or target.exists() or target.parent != root:
         raise ValueError("Output must be a new direct child of disposable research root")
-    card=validate_files(card_path,schedule_path,schema_path,trusted_evidence=trusted_evidence,verify_release=verify_release)
+    card=validate_files(card_path,schedule_path,schema_path,trusted_evidence=trusted_evidence,verify_release=verify_release,verify_schedule=verify_schedule)
     name=str(card["season"])+"-week-"+str(card["week"])
     target.mkdir(mode=0o700)
     # No overwrite and no following symlinks. No latest pointer, GitHub write or production path.

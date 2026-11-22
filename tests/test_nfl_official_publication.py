@@ -1,7 +1,7 @@
 """Synthetic contract assertions only. No tests executed; no external NFL data."""
 import copy
 import datetime as dt
-import unittest
+import unittest\nimport json\nfrom pathlib import Path\nfrom hashlib import sha256
 from zoneinfo import ZoneInfo
 from scripts.validate_nfl_official_card import canonical, digest, validate
 
@@ -20,7 +20,8 @@ class ContractTests(unittest.TestCase):
             return e
         model={"moneylineWinner":"HOME","spreadPick":"HOME","spreadLine":-1.5,"totalPick":"OVER","totalLine":41.5,"projectedHomeScore":24,"projectedAwayScore":20,"confidence":0.6,"wagerStatus":"NO BET","marketEvidence":evidence("market"),"modelEvidence":evidence("model")}
         self.card={"schemaVersion":"1.0","cardId":"synthetic-only","season":2026,"week":11,"status":"FROZEN_ON_TIME","deliveryStatus":"DELIVERED_ON_TIME","cutoffAt":self.cutoff,"frozenAt":self.frozen,"publishedAt":self.published,"publisherId":"nfl-official-wednesday","inputManifestHash":digest(self.schedule),"games":[{"gameId":"synthetic-1","kickoffAt":kickoff,"homeTeam":"HOME","awayTeam":"AWAY","qbEvidence":evidence("qb"),"models":{name:copy.deepcopy(model) for name in ("A","B","C","C-QB")}}],"releaseEvidence":{"authorityId":"synthetic-independent","manifestSha256":"b"*64,"approvedAt":self.published,"signature":"synthetic-signature","keyId":"synthetic-key"}}
-        self.schema={"required":list(self.card)+["cardHash"],"$defs":{"model":{"required":list(model)},"releaseEvidence":{"required":list(self.card["releaseEvidence"])}}}
+        self.card["scheduleEvidence"]=evidence("schedule")
+        self.schema=json.loads((Path(__file__).resolve().parents[1]/"schemas/nfl-official-card.schema.json").read_text())
         self.seal()
     def seal(self):
         self.card["cardHash"]=digest({k:v for k,v in self.card.items() if k!="cardHash"})
@@ -53,3 +54,19 @@ class ContractTests(unittest.TestCase):
     def test_wrong_slate_cutoff_fails(self):
         self.card["cutoffAt"]=(dt.datetime.fromisoformat(self.cutoff)-dt.timedelta(days=7)).isoformat();self.seal()
         with self.assertRaises(ValueError):self.verify()
+
+    def test_rejected_schedule_authority(self):
+        with self.assertRaises(ValueError):self.verify(schedule_authority=lambda *_:False)
+    def test_approval_after_publication_rejected(self):
+        self.card["releaseEvidence"]["approvedAt"]=(dt.datetime.fromisoformat(self.published)+dt.timedelta(minutes=2)).isoformat();self.seal()
+        with self.assertRaises(ValueError):self.verify()
+    def test_canonical_known_answer_ascii(self):
+        # Independent published SHA-256 known-answer for canonical {"a":1,"b":2}.
+        self.assertEqual(sha256(canonical({"b":2.0,"a":1})).hexdigest(),"43258cff783fe7036d8a43033f830adfc60ec037382473548ac742b888292777")
+    def test_canonical_rejects_non_ascii(self):
+        with self.assertRaises(ValueError):canonical({"name":"caf\\u00e9"})
+    def test_reject_noncanonical_number(self):
+        with self.assertRaises(ValueError):canonical({"confidence":0.3})
+    def test_schema_contract_matches_card(self):
+        self.assertEqual(set(self.schema["required"]),set(self.card))
+        self.assertEqual(set(self.schema["$defs"]["model"]["required"]),set(self.card["games"][0]["models"]["A"]))

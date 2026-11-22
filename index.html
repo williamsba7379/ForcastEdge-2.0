@@ -49,9 +49,9 @@ window.ForecastEdgeOfficialResearch = Object.freeze({
     if (!Array.isArray(card.games) || !card.games.length || !card.games.every(g => g.models && Object.keys(g.models).sort().join(",")==="A,B,C,C-QB")) throw new Error("Incomplete models");
     if (!["FROZEN_ON_TIME","FROZEN_LATE"].includes(card.status) || !["DELIVERED_ON_TIME","DELIVERED_LATE"].includes(card.deliveryStatus)) throw new Error("Invalid release status");
     if (!/^[a-f0-9]{64}$/.test(String(card.cardHash)) || card.cardHash !== pointer.cardHash) throw new Error("Invalid digest");
-    const canonical = value => {
+    const canonical = value => {\n      if (typeof value === "string" && !/^[\\x20-\\x7e]*$/.test(value)) throw new Error("Noncanonical string");\n      if (typeof value === "number" && (!Number.isSafeInteger(value * 2) || !Number.isFinite(value))) throw new Error("Noncanonical number");
       if (Array.isArray(value)) return "["+value.map(canonical).join(",")+"]";
-      if (value !== null && typeof value === "object") return "{"+Object.keys(value).sort().map(k=>JSON.stringify(k)+":"+canonical(value[k])).join(",")+"}";
+      if (value !== null && typeof value === "object") return "{"+Object.keys(value).sort().map(k=>{ if (!/^[\\x20-\\x7e]*$/.test(k)) throw new Error("Noncanonical key"); return JSON.stringify(k)+":"+canonical(value[k]); }).join(",")+"}";
       return JSON.stringify(value);
     };
     const core={...card}; delete core.cardHash;

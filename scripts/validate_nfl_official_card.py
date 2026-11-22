@@ -11,7 +11,28 @@ MODELS = ("A", "B", "C", "C-QB")
 PUBLISHER = "nfl-official-wednesday"
 SHA = set("0123456789abcdef")
 def canonical(value):
-    return json.dumps(value, sort_keys=True, separators=(",", ":"), ensure_ascii=False, allow_nan=False).encode("utf-8")
+    """Restricted cross-language canonical JSON (NOT general RFC 8785).
+    Only ASCII-printable strings and exact half-unit numeric values are accepted.
+    """
+    def normalize(v):
+        if isinstance(v, str):
+            if any(ord(c) < 32 or ord(c) > 126 for c in v):
+                raise ValueError("Noncanonical string")
+            return v
+        if v is None or type(v) is bool:
+            return v
+        if type(v) in (int, float):
+            if not math.isfinite(v) or abs(v) > 9007199254740991 or v * 2 != int(v * 2):
+                raise ValueError("Noncanonical numeric value")
+            return int(v) if v == int(v) else float(v)
+        if isinstance(v, list):
+            return [normalize(x) for x in v]
+        if isinstance(v, dict):
+            if not all(isinstance(k, str) for k in v):
+                raise ValueError("Invalid canonical object key")
+            return {normalize(k):normalize(item) for k,item in v.items()}
+        raise ValueError("Unsupported canonical JSON type")
+    return json.dumps(normalize(value), sort_keys=True, separators=(",", ":"), ensure_ascii=True, allow_nan=False).encode("utf-8")
 def digest(value):
     return hashlib.sha256(canonical(value)).hexdigest()
 def timestamp(value):
@@ -35,11 +56,14 @@ def evidence(value, frozen, trusted):
     record=trusted.get(key)
     if record is None or record["sha256"]!=value["sha256"] or timestamp(record["capturedAt"])!=timestamp(value["capturedAt"]):
         raise ValueError("Unverified evidence")
-def validate(card, schedule, schema, *, trusted_evidence=None, verify_release=None):
-    if trusted_evidence is None or not callable(verify_release):
+def validate(card, schedule, schema, *, trusted_evidence=None, verify_release=None, verify_schedule=None):
+    if trusted_evidence is None or not callable(verify_release) or not callable(verify_schedule):
         raise ValueError("Independent manifest and release authority required")
     if not isinstance(card,dict) or not isinstance(schedule,dict) or set(card)!=set(schema["required"]):
         raise ValueError("Invalid card contract")
+    # Require the checked-in schema contract, not a caller-supplied reduced stub.
+    if schema.get("$schema")!="https://json-schema.org/draft/2020-12/schema" or "scheduleEvidence" not in schema.get("required",[]):
+        raise ValueError("Unapproved schema contract")
     if card["schemaVersion"]!="1.0" or card["publisherId"]!=PUBLISHER:
         raise ValueError("Unexpected schema or publisher")
     if type(card["season"]) is not int or card["season"]<2020 or type(card["week"]) is not int or not 1<=card["week"]<=18:
@@ -62,6 +86,9 @@ def validate(card, schedule, schema, *, trusted_evidence=None, verify_release=No
         raise ValueError("Schedule digest mismatch")
     if not isinstance(schedule.get("games"),list) or not schedule["games"] or not isinstance(card["games"],list):
         raise ValueError("Missing schedule or card games")
+    evidence(card["scheduleEvidence"],frozen,trusted_evidence)
+    if verify_schedule(schedule,card["scheduleEvidence"]) is not True:
+        raise ValueError("Independent schedule authority rejected")
     reference={str(g["id"]):g for g in schedule["games"]}
     ids=[g.get("gameId") for g in card["games"]]
     if len(reference)!=len(schedule["games"]) or len(ids)!=len(set(ids)) or set(ids)!=set(reference):
@@ -95,6 +122,8 @@ def validate(card, schedule, schema, *, trusted_evidence=None, verify_release=No
                 v=m[field]
                 if type(v) not in (float,int) or not math.isfinite(v):
                     raise ValueError("Invalid numeric field")
+            if any(m[f]*2 != int(m[f]*2) for f in ("spreadLine","totalLine","projectedHomeScore","projectedAwayScore","confidence")):
+                raise ValueError("Unsupported noncanonical half-unit numeric value")
             if min(m["projectedHomeScore"],m["projectedAwayScore"])<0 or not 0<=m["confidence"]<=1:
                 raise ValueError("Invalid projection")
             evidence(m["marketEvidence"],frozen,trusted_evidence)
@@ -104,15 +133,17 @@ def validate(card, schedule, schema, *, trusted_evidence=None, verify_release=No
     release=card["releaseEvidence"]
     if not isinstance(release,dict) or set(release)!=set(schema["$defs"]["releaseEvidence"]["required"]):
         raise ValueError("Invalid release evidence")
-    if not sha(release["manifestSha256"]) or timestamp(release["approvedAt"])<frozen:
+    if not sha(release["manifestSha256"]) or not frozen<=timestamp(release["approvedAt"])<=published:
         raise ValueError("Invalid release timestamp or manifest hash")
+    # A caller-provided callback is not itself proof of independent authority.
+    # A separately controlled trusted execution boundary must supply these verifiers.
     if verify_release(card,schedule,release) is not True:
         raise ValueError("Independent release verification failed")
     return True
 
-def validate_files(card_path,schedule_path,schema_path,*,trusted_evidence=None,verify_release=None):
+def validate_files(card_path,schedule_path,schema_path,*,trusted_evidence=None,verify_release=None,verify_schedule=None):
     card=json.loads(Path(card_path).read_text())
     schedule=json.loads(Path(schedule_path).read_text())
     schema=json.loads(Path(schema_path).read_text())
-    validate(card,schedule,schema,trusted_evidence=trusted_evidence,verify_release=verify_release)
+    validate(card,schedule,schema,trusted_evidence=trusted_evidence,verify_release=verify_release,verify_schedule=verify_schedule)
     return card
