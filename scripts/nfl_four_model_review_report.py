@@ -77,10 +77,14 @@ def main():
     p.add_argument("--card", required=True, type=Path)
     p.add_argument("--research", type=Path)
     p.add_argument("--html", required=True, type=Path)
+    p.add_argument("--json", type=Path, help="Optional review-only JSON output; never auto-publish")
     args = p.parse_args()
     card = json.loads(args.card.read_text())
     research = json.loads(args.research.read_text()) if args.research else None
-    args.html.write_text(render(build(card, research)), encoding="utf-8")
+    report = build(card, research)
+    args.html.write_text(render(report), encoding="utf-8")
+    if args.json:
+        args.json.write_text(json.dumps(report, indent=2) + "\\n", encoding="utf-8")
     print("REVIEW_ONLY_INCOMPLETE; no official card published")
 
 
