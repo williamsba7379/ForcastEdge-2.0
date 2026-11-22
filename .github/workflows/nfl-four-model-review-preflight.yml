@@ -1,0 +1,58 @@
+name: NFL four-model Wednesday review preflight (nonpublishing)
+on:
+  schedule:
+    - cron: '0 15 * * 3'
+    - cron: '0 16 * * 3'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  review-preflight:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check Wednesday 11 AM America/New_York window
+        id: window
+        env:
+          TZ: America/New_York
+        run: |
+          python3 - <<'PY'
+          import datetime as dt, os
+          from zoneinfo import ZoneInfo
+          now = dt.datetime.now(ZoneInfo("America/New_York"))
+          eligible = now.weekday() == 2 and now.hour == 11
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write("eligible=" + str(eligible).lower() + "\n")
+          print("Eastern:", now.isoformat(), "eligible:", eligible)
+          PY
+      - name: Check available four-model winner card; generate local review only
+        if: steps.window.outputs.eligible == 'true'
+        run: |
+          python3 - <<'PY'
+          import json, pathlib, datetime as dt
+          from zoneinfo import ZoneInfo
+          now=dt.datetime.now(ZoneInfo("America/New_York"))
+          schedule=json.loads(pathlib.Path("data/nfl-schedule.json").read_text())
+          upcoming=[]
+          for week in schedule["weeks"]:
+              dates=[dt.datetime.fromisoformat(g["date"].replace("Z","+00:00")) for g in week["games"]]
+              if dates and min(dates)>now.astimezone(dt.timezone.utc):
+                  upcoming.append((min(dates),week))
+          if not upcoming:
+              raise SystemExit("BLOCKED: no future complete slate in local schedule")
+          week=min(upcoming,key=lambda row:row[0])[1]["week"]
+          path=pathlib.Path(f"data/four-model-head-to-head/{schedule['season']}-week-{week}.json")
+          if not path.is_file():
+              raise SystemExit(f"BLOCKED: missing existing four-model card {path}; no fabricated picks")
+          card=json.loads(path.read_text())
+          if card.get("week")!=week or card.get("season")!=schedule["season"]:
+              raise SystemExit("BLOCKED: wrong season/week")
+          pathlib.Path("review-source-path.txt").write_text(str(path))
+          print("Existing review-only source:",path)
+          PY
+          mkdir -p /tmp/forecastedge-review
+          python3 scripts/nfl_four_model_review_report.py \
+            --card "$(cat review-source-path.txt)" \
+            --html /tmp/forecastedge-review/four-model-review.html \
+            --json /tmp/forecastedge-review/four-model-review-latest.json
+          echo 'REVIEW ONLY: local runner files; no upload, commit, push, deployment or publication'
