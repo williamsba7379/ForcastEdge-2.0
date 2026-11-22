@@ -4,6 +4,7 @@ on:
     - cron: '20 15 * * 3'
     - cron: '20 16 * * 3'
     - cron: '20 17 * * 3'
+    - cron: '20 18 * * 3'
   workflow_dispatch:
 permissions:
   contents: read
@@ -11,6 +12,7 @@ permissions:
 concurrency:
   group: nfl-review-monitor-${{ github.ref }}
   cancel-in-progress: false
+# Scheduled checks only execute from the default branch; this repair branch is not deployed.
 jobs:
   monitor:
     runs-on: ubuntu-latest
@@ -30,7 +32,7 @@ jobs:
           now = dt.datetime.now(ZoneInfo("America/New_York"))
           if now.weekday() != 2:
               print("NOT_SCHEDULED_WEDNESDAY; DELIVERY_UNVERIFIED")
-              raise SystemExit(0)
+              raise SystemExit(1)
           date = now.date()
           repo = os.environ["GH_REPOSITORY"]
           base = "https://api.github.com/repos/" + repo
@@ -48,16 +50,32 @@ jobs:
                   dt.datetime.fromisoformat(r["created_at"].replace("Z", "+00:00")).astimezone(ZoneInfo("America/New_York")).date() == date]
               if not candidates:
                   raise ValueError("No scheduled same-day Model C run")
-              r = max(candidates, key=lambda x: (x["run_number"], x["run_attempt"]))
-              if r["status"] != "completed" or r["conclusion"] != "success":
-                  raise ValueError("Scheduled Model C run not successfully completed: " + str(r["status"]))
-              arts = get("/actions/runs/" + str(r["id"]) + "/artifacts?per_page=100")["artifacts"]
-              expected = "nfl-review-" + str(r["id"]) + "-" + str(r["run_attempt"])
-              matches = [a for a in arts if a["name"] == expected and not a.get("expired")]
-              if len(matches) != 1:
-                  raise ValueError("Expected single same-run archive metadata not found")
-              print("ARTIFACT_METADATA_PRESENT_REVIEW_ONLY; DELIVERY_UNVERIFIED; integrityVerified=false")
-              print("run_id=", r["id"], "attempt=", r["run_attempt"], "artifact_id=", matches[0]["id"])
+              # Check all attempts from today's scheduled runs; never silently
+              # substitute a later run for an earlier missing or failed run.
+              states = []
+              for r in sorted(candidates, key=lambda x: (x["run_number"], x["run_attempt"])):
+                  attempt = r["run_attempt"]
+                  label = "run=" + str(r["id"]) + " attempt=" + str(attempt)
+                  if r["status"] != "completed":
+                      states.append(("PENDING", label))
+                      continue
+                  if r["conclusion"] != "success":
+                      states.append(("FAILED", label + " conclusion=" + str(r["conclusion"])))
+                      continue
+                  arts = get("/actions/runs/" + str(r["id"]) + "/artifacts?per_page=100")["artifacts"]
+                  expected = "nfl-review-" + str(r["id"]) + "-" + str(attempt)
+                  matches = [a for a in arts if a["name"] == expected and not a.get("expired")]
+                  if len(matches) != 1:
+                      states.append(("MISSING", label))
+                      continue
+                  uploaded = dt.datetime.fromisoformat(matches[0]["created_at"].replace("Z", "+00:00"))
+                  cutoff = dt.datetime.combine(date, dt.time(11), ZoneInfo("America/New_York"))
+                  status = "LATE_METADATA_PRESENT" if uploaded > cutoff else "METADATA_PRESENT"
+                  states.append((status, label + " artifact_id=" + str(matches[0]["id"])))
+              for status, detail in states:
+                  print(status, detail, "REVIEW_ONLY_UNPUBLISHED DELIVERY_UNVERIFIED integrityVerified=false")
+              if any(status in ("PENDING", "FAILED", "MISSING") for status, _ in states):
+                  raise ValueError("At least one scheduled run is pending, failed, or missing its archive")
           except Exception as exc:
               print("DELIVERY_UNVERIFIED; BLOCKED:", str(exc))
               raise SystemExit(1)
