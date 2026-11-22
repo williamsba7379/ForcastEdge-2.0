@@ -1,5 +1,5 @@
-# REVIEW ONLY: intentionally inert. No schedule, no workflow_dispatch,
-# no push or pull_request trigger. Requires separate approval to activate.
+# REVIEW ONLY: no schedule, workflow_dispatch, push or pull_request trigger.
+# Separate approval required for any activation, tests, execution or delivery.
 name: NFL Wednesday four-model delivery (INERT REVIEW PROPOSAL)
 on: {}
 permissions:
@@ -10,7 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Inert proposal only; not an operational workflow."
-# Future approved orchestration must capture eligible inputs BEFORE 11 AM ET,
-# run verified A/B/C/C-QB engines in isolation, validate every row,
-# create a new immutable release candidate, and expose an independently
-# retrievable read-only manifest. ChatGPT automation integration is separate.
+# Future integration must independently establish engine isolation, provenance,
+# complete score/market/confidence evidence, immutable storage and authorized
+# read-only ChatGPT retrieval before the Wednesday 11 AM Eastern deadline.
