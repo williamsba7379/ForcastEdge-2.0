@@ -19,11 +19,20 @@ def build(draft,shadow,history):
             if not injured or adj.get("status")=="EXPERIMENTAL_APPLIED":continue
             counts={}
             for p in injured:
-                name=p.get("name","")
-                counts[name]=sum(r.get("team")==team and r.get("primaryPasser","").casefold()==name.casefold() and r.get("gameDate","")<game["date"] for r in history.get("records",[]))
+                name=p.get("name")
+                if not isinstance(name,str) or not name.strip():
+                    continue  # Unknown passer identity is not evidence of an established starter.
+                counts[name]=sum(
+                    r.get("team")==team
+                    and isinstance(r.get("primaryPasser"),str)
+                    and r["primaryPasser"].casefold()==name.casefold()
+                    and isinstance(r.get("gameDate"),str)
+                    and r["gameDate"]<game["date"]
+                    for r in history.get("records",[])
+                )
             candidate=str(qb.get("depthChartQB1Candidate") or "").casefold()
             recent=str(qb.get("recentPrimaryPasser") or "").casefold()
-            names={p.get("name","").casefold() for p in injured}
+            names={p["name"].casefold() for p in injured if isinstance(p.get("name"),str) and p["name"].strip()}
             if max(counts.values(),default=0)>=2:
                 priority="P1_ESTABLISHED_PRIMARY_PASSER_ABSENT"
             elif candidate in names or recent in names:
