@@ -60,9 +60,13 @@ class HandoffTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "matchup/kickoff mismatch"):
             self.run_handoff()
 
-    def test_reject_after_cutoff(self):
-        with self.assertRaisesRegex(ValueError, "Past Wednesday"):
-            self.run_handoff(dt.datetime(2026, 11, 25, 16, 1, tzinfo=dt.timezone.utc))
+    def test_reject_after_window(self):
+        with self.assertRaisesRegex(ValueError, "Outside Wednesday"):
+            self.run_handoff(dt.datetime(2026, 11, 25, 17, 1, tzinfo=dt.timezone.utc))
+
+    def test_delayed_output_not_on_time(self):
+        report = self.run_handoff(dt.datetime(2026, 11, 25, 16, 1, tzinfo=dt.timezone.utc))
+        self.assertEqual(report["deliveryTiming"], "AFTER_11AM_NOT_ON_TIME")
 
 
 if __name__ == "__main__":
