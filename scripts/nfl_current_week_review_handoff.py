@@ -20,8 +20,8 @@ def prepare(schedule, draft, shadow, history, now):
     if local.weekday() != 2:
         raise ValueError("Wednesday review handoff only")
     cutoff = local.replace(hour=11, minute=0, second=0, microsecond=0)
-    if now > cutoff:
-        raise ValueError("Past Wednesday 11 AM Eastern cutoff: do not backdate")
+    if local.hour != 11:
+        raise ValueError("Outside Wednesday 11 AM Eastern review window")
     weeks = schedule.get("weeks", [])
     candidates = [w for w in weeks if w.get("games") and
                   min(dt.datetime.fromisoformat(g["date"].replace("Z", "+00:00"))
@@ -57,6 +57,8 @@ def prepare(schedule, draft, shadow, history, now):
     report["sourceStatus"] = "REVIEW_ONLY_UNPUBLISHED"
     report["sourceFrozenAt"] = None
     report["sourceGeneratedAt"] = now.isoformat()
+    report["deliveryTiming"] = "AT_CUTOFF" if now == cutoff else "AFTER_11AM_NOT_ON_TIME"
+    report["notice"] += " Actual generation time retained; after-11 AM output is not an on-time freeze."
     report["status"] = "REVIEW_ONLY_INCOMPLETE"
     return report
 
