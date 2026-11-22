@@ -29,7 +29,7 @@ def handoff(schedule, draft, shadow, history, evidence, *, now=None,
         return {"status": decision["status"], "candidate": decision,
                 "enginesExecuted": True, "published": False,
                 "deliveryDeadlineET": now.astimezone(ET).date().isoformat() + "T11:00:00 America/New_York"}
-    except (ValueError, TypeError, KeyError, AttributeError, OverflowError):
+    except Exception:
         return {"status": "DELIVERY_BLOCKED", "reason": "ENGINE_OR_INPUT_FAILURE",
                 "enginesExecuted": True, "published": False}
 
