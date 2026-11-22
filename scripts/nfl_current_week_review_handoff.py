@@ -65,10 +65,25 @@ def prepare(schedule, draft, shadow, history, now):
 def main():
     p = argparse.ArgumentParser()
     for name in ("schedule", "draft", "shadow", "history"):
-        p.add_argument("--" + name, required=True, type=Path)
-    p.add_argument("--as-of", required=True)
-    p.add_argument("--archive", required=True, type=Path)
+        p.add_argument("--" + name, type=Path)
+    p.add_argument("--as-of")
+    p.add_argument("--archive", type=Path)
+    p.add_argument("--verify-complete", type=Path)
     args = p.parse_args()
+    if args.verify_complete is not None:
+        target = args.verify_complete
+        marker = target.with_name(target.name + ".incomplete")
+        receipt = target.with_name(target.name + ".sha256")
+        if marker.exists() or not target.is_file() or not receipt.is_file():
+            raise SystemExit("BLOCKED: archive completion evidence missing or incomplete")
+        expected = receipt.read_text(encoding="ascii").strip()
+        actual = hashlib.sha256(target.read_bytes()).hexdigest()
+        if len(expected) != 64 or expected != actual:
+            raise SystemExit("BLOCKED: archive digest mismatch")
+        print("LOCAL_ARCHIVE_COMPLETE_REVIEW_ONLY DELIVERY_UNVERIFIED sha256=" + actual)
+        return
+    if not all((args.schedule, args.draft, args.shadow, args.history, args.as_of, args.archive)):
+        raise SystemExit("BLOCKED: missing archive inputs")
     now = dt.datetime.fromisoformat(args.as_of.replace("Z", "+00:00"))
     if now.tzinfo is None:
         raise SystemExit("BLOCKED: as-of timestamp must include timezone")
@@ -131,18 +146,18 @@ def main():
     members["manifest.json"] = (json.dumps(manifest, sort_keys=True, indent=2) + "\n").encode()
     target = args.archive
     incomplete = target.with_name(target.name + ".incomplete")
-    if incomplete.exists():
-        raise SystemExit("BLOCKED: previous incomplete archive marker exists")
-    if target.exists():
-        raise SystemExit("BLOCKED: archive already exists")
+    receipt = target.with_name(target.name + ".sha256")
     target.parent.mkdir(parents=True, exist_ok=True)
+    if incomplete.exists() or target.exists() or receipt.exists():
+        raise SystemExit("BLOCKED: archive already exists or prior attempt incomplete")
     markerfd = os.open(incomplete, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o600)
     with os.fdopen(markerfd, "w") as marker:
         marker.write("INCOMPLETE REVIEW ARCHIVE; DELIVERY_UNVERIFIED\\n")
         marker.flush()
         os.fsync(marker.fileno())
-    fd, tmp = tempfile.mkstemp(prefix=".review-", suffix=".tar.gz", dir=target.parent)
+    tmp = None
     try:
+        fd, tmp = tempfile.mkstemp(prefix=".review-", suffix=".tar.gz", dir=target.parent)
         with os.fdopen(fd, "wb") as out:
             with tarfile.open(fileobj=out, mode="w:gz") as archive:
                 for name, data in sorted(members.items()):
@@ -160,8 +175,15 @@ def main():
         finally:
             os.close(dirfd)
         digest = hashlib.sha256(target.read_bytes()).hexdigest()
-        if not digest:
-            raise SystemExit("BLOCKED: missing local archive digest")
+        if len(digest) != 64:
+            raise SystemExit("BLOCKED: invalid local archive digest")
+        fd_receipt = os.open(receipt, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o600)
+        with os.fdopen(fd_receipt, "w") as out:
+            out.write(digest + "\\n")
+            out.flush()
+            os.fsync(out.fileno())
+        # The incomplete marker is deliberately retained after any earlier
+        # failure. A later verifier must reject that state.
         incomplete.unlink()
         dirfd = os.open(target.parent, os.O_RDONLY)
         try:
@@ -170,7 +192,8 @@ def main():
             os.close(dirfd)
         print("REVIEW_ONLY_UNPUBLISHED DELIVERY_UNVERIFIED archive_sha256=" + digest)
     finally:
-        Path(tmp).unlink(missing_ok=True)
+        if tmp is not None:
+            Path(tmp).unlink(missing_ok=True)
 
 if __name__ == "__main__":
     main()

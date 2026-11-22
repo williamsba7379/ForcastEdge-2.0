@@ -50,32 +50,42 @@ jobs:
                   dt.datetime.fromisoformat(r["created_at"].replace("Z", "+00:00")).astimezone(ZoneInfo("America/New_York")).date() == date]
               if not candidates:
                   raise ValueError("No scheduled same-day Model C run")
-              # Check all attempts from today's scheduled runs; never silently
-              # substitute a later run for an earlier missing or failed run.
+              # Enumerate attempt metadata explicitly; run_attempt on the
+              # parent record alone hides earlier attempts after reruns.
               states = []
-              for r in sorted(candidates, key=lambda x: (x["run_number"], x["run_attempt"])):
-                  attempt = r["run_attempt"]
-                  label = "run=" + str(r["id"]) + " attempt=" + str(attempt)
-                  if r["status"] != "completed":
-                      states.append(("PENDING", label))
-                      continue
-                  if r["conclusion"] != "success":
-                      states.append(("FAILED", label + " conclusion=" + str(r["conclusion"])))
-                      continue
-                  arts = get("/actions/runs/" + str(r["id"]) + "/artifacts?per_page=100")["artifacts"]
-                  expected = "nfl-review-" + str(r["id"]) + "-" + str(attempt)
-                  matches = [a for a in arts if a["name"] == expected and not a.get("expired")]
-                  if len(matches) != 1:
-                      states.append(("MISSING", label))
-                      continue
-                  uploaded = dt.datetime.fromisoformat(matches[0]["created_at"].replace("Z", "+00:00"))
-                  cutoff = dt.datetime.combine(date, dt.time(11), ZoneInfo("America/New_York"))
-                  status = "LATE_METADATA_PRESENT" if uploaded > cutoff else "METADATA_PRESENT"
-                  states.append((status, label + " artifact_id=" + str(matches[0]["id"])))
+              for r in sorted(candidates, key=lambda x: x["run_number"]):
+                  run_id = str(r["id"])
+                  attempt_count = int(r["run_attempt"])
+                  if attempt_count < 1:
+                      raise ValueError("Invalid run attempt count")
+                  arts = get("/actions/runs/" + run_id + "/artifacts?per_page=100")["artifacts"]
+                  for attempt in range(1, attempt_count + 1):
+                      label = "run=" + run_id + " attempt=" + str(attempt)
+                      # GitHub's attempt endpoint returns attempt-specific
+                      # status and conclusion; no inference from latest run.
+                      detail = get("/actions/runs/" + run_id + "/attempts/" + str(attempt))
+                      if int(detail.get("run_attempt", -1)) != attempt:
+                          raise ValueError("Attempt metadata mismatch " + label)
+                      if detail["status"] != "completed":
+                          states.append(("PENDING", label))
+                          continue
+                      if detail["conclusion"] != "success":
+                          states.append(("FAILED", label + " conclusion=" + str(detail["conclusion"])))
+                          continue
+                      expected = "nfl-review-" + run_id + "-" + str(attempt)
+                      matches = [a for a in arts if a["name"] == expected and not a.get("expired")]
+                      if len(matches) != 1:
+                          states.append(("MISSING", label))
+                          continue
+                      uploaded = dt.datetime.fromisoformat(matches[0]["created_at"].replace("Z", "+00:00"))
+                      cutoff = dt.datetime.combine(date, dt.time(11), ZoneInfo("America/New_York"))
+                      status = "LATE_METADATA_PRESENT" if uploaded > cutoff else "METADATA_PRESENT"
+                      states.append((status, label + " artifact_id=" + str(matches[0]["id"])))
               for status, detail in states:
                   print(status, detail, "REVIEW_ONLY_UNPUBLISHED DELIVERY_UNVERIFIED integrityVerified=false")
               if any(status in ("PENDING", "FAILED", "MISSING") for status, _ in states):
-                  raise ValueError("At least one scheduled run is pending, failed, or missing its archive")
+                  raise ValueError("At least one scheduled attempt pending, failed, or missing archive")
+              print("METADATA_ONLY; DELIVERY_UNVERIFIED; no durable cross-checkpoint delivery state")
           except Exception as exc:
               print("DELIVERY_UNVERIFIED; BLOCKED:", str(exc))
               raise SystemExit(1)
