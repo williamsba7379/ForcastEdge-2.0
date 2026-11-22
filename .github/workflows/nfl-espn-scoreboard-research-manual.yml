@@ -1,0 +1,13 @@
+name: NFL ESPN historical scoreboard research diagnostic (manual only)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect-espn-read-only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read-only ESPN Weeks 8-9 scoreboard retrieval and comparison
+        run: python3 research/nfl_espn_scoreboard_retrieval_diagnostic.py

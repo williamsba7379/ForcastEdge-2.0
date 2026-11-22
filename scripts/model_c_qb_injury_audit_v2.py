@@ -20,7 +20,7 @@ def build(draft,shadow,history):
             counts={}
             for p in injured:
                 name=p.get("name","")
-                counts[name]=sum(r.get("team")==team and r.get("primaryPasser","").casefold()==name.casefold() and r.get("gameDate","")<game["date"] for r in history.get("records",[]))
+                counts[name]=sum(r.get("team")==team and str(r.get("primaryPasser") or "").casefold()==str(name or "").casefold() and str(r.get("gameDate") or "")<game["date"] for r in history.get("records",[]))
             candidate=str(qb.get("depthChartQB1Candidate") or "").casefold()
             recent=str(qb.get("recentPrimaryPasser") or "").casefold()
             names={p.get("name","").casefold() for p in injured}
