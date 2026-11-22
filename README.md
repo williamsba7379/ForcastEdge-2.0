@@ -14,3 +14,13 @@ Open Data & Setup → Load DEMO to inspect the layout (all demo teams are fictio
 ```
 
 Confidence values must come from validated analyses, not arbitrary guesses. `EDGE` or `STRONG EDGE` should be supplied only after price verification and calibration. Records are not automatically updated.
+
+## Proposed Wednesday official four-model handoff (NONPRODUCTION ONLY)
+
+Isolated research implementation on `research/nfl-wednesday-official-handoff-isolated`.
+The new official-card reader is disabled by default; no production publishing or app behavior is changed.
+No GitHub Actions trigger is enabled. Draft and comparison workflows are not official publishers.
+Proposed immutable weekly JSON and printable HTML paths: `data/official-four-model/<season>-week-<week>.json` and `.html`; `latest.json` is **not** written.
+The proposed validation contract requires independently approved schedule inputs, all A/B/C/C-QB rows, QB and market evidence, actual timestamped SHA-256 provenance, Wednesday 11 AM America/New_York cutoff and fail-closed behavior. NO BET is mandatory.
+Actual publication, automatic workflow execution, tests, PR, merge, deployment and any production change require separate authorization.
+Historical content verification is unauthorized; PR #15/#16 VM validation remains deferred.

@@ -1,0 +1,12 @@
+name: NFL official Wednesday handoff — DISABLED RESEARCH STUB
+# No on: triggers. This file is intentionally non-runnable and non-publishing.
+# Future workflow wiring requires a separate explicit approval.
+on: {}
+permissions:
+  contents: read
+jobs:
+  research-placeholder:
+    if: ${{ false }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "DISABLED — no production publisher authorized"

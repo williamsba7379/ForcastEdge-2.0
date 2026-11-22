@@ -31,4 +31,24 @@
   }
   document.getElementById('refreshModels').onclick=loadModels;
 })();
-</script><script src="./system-health.js" defer></script><script src="./original-forecastedge.js" defer></script><script src="./model-c.js" defer></script></body></html>
+</script><script src="./system-health.js" defer></script><script src="./original-forecastedge.js" defer></script><script src="./model-c.js" defer></script><script>
+/* Proposed official-card reader. OFF by default; never mutates saved picks. */
+window.ForecastEdgeOfficialResearch = Object.freeze({
+  enabled: false,
+  async readApprovedCard() {
+    if (!this.enabled) throw new Error("Official publication reader disabled pending production approval");
+    const pointer = await fetch("./data/official-four-model/latest.json", {cache:"no-store"});
+    if (!pointer.ok) throw new Error("Official-card pointer unavailable");
+    const meta = await pointer.json();
+    if (!/^\\d{4}-week-(?:[1-9]|1[0-8])\\.json$/.test(meta.filename || "")) throw new Error("Invalid official-card path");
+    const response = await fetch("./data/official-four-model/"+meta.filename, {cache:"no-store"});
+    if (!response.ok) throw new Error("Official card unavailable");
+    const card = await response.json();
+    if (card.cardHash !== meta.cardHash || !Array.isArray(card.games) || !card.games.length ||
+        !card.games.every(g => g.models && ["A","B","C","C-QB"].every(m => g.models[m])) ||
+        card.status !== "FROZEN_ON_TIME" && card.status !== "FROZEN_LATE") throw new Error("Unverified official card");
+    // Browser SHA-256 verification and full schema validation must be added before enabling.
+    throw new Error("Reader cannot be enabled before independent hash and schema verification approval");
+  }
+});
+</script></body></html>
