@@ -1,0 +1,22 @@
+name: NFL Wednesday design-only contract checks
+on:
+  push:
+    branches:
+      - design/nfl-wednesday-provenance-handoff
+    paths:
+      - 'tests/test_nfl_wednesday_provenance_design_contract.py'
+      - 'tests/test_nfl_wednesday_dependency_design.py'
+      - 'docs/design/nfl-wednesday-dependency-acceptance.md'
+      - '.github/workflows/nfl-wednesday-design-contract.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  offline-design-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Offline design contract tests (never production verification)
+        run: |
+          python3 -m unittest discover -s tests -p test_nfl_wednesday_provenance_design_contract.py -v
+          python3 -m unittest discover -s tests -p test_nfl_wednesday_dependency_design.py -v
