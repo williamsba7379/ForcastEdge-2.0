@@ -84,7 +84,7 @@ def main():
     report = build(card, research)
     args.html.write_text(render(report), encoding="utf-8")
     if args.json:
-        args.json.write_text(json.dumps(report, indent=2) + "\\n", encoding="utf-8")
+        args.json.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     print("REVIEW_ONLY_INCOMPLETE; no official card published")
 
 
