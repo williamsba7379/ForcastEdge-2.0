@@ -1,7 +1,10 @@
 """Synthetic contract assertions only. No tests executed; no external NFL data."""
 import copy
 import datetime as dt
-import unittest\nimport json\nfrom pathlib import Path\nfrom hashlib import sha256
+import unittest
+import json
+from pathlib import Path
+from hashlib import sha256
 from zoneinfo import ZoneInfo
 from scripts.validate_nfl_official_card import canonical, digest, validate
 
@@ -18,15 +21,15 @@ class ContractTests(unittest.TestCase):
             e={"source":"synthetic","artifactId":name,"capturedAt":(cutoff-dt.timedelta(hours=1)).isoformat(),"sha256":"a"*64}
             self.trusted[("synthetic",name)]=copy.deepcopy(e)
             return e
-        model={"moneylineWinner":"HOME","spreadPick":"HOME","spreadLine":-1.5,"totalPick":"OVER","totalLine":41.5,"projectedHomeScore":24,"projectedAwayScore":20,"confidence":0.6,"wagerStatus":"NO BET","marketEvidence":evidence("market"),"modelEvidence":evidence("model")}
+        model={"moneylineWinner":"HOME","spreadPick":"HOME","spreadLine":-1.5,"totalPick":"OVER","totalLine":41.5,"projectedHomeScore":24,"projectedAwayScore":20,"confidence":0.5,"wagerStatus":"NO BET","marketEvidence":evidence("market"),"modelEvidence":evidence("model")}
         self.card={"schemaVersion":"1.0","cardId":"synthetic-only","season":2026,"week":11,"status":"FROZEN_ON_TIME","deliveryStatus":"DELIVERED_ON_TIME","cutoffAt":self.cutoff,"frozenAt":self.frozen,"publishedAt":self.published,"publisherId":"nfl-official-wednesday","inputManifestHash":digest(self.schedule),"games":[{"gameId":"synthetic-1","kickoffAt":kickoff,"homeTeam":"HOME","awayTeam":"AWAY","qbEvidence":evidence("qb"),"models":{name:copy.deepcopy(model) for name in ("A","B","C","C-QB")}}],"releaseEvidence":{"authorityId":"synthetic-independent","manifestSha256":"b"*64,"approvedAt":self.published,"signature":"synthetic-signature","keyId":"synthetic-key"}}
         self.card["scheduleEvidence"]=evidence("schedule")
         self.schema=json.loads((Path(__file__).resolve().parents[1]/"schemas/nfl-official-card.schema.json").read_text())
         self.seal()
     def seal(self):
         self.card["cardHash"]=digest({k:v for k,v in self.card.items() if k!="cardHash"})
-    def verify(self,card=None,authority=lambda *_:True):
-        return validate(self.card if card is None else card,self.schedule,self.schema,trusted_evidence=self.trusted,verify_release=authority)
+    def verify(self,card=None,authority=lambda *_:True,schedule_authority=lambda *_:True):
+        return validate(self.card if card is None else card,self.schedule,self.schema,trusted_evidence=self.trusted,verify_release=authority,verify_schedule=schedule_authority)
     def test_complete_synthetic_card(self):
         self.assertTrue(self.verify())
     def test_missing_model_fails(self):
@@ -36,7 +39,7 @@ class ContractTests(unittest.TestCase):
         self.trusted.clear()
         with self.assertRaises(ValueError):self.verify()
     def test_untrusted_release_fails(self):
-        with self.assertRaises(ValueError):self.verify(authority=lambda *_:False)
+        with self.assertRaisesRegex(ValueError,"Independent release verification failed"):self.verify(authority=lambda *_:False)
     def test_wrong_week_fails(self):
         self.card["week"]=12;self.seal()
         with self.assertRaises(ValueError):self.verify()
@@ -56,10 +59,10 @@ class ContractTests(unittest.TestCase):
         with self.assertRaises(ValueError):self.verify()
 
     def test_rejected_schedule_authority(self):
-        with self.assertRaises(ValueError):self.verify(schedule_authority=lambda *_:False)
+        with self.assertRaisesRegex(ValueError,"Independent schedule authority rejected"):self.verify(schedule_authority=lambda *_:False)
     def test_approval_after_publication_rejected(self):
         self.card["releaseEvidence"]["approvedAt"]=(dt.datetime.fromisoformat(self.published)+dt.timedelta(minutes=2)).isoformat();self.seal()
-        with self.assertRaises(ValueError):self.verify()
+        with self.assertRaisesRegex(ValueError,"Invalid release timestamp"):self.verify()
     def test_canonical_known_answer_ascii(self):
         # Independent published SHA-256 known-answer for canonical {"a":1,"b":2}.
         self.assertEqual(sha256(canonical({"b":2.0,"a":1})).hexdigest(),"43258cff783fe7036d8a43033f830adfc60ec037382473548ac742b888292777")
@@ -70,3 +73,42 @@ class ContractTests(unittest.TestCase):
     def test_schema_contract_matches_card(self):
         self.assertEqual(set(self.schema["required"]),set(self.card))
         self.assertEqual(set(self.schema["$defs"]["model"]["required"]),set(self.card["games"][0]["models"]["A"]))
+
+    def test_cross_language_canonical_vectors(self):
+        # Expected UTF-8 bytes for JS JSON.stringify with sorted keys, under the
+        # deliberately restricted ASCII/half-unit contract. Browser execution
+        # remains separately unauthorized; these are shared vector definitions.
+        vectors = [
+            ({"b": 2.0, "a": 1}, b'{"a":1,"b":2}'),
+            ({"models": ["A", "B", "C", "C-QB"], "confidence": 0.5},
+             b'{"confidence":0.5,"models":["A","B","C","C-QB"]}'),
+            ({"flag": True, "none": None, "text": "HOME @ AWAY"},
+             b'{"flag":true,"none":null,"text":"HOME @ AWAY"}'),
+            ({"nested": {"z": -1.5, "a": 0}, "week": 11},
+             b'{"nested":{"a":0,"z":-1.5},"week":11}'),
+        ]
+        for obj, expected in vectors:
+            with self.subTest(obj=obj):
+                self.assertEqual(canonical(obj), expected)
+                self.assertEqual(digest(obj), sha256(expected).hexdigest())
+
+    def test_cross_language_rejection_vectors(self):
+        for obj in (
+            {"confidence": 0.3},
+            {"text": "caf\\u00e9"},
+            {"text": "line\\nfeed"},
+            {"value": float("nan")},
+            {"value": float("inf")},
+            {"value": 9007199254740992},
+        ):
+            with self.subTest(obj=repr(obj)):
+                with self.assertRaises(ValueError):
+                    canonical(obj)
+
+    def test_valid_fixture_uses_schema_numeric_contract(self):
+        model = self.card["games"][0]["models"]["A"]
+        for key in ("spreadLine", "totalLine", "projectedHomeScore",
+                    "projectedAwayScore", "confidence"):
+            with self.subTest(key=key):
+                self.assertEqual((model[key] * 2) % 1, 0)
+        self.assertTrue(self.verify())
