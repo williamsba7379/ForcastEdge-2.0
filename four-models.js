@@ -39,6 +39,13 @@
     }
     return true;
   }
+  function sameGames(frozen, retrospective) {
+    const original = new Map(frozen.games.map(g => [String(g.id), g]));
+    return retrospective.games.every(g => {
+      const prior = original.get(String(g.id));
+      return prior && prior.home === g.home && prior.away === g.away && prior.date === g.date;
+    });
+  }
   function render(card, info) {
     const block = node('div');
     block.appendChild(node('h3', info.label));
@@ -51,7 +58,7 @@
       const details = node('details');
       const heading = node('summary', g.away + ' @ ' + g.home);
       details.appendChild(heading);
-      const grid = node('div', undefined, 'stats');
+      const grid = node('div', undefined, 'grid');
       for (const m of models) {
         const cell = node('div', undefined, 'stat');
         cell.appendChild(node('small', 'Model ' + m));
@@ -64,20 +71,33 @@
     }
     return block;
   }
+  let latestRequest = 0;
   async function load() {
+    const request = ++latestRequest;
     status.textContent = 'Loading historical archives…';
     content.replaceChildren();
-    let loaded = 0;
-    for (const info of files) {
+    const fetched = await Promise.all(files.map(async info => {
       try {
         const response = await fetch(base + info.name, {cache:'no-store'});
         if (!response.ok) throw new Error('HTTP ' + response.status);
         const card = await response.json();
         if (!valid(card, info.expected)) throw new Error('Missing or inconsistent Week 8 four-model data');
-        content.appendChild(render(card, info));
-        loaded++;
+        return {info, card};
       } catch (err) {
-        content.appendChild(node('p', info.label + ': NOT VERIFIED — ' + err.message, 'note'));
+        return {info, error: err.message};
+      }
+    }));
+    if (request !== latestRequest) return;
+    const original = fetched[0].card;
+    const retrospective = fetched[1].card;
+    if (original && retrospective && !sameGames(original, retrospective))
+      fetched[1] = {info:files[1], error:'Frozen and retrospective game IDs, teams or kickoff dates do not match'};
+    let loaded = 0;
+    for (const item of fetched) {
+      if (item.error) content.appendChild(node('p', item.info.label + ': NOT VERIFIED — ' + item.error, 'note'));
+      else {
+        content.appendChild(render(item.card, item.info));
+        loaded++;
       }
     }
     status.textContent = loaded + ' of 2 historical archives loaded; historical provenance not independently certified. DELIVERY_UNVERIFIED.';
