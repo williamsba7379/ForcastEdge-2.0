@@ -3,10 +3,11 @@
 Uses only completed same-season games before the snapshot, never post-kickoff.
 This is a research-only companion to the immutable winner cards.
 """
+import argparse
 import datetime as dt
 import json
 from pathlib import Path
-from nfl_four_model_head_to_head import DATA, OUT, stamp
+from nfl_four_model_head_to_head import stamp
 
 def mean(xs):
     return sum(xs)/len(xs) if xs else None
@@ -97,17 +98,21 @@ def build(card,history):
         "warning":"Experimental uncalibrated totals: C uses recent scoring environment; C-QB differs only with verified QB-specific total impact. No sportsbook lines, no O/U or ATS picks.",
         "games":out}
 
-def main():
-    files=sorted(OUT.glob("*-refresh-*.json"))
-    if not files:raise ValueError("No refreshed comparison")
-    card=json.loads(files[-1].read_text())
-    history=json.loads((DATA/"nfl-historical-results.json").read_text())["games"]
-    draft=json.loads((DATA/"model-c-automated-draft.json").read_text())
+def build_from_draft(card, history, draft):
     edges={str(g["id"]):g["homeEdgePoints"] for g in draft["games"]}
     for game in card["games"]:
         game["modelCHomeEdgePoints"]=edges.get(str(game["id"]))
-    result=build(card,history)
-    path=OUT/(str(card["season"])+"-week-"+str(card["week"])+"-totals-research.json")
-    path.write_text(json.dumps(result,indent=2)+"\n")
-    print(path,len(result["games"]),"games")
+    return build(card, history["games"])
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    for name in ("comparison", "history", "draft", "output"):
+        parser.add_argument("--" + name, type=Path, required=True)
+    args = parser.parse_args()
+    card, history, draft = (json.loads(path.read_text())
+                            for path in (args.comparison, args.history, args.draft))
+    result = build_from_draft(card, history, draft)
+    with args.output.open("x") as out:
+        json.dump(result, out, indent=2)
+    print(args.output, len(result["games"]), "games")
 if __name__=="__main__":main()

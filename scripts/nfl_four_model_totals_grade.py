@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Grade frozen NFL four-model winner and totals research predictions separately."""
+import argparse
 import json
-from nfl_four_model_head_to_head import DATA,OUT,stamp
+from pathlib import Path
 MODELS=("A","B","C","C-QB")
 
 def grade(report,history):
@@ -60,13 +61,14 @@ def grade(report,history):
     return report
 
 def main():
-    files=sorted(OUT.glob("*-totals-market-comparison.json"))
-    if not files:raise ValueError("No frozen totals market comparison available")
-    path=files[-1]
-    report=json.loads(path.read_text())
-    history=json.loads((DATA/"nfl-historical-results.json").read_text())
-    graded=grade(report,history)
-    out=OUT/(str(report["season"])+"-week-"+str(report["week"])+"-totals-graded.json")
-    out.write_text(json.dumps(graded,indent=2)+"\n")
-    print(out,graded["gradingStatus"])
+    parser = argparse.ArgumentParser(description=__doc__)
+    for name in ("comparison", "history", "output"):
+        parser.add_argument("--" + name, type=Path, required=True)
+    args = parser.parse_args()
+    report = json.loads(args.comparison.read_text())
+    history = json.loads(args.history.read_text())
+    graded = grade(report, history)
+    with args.output.open("x") as out:
+        json.dump(graded, out, indent=2)
+    print(args.output, graded["gradingStatus"])
 if __name__=="__main__":main()

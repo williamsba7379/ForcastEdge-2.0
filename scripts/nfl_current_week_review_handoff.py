@@ -1,21 +1,46 @@
 #!/usr/bin/env python3
 """Review-only, fail-closed same-run archive; no publication or Git writes."""
 import argparse
+import copy
 import datetime as dt
 import hashlib
 import io
+import math
 import json
 import os
 from pathlib import Path
 import tarfile
 import tempfile
 from zoneinfo import ZoneInfo
-from nfl_four_model_head_to_head import freeze
+from nfl_four_model_head_to_head import freeze, stamp
+from nfl_four_model_totals_research import build_from_draft
 from nfl_four_model_review_report import build, render
+from nfl_market_totals_compare import compare
 
 EASTERN = ZoneInfo("America/New_York")
 
-def prepare(schedule, draft, shadow, history, now):
+def validate_projections(projections, card, draft, shadow, history, now):
+    snapshot = stamp(projections["sourceComparisonFrozenAt"])
+    generated = stamp(projections["generatedAt"])
+    inputs_ready = max(stamp(source["generatedAt"]) for source in (draft, shadow))
+    first_kickoff = min(stamp(game["date"]) for game in card["games"])
+    if not inputs_ready <= snapshot <= generated <= now < first_kickoff:
+        raise ValueError("Projection timestamps outside same-run pregame window")
+
+    expected = build_from_draft({**card, "frozenAt": snapshot.isoformat()}, history, draft)
+    expected["generatedAt"] = projections["generatedAt"]
+    if projections != expected:
+        raise ValueError("Projection report does not match same-run model inputs")
+    for game in projections["games"]:
+        for model in game["models"].values():
+            if model["status"] == "INSUFFICIENT_HISTORY":
+                continue
+            if any(not math.isfinite(model[key]) or model[key] < 0
+                   for key in ("projectedAway", "projectedHome", "projectedTotal")):
+                raise ValueError("Invalid projected score")
+
+
+def prepare(schedule, draft, shadow, history, now, projections=None):
     local = now.astimezone(EASTERN)
     if local.weekday() != 2 or local.hour < 11:
         raise ValueError("Wednesday review handoff cannot precede 11 AM Eastern")
@@ -52,7 +77,13 @@ def prepare(schedule, draft, shadow, history, now):
         raise ValueError("Four-model coverage incomplete")
     card["status"] = "REVIEW_ONLY_UNPUBLISHED"
     card["warning"] = "Authentic-engine review; NOT an official Wednesday frozen card."
-    report = build(card)
+    if projections is not None:
+        validate_projections(projections, card, draft, shadow, history, now)
+    report = build(card, projections)
+    if projections is not None:
+        report["projectionGeneratedAt"] = projections["generatedAt"]
+        report["notice"] = ("Review only. Score projections are experimental and uncalibrated. "
+                            "Market lines, spread and total picks, and calibrated confidence are unavailable.")
     report["sourceStatus"] = "REVIEW_ONLY_UNPUBLISHED"
     report["sourceFrozenAt"] = None
     report["sourceGeneratedAt"] = now.isoformat()
@@ -64,8 +95,9 @@ def prepare(schedule, draft, shadow, history, now):
 
 def main():
     p = argparse.ArgumentParser()
-    for name in ("schedule", "draft", "shadow", "history"):
+    for name in ("schedule", "draft", "shadow", "history", "projections"):
         p.add_argument("--" + name, type=Path)
+    p.add_argument("--market", type=Path)
     p.add_argument("--as-of")
     p.add_argument("--archive", type=Path)
     p.add_argument("--verify-complete", type=Path)
@@ -82,7 +114,7 @@ def main():
             raise SystemExit("BLOCKED: archive digest mismatch")
         print("LOCAL_ARCHIVE_COMPLETE_REVIEW_ONLY DELIVERY_UNVERIFIED sha256=" + actual)
         return
-    if not all((args.schedule, args.draft, args.shadow, args.history, args.as_of, args.archive)):
+    if not all((args.schedule, args.draft, args.shadow, args.history, args.projections, args.as_of, args.archive)):
         raise SystemExit("BLOCKED: missing archive inputs")
     now = dt.datetime.fromisoformat(args.as_of.replace("Z", "+00:00"))
     if now.tzinfo is None:
@@ -118,9 +150,10 @@ def main():
     if int(identity["REVIEW_RUN_ATTEMPT"]) != 1:
         raise SystemExit("BLOCKED: rerun attempt requires separate start proof")
     sources = {name: getattr(args, name).read_bytes()
-               for name in ("schedule", "draft", "shadow", "history")}
+               for name in ("schedule", "draft", "shadow", "history", "projections")}
     parsed = {name: json.loads(data) for name, data in sources.items()}
-    report = prepare(parsed["schedule"], parsed["draft"], parsed["shadow"], parsed["history"], now)
+    report = prepare(parsed["schedule"], parsed["draft"], parsed["shadow"], parsed["history"], now,
+                     parsed["projections"])
     # These are run-local files after checkout copies are removed; metadata alone is not independent proof.
     for name in ("draft", "shadow"):
         generated = dt.datetime.fromisoformat(parsed[name]["generatedAt"].replace("Z", "+00:00"))
@@ -128,10 +161,19 @@ def main():
             raise SystemExit("BLOCKED: generated source outside verified run window")
         if generated.astimezone(EASTERN).date() != now.astimezone(EASTERN).date():
             raise SystemExit("BLOCKED: generated source not from current Wednesday")
+    market_comparison = None
+    if args.market is not None and args.market.exists():
+        sources["market"] = args.market.read_bytes()
+        market = json.loads(sources["market"])
+        if any(stamp(quote["capturedAt"]) < started_at for quote in market["games"]):
+            raise ValueError("Market capture precedes this run")
+        market_comparison = compare(copy.deepcopy(parsed["projections"]), market)
     report_bytes = (json.dumps(report, indent=2) + "\n").encode()
     html_bytes = render(report).encode()
     members = {"inputs/" + name + ".json": data for name, data in sources.items()}
     members.update({"report.json": report_bytes, "report.html": html_bytes})
+    if market_comparison is not None:
+        members["market-comparison.json"] = (json.dumps(market_comparison, indent=2) + "\n").encode()
     manifest = {"status": "REVIEW_ONLY_UNPUBLISHED",
                 "deliveryVerification": "DELIVERY_UNVERIFIED",
                 "historicalEligibilityVerified": False,

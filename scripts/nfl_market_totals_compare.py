@@ -2,9 +2,10 @@
 """Compare experimental projected totals to sourced, pregame sportsbook totals.
 Never fabricate lines, backfill a post-snapshot quote, or claim calibrated edges.
 """
+import argparse
 import json
-import pathlib
-from nfl_four_model_head_to_head import DATA, OUT, stamp
+from pathlib import Path
+from nfl_four_model_head_to_head import stamp
 
 def compare(research, market):
     if (research["season"],research["week"]) != (market.get("season"),market.get("week")):
@@ -40,16 +41,17 @@ def compare(research, market):
     return research
 
 def main():
-    source=DATA/"nfl-market-totals.json"
-    files=sorted(OUT.glob("*-totals-research.json"))
-    if not files:raise ValueError("No projected totals research file yet")
-    report=json.loads(files[-1].read_text())
-    if source.exists():
-        quotes=json.loads(source.read_text())
-    else:
+    parser = argparse.ArgumentParser(description=__doc__)
+    for name in ("research", "market", "output"):
+        parser.add_argument("--" + name, type=Path, required=True)
+    args = parser.parse_args()
+    report = json.loads(args.research.read_text())
+    try:
+        quotes = json.loads(args.market.read_text())
+    except FileNotFoundError:
         quotes={"season":report["season"],"week":report["week"],"games":[]}
     result=compare(report,quotes)
-    output=OUT/(str(report["season"])+"-week-"+str(report["week"])+"-totals-market-comparison.json")
-    output.write_text(json.dumps(result,indent=2)+"\n")
+    with args.output.open("x") as out:
+        json.dump(result, out, indent=2)
     print("Market totals:",result["marketLinesAvailable"],"of",len(result["games"]))
 if __name__=="__main__":main()

@@ -2,6 +2,7 @@
 """Create a new, timestamped four-model card from current pregame inputs.
 Never change an earlier frozen card or represent stale inputs as refreshed.
 """
+import argparse
 import datetime as dt
 import json
 from pathlib import Path
@@ -9,6 +10,9 @@ from nfl_four_model_head_to_head import DATA,OUT,freeze,stamp
 
 MAX_AGE_HOURS=8
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--output', type=Path)
+    args = parser.parse_args()
     draft=json.loads((DATA/"model-c-automated-draft.json").read_text())
     shadow=json.loads((DATA/"model-c-qb-shadow.json").read_text())
     history=json.loads((DATA/"nfl-historical-results.json").read_text())
@@ -32,7 +36,7 @@ def main():
             for g in card["games"] if g["id"] in byid and any(
                 p!=byid[g["id"]]["picks"].get(m) for m,p in g["picks"].items())]
     filename=str(draft["season"])+"-week-"+str(draft["week"])+"-refresh-"+now.strftime("%Y%m%dT%H%M%SZ")+".json"
-    path=OUT/filename
+    path=args.output or OUT/filename
     with path.open("x") as f:json.dump(card,f,indent=2)
     print("FRESH four-model card:",path,"games:",len(card["games"]),"changes:",len(card.get("changesFromOriginal",[])))
 if __name__=="__main__":main()

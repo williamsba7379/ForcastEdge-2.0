@@ -74,10 +74,11 @@ jobs:
       - name: Validate reviewed official QB announcements
         if: steps.time.outputs.run == 'true'
         run: python3 scripts/model_c_qb_verified_intake.py
-      - name: Remove checkout copies of generated same-run inputs
+      - name: Prepare same-run inputs
         if: steps.time.outputs.run == 'true'
         run: |
           rm -f data/model-c-automated-draft.json data/model-c-qb-shadow.json
+          echo "REVIEW_DIR=$(mktemp -d "$RUNNER_TEMP/forecastedge-review.XXXXXX")" >> "$GITHUB_ENV"
       - name: Generate independent Model C review draft
         if: steps.time.outputs.run == 'true'
         run: python3 scripts/model_c_engine.py
@@ -90,27 +91,38 @@ jobs:
       - name: Collect sourced NFL market totals (best effort)
         if: steps.time.outputs.run == 'true'
         continue-on-error: true
-        run: python3 scripts/nfl_market_totals_feed.py
+        run: |
+          python3 scripts/nfl_market_totals_feed.py \
+            --draft data/model-c-automated-draft.json --output "$REVIEW_DIR/market.json"
       - name: Generate fresh four-model comparison from current pregame inputs
         if: steps.time.outputs.run == 'true'
         run: |
           python3 tests/test_nfl_four_model_refresh.py
-          python3 scripts/nfl_four_model_refresh.py
+          python3 scripts/nfl_four_model_refresh.py --output "$REVIEW_DIR/refresh.json"
       - name: Generate experimental score and totals research (no market picks)
         if: steps.time.outputs.run == 'true'
-        run: python3 scripts/nfl_four_model_totals_research.py
+        run: |
+          python3 scripts/nfl_four_model_totals_research.py \
+            --comparison "$REVIEW_DIR/refresh.json" --history data/nfl-historical-results.json \
+            --draft data/model-c-automated-draft.json --output "$REVIEW_DIR/projections.json"
       - name: Compare four-model totals to verified market quotes when available
         if: steps.time.outputs.run == 'true'
-        run: python3 scripts/nfl_market_totals_compare.py
+        run: |
+          python3 scripts/nfl_market_totals_compare.py \
+            --research "$REVIEW_DIR/projections.json" --market "$REVIEW_DIR/market.json" \
+            --output "$REVIEW_DIR/market-comparison.json"
       - name: Test four-model totals grading
         if: steps.time.outputs.run == 'true'
         run: python3 tests/test_nfl_four_model_totals_grade.py
-      - name: Test four-model totals grading with controlled finals
+      - name: Test same-run review handoff
         if: steps.time.outputs.run == 'true'
-        run: python3 tests/test_nfl_four_model_totals_grade.py
+        run: python3 tests/test_nfl_current_week_review_handoff.py
       - name: Grade four-model totals when final results are available
         if: steps.time.outputs.run == 'true'
-        run: python3 scripts/nfl_four_model_totals_grade.py
+        run: |
+          python3 scripts/nfl_four_model_totals_grade.py \
+            --comparison "$REVIEW_DIR/market-comparison.json" --history data/nfl-historical-results.json \
+            --output "$REVIEW_DIR/graded.json"
       - name: Audit unmodeled critical QB injuries
         if: steps.time.outputs.run == 'true'
         run: |
@@ -164,25 +176,25 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           GH_REPOSITORY: ${{ github.repository }}
         run: |
-          mkdir -p /tmp/forecastedge-review
           python3 scripts/nfl_current_week_review_handoff.py \
             --schedule data/nfl-schedule.json \
             --draft data/model-c-automated-draft.json \
             --shadow data/model-c-qb-shadow.json \
             --history data/nfl-historical-results.json \
-            --as-of "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
-            --archive /tmp/forecastedge-review/four-model-review.tar.gz
+            --projections "$REVIEW_DIR/projections.json" --market "$REVIEW_DIR/market.json" \
+            --as-of "$(date -u +%Y-%m-%dT%H:%M:%S.%6NZ)" \
+            --archive "$REVIEW_DIR/four-model-review.tar.gz"
       - name: Verify archive completion marker and local digest before upload
         if: steps.time.outputs.run == 'true'
         run: |
           python3 scripts/nfl_current_week_review_handoff.py \
-            --verify-complete /tmp/forecastedge-review/four-model-review.tar.gz
+            --verify-complete "$REVIEW_DIR/four-model-review.tar.gz"
       - name: Upload one review-only archive
         if: steps.time.outputs.run == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: nfl-review-${{ github.run_id }}-${{ github.run_attempt }}
-          path: /tmp/forecastedge-review/four-model-review.tar.gz
+          path: ${{ env.REVIEW_DIR }}/four-model-review.tar.gz
           if-no-files-found: error
           retention-days: 7
           compression-level: 0
