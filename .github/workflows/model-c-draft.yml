@@ -1,4 +1,4 @@
-name: Generate Model C review-only draft
+name: ForecastEdge NFL Wednesday review edition
 on:
   schedule:
     - cron: '0 11 * * 3'
@@ -13,8 +13,8 @@ concurrency:
 jobs:
   model-c:
     runs-on: ubuntu-latest
+    timeout-minutes: 35
     steps:
-      - uses: actions/checkout@v4
       - name: Check Wednesday review window (late is never an on-time freeze)
         id: time
         env:
@@ -37,8 +37,23 @@ jobs:
               exit 1
             fi
           fi
-      - name: Verify QB feed parsing (offline fixture)
+      - name: Check out the integrated review source
         if: steps.time.outputs.run == 'true'
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Test dynamic slate selection
+        if: steps.time.outputs.run == 'true'
+        run: python3 tests/test_nfl_review_current_schedule.py
+      - name: Fetch the upcoming complete ESPN slate
+        if: steps.time.outputs.run == 'true'
+        id: schedule
+        run: |
+          python3 scripts/nfl_review_current_schedule.py --output data/nfl-schedule.json \
+            --github-output "$GITHUB_OUTPUT" --github-summary "$GITHUB_STEP_SUMMARY"
+          echo "Integrated review commit: $(git rev-parse HEAD)" >> "$GITHUB_STEP_SUMMARY"
+      - name: Verify QB feed parsing (offline fixture)
+        if: steps.schedule.outputs.has_slate == 'true'
         run: |
           python3 tests/test_model_c_official_news.py
           python3 tests/test_model_c_news_ranking.py
@@ -51,80 +66,84 @@ jobs:
           python3 tests/test_model_c_qb_depthcharts.py
           python3 tests/test_model_c_qb_shadow.py
       - name: Retrieve injury-report snapshot (best effort)
-        if: steps.time.outputs.run == 'true'
+        if: steps.schedule.outputs.has_slate == 'true'
         continue-on-error: true
         run: python3 scripts/model_c_injuries.py
       - name: Collect completed-game QB passing statistics
-        if: steps.time.outputs.run == 'true'
+        if: steps.schedule.outputs.has_slate == 'true'
         continue-on-error: true
         run: python3 scripts/model_c_qb_stats.py
       - name: Collect historical QB game data (research only)
-        if: steps.time.outputs.run == 'true'
+        if: steps.schedule.outputs.has_slate == 'true'
         continue-on-error: true
         run: python3 scripts/model_c_historical_qb_games.py
       - name: Reconcile missing historical final scores (research only)
-        if: steps.time.outputs.run == 'true'
+        if: steps.schedule.outputs.has_slate == 'true'
         continue-on-error: true
         run: python3 scripts/model_c_historical_score_reconcile.py
+      - name: Verify reconciled history against same-run ESPN final scores
+        if: steps.schedule.outputs.has_slate == 'true'
+        run: |
+          python3 scripts/nfl_review_current_schedule.py \
+            --verify-history data/nfl-schedule.json data/nfl-historical-results.json
       - name: Audit QB history against final scores
-        if: steps.time.outputs.run == 'true'
+        if: steps.schedule.outputs.has_slate == 'true'
         run: python3 scripts/model_c_historical_qb_audit.py
       - name: Retrieve QB1 depth-chart candidates (best effort)
-        if: steps.time.outputs.run == 'true'
+        if: steps.schedule.outputs.has_slate == 'true'
         continue-on-error: true
         run: python3 scripts/model_c_qb_depthcharts.py
       - name: Diagnose ESPN depth chart coverage (best effort)
-        if: steps.time.outputs.run == 'true'
+        if: steps.schedule.outputs.has_slate == 'true'
         continue-on-error: true
         run: python3 scripts/model_c_depthchart_diagnostic.py
       - name: Validate reviewed official QB announcements
-        if: steps.time.outputs.run == 'true'
+        if: steps.schedule.outputs.has_slate == 'true'
         run: python3 scripts/model_c_qb_verified_intake.py
       - name: Prepare same-run inputs
-        if: steps.time.outputs.run == 'true'
+        if: steps.schedule.outputs.has_slate == 'true'
         run: |
           rm -f data/model-c-automated-draft.json data/model-c-qb-shadow.json
           echo "REVIEW_DIR=$(mktemp -d "$RUNNER_TEMP/forecastedge-review.XXXXXX")" >> "$GITHUB_ENV"
       - name: Generate independent Model C review draft
-        if: steps.time.outputs.run == 'true'
+        if: steps.schedule.outputs.has_slate == 'true'
         run: python3 scripts/model_c_engine.py --wednesday-review
       - name: Generate separate Model C-QB experimental shadow
-        if: steps.time.outputs.run == 'true'
+        if: steps.schedule.outputs.has_slate == 'true'
         run: python3 scripts/model_c_qb_shadow.py
       - name: Validate Model C-QB shadow parity
-        if: steps.time.outputs.run == 'true'
+        if: steps.schedule.outputs.has_slate == 'true'
         run: python3 scripts/model_c_qb_shadow_validate.py
       - name: Collect sourced NFL market totals (best effort)
-        if: steps.time.outputs.run == 'true'
+        if: steps.schedule.outputs.has_slate == 'true'
         continue-on-error: true
         run: |
           python3 scripts/nfl_market_totals_feed.py \
             --draft data/model-c-automated-draft.json --output "$REVIEW_DIR/market.json"
       - name: Generate fresh four-model comparison from current pregame inputs
-        if: steps.time.outputs.run == 'true'
+        if: steps.schedule.outputs.has_slate == 'true'
         run: |
           python3 tests/test_nfl_four_model_refresh.py
           python3 scripts/nfl_four_model_refresh.py --output "$REVIEW_DIR/refresh.json"
       - name: Generate experimental score and totals research (no market picks)
-        if: steps.time.outputs.run == 'true'
+        if: steps.schedule.outputs.has_slate == 'true'
         run: |
           python3 scripts/nfl_four_model_totals_research.py \
             --comparison "$REVIEW_DIR/refresh.json" --history data/nfl-historical-results.json \
             --draft data/model-c-automated-draft.json --output "$REVIEW_DIR/projections.json"
       - name: Test same-run review handoff
-        if: steps.time.outputs.run == 'true'
+        if: steps.schedule.outputs.has_slate == 'true'
         run: python3 tests/test_nfl_current_week_review_handoff.py
       - name: Audit unmodeled critical QB injuries
-        if: steps.time.outputs.run == 'true'
+        if: steps.schedule.outputs.has_slate == 'true'
         run: |
           python3 scripts/model_c_qb_injury_audit_v2.py
           python3 tests/test_model_c_qb_injury_audit_v2.py
       - name: Validate generated Model C review draft
-        if: steps.time.outputs.run == 'true'
+        if: steps.schedule.outputs.has_slate == 'true'
         run: python3 tests/test_model_c_draft_contract.py
-      # Scheduled workflows only run from the default branch; this repair branch is not deployed.
       - name: Create same-run review-only archive
-        if: steps.time.outputs.run == 'true'
+        if: steps.schedule.outputs.has_slate == 'true'
         env:
           REVIEW_RUN_ID: ${{ github.run_id }}
           REVIEW_RUN_ATTEMPT: ${{ github.run_attempt }}
@@ -141,12 +160,13 @@ jobs:
             --as-of "$(date -u +%Y-%m-%dT%H:%M:%S.%6NZ)" \
             --archive "$REVIEW_DIR/four-model-review.tar.gz"
       - name: Verify archive completion marker and local digest before upload
-        if: steps.time.outputs.run == 'true'
+        if: steps.schedule.outputs.has_slate == 'true'
         run: |
           python3 scripts/nfl_current_week_review_handoff.py \
             --verify-complete "$REVIEW_DIR/four-model-review.tar.gz"
       - name: Upload one review-only archive
-        if: steps.time.outputs.run == 'true'
+        id: upload
+        if: steps.schedule.outputs.has_slate == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: nfl-review-${{ github.run_id }}-${{ github.run_attempt }}
@@ -155,53 +175,73 @@ jobs:
           retention-days: 7
           compression-level: 0
 
+      - name: Record Wednesday delivery and hand off the report
+        if: always()
+        env:
+          ARCHIVE_URL: ${{ steps.upload.outputs.artifact-url }}
+          ARCHIVE_DIGEST: ${{ steps.upload.outputs.artifact-digest }}
+          UPLOAD_OUTCOME: ${{ steps.upload.outcome }}
+          HAS_SLATE: ${{ steps.schedule.outputs.has_slate }}
+          WINDOW_OPEN: ${{ steps.time.outputs.run }}
+        run: |
+          if [ "$UPLOAD_OUTCOME" = "success" ] && [ -n "$ARCHIVE_URL" ] && [ -n "$ARCHIVE_DIGEST" ]; then
+            printf 'Review archive uploaded. [Download the archive](%s) for report.html and report.json.\n\nGitHub artifact SHA-256: `%s`\n' \
+              "$ARCHIVE_URL" "$ARCHIVE_DIGEST" >> "$GITHUB_STEP_SUMMARY"
+          elif [ "$WINDOW_OPEN" = "false" ] || [ "$HAS_SLATE" = "false" ]; then
+            echo "No review archive delivered. The delivery window was closed or there was no upcoming regular-season slate." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "::error::Review archive delivery failed or could not be confirmed"
+            echo "Review archive delivery failed or could not be confirmed." >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+
       - name: Compare four-model totals to verified market quotes when available
-        if: steps.time.outputs.run == 'true'
+        if: steps.schedule.outputs.has_slate == 'true'
         run: |
           python3 scripts/nfl_market_totals_compare.py \
             --research "$REVIEW_DIR/projections.json" --market "$REVIEW_DIR/market.json" \
             --output "$REVIEW_DIR/market-comparison.json"
       - name: Test four-model totals grading
-        if: steps.time.outputs.run == 'true'
+        if: steps.schedule.outputs.has_slate == 'true'
         run: python3 tests/test_nfl_four_model_totals_grade.py
       - name: Grade four-model totals when final results are available
-        if: steps.time.outputs.run == 'true'
+        if: steps.schedule.outputs.has_slate == 'true'
         run: |
           python3 scripts/nfl_four_model_totals_grade.py \
             --comparison "$REVIEW_DIR/market-comparison.json" --history data/nfl-historical-results.json \
             --output "$REVIEW_DIR/graded.json"
       - name: Build official quarterback source review queue
-        if: steps.time.outputs.run == 'true'
+        if: steps.schedule.outputs.has_slate == 'true'
         run: python3 scripts/model_c_qb_review_queue.py
       - name: Validate ESPN QB matchup flags
-        if: steps.time.outputs.run == 'true'
+        if: steps.schedule.outputs.has_slate == 'true'
         run: |
           if [ -f data/model-c-espn-qb-status.json ]; then python3 scripts/model_c_espn_queue_validation.py; fi
       - name: Discover official team QB news links (pilot, best effort)
-        if: steps.time.outputs.run == 'true'
+        if: steps.schedule.outputs.has_slate == 'true'
         continue-on-error: true
         run: python3 scripts/model_c_official_news.py
       - name: Validate official news discovery snapshot
-        if: steps.time.outputs.run == 'true'
+        if: steps.schedule.outputs.has_slate == 'true'
         run: python3 tests/test_model_c_discovery_snapshot.py
       - name: Rank official QB news for manual review
-        if: steps.time.outputs.run == 'true'
+        if: steps.schedule.outputs.has_slate == 'true'
         run: python3 scripts/model_c_news_ranking.py
       - name: Fetch official article publication metadata (best effort)
-        if: steps.time.outputs.run == 'true'
+        if: steps.schedule.outputs.has_slate == 'true'
         continue-on-error: true
         run: python3 scripts/model_c_article_metadata.py
       - name: Audit official article publication dates
-        if: steps.time.outputs.run == 'true'
+        if: steps.schedule.outputs.has_slate == 'true'
         run: |
           if [ -f data/model-c-official-article-metadata.json ]; then python3 scripts/model_c_article_metadata_audit.py; fi
       - name: Extract QB passages from official articles
-        if: steps.time.outputs.run == 'true'
+        if: steps.schedule.outputs.has_slate == 'true'
         continue-on-error: true
         run: python3 scripts/model_c_article_passages.py
       - name: Validate saved QB passage recency gate
-        if: steps.time.outputs.run == 'true'
+        if: steps.schedule.outputs.has_slate == 'true'
         run: python3 scripts/model_c_passage_gate_validation.py
       - name: Audit ranked QB news coverage
-        if: steps.time.outputs.run == 'true'
+        if: steps.schedule.outputs.has_slate == 'true'
         run: python3 scripts/model_c_ranking_audit.py

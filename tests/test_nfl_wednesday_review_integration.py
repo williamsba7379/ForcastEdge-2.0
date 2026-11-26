@@ -1,5 +1,9 @@
 """Offline integration checks for the Wednesday review workflow."""
 import datetime as dt
+import os
+import subprocess
+import tempfile
+import textwrap
 import sys
 import unittest
 from pathlib import Path
@@ -36,6 +40,40 @@ class WednesdayReviewIntegrationTests(unittest.TestCase):
                         workflow.index("Upload one review-only archive"))
         self.assertLess(workflow.index("Upload one review-only archive"),
                         workflow.index("Discover official team QB news links"))
+
+    def test_only_integrated_workflow_schedules_wednesday_delivery(self):
+        workflows = ROOT / ".github/workflows"
+        scheduled = sorted(path.name for path in workflows.glob("*.yml")
+                           if "cron: '0 11 * * 3'" in path.read_text())
+        self.assertEqual(scheduled, ["model-c-draft.yml"])
+        workflow = (workflows / scheduled[0]).read_text()
+        self.assertEqual(workflow.count("uses: actions/checkout@"), 1)
+        self.assertEqual(workflow.count("uses: actions/upload-artifact@"), 1)
+        self.assertLess(workflow.index("Fetch the upcoming complete ESPN slate"),
+                        workflow.index("model_c_engine.py --wednesday-review"))
+        self.assertIn("scripts/nfl_review_current_schedule.py \\", workflow)
+        self.assertIn("--verify-history", workflow)
+
+    def test_report_handoff_requires_successful_upload(self):
+        workflow = (ROOT / ".github/workflows/model-c-draft.yml").read_text()
+        step = workflow.split("Record Wednesday delivery and hand off the report", 1)[1]
+        shell = textwrap.dedent(step.split("run: |\n", 1)[1].split("\n      - name:", 1)[0])
+        cases = [
+            ("success", "https://example.com/artifact", "digest", "true", 0, "report.html and report.json"),
+            ("success", "", "", "true", 1, "failed or could not be confirmed"),
+            ("failure", "", "", "true", 1, "failed or could not be confirmed"),
+            ("skipped", "", "", "false", 0, "No review archive delivered"),
+        ]
+        for outcome, url, digest, has_slate, code, message in cases:
+            with self.subTest(outcome=outcome, has_slate=has_slate), tempfile.TemporaryDirectory() as tmp:
+                summary = Path(tmp) / "summary.md"
+                env = dict(os.environ, GITHUB_STEP_SUMMARY=str(summary), UPLOAD_OUTCOME=outcome,
+                           ARCHIVE_URL=url, ARCHIVE_DIGEST=digest, WINDOW_OPEN="true", HAS_SLATE=has_slate)
+                result = subprocess.run(["bash", "-e", "-c", shell], env=env, capture_output=True)
+                self.assertEqual(result.returncode, code, result.stderr)
+                self.assertIn(message, summary.read_text())
+                if url:
+                    self.assertIn(url, summary.read_text())
 
     def test_dashboard_loads_only_explicit_review_file(self):
         dashboard = (ROOT / "four-model-review.js").read_text()
