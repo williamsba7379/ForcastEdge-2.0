@@ -6,62 +6,56 @@ This is a research-only companion to the immutable winner cards.
 import argparse
 import datetime as dt
 import json
+import math
 from pathlib import Path
 from nfl_four_model_head_to_head import stamp
+from model_c_engine import extract_history
 
 def mean(xs):
     return sum(xs)/len(xs) if xs else None
 
-def projection(history, team, before, recent_weight):
-    games=[g for g in history if int(g.get("season",-1))==before["season"] and
-           stamp(g["date"])<before["time"] and team in (g["home"],g["away"])]
-    games.sort(key=lambda g:g["date"])
-    if len(games)<3:return None
-    scored=[float(g["homeScore"] if g["home"]==team else g["awayScore"]) for g in games]
-    allowed=[float(g["awayScore"] if g["home"]==team else g["homeScore"]) for g in games]
-    return tuple((1-recent_weight)*mean(vals)+recent_weight*mean(vals[-3:]) for vals in (scored,allowed))
+def team_scores(history, team):
+    return [(home_score, away_score) if home == team else (away_score, home_score)
+            for _, away, home, away_score, home_score in history if team in (home, away)]
 
-def recent_team_games(history, team, season, before):
-    games=[g for g in history if int(g.get("season",-1))==season and
-           stamp(g["date"])<before and team in (g["home"],g["away"])]
-    return sorted(games,key=lambda g:g["date"])[-3:]
 
-def tempo_adjustment(history, home, away, season, before):
-    """C research: recent combined scoring environment relative to season baseline.
-    Independent of the A/B offense-defense total formula; bounded to avoid overfit.
-    """
-    adjustments=[]
-    for team in (home,away):
-        recent=recent_team_games(history,team,season,before)
-        season_games=[g for g in history if int(g.get("season",-1))==season and
-                      stamp(g["date"])<before and team in (g["home"],g["away"])]
-        if len(recent)<3 or len(season_games)<3:return None
-        game_total=lambda g:float(g["homeScore"])+float(g["awayScore"])
-        adjustments.append(mean([game_total(g) for g in recent])-mean([game_total(g) for g in season_games]))
-    return max(-4.0,min(4.0,0.25*mean(adjustments)))
+def projection(scores, recent_weight):
+    return tuple((1 - recent_weight) * mean(values) + recent_weight * mean(values[-3:])
+                 for values in zip(*scores))
+
+
+def tempo_adjustment(home_scores, away_scores):
+    """Estimate recent combined scoring relative to the season baseline."""
+    adjustments = []
+    for scores in (home_scores, away_scores):
+        totals = [scored + allowed for scored, allowed in scores]
+        adjustments.append(mean(totals[-3:]) - mean(totals))
+    return max(-4.0, min(4.0, 0.25 * mean(adjustments)))
+
 
 def build(card,history):
     now=stamp(card["frozenAt"])
+    completed = [game for game in history if game.get("isFinal") is not False and
+                 str(game.get("status", "")).upper() in ("", "FINAL", "STATUS_FINAL", "COMPLETED")]
+    scores = [row for row in extract_history(completed, now, card["season"])
+              if all(math.isfinite(score) and score >= 0 for score in row[3:])]
     out=[]
     for game in card["games"]:
-        when={"season":card["season"],"time":now}
+        away_scores = team_scores(scores, game["away"])
+        home_scores = team_scores(scores, game["home"])
         if now>=stamp(game["date"]):raise ValueError("Not pregame: "+game["id"])
         models={}
         for model,weight in (("A",.3),("B",0),("C",.3),("C-QB",.3)):
-            away=projection(history,game["away"],when,weight)
-            home=projection(history,game["home"],when,weight)
-            if away is None or home is None:
+            if min(len(away_scores), len(home_scores)) < 3:
                 models[model]={"status":"INSUFFICIENT_HISTORY","projectedTotal":None,
                                "overUnderPick":None,"spreadPick":None}
                 continue
+            away = projection(away_scores, weight)
+            home = projection(home_scores, weight)
             homepts=(home[0]+away[1])/2+0.75
             awaypts=(away[0]+home[1])/2-0.75
             if model in ("C","C-QB"):
-                tempo=tempo_adjustment(history,game["home"],game["away"],card["season"],now)
-                if tempo is None:
-                    models[model]={"status":"INSUFFICIENT_HISTORY","projectedTotal":None,
-                                   "overUnderPick":None,"spreadPick":None}
-                    continue
+                tempo = tempo_adjustment(home_scores, away_scores)
                 # C changes the combined total using recent game scoring environment.
                 homepts+=tempo/2
                 awaypts+=tempo/2
@@ -100,9 +94,9 @@ def build(card,history):
 
 def build_from_draft(card, history, draft):
     edges={str(g["id"]):g["homeEdgePoints"] for g in draft["games"]}
-    for game in card["games"]:
-        game["modelCHomeEdgePoints"]=edges.get(str(game["id"]))
-    return build(card, history["games"])
+    games = [{**game, "modelCHomeEdgePoints": edges.get(str(game["id"]))}
+             for game in card["games"]]
+    return build({**card, "games": games}, history["games"])
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)

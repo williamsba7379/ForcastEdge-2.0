@@ -30,6 +30,7 @@ def compare(research, market):
             projected=prediction.get("projectedTotal")
             prediction["marketTotal"]=total
             prediction["marketSource"]=source
+            prediction["marketProvider"]=quote.get("provider")
             prediction["marketCapturedAt"]=asof
             if projected is not None:
                 edge=round(projected-total,1)

@@ -1,6 +1,4 @@
-"""Static-only regression definitions for nonpublishing review imports and workflow gates.
-Do not execute as part of this repair authorization.
-"""
+"""Offline regressions for nonpublishing review imports and workflow gates."""
 import ast
 import unittest
 from pathlib import Path
@@ -24,13 +22,13 @@ class StaticDeliveryReadinessTests(unittest.TestCase):
         self.assertIn('isinstance(r.get("gameDate"),str)', source)
         self.assertIn('"pointsAdjustment":0', source)
 
-    def test_model_c_save_remains_after_injury_audit(self):
+    def test_model_c_archive_remains_after_injury_audit(self):
         source = (ROOT / ".github/workflows/model-c-draft.yml").read_text()
         self.assertLess(source.index("Audit unmodeled critical QB injuries"),
                         source.index("Validate generated Model C review draft"))
         self.assertLess(source.index("Validate generated Model C review draft"),
-                        source.index("Commit draft only"))
-        self.assertIn("git push", source)
+                        source.index("Create same-run review-only archive"))
+        self.assertNotIn("git push", source)
 
     def test_new_review_preflight_cannot_publish(self):
         source = (ROOT / ".github/workflows/nfl-four-model-review-preflight.yml").read_text()

@@ -1,4 +1,4 @@
-"""Static integration checks; definitions only, never executed in this change."""
+"""Offline integration checks for the Wednesday review workflow."""
 import datetime as dt
 import sys
 import unittest
@@ -21,11 +21,21 @@ class WednesdayReviewIntegrationTests(unittest.TestCase):
     def test_preflight_is_nonpublishing(self):
         workflow = (ROOT / ".github/workflows/nfl-four-model-review-preflight.yml").read_text()
         self.assertIn("contents: read", workflow)
-        self.assertIn("0 15 * * 3", workflow)
-        self.assertIn("0 16 * * 3", workflow)
+        self.assertIn("20 15 * * 3", workflow)
+        self.assertIn("20 16 * * 3", workflow)
         self.assertNotIn("git push", workflow)
         self.assertNotIn("upload-artifact", workflow)
         self.assertNotIn("deploy-pages", workflow)
+
+    def test_scheduled_delivery_keeps_archive_on_critical_path(self):
+        workflow = (ROOT / ".github/workflows/model-c-draft.yml").read_text()
+        self.assertIn("cron: '0 11 * * 3'\n      timezone: America/New_York", workflow)
+        self.assertIn("model_c_engine.py --wednesday-review", workflow)
+        self.assertIn("if-no-files-found: error", workflow)
+        self.assertLess(workflow.index("Verify archive completion marker"),
+                        workflow.index("Upload one review-only archive"))
+        self.assertLess(workflow.index("Upload one review-only archive"),
+                        workflow.index("Discover official team QB news links"))
 
     def test_dashboard_loads_only_explicit_review_file(self):
         dashboard = (ROOT / "four-model-review.js").read_text()

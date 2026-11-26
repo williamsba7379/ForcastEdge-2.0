@@ -11,13 +11,13 @@ import os
 from pathlib import Path
 import tarfile
 import tempfile
-from zoneinfo import ZoneInfo
+from model_c_engine import ET, choose_wednesday_review_week
 from nfl_four_model_head_to_head import freeze, stamp
 from nfl_four_model_totals_research import build_from_draft
 from nfl_four_model_review_report import build, render
 from nfl_market_totals_compare import compare
 
-EASTERN = ZoneInfo("America/New_York")
+EASTERN = ET
 
 def validate_projections(projections, card, draft, shadow, history, now):
     snapshot = stamp(projections["sourceComparisonFrozenAt"])
@@ -40,19 +40,12 @@ def validate_projections(projections, card, draft, shadow, history, now):
                 raise ValueError("Invalid projected score")
 
 
-def prepare(schedule, draft, shadow, history, now, projections=None):
+def prepare(schedule, draft, shadow, history, now, projections=None, market=None):
+    if market is not None and projections is None:
+        raise ValueError("Market comparison requires validated projections")
+    selected = choose_wednesday_review_week(schedule, now)
     local = now.astimezone(EASTERN)
-    if local.weekday() != 2 or local.hour < 11:
-        raise ValueError("Wednesday review handoff cannot precede 11 AM Eastern")
     cutoff = local.replace(hour=11, minute=0, second=0, microsecond=0)
-    weeks = schedule.get("weeks", [])
-    candidates = [w for w in weeks if w.get("games") and
-                  min(dt.datetime.fromisoformat(g["date"].replace("Z", "+00:00"))
-                      for g in w["games"]) > now]
-    if not candidates:
-        raise ValueError("No complete future week in schedule")
-    selected = min(candidates, key=lambda w: min(
-        dt.datetime.fromisoformat(g["date"].replace("Z", "+00:00")) for g in w["games"]))
     season, week = schedule["season"], selected["week"]
     if any(x.get("season") != season or x.get("week") != week for x in (draft, shadow)):
         raise ValueError("Model C and C-QB source week mismatch")
@@ -72,18 +65,21 @@ def prepare(schedule, draft, shadow, history, now, projections=None):
             source = expected[gid]
             if any(game.get(k) != source.get(k) for k in ("date", "home", "away")):
                 raise ValueError(label + " matchup/kickoff mismatch " + gid)
-    card = freeze(draft, shadow, history, now)
+    snapshot = stamp(projections["sourceComparisonFrozenAt"]) if projections is not None else now
+    card = freeze(draft, shadow, history, snapshot)
     if len(card["games"]) != len(expected):
         raise ValueError("Four-model coverage incomplete")
     card["status"] = "REVIEW_ONLY_UNPUBLISHED"
     card["warning"] = "Authentic-engine review; NOT an official Wednesday frozen card."
     if projections is not None:
         validate_projections(projections, card, draft, shadow, history, now)
-    report = build(card, projections)
+    market_research = compare(copy.deepcopy(projections), market) if market is not None else projections
+    report = build(card, market_research)
     if projections is not None:
         report["projectionGeneratedAt"] = projections["generatedAt"]
         report["notice"] = ("Review only. Score projections are experimental and uncalibrated. "
-                            "Market lines, spread and total picks, and calibrated confidence are unavailable.")
+                            "Sourced market totals and experimental comparisons appear where available. "
+                            "Spread picks and calibrated confidence are unavailable.")
     report["sourceStatus"] = "REVIEW_ONLY_UNPUBLISHED"
     report["sourceFrozenAt"] = None
     report["sourceGeneratedAt"] = now.isoformat()
@@ -152,8 +148,6 @@ def main():
     sources = {name: getattr(args, name).read_bytes()
                for name in ("schedule", "draft", "shadow", "history", "projections")}
     parsed = {name: json.loads(data) for name, data in sources.items()}
-    report = prepare(parsed["schedule"], parsed["draft"], parsed["shadow"], parsed["history"], now,
-                     parsed["projections"])
     # These are run-local files after checkout copies are removed; metadata alone is not independent proof.
     for name in ("draft", "shadow"):
         generated = dt.datetime.fromisoformat(parsed[name]["generatedAt"].replace("Z", "+00:00"))
@@ -161,18 +155,20 @@ def main():
             raise SystemExit("BLOCKED: generated source outside verified run window")
         if generated.astimezone(EASTERN).date() != now.astimezone(EASTERN).date():
             raise SystemExit("BLOCKED: generated source not from current Wednesday")
-    market_comparison = None
+    market = None
     if args.market is not None and args.market.exists():
         sources["market"] = args.market.read_bytes()
         market = json.loads(sources["market"])
         if any(stamp(quote["capturedAt"]) < started_at for quote in market["games"]):
             raise ValueError("Market capture precedes this run")
-        market_comparison = compare(copy.deepcopy(parsed["projections"]), market)
+    report = prepare(parsed["schedule"], parsed["draft"], parsed["shadow"], parsed["history"], now,
+                     parsed["projections"], market)
     report_bytes = (json.dumps(report, indent=2) + "\n").encode()
     html_bytes = render(report).encode()
     members = {"inputs/" + name + ".json": data for name, data in sources.items()}
     members.update({"report.json": report_bytes, "report.html": html_bytes})
-    if market_comparison is not None:
+    if market is not None:
+        market_comparison = compare(copy.deepcopy(parsed["projections"]), market)
         members["market-comparison.json"] = (json.dumps(market_comparison, indent=2) + "\n").encode()
     manifest = {"status": "REVIEW_ONLY_UNPUBLISHED",
                 "deliveryVerification": "DELIVERY_UNVERIFIED",

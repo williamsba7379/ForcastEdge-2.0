@@ -3,6 +3,7 @@
 Never edits frozen predictions, Model C Week 7 pilot, or pool selections.
 QB/injury inputs must be verified and manually supplied; missing data are explicit.
 """
+import argparse
 import datetime as dt
 import json
 import math
@@ -27,6 +28,27 @@ def choose_week(schedule, now):
         raise RuntimeError("No upcoming week in schedule. Refusing to publish.")
     upcoming = [pair for pair in future if pair[0] > utc]
     return min(upcoming or future,key=lambda pair:pair[0])[1]
+
+def choose_wednesday_review_week(schedule, now):
+    local = now.astimezone(ET)
+    if local.weekday() != 2 or local.hour < 11:
+        raise ValueError("Wednesday review handoff cannot precede 11 AM Eastern")
+    day_start = local.replace(hour=0, minute=0, second=0, microsecond=0)
+    next_wednesday = day_start + dt.timedelta(days=7)
+    candidates = []
+    for week in schedule["weeks"]:
+        if week.get("games"):
+            first = min(dt.datetime.fromisoformat(g["date"].replace("Z", "+00:00"))
+                        for g in week["games"])
+            if day_start <= first < next_wednesday:
+                candidates.append((first, week))
+    if len(candidates) != 1:
+        raise ValueError("Expected exactly one complete Wednesday slate in schedule")
+    first, week = candidates[0]
+    if first <= now:
+        raise ValueError("Wednesday slate has already kicked off")
+    return week
+
 
 def extract_history(raw, before, season):
     """Use completed games strictly before each target kickoff; no future leakage."""
@@ -120,10 +142,10 @@ def official_starter_valid(declaration, game, team, now):
     except (ValueError,TypeError,AttributeError,KeyError):
         return False
 
-def main():
+def main(wednesday_review=False):
     now=dt.datetime.now(ET)
     schedule=load("nfl-schedule.json")
-    selected=choose_week(schedule,now)
+    selected = (choose_wednesday_review_week if wednesday_review else choose_week)(schedule, now)
     year=schedule["season"];week=selected["week"]
     try:history_raw=load("nfl-historical-results.json")
     except FileNotFoundError:history_raw=[]
@@ -234,4 +256,7 @@ def main():
     output.write_text(json.dumps(out,indent=2)+"\n")
     print(f"Generated Model C Week {week} review-only draft: {len(games)} games; {sum(bool(g['verifiedAdjustments']) for g in games)} verified-adjusted.")
 
-if __name__=="__main__":main()
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--wednesday-review", action="store_true")
+    main(parser.parse_args().wednesday_review)

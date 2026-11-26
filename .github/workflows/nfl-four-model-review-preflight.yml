@@ -71,7 +71,6 @@ jobs:
                           continue
                       if detail["conclusion"] != "success":
                           states.append(("FAILED", label + " conclusion=" + str(detail["conclusion"])))
-                          continue
                       expected = "nfl-review-" + run_id + "-" + str(attempt)
                       matches = [a for a in arts if a["name"] == expected and not a.get("expired")]
                       if len(matches) != 1:

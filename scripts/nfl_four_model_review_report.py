@@ -31,7 +31,11 @@ def build(card, research=None):
             # Scores are explicitly experimental and only shown when actually present.
             item["models"][model] = {
                 "winner": picks[model], "spread": MISSING, "spreadLine": MISSING,
-                "overUnder": MISSING, "marketTotal": MISSING,
+                "overUnder": extra.get("overUnderPick") or MISSING,
+                "marketTotal": extra.get("marketTotal", MISSING),
+                "marketSource": extra.get("marketSource"),
+                "marketProvider": extra.get("marketProvider"),
+                "marketCapturedAt": extra.get("marketCapturedAt"),
                 "projectedAway": extra.get("projectedAway", MISSING),
                 "projectedHome": extra.get("projectedHome", MISSING),
                 "confidence": MISSING, "wagerStatus": "NO BET",
@@ -41,6 +45,7 @@ def build(card, research=None):
             "sourceStatus": card.get("status", "UNVERIFIED"),
             "sourceFrozenAt": card.get("frozenAt"), "status": "REVIEW_ONLY_INCOMPLETE",
             "notice": "Not official. Winner-only model comparisons; market lines, spread and total picks, and calibrated confidence are not supplied.",
+            "marketLinesAvailable": (research or {}).get("marketLinesAvailable", 0),
             "games": games}
 
 
@@ -62,11 +67,14 @@ def render(report):
     for game in report["games"]:
         lines.extend(['<h2>'+e(game["away"])+' @ '+e(game["home"])+'</h2>',
                       '<p>Kickoff: '+e(game["date"])+' · Game ID: '+e(game["id"])+'</p>',
-                      '<table><thead><tr><th>Model</th><th>Winner</th><th>Spread</th><th>Total</th><th>Projected score (away–home)</th><th>Confidence</th><th>Status</th></tr></thead><tbody>'])
+                      '<table><thead><tr><th>Model</th><th>Winner</th><th>Spread</th><th>Market total / experimental O/U</th><th>Projected score (away–home)</th><th>Confidence</th><th>Status</th></tr></thead><tbody>'])
         for model in MODELS:
             row = game["models"][model]
             score = e(row["projectedAway"])+' – '+e(row["projectedHome"])
-            lines.append('<tr><td>'+e(model)+'</td><td>'+e(row["winner"])+'</td><td>'+e(row["spread"])+'</td><td>'+e(row["overUnder"])+'</td><td>'+score+'</td><td>'+e(row["confidence"])+'</td><td>NO BET · '+e(row["projectionStatus"])+'</td></tr>')
+            total = e(row.get("marketTotal", MISSING)) + ' / ' + e(row["overUnder"])
+            if row.get("marketSource"):
+                total += '<br><small>' + e(row.get("marketProvider") or row["marketSource"]) + ' · ' + e(row["marketCapturedAt"]) + '</small>'
+            lines.append('<tr><td>'+e(model)+'</td><td>'+e(row["winner"])+'</td><td>'+e(row["spread"])+'</td><td>'+total+'</td><td>'+score+'</td><td>'+e(row["confidence"])+'</td><td>NO BET · '+e(row["projectionStatus"])+'</td></tr>')
         lines.append('</tbody></table>')
     lines.append('</html>')
     return "\n".join(lines)

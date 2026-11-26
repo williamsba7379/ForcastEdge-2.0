@@ -11,6 +11,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from nfl_current_week_review_handoff import prepare
 from nfl_four_model_head_to_head import freeze
+from nfl_four_model_review_report import MISSING, render
 from nfl_four_model_totals_research import build_from_draft
 from nfl_market_totals_compare import compare
 from nfl_market_totals_feed import collect
@@ -111,6 +112,55 @@ class HandoffTests(unittest.TestCase):
         projections["generatedAt"] = (NOW + dt.timedelta(seconds=1)).isoformat()
         with self.assertRaisesRegex(ValueError, "Projection timestamps"):
             prepare(self.schedule, self.draft, self.shadow, self.history, NOW, projections)
+
+    def test_validated_market_totals_appear_with_source_and_no_bet(self):
+        projections = self.projections()
+        market = {"season": 2026, "week": 12, "games": [
+            {"id": "synthetic-1", "total": 44.5, "source": "https://example.com/odds",
+             "provider": "Fixture", "capturedAt": NOW.isoformat()}]}
+        original = copy.deepcopy((projections, market))
+        report = prepare(self.schedule, self.draft, self.shadow, self.history, NOW, projections, market)
+        self.assertEqual(report["marketLinesAvailable"], 1)
+        for row in report["games"][0]["models"].values():
+            self.assertEqual(row["marketTotal"], 44.5)
+            self.assertEqual(row["marketSource"], "https://example.com/odds")
+            self.assertEqual(row["marketCapturedAt"], NOW.isoformat())
+            self.assertEqual(row["overUnder"], "UNDER")
+            self.assertEqual(row["spread"], MISSING)
+            self.assertEqual(row["wagerStatus"], "NO BET")
+        self.assertIn("44.5 / UNDER", render(report))
+        self.assertEqual((projections, market), original)
+
+    def test_unusable_history_is_excluded_and_does_not_hide_winners(self):
+        self.projections()
+        rows = self.history["games"]
+        rows[0]["status"] = "STATUS_IN_PROGRESS"
+        rows[1]["homeScore"] = None
+        rows.extend([dict(rows[2], date="2026-11-26T00:00:00Z"),
+                     dict(rows[2], date="2026-11-24T01:00:00Z", awayScore="nan")])
+        card = freeze(self.draft, self.shadow, self.history, NOW)
+        projections = build_from_draft(card, self.history, self.draft)
+        for model in projections["games"][0]["models"].values():
+            self.assertEqual(model["status"], "INSUFFICIENT_HISTORY")
+            self.assertIsNone(model["projectedTotal"])
+        projections["generatedAt"] = NOW.isoformat()
+        report = prepare(self.schedule, self.draft, self.shadow, self.history, NOW, projections)
+        for row in report["games"][0]["models"].values():
+            self.assertEqual(row["projectionStatus"], "INSUFFICIENT_HISTORY")
+            self.assertEqual(row["projectedHome"], MISSING)
+            self.assertEqual(row["wagerStatus"], "NO BET")
+        self.assertIn("INSUFFICIENT_HISTORY", render(report))
+
+    def test_wednesday_evening_utc_rollover_and_kickoff_boundary(self):
+        kickoff = dt.datetime(2026, 11, 26, 1, tzinfo=dt.timezone.utc)
+        for game in (self.schedule["weeks"][0]["games"][0], self.draft["games"][0],
+                     self.shadow["games"][0]):
+            game["date"] = kickoff.isoformat()
+        self.schedule["weeks"].append({"week": 13, "games": [
+            {"id": "next", "date": "2026-12-03T18:00:00Z"}]})
+        self.assertEqual(self.run_handoff()["week"], 12)
+        with self.assertRaisesRegex(ValueError, "already kicked off"):
+            self.run_handoff(kickoff)
 
     def test_espn_query_and_capture_timestamp(self):
         payload = StringIO('{"events":[{"id":"synthetic-1","competitions":'

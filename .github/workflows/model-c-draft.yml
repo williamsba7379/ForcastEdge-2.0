@@ -17,6 +17,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Check Wednesday review window (late is never an on-time freeze)
         id: time
+        env:
+          REVIEW_EVENT: ${{ github.event_name }}
         run: |
           local_day="$(TZ=America/New_York date '+%u')"
           local_hour="$(TZ=America/New_York date '+%H')"
@@ -30,6 +32,10 @@ jobs:
           else
             echo "run=false" >> "$GITHUB_OUTPUT"
             echo "timing=SKIPPED_OUTSIDE_WINDOW" >> "$GITHUB_OUTPUT"
+            if [ "$REVIEW_EVENT" = "schedule" ]; then
+              echo "::error::Scheduled review ran outside the Wednesday delivery window"
+              exit 1
+            fi
           fi
       - name: Verify QB feed parsing (offline fixture)
         if: steps.time.outputs.run == 'true'
@@ -81,7 +87,7 @@ jobs:
           echo "REVIEW_DIR=$(mktemp -d "$RUNNER_TEMP/forecastedge-review.XXXXXX")" >> "$GITHUB_ENV"
       - name: Generate independent Model C review draft
         if: steps.time.outputs.run == 'true'
-        run: python3 scripts/model_c_engine.py
+        run: python3 scripts/model_c_engine.py --wednesday-review
       - name: Generate separate Model C-QB experimental shadow
         if: steps.time.outputs.run == 'true'
         run: python3 scripts/model_c_qb_shadow.py
@@ -105,64 +111,14 @@ jobs:
           python3 scripts/nfl_four_model_totals_research.py \
             --comparison "$REVIEW_DIR/refresh.json" --history data/nfl-historical-results.json \
             --draft data/model-c-automated-draft.json --output "$REVIEW_DIR/projections.json"
-      - name: Compare four-model totals to verified market quotes when available
-        if: steps.time.outputs.run == 'true'
-        run: |
-          python3 scripts/nfl_market_totals_compare.py \
-            --research "$REVIEW_DIR/projections.json" --market "$REVIEW_DIR/market.json" \
-            --output "$REVIEW_DIR/market-comparison.json"
-      - name: Test four-model totals grading
-        if: steps.time.outputs.run == 'true'
-        run: python3 tests/test_nfl_four_model_totals_grade.py
       - name: Test same-run review handoff
         if: steps.time.outputs.run == 'true'
         run: python3 tests/test_nfl_current_week_review_handoff.py
-      - name: Grade four-model totals when final results are available
-        if: steps.time.outputs.run == 'true'
-        run: |
-          python3 scripts/nfl_four_model_totals_grade.py \
-            --comparison "$REVIEW_DIR/market-comparison.json" --history data/nfl-historical-results.json \
-            --output "$REVIEW_DIR/graded.json"
       - name: Audit unmodeled critical QB injuries
         if: steps.time.outputs.run == 'true'
         run: |
           python3 scripts/model_c_qb_injury_audit_v2.py
           python3 tests/test_model_c_qb_injury_audit_v2.py
-      - name: Build official quarterback source review queue
-        if: steps.time.outputs.run == 'true'
-        run: python3 scripts/model_c_qb_review_queue.py
-      - name: Validate ESPN QB matchup flags
-        if: steps.time.outputs.run == 'true'
-        run: |
-          if [ -f data/model-c-espn-qb-status.json ]; then python3 scripts/model_c_espn_queue_validation.py; fi
-      - name: Discover official team QB news links (pilot, best effort)
-        if: steps.time.outputs.run == 'true'
-        continue-on-error: true
-        run: python3 scripts/model_c_official_news.py
-      - name: Validate official news discovery snapshot
-        if: steps.time.outputs.run == 'true'
-        run: python3 tests/test_model_c_discovery_snapshot.py
-      - name: Rank official QB news for manual review
-        if: steps.time.outputs.run == 'true'
-        run: python3 scripts/model_c_news_ranking.py
-      - name: Fetch official article publication metadata (best effort)
-        if: steps.time.outputs.run == 'true'
-        continue-on-error: true
-        run: python3 scripts/model_c_article_metadata.py
-      - name: Audit official article publication dates
-        if: steps.time.outputs.run == 'true'
-        run: |
-          if [ -f data/model-c-official-article-metadata.json ]; then python3 scripts/model_c_article_metadata_audit.py; fi
-      - name: Extract QB passages from official articles
-        if: steps.time.outputs.run == 'true'
-        continue-on-error: true
-        run: python3 scripts/model_c_article_passages.py
-      - name: Validate saved QB passage recency gate
-        if: steps.time.outputs.run == 'true'
-        run: python3 scripts/model_c_passage_gate_validation.py
-      - name: Audit ranked QB news coverage
-        if: steps.time.outputs.run == 'true'
-        run: python3 scripts/model_c_ranking_audit.py
       - name: Validate generated Model C review draft
         if: steps.time.outputs.run == 'true'
         run: python3 tests/test_model_c_draft_contract.py
@@ -199,4 +155,53 @@ jobs:
           retention-days: 7
           compression-level: 0
 
-# Manual expedited refresh requested 2026-10-28 before 15:30 ET; preserve QB safeguards.
+      - name: Compare four-model totals to verified market quotes when available
+        if: steps.time.outputs.run == 'true'
+        run: |
+          python3 scripts/nfl_market_totals_compare.py \
+            --research "$REVIEW_DIR/projections.json" --market "$REVIEW_DIR/market.json" \
+            --output "$REVIEW_DIR/market-comparison.json"
+      - name: Test four-model totals grading
+        if: steps.time.outputs.run == 'true'
+        run: python3 tests/test_nfl_four_model_totals_grade.py
+      - name: Grade four-model totals when final results are available
+        if: steps.time.outputs.run == 'true'
+        run: |
+          python3 scripts/nfl_four_model_totals_grade.py \
+            --comparison "$REVIEW_DIR/market-comparison.json" --history data/nfl-historical-results.json \
+            --output "$REVIEW_DIR/graded.json"
+      - name: Build official quarterback source review queue
+        if: steps.time.outputs.run == 'true'
+        run: python3 scripts/model_c_qb_review_queue.py
+      - name: Validate ESPN QB matchup flags
+        if: steps.time.outputs.run == 'true'
+        run: |
+          if [ -f data/model-c-espn-qb-status.json ]; then python3 scripts/model_c_espn_queue_validation.py; fi
+      - name: Discover official team QB news links (pilot, best effort)
+        if: steps.time.outputs.run == 'true'
+        continue-on-error: true
+        run: python3 scripts/model_c_official_news.py
+      - name: Validate official news discovery snapshot
+        if: steps.time.outputs.run == 'true'
+        run: python3 tests/test_model_c_discovery_snapshot.py
+      - name: Rank official QB news for manual review
+        if: steps.time.outputs.run == 'true'
+        run: python3 scripts/model_c_news_ranking.py
+      - name: Fetch official article publication metadata (best effort)
+        if: steps.time.outputs.run == 'true'
+        continue-on-error: true
+        run: python3 scripts/model_c_article_metadata.py
+      - name: Audit official article publication dates
+        if: steps.time.outputs.run == 'true'
+        run: |
+          if [ -f data/model-c-official-article-metadata.json ]; then python3 scripts/model_c_article_metadata_audit.py; fi
+      - name: Extract QB passages from official articles
+        if: steps.time.outputs.run == 'true'
+        continue-on-error: true
+        run: python3 scripts/model_c_article_passages.py
+      - name: Validate saved QB passage recency gate
+        if: steps.time.outputs.run == 'true'
+        run: python3 scripts/model_c_passage_gate_validation.py
+      - name: Audit ranked QB news coverage
+        if: steps.time.outputs.run == 'true'
+        run: python3 scripts/model_c_ranking_audit.py
