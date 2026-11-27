@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-26T17:17:28.022578+00:00",
+  "checkedAt": "2026-11-27T01:54:41.842491+00:00",
   "checks": [
     {
       "name": "NFL scoreboard",
@@ -7,12 +7,12 @@
       "cadenceHours": 3,
       "staleAfterHours": 9,
       "latestConclusion": "success",
-      "latestRunUrl": "https://github.com/williamsba7379/ForcastEdge-2.0/actions/runs/45862412264",
+      "latestRunUrl": "https://github.com/williamsba7379/ForcastEdge-2.0/actions/runs/45924054841",
       "latestRunStatus": "completed",
-      "lastSuccessAt": "2026-11-26T16:50:17Z",
-      "ageHours": 0.5,
+      "lastSuccessAt": "2026-11-27T01:41:59Z",
+      "ageHours": 0.2,
       "status": "healthy",
-      "reason": "Last successful run 0.5 hours ago."
+      "reason": "Last successful run 0.2 hours ago."
     },
     {
       "name": "NFL schedule",
@@ -20,12 +20,12 @@
       "cadenceHours": 24,
       "staleAfterHours": 48,
       "latestConclusion": "success",
-      "latestRunUrl": "https://github.com/williamsba7379/ForcastEdge-2.0/actions/runs/44931549098",
+      "latestRunUrl": "https://github.com/williamsba7379/ForcastEdge-2.0/actions/runs/45885891892",
       "latestRunStatus": "completed",
-      "lastSuccessAt": "2026-11-21T17:42:55Z",
-      "ageHours": 119.6,
-      "status": "delayed",
-      "reason": "Last successful run was 119.6 hours ago."
+      "lastSuccessAt": "2026-11-26T19:44:35Z",
+      "ageHours": 6.2,
+      "status": "healthy",
+      "reason": "Last successful run 6.2 hours ago."
     },
     {
       "name": "Weekly prediction draft",
@@ -36,9 +36,9 @@
       "latestRunUrl": "https://github.com/williamsba7379/ForcastEdge-2.0/actions/runs/45721011026",
       "latestRunStatus": "completed",
       "lastSuccessAt": "2026-11-25T23:23:37Z",
-      "ageHours": 17.9,
+      "ageHours": 26.5,
       "status": "healthy",
-      "reason": "Last successful run 17.9 hours ago."
+      "reason": "Last successful run 26.5 hours ago."
     }
   ],
   "note": "Workflow run checks, not a guarantee that published content is current."
