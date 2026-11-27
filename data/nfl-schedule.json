@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-11-26T19:44:43.106627+00:00",
+  "updatedAt": "2026-11-27T19:35:15.023128+00:00",
   "weeks": [
     {
       "week": 12,
@@ -17,21 +17,21 @@
           "date": "2026-11-26T18:00Z",
           "away": "Chicago Bears",
           "home": "Detroit Lions",
-          "status": "STATUS_HALFTIME"
+          "status": "STATUS_FINAL"
         },
         {
           "id": "401873080",
           "date": "2026-11-26T21:30Z",
           "away": "Philadelphia Eagles",
           "home": "Dallas Cowboys",
-          "status": "STATUS_SCHEDULED"
+          "status": "STATUS_FINAL"
         },
         {
           "id": "401873082",
           "date": "2026-11-27T01:20Z",
           "away": "Kansas City Chiefs",
           "home": "Buffalo Bills",
-          "status": "STATUS_SCHEDULED"
+          "status": "STATUS_FINAL"
         },
         {
           "id": "401873083",
